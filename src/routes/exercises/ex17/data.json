@@ -1,0 +1,275 @@
+{
+    "columns": {
+        "column-1": {
+            "id": "column-1",
+            "title": "1",
+            "optionsIds": [
+                "option-2"
+            ]
+        },
+        "column-2": {
+            "id": "column-2",
+            "title": "2",
+            "optionsIds": [
+                "option-3"
+            ]
+        },
+        "column-3": {
+            "id": "column-3",
+            "title": "3",
+            "optionsIds": [
+                "option-1"
+            ]
+        }
+    },
+    "options": [
+        {
+            "option-1": {
+                "id": "option-1",
+                "key": "excavar",
+                "text": "Excavar",
+                "value": 1,
+                "src":"17/tienda1.svg"
+            },
+            "option-2": {
+                "id": "option-2",
+                "key": "avanzar",
+                "text": "Avanzar",
+                "value": 2,
+                "src":"17/tienda2.svg"
+            },
+            "option-3": {
+                "id": "option-3",
+                "key": "cerrar",
+                "text": "Cerrar",
+                "value": 3,
+                "src":"17/tienda3.svg"
+            }
+        },
+        {
+            "option-1": {
+                "id": "option-1",
+                "key": "excavar",
+                "text": "Excavar",
+                "value": 1,
+                "src":"17/tienda4.svg"
+            },
+            "option-2": {
+                "id": "option-2",
+                "key": "avanzar",
+                "text": "Avanzar",
+                "value": 2,
+                "src":"17/tienda5.svg"
+            },
+            "option-3": {
+                "id": "option-3",
+                "key": "cerrar",
+                "text": "Cerrar",
+                "value": 3,
+                "src":"17/tienda6.svg"
+            }
+        },
+        {
+            "option-1": {
+                "id": "option-1",
+                "key": "excavar",
+                "text": "Excavar",
+                "value": 1,
+                "src":"17/tienda7.svg"
+            },
+            "option-2": {
+                "id": "option-2",
+                "key": "avanzar",
+                "text": "Avanzar",
+                "value": 2,
+                "src":"17/tienda8.svg"
+            },
+            "option-3": {
+                "id": "option-3",
+                "key": "cerrar",
+                "text": "Cerrar",
+                "value": 3,
+                "src":"17/tienda9.svg"
+            }
+        },
+        {
+            "option-1": {
+                "id": "option-1",
+                "key": "excavar",
+                "text": "Excavar",
+                "value": 1,
+                "src":"17/tienda1.svg"
+            },
+            "option-2": {
+                "id": "option-2",
+                "key": "avanzar",
+                "text": "Avanzar",
+                "value": 2,
+                "src":"17/tienda4.svg"
+            },
+            "option-3": {
+                "id": "option-3",
+                "key": "cerrar",
+                "text": "Cerrar",
+                "value": 3,
+                "src":"17/tienda9.svg"
+            }
+        },
+        {
+            "option-1": {
+                "id": "option-1",
+                "key": "excavar",
+                "text": "Excavar",
+                "value": 1,
+                "src":"17/tienda2.svg"
+            },
+            "option-2": {
+                "id": "option-2",
+                "key": "avanzar",
+                "text": "Avanzar",
+                "value": 2,
+                "src":"17/tienda6.svg"
+            },
+            "option-3": {
+                "id": "option-3",
+                "key": "cerrar",
+                "text": "Cerrar",
+                "value": 3,
+                "src":"17/tienda3.svg"
+            }
+        },
+        {
+            "option-1": {
+                "id": "option-1",
+                "key": "excavar",
+                "text": "Excavar",
+                "value": 1,
+                "src":"17/tienda4.svg"
+            },
+            "option-2": {
+                "id": "option-2",
+                "key": "avanzar",
+                "text": "Avanzar",
+                "value": 2,
+                "src":"17/tienda8.svg"
+            },
+            "option-3": {
+                "id": "option-3",
+                "key": "cerrar",
+                "text": "Cerrar",
+                "value": 3,
+                "src":"17/tienda3.svg"
+            }
+        },
+        {
+            "option-1": {
+                "id": "option-1",
+                "key": "excavar",
+                "text": "Excavar",
+                "value": 1,
+                "src":"17/tienda1.svg"
+            },
+            "option-2": {
+                "id": "option-2",
+                "key": "avanzar",
+                "text": "Avanzar",
+                "value": 2,
+                "src":"17/tienda5.svg"
+            },
+            "option-3": {
+                "id": "option-3",
+                "key": "cerrar",
+                "text": "Cerrar",
+                "value": 3,
+                "src":"17/tienda9.svg"
+            }
+        },
+        {
+            "option-1": {
+                "id": "option-1",
+                "key": "excavar",
+                "text": "Excavar",
+                "value": 1,
+                "src":"17/tienda7.svg"
+            },
+            "option-2": {
+                "id": "option-2",
+                "key": "avanzar",
+                "text": "Avanzar",
+                "value": 2,
+                "src":"17/tienda8.svg"
+            },
+            "option-3": {
+                "id": "option-3",
+                "key": "cerrar",
+                "text": "Cerrar",
+                "value": 3,
+                "src":"17/tienda6.svg"
+            }
+        },
+        {
+            "option-1": {
+                "id": "option-1",
+                "key": "excavar",
+                "text": "Excavar",
+                "value": 1,
+                "src":"17/tienda7.svg"
+            },
+            "option-2": {
+                "id": "option-2",
+                "key": "avanzar",
+                "text": "Avanzar",
+                "value": 2,
+                "src":"17/tienda2.svg"
+            },
+            "option-3": {
+                "id": "option-3",
+                "key": "cerrar",
+                "text": "Cerrar",
+                "value": 3,
+                "src":"17/tienda3.svg"
+            }
+        },
+        {
+            "option-1": {
+                "id": "option-1",
+                "key": "excavar",
+                "text": "Excavar",
+                "value": 1,
+                "src":"17/tienda4.svg"
+            },
+            "option-2": {
+                "id": "option-2",
+                "key": "avanzar",
+                "text": "Avanzar",
+                "value": 2,
+                "src":"17/tienda6.svg"
+            },
+            "option-3": {
+                "id": "option-3",
+                "key": "cerrar",
+                "text": "Cerrar",
+                "value": 3,
+                "src":"17/tienda3.svg"
+            }
+        }
+    ],
+    "sequence":[
+        "option-1",
+        "option-2",
+        "option-3"
+    ],
+    "initMessages":[
+        "Al hacer compras en línea debemos ser cuidadosos. Varios factores nos hablan del nivel de seguridad de una tienda o de un vendedor.",
+        "Ayúdame a escoger la mejor tienda para mis compras en línea. Organiza las opciones de la mejor a la menos buena."
+    ],
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 1
+    },
+    "path": "13",
+    "color": "#588F64",
+    "name": "Ranking de tiendas",
+    "id": "17"
+}

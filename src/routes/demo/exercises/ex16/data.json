@@ -1,0 +1,147 @@
+{
+    "options": [
+        {
+            "password":"Bogota?972",
+            "answers":[
+                {
+                    "name":"CandadoCerrado",
+                    "isCorrect": true
+                },
+                {
+                    "name":"CandadoAbierto",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "password":"@gatO12",
+            "answers":[
+                {
+                    "name":"CandadoCerrado",
+                    "isCorrect": true
+                },
+                {
+                    "name":"CandadoAbierto",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "password":"solyluna",
+            "answers":[
+                {
+                    "name":"CandadoCerrado",
+                    "isCorrect": false
+                },
+                {
+                    "name":"CandadoAbierto",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "password":"contraseña",
+            "answers":[
+                {
+                    "name":"CandadoCerrado",
+                    "isCorrect": false
+                },
+                {
+                    "name":"CandadoAbierto",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "password":"558_andinA",
+            "answers":[
+                {
+                    "name":"CandadoCerrado",
+                    "isCorrect": true
+                },
+                {
+                    "name":"CandadoAbierto",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "password": "123456789",
+            "answers":[
+                {
+                    "name":"CandadoCerrado",
+                    "isCorrect": false
+                },
+                {
+                    "name":"CandadoAbierto",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "password": "hola1789",
+            "answers":[
+                {
+                    "name":"CandadoCerrado",
+                    "isCorrect": false
+                },
+                {
+                    "name":"CandadoAbierto",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "password": "6Me.1%dKl0$",
+            "answers":[
+                {
+                    "name":"CandadoCerrado",
+                    "isCorrect": true
+                },
+                {
+                    "name":"CandadoAbierto",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "password": "1223334444",
+            "answers":[
+                {
+                    "name":"CandadoCerrado",
+                    "isCorrect": false
+                },
+                {
+                    "name":"CandadoAbierto",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "password": "a#fA$A%T$",
+            "answers":[
+                {
+                    "name":"CandadoCerrado",
+                    "isCorrect": true
+                },
+                {
+                    "name":"CandadoAbierto",
+                    "isCorrect": false
+                }
+            ]
+        }
+    ],
+    "initMessages":[
+        "Ayúdame a detectar malas contraseñas.",
+        "Revisa las diferentes contraseñas que aparecen a continuación y determina si son seguras o inseguras."
+    ],
+    "threshold": {
+        "max": 5,
+        "min": 2,
+        "perfect": 6
+    },
+    "path": "08",
+    "color": "#9968A6",
+    "name": "Contraseñas Seguras",
+    "id": 16
+}

@@ -1,0 +1,40 @@
+{
+    "options": [
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text":"Asegurarse de que el sitio en el cual se realizará la compra es de confianza o está verificado.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Realizar la transacción en la tienda online en la cual el producto resulte más económico.",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Confirmar la identidad del vendedor",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Enviar al vendedor los datos de seguridad de la tarjeta de crédito",
+                    "isCorrect":false
+                }
+            ],
+            "multiple":true,
+            "maxOptions":2
+        }
+    ],
+    "initMessages":[
+        "Hoy en día realizar compras de manera virtual es bastante útil y común.",
+        "Si bien los procedimientos pueden ser sencillos, se requieren procesos para asegurar nuestra información personal y bancaria.",
+        "A continuación, encontrarás una serie de pasos. Selecciona los que corresponden a un modelo seguro de compras virtuales."
+    ],
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 1
+    },
+    "color": "#9968A6",
+    "name": "Riesgos en compras online",
+    "id": 99
+}

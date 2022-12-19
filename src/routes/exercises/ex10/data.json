@@ -1,0 +1,152 @@
+{
+    "isSingle": "false",
+    "columns": {
+        "column-1": {
+            "id": "column-1",
+            "title": "Bloques que puedes usar",
+            "optionsIds": [
+                "option-1",
+                "option-2",
+                "option-3",
+                "option-4"
+            ],
+            "isDropDisabled":true,
+            "info":"Ingresa los valores a los bloques y arrástralos para para construir el algoritmo."
+        },
+        "column-2": {
+            "id": "column-2",
+            "title": "Cuando: presionar botón iniciar",
+            "optionsIds": []
+        }
+    },
+    "options": {
+        "option-1": {
+            "id": "option-1",
+            "key": "arriba",
+            "hasInput": true,
+            "type": "text",
+            "text": "Pasos arriba"
+        },
+        "option-2": {
+            "id": "option-2",
+            "key": "abajo",
+            "hasInput": true,
+            "type": "text",
+            "text": "Pasos abajo"
+        },
+        "option-3": {
+            "id": "option-3",
+            "key": "derecha",
+            "hasInput": true,
+            "type": "text",
+            "text": "Pasos derecha"
+        },
+        "option-4": {
+            "id": "option-4",
+            "key": "izquierda",
+            "hasInput": true,
+            "type": "text",
+            "text": "Pasos izquierda"
+        }
+    },
+    "matrices":[
+        {
+            "matriz":[
+                        [2,2,2,2,2,2,2],
+                        [2,1,0,1,1,1,2],
+                        [2,1,0,1,0,1,2],
+                        [2,1,0,1,0,1,2],
+                        [2,1,0,1,0,1,2],
+                        [2,1,1,1,0,3,2],
+                        [2,2,2,2,2,2,2]
+                    ],
+            "initPos":[1,1]
+        },
+        {
+            "matriz": [
+                        [2,2,2,2,2,2,2],
+                        [2,3,0,1,1,1,2],
+                        [2,1,0,1,0,0,2],
+                        [2,1,0,1,1,1,2],
+                        [2,1,0,0,0,1,2],
+                        [2,1,1,1,1,1,2],
+                        [2,2,2,2,2,2,2]
+                    ],
+            "initPos":[1,5]
+        },
+        {
+            "matriz": [
+                        [2,2,2,2,2,2,2],
+                        [2,1,0,1,1,1,2],
+                        [2,1,0,1,0,1,2],
+                        [2,1,1,1,0,1,2],
+                        [2,0,0,0,0,1,2],
+                        [2,3,1,1,1,1,2],
+                        [2,2,2,2,2,2,2]
+                    ],
+            "initPos":[1,1]
+        },
+        {
+            "matriz": [
+                        [2,2,2,2,2,2,2],
+                        [2,1,1,1,0,1,2],
+                        [2,1,0,1,0,1,2],
+                        [2,1,0,1,0,1,2],
+                        [2,1,0,1,0,1,2],
+                        [2,3,0,1,1,1,2],
+                        [2,2,2,2,2,2,2]
+                    ],
+            "initPos":[1,5]
+        },
+        {
+            "matriz": [
+                        [2,2,2,2,2,2,2],
+                        [2,1,1,1,1,3,2],
+                        [2,1,0,0,0,0,2],
+                        [2,1,0,1,1,1,2],
+                        [2,1,0,0,0,1,2],
+                        [2,1,1,1,1,1,2],
+                        [2,2,2,2,2,2,2]
+                    ],
+            "initPos":[3,3]
+        },
+        {
+            "matriz": [
+                        [2,2,2,2,2,2,2],
+                        [2,0,0,1,1,1,2],
+                        [2,0,0,1,0,1,2],
+                        [2,1,1,1,0,1,2],
+                        [2,1,0,0,0,1,2],
+                        [2,1,1,1,3,0,2],
+                        [2,2,2,2,2,2,2]
+                    ],
+            "initPos":[4,5]
+        },
+        {
+            "matriz": [
+                        [2,2,2,2,2,2,2],
+                        [2,1,1,1,0,3,2],
+                        [2,1,0,1,0,1,2],
+                        [2,1,0,1,0,1,2],
+                        [2,1,0,1,0,1,2],
+                        [2,1,0,1,1,1,2],
+                        [2,2,2,2,2,2,2]
+                    ],
+            "initPos":[5,1]
+        }
+    ],
+    "imgPath": "images/exercises/10/Katty.svg",
+    "initMessages":[
+        "Guíame hasta encontrar la salida. Indícame qué acciones debo realizar para llegar hasta el final.",
+        "Utiliza los bloques para darme las instrucciones."
+    ],
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 1
+    },
+    "path": "10",
+    "color": "#9968A6",
+    "name": "Salir del laberinto",
+    "id": "10"
+}

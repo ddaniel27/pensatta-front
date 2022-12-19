@@ -1,0 +1,39 @@
+.ex33{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    justify-items: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.ex33 table{
+    width: 350px;
+    height: 350px;
+    border: 1px solid black;
+}
+
+
+
+.ex33 table tbody tr td{
+    border: 1px solid black;
+    color:#00635D;
+    font-weight: bold;
+    font-size: clamp(1.5rem, 2vh, 2.5rem);
+    text-align: center;
+}
+
+@media screen and (max-width: 700px){
+    .ex33{
+        grid-template-columns: 100%;
+        grid-template-rows: 100% 100%;
+    }
+
+    .ex33 table{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+}

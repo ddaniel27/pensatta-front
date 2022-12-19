@@ -1,0 +1,70 @@
+{
+    "options":[
+        {
+            "value": 1,
+            "image": "./images/exercises/23/Board_1.svg"
+        },
+        {
+            "value": 2,
+            "image": "../../../images/exercises/23/Disco_duro.svg"
+        },
+        {
+            "value": 3,
+            "image": "../../../images/exercises/23/GPU_1.svg"
+        },
+        {
+            "value": 4,
+            "image": "../../../images/exercises/23/Procesador.svg"
+        },
+        {
+            "value": 5,
+            "image": "../../../images/exercises/23/RAM_1.svg"
+        },
+        {
+            "value": 6,
+            "image": "../../../images/exercises/23/UnidadLectora_1.svg"
+        }
+    ],
+    "questions":[
+        {
+           "correct": 4,
+           "question": "Procesa los datos del computador" 
+        },
+        {
+            "correct": 2,
+            "question": "Dispositivo de almacenamiento de datos"
+        },
+        {
+            "correct": 1,
+            "question": "Permite la integración de todos los componentes"
+        },
+        {
+            "correct": 3,
+            "question": "Procesa los gráficos"
+        },
+        {
+            "correct": 6,
+            "question": "Permite la lectura de CD"
+        },
+        {
+            "correct": 5,
+            "question": "Memoria de corto plazo del computador"
+        }
+    ],
+    "initMessages":[
+        "Un computador tiene muchos componentes internos.",
+        "Selecciona los dispositivos internos de acuerdo a su función.",
+        "Para iniciar, selecciona cualquier casilla."
+    ],
+    "threshold": {
+        "max": 5,
+        "min": 3,
+        "perfect": 6
+    },
+    "path": "04",
+    "color": "#9968A6",
+    "name": "Componentes internos",
+    "id": 4,
+    "dim": 4,
+    "apr": 1
+}

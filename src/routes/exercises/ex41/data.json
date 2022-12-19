@@ -1,0 +1,44 @@
+{
+    "options":[
+        {
+            "value": "and",
+            "image": "./images/exercises/41/And.svg"
+        },
+        {
+            "value": "nand",
+            "image": "../../../images/exercises/41/Nand.svg"
+        },
+        {
+            "value": "nor",
+            "image": "../../../images/exercises/41/Nor.svg"
+        },
+        {
+            "value": "or",
+            "image": "../../../images/exercises/41/Or.svg"
+        },
+        {
+            "value": "xnor",
+            "image": "../../../images/exercises/41/Xnor.svg"
+        },
+        {
+            "value": "xor",
+            "image": "../../../images/exercises/41/Xor.svg"
+        }
+    ],
+    "descriptions":{
+        "and": "AND devuelve 1 si ambas entradas son 1, y 0 en otro caso.",
+        "nand": "NAND devuelve 1 si ambas entradas son 0, y 0 en otro caso.",
+        "nor": "NOR devuelve 1 si ambas entradas son 0, y 0 en otro caso.",
+        "or": "OR devuelve 1 si alguna entrada es 1, y 0 en otro caso.",
+        "xnor": "XNOR devuelve 1 si ambas entradas son iguales, y 0 en otro caso.",
+        "xor": "XOR devuelve 1 si las entradas son distintas, y 0 en otro caso."
+    },
+    "initMessages":[
+        "¡Los números binarios se pueden operar! A continuación, encontrarás una serie de compuertas lógicas.",
+        "Observa lo que ocurre cuando ingresan dos números binarios y seleccionas una compuerta."
+    ],
+    "path": "41",
+    "color": "#53745B",
+    "name": "Compuertas lógicas",
+    "id": 41
+}

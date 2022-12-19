@@ -1,0 +1,122 @@
+.cypher{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    overflow-y: auto;
+}
+
+.cypher-map{
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow-y: auto;
+    gap:10px;
+}
+.cypher-map::-webkit-scrollbar{
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+    /* display: none; */
+}
+
+.cypher-map::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+.cypher-map::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+.cypher-map::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+
+.cypher-map-item{
+    width: 20%;
+    /* height: 14%; */
+    min-height: 35px;
+    min-width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cypher-map-item span{
+    width:15%;
+    height:60%;
+    min-height: 35px;
+    display: block;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    padding: 1% 0;
+}
+
+.cypher-map-item .letter{
+    background-color: #333333;
+    color: #FFFFFF;
+    border-radius: 0 12px 12px 0;
+}
+
+.cypher-map-item .symbol{
+    background-color: #FFFFFF;
+    color: #00635D;
+    border-radius: 12px 0 0 12px;
+}
+
+.square{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 7px;
+    position: relative;
+}
+
+.cypher-map-item .symbol .square{
+    margin: 0 auto;
+    top: .2rem;
+}
+
+.cypher-test{
+    width: 80%;
+    height: 50%;
+    background-color: #FFFFFF;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.cypher-test p{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #00635D;
+}
+
+.cypher-test input{
+    margin-top: 20px;
+    border: none;
+    font-size: 1.2rem;
+    width: 80%;
+    text-align: center;
+    outline: none;
+}
+
+.cypher-test .square{
+    display: inline-block;
+}
+
+

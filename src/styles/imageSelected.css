@@ -1,0 +1,13 @@
+p.image-selected{
+    cursor: pointer;
+    width: 110px;
+    height: 110px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+p.image-selected.show-background{
+    background-color: #00D8CC;
+}

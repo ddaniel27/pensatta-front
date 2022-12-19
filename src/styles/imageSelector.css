@@ -1,0 +1,31 @@
+.image-selector-component{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* overflow-y: auto; */
+    overflow: auto;
+}
+
+.image-selector-component label p{
+    cursor: pointer;
+    width: 110px;
+    height: 110px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+.image-selector-component label .show-background{
+    background-color: #00D8CC;
+}
+
+.image-selector-component label input:checked + .show-background{
+    background-color: #F97D61;
+}
+

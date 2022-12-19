@@ -1,0 +1,76 @@
+{
+    "isSingle": "false",
+    "columns": {
+        "column-1": {
+            "id": "column-1",
+            "title": "",
+            "optionsIds": [
+                "option-1",
+                "option-3",
+                "option-4",
+                "option-5",
+                "option-6",
+                "option-9"
+            ],
+            "isDropDisabled":true
+        },
+        "column-2": {
+            "id": "column-2",
+            "title": "Cuando: presionar botón iniciar",
+            "optionsIds": []
+        }
+    },
+    "options": {
+        "option-1": {
+            "id": "option-1",
+            "key": "saludar",
+            "text": "Saludar",
+            "value": 1
+        },
+        "option-3": {
+            "id": "option-3",
+            "key": "si",
+            "text": "Decir sí",
+            "value": 1
+        },
+        "option-4": {
+            "id": "option-4",
+            "key": "selfie",
+            "text": "Tomar una selfie",
+            "value": 1
+        },
+        "option-5": {
+            "id": "option-5",
+            "key": "saltar",
+            "text": "Saltar",
+            "value": 1
+        },
+        "option-6": {
+            "id": "option-6",
+            "key": "reir",
+            "text": "Reír",
+            "value": 1
+        },
+        "option-9": {
+            "id": "option-9",
+            "key": "celular",
+            "text": "Revisar el celular",
+            "value": 1
+        },
+        "option-10": {
+            "id": "option-10",
+            "key": "bailar",
+            "text": "Bailar",
+            "value": 1
+        }
+    },
+    "initMessages":[
+        "Selecciona los bloques y forma una torre.",
+        "Presta atención al orden en el que los acomodas, ya que será el orden en que el personaje ejecutará las acciones.",
+        "Selecciona los bloques que desees."
+    ],
+    "path": "12",
+    "color": "#9968A6",
+    "name": "Construir Animación",
+    "id": "12"
+}

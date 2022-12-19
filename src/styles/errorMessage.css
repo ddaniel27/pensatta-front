@@ -1,0 +1,23 @@
+.error-message{
+    width: 100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border-radius: 12px;
+    position: relative;
+    top: 20px;
+    padding: 10px 10px;
+    font-weight: bold;
+}
+
+.error{
+    color: #fa5833;
+    background-color: #F97D6188;
+}
+
+.success{
+    color: #00635D;
+    background-color: #00D8CC88;
+}

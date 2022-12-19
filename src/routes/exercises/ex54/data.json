@@ -1,0 +1,10 @@
+{
+    "initMessages":[
+        "A continuación, encontrarás la simulación de un piano.",
+        "Sus teclas corresponden con las de tu teclado o puedes usar el teclado en pantalla"
+    ],
+    "path": "54",
+    "color": "#53745B",
+    "name": "Piano virtual",
+    "id": 54
+}

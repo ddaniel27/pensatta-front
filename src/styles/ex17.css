@@ -1,0 +1,27 @@
+.maze-list-style{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.maze-list-style .restart{
+    right: 20vw;
+}
+
+@media screen and (max-width: 1250px){
+    .maze-list-style{
+        display: grid;
+        grid-template-rows: 100% 10%;
+        grid-template-columns: 100%;
+    }
+
+    .maze-list-style .buttons-field{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        grid-column: 1;
+        grid-row: 2;
+        width: 100%;
+        height: 100%;
+    }
+}

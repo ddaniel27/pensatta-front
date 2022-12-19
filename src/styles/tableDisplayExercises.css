@@ -1,0 +1,55 @@
+.table-display-exercises{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 30px 0 0;
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 13% 75%;
+    justify-items: center;
+    align-items: center;
+}
+
+.table-custom-style{
+    width: 100%;
+    height: 20%;
+    min-height: 37px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 100%;
+    align-items: center;
+    justify-items: center;
+    font-weight: bold;
+    font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+}
+
+.table-custom-style-resumen{
+    width: 100%;
+    height: 75%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 100%;
+    align-items: center;
+    justify-items: center;
+    font-weight: bold;
+    font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+}
+
+
+
+.table-display-exercises-headers{
+    color: #F97D61;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.table-display-exercises-rows{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.table-display-exercises-row{
+    color: #4F4F4F;
+}

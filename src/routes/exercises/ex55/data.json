@@ -1,0 +1,171 @@
+{
+    "options": [
+        {
+            "question":"Bateria baja",
+            "answers":[
+                {
+                    "text":"Apagar el equipo",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Reiniciar todas las aplicaciones",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Conectar a red eléctrica",
+                    "isCorrect":true
+                },
+                {
+                    "text": "Desconectar periféricos",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "LowBattery.svg"
+        },
+        {
+            "question":"Malware detectado",
+            "answers":[
+                {
+                    "text": "Iniciar un análisis de virus",
+                    "isCorrect":true
+                },
+                {
+                    "text": "Reinstalar el sistema operativo",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Reducir el brillo de pantalla",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Instalar un software de vídeo",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "Malware.svg"
+        },
+        {
+            "question":"El programa no responde",
+            "answers":[
+                {
+                    "text": "Abrir administrador de tareas",
+                    "isCorrect":true
+                },
+                {
+                    "text": "Descargar la nueva versión del sistema",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Inciar el navegador web",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Desconectar el equipo de internet",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "NotResponding.svg"
+        },
+        {
+            "question":"Sin acceso a internet",
+            "answers":[
+                {
+                    "text":"Reiniciar el WI-FI",
+                    "isCorrect":true
+                },
+                {
+                    "text": "Descargar antivirus",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Reducir brillo de pantalla",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Reinstalar el sistema operativo",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "NoWifi.svg"
+        },
+        {
+            "question":"Nueva actualización de sistema",
+            "answers":[
+                {
+                    "text":"Descargar e instalar la nueva versión",
+                    "isCorrect":true
+                },
+                {
+                    "text": "Iniciar un análisis de virus",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Iniciar navegador web",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Reiniciar sistema",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "SystemUpdate.svg"
+        },
+        {
+            "question":"Actualización de antivirus",
+            "answers":[
+                {
+                    "text":"Descargar e instalar la actualización",
+                    "isCorrect":true
+                },
+                {
+                    "text": "Desinstalar el antivirus",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Desconectar de internet",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Reinstalar el sistema operativo",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "UpdateAntivirus.svg"
+        },
+        {
+            "question":"Dispositivo de almacenamiento",
+            "answers":[
+                {
+                    "text":"Desconectar el equipo de red eléctrica",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Reinstalar controladores de vídeo",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Analizar en búsqueda de virus",
+                    "isCorrect":true
+                },
+                {
+                    "text": "Instalar un software procesador de texto",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "USB.svg"
+        }
+    ],
+    "initMessages":[
+        "Gestiona las alertas del sistema de la manera más eficiente.",
+        "Selecciona la opción correcta según el ícono del mensaje."
+    ],
+    "threshold": {
+        "max": 2,
+        "min": 1,
+        "perfect": 3
+    },
+    "path": "55",
+    "color": "#9968A6",
+    "name": "Iconos comunes",
+    "id": 55
+}

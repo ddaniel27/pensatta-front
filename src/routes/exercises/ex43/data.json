@@ -1,0 +1,64 @@
+{
+    "options":[
+        {
+            "title": "Cuerpo",
+            "options":[
+            "Burro",
+            "Cerdo",
+            "Conejo",
+            "Gato",
+            "Oso",
+            "Perro",
+            "Vaca",
+            "Zorro"
+            ]
+        },
+        {
+            "title": "Ojos",
+            "options":[
+            "Ojos 1",
+            "Ojos 2",
+            "Ojos 3",
+            "Ojos 4",
+            "Ojos 5",
+            "Ojos 6"
+            ]
+        },
+        {
+            "title": "Lentes",
+            "options":[
+            "Ninguno" ,
+            "Lentes 1" ,
+            "Lentes 2" ,
+            "Lentes 3"
+            ]
+        },
+        {
+            "title": "Accesorio 1",
+            "options":[
+            "Ninguno" ,
+            "Moño" ,
+            "Parche",
+            "Tapabocas",
+            "Flor"
+            ]
+        },
+        {
+            "title": "Accesorio 2",
+            "options":[
+            "Ninguno" ,
+            "Corbata",
+            "Corbatín",
+            "Bolso"
+            ]
+        }
+    ],
+    "initMessages":[
+        "Crea tu propio avatar en este entorno.",
+        "Explora las opciones para crear al ser digital que mejor te represente."
+    ],
+    "path": "43",
+    "color": "#1B6893",
+    "name": "Crea tu avatar",
+    "id": 43
+}

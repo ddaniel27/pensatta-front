@@ -1,0 +1,40 @@
+{
+    "options": [
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text":"Separar las secciones en el código para identificar con facilidad las funciones",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Es útil inspirarse con una película o serie mientras se escribe",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Es mejor escribir códigos cortos y puntuales",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Es bueno usar nombres largos y compuestos para las variables",
+                    "isCorrect":false
+                }
+            ],
+            "multiple":true,
+            "maxOptions":2
+        }
+    ],
+    "initMessages":[
+        "En la programación por código, es muy importante la manera en la que escribimos.",
+        "De esto depende que la máquina pueda comprender perfectamente y ejecutar las órdenes",
+        "Selecciona las buenas prácticas de programación."
+    ],
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 1
+    },
+    "color": "#9968A6",
+    "name": "Buenas prácticas",
+    "id": 86
+}

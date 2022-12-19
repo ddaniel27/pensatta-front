@@ -1,0 +1,63 @@
+{
+    "text": "El termino nube virtual es utilizado para describir una red mundial de servidores conectados entre sí, que funcionan como un único ecosistema que brinda la posibilidad de almacenar información directamente, o realizar procesos de almacenamiento de datos progresivamente. La nube es un espacio virtual que brinda portabilidad, puesto que es posible acceder a su contenido desde cualquier lugar y en cualquier momento. Existen diversas aplicaciones que funcionan con esta tecnología y que brindan su servicio.",
+    "options": [
+        {
+            "question":"Selecciona las aplicaciones que funcionan o brindan el servicio de nube virtual.",
+            "answers":[
+                {
+                    "text":"Icloud",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Instagram",
+                    "isCorrect":false
+                },
+                {
+                    "text":"One Drive",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Google Drive",
+                    "isCorrect":true
+                }
+            ],
+            "multiple":true,
+            "maxOptions":3
+        },
+        {
+            "question":"Selecciona las características de la nube virtual.",
+            "answers":[
+                {
+                    "text":"Permite almacenar información en línea para acceder a ella desde cualquier dispositivo con conexión y permisos.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Permite hacer grabaciones extensas de audio.",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Muestra el clima por ciudades para todo el mes",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Le da paso al Cloud Computing, que consiste en ejecutar aplicaciones en línea sin necesidad de usar el hardware del equipo",
+                    "isCorrect":true
+                }
+            ],
+            "multiple":true,
+            "maxOptions":2
+        }
+    ],
+    "initMessages":[
+        "Lee con atención el enunciado que encontrarás a continuación.",
+        "Luego, selecciona la respuesta correcta a las preguntas." 
+    ],
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 2
+    },
+    "color": "#9968A6",
+    "name": "Nuve virtual",
+    "id": 82
+}

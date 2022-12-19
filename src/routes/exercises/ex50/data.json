@@ -1,0 +1,168 @@
+{
+    "options": [
+        {
+            "question": "",
+            "answers":[
+                {
+                    "text": "Ejecutar la siguiente acción si y solo si J es igual a 3",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Ejecutar la siguiente acción si y solo si J es mayor a 3",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Ejecutar la siguiente acción si y solo si J es mayor o igual a 3",
+                    "isCorrect": false
+                }
+            ],
+            "image":  "conditional_J_3.svg"
+        },
+        {
+            "question": "",
+            "answers":[
+                {
+                    "text": "Ejecutar la siguiente acción si y solo si F es menor o igual a 3",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Ejecutar la siguiente acción si y solo si F es menor a 3",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Ejecutar la siguiente acción si y solo si F es igual a 3",
+                    "isCorrect": false
+                }
+            ],
+            
+            "image":  "conditionalF_3.svg"
+        },
+        {
+            "question": "",
+            "answers":[
+                {
+                    "text": "Ejecutar la siguiente acción si y solo si P es mayor a S",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Ejecutar la siguiente acción si y solo si P es igual S",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Ejecutar la siguiente acción si y solo si P es menor que S",
+                    "isCorrect": false
+                }
+            ],
+            
+            "image":  "conditional_P_S.svg"
+        },
+        {
+            "question": "",
+            "answers":[
+                {
+                    "text": "Ejecutar la siguiente acción si y solo si W es mayor a 5",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Ejecutar la siguiente acción si y solo si W es igual 5",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Ejecutar la siguiente acción si y solo si W es menor que 5",
+                    "isCorrect": false
+                }
+            ],
+            
+            "image":  "conditionalW_5.svg"
+        },
+        {
+            "question": "",
+            "answers":[
+                {
+                    "text": "Ejecutar la siguiente acción si y solo si M es mayor o igual a 8",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Ejecutar la siguiente acción si y solo si M es igual 8",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Ejecutar la siguiente acción si y solo si M es menor que 8",
+                    "isCorrect": false
+                }
+            ],
+            
+            "image":  "conditionalM_8.svg"
+        },
+        {
+            "question": "",
+            "answers":[
+                {
+                    "text": "Ejecutar la siguiente acción si y solo si P es mayor o igual a S",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Ejecutar la siguiente acción si y solo si P es igual S",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Ejecutar la siguiente acción si y solo si P es menor o igual que S",
+                    "isCorrect": false
+                }
+            ],
+            
+            "image":  "conditionalP_S.svg"
+        },
+        {
+            "question": "",
+            "answers":[
+                {
+                    "text": "Ejecutar la siguiente acción si y solo si M es mayor a 8",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Ejecutar la siguiente acción si y solo si M es igual 8",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Ejecutar la siguiente acción si y solo si M es menor que 8",
+                    "isCorrect": true
+                }
+            ],
+            
+            "image":  "conditional_M_8.svg"
+        },
+        {
+            "question": "",
+            "answers":[
+                {
+                    "text": "Ejecutar la siguiente acción si y solo si N es mayor a 20",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Ejecutar la siguiente acción si y solo si N es igual 20",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Ejecutar la siguiente acción si y solo si N es menor que 20",
+                    "isCorrect": true
+                }
+            ],
+            
+            "image":  "conditionalN_20.svg"
+        }
+    ],
+    "initMessages":[
+        "Observa las instrucciones de condicionales que encontrarás a continuación.", 
+        "Selecciona para cada una de ellas la opción que corresponde a su función."
+    ],
+    "threshold": {
+        "max": 2,
+        "min": 1,
+        "perfect": 3
+    },
+    "path": "50",
+    "color": "#53745B",
+    "name": "Condicionales",
+    "id": 50
+}

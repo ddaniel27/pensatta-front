@@ -1,0 +1,21 @@
+.ex54{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    justify-items: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.ex54 .synth-container{
+    width: 60%;
+}
+
+
+@media screen and (max-width: 600px){
+    .ex54 .synth-container{
+        width: 100%;
+    }
+}

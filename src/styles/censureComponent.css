@@ -1,0 +1,10 @@
+.binary-test-ex{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60% 40%;
+    align-items: center;
+    justify-items: center;
+    overflow-y: auto;
+}

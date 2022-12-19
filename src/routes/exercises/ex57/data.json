@@ -1,0 +1,79 @@
+{
+    "options":[
+        {
+            "question":"¿Qué tipo de información recibe un sistema digital?",
+            "answers":[
+                {
+                    "text": "Información discreta",
+                    "isCorrect": true
+                },
+                {
+                    "text":"Información continua",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Proceso digital",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Identificador",
+                    "isCorrect":false
+                }
+            ]
+        },
+        {
+            "question":"¿Qué sistema de numeración utilizan los sistemas digitales?",
+            "answers":[
+                {
+                    "text": "Sistema binario",
+                    "isCorrect": true
+                },
+                {
+                    "text":"Sistema complejo",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Sistema decimal",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Sistema octal",
+                    "isCorrect":false
+                }
+            ]
+        },
+        {
+            "question":"¿Cuáles son algunas de las ventajas de los sistemas digitales?",
+            "answers":[
+                {
+                    "text": "Facilidad de diseño, exactitud y precisión",
+                    "isCorrect": true
+                },
+                {
+                    "text":"Soporte a altas temperaturas e intermitencia",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Color y ergonomía",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Baja frecuencia, circulación de aire",
+                    "isCorrect":false
+                }
+            ]
+        }
+    ],
+    "initMessages":[
+        "Gira la ruleta para obtener una pregunta.",
+        "Selecciona una de las posibles respuestas."
+    ],
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 1
+    },
+    "color": "#9968A6",
+    "name":"Características de la información",
+    "id": 57
+}

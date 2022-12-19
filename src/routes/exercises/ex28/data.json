@@ -1,0 +1,185 @@
+{
+    "options": [
+            {
+                "correct": "Si",
+                "options":[
+                    {
+                        "img": "Bailar.svg",
+                        "value": "Bailar"
+                    },
+                    {
+                        "img": "No.svg",
+                        "value": "No"
+                    },
+                    {
+                        "img": "Si.svg",
+                        "value": "Si"
+                    },
+                    {
+                        "img": "Saltar.svg",
+                        "value": "Saltar"
+                    }
+                ]
+            },
+            {
+                "correct": "No",
+                "options":[
+                    {
+                        "img": "Bailar.svg",
+                        "value": "Bailar"
+                    },
+                    {
+                        "img": "No.svg",
+                        "value": "No"
+                    },
+                    {
+                        "img": "Si.svg",
+                        "value": "Si"
+                    },
+                    {
+                        "img": "Saltar.svg",
+                        "value": "Saltar"
+                    }
+                ]
+            },
+            {
+                "correct": "Bailar",
+                "options":[
+                    {
+                        "img": "Bailar.svg",
+                        "value": "Bailar"
+                    },
+                    {
+                        "img": "No.svg",
+                        "value": "No"
+                    },
+                    {
+                        "img": "Si.svg",
+                        "value": "Si"
+                    },
+                    {
+                        "img": "Saltar.svg",
+                        "value": "Saltar"
+                    }
+                ]
+            },
+            {
+                "correct": "Saltar",
+                "options":[
+                    {
+                        "img": "Bailar.svg",
+                        "value": "Bailar"
+                    },
+                    {
+                        "img": "No.svg",
+                        "value": "No"
+                    },
+                    {
+                        "img": "Si.svg",
+                        "value": "Si"
+                    },
+                    {
+                        "img": "Saltar.svg",
+                        "value": "Saltar"
+                    }
+                ]
+            },
+            {
+                "correct": "Llorar",
+                "options":[
+                    {
+                        "img": "Llorar.svg",
+                        "value": "Llorar"
+                    },
+                    {
+                        "img": "Sorpresa.svg",
+                        "value": "Sorpresa"
+                    },
+                    {
+                        "img": "Reir.svg",
+                        "value": "Reir"
+                    },
+                    {
+                        "img": "Saludar.svg",
+                        "value": "Saludar"
+                    }
+                ]
+            },
+            {
+                "correct": "Sorpresa",
+                "options":[
+                    {
+                        "img": "Llorar.svg",
+                        "value": "Llorar"
+                    },
+                    {
+                        "img": "Sorpresa.svg",
+                        "value": "Sorpresa"
+                    },
+                    {
+                        "img": "Reir.svg",
+                        "value": "Reir"
+                    },
+                    {
+                        "img": "Saludar.svg",
+                        "value": "Saludar"
+                    }
+                ]
+            },
+            {
+                "correct": "Reir",
+                "options":[
+                    {
+                        "img": "Llorar.svg",
+                        "value": "Llorar"
+                    },
+                    {
+                        "img": "Sorpresa.svg",
+                        "value": "Sorpresa"
+                    },
+                    {
+                        "img": "Reir.svg",
+                        "value": "Reir"
+                    },
+                    {
+                        "img": "Saludar.svg",
+                        "value": "Saludar"
+                    }
+                ]
+            },
+            {
+                "correct": "Saludar",
+                "options":[
+                    {
+                        "img": "Llorar.svg",
+                        "value": "Llorar"
+                    },
+                    {
+                        "img": "Sorpresa.svg",
+                        "value": "Sorpresa"
+                    },
+                    {
+                        "img": "Reir.svg",
+                        "value": "Reir"
+                    },
+                    {
+                        "img": "Saludar.svg",
+                        "value": "Saludar"
+                    }
+                ]
+            }
+    ],
+    "initMessages":[
+        "Observa las acciones que realizan los personajes y relaciónalos con los códigos que los hacen moverse."
+    ],
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 1
+    },
+    "animationPath": "12",
+    "path": "28",
+    "color": "#9968A6",
+    "name": "Algoritmo correcto",
+    "id": 28
+}

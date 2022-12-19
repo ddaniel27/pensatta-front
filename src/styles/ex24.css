@@ -1,0 +1,110 @@
+.maze-style-single{
+    display: grid;
+    grid-template-columns: 50% 40% 10%;
+    grid-template-rows: 100%;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.maze-style-single .restart{
+    right: 20vw;
+}
+
+.maze-style-single .drag-drop-context .column-2{
+    grid-column: 2;
+    align-self: center;
+    justify-self: start;
+}
+
+.maze-style-single .info-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+
+.info-box span{
+    background-color: #00635D;
+    border: 3px solid #00D8CC;
+    border-radius: 12px;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 20px 40px;
+    margin-top: 40px;
+    text-align: center;
+
+}
+
+
+@media screen and (max-width: 1250px) {
+    .maze-style-single{
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 100% 130%;
+    }
+
+    .maze-style-single .info-box{
+        grid-column: 1/3;
+    }
+
+    .maze-style-single > .drag-drop-context{
+        grid-column: 1/3;
+        grid-row: 2;
+    }
+
+    .maze-style-single .drag-drop-context .column-2{
+        grid-column: 1;
+        position: relative;
+        left: 25vw;
+    }
+
+    .maze-style-single > .maze{
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+
+    .maze-style-single > .maze canvas{
+        top:5%;
+    }
+    .maze-style-single .buttons-field{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        grid-column: 2;
+        grid-row: 2;
+        width: 100%;
+        height: 100%;
+    }
+    .buttons-field > button {
+        position: relative !important;
+    }
+    
+}
+
+@media screen and (max-width: 700px){
+    .maze-style-single{
+        grid-template-columns: 100%;
+        grid-template-rows: 100% 50% 60%;
+    }
+
+    .maze-style-single > .drag-drop-context{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .maze-style-single .drag-drop-context .column-2{
+        grid-column: 1;
+        position: inherit;
+        justify-self: center;
+    }
+
+    .maze-style-single .buttons-field{
+        grid-column: 1;
+        grid-row: 4;
+        justify-content: flex-end;
+    }
+
+}

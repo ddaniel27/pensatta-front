@@ -1,0 +1,101 @@
+.binary-option{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.binary-item{
+    width: 80px;
+    height: 80px;
+    margin: 0 10px;
+}
+
+.binary-item input{
+    display: none;
+}
+
+.binary-item > p{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+/**** SEGURO ****/
+
+.binary-item.Seguro p{
+    background-image: url("../../images/Botones/Seguro_Activo.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.binary-item.Seguro input:checked + p{
+    background-image: url("../../images/Botones/Seguro_Seleccionado.svg");
+}
+
+.binary-item.show-value.wrong.Seguro.selected input[value=false] + p{
+    background-image: url("../../images/Botones/Seguro_Incorrecta.svg");
+}
+
+.binary-item.show-value.right.Seguro input[value=true] + p, .binary-item.show-value.right.Seguro.selected input[value=true] + p{
+    background-image: url("../../images/Botones/Seguro_Correcta.svg");
+}
+
+
+/**** UNSECURE ****/
+
+.binary-item.Unsecure p{
+    background-image: url("../../images/Botones/Unsecure_Activo.svg");
+}
+
+.binary-item.Unsecure input:checked + p{
+    background-image: url("../../images/Botones/Unsecure_Seleccionado.svg");
+}
+
+.binary-item.show-value.wrong.Unsecure.selected input[value=false] + p{
+    background-image: url("../../images/Botones/Unsecure_Incorrecta.svg");
+}
+
+.binary-item.show-value.right.Unsecure input[value=true] + p, .binary-item.show-value.right.Unsecure.selected input[value=true] + p{
+    background-image: url("../../images/Botones/Unsecure_Correcta.svg");
+}
+
+
+/**** CANDADOCERRADO ****/
+
+.binary-item.CandadoCerrado p{
+    background-image: url("../../images/Botones/CandadoCerrado_Activo.svg");
+}
+
+.binary-item.CandadoCerrado input:checked + p{
+    background-image: url("../../images/Botones/CandadoCerrado_Seleccionado.svg");
+}
+
+.binary-item.show-value.wrong.CandadoCerrado.selected input[value=false] + p{
+    background-image: url("../../images/Botones/CandadoCerrado_Incorrecta.svg");
+}
+
+.binary-item.show-value.right.CandadoCerrado input[value=true] + p, .binary-item.show-value.right.CandadoCerrado.selected input[value=true] + p{
+    background-image: url("../../images/Botones/CandadoCerrado_Correcta.svg");
+}
+
+/**** CANDADOABIERTO ****/
+
+.binary-item.CandadoAbierto p{
+    background-image: url("../../images/Botones/CandadoAbierto_Activo.svg");
+}
+
+.binary-item.CandadoAbierto input:checked + p{
+    background-image: url("../../images/Botones/CandadoAbierto_Seleccionado.svg");
+}
+
+.binary-item.show-value.wrong.CandadoAbierto.selected input[value=false] + p{
+    background-image: url("../../images/Botones/CandadoAbierto_Incorrecta.svg");
+}
+
+.binary-item.show-value.right.CandadoAbierto input[value=true] + p, .binary-item.show-value.right.CandadoAbierto.selected input[value=true] + p{
+    background-image: url("../../images/Botones/CandadoAbierto_Correcta.svg");
+}
+

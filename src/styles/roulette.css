@@ -1,0 +1,43 @@
+.roulette{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.roulette svg{
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+
+}
+
+.roulette > span {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1.5rem, 50%, 2rem);
+    font-weight: bold;
+    background-color: #fff;
+    color: #F97D61;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    z-index: 1;
+}
+
+.roulette > span:hover{
+    background-color: #BDBDBD;
+    color: #fff;
+}

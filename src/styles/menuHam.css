@@ -1,0 +1,55 @@
+.menu-ham{
+    background-color: #fff;
+    border: 1px solid #E0E0E0;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 250px;
+    position: absolute;
+    top: 3vh;
+    right: 5vw;
+    z-index:2;
+}
+.menu-ham div{
+    cursor: pointer;
+    display:flex;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+    transition: .2s ease-in-out;
+}
+.menu-ham .logout{
+    grid-column: 1;
+    border-bottom: 1px solid #E0E0E0;
+    border-radius: 12px 0 0 0;
+}
+.menu-ham .settings{
+    grid-column: 1;
+    border-radius: 0 0 0 12px;
+
+}
+.menu-ham .close{
+    grid-column: 2;
+    grid-row: 1;
+    justify-content: center;
+    background-image: url("../../images/Atomo_Icono_Salir.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: 1px solid #E0E0E0;
+    border-radius: 0 12px 0 0;
+}
+.menu-ham .close:hover{
+    background-color: #69E485;
+}
+.menu-ham div:hover{
+    background-color: #69E485;
+}
+.menu-ham img{
+    width: 30%;
+    height: 80%;
+    object-fit: contain;
+}

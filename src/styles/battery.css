@@ -1,0 +1,42 @@
+.battery{
+    aspect-ratio: 7/2;
+    width: 270px;
+    background-color: #006C8E;
+    border-radius: 20px;
+    border:5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.battery::after{
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 100%;
+    width: 5%;
+    aspect-ratio: 1/1;
+    background-color: black;
+    border-radius: 3px;
+
+
+}
+
+.battery .battery-text{
+    color: white;
+    font-weight: bold;
+    font-size: clamp(1rem, 1.3vw, 2rem);
+}
+
+.battery .battery-text p::after{
+    content: '+';
+    position: absolute;
+    right: 7%;
+}
+
+.battery .battery-text p::before{
+    content: '-';
+    position: absolute;
+    left: 7%;
+}

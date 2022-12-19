@@ -1,0 +1,66 @@
+{
+    "isSingle": "false",
+    "columns": {
+        "column-1": {
+            "id": "column-1",
+            "title": "Bloques que puedes usar",
+            "optionsIds": [
+                "option-1",
+                "option-2",
+                "option-3",
+                "option-4"
+            ],
+            "isDropDisabled":true,
+            "info":"Arrastra los bloques para construir el algoritmo."
+        },
+        "column-2": {
+            "id": "column-2",
+            "title": "Cuando: presionar botón iniciar",
+            "optionsIds": []
+        }
+    },
+    "options": {
+        "option-1": {
+            "id": "option-1",
+            "key": "brillo",
+            "text": "Filtro de brillo",
+            "value": 1
+        },
+        "option-2": {
+            "id": "option-2",
+            "key": "color",
+            "text": "Filtro de color",
+            "value": 1
+        },
+        "option-3": {
+            "id": "option-3",
+            "key": "nuevo",
+            "text": "Nuevo fondo",
+            "value": 1
+        },
+        "option-4": {
+            "id": "option-4",
+            "key": "eliminar",
+            "text": "Eliminar fondo",
+            "value": 1
+        }
+    },
+    "correctSequence":[
+        "brillo",
+        "color",
+        "nuevo"
+    ],
+    "initMessages":[
+        "Ayúdame a editar la fotografía. Necesito que se vea como la fotografía de referencia.",
+        "Utiliza los bloques para construir un algoritmo que edite la imagen replicando la referencia."
+    ],
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 1
+    },
+    "path": "11",
+    "color": "#9968A6",
+    "name": "Editar fotografía",
+    "id": "11"
+}

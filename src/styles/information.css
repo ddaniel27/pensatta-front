@@ -1,0 +1,60 @@
+.information{
+    width:100%;
+    height:100%;
+    display:flex;
+    position: relative;
+    top:8vh;
+    justify-content: flex-end;
+}
+
+.information img{
+    width: 50%;
+    height:100%;
+    object-fit: contain;
+}
+
+.information .messages{
+    width:50%;
+    height:80%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+    position: relative;
+    right: 12vw;
+    top: -6vh;
+}
+
+.information .messages .message{
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    color: #00635D;
+    padding: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: clamp(1.2rem, 1.5vw, 1.3rem);
+    max-width: 400px;
+    position: relative;
+}
+.information .messages .message::before{
+    content: url('../../images/text_triangle.svg');
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    transform: rotate(280deg);
+}
+
+@media screen and (max-width: 700px){
+    .information img{
+        width: 80%;
+        height:80%;
+        object-fit: contain;
+    }
+    .information .messages{
+        width:35%;
+    }
+    .information .messages .message{
+        font-size: .8rem;
+        width: 150px;
+    }
+}

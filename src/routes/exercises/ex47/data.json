@@ -1,0 +1,157 @@
+{
+    "options": [
+            {
+                "correct": "opt_1",
+                "question": "=15",
+                "options":[
+                    {
+                        "img": "v1_Opcion1.svg",
+                        "value": "opt_1"
+                    },
+                    {
+                        "img": "v1_Opcion2.svg",
+                        "value": "opt_2"
+                    }
+                ]
+            },
+            {
+                "correct": "opt_1",
+                "question": "=20",
+                "options":[
+                    {
+                        "img": "v2_Opcion1.svg",
+                        "value": "opt_1"
+                    },
+                    {
+                        "img": "v2_Opcion2.svg",
+                        "value": "opt_2"
+                    }
+                ]
+            },
+            {
+                "correct": "opt_1",
+                "question": "=15",
+                "options":[
+                    {
+                        "img": "v3_Opcion1.svg",
+                        "value": "opt_1"
+                    },
+                    {
+                        "img": "v3_Opcion2.svg",
+                        "value": "opt_2"
+                    }
+                ]
+            },
+            {
+                "correct": "opt_1",
+                "question": "=150",
+                "options":[
+                    {
+                        "img": "v4_Opcion2.svg",
+                        "value": "opt_2"
+                    },
+                    {
+                        "img": "v4_Opcion1.svg",
+                        "value": "opt_1"
+                    }                    
+                ]
+            },
+            {
+                "correct": "opt_1",
+                "question": "=90",
+                "options":[
+                    {
+                        "img": "v5_Opcion2.svg",
+                        "value": "opt_2"
+                    },
+                    {
+                        "img": "v5_Opcion1.svg",
+                        "value": "opt_1"
+                    }
+                ]
+            },
+            {
+                "correct": "opt_1",
+                "question": "=100",
+                "options":[
+                    {
+                        "img": "v6_Opcion2.svg",
+                        "value": "opt_2"
+                    },
+                    {
+                        "img": "v6_Opcion1.svg",
+                        "value": "opt_1"
+                    }
+                ]
+            },
+            {
+                "correct": "opt_1",
+                "question": "=50",
+                "options":[
+                    {
+                        "img": "v7_Opcion1.svg",
+                        "value": "opt_1"
+                    },
+                    {
+                        "img": "v7_Opcion2.svg",
+                        "value": "opt_2"
+                    }
+                ]
+            },
+            {
+                "correct": "opt_1",
+                "question": "=60",
+                "options":[
+                    {
+                        "img": "v8_Opcion1.svg",
+                        "value": "opt_1"
+                    },
+                    {
+                        "img": "v8_Opcion2.svg",
+                        "value": "opt_2"
+                    }
+                ]
+            },
+            {
+                "correct": "opt_1",
+                "question": "=48",
+                "options":[
+                    {
+                        "img": "v9_Opcion2.svg",
+                        "value": "opt_2"
+                    },
+                    {
+                        "img": "v9_Opcion1.svg",
+                        "value": "opt_1"
+                    }
+                ]
+            },
+            {
+                "correct": "opt_1",
+                "question": "=18",
+                "options":[
+                    {
+                        "img": "v10_Opcion2.svg",
+                        "value": "opt_2"
+                    },
+                    {
+                        "img": "v10_Opcion1.svg",
+                        "value": "opt_1"
+                    }
+                ]
+            }
+    ],
+    "initMessages":[
+        "A continuación, verás dos opciones de algoritmos que cumplen con el mismo objetivo.",
+        "Analízalos y selecciona el que consideres más óptimo."
+    ],
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 1
+    },
+    "path": "47",
+    "color": "#9968A6",
+    "name": "Optimización",
+    "id": 47
+}

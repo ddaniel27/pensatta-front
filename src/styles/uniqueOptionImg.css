@@ -1,0 +1,50 @@
+.uniqueOptionImg{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-flow: rows;
+    grid-auto-rows: minmax(250px, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    overflow-y: auto;
+}
+
+.uniqueOptionImg label{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uniqueOptionImg label input{
+    display: none;
+}
+
+.uniqueOptionImg label p{
+    cursor: pointer;
+    border-radius: 20px;
+    aspect-ratio: 1/1;
+    min-height: 220px;
+    position: absolute;
+    background-color: #F2F2F2;
+    filter: drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.25));
+}
+
+.uniqueOptionImg label input:checked + p{
+    background-color: #F97D61;
+}
+
+.uniqueOptionImg label img{
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    aspect-ratio: 1/1;
+    width: 70%;
+    max-width: 210px;
+    min-height: 220px;
+}

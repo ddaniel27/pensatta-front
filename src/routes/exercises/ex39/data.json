@@ -1,0 +1,54 @@
+{
+    "isSingle": "false",
+    "columns": {
+        "column-1": {
+            "id": "column-1",
+            "title": "Bloques que puedes usar",
+            "optionsIds": [
+                "option-1",
+                "option-2"
+            ],
+            "isDropDisabled":true,
+            "info":"Solo puedes usar restas y multiplicaciones"
+        },
+        "column-2": {
+            "id": "column-2",
+            "title": "Cuando: presionar botón iniciar",
+            "optionsIds": []
+        }
+    },
+    "options": {
+        "option-1": {
+            "id": "option-1",
+            "key": "userInput",
+            "hasInput": true,
+            "type": "text",
+            "text": "Valor entrada"
+        },
+        "option-2": {
+            "id": "option-2",
+            "key": "operation",
+            "hasInput": true,
+            "type": "select",
+            "text": "Operación",
+            "options": [
+                "resta",
+                "multiplicar"
+            ]
+        }
+    },
+    "maxPieces":4,
+    "imgPath": "images/exercises/39/Calculadora.svg",
+    "initMessages":[
+        "Observa la cifra mostrada en la pantalla de la calculadora",
+        "Crea una operación con los bloques de programación que dé como resultado esa cifra."
+    ],
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 1
+    },
+    "path": "02",
+    "color": "#9968A6",
+    "name": "Calculadora"
+}

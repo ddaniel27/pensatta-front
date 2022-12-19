@@ -1,0 +1,30 @@
+{
+    "options": [
+        {
+            "question":"Que un tema sea tendencia depende de su popularidad.",
+            "answers":[
+                {
+                    "text":"Verdadero",
+                    "isCorrect":true
+                },
+                {
+                    "text":"False",
+                    "isCorrect":false
+                }
+            ]
+        }
+    ],
+    "initMessages":[
+        "Las redes sociales han generado nuevos conceptos como lo son “News” y “Trending”.",
+        "El primero se refiere a las últimas noticias, mientras el segundo se refiere a las noticias o temas que han sido tendencia recientemente.",
+        "A continuación, encontrarás contenido de la red social Twitter. Observalo y responde la pregunta que encontrarás al final del ejercicio."
+    ],
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 1
+    },
+    "color": "#9968A6",
+    "name": "Clasificación en redes sociales",
+    "id": 84
+}

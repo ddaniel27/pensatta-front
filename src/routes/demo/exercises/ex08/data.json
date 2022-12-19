@@ -1,0 +1,149 @@
+{
+    "options": [
+        {
+            "image":"FacebookTextPost3.svg",
+            "answers":[
+                {
+                    "name":"Seguro",
+                    "isCorrect": true
+                },
+                {
+                    "name":"Unsecure",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "image":"Twittertweet.svg",
+            "answers":[
+                {
+                    "name":"Seguro",
+                    "isCorrect": false
+                },
+                {
+                    "name":"Unsecure",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "image":"FacebookTextPost1.svg",
+            "answers":[
+                {
+                    "name":"Seguro",
+                    "isCorrect": true
+                },
+                {
+                    "name":"Unsecure",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "image":"FacebookTextPost2.svg",
+            "answers":[
+                {
+                    "name":"Seguro",
+                    "isCorrect": false
+                },
+                {
+                    "name":"Unsecure",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "image":"Twittertweet1.svg",
+            "answers":[
+                {
+                    "name":"Seguro",
+                    "isCorrect": true
+                },
+                {
+                    "name":"Unsecure",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "image": "Twittertweet2.svg",
+            "answers":[
+                {
+                    "name":"Seguro",
+                    "isCorrect": false
+                },
+                {
+                    "name":"Unsecure",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "image": "Twittertweet3.svg",
+            "answers":[
+                {
+                    "name":"Seguro",
+                    "isCorrect": true
+                },
+                {
+                    "name":"Unsecure",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "image": "FacebookTextPost.svg",
+            "answers":[
+                {
+                    "name":"Seguro",
+                    "isCorrect": false
+                },
+                {
+                    "name":"Unsecure",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "image": "Twittertweet4.svg",
+            "answers":[
+                {
+                    "name":"Seguro",
+                    "isCorrect": true
+                },
+                {
+                    "name":"Unsecure",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "image": "Twittertweet5.svg",
+            "answers":[
+                {
+                    "name":"Seguro",
+                    "isCorrect": false
+                },
+                {
+                    "name":"Unsecure",
+                    "isCorrect": true
+                }
+            ]
+        }
+    ],
+    "initMessages":[
+        "A continuación aparecerán una serie de publicaciones.",
+        "Determina si estas deben llevar un aviso de contenido sensible."
+    ],
+    "threshold": {
+        "max": 3,
+        "min": 1,
+        "perfect": 4
+    },
+    "path": "08",
+    "color": "#9968A6",
+    "name": "Publicaciones",
+    "id": 8,
+    "dim": 1,
+    "apr": 1
+}

@@ -1,0 +1,106 @@
+{
+    "options": [
+        {
+            "question": "Se requiere realizar una base de datos ordenada en tablas.",
+            "answers": [
+                {"text":"Excel", "isCorrect": true},
+                {"text":"Word", "isCorrect": false},
+                {"text":"PowerPoint", "isCorrect": false},
+                {"text":"One Note", "isCorrect": false}
+            ]
+        },
+        {
+            "question": "Se requiere escribir un informe, con imágenes y gráficas.",
+            "answers": [
+                {"text":"Word", "isCorrect": true},
+                {"text":"PowerPoint", "isCorrect":false},
+                {"text":"Excel", "isCorrect":false},
+                {"text":"One Note", "isCorrect":false}
+            ]
+        },
+        {
+            "question": "Se requiere tomar notas por medio de teclado o lápiz óptico.",
+            "answers": [
+                {"text":"One Note", "isCorrect": true},
+                {"text":"Word", "isCorrect": false},
+                {"text":"Excel", "isCorrect": false},
+                {"text":"PowerPoint", "isCorrect": false}
+            ]
+        },
+        {
+            "question": "Se requiere realizar una presentación con animaciones, texto y gráficas.",
+            "answers": [
+                {"text":"Powerpoint", "isCorrect": true},
+                {"text":"Word", "isCorrect":false},
+                {"text":"Excel", "isCorrect":false},
+                {"text":"One Note", "isCorrect":false}
+            ]
+        },
+        {
+            "question": "Se requiere realizar la edición de una fotografía.",
+            "answers": [
+                {"text":"Powerpoint", "isCorrect": false},
+                {"text":"Word", "isCorrect":false},
+                {"text":"Photoshop", "isCorrect":true},
+                {"text":"One Note", "isCorrect":false}
+            ]
+        },
+        {
+            "question": "Se requiere editar un audio.",
+            "answers": [
+                {"text":"Audacity", "isCorrect": true},
+                {"text":"Word", "isCorrect":false},
+                {"text":"Excel", "isCorrect":false},
+                {"text":"Photoshop", "isCorrect":false}
+            ]
+        },
+        {
+            "question": "Se requiere realizar una edición de video.",
+            "answers": [
+                {"text":"Movie Maker", "isCorrect": true},
+                {"text":"Word", "isCorrect":false},
+                {"text":"Audacity", "isCorrect":false},
+                {"text":"One Note", "isCorrect":false}
+            ]
+        },
+        {
+            "question": "Se requiere navegar en internet de manera segura.",
+            "answers": [
+                {"text":"Google Chrome", "isCorrect": true},
+                {"text":"Word", "isCorrect":false},
+                {"text":"Excel", "isCorrect":false},
+                {"text":"One Note", "isCorrect":false}
+            ]
+        },
+        {
+            "question": "Se requiere realizar una reunión virtual.",
+            "answers": [
+                {"text":"Microsoft Teams", "isCorrect": true},
+                {"text":"Visual Studio", "isCorrect":false},
+                {"text":"Excel", "isCorrect":false},
+                {"text":"One Note", "isCorrect":false}
+            ]
+        },
+        {
+            "question": "Se requiere almacenar datos en la nube.",
+            "answers": [
+                {"text":"One Drive", "isCorrect": true},
+                {"text":"Word", "isCorrect":false},
+                {"text":"Excel", "isCorrect":false},
+                {"text":"One Note", "isCorrect":false}
+            ]
+        }
+    ],
+    "initMessages":[
+        "Selecciona el software ofimático que mejor se ajusta a la necesidad.", 
+        "Tienes 3 minutos luego de presionar el botón de iniciar. ¡Mucha suerte!"
+    ],
+    "threshold": {
+        "max": 2,
+        "min": 1,
+        "perfect": 4
+    },
+    "color": "#1B6893",
+    "name":"Software adecuado",
+    "id": 22
+}

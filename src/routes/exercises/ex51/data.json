@@ -1,0 +1,362 @@
+{
+    "isSingle": true,
+    "isLoop": true,
+    "variations":[
+        {
+            "columns": {
+                "column-1": {
+                    "id": "column-1",
+                    "title": "Cambiar el color de fondo",
+                    "optionsIds": [
+                        "option-2"
+                    ]
+                },
+                "column-2": {
+                    "id": "column-2",
+                    "title": "Calcuar el costo de impuesto",
+                    "optionsIds": [
+                        "option-3"
+                    ]
+                },
+                "column-3": {
+                    "id": "column-3",
+                    "title": "Programar movimiento",
+                    "optionsIds": [
+                        "option-1"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "excavar",
+                    "text": "Excavar",
+                    "value": 1,
+                    "src":"51/Opcion1.svg"
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "avanzar",
+                    "text": "Avanzar",
+                    "value": 2,
+                    "src":"51/Opcion2.svg"
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "cerrar",
+                    "text": "Cerrar",
+                    "value": 3,
+                    "src":"51/Opcion3.svg"
+                }
+            }
+        },
+        {
+            "columns": {
+                "column-1": {
+                    "id": "column-1",
+                    "title": "Clasificar elementos",
+                    "optionsIds": [
+                        "option-2"
+                    ]
+                },
+                "column-2": {
+                    "id": "column-2",
+                    "title": "Buscar información de un autor en internet",
+                    "optionsIds": [
+                        "option-3"
+                    ]
+                },
+                "column-3": {
+                    "id": "column-3",
+                    "title": "Definir el orden de repoducción",
+                    "optionsIds": [
+                        "option-1"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "excavar",
+                    "text": "Excavar",
+                    "value": 1,
+                    "src":"51/Opcion4.svg"
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "avanzar",
+                    "text": "Avanzar",
+                    "value": 2,
+                    "src":"51/Opcion5.svg"
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "cerrar",
+                    "text": "Cerrar",
+                    "value": 3,
+                    "src":"51/Opcion6.svg"
+                }
+            }
+        },
+        {
+            "columns": {
+                "column-1": {
+                    "id": "column-1",
+                    "title": "Descargar archivos recibidos por correo",
+                    "optionsIds": [
+                        "option-2"
+                    ]
+                },
+                "column-2": {
+                    "id": "column-2",
+                    "title": "Traducir un texto",
+                    "optionsIds": [
+                        "option-3"
+                    ]
+                },
+                "column-3": {
+                    "id": "column-3",
+                    "title": "Redactar un documento de texto",
+                    "optionsIds": [
+                        "option-1"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "excavar",
+                    "text": "Excavar",
+                    "value": 1,
+                    "src":"51/Opcion7.svg"
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "avanzar",
+                    "text": "Avanzar",
+                    "value": 2,
+                    "src":"51/Opcion8.svg"
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "cerrar",
+                    "text": "Cerrar",
+                    "value": 3,
+                    "src":"51/Opcion9.svg"
+                }
+            }
+        },
+        {
+            "columns": {
+                "column-1": {
+                    "id": "column-1",
+                    "title": "Clasificar elementos",
+                    "optionsIds": [
+                        "option-2"
+                    ]
+                },
+                "column-2": {
+                    "id": "column-2",
+                    "title": "Traducir un texto",
+                    "optionsIds": [
+                        "option-3"
+                    ]
+                },
+                "column-3": {
+                    "id": "column-3",
+                    "title": "Definir el orden de repoducción",
+                    "optionsIds": [
+                        "option-1"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "excavar",
+                    "text": "Excavar",
+                    "value": 1,
+                    "src":"51/Opcion4.svg"
+                },
+                
+                "option-2": {
+                    "id": "option-2",
+                    "key": "avanzar",
+                    "text": "Avanzar",
+                    "value": 2,
+                    "src":"51/Opcion8.svg"
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "cerrar",
+                    "text": "Cerrar",
+                    "value": 3,
+                    "src":"51/Opcion6.svg"
+                }
+            }
+        },
+        {
+            "columns": {
+                "column-1": {
+                    "id": "column-1",
+                    "title": "Descargar archivos recibidos por correo",
+                    "optionsIds": [
+                        "option-2"
+                    ]
+                },
+                "column-2": {
+                    "id": "column-2",
+                    "title": "Buscar información de un autor en internet",
+                    "optionsIds": [
+                        "option-3"
+                    ]
+                },
+                "column-3": {
+                    "id": "column-3",
+                    "title": "Redactar un documento de texto",
+                    "optionsIds": [
+                        "option-1"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "excavar",
+                    "text": "Excavar",
+                    "value": 1,
+                    "src":"51/Opcion7.svg"
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "avanzar",
+                    "text": "Avanzar",
+                    "value": 2,
+                    "src":"51/Opcion5.svg"
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "cerrar",
+                    "text": "Cerrar",
+                    "value": 3,
+                    "src":"51/Opcion9.svg"
+                }
+            }
+        },
+        {
+            "columns": {
+                "column-1": {
+                    "id": "column-1",
+                    "title": "Cambiar el color de fondo",
+                    "optionsIds": [
+                        "option-2"
+                    ]
+                },
+                "column-2": {
+                    "id": "column-2",
+                    "title": "Calcuar el costo de impuesto",
+                    "optionsIds": [
+                        "option-3"
+                    ]
+                },
+                "column-3": {
+                    "id": "column-3",
+                    "title": "Definir el orden de repoducción",
+                    "optionsIds": [
+                        "option-1"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "excavar",
+                    "text": "Excavar",
+                    "value": 1,
+                    "src":"51/Opcion1.svg"
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "avanzar",
+                    "text": "Avanzar",
+                    "value": 2,
+                    "src":"51/Opcion2.svg"
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "cerrar",
+                    "text": "Cerrar",
+                    "value": 3,
+                    "src":"51/Opcion6.svg"
+                }
+            }
+        },
+        {
+            "columns": {
+                "column-1": {
+                    "id": "column-1",
+                    "title": "Clasificar elementos",
+                    "optionsIds": [
+                        "option-2"
+                    ]
+                },
+                "column-2": {
+                    "id": "column-2",
+                    "title": "Buscar información de un autor en internet",
+                    "optionsIds": [
+                        "option-3"
+                    ]
+                },
+                "column-3": {
+                    "id": "column-3",
+                    "title": "Programar movimiento",
+                    "optionsIds": [
+                        "option-1"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "excavar",
+                    "text": "Excavar",
+                    "value": 1,
+                    "src":"51/Opcion4.svg"
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "avanzar",
+                    "text": "Avanzar",
+                    "value": 2,
+                    "src":"51/Opcion5.svg"
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "cerrar",
+                    "text": "Cerrar",
+                    "value": 3,
+                    "src":"51/Opcion3.svg"
+                }
+            }
+        }
+    ],
+    "sequence":[
+        "option-1",
+        "option-2",
+        "option-3"
+    ],
+    "initMessages":[
+        "A continuación, encontrarás tres eventos diferentes.",
+        "Debajo de estos, encontrarás tres algoritmos en bloque que describen los eventos.",
+        "Arrastra los algoritmos debajo del evento al que corresponden."
+    ],
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 1
+    },
+    "path": "13",
+    "color": "#588F64",
+    "name": "Algoritmos en bloque",
+    "id": "51"
+}

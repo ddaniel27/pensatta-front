@@ -1,0 +1,61 @@
+{
+    "columns": {
+        "column-2": {
+            "id": "column-2",
+            "title": "Cuando: presionar botón iniciar",
+            "optionsIds": [
+                "option-4",
+                "option-2",
+                "option-5",
+                "option-3",
+                "option-1"
+            ]
+        }
+    },
+    "options": {
+        "option-1": {
+            "id": "option-1",
+            "key": "preload",
+            "text": "Poner primer pan",
+            "value": 1
+        },
+        "option-2": {
+            "id": "option-2",
+            "key": "preload2",
+            "text": "Poner el queso",
+            "value": 2
+        },
+        "option-3": {
+            "id": "option-3",
+            "key": "preload3",
+            "text": "Poner el jamón",
+            "value": 3
+        },
+        "option-4": {
+            "id": "option-4",
+            "key": "preload4",
+            "text": "Poner la salsa",
+            "value": 4
+        },
+        "option-5": {
+            "id": "option-5",
+            "key": "preload5",
+            "text": "Poner segundo pan",
+            "value": 5
+        }
+    },
+    "imgPath": "images/exercises/24/Lights.svg",
+    "initMessages":[
+        "A continuación, visualizarás un algoritmo implementado en bloques, que tiene un par de errores.",
+        "Corrígelos para su correcta ejecución y luego presiona el botón 'Depurar.",
+        "Se encenderá la luz verde de la izquierda si el código es correcto o roja si es incorrecto."
+    ],
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 1
+    },
+    "path": "02",
+    "color": "#9968A6",
+    "name": "Corregir receta"
+}

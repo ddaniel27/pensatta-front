@@ -1,0 +1,39 @@
+{
+    "options": [
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text":"Pueden resultar complejas en interacción, pero eficientes para imitar comportamientos naturales",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Generan datos de todos los aspectos relevantes a estudiar, incluso los que no se contemplan al inicio",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Permiten interpretar fenómenos desde la observación e interacción",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Permiten tener datos reales del total de una población",
+                    "isCorrect":false
+                }
+            ],
+            "multiple":true,
+            "maxOptions":2
+        }
+    ],
+    "initMessages":[
+        "Las simulaciones son una herramienta muy versátil para comprender comportamientos o sistemas.",
+        "Tienen diversas ventajas. Selecciona las que consideres en la lista a continuación."
+    ],
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 1
+    },
+    "color": "#9968A6",
+    "name": "Beneficios de las simulaciones",
+    "id": 95
+}

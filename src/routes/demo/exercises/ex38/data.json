@@ -1,0 +1,145 @@
+{
+    "isSingle": "false",
+    "columns": {
+        "column-1": {
+            "id": "column-1",
+            "title": "Bloques que puedes usar",
+            "optionsIds": [
+                "option-1",
+                "option-2",
+                "option-3",
+                "option-4"
+            ],
+            "isDropDisabled":true,
+            "info":"Ingresa los valores a los bloques y arrástralos para para construir el algoritmo."
+        },
+        "column-2": {
+            "id": "column-2",
+            "title": "Cuando: presionar botón iniciar",
+            "optionsIds": []
+        }
+    },
+    "options": {
+        "option-1": {
+            "id": "option-1",
+            "key": "arriba",
+            "hasInput": true,
+            "type": "text",
+            "text": "Pasos arriba"
+        },
+        "option-2": {
+            "id": "option-2",
+            "key": "abajo",
+            "hasInput": true,
+            "type": "text",
+            "text": "Pasos abajo"
+        },
+        "option-3": {
+            "id": "option-3",
+            "key": "derecha",
+            "hasInput": true,
+            "type": "text",
+            "text": "Pasos derecha"
+        },
+        "option-4": {
+            "id": "option-4",
+            "key": "izquierda",
+            "hasInput": true,
+            "type": "text",
+            "text": "Pasos izquierda"
+        }
+    },
+    "matrices":[
+        [
+            [2,2,2,2,2,2,2],
+            [2,1,1,1,1,1,2],
+            [2,1,1,1,1,1,2],
+            [2,1,3,3,1,1,2],
+            [2,1,1,1,1,1,2],
+            [2,3,1,1,1,3,2],
+            [2,2,2,2,2,2,2]
+        ],
+        [
+            [2,2,2,2,2,2,2],
+            [2,1,1,1,1,1,2],
+            [2,1,1,1,3,1,2],
+            [2,1,1,3,1,1,2],
+            [2,1,1,1,1,1,2],
+            [2,1,3,1,1,3,2],
+            [2,2,2,2,2,2,2]
+        ],
+        [
+            [2,2,2,2,2,2,2],
+            [2,1,1,1,1,1,2],
+            [2,1,3,3,1,1,2],
+            [2,1,3,1,1,1,2],
+            [2,1,1,1,1,1,2],
+            [2,3,1,1,1,1,2],
+            [2,2,2,2,2,2,2]
+        ],
+        [
+            [2,2,2,2,2,2,2],
+            [2,1,1,1,1,1,2],
+            [2,1,1,1,1,1,2],
+            [2,1,3,3,3,1,2],
+            [2,1,1,1,1,1,2],
+            [2,1,1,3,1,1,2],
+            [2,2,2,2,2,2,2]
+        ],
+        [
+            [2,2,2,2,2,2,2],
+            [2,1,1,1,3,1,2],
+            [2,1,1,3,1,1,2],
+            [2,1,3,3,1,1,2],
+            [2,1,1,1,1,1,2],
+            [2,1,1,1,1,1,2],
+            [2,2,2,2,2,2,2]
+        ],
+        [
+            [2,2,2,2,2,2,2],
+            [2,1,1,1,1,3,2],
+            [2,1,1,1,1,1,2],
+            [2,1,1,3,1,3,2],
+            [2,1,1,1,1,1,2],
+            [2,1,1,1,1,3,2],
+            [2,2,2,2,2,2,2]
+        ],
+        [
+            [2,2,2,2,2,2,2],
+            [2,1,1,1,1,1,2],
+            [2,1,3,1,1,1,2],
+            [2,1,1,3,1,1,2],
+            [2,1,1,1,1,1,2],
+            [2,1,3,1,1,3,2],
+            [2,2,2,2,2,2,2]
+        ],
+        [
+            [2,2,2,2,2,2,2],
+            [2,1,1,3,1,1,2],
+            [2,1,1,1,1,1,2],
+            [2,1,3,1,1,3,2],
+            [2,1,1,1,1,1,2],
+            [2,1,1,3,1,1,2],
+            [2,2,2,2,2,2,2]
+        ]
+    ],
+    "maxPieces":4,
+    "imgPath": "images/exercises/38/Roomba.svg",
+    "collectPath": "images/exercises/38/Mancha_2.svg",
+    "initPos": [1,1],
+    "initMessages":[
+        "Programa al robot de limpieza.",
+        "Observa las baldosas que se encuentran sucias y programa el algoritmo para que el robot se dirija a ellas y las limpie."
+    ],
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 1
+    },
+    "path": "02",
+    "color": "#9968A6",
+    "name": "Limpiar la mancha",
+    "id": 38,
+    "dim": 5,
+    "apr": 1
+}

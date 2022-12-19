@@ -1,0 +1,19 @@
+<svg width="780" height="180" viewBox="0 0 780 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 7">
+<path id="Vector 9" d="M180 40H300" stroke="#333333" stroke-width="10"/>
+<path id="Vector 10" d="M180 140H300" stroke="#333333" stroke-width="10"/>
+<path id="Vector 11" d="M480 90H600.5" stroke="#333333" stroke-width="10"/>
+<g id="And">
+<rect x="300" width="180" height="180" rx="20" fill="#333333"/>
+</g>
+<g id="Answ">
+<rect x="600" y="50" width="180" height="80" rx="20" fill="#333333"/>
+</g>
+<g id="A">
+<rect width="180" height="80" rx="20" fill="#333333"/>
+</g>
+<g id="B">
+<rect y="100" width="180" height="80" rx="20" fill="#333333"/>
+</g>
+</g>
+</svg>

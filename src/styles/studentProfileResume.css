@@ -1,0 +1,57 @@
+.student-profile-viewer{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 40% 50%;
+    row-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.student-profile-viewer > div {
+  width: 90%;
+  height: 100%;
+}
+
+.student-profile-viewer-header-right{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 50% 50%;
+  justify-items: center;
+  align-items: end;
+  row-gap: 10px;
+}
+
+.student-profile-viewer-header-right span{
+  font-size: 0.9rem;
+  text-align: center;
+  color: #008E86;
+  font-weight: bold;
+}
+
+.student-profile-viewer-header-right .level-span{
+  align-self: start;
+}
+
+.student-profile-viewer-body-left{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 30% 70%;
+}
+
+.student-profile-viewer-body-left .table-display-exercises{
+  width: 100%;
+  grid-row: 2;
+}
+
+@media (max-width: 700px) {
+  .student-profile-viewer {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4,50%);
+    row-gap: 20px;
+  }
+}

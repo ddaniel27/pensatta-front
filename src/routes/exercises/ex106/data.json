@@ -1,0 +1,60 @@
+{
+    "variations":[
+        {
+            "columns": {
+                "column": {
+                    "id": "column",
+                    "title": "Opciones de hardware",
+                    "optionsIds": [
+                        "option-2",
+                        "option-1",
+                        "option-4",
+                        "option-3"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "arriba",
+                    "text": "Procesador a 1.8 GHz de 6 nucleos, RAM 3GB, Disco duro de 250GB"
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "abajo",
+                    "text": "Procesador a 2.0 GHz de 8 nucleos, RAM 16GB, Disco duro de 1TB"
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "derecha",
+                    "text": "Procesador a 2.8 GHz de 8 nucleos, RAM 8GB, Disco duro de 1TB"
+                },
+                "option-4": {
+                    "id": "option-4",
+                    "key": "izquierda",
+                    "text": "Procesador a 2.4 GHz de 4 nucleos, RAM 6GB, Disco duro de 500GB"
+                }
+            },
+            "sequence":[
+                "option-2",
+                "option-3",
+                "option-4",
+                "option-1"
+            ]
+        }
+    ],
+    "initMessages":[
+        "El rendimiento de un equipo se ve influenciado en gran medida por su hardware y la combinación entre características del mismo.",
+        "La frecuencia de operación y número de núcleos del procesador, la capacidad de memoria RAM y de almacenamiento del disco duro, son determinantes para esta cualidad.",
+        "Analiza el hardware de los siguientes equipos y ordénalos de mayor a menor rendimiento."
+    ],
+    "threshold": {
+        "max": 3,
+        "min": 1,
+        "perfect": 4
+    },
+    "path": "106",
+    "color": "#9968A6",
+    "name": "Ordenar Hardware",
+    "id": 106
+}

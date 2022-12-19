@@ -1,0 +1,49 @@
+.animation-ex28{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 80% 20%;
+    overflow-y: auto;
+}
+.animation-ex28 .animation-realted{
+    position: relative;
+}
+.animation-ex28 .animation-related p{
+    cursor: pointer;
+    background-color: #F97D61;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    filter: drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.25));
+    padding: 10px 40px;
+    border-radius: 20px;
+    top: 10%;
+    left: 10%;
+}
+
+.animation-ex28 .animation-related-ex47{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.animation-ex28 .animation-related-ex47 h3, .animation-ex28 .animation-related-ex47 span{
+    background-color: #00635D;
+    border: 3px solid #00D8CC;
+    border-radius: 12px;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 20px 40px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+@media screen and (max-width:700px){
+    .animation-ex28{
+        grid-template-columns: 100%;
+        grid-template-rows: 100% 100% 10%;
+    }
+}

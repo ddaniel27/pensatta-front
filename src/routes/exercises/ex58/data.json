@@ -1,0 +1,440 @@
+{
+    "variations":[
+        {
+            "columns": {
+                "column-1": {
+                    "id": "column-1",
+                    "title": "doc",
+                    "optionsIds": [
+                        "option-2"
+                    ]
+                },
+                "column-2": {
+                    "id": "column-2",
+                    "title": "jpg",
+                    "optionsIds": [
+                        "option-3"
+                    ]
+                },
+                "column-3": {
+                    "id": "column-3",
+                    "title": "mp4",
+                    "optionsIds": [
+                        "option-1"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "excavar",
+                    "text": "Excavar",
+                    "value": 1,
+                    "src":"58/doc.svg"
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "avanzar",
+                    "text": "Avanzar",
+                    "value": 2,
+                    "src":"58/jpg.svg"
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "cerrar",
+                    "text": "Cerrar",
+                    "value": 3,
+                    "src":"58/mp4.svg"
+                }
+            },
+            "sequence":[
+                "option-1",
+                "option-2",
+                "option-3"
+            ]
+        },
+        {
+            "columns": {
+                "column-1": {
+                    "id": "column-1",
+                    "title": "mp3",
+                    "optionsIds": [
+                        "option-2"
+                    ]
+                },
+                "column-2": {
+                    "id": "column-2",
+                    "title": "pdf",
+                    "optionsIds": [
+                        "option-3"
+                    ]
+                },
+                "column-3": {
+                    "id": "column-3",
+                    "title": "ppt",
+                    "optionsIds": [
+                        "option-1"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "excavar",
+                    "text": "Excavar",
+                    "value": 1,
+                    "src":"58/mp3.svg"
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "avanzar",
+                    "text": "Avanzar",
+                    "value": 2,
+                    "src":"58/pdf.svg"
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "cerrar",
+                    "text": "Cerrar",
+                    "value": 3,
+                    "src":"58/ppt.svg"
+                }
+            },
+            "sequence":[
+                "option-1",
+                "option-2",
+                "option-3"
+            ]
+        },
+        {
+            "columns": {
+                "column-1": {
+                    "id": "column-1",
+                    "title": "psd",
+                    "optionsIds": [
+                        "option-2"
+                    ]
+                },
+                "column-2": {
+                    "id": "column-2",
+                    "title": "xlsx",
+                    "optionsIds": [
+                        "option-3"
+                    ]
+                },
+                "column-3": {
+                    "id": "column-3",
+                    "title": "ppt",
+                    "optionsIds": [
+                        "option-1"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "excavar",
+                    "text": "Excavar",
+                    "value": 1,
+                    "src":"58/psd.svg"
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "avanzar",
+                    "text": "Avanzar",
+                    "value": 2,
+                    "src":"58/xlsx.svg"
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "cerrar",
+                    "text": "Cerrar",
+                    "value": 3,
+                    "src":"58/ppt.svg"
+                }
+            },
+            "sequence":[
+                "option-1",
+                "option-2",
+                "option-3"
+            ]
+        },
+        {
+            "columns": {
+                "column-1": {
+                    "id": "column-1",
+                    "title": "mp4",
+                    "optionsIds": [
+                        "option-2"
+                    ]
+                },
+                "column-2": {
+                    "id": "column-2",
+                    "title": "doc",
+                    "optionsIds": [
+                        "option-3"
+                    ]
+                },
+                "column-3": {
+                    "id": "column-3",
+                    "title": "pdf",
+                    "optionsIds": [
+                        "option-1"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "excavar",
+                    "text": "Excavar",
+                    "value": 1,
+                    "src":"58/mp4.svg"
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "avanzar",
+                    "text": "Avanzar",
+                    "value": 2,
+                    "src":"58/doc.svg"
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "cerrar",
+                    "text": "Cerrar",
+                    "value": 3,
+                    "src":"58/pdf.svg"
+                }
+            },
+            "sequence":[
+                "option-1",
+                "option-2",
+                "option-3"
+            ]
+        },
+        {
+            "columns": {
+                "column-1": {
+                    "id": "column-1",
+                    "title": "jpg",
+                    "optionsIds": [
+                        "option-2"
+                    ]
+                },
+                "column-2": {
+                    "id": "column-2",
+                    "title": "xlsx",
+                    "optionsIds": [
+                        "option-3"
+                    ]
+                },
+                "column-3": {
+                    "id": "column-3",
+                    "title": "psd",
+                    "optionsIds": [
+                        "option-1"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "excavar",
+                    "text": "Excavar",
+                    "value": 1,
+                    "src":"58/jpg.svg"
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "avanzar",
+                    "text": "Avanzar",
+                    "value": 2,
+                    "src":"58/xlsx.svg"
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "cerrar",
+                    "text": "Cerrar",
+                    "value": 3,
+                    "src":"58/psd.svg"
+                }
+            },
+            "sequence":[
+                "option-1",
+                "option-2",
+                "option-3"
+            ]
+        },
+        {
+            "columns": {
+                "column-1": {
+                    "id": "column-1",
+                    "title": "psd",
+                    "optionsIds": [
+                        "option-2"
+                    ]
+                },
+                "column-2": {
+                    "id": "column-2",
+                    "title": "ppt",
+                    "optionsIds": [
+                        "option-3"
+                    ]
+                },
+                "column-3": {
+                    "id": "column-3",
+                    "title": "mp4",
+                    "optionsIds": [
+                        "option-1"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "excavar",
+                    "text": "Excavar",
+                    "value": 1,
+                    "src":"58/psd.svg"
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "avanzar",
+                    "text": "Avanzar",
+                    "value": 2,
+                    "src":"58/ppt.svg"
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "cerrar",
+                    "text": "Cerrar",
+                    "value": 3,
+                    "src":"58/mp4.svg"
+                }
+            },
+            "sequence":[
+                "option-1",
+                "option-2",
+                "option-3"
+            ]
+        },
+        {
+            "columns": {
+                "column-1": {
+                    "id": "column-1",
+                    "title": "xlsx",
+                    "optionsIds": [
+                        "option-2"
+                    ]
+                },
+                "column-2": {
+                    "id": "column-2",
+                    "title": "doc",
+                    "optionsIds": [
+                        "option-3"
+                    ]
+                },
+                "column-3": {
+                    "id": "column-3",
+                    "title": "ppt",
+                    "optionsIds": [
+                        "option-1"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "excavar",
+                    "text": "Excavar",
+                    "value": 1,
+                    "src":"58/xlsx.svg"
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "avanzar",
+                    "text": "Avanzar",
+                    "value": 2,
+                    "src":"58/doc.svg"
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "cerrar",
+                    "text": "Cerrar",
+                    "value": 3,
+                    "src":"58/ppt.svg"
+                }
+            },
+            "sequence":[
+                "option-1",
+                "option-2",
+                "option-3"
+            ]
+        },
+        {
+            "columns": {
+                "column-1": {
+                    "id": "column-1",
+                    "title": "jpg",
+                    "optionsIds": [
+                        "option-2"
+                    ]
+                },
+                "column-2": {
+                    "id": "column-2",
+                    "title": "pdf",
+                    "optionsIds": [
+                        "option-3"
+                    ]
+                },
+                "column-3": {
+                    "id": "column-3",
+                    "title": "ppt",
+                    "optionsIds": [
+                        "option-1"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "excavar",
+                    "text": "Excavar",
+                    "value": 1,
+                    "src":"58/jpg.svg"
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "avanzar",
+                    "text": "Avanzar",
+                    "value": 2,
+                    "src":"58/pdf.svg"
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "cerrar",
+                    "text": "Cerrar",
+                    "value": 3,
+                    "src":"58/ppt.svg"
+                }
+            },
+            "sequence":[
+                "option-1",
+                "option-2",
+                "option-3"
+            ]
+        }
+    ],
+    "initMessages":[
+        "Arrastra los archivos, según su tipo, a su respectiva extensión."
+    ],
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 1
+    },
+    "path": "58",
+    "color": "#588F64",
+    "name": "Extensiones",
+    "id": 58
+}

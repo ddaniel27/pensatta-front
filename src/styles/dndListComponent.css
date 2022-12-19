@@ -1,0 +1,43 @@
+.drag-drop-list-context{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.droppable-list-container{
+    aspect-ratio: 13/9;
+    background-color: #333333;
+    width: 30%;
+    min-width: 300px;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 70%;
+}
+
+.droppable-list-container .title-list{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.droppable-list-container .title-list h2{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.draggable-list-item{
+    width: 100%;
+    height: 100%;
+}
+
+.draggable-list-item img{
+    width: 100%;
+    height: 100%;
+}

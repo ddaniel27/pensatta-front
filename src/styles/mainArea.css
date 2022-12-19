@@ -1,0 +1,47 @@
+.main-area{
+    position: relative;
+    width: 100%;
+}
+
+.main-area button{
+    position: absolute;
+    bottom: 5vh;
+    right: 5vw;
+    background: #F97D61;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    filter: drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.25));
+    transition: 0.2s;
+    z-index: 2;
+}
+
+.main-area button:active{
+    transform: translateY(5px);
+    filter: none;
+}
+
+.main-area button:disabled{
+    background: #4F4F4F;
+    color: #BDBDBD;
+    cursor: not-allowed;
+}
+
+@media screen and (max-width: 700px){
+    .main-area button{
+        position: relative;
+        right: 0;
+        bottom: 0;
+        padding: 10px 40px;
+        font-size: 14px;
+    }
+    .main-area > button {
+        position: absolute;
+        bottom: 5vh;
+        right: 5vw;
+    }
+}

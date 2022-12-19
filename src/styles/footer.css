@@ -1,0 +1,11 @@
+footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+footer img{
+    object-fit: contain;
+    height: 100%;
+}

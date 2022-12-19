@@ -1,0 +1,127 @@
+.slider{
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto;
+}
+
+.slider > div > span{
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    background-image: url("../../images/Atomo_Icono_Flecha2.svg");
+    background-size: contain;
+}
+
+.slider > div:first-child > span{
+    position: relative;
+    overflow: hidden;
+    transform: rotate(180deg);
+}
+
+.images-site{
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+.images-site > div{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70% 30%;
+    align-items: center;
+    justify-items: center;
+}
+
+.images-site .curr-image{
+    grid-column: 2;
+    width: 100%;
+    height: 100%;
+}
+
+.images-site .curr-image img{
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    align-self: end;
+}
+
+.images-site .prev-image{
+    grid-column: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.images-site .prev-image img{
+    width: 90%;
+    height: 20%;
+    object-fit: contain;
+    align-self: end;
+}
+
+.images-site .prev-image p, .images-site .curr-image p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    width: 85%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.images-site .prev-image p{
+    font-size: 1rem;
+}
+
+.increase{
+    grid-column: 3;
+}
+
+.decrease{
+    grid-column: 1;
+}
+
+.increase, .decrease{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 700px){
+    .slider{
+        width: 100%;
+    }
+    .slider > div > span{
+        width: 40px;
+        height: 40px;
+    }
+    .images-site{
+        grid-template-columns: 1fr 1fr;
+    }
+    .images-site > div{
+        grid-template-rows: 50% 20%;
+        align-items: start;
+        justify-items: center;
+    }
+    .images-site .curr-image img, .images-site .prev-image img{
+        height: 50%;
+    }
+
+    .images-site .prev-image p, .images-site .curr-image p{
+        font-size: 0.9rem;
+    }
+}

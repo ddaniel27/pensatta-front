@@ -1,0 +1,31 @@
+.timer{
+    position: absolute;
+    width: 100%;
+    height:clamp(80px, 100%, 150px);
+    z-index: 2;
+    top: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer h1{
+    font-size: clamp(2rem, 100%, 3rem);
+    font-weight: bold;
+    color: #00635D;
+    background-color: #69E485;
+    padding:5px 20px;
+    width: 200px;
+    border-radius: 20px;
+    text-align: center;
+    filter: drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.25));
+    transition: .3s ease-in-out;
+}
+
+.timer.warning h1{
+    background-color: #EDCA71;
+}
+
+.timer.danger h1{
+    background-color: #FF7171;
+}

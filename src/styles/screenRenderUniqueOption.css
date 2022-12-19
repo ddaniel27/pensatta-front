@@ -1,0 +1,41 @@
+.screenRenderUniqueOption{
+    width:100%;
+    height:100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80%;
+    align-items: center;
+    justify-items: center;
+    overflow-x: hidden;
+}
+
+.screenRenderUniqueOption img{
+    width:90%;
+    height:90%;
+    object-fit:contain;
+}
+
+.screenRenderUniqueOption .img-styled{
+    border: 5px solid white;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+}
+
+.screenRenderUniqueOption .img-mini{
+    width: 50%;
+    height: 50%;
+}
+
+@media screen and (max-width: 700px){
+    .screenRenderUniqueOption{
+        grid-template-columns: 1fr;
+        grid-template-rows: 70% 70% 20%;
+        overflow: scroll;
+        padding-bottom: 40px;
+        grid-gap: 20px;
+    }
+
+    .screenRenderUniqueOption .button-play{
+        grid-row: 3;
+    }
+}

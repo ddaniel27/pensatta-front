@@ -1,0 +1,93 @@
+{
+    "options": [
+        {
+            "question":"¿Qué aplicaciones en la imagen están en el teléfono desde el primer día?",
+            "answers":[
+                {
+                    "text":"Youtube",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Google Maps",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Whatsapp",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Instagram",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "Frame_1.svg",
+            "multiple":true,
+            "maxOptions":2
+        },
+        {
+            "question":"¿Cómo se hace para instalar las que no vienen en el teléfono?",
+            "answers":[
+                {
+                    "text":"Existe una tienda de aplicaciones en el teléfono para realizarlo.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Se puede transferir o descargar un archivo tipo APK.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Todas las aplicaciones vienen instaladas en el teléfono.",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Se deben instalar únicamente por medio de un computador portátil.",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "Frame_1.svg",
+            "multiple":true,
+            "maxOptions":2
+        },
+        {
+            "question":"Es posible desinstalar las aplicaciones del teléfono.",
+            "answers":[
+                {
+                    "text": "Verdadero",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Falso",
+                    "isCorrect": false
+                }
+            ],
+            "image":  "Frame_1.svg"
+        },
+        {
+            "question": "Es necesario instalar estas aplicaciones para que un teléfono funcione.",
+            "answers":[
+                {
+                    "text": "Verdadero",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Falso",
+                    "isCorrect": true
+                }
+            ],
+            "image":  "Frame_1.svg"
+        }
+    ],
+    "initMessages":[
+        "Observa el dispositivo a continuación. Selecciona la respuesta correcta para las preguntas.",
+        "Puede haber una o más respuestas correctas."
+    ],
+    "threshold": {
+        "max": 3,
+        "min": 1,
+        "perfect": 4
+    },
+    "path": "21",
+    "color": "#9968A6",
+    "name": "Conceptos básicos smartphone",
+    "id": 21
+}

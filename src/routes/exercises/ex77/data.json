@@ -1,0 +1,40 @@
+{
+    "options": [
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text":"Noticia: La seguridad de un banco fue violada y fueron robados 750 millones de dólares",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Correo electrónico: El sistema de registros del colegio fue deshabilitado temporalmente por mantenimiento",
+                    "isCorrect":false
+                },
+                {
+                    "text":"SMS: Felicitaciones, has ganado un bono de un milllón, ingresa tus datos en el siguiente enlace",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Noticia: Un fallo de los servidores porvocó la caída temporal de los servicios de internet durante 4 horas",
+                    "isCorrect":false
+                }
+            ],
+            "multiple":true,
+            "maxOptions":2
+        }
+    ],
+    "initMessages":[
+        "En el mundo digital podemos encontrar muchos beneficios en educación, arte, entretenimiento, etc.",
+        "Pero los riesgos en línea son cada vez mayores, los hackers y malwares hacen de navegar una tarea más responsable.",
+        "Selecciona los casos de riesgo en línea."
+    ],
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 1
+    },
+    "color": "#9968A6",
+    "name": "Riesgos tecnológicos",
+    "id": 77
+}

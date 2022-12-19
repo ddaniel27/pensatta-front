@@ -1,0 +1,76 @@
+.ex04-component{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+    overflow: auto;
+}
+
+.ex04-component .img-selector{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+}
+
+.ex04-component .img-selector span{
+    align-self: center;
+    justify-self: center;
+    font-weight: bold;
+    color:#00635D;
+    font-size: clamp(1.5rem, 2vh, 2.5rem);
+    text-align: center;
+}
+
+.ex04-component .img-selector .img-selector-item{
+    width: 100%;
+    height: 100%;
+}
+
+.ex04-component .img-selected{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    overflow: auto;
+    margin-top: 5%;
+}
+
+.ex04-component .img-selected label{
+    cursor: pointer;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #00635D;
+    font-size: clamp(1rem, 2vh, 2rem);
+    font-weight: bold;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+
+.ex04-component .img-selected label p:nth-child(2){
+    border: 2px solid #00635D;
+}
+
+.ex04-component .img-selected label input:checked + p:nth-child(2){
+    border: 2px solid #F97D61;
+}
+
+@media screen and (max-width: 700px){
+    .ex04-component{
+        grid-template-columns: 100%;
+        grid-template-rows: 100% 100%;
+    }
+
+    .ex04-component .img-selector{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+}

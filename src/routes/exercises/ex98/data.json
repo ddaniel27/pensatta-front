@@ -1,0 +1,102 @@
+{
+    "options": [
+        {
+            "question":"El teléfono estuvo conectado a internet 8 horas (Conectado = 0, Desconectado = 1)",
+            "answers":[
+                {
+                    "text":"Verdadero",
+                    "isCorrect":true
+                },
+                {
+                    "text": "Falso",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "conec_inter.svg"
+        },
+        {
+            "question":"Se ingresó 4 veces al correo electrónico (Ingreso = 1, Desconectado = 0)",
+            "answers":[
+                {
+                    "text":"Verdadero",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Falso",
+                    "isCorrect":true
+                }
+            ],
+            "image":  "email.svg"
+        },
+        {
+            "question":"Se usó PowerPoint durante 4 horas (Abierto = 0, Cerrado = 1)",
+            "answers":[
+                {
+                    "text":"Verdadero",
+                    "isCorrect":true
+                },
+                {
+                    "text": "Falso",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "powerpoint.svg"
+        },
+        {
+            "question":"Se usó Facebook durante 8 horas (Conectado = 1, Desconectado = 0)",
+            "answers":[
+                {
+                    "text":"Verdadero",
+                    "isCorrect":true
+                },
+                {
+                    "text": "Falso",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "facebook.svg"
+        },
+        {
+            "question":"Se usó Youtube durante 5 horas (Conectado = 1, Desconectado = 0)",
+            "answers":[
+                {
+                    "text":"Verdadero",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Falso",
+                    "isCorrect":true
+                }
+            ],
+            "image":  "youtube.svg"
+        },
+        {
+            "question":"Se usó Instagram durante 4 horas (Conectado = 0, Desconectado = 1)",
+            "answers":[
+                {
+                    "text":"Verdadero",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Falso",
+                    "isCorrect":true
+                }
+            ],
+            "image":  "instagram.svg"
+        }
+    ],
+    "initMessages":[
+        "Los dispositivos digitales que utilizamos a diario funcionan de manera binaria, es decir, sus comportamientos pueden definirse como 1 o 0.",
+        "Por ejemplo, un teléfono celular puede estar encendido (1) o apagado (0).",
+        "A continuación, encontrarás una gráfica que describe con lógica binaria la actividad de un teléfono durante un tiempo. Responde a las preguntas sobre la gráfica."
+    ],
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 2
+    },
+    "path": "98",
+    "color": "#9968A6",
+    "name": "Señales digitales",
+    "id": 98
+}

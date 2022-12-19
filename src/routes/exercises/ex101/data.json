@@ -1,0 +1,40 @@
+{
+    "options": [
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text":"Existe contenido violento, restringir por edad el contenido ayuda a mitigar la normalización.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Todo contenido debería restringirse por edad.",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Existe contenido que puede ir en contra de grupos poblacionales. Restringir este contenido ayuda a mitigar la discriminación.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"El contenido debería estar supervisado por los adultos responsables.",
+                    "isCorrect":false
+                }
+            ],
+            "multiple":true,
+            "maxOptions":2
+        }
+    ],
+    "initMessages":[
+        "A diario consumimos contenido escrito o multimedia, que en muchas ocasiones puede contener escenas violentas o inapropiadas.",
+        "Existen contenidos que pueden tener un impacto negativo en las personas y su desarrollo.",
+        "A continuación, encontrarás una lista de motivos para garantizar restricciones de contenido explícito. Selecciona los que consideres necesarios."
+    ],
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 1
+    },
+    "color": "#9968A6",
+    "name": "Restricción de contenido",
+    "id": 101
+}

@@ -1,0 +1,24 @@
+.imagenEditor{
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenEditor *{
+    margin: 10px;
+    padding: 0;
+}
+
+.imagenEditor iframe{
+    border: none;
+    width: 222px;
+    height: 280px;
+}
+
+@media screen and (max-width: 1250px) {
+    .imagenEditor{
+        grid-column: 1/3;
+    }
+}

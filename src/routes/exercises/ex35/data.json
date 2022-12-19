@@ -1,0 +1,11 @@
+{
+    "initMessages":[
+        "Ayuda a la serpiente digital a consumir todos los datos.",
+        "Entre más datos consumas, más grande será la serpiente.",
+        "Usa las flechas de dirección para moverte."
+    ],
+    "path": "35",
+    "color": "#9968A6",
+    "name": "Componenetes internos",
+    "id": 35
+}

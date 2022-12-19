@@ -1,0 +1,69 @@
+{
+    "options": [
+        {
+            "question":"512 MB corresponde a la suma del requerimiento de memoria de todas las aplicaciones que puede mantener en ejecución.",
+            "answers":[
+                {
+                    "text":"Verdadero",
+                    "isCorrect":true
+                },
+                {
+                    "text":"False",
+                    "isCorrect":false
+                }
+            ]
+        },
+        {
+            "question":"512 MB es suficiente si las aplicaciones en uso requieren: 80MB, 110MB, 100 MB, 10 MB y 300MB respectivamente.",
+            "answers":[
+                {
+                    "text":"Verdadero",
+                    "isCorrect":true
+                },
+                {
+                    "text":"False",
+                    "isCorrect":false
+                }
+            ]
+        },
+        {
+            "question":"512 MB es una cantidad suficiente de memoria si queremos mantener en ejecución 10 aplicaciones que consumen 51,2 MB cada una.",
+            "answers":[
+                {
+                    "text":"Verdadero",
+                    "isCorrect":false
+                },
+                {
+                    "text":"False",
+                    "isCorrect":true
+                }
+            ]
+        },
+        {
+            "question":"Si iniciamos una aplicación de 100 MB, la memoria puede mantenerla abierta y tener 415 MB de espacio libre.",
+            "answers":[
+                {
+                    "text":"Verdadero",
+                    "isCorrect":true
+                },
+                {
+                    "text":"False",
+                    "isCorrect":false
+                }
+            ]
+        }
+    ],
+    "initMessages":[
+        "Entre las funciones de la memoria RAM se encuentra el poder administrar la apertura y ejecución de aplicaciones de manera fluída.",
+        "La memoria RAM cuenta con una capacidad en gigas que determina la cantidad de aplicaciones que puede mantener en ejecución.",
+        "Determina si las afirmaciones que encontrarás a continuación son falsas o verdaderas según la capacidad de la memoria RAM."
+    ],
+    "threshold": {
+        "max": 2,
+        "min": 1,
+        "perfect": 3
+    },
+    "color": "#9968A6",
+    "name": "Memoria RAM",
+    "id": 107
+}

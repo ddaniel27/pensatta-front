@@ -1,0 +1,129 @@
+{
+    "options": [
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text":"Acceder a sitios web",
+                    "isCorrect":true
+                },
+                {
+                    "text": "Editar videos",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Revisar una enciclopedia",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Crear presentaciones",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "Google.svg"
+        },
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text": "Crear hojas de cálculo",
+                    "isCorrect":true
+                },
+                {
+                    "text": "Editar archivos de sonido",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Revisar una enciclopedia",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Reproducir canciones",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "Excel.svg"
+        },
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text": "Ver videos en línea",
+                    "isCorrect":true
+                },
+                {
+                    "text": "Editar videos",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Editar documentos de texto",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Crear presentaciones",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "Youtube.svg"
+        },
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text":"Editar documentos de texto",
+                    "isCorrect":true
+                },
+                {
+                    "text": "Editar archivos de sonido",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Crear hojas de cálculo",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Crear presentaciones",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "Word.svg"
+        },
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text":"Editar imágenes",
+                    "isCorrect":true
+                },
+                {
+                    "text": "Editar videos",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Reproducir canciones",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Crear presentaciones",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "Photoshop.svg"
+        }
+    ],
+    "initMessages":[
+        "Observa el dispositivo a continuación. Selecciona la respuesta correcta para las preguntas.",
+        "Puede haber una o más respuestas correctas."
+    ],
+    "threshold": {
+        "max": 3,
+        "min": 1,
+        "perfect": 5
+    },
+    "path": "02",
+    "color": "#9968A6",
+    "name": "Usos de aplicaciones",
+    "id": 2,
+    "dim": 4,
+    "apr": 1
+}

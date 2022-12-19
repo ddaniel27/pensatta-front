@@ -1,0 +1,53 @@
+.drag-drop-von-context{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.droppable-von-container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 90%;
+    background-color: #fff;
+    border-radius: 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+.droppable-von-container h2{
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+.droppable-von-list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.draggable-von-item{
+    width: 80%;
+    height: clamp(45px, 100%, 75px);
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    background-color: #00635D;
+    color: #fff;
+    filter: drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.25));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

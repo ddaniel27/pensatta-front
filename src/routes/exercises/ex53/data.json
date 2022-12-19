@@ -1,0 +1,177 @@
+{
+    "options": [
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text":"Mantener los sensores activos todo el tiempo para percibir el entorno y manejar el tráfico.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Realizar cálculo de trayectorias para acortar los tiempos de llegada.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Mostrar las noticias y actualidad en pantalla.",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Grabar a los peatones por medio de una cámara y mostrarlo en pantalla.",
+                    "isCorrect":false
+                }
+            ],
+            "multiple":true,
+            "maxOptions":2
+        },
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text":"Mostrar en pantalla los niveles de combustible y velocidad.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Mostrar alertas en pantalla de fallas mecánicas.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Mostrar las noticias y actualidad en pantalla.",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Mostrar el interior de vehículo por medio de un sistema de cámaras.",
+                    "isCorrect":false
+                }
+            ],
+            "multiple":true,
+            "maxOptions":2
+        },
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text":"Sincronización entre los sensores y la respuesta de frenado.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Realizar cálculo de trayectorias para acortar los tiempos de llegada.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Grabar a los peatones por medio de una cámara y mostrarlo en pantalla.",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Reproducir la música escuchada.",
+                    "isCorrect":false
+                }
+            ],
+            "multiple":true,
+            "maxOptions":2
+        },
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text":"Realizar una lectura constante de las entradas del sistema de luces.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Sincronización entre los sensores (micrófonos) y la respuesta de encendido.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Grabar a los peatones por medio de una cámara y mostrarlo en pantalla.",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Reproducir la música escuchada.",
+                    "isCorrect":false
+                }
+            ],
+            "multiple":true,
+            "maxOptions":2
+        },
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text":"Mostrar en pantalla los niveles de combustible y velocidad.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Mostrar alertas en pantalla de fallas mecánicas.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Mostrar las noticias y actualidad en pantalla.",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Mostrar un control de intensidad para las luces.",
+                    "isCorrect":false
+                }
+            ],
+            "multiple":true,
+            "maxOptions":2
+        },
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text":"Mantener los sensores activos todo el tiempo para percibir el entorno y manejar el tráfico.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Realizar cálculo de trayectorias para acortar los tiempos de llegada.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Mostrar las noticias y actualidad en pantalla.",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Reproducir la música escuchada.",
+                    "isCorrect":false
+                }
+            ],
+            "multiple":true,
+            "maxOptions":2
+        },
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text":"Mantener los sensores activos todo el tiempo para percibir el entorno y manejar el tráfico.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Realizar cálculo de trayectorias para acortar los tiempos de llegada.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Mostrar las noticias y actualidad en pantalla.",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Mostrar un control de velocidad de encendido de luces.",
+                    "isCorrect":false
+                }
+            ],
+            "multiple":true,
+            "maxOptions":2
+        }
+    ],
+    "initMessages":[
+        "Estamos construyendo un algoritmo para que un automóvil se conduzca de manera autónoma.",
+        "Ayúdanos a marcar las opciones que consideres necesarias para tener en cuenta en el diseño del algoritmo."
+    ],
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 1
+    },
+    "color": "#1B6893",
+    "name": "Automatizacion automovil",
+    "id": 53
+}

@@ -1,0 +1,37 @@
+{
+    "options": [
+        {
+            "error": "Nuestro equipo presenta pantallas azules y reinicios despues de abrir cierta cantidad de aplicaciones",
+            "fix": "RAM"
+        },
+        {
+            "error": "Nuestro equipo presenta pantallas titilantes, lineas rojas intermitentes, reinicios inesperados y extraños patrones en pantalla.",
+            "fix": "GPU"
+        },
+        {
+            "error": "En nuestro equipo se congelan las aplicaciones, se siente lento cuando se usa, y presenta pantallas azules",
+            "fix": "HDD"
+        },
+        {
+            "error": "En nuestro equipo se congelan las aplicaciones, no encuentra hardware, y presenta pantallas azules",
+            "fix": "Board"
+        },
+        {
+            "error": "En nuestro equipo no inicia o da pantalla de inicio pero suenan los ventiladores u otros componentes",
+            "fix": "CPU"
+        }
+    ],
+    "initMessages":[
+        "Nuestra computadora central está fallando, tu tarea es identificar la pieza que está averiada.",
+        "Analiza la situación para identificar el origen del problema."
+    ],
+    "threshold": {
+        "max": 2,
+        "min": 1,
+        "perfect": 3
+    },
+    "path": "23",
+    "color": "#9968A6",
+    "name": "Reparar computador",
+    "id": 23
+}

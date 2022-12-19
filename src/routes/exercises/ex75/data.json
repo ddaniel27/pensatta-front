@@ -1,0 +1,63 @@
+{
+    "columns": {
+        "column": {
+            "id": "column",
+            "title": "Captación de información en computador",
+            "optionsIds": [
+                "option-2",
+                "option-1",
+                "option-5",
+                "option-4",
+                "option-3"
+            ]
+        }
+    },
+    "options": {
+        "option-1": {
+            "id": "option-1",
+            "key": "arriba",
+            "text": "Interacción del usuario con el computador"
+        },
+        "option-2": {
+            "id": "option-2",
+            "key": "abajo",
+            "text": "Entrada de periférico"
+        },
+        "option-3": {
+            "id": "option-3",
+            "key": "derecha",
+            "text": "Conversión analógica a digital"
+        },
+        "option-4": {
+            "id": "option-4",
+            "key": "izquierda",
+            "text": "Procesamiento de la información"
+        },
+        "option-5": {
+            "id": "option-5",
+            "key": "centro",
+            "text": "Retorno o retroalimentación"
+        }
+    },
+    "sequence":[
+        "option-1",
+        "option-2",
+        "option-3",
+        "option-4",
+        "option-5"
+    ],
+    "initMessages":[
+        "Los computadores son máquinas muy eficientes, capaces de procesar grandes cantidades de información.",
+        "Ordena los pasos de este proceso que verás a continuación.",
+        "Tienes 30 Segundos luego de presionar el botón de inicio."
+    ],
+    "threshold": {
+        "max": 3,
+        "min": 1,
+        "perfect": 5
+    },
+    "path": "75",
+    "color": "#9968A6",
+    "name": "Proceso computacional",
+    "id": 75
+}

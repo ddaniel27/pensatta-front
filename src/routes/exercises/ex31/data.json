@@ -1,0 +1,43 @@
+{
+    "isSingle": true,
+    "isLoop": true,
+    "columns": {
+        "column-1": {
+            "id": "column-1",
+            "title": "Bloques que puedes usar",
+            "optionsIds": [
+                "option-1"
+            ],
+            "isDropDisabled":true,
+            "info":""
+        },
+        "column-2": {
+            "id": "column-2",
+            "title": "Cuando: presionar botón iniciar",
+            "optionsIds": []
+        }
+    },
+    "options": {
+        "option-1": {
+            "id": "option-1",
+            "key": "sound",
+            "text": "Elige una pista",
+            "hasInput": true,
+            "type": "select",
+            "options": [
+                "joy1.mp3",
+                "joy2.mp3",
+                "joy3.mp3",
+                "joy4.mp3"
+            ]
+        }
+    },
+    "imgPath": "images/exercises/24/Lights.svg",
+    "initMessages":[
+        "A continuación, encontrarás un algoritmo implementado en bloques que reproduce diferentes pistas de audio.",
+        "Ordena los bloques para crear una secuencia de reproducción."
+    ],
+    "path": "02",
+    "color": "#9968A6",
+    "name": "Canción"
+}

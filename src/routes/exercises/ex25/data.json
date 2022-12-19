@@ -1,0 +1,178 @@
+{
+    "options": [
+        {
+            "question":"¿Qué soluciones darías a Anna?",
+            "answers":[
+                {
+                    "text":"Eliminar el contenido no adecuado de sus redes sociales.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Realizar un control adecuado del contenido publicado.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Asegurar su información personal.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Compartir la información de los atacantes.",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Responder los comentarios ofensivos con insultos.",
+                    "isCorrect":false
+                }
+            ],
+            "multiple":true,
+            "maxOptions":3
+        },
+        {
+            "question":"¿Qué soluciones darías a Anna?",
+            "answers":[
+                {
+                    "text":"Asegurar sus datos de contacto.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Identificar el contenido que más conflicto causó al público.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Eliminar el contenido publicado identificado en sus redes sociales.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Compartir la información de los atacantes.",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Responder los comentarios ofensivos con insultos.",
+                    "isCorrect":false
+                }
+            ],
+            "multiple":true,
+            "maxOptions":3
+        },
+        {
+            "question":"¿Qué soluciones darías a Anna?",
+            "answers":[
+                {
+                    "text":"Asegurar contenido de ubicaciones y contacto en la cuenta.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Realizar un control adecuado del contenido publicado.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Identificar qué contenido publicado por ella no es adecuado.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Compartir la información de los atacantes.",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Responder los comentarios ofensivos con insultos.",
+                    "isCorrect":false
+                }
+            ],
+            "multiple":true,
+            "maxOptions":3
+        },
+        {
+            "question":"¿Qué soluciones darías a Anna?",
+            "answers":[
+                {
+                    "text":"Eliminar el contenido no adecuado de sus redes sociales.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Identificar el contenido inapropiado que ha publicado.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Asegurar su información personal.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Compartir la información de los atacantes.",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Responder los comentarios ofensivos con insultos.",
+                    "isCorrect":false
+                }
+            ],
+            "multiple":true,
+            "maxOptions":3
+        },
+        {
+            "question":"¿Qué soluciones darías a Anna?",
+            "answers":[
+                {
+                    "text":"Identificar perfiles de las personas afectadas por el contenido publicado.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Eliminar el contenido que causa disgusto a los seguidores.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Asegurar su información personal.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Restringuir el acceso a información personal a seguidores.",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Responder los comentarios ofensivos con insultos.",
+                    "isCorrect":false
+                }
+            ],
+            "multiple":true,
+            "maxOptions":3
+        },
+        {
+            "question":"¿Qué soluciones darías a Anna?",
+            "answers":[
+                {
+                    "text":"Privatizar la observación de sus datos personales.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Identificar qué contenido publicado por ella no es adecuado.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Presentar disculpas ante los perfiles identificados.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Compartir la información de los atacantes.",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Responder los comentarios ofensivos con insultos.",
+                    "isCorrect":false
+                }
+            ],
+            "multiple":true,
+            "maxOptions":3
+        }
+    ],
+    "initMessages":[
+        "Anna es una figura pública que está siendo atacada en sus redes sociales debido a publicaciones de su vida privada.",
+        "Escoge dentro de las opciones, tres posibles salidas para el problema de Anna."
+    ],
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 1
+    },
+    "color": "#9968A6",
+    "name": "Seguridad en línea",
+    "id": 25
+}

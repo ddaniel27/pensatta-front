@@ -1,0 +1,40 @@
+{
+    "options": [
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text":"Sistemas de búsqueda",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Preparación de alimentos en el hogar",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Producción de alimentos en planta automatizada",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Creación de artes plásticas",
+                    "isCorrect":false
+                }
+            ],
+            "multiple":true,
+            "maxOptions":2
+        }
+    ],
+    "initMessages":[
+        "Las máquinas pueden aprender y comprender las cosas de una manera muy similar a la nuestra, y así ejecutar tareas complejas facilitando nuestro trabajo.",
+        "Esa es una de las definiciones más acertadas para la inteligencia artificial.",
+        "Selecciona las tareas que consideras se pueden optimizar con el uso de inteligencia artificial."
+    ],
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 1
+    },
+    "color": "#9968A6",
+    "name": "Regulaciones tecnológicas",
+    "id": 69
+}

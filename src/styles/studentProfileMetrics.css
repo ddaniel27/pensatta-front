@@ -1,0 +1,104 @@
+.student-profile-metrics{
+    width: 100%;
+    height: 95%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 24% 70%;
+    justify-items: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.student-profile-metrics-body{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 100%;
+    justify-items: center;
+    align-items: center;
+}
+.table-display-exercises{
+    height: 90%;
+    width: 90%;
+}
+
+.student-profile-metrics-body-chart{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 3% 95%;
+    justify-items: center;
+    align-items: center;
+    row-gap: 1%;
+}
+
+.student-profile-metrics-body-chart span{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #008E86;
+}
+
+.student-pdf-button{
+    border: 3px solid #008E86;
+    border-radius: 20px;
+    padding: 10px 40px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 4vh;
+}
+
+.student-pdf-button *{
+    color: #008E86;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1080px){
+    .student-profile-metrics-body{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 45%;
+    }
+    .table-container{
+        grid-column: 1 / 3;
+        grid-row: 2;
+        width: 70%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .student-profile-metrics{
+        height: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 170% 25%;
+        row-gap: 20px;
+    }
+    .student-profile-metrics-body{
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, 30%) 10%;
+        row-gap: 15px;
+    }
+
+    .pie-chart-container{
+        grid-row: 2;
+    }
+
+    .table-container{
+        grid-row: 3;
+        width: 100%;
+        height: 100%;
+    }
+
+    .student-profile-metrics-body > button{
+        grid-row: 4;
+    }
+
+    .student-pdf-button{
+        position: relative;
+        bottom: 0;
+    }
+    
+}

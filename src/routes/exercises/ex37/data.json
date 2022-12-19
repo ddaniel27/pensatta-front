@@ -1,0 +1,125 @@
+{
+    "isSingle": true,
+    "columns": {
+        "column-1":{
+            "id": "column-1",
+            "title": "",
+            "optionsIds": [
+                "option-1",
+                "option-2",
+                "option-3"
+            ],
+            "isDropDisabled":true
+        },
+        "column-2": {
+            "id": "column-2",
+            "title": "Cuando: presionar botón iniciar",
+            "optionsIds": []
+        }
+    },
+    "options": {
+        "option-1": {
+            "id": "option-1",
+            "key": "rojo",
+            "text": "Luz roja",
+            "value": 1
+        },
+        "option-2": {
+            "id": "option-2",
+            "key": "amarillo",
+            "text": "Luz amarilla",
+            "value": 2
+        },
+        "option-3": {
+            "id": "option-3",
+            "key": "verde",
+            "text": "Luz verde",
+            "value": 3
+        }
+    },
+    "patterns":[
+        [
+            ["rojo", 1],
+            ["amarillo", 2],
+            ["verde", 3],
+            ["rojo", 1],
+            ["amarillo", 2]
+        ],
+        [
+            ["amarillo", 2],
+            ["rojo", 1],
+            ["rojo", 1],
+            ["verde", 3],
+            ["amarillo", 2]
+        ],
+        [
+            ["amarillo", 2],
+            ["rojo", 1],
+            ["verde", 3],
+            ["amarillo", 2],
+            ["rojo", 1]
+        ],
+        [
+            ["rojo", 1],
+            ["amarillo", 2],
+            ["verde", 3],
+            ["amarillo", 2],
+            ["rojo", 1]
+        ],
+        [
+            ["verde", 3],
+            ["rojo", 1],
+            ["amarillo", 2],
+            ["rojo", 1],
+            ["verde", 3]
+        ],
+        [
+            ["rojo", 1],
+            ["amarillo", 2],
+            ["rojo", 1],
+            ["amarillo", 2],
+            ["verde", 3]
+        ],
+        [
+            ["rojo", 1],
+            ["verde", 3],
+            ["amarillo", 2],
+            ["amarillo", 2],
+            ["rojo", 1]
+        ],
+        [
+            ["rojo", 1],
+            ["amarillo", 2],
+            ["verde", 3],
+            ["rojo", 1],
+            ["amarillo", 2]
+        ],
+        [
+            ["amarillo", 2],
+            ["rojo", 1],
+            ["rojo", 1],
+            ["verde", 3],
+            ["amarillo", 2]
+        ],
+        [
+            ["rojo", 1],
+            ["amarillo", 2],
+            ["amarillo", 2],
+            ["verde", 3],
+            ["rojo", 1]
+        ]
+    ],
+    "initMessages":[
+        "Observa el primer semáforo.",
+        "Recrea el patrón que siguen las luces, programando el algoritmo del segundo semáforo."
+    ],
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 1
+    },
+    "path": "02",
+    "color": "#9968A6",
+    "name": "Patrón de semáforo",
+    "id": "37"
+}

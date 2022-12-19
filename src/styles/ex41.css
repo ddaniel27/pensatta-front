@@ -1,0 +1,164 @@
+.ex41{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 40%;
+    justify-items: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.ex41 .schema-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ex41 .schema-container .inputs-container, .ex41 .schema-container .outputs-container{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.ex41 .schema-container .outputs-container{
+    align-items: flex-end;
+}
+
+.ex41 .schema-container .inputs-container label, .ex41 .schema-container .outputs-container span{
+    width: 50%;
+    height: 20%;
+    background-color: #333333;
+    display: block;
+    min-width: 90px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.ex41 .schema-container .outputs-container span, .ex41 .schema-container .inputs-container label span{
+    display: flex;
+    font-size: 1.5em;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    color: #47fff6;
+}
+
+.ex41 .schema-container .inputs-container label span{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.ex41 .schema-container .inputs-container label input:checked + span{
+    background-color: #9600d1;
+}
+
+.ex41 .schema-container .inputs-container label::after, .ex41 .schema-container .outputs-container span::after{
+    content: "";
+    position: absolute;
+    top: 45%;
+    left: 100%;
+    width: 100%;
+    height: 15%;
+    background-color: #333333;
+    transition: opacity 0.5s;
+}
+
+.ex41 .schema-container .outputs-container span::after{
+    left:-100%;
+}
+
+.ex41 .schema-container .operator-container{
+    aspect-ratio: 1/1;
+    background-color: #333333;
+    border-radius: 20px;
+    width: 11%;
+    min-width: 110px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    justify-items: center;
+    align-items: center;
+    z-index: 3;
+}
+
+
+.ex41 .images-container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 15% 60% 25%;
+    grid-template-rows: 100%;
+    justify-items: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.ex41 .images-container .input-selector{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+.ex41 .images-container .input-selector span{
+    width: 50%;
+    height: 20%;
+    background-color: #FFFFFF;
+    display: block;
+    min-width: 50px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: clamp(1.5vw, 1.5vh, 2.5vmin);
+    font-weight: bold;
+    color: #008E86;
+}
+
+.ex41 .images-container .description{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 7px;
+    flex-wrap: wrap;
+    overflow: auto;
+    border: 5px solid #FFFFFF;
+    background-color: #333333;
+    border-radius: 20px;
+    color:#FFFFFF;
+    text-align: center;
+}
+
+.ex41 .images-container .description p{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px){
+    .ex41{
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 100%;
+    }
+    .ex41 .images-container{
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50% 50%;
+    }
+    .ex41 .images-container .input-selector span{
+        font-size: clamp(1.5rem, 1vw, 2.5rem);
+    }
+}

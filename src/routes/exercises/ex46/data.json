@@ -1,0 +1,508 @@
+{
+    "variations":[
+        {
+            "columns": {
+                "column-1": {
+                    "id": "column-1",
+                    "title": "Bloques que puedes usar",
+                    "optionsIds": [
+                        "option-4",
+                        "option-5",
+                        "option-6",
+                        "option-7"
+                    ],
+                    "isDropDisabled":true,
+                    "info":"Arrastra un bloque y completa el algoritmo"
+                },
+                "column-2": {
+                    "id": "column-2",
+                    "title": "Cuando: presionar botón iniciar",
+                    "optionsIds": [
+                        "option-1",
+                        "option-2",
+                        "option-3"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "preload",
+                    "text": "Escoger juego",
+                    "value": 1
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "preload2",
+                    "text": "Poner las piezas",
+                    "value": 2
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "preload3",
+                    "text": "Unir las piezas",
+                    "value": 3
+                },
+                "option-4": {
+                    "id": "option-4",
+                    "key": "quitar",
+                    "text": "Quitar la tapa",
+                    "value": 4
+                },
+                "option-5": {
+                    "id": "option-5",
+                    "key": "romper",
+                    "text": "Romper la caja",
+                    "value": 5
+                },
+                "option-6": {
+                    "id": "option-6",
+                    "key": "preparar",
+                    "text": "Preparar café",
+                    "value": 6
+                },
+                "option-7": {
+                    "id": "option-7",
+                    "key": "tutorial",
+                    "text": "Ver tutorial",
+                    "value": 7
+                }
+            },
+            "sequence": [1, 2, 4, 3]
+        },
+        {
+            "columns": {
+                "column-1": {
+                    "id": "column-1",
+                    "title": "Bloques que puedes usar",
+                    "optionsIds": [
+                        "option-5",
+                        "option-4",
+                        "option-6",
+                        "option-7"
+                    ],
+                    "isDropDisabled":true,
+                    "info":"Arrastra un bloque y completa el algoritmo"
+                },
+                "column-2": {
+                    "id": "column-2",
+                    "title": "Cuando: presionar botón iniciar",
+                    "optionsIds": [
+                        "option-1",
+                        "option-2",
+                        "option-3"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "preload",
+                    "text": "Ir a la tienda",
+                    "value": 1
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "preload2",
+                    "text": "Seleccionar las frutas",
+                    "value": 2
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "preload3",
+                    "text": "Ir a la caja",
+                    "value": 3
+                },
+                "option-4": {
+                    "id": "option-4",
+                    "key": "quitar",
+                    "text": "Pagar",
+                    "value": 4
+                },
+                "option-5": {
+                    "id": "option-5",
+                    "key": "romper",
+                    "text": "Leer un libro",
+                    "value": 5
+                },
+                "option-6": {
+                    "id": "option-6",
+                    "key": "preparar",
+                    "text": "Preparar café",
+                    "value": 6
+                },
+                "option-7": {
+                    "id": "option-7",
+                    "key": "tutorial",
+                    "text": "Dormir",
+                    "value": 7
+                }
+            },
+            "sequence": [1, 2, 3, 4]
+        },
+        {
+            "columns": {
+                "column-1": {
+                    "id": "column-1",
+                    "title": "Bloques que puedes usar",
+                    "optionsIds": [
+                        "option-5",
+                        "option-7",
+                        "option-4",
+                        "option-6"
+                    ],
+                    "isDropDisabled":true,
+                    "info":"Arrastra un bloque y completa el algoritmo"
+                },
+                "column-2": {
+                    "id": "column-2",
+                    "title": "Cuando: presionar botón iniciar",
+                    "optionsIds": [
+                        "option-1",
+                        "option-2",
+                        "option-3"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "preload",
+                    "text": "Ingresar destinatario",
+                    "value": 1
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "preload2",
+                    "text": "Ingresar asunto",
+                    "value": 2
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "preload3",
+                    "text": "Enviar",
+                    "value": 3
+                },
+                "option-4": {
+                    "id": "option-4",
+                    "key": "quitar",
+                    "text": "Redactar el texto",
+                    "value": 4
+                },
+                "option-5": {
+                    "id": "option-5",
+                    "key": "romper",
+                    "text": "Crear un meme",
+                    "value": 5
+                },
+                "option-6": {
+                    "id": "option-6",
+                    "key": "preparar",
+                    "text": "Ver un vídeo",
+                    "value": 6
+                },
+                "option-7": {
+                    "id": "option-7",
+                    "key": "tutorial",
+                    "text": "Llamar a un amigo",
+                    "value": 7
+                }
+            },
+            "sequence": [1, 2, 4, 3]
+        },
+        {
+            "columns": {
+                "column-1": {
+                    "id": "column-1",
+                    "title": "Bloques que puedes usar",
+                    "optionsIds": [
+                        "option-4",
+                        "option-5",
+                        "option-6",
+                        "option-7"
+                    ],
+                    "isDropDisabled":true,
+                    "info":"Arrastra un bloque y completa el algoritmo"
+                },
+                "column-2": {
+                    "id": "column-2",
+                    "title": "Cuando: presionar botón iniciar",
+                    "optionsIds": [
+                        "option-1",
+                        "option-2",
+                        "option-3"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "preload",
+                    "text": "Escoger juego",
+                    "value": 1
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "preload2",
+                    "text": "Iniciar una partida",
+                    "value": 2
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "preload3",
+                    "text": "Jugar",
+                    "value": 3
+                },
+                "option-4": {
+                    "id": "option-4",
+                    "key": "quitar",
+                    "text": "Iniciar el juego",
+                    "value": 4
+                },
+                "option-5": {
+                    "id": "option-5",
+                    "key": "romper",
+                    "text": "Criticar el juego",
+                    "value": 5
+                },
+                "option-6": {
+                    "id": "option-6",
+                    "key": "preparar",
+                    "text": "Apagar la pantalla",
+                    "value": 6
+                },
+                "option-7": {
+                    "id": "option-7",
+                    "key": "tutorial",
+                    "text": "Ver una película",
+                    "value": 7
+                }
+            },
+            "sequence": [1, 4, 2, 3]
+        },
+        {
+            "columns": {
+                "column-1": {
+                    "id": "column-1",
+                    "title": "Bloques que puedes usar",
+                    "optionsIds": [
+                        "option-4",
+                        "option-5",
+                        "option-6",
+                        "option-7"
+                    ],
+                    "isDropDisabled":true,
+                    "info":"Arrastra un bloque y completa el algoritmo"
+                },
+                "column-2": {
+                    "id": "column-2",
+                    "title": "Cuando: presionar botón iniciar",
+                    "optionsIds": [
+                        "option-1",
+                        "option-2",
+                        "option-3"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "preload",
+                    "text": "Poner primera tajada de pan",
+                    "value": 1
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "preload2",
+                    "text": "Poner el jamón",
+                    "value": 2
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "preload3",
+                    "text": "Poner el queso",
+                    "value": 3
+                },
+                "option-4": {
+                    "id": "option-4",
+                    "key": "quitar",
+                    "text": "Poner segundo pan",
+                    "value": 4
+                },
+                "option-5": {
+                    "id": "option-5",
+                    "key": "romper",
+                    "text": "Sumergir en leche",
+                    "value": 5
+                },
+                "option-6": {
+                    "id": "option-6",
+                    "key": "preparar",
+                    "text": "Licuar",
+                    "value": 6
+                },
+                "option-7": {
+                    "id": "option-7",
+                    "key": "tutorial",
+                    "text": "Poner hielos",
+                    "value": 7
+                }
+            },
+            "sequence": [1, 2, 3, 4]
+        },
+        {
+            "columns": {
+                "column-1": {
+                    "id": "column-1",
+                    "title": "Bloques que puedes usar",
+                    "optionsIds": [
+                        "option-4",
+                        "option-5",
+                        "option-6",
+                        "option-7"
+                    ],
+                    "isDropDisabled":true,
+                    "info":"Arrastra un bloque y completa el algoritmo"
+                },
+                "column-2": {
+                    "id": "column-2",
+                    "title": "Cuando: presionar botón iniciar",
+                    "optionsIds": [
+                        "option-1",
+                        "option-2",
+                        "option-3"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "preload",
+                    "text": "Identificar el bombillo dañado",
+                    "value": 1
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "preload2",
+                    "text": "Retirarlo",
+                    "value": 2
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "preload3",
+                    "text": "Encender la luz",
+                    "value": 3
+                },
+                "option-4": {
+                    "id": "option-4",
+                    "key": "quitar",
+                    "text": "Poner bombillo nuevo",
+                    "value": 4
+                },
+                "option-5": {
+                    "id": "option-5",
+                    "key": "romper",
+                    "text": "Romper la caja",
+                    "value": 5
+                },
+                "option-6": {
+                    "id": "option-6",
+                    "key": "preparar",
+                    "text": "Preparar café",
+                    "value": 6
+                },
+                "option-7": {
+                    "id": "option-7",
+                    "key": "tutorial",
+                    "text": "Dormir",
+                    "value": 7
+                }
+            },
+            "sequence": [1, 2, 4, 3]
+        },
+        {
+            "columns": {
+                "column-1": {
+                    "id": "column-1",
+                    "title": "Bloques que puedes usar",
+                    "optionsIds": [
+                        "option-4",
+                        "option-5",
+                        "option-6",
+                        "option-7"
+                    ],
+                    "isDropDisabled":true,
+                    "info":"Arrastra un bloque y completa el algoritmo"
+                },
+                "column-2": {
+                    "id": "column-2",
+                    "title": "Cuando: presionar botón iniciar",
+                    "optionsIds": [
+                        "option-1",
+                        "option-2",
+                        "option-3"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "preload",
+                    "text": "Preparar los pigmentos",
+                    "value": 1
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "preload2",
+                    "text": "Pintar el lienzo",
+                    "value": 2
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "preload3",
+                    "text": "Enmarcar el cuadro",
+                    "value": 3
+                },
+                "option-4": {
+                    "id": "option-4",
+                    "key": "quitar",
+                    "text": "Alistar el lienzo",
+                    "value": 4
+                },
+                "option-5": {
+                    "id": "option-5",
+                    "key": "romper",
+                    "text": "Romper los pinceles",
+                    "value": 5
+                },
+                "option-6": {
+                    "id": "option-6",
+                    "key": "preparar",
+                    "text": "Preparar café",
+                    "value": 6
+                },
+                "option-7": {
+                    "id": "option-7",
+                    "key": "tutorial",
+                    "text": "Jugar un juegp",
+                    "value": 7
+                }
+            },
+            "sequence": [4, 1, 2, 3]
+        }
+    ],
+    "imgPath": "images/exercises/24/Lights.svg",
+    "initMessages":[
+        "Observa el algoritmo, hace falta un bloque.",
+        "Analiza el objetivo del algoritmo y selecciona el bloque faltante de la lista de opciones."
+    ],
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 1
+    },
+    "path": "02",
+    "color": "#9968A6",
+    "name": "Completar algoritmo",
+    "id": "46"
+}

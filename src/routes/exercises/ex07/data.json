@@ -1,0 +1,244 @@
+{
+
+    "options": [
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text": "Discriminación racial",
+                    "isCorrect":true
+                },
+                {
+                    "text": "Contenido pornográfico",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Noticia falsa",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Contenido apropiado",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "Tik_Tok_Web.svg"
+        },
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text": "Contenido pornográfico",
+                    "isCorrect":true
+                },
+                {
+                    "text": "Virus",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Violencia Explicita",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Noticia falsa",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "Facebook_Video.svg"
+        },
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text": "Contenido pornográfico",
+                    "isCorrect":true
+                },
+                {
+                    "text": "Rick Roll",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Discriminación racial",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Violencia explicita",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "Youtube.svg"
+        },
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text":"Violencia explicita",
+                    "isCorrect":true
+                },
+                {
+                    "text": "Contenido pornográfico",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Virus",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Contenido apropiado",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "Twitter_Violencia.png"
+        },
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text": "Violencia explícita",	
+                    "isCorrect":true
+                },
+                {
+                    "text": "Noticia falsa",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Clickbait",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Contenido pornográfico",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "Instagram.svg"
+            
+        },
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text": "Violencia explícita",	
+                    "isCorrect":true
+                },
+                {
+                    "text": "Noticia falsa",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Clickbait",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Contenido pornográfico",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "Borrachos_1.svg"
+            
+        },
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text": "Maltrato animal",	
+                    "isCorrect":true
+                },
+                {
+                    "text": "Noticia falsa",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Violencia explicita",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Discriminación racial",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "Instagram.svg"
+            
+        },
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text": "Discriminación racial",	
+                    "isCorrect":true
+                },
+                {
+                    "text": "Violencia explicita",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Clickbait",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Noticia falsa",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "Racismo_1.svg"
+            
+        },
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text": "Violencia explícita",	
+                    "isCorrect":false
+                },
+                {
+                    "text": "Noticia falsa",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Clickbait",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Contenido pornográfico",
+                    "isCorrect":true
+                }
+            ],
+            "image":  "SP_1.svg"
+            
+        },
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text": "Violencia explícita",	
+                    "isCorrect":true
+                },
+                {
+                    "text": "Discriminación racial",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Clickbait",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Contenido pornográfico",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "Pelea_1.svg"
+            
+        }
+    ],
+    "initMessages":[
+        "A continuación verás publicaciones de redes sociales con contenido sensible.", 
+        "Selecciona el riesgo de publicación al que consideras que pertenecen."
+    ],
+    "threshold": {
+        "max": 2,
+        "min": 1,
+        "perfect":3
+    },
+    "path": "07",
+    "color": "#AE985E",
+    "name":"Detección de sensibilidad",
+    "id": 7
+}

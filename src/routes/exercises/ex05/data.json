@@ -1,0 +1,58 @@
+{
+    "dictionary":[
+            [
+                ["A","!"],
+                ["B","#"],
+                ["C","*"],
+                ["D","$"],
+                ["E","-"],
+                ["F","?"],
+                ["G","{"],
+                ["H","+"],
+                ["I","@"],
+                ["J","\\"],
+                ["K","€"],
+                ["L","}"],
+                ["M","^"],
+                ["N","°"],
+                ["Ñ",":"],
+                ["O","¡"],
+                ["P","["],
+                ["Q","%"],
+                ["R","æ"],
+                ["S","."],
+                ["T","<"],
+                ["U","¥"],
+                ["V","&"],
+                ["W","↔"],
+                ["X","¿"],
+                ["Y","§"],
+                ["Z","↕"],
+                [" ", " "],
+                ["0","#E71D21"],
+                ["1","#FFD600"],
+                ["2","#1D86E7"],
+                ["3","#1DE76E"],
+                ["4","#761DE7"],
+                ["5","#FF88DE"],
+                ["6","#E77E1D"],
+                ["7","#BDBDBD"],
+                ["8","#828282"],
+                ["9","#333333"]
+            ]
+    ],
+    "message": ["katty tiene 5318 amigos"],
+    "initMessages":[
+        "Descifra el mensaje oculto.",
+        "Identifica los caracteres correspondientes a cada símbolo para lograrlo."
+    ],
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 1
+    },
+    "path": "05",
+    "color": "#588F64",
+    "name": "Descifrar mensaje",
+    "id": "05"
+}

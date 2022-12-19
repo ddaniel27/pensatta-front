@@ -1,0 +1,39 @@
+{
+    "options": [
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text":"Restricción de contenido por edades en plataformas de streaming.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Creación de contenido digital visual.",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Restricción de privacidad respecto de la información personal.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Control de ventas de dispositivos tecnológicos.",
+                    "isCorrect":true
+                }
+            ],
+            "multiple":true,
+            "maxOptions":3
+        }
+    ],
+    "initMessages":[
+        "A continuación, verás una lista de regulaciones.",
+        "Selecciona todas las opciones que correspondan a una regulación en tecnología."
+    ],
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 1
+    },
+    "color": "#9968A6",
+    "name": "Regulaciones tecnológicas",
+    "id": 68
+}

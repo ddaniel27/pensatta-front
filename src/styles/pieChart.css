@@ -1,0 +1,7 @@
+.pie-container{
+    width: 70%;
+    height: 70%;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+}

@@ -1,0 +1,327 @@
+{
+    "options":[
+        {
+            "book": "Harry Potter",
+            "left": [
+                {
+                    "correct": true,
+                    "text": "en Inglaterra..."
+                },
+                {
+                    "correct": false,
+                    "text": "en Francia..."
+                },
+                {
+                    "correct": false,
+                    "text": "en Alemania..."
+                }
+            ],
+            "right":[
+                {
+                    "correct": false,
+                    "text": "por J.R.R. Tolkien."
+                },
+                {
+                    "correct": true,
+                    "text": "por J.K. Rowling."
+                },
+                {
+                    "correct": false,
+                    "text": "por Cornelia Funke."
+                }
+            ]
+        },
+        {
+            "book": "La metamorfosis",
+            "left": [
+                {
+                    "correct": false,
+                    "text": "en Canadá..."
+                },
+                {
+                    "correct": true,
+                    "text": "en Alemania..."
+                },
+                {
+                    "correct": false,
+                    "text": "en Rusia..."
+                }
+            ],
+            "right":[
+                {
+                    "correct": true,
+                    "text": "por Faranz Kafka."
+                },
+                {
+                    "correct": false,
+                    "text": "por J.K. Rowling."
+                },
+                {
+                    "correct": false,
+                    "text": "por Gorge Orwell."
+                }
+            ]
+        },
+        {
+            "book": "Cien años de soledad",
+            "left": [
+                {
+                    "correct": false,
+                    "text": "en México..."
+                },
+                {
+                    "correct": false,
+                    "text": "en Argentina..."
+                },
+                {
+                    "correct": true,
+                    "text": "en Colombia..."
+                }
+            ],
+            "right":[
+                {
+                    "correct": false,
+                    "text": "por Mario Vargas Llosa."
+                },
+                {
+                    "correct": true,
+                    "text": "por Gabriel García Márquez."
+                },
+                {
+                    "correct": false,
+                    "text": "por Isabel Allende."
+                }
+            ]
+        },
+        {
+            "book": "Viaje al centro de la Tierra",
+            "left": [
+                {
+                    "correct": true,
+                    "text": "en Francia..."
+                },
+                {
+                    "correct": false,
+                    "text": "en Italia..."
+                },
+                {
+                    "correct": false,
+                    "text": "en Grecia..."
+                }
+            ],
+            "right":[
+                {
+                    "correct": false,
+                    "text": "por William Shakespeare."
+                },
+                {
+                    "correct": false,
+                    "text": "por Charles Dickens."
+                },
+                {
+                    "correct": true,
+                    "text": "por Julio Verne."
+                }
+            ]
+        },
+        {
+            "book": "Frankenstein",
+            "left": [
+                {
+                    "correct": false,
+                    "text": "en Egipto..."
+                },
+                {
+                    "correct": true,
+                    "text": "en Inglaterra..."
+                },
+                {
+                    "correct": false,
+                    "text": "en Japón..."
+                }
+            ],
+            "right":[
+                {
+                    "correct": true,
+                    "text": "por Mary Shelley."
+                },
+                {
+                    "correct": false,
+                    "text": "por Franz Kafka."
+                },
+                {
+                    "correct": false,
+                    "text": "por Aldous Huxley."
+                }
+            ]
+        },
+        {
+            "book": "Canción de navidad",
+            "left": [
+                {
+                    "correct": false,
+                    "text": "en Canadá..."
+                },
+                {
+                    "correct": false,
+                    "text": "en Francia..."
+                },
+                {
+                    "correct": true,
+                    "text": "en Inglaterra..."
+                }
+            ],
+            "right":[
+                {
+                    "correct": false,
+                    "text": "por J.R.R. Tolkien."
+                },
+                {
+                    "correct": true,
+                    "text": "Charles Dickens."
+                },
+                {
+                    "correct": false,
+                    "text": "por Victor Hugo."
+                }
+            ]
+        },
+        {
+            "book": "Rebelión en la granja",
+            "left": [
+                {
+                    "correct": true,
+                    "text": "en Inglaterra..."
+                },
+                {
+                    "correct": false,
+                    "text": "en Francia..."
+                },
+                {
+                    "correct": false,
+                    "text": "en Alemania..."
+                }
+            ],
+            "right":[
+                {
+                    "correct": false,
+                    "text": "por J.R.R. Tolkien."
+                },
+                {
+                    "correct": false,
+                    "text": "por J.K. Rowling."
+                },
+                {
+                    "correct": true,
+                    "text": "por George Orwell."
+                }
+            ]
+        },
+        {
+            "book": "El señor de los anillos",
+            "left": [
+                {
+                    "correct": true,
+                    "text": "en Inglaterra..."
+                },
+                {
+                    "correct": false,
+                    "text": "en Australia..."
+                },
+                {
+                    "correct": false,
+                    "text": "en Alemania..."
+                }
+            ],
+            "right":[
+                {
+                    "correct": true,
+                    "text": "por J.R.R. Tolkien."
+                },
+                {
+                    "correct": false,
+                    "text": "por J.K. Rowling."
+                },
+                {
+                    "correct": false,
+                    "text": "por Cornelia Funke."
+                }
+            ]
+        },
+        {
+            "book": "El retrato de Dorian Gray",
+            "left": [
+                {
+                    "correct": false,
+                    "text": "en Francia..."
+                },
+                {
+                    "correct": true,
+                    "text": "en Inglaterra..."
+                },
+                {
+                    "correct": false,
+                    "text": "en India..."
+                }
+            ],
+            "right":[
+                {
+                    "correct": false,
+                    "text": "por J.R.R. Tolkien."
+                },
+                {
+                    "correct": true,
+                    "text": "por Oscar Wilde."
+                },
+                {
+                    "correct": false,
+                    "text": "por Aldous Huxley."
+                }
+            ]
+        },
+        {
+            "book": "Don Quijote de La Mancha",
+            "left": [
+                {
+                    "correct": false,
+                    "text": "en México..."
+                },
+                {
+                    "correct": false,
+                    "text": "en Chile..."
+                },
+                {
+                    "correct": true,
+                    "text": "en España..."
+                }
+            ],
+            "right":[
+                {
+                    "correct": true,
+                    "text": "por Miguel de Cervantes Saavedra."
+                },
+                {
+                    "correct": false,
+                    "text": "por Franz Kafka."
+                },
+                {
+                    "correct": false,
+                    "text": "por Aldous Huxley."
+                }
+            ]
+        }
+    ],
+    "initMessages":[
+        "A continuación, encontrarás la simulación de un circuito que podrás encender activando los elementos correctos.",
+        "Selecciona los cuadros indicados para formar una frase verdadera."
+    ],
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 1
+    },
+    "path": "44",
+    "color": "#53745B",
+    "name": "Circuito literario",
+    "id": 44
+}

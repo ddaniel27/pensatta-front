@@ -1,0 +1,158 @@
+.maze-style{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 100%;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.maze-style .restart{
+    right: 20vw;
+}
+
+.maze-style canvas{
+    aspect-ratio: 1/1;
+    height: 80%;
+    width: 80%;
+    object-fit: contain;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.maze-style .info-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    position: relative;
+}
+
+.maze-style .info-box div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+}
+
+.maze-style .info-box p{
+    cursor: pointer;
+    background-color: #00D8CC;
+    background-image: url('../../images/text_triangle.svg');
+    background-repeat: no-repeat;
+    background-position: 60% 50%;
+    background-size: 50%;
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    filter: drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.25));
+    transition: .2s ease-in-out;
+}
+
+.maze-style .info-box p:active{
+    filter: none;
+    transform: translateY(3px);
+}
+
+.maze-style .animation-container-simple{
+    width: 100%;
+    height: 90%;
+}
+
+.maze-style .info-box .animation-container{
+    aspect-ratio: 29/4;
+    width: 100%;
+    position:absolute;
+    right:60%;
+    top: 30%;
+    transition: .3s ease-in-out;
+}
+.maze-style .info-box .montana{
+    background-image: url('../../images/exercises/13/Montana.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 60%;
+    height: 70%;
+}
+
+.maze-style .info-box .animation-container.vehicle{
+    background-image: url('../../images/exercises/13/Fondo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.maze-style .maze .spinner-3{
+    align-self: center;
+    justify-self: center;
+}
+
+@media screen and (max-width: 1250px) {
+    .maze-style{
+        grid-template-rows: 100% 100%;
+    }
+
+    .maze-style .animation-container-simple{
+        grid-column: 1/3;
+    }
+
+    .maze-style > .drag-drop-context, .maze-style > .drag-drop-for-context{
+        grid-column: 1/3;
+        grid-row: 2;
+    }
+
+    .maze-style > .maze{
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+
+    .maze-style > .maze canvas{
+        top:5%;
+    }
+    .maze-style .buttons-field{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        grid-column: 2;
+        grid-row: 2;
+        width: 100%;
+        height: 100%;
+    }
+    .buttons-field > button {
+        position: relative !important;
+        z-index: 3 !important;
+    }
+
+    .maze-style .info-box{
+        grid-column: 1/3;
+    }
+    
+}
+
+@media screen and (max-width: 700px){
+    .maze-style{
+        grid-template-columns: 100%;
+        grid-template-rows: 100% 50% 50% 100%;
+    }
+
+    .maze-style > .drag-drop-context, .maze-style > .drag-drop-for-context{
+        grid-column: 1;
+        grid-row: 2/4;
+    }
+
+    .maze-style .buttons-field{
+        grid-column: 1;
+        grid-row: 4;
+        justify-content: flex-end;
+    }
+
+    .maze-style .info-box .animation-container{
+        height: 25%;
+        top: 53%;
+    }
+
+}

@@ -1,0 +1,35 @@
+.selector-field-item{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 15% 30% 15%;
+    grid-template-rows: 100%;
+    align-items: center;
+    justify-items: center;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+
+.selector-field-item h2{
+    color:#00635D;
+    font-size: clamp(1.3rem, 2vw, 2rem);
+}
+
+.selector-field-item .arrow-select{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-image: url("../../images/Atomo_Icono_Flecha.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.selector-field-item .arrow-select.reverse{
+    transform: rotate(180deg);
+}
+
+.selector-field-item .current-value{
+    color:#00635D;
+    font-size: clamp(1rem, 2vw, 2rem);
+}
+
