@@ -1,0 +1,34 @@
+<svg width="380" height="380" viewBox="0 0 380 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+@font-face
+{
+    font-family: Montserrat;
+    src: url("../../../Public/Fonts/Montserrat-Bold.ttf");
+}
+</style>
+<g id="Frame 1">
+<g clip-path="url(#clip0)">
+<rect width="380" height="380" rx="20" fill="#333333"/>
+<g id="Group 30">
+<path id="Vector 6" d="M170.304 171.559L71.4467 129.191C63.3656 125.728 63.3656 114.272 71.4467 110.809L170.304 68.4411C182.881 63.0508 197.119 63.0508 209.696 68.4411L308.553 110.809C316.634 114.272 316.634 125.728 308.553 129.191L209.696 171.559C197.118 176.949 182.881 176.949 170.304 171.559Z" fill="#EDCA71"/>
+<text  fill="#4F4F4F" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="16" font-weight="bold" letter-spacing="0em"><tspan id="condition" x="176.148" y="125.736">J=3</tspan></text>
+</g>
+<path id="Vector 10" d="M10 119C9.44772 119 9 119.448 9 120C9 120.552 9.44772 121 10 121L10 119ZM50 120L40 114.226L40 125.774L50 120ZM10 121L41 121L41 119L10 119L10 121Z" fill="white"/>
+<path id="Vector 13" d="M191 186C191 185.448 190.552 185 190 185C189.448 185 189 185.448 189 186L191 186ZM190 216L195.774 206H184.226L190 216ZM189 186V207H191V186L189 186Z" fill="white"/>
+<path id="Vector 14" d="M191 236C191 235.448 190.552 235 190 235C189.448 235 189 235.448 189 236L191 236ZM190 266L195.774 256H184.226L190 266ZM189 236V257H191V236L189 236Z" fill="white"/>
+<path id="Vector 11" d="M330 119C329.448 119 329 119.448 329 120C329 120.552 329.448 121 330 121L330 119ZM348.5 120L348.5 121C349.052 121 349.5 120.552 349.5 120L348.5 120ZM348.5 37.5L342.726 47.5L354.274 47.5L348.5 37.5ZM330 121L348.5 121L348.5 119L330 119L330 121ZM349.5 120L349.5 46.5L347.5 46.5L347.5 120L349.5 120Z" fill="white"/>
+<path id="Vector 12" d="M312 21C312.552 21 313 20.5523 313 20C313 19.4477 312.552 19 312 19L312 21ZM190 20L190 19C189.735 19 189.48 19.1054 189.293 19.2929C189.105 19.4804 189 19.7348 189 20L190 20ZM190 61.5L195.774 51.5L184.226 51.5L190 61.5ZM312 19L190 19L190 21L312 21L312 19ZM189 20L189 52.5L191 52.5L191 20L189 20Z" fill="white"/>
+<g id="Group 28">
+<rect id="Rectangle 28" x="50" y="280" width="280" height="80" rx="20" fill="#69E485"/>
+<text id="INSTRUCCI&#195;&#147;N" fill="#4F4F4F" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="16" font-weight="bold" letter-spacing="0em"><tspan x="131.305" y="325.736">INSTRUCCI&#xd3;N</tspan></text>
+</g>
+<text id="NO" fill="white" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="16" font-weight="bold" letter-spacing="0em"><tspan x="326.289" y="25.736">NO</tspan></text>
+<text id="S&#195;&#141;" fill="white" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="16" font-weight="bold" letter-spacing="0em"><tspan x="182.273" y="231.736">S&#xcd;</tspan></text>
+</g>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="380" height="380" rx="20" fill="white"/>
+</clipPath>
+</defs>
+</svg>

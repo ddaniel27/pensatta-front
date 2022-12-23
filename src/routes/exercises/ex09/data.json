@@ -1,0 +1,23 @@
+{   
+    "informative_text":[
+        "Muévete oprimiendo estos botones o presionando las teclas de dirección de tu teclado."
+    ],
+    "options": [
+
+    ],
+    "initMessages":[
+        "¡Ayúdame a atravesar el laberinto sin perder mis datos!",
+        "Guíame hasta la salida evitando a los enemigos que pueden robar mi información."
+    ],
+    "threshold":{
+        "max" : 3,
+        "min" : 1,
+        "perfect": 3
+    },
+    "path": "09",
+    "color": "#AE985E",
+    "name":"Cruza el laberinto",
+    "id": 9
+
+
+}

@@ -7,5 +7,8 @@ export default defineConfig({
   plugins: [react(), shimReactPdf()],
   server: {
     host: true
+  },
+  build: {
+    chunkSizeWarningLimit: 4000,
   }
 })

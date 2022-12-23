@@ -1,0 +1,9 @@
+{
+    "laberinto1" : [
+        { "x" : 0 , "y": 0 ,"width": 4 ,"height": 180 },
+        { "x" : 180 , "y": 0 ,"width": 4 ,"height": 184 },
+        { "x" : 0 , "y": 0 ,"width": 180 ,"height": 4 },
+        { "x" : 0 , "y": 180 ,"width": 180 ,"height": 4 }
+    ]
+
+}
