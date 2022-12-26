@@ -1,4 +1,59 @@
-.zorrito{
+.maze{
+    display: flex;
+    position: relative ;
+    width: 500px;
+    height: 500px;
+    background: #4F4F4F; 
+    border-radius: 20px;
+    
+}
+.mazeContainer{
+    display: flex;
+    align-items:right;
+    justify-content: right;
+}
+.allContainer{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-content: center;
+    justify-content: center;
+}
+.buttonsContainer{
+    position:relative;
+    width:114px;
+    height: 86px;
+
+}
+.infoContainer{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-content: left;
+    justify-content: left;
+
+}
+.intentosContainer{
+    padding : 10%;
+    font-family: 'montserrat';
+    font-weight: bold;
+    color:black;
+}
+.btnR{
     position:absolute;
-    left:20px;
+    top:50%;
+    left:80%;
+}
+.btnL{
+    position:absolute;
+    top:50%;
+    left:20%;
+}
+.btnU{
+    position:absolute;
+    top:20%;
+    left:50%;
+}
+.btnD{
+    position:absolute;
+    top:80%;
+    left:50%;
 }

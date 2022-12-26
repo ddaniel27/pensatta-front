@@ -1,13 +1,18 @@
 import React, {useState, useEffect, useRef, useLayoutEffect} from "react";
 import zorrito from "/images/exercises/09/zorrito.svg"
+import laberintoN from "/images/exercises/09/laberinto1.svg"
 import styles from "../../../styles/maze2Component.module.css"
 import laberintos from "../ex09/laberintos.json"
+import MazeButton from "./mazeButton";
+import corazon from "/images/exercises/09/corazon.svg"
 
 const maze2Styles = {
     zorrito :{
         position: "absolute",
-        left:"5px",
-        top: "5px"   
+        left:"4%",
+        top: "4%",
+        width: "5%",
+        height:"5%"   
     },
     mazeContainer:{
         display : "flex",
@@ -31,23 +36,23 @@ const maze2Styles = {
 
 
 const Zorrito = ({style}) => (<img src={zorrito} alt="zorrito" style={style}/>)
-
+const LaberintoN = ()=> (<img src={laberintoN} alt="laberintoN"/>)
 const Maze = ({style})=>{
     const canvas = laberintos.laberinto1.map( line => {
             const linedraw = {
                 position:"absolute",
-                top : `${line.y}px`,
-                left : `${line.x}px`,
-                width :`${line.width}px`,
-                height : `${line.height}px`,
-                background : "black"
+                top : `${line.y}%`,
+                left : `${line.x}%`,
+                width :`${line.width}%`,
+                height : `${line.height}%`,
+                background : "#008E86"
             };
 
              return <canvas style={linedraw}></canvas>
     })
   
     return(
-        <div>
+        <div style={ {display: "flex", position:"relative",width:"100%", height:"100%"}}>
             {canvas}
         </div>
     )
@@ -57,12 +62,12 @@ const Maze = ({style})=>{
 
 
 const Maze2Component = ({}) => {
-    const [posx, setPosx] = useState(5);
-    const [posy, setPosy] = useState(5);
+    const [posx, setPosx] = useState(4);
+    const [posy, setPosy] = useState(4);
     const intervalRef = useRef(null);
     const [styleZorrito, setStyleZorrito] = useState(maze2Styles.zorrito)
     const [styleMaze, setStyleMaze] = useState(maze2Styles.canvas1)
-    const [zorritoHitbox, setZorritoHitbox]= useState({x: posx ,y: posy ,width: 35 ,height: 26 })
+    const [zorritoHitbox, setZorritoHitbox]= useState({x: posx ,y: posy ,width: 5 ,height: 5 })
     const [isCollide, setIsCollide] =useState(false)
 
     const collisionDetection = (rect1, rect2) => (
@@ -81,7 +86,7 @@ const Maze2Component = ({}) => {
 
             setStyleZorrito({ 
                 ...styleZorrito,
-                top : `${posy}px`
+                top : `${posy}%`
         })
  }
 
@@ -93,7 +98,7 @@ const Maze2Component = ({}) => {
        if(!isCollide){
             setStyleZorrito( {
                 ...styleZorrito,
-                left : `${posx}px`
+                left : `${posx}%`
            })
            
        }
@@ -184,23 +189,52 @@ const Maze2Component = ({}) => {
   }
     
 
- 
     return(
-        <div>
-            <Maze style={styleMaze}/>
-            <Zorrito style = {styleZorrito} />
-            <button onMouseDown = {!isCollide ? ()=>startCounterX(1): ()=>correcciónX(1)}
-                    onMouseUp = {stopCounter}
-                    onMouseLeave = {stopCounter}> Right</button>
-            <button onMouseDown = {!isCollide ? ()=>startCounterY(1) : ()=>correcciónY(1)}
-                    onMouseUp = {stopCounter}
-                    onMouseLeave = {stopCounter}>Down</button>
-            <button onMouseDown = {!isCollide ? ()=>startCounterX(-1) : ()=>correcciónY(-1)}
-                    onMouseUp = {stopCounter}
-                    onMouseLeave = {stopCounter}> Left</button>
-            <button onMouseDown = {!isCollide ? ()=>startCounterY(-1) : ()=>correcciónY(-1)}
-                    onMouseUp = {stopCounter}
-                    onMouseLeave = {stopCounter}>Up</button>
+        <div className={styles.allContainer}>
+            <div className={styles.mazeContainer}>
+                <div className={styles.maze}>
+                    <div style={{display: "flex", position:"relative",width:"90.83275862%", height:"90.83275862%", top:"4%", left:"3.6%"}}>
+                        <Maze style={styleMaze}/>
+                        <Zorrito style = {styleZorrito} />
+                    </div>
+                </div>
+            </div>
+            <div className={styles.infoContainer}>
+                <div className={styles.intentosContainer}>
+                    Intentos:
+                    <div>
+                        <img src={corazon}/>
+                        <img src={corazon}/>
+                        <img src={corazon}/>
+                    </div>
+                </div>
+                <div className={styles.buttonsContainer}>
+                    <div className={styles.btnR}>
+                        <MazeButton onMouseDown = {!isCollide ? ()=>startCounterX(0.2): ()=>correcciónX(0.2)}
+                            onMouseUp = {stopCounter}
+                            onMouseLeave = {stopCounter}
+                            direction="right" /> 
+                    </div>
+                    <div className={styles.btnD}>
+                        <MazeButton onMouseDown = {!isCollide ? ()=>startCounterY(0.2) : ()=>correcciónY(0.2)}
+                            onMouseUp = {stopCounter}
+                            onMouseLeave = {stopCounter}
+                            direction="down" />
+                    </div>
+                    <div className={styles.btnL}>
+                        <MazeButton onMouseDown = {!isCollide ? ()=>startCounterX(-0.2) : ()=>correcciónY(-0.2)}
+                            onMouseUp = {stopCounter}
+                            onMouseLeave = {stopCounter}
+                            direction = "left" /> 
+                    </div>
+                    <div className={styles.btnU}>
+                        <MazeButton onMouseDown = {!isCollide ? ()=>startCounterY(-0.2) : ()=>correcciónY(-0.2)}
+                            onMouseUp = {stopCounter}
+                            onMouseLeave = {stopCounter} 
+                            direction = "up"/>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 
