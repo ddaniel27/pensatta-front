@@ -38,7 +38,7 @@ const maze2Styles = {
 const Zorrito = ({style}) => (<img src={zorrito} alt="zorrito" style={style}/>)
 const LaberintoN = ()=> (<img src={laberintoN} alt="laberintoN"/>)
 const Maze = ({style})=>{
-    const canvas = laberintos.laberinto1.map( line => {
+    const canvas = laberintos.laberinto9.map( line => {
             const linedraw = {
                 position:"absolute",
                 top : `${line.y}%`,
@@ -128,7 +128,7 @@ const Maze2Component = ({}) => {
                 })
                 
                 if(
-                    laberintos.laberinto1.some( line => { 
+                    laberintos.laberinto6.some( line => { 
                     if(collisionDetection({...zorritoHitbox, x :  counter + 2*incremento },line)){
                         return true
                     }
@@ -141,7 +141,7 @@ const Maze2Component = ({}) => {
                 }
                
             
-            }}, 20);
+            }}, 10);
  
       };
 
@@ -162,7 +162,7 @@ const Maze2Component = ({}) => {
                 y :  counter + incremento
             })
             if(
-                laberintos.laberinto1.some( line => { 
+                laberintos.laberinto6.some( line => { 
                 if(collisionDetection({...zorritoHitbox, y :  counter + 2*incremento},line)){
                     return true
                 }
@@ -175,7 +175,7 @@ const Maze2Component = ({}) => {
             }
            
         } 
-        }, 20);
+        }, 10);
         
 
   };
