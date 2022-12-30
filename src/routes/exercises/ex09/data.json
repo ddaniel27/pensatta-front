@@ -11,11 +11,11 @@
     ],
     "threshold":{
         "max" : 3,
-        "min" : 1,
+        "min" : 0,
         "perfect": 3
     },
     "path": "09",
-    "color": "#AE985E",
+    "color": "#53745B",
     "name":"Cruza el laberinto",
     "id": 9
 
