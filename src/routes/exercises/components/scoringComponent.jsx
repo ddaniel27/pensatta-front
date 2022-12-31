@@ -20,7 +20,7 @@ export default function ScoringComponent({initMessages=["Inicia dando click al b
     React.useEffect(()=>{
         if(score >= threshold.max){
             setResultMessage([`¡Felicidades! Has terminado el ejercicio.`, `Tu puntuación es ${score} de ${threshold.perfect} puntos.`])
-        }else if(score > threshold.max && score <= threshold.min){
+        }else if(score < threshold.max && score > threshold.min){
             setResultMessage([`¡Vaya! Has terminado el ejercicio.`, `Tu puntuación es ${score} de ${threshold.perfect} puntos.`])
         }else{
             setResultMessage([`¡Mejor suerte para la proxima!`, `Tu puntuación es ${score} de ${threshold.perfect} puntos.`])

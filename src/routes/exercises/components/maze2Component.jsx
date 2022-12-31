@@ -1,6 +1,5 @@
 import React, {useState, useEffect, useRef, useLayoutEffect} from "react";
 import zorrito from "/images/exercises/09/zorrito.svg"
-import laberintoN from "/images/exercises/09/laberinto1.svg"
 import styles from "../../../styles/maze2Component.module.css"
 import laberintos from "../ex09/laberintos.json"
 import starts from "../ex09/starts.json"
@@ -16,7 +15,6 @@ import positionEnemies from "../ex09/enemies.json"
 
 
 const Zorrito = ({style}) => (<img src={zorrito} alt="zorrito" style={style}/>)
-const LaberintoN = ()=> (<img src={laberintoN} alt="laberintoN"/>)
 const Maze = ({style, laberinto})=>{
     const canvas = laberinto.map( line => {
             const linedraw = {
@@ -37,6 +35,17 @@ const Maze = ({style, laberinto})=>{
         </div>
     )
 }
+const Hearts = ({vidas,style}) =>{ 
+    let hearts = [];
+
+    for( var i = 1; i <= vidas; i++) {
+            hearts.push(
+            <div>
+                <img src={corazon} style={style} />
+            </div>  );
+        }
+    return hearts
+}
 
 
 const Maze2Component = ({lab,setPhase,setScore}) => {
@@ -54,21 +63,15 @@ const Maze2Component = ({lab,setPhase,setScore}) => {
             display : "flex",
             backgroundColor : ""
         },
-        canvas1:{
-            padding:0,
-            margin:0,
-            boxSizing: "border-box",
-            border: "5px solid black",
-            position: "absolute",
-            top:"50%",
-            left: "50%",
-            transform: "translate(-50%,-50%)",
-            background: "blue"
+        corazon:{
+            width:"100%",
+            height:"auto"
         }
         
     }
     const start = starts[`laberinto${lab}`].startHitbox;
     const finish = starts[`laberinto${lab}`].finishHitbox;
+    const enemiesPos = positionEnemies[`laberinto${lab}`];
     
     
 
@@ -84,9 +87,10 @@ const Maze2Component = ({lab,setPhase,setScore}) => {
     const [isWin, setIsWin] = useState(false);
     const [vidas,setVidas] = useState(3);
     const [isRestart,setIsRestart] =useState(false)
-    const [posEnemies, setPosEnemies] = useState(positionEnemies[`laberinto${lab}`]);
+    const [posEnemies, setPosEnemies] = useState(enemiesPos);
     const [loop, setLoop] = useState(0);
-    const [trigger, setTrigger] = useState(0)
+    const [trigger, setTrigger] = useState(0);
+   
     
 
     const collisionDetection = (rect1, rect2) => (
@@ -95,9 +99,10 @@ const Maze2Component = ({lab,setPhase,setScore}) => {
         rect1.y <= rect2.y +rect2.height &&
         rect1.height +rect1.y >= rect2.y
     )
-
+    
+    
     useEffect(()=>{
-        setPosEnemies(positionEnemies[`laberinto${lab}`]);
+        setPosEnemies(enemiesPos);
         setPosx(enemiX);
         setPosy(enemiY);
         setZorritoHitbox({...zorritoHitbox, y : enemiY,
@@ -113,7 +118,10 @@ const Maze2Component = ({lab,setPhase,setScore}) => {
     useEffect( ()=>{
        
         setTimeout(()=>{
-            setLoop(loop+1)
+            if((!vidas == 0)&& (!isWin)){
+                setLoop(loop+1)
+            }
+
         },10)
 
     },[trigger])
@@ -125,16 +133,17 @@ const Maze2Component = ({lab,setPhase,setScore}) => {
         const newposEnemies = posEnemies.map((pos)=>{
             if(pos.direction == "right"){
                 if(
-                    laberinto.some( line => { 
-                    if(collisionDetection({...pos , x: pos.x + incremento },line)){
-                        return true
-                    }
-                })|| collisionDetection({...pos , x: pos.x + incremento },start)
-                || collisionDetection({...pos , x: pos.y + incremento },finish)
-                || collisionDetection({...pos , x: pos.x + incremento },zorritoHitbox)
+                    collisionDetection({...pos , x: pos.x + incremento },zorritoHitbox)                    
+                    || laberinto.some( line => { 
+                        if(collisionDetection({...pos , x: pos.x + incremento },line)){
+                            return true
+                        }
+                    })
+                    || collisionDetection({...pos , x: pos.x + incremento },start)
+                    || collisionDetection({...pos , x: pos.x + incremento },finish)                
                 ){
                     if(collisionDetection({...pos , x: pos.x + incremento },zorritoHitbox)){
-                        setPosEnemies(positionEnemies[`laberinto${lab}`]);
+                        setPosEnemies(enemiesPos);
                         setPosx(enemiX);
                         setPosy(enemiY);
                         setZorritoHitbox({...zorritoHitbox, y : enemiY,
@@ -146,25 +155,29 @@ const Maze2Component = ({lab,setPhase,setScore}) => {
                         })
                         setVidas(vidas-1)
                         setIsRestart(!isRestart)
+                        clearInterval(intervalRef.current);
+                        intervalRef.current = null;
                     }
                     
                     const direction = ["up", "left", "down", "right"][Math.floor(Math.random() * 4)];
+                    
                     return({...pos , direction: direction})
                 }
                 return({...pos , x: pos.x + incremento})
 
             }else if(pos.direction == "down"){
                 if(
-                    laberinto.some( line => { 
-                    if(collisionDetection({...pos , y: pos.y + incremento },line)){
-                        return true
-                    }
-                })|| collisionDetection({...pos , y: pos.y + incremento },start)
-                || collisionDetection({...pos , y: pos.y + incremento },finish)
-                || collisionDetection({...pos , y: pos.y + incremento },zorritoHitbox)
+                    collisionDetection({...pos , y: pos.y + incremento },zorritoHitbox)
+                    ||  laberinto.some( line => { 
+                            if(collisionDetection({...pos , y: pos.y + incremento },line)){
+                            return true
+                            }
+                        }) 
+                    || collisionDetection({...pos , y: pos.y + incremento },finish)
+                    || collisionDetection({...pos , y: pos.y + incremento },start)
                 ){
                     if(collisionDetection({...pos , y: pos.y + incremento },zorritoHitbox)){
-                        setPosEnemies(positionEnemies[`laberinto${lab}`]);
+                        setPosEnemies(enemiesPos);
                         setPosx(enemiX);
                         setPosy(enemiY);
                         setZorritoHitbox({...zorritoHitbox, y : enemiY,
@@ -176,6 +189,8 @@ const Maze2Component = ({lab,setPhase,setScore}) => {
                         })
                         setVidas(vidas-1)
                         setIsRestart(!isRestart)
+                        clearInterval(intervalRef.current);
+                        intervalRef.current = null;
                     }
                     
                     const direction = ["up", "left", "down", "right"][Math.floor(Math.random() * 4)];
@@ -184,15 +199,17 @@ const Maze2Component = ({lab,setPhase,setScore}) => {
                 return({...pos , y: pos.y + incremento})
             }else if(pos.direction == "up"){
                 if(
-                    laberinto.some( line => { 
-                    if(collisionDetection({...pos , y: pos.y - incremento },line)){
-                        return true
-                    }
-                })|| collisionDetection({...pos , y: pos.y - incremento },start)
-                || collisionDetection({...pos , y: pos.y - incremento },finish)
-                || collisionDetection({...pos , y: pos.y - incremento },zorritoHitbox)){
+                    collisionDetection({...pos , y: pos.y - incremento },zorritoHitbox)
+                    || laberinto.some( line => { 
+                            if(collisionDetection({...pos , y: pos.y - incremento },line)){
+                                return true
+                            }
+                        })
+                    || collisionDetection({...pos , y: pos.y - incremento },start)
+                    || collisionDetection({...pos , y: pos.y - incremento },finish)
+                ){
                     if(collisionDetection({...pos , y: pos.y - incremento },zorritoHitbox)){
-                        setPosEnemies(positionEnemies[`laberinto${lab}`]);
+                        setPosEnemies(enemiesPos);
                         setPosx(enemiX);
                         setPosy(enemiY);
                         setZorritoHitbox({...zorritoHitbox, y : enemiY,
@@ -204,6 +221,8 @@ const Maze2Component = ({lab,setPhase,setScore}) => {
                         })
                         setVidas(vidas-1)
                         setIsRestart(!isRestart)
+                        clearInterval(intervalRef.current);
+                        intervalRef.current = null;
                     }
                     
                     const direction = ["up", "left", "down", "right"][Math.floor(Math.random() * 4)];
@@ -212,16 +231,17 @@ const Maze2Component = ({lab,setPhase,setScore}) => {
                 return({...pos , y: pos.y - incremento})
             }else{
                 if(
-                    laberinto.some( line => { 
-                    if(collisionDetection({...pos , x: pos.x - incremento },line)){
-                        return true
-                    }
-                })|| collisionDetection({...pos , x: pos.x - incremento },start)
-                || collisionDetection({...pos , x: pos.x - incremento },finish
-                || collisionDetection({...pos , x: pos.x - incremento },zorritoHitbox))
+                    collisionDetection({...pos , x: pos.x - incremento },zorritoHitbox)
+                    || laberinto.some( line => { 
+                        if(collisionDetection({...pos , x: pos.x - incremento },line)){
+                            return true
+                        }
+                    }) 
+                    || collisionDetection({...pos , x: pos.x - incremento },start)
+                    || collisionDetection({...pos , x: pos.x - incremento },finish)                
                 ){
                     if(collisionDetection({...pos , x: pos.x - incremento },zorritoHitbox)){
-                        setPosEnemies(positionEnemies[`laberinto${lab}`]);
+                        setPosEnemies(enemiesPos);
                         setPosx(enemiX);
                         setPosy(enemiY);
                         setZorritoHitbox({...zorritoHitbox, y : enemiY,
@@ -233,6 +253,8 @@ const Maze2Component = ({lab,setPhase,setScore}) => {
                         })
                         setVidas(vidas-1)
                         setIsRestart(!isRestart)
+                        clearInterval(intervalRef.current);
+                        intervalRef.current = null;
                     }
                     const direction = ["up", "left", "down", "right"][Math.floor(Math.random() * 4)];
                     return({...pos , direction: direction})
@@ -280,6 +302,7 @@ const Maze2Component = ({lab,setPhase,setScore}) => {
         if (intervalRef.current) {
           clearInterval(intervalRef.current);
           intervalRef.current = null;
+          setIsCollide(false)
         }
       };
 
@@ -287,6 +310,7 @@ const Maze2Component = ({lab,setPhase,setScore}) => {
     const startCounterX = (incremento) => {
             let counter = 0;
             if (intervalRef.current) return;
+           
             
             intervalRef.current = setInterval(() => {
             if(!isCollide){
@@ -323,8 +347,8 @@ const Maze2Component = ({lab,setPhase,setScore}) => {
                             return true
                         }
                     })){
-                        console.log("collision")
-                        setPosEnemies(positionEnemies[`laberinto${lab}`]);
+                        
+                        setPosEnemies(enemiesPos);
                         setPosx(enemiX);
                         setPosy(enemiY);
                         setZorritoHitbox({...zorritoHitbox, y : enemiY,
@@ -335,10 +359,13 @@ const Maze2Component = ({lab,setPhase,setScore}) => {
                                 left: `${enemiX}%`
                         })
                         setVidas(vidas-1);
+                        setIsCollide(true)
                         clearInterval(intervalRef.current);
+                        intervalRef.current = null;
                         return
                     }
                     clearInterval(intervalRef.current);
+                    intervalRef.current = null;
                 }
                 
                
@@ -354,6 +381,7 @@ const Maze2Component = ({lab,setPhase,setScore}) => {
       const startCounterY = (incremento) => {
         let counter = 0;
         if (intervalRef.current) return;
+        
         intervalRef.current = setInterval(() => {
         if(!isCollide){
             setPosy((prevCounter) => {
@@ -388,7 +416,7 @@ const Maze2Component = ({lab,setPhase,setScore}) => {
                         return true
                     }
                 })){
-                    setPosEnemies(positionEnemies[`laberinto${lab}`]);
+                    setPosEnemies(enemiesPos);
                     setPosx(enemiX);
                     setPosy(enemiY);
                     setZorritoHitbox({...zorritoHitbox, y : enemiY,
@@ -400,9 +428,11 @@ const Maze2Component = ({lab,setPhase,setScore}) => {
                     })
                     setVidas(vidas-1);
                     clearInterval(intervalRef.current);
+                    intervalRef.current = null;
                     return
                 }
                 clearInterval(intervalRef.current);
+                intervalRef.current = null;
             }
             
            
@@ -411,16 +441,26 @@ const Maze2Component = ({lab,setPhase,setScore}) => {
         
 
   };
-  const correcciónX = (incremento) => {
-    setPosx(posx - 2*incremento )
-    setIsCollide(false)
-  }
-  const correcciónY = (incremento) => {
-    setPosy(posy - 2*incremento)
-    setIsCollide(false)
-  }
-    
+const cbdown = (event)=>{
+    if (event.repeat) return;
+    if(isWin || vidas <= 0) return;
+    const option = {
+        ArrowRight: () => {startCounterX(0.2)},
+        ArrowLeft: () => {startCounterX(-0.2)},
+        ArrowDown: () => {startCounterY(0.2)},
+        ArrowUp: () => {startCounterY(-0.2)}
+    }
+    option[event.code]()
+}
+const cbup = (event)=>{
+    stopCounter();
+}
 
+window.onkeydown = cbdown;
+window.onkeyup = cbup;
+
+  
+  
     return(
         <div className={styles.allContainer}>
             <div className={styles.mazeContainer}>
@@ -435,46 +475,57 @@ const Maze2Component = ({lab,setPhase,setScore}) => {
             <div className={styles.infoContainer}>
                 <div className={styles.intentosContainer}>
                     Intentos:
-                    <div>
-                        <img src={corazon}/>
-                        <img src={corazon}/>
-                        <img src={corazon}/>
+                    <div className={styles.corazones}>                        
+                        <Hearts vidas={vidas} style={maze2Styles.corazon}/>                   
                     </div>
                     <div> {isWin ? <p>Ganaste</p>: <></>}</div>
                 </div>
-                <div className={styles.buttonsContainer}>
-                    <div className={styles.btnR}>
-                        <MazeButton onMouseDown = { !isWin ? ()=>startCounterX(0.2):null }
-                            onMouseUp = {stopCounter}
-                            onMouseLeave = {stopCounter}
-                            direction="right" /> 
+                <div className={styles.containerCross}>
+                    <div className={styles.containerBtnsText}>
+                        <div className={styles.buttonsContainer}>
+                            <div className={styles.btnR}>
+                                <MazeButton onMouseDown = { !isWin && vidas > 0 ? ()=>startCounterX(0.2):null }
+                                    onMouseUp = {stopCounter}
+                                    onMouseLeave = {stopCounter}
+                                    direction="right" /> 
+                            </div>
+                            <div className={styles.btnD}>
+                                <MazeButton onMouseDown = { !isWin && vidas > 0 ? ()=>startCounterY(0.2):null }
+                                    onMouseUp = {stopCounter}
+                                    onMouseLeave = {stopCounter}
+                                    direction="down" />
+                            </div>
+                            <div className={styles.btnL}>
+                                <MazeButton onMouseDown = { !isWin && vidas > 0 ? ()=>startCounterX(-0.2):null }
+                                    onMouseUp = {stopCounter}
+                                    onMouseLeave = {stopCounter}
+                                    direction = "left" /> 
+                            </div>
+                            <div className={styles.btnU}>
+                                <MazeButton onMouseDown = { !isWin && vidas > 0? ()=>startCounterY(-0.2) :null}
+                                    onMouseUp = {stopCounter}
+                                    onMouseLeave = {stopCounter} 
+                                    direction = "up"/>
+                            </div>
+                        </div>
+                        <div className={styles.infoText}>
+                            Muévete oprimiendo estos botones o presionando las teclas de dirección de tu teclado.
+                        </div>
+
                     </div>
-                    <div className={styles.btnD}>
-                        <MazeButton onMouseDown = { !isWin ? ()=>startCounterY(0.2):null }
-                            onMouseUp = {stopCounter}
-                            onMouseLeave = {stopCounter}
-                            direction="down" />
-                    </div>
-                    <div className={styles.btnL}>
-                        <MazeButton onMouseDown = { !isWin ? ()=>startCounterX(-0.2):null }
-                            onMouseUp = {stopCounter}
-                            onMouseLeave = {stopCounter}
-                            direction = "left" /> 
-                    </div>
-                    <div className={styles.btnU}>
-                        <MazeButton onMouseDown = { !isWin? ()=>startCounterY(-0.2) :null}
-                            onMouseUp = {stopCounter}
-                            onMouseLeave = {stopCounter} 
-                            direction = "up"/>
-                    </div>
+                    {isWin || vidas <= 0 ? <div className={styles.containerBtnNext}>
+                                                <button onClick={()=>{  setPhase("end")
+                                                                        setScore(vidas)}}
+                                                        className={styles.btnNext}>SIGUIENTE</button>
+                                            </div> :<></>}
                 </div>
             </div>
-            {isWin ? <button onClick={()=>{setPhase("end")
-                                            setScore(vidas)}}>SIGUIENTE</button>:<></>}
+           
         </div>
     )
 
 }
+
 
 export default Maze2Component
 

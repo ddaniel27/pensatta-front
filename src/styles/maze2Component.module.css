@@ -13,6 +13,7 @@
     justify-content: right;
 }
 .allContainer{
+    height:100%;
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-content: center;
@@ -22,11 +23,20 @@
     position:relative;
     width:114px;
     height: 86px;
+    right:10%;
 
+}
+.containerCross{
+
+    grid-template-rows: 4fr 1fr;
+    display: grid;
+    
+    width:100%;
 }
 .infoContainer{
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr;
     align-content: left;
     justify-content: left;
 
@@ -35,7 +45,8 @@
     padding : 10%;
     font-family: 'montserrat';
     font-weight: bold;
-    color:black;
+    color:white;
+    width:100%
 }
 .btnR{
     position:absolute;
@@ -56,5 +67,53 @@
     position:absolute;
     top:80%;
     left:50%;
+}
+.btnNext{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    background: #F97D61;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    filter: drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.25));
+    transition: 0.2s;
+    z-index: 2;
+}
+.containerBtnNext{
+    position:relative;
+    
+}
+.corazones{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100%;
+    width: 70%;
+    align-items: center;
+    gap:13%;
+}
+
+.containerBtnsText{
+    display:flex;
+    flex-direction: column-reverse;
+    padding:10%;
+    padding-right: 15%;
+    align-items: flex-end;
+
+}
+.infoText{
+    background: #00635D;
+    border: 3px solid #00D8CC;
+    border-radius: 18px;
+    color:white;
+    width: 190px;
+    height: 105px;
+    padding: 3px;
+    text-align: right;
 }
 
