@@ -9,7 +9,7 @@ const Ex09 = () => {
         <ScoringComponent initMessages={myData.initMessages} background={myData.color} title={myData.name} threshold={myData.threshold} exerciseId={myData.id}>
             {
                 (setScore, setPhase) => (
-                    <Maze2Component lab={10} setPhase={setPhase} setScore={setScore}/>
+                    <Maze2Component lab={Math.floor(Math.random() * 10) + 1} setPhase={setPhase} setScore={setScore}/>
                 )
             }
         </ScoringComponent>
