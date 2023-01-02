@@ -2,6 +2,43 @@
     "laberinto1":{
         "startHitbox":{ "x": 89.22 ,"y": -0.78 ,"width": 9 ,"height": 0.1 },
         "startPosition":{"x": 93, "y": 2},
-        "finishHitbox":{ "x": 50.22 ,"y": 102 ,"width": 9 ,"height": 0.1 }}
+        "finishHitbox":{ "x": 50.22 ,"y": 102 ,"width": 9 ,"height": 0.1 }},
+    "laberinto2":{
+        "startHitbox":{ "x": 43.24 ,"y": -0.78 ,"width": 9 ,"height": 0.1 },
+        "startPosition":{"x": 43.24, "y": 1.22},
+        "finishHitbox":{ "x": 50.22 ,"y": 102 ,"width": 9 ,"height": 0.1 }},
+    "laberinto3":{
+        "startHitbox":{ "x": 0 ,"y": 50 ,"width": 0.1 ,"height": 9 },
+        "startPosition":{"x": 0.19, "y": 51},
+        "finishHitbox":{ "x": 100 ,"y": 40.25 ,"width": 0.1 ,"height": 9 }},
+    "laberinto4":{
+            "startHitbox":{ "x": 100 ,"y": 40.25 ,"width": 0.1 ,"height": 9 },
+            "startPosition":{"x": 95, "y": 43},
+            "finishHitbox":{ "x": 0 ,"y": 50 ,"width": 0.1 ,"height": 9 }},
+    "laberinto5":{
+        "startHitbox":{ "x": 43.27 ,"y": 0.5 ,"width": 9 ,"height": 0.1 },
+        "startPosition":{"x": 44.27, "y": 2},
+        "finishHitbox":{ "x": 50 ,"y": 100 ,"width": 9 ,"height": 0.1 }},
+    "laberinto6":{
+        "startHitbox":{ "x": 42.27 ,"y": 0.5 ,"width": 9 ,"height": 0.1 },
+        "startPosition":{"x": 43, "y": 2},
+        "finishHitbox":{ "x": 50 ,"y": 100 ,"width": 9 ,"height": 0.1 }},
+    "laberinto7":{
+        "startHitbox":{ "x": -1.2 ,"y": 50 ,"width": 0.1 ,"height": 9 },
+        "startPosition":{"x": 1, "y": 52},
+        "finishHitbox":{ "x": 100 ,"y": 40 ,"width": 0.1 ,"height": 9 }},
+    "laberinto8":{
+        "startHitbox":{ "x": 100 ,"y": 40 ,"width": 0.1 ,"height": 9 },
+        "startPosition":{"x": 94, "y": 41},
+        "finishHitbox":{ "x": -1.2 ,"y": 50 ,"width": 0.1 ,"height": 9 }},
+    "laberinto9":{
+        "startHitbox":{ "x": 50 ,"y": 102 ,"width": 9 ,"height": 0.1 },
+        "startPosition":{"x": 52.63, "y": 96.69},
+        "finishHitbox":{ "x": 40.13 ,"y": 0 ,"width": 9 ,"height": 0.1 }},
+    "laberinto10":{
+        "startHitbox":{ "x": 40.13 ,"y": 0 ,"width": 9 ,"height": 0.1 },
+        "startPosition":{"x": 42, "y": 2},
+        "finishHitbox":{ "x": 50 ,"y": 102 ,"width": 9 ,"height": 0.1 }}
+            
         
 }

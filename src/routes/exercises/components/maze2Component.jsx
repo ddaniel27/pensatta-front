@@ -478,7 +478,6 @@ window.onkeyup = cbup;
                     <div className={styles.corazones}>                        
                         <Hearts vidas={vidas} style={maze2Styles.corazon}/>                   
                     </div>
-                    <div> {isWin ? <p>Ganaste</p>: <></>}</div>
                 </div>
                 <div className={styles.containerCross}>
                     <div className={styles.containerBtnsText}>
