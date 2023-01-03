@@ -1,0 +1,58 @@
+{
+    "isSingle": "false",
+    "isLoop":true,
+    "columns": {
+        "column-1": {
+            "id": "column-1",
+            "title": "Bloques que puedes usar",
+            "optionsIds": [
+                "option-1",
+                "option-2"
+            ],
+            "isDropDisabled":true,
+            "info":"Arrastra los bloques para construir el algoritmo y programa las repeticiones."
+        },
+        "column-2": {
+            "id": "column-2",
+            "title": "Cuando: presionar botón iniciar",
+            "optionsIds": []
+        }
+    },
+    "options": {
+        "option-1": {
+            "id": "option-1",
+            "key": "banda",
+            "text": "mover banda",
+            "value": 1
+        },
+        "option-2": {
+            "id": "option-2",
+            "key": "escaner",
+            "text": "escanear",
+            "value": 1
+        }
+    },
+    "correctSequence":[
+        "brillo",
+        "color",
+        "nuevo"
+    ],
+    "informative_text":[
+        
+    ],
+    
+    "initMessages":[
+        "Programa la máquina para verificar el estado de los dulces.",
+        "Debes lograr que la banda se desplace y que el lector revise cada dulce.",
+        "Si el lector no encuentra un dulce al pasar, te contará un error. Programa el algoritmo con cautela."
+    ],
+    "threshold":{
+        "max" : 3,
+        "min" : 0,
+        "perfect": 3
+    },
+    "path": "09",
+    "color": "#53745B",
+    "name":"Cruza el laberinto",
+    "id": 9
+}
