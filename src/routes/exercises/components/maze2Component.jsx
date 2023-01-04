@@ -323,15 +323,15 @@ const Maze2Component = ({lab,setPhase,setScore}) => {
                 })
                 
                 if(
-                    laberinto.some( line => { 
-                    if(collisionDetection({...zorritoHitbox, x :  counter + 2*incremento },line)){
-                        return true
-                    }
-                }) 
+                    posEnemies.some( enemie => { 
+                        if(collisionDetection({...zorritoHitbox, x :  counter + 2*incremento},enemie)){
+                            return true
+                        }
+                    })                     
                 || collisionDetection( {...zorritoHitbox, x :  counter + 2*incremento},start)
                 || collisionDetection( {...zorritoHitbox, x :  counter + 2*incremento},finish)
-                || posEnemies.some( enemie => { 
-                    if(collisionDetection({...zorritoHitbox, x :  counter + 2*incremento},enemie)){
+                || laberinto.some( line => { 
+                    if(collisionDetection({...zorritoHitbox, x :  counter + 2*incremento },line)){
                         return true
                     }
                 })){
@@ -343,7 +343,7 @@ const Maze2Component = ({lab,setPhase,setScore}) => {
                         setIsWin(true);
                     }  
                     if(posEnemies.some( enemie => { 
-                        if(collisionDetection({...zorritoHitbox, x :  counter + 2*incremento},enemie)){
+                        if(collisionDetection({...zorritoHitbox, x :  counter},enemie)){
                             return true
                         }
                     })){
@@ -392,15 +392,15 @@ const Maze2Component = ({lab,setPhase,setScore}) => {
                 y :  counter + incremento
             })
             if(
-                laberinto.some( line => { 
-                if(collisionDetection({...zorritoHitbox, y :  counter + 2*incremento},line)){
-                    return true
-                }
-            })
+                posEnemies.some( enemie => { 
+                    if(collisionDetection({...zorritoHitbox, y :  counter + 2*incremento},enemie)){
+                        return true
+                    }
+                })                
             || collisionDetection( {...zorritoHitbox, y :  counter + 2*incremento},start) 
             || collisionDetection( {...zorritoHitbox, y :  counter + 2*incremento},finish)
-            || posEnemies.some( enemie => { 
-                if(collisionDetection({...zorritoHitbox, y :  counter + 2*incremento},enemie)){
+            || laberinto.some( line => { 
+                if(collisionDetection({...zorritoHitbox, y :  counter + 2*incremento},line)){
                     return true
                 }
             })){
@@ -412,7 +412,7 @@ const Maze2Component = ({lab,setPhase,setScore}) => {
                     setIsWin(true);
                 }  
                 if(posEnemies.some( enemie => { 
-                    if(collisionDetection({...zorritoHitbox, y :  counter + 2*incremento},enemie)){
+                    if(collisionDetection({...zorritoHitbox, y :  counter},enemie)){
                         return true
                     }
                 })){

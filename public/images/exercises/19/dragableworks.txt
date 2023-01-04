@@ -1,0 +1,149 @@
+import React,{useEffect, useState} from "react";
+import { Draggable, Droppable } from "react-beautiful-dnd";
+
+
+
+const BalloonSVG = ({color,text,id}) => {
+    
+
+    const dropBalloon = (event)=>{
+        event.target.style.left = `${event.pageX -58}px`;
+        event.target.style.top = `${event.pageY -58}px`;
+
+    }
+    const hola =(event)=>{
+        svg = event.target
+        svg.on
+    }
+    function makeDraggable(evt) {
+        var svg = evt.target;
+        console.log(svg);
+        svg.onmousedown=startDrag;
+        svg.onmousemove=drag;
+        svg.onmouseup= endDrag;
+        svg.onmouseleave = endDrag;
+        //svg.addEventListener('touchstart', startDrag);
+        //svg.addEventListener('touchmove', drag);
+        //svg.addEventListener('touchend', endDrag);
+        //svg.addEventListener('touchleave', endDrag);
+        //svg.addEventListener('touchcancel', endDrag);
+
+        function getMousePosition(evt) {
+          var CTM = svg.getScreenCTM();
+          if (evt.touches) { evt = evt.touches[0]; }
+          return {
+            x: (evt.clientX - CTM.e) / CTM.a,
+            y: (evt.clientY - CTM.f) / CTM.d
+          };
+        }
+
+        var selectedElement, offset, transform;
+
+        function initialiseDragging(evt) {
+            offset = getMousePosition(evt);
+
+            // Make sure the first transform on the element is a translate transform
+            var transforms = selectedElement.transform.baseVal;
+
+            if (transforms.length === 0 || transforms.getItem(0).type !== SVGTransform.SVG_TRANSFORM_TRANSLATE) {
+              // Create an transform that translates by (0, 0)
+              var translate = svg.createSVGTransform();
+              translate.setTranslate(0, 0);
+              selectedElement.transform.baseVal.insertItemBefore(translate, 0);
+            }
+
+            // Get initial translation
+            transform = transforms.getItem(0);
+            offset.x -= transform.matrix.e;
+            offset.y -= transform.matrix.f;
+        }
+
+        function startDrag(evt) {
+          console.log("ha empezado el drag")
+          if (evt.target.classList.contains('draggable')) {
+            selectedElement = evt.target;
+            initialiseDragging(evt);
+          } else if (evt.target.parentNode.classList.contains('draggable-group')) {
+            selectedElement = evt.target.parentNode;
+            initialiseDragging(evt);
+          }
+        }
+
+        function drag(evt) {
+            console.log("ha empezado el movedrag")
+          if (selectedElement) {
+            evt.preventDefault();
+            var coord = getMousePosition(evt);
+            transform.setTranslate(coord.x - offset.x, coord.y - offset.y);
+          }
+        }
+
+        function endDrag(evt) {
+          selectedElement = false;
+        }
+      }
+    return (
+        
+            <div className="mydroppableContext"
+            style={{
+                width:"80px",
+                position:"absolute"
+            }}
+                
+                //draggable="true"
+                //onDragEnd={dropBalloon}
+                key={id}
+                
+            >
+                <svg  onClick={makeDraggable} width="900" height="182" viewBox="0 0 80 182" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g className="draggable-group">
+            <circle cx="40" cy="40" r="40" fill={color}/>
+            <text x="51%" y="21%" textAnchor="middle" fill="#333333" fontSize="100%" fontFamily="Montserrat" dy=".3em">{text}</text>
+            <path d="M32.4853 83.7254L39.8462 70.1538L48.115 83.2462C49.3556 85.2104 47.9889 87.7786 45.6668 87.8469L35.2106 88.1544C32.8985 88.2224 31.3825 85.7587 32.4853 83.7254Z" fill="#BDBDBD"/>
+            <path d="M39.9773 80C48.8474 99.3939 45.1915 108.284 35.0834 122.727C19.1783 145.455 45.7887 168.485 44.5652 180" stroke="#F2F2F2" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M40.2671 80.2406C33.4978 75.0098 22.1131 79.9329 24.2669 84.856C26.4208 89.7791 35.9593 87.3175 40.2671 80.2406Z" stroke="#F2F2F2" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M39.9592 80.5483C47.551 75.0576 58.3748 82.4575 55.9593 87.6252C53.5437 92.7929 44.7903 87.9769 39.9592 80.5483Z" stroke="#F2F2F2" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+            </g>
+            
+            
+            </svg>
+       
+            </div>
+        
+
+    )
+
+}
+
+const BalloonsComponent = ({data})=>{
+    const [balloons, setBalloons] = useState(data.balloons)
+
+    const dragOver = (event)=>{
+        event.stopPropagation()
+        event.preventDefault()
+    }
+
+    return(
+        
+            
+                
+                    <div  onDragOver={dragOver}
+                        style={{
+                            width:"100%",
+                            height:"100%"
+                        }} >
+                            {
+                            balloons.map((balloon)=>{return <BalloonSVG text = {balloon.text} color = "#BDBDBD" id={balloon.id} />}
+                                  
+                            )
+                            }
+                                                                       
+                    </div>
+                
+            
+        
+
+    )
+}
+
+export default BalloonsComponent
