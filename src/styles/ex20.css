@@ -1,0 +1,44 @@
+
+.elementContainer{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    gap:1%;
+    width: 45%;
+    justify-content: center;
+}
+.column-2{
+    display : grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns : 4fr 1fr 4fr;
+    grid-template-rows : repeat(8,auto);
+}
+.dnd-context-container{
+    width:95%;
+    height: 95%;
+    display: grid;
+    grid-template-columns : repeat(2,1fr);
+    justify-items: center;
+    
+}
+.condition{
+    text-align: center;
+}
+.condition svg{
+    min-width: 100px;
+}
+.arrowDown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrowLeftNo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrowDownYes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

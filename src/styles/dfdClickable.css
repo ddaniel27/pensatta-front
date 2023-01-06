@@ -1,0 +1,32 @@
+.condition{
+    text-align: center;
+}
+.condition svg{
+    min-width: 100px;
+}
+.arrowLeftNo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrowLeftYes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrowDown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrowDownYes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrowDownNo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
