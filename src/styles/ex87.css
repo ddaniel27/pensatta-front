@@ -6,7 +6,6 @@
     justify-content: center;
 }
 .column{
-    position:relative;
     display : grid;
     align-items: center;
     justify-content: center;
@@ -19,5 +18,5 @@
     display: grid;
     grid-template-columns : repeat(2,1fr);
     justify-items: center;
-    
+    padding:2%;
 }

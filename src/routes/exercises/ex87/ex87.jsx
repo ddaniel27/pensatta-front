@@ -1,29 +1,29 @@
 import React, {useEffect,useState} from "react";
-import { DragDropContext } from "react-beautiful-dnd";
 import data from "./data.json"
-import DfdClickableComponent from "../components/DfdClickableComponent";
+import DfdClickable from "../components/dfdClickable";
+import BoardDfd from "../components/boardDfd";
 import "../../../styles/ex87.css"
 import NoScoringComponent from "../components/noScoringComponent";
 
 
 const Ex87 = ()=>{
     const [myData, setmyData] = useState(data)
-    const [column, setColumn1] = useState(data.column)
+    const [column, setColumn] = useState(data.column)
+    const [targetId, setTargetId] = useState(0)
 
     const handleFinish = (setPhase)=>{
         setPhase("end")
     }
     
-
     return(
        
        <NoScoringComponent initMessages={myData.initMessages} background={myData.color} title={myData.name}>
        {
            (setPhase) => (
             <div className="dnd-context-container">
-        
-                    <DfdClickableComponent column = {column} />
-               
+                    <DfdClickable column = {column} setTargetId={setTargetId}/>
+                    <BoardDfd targetId={targetId} column ={column}/>
+       
                 <div className="buttons-field">
                        <button onClick={()=>{handleFinish(setPhase)}}>SIGUIENTE</button>
                    </div>

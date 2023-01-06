@@ -1,6 +1,6 @@
 {"initMessages":[
-    "Piensa en una de tus rutinas diarias. Se trata de una serie de pasos que ejecutas para cumplir un objetivo o terminar una acción. ¡JUSTO ESO ES UN ALGORITMO! ",
-    "Ordena los pasos para dar una secuencia lógica a la rutina que encontrarás a continuación."
+    "A continuación, encontrarás un diagrama de flujo correspondiente a un condicional." ,
+    "Presiona cada una de las partes del diagrama, excepto las ramificaciones, para ver su equivalente en código."
 ],
 "threshold":{
     "max" : 1,
@@ -9,34 +9,34 @@
 },
 "path": "87",
 "color": "#1B6893",
-"name":"Estado de la lámpara",
+"name":"Observa el algoritmo",
 "id": 87,
 "column" : [
-    {"id": 1, "type":"begin", "text": "B = 4"},
-    {"id": 2, "type":"empty", "text": ""},
-    {"id": 3, "type":"empty", "text": ""},
+    {"id": 1, "type":"begin", "text": "B = 4", "sentence":"assign"},
+    {"id": 2, "type":"empty", "text": "", "sentence":""},
+    {"id": 3, "type":"empty", "text": "", "sentence":""},
 
     {"id": 4, "type":"arrowDown", "text": ""},
-    {"id": 5, "type":"empty", "text": ""},
-    {"id": 6, "type":"empty", "text": ""},
+    {"id": 5, "type":"empty", "text": "", "sentence":""},
+    {"id": 6, "type":"empty", "text": "", "sentence":""},
 
-    {"id": 7, "type":"condition", "text":"¿ B > 1 ?"},
-    {"id": 8, "type":"arrowLeftYes", "text": ""},
-    {"id": 9, "type":"instruction", "text":" B - 1 "},
+    {"id": 7, "type":"condition", "text":"¿ B > 1 ?", "sentence":"if"},
+    {"id": 8, "type":"arrowLeftYes", "text": "", "sentence":""},
+    {"id": 9, "type":"instruction", "text":" B - 1 ", "sentence":"ifyes"},
 
     {"id": 10, "type":"arrowDownNo", "text": ""},
-    {"id": 11, "type":"empty", "text": ""},
-    {"id": 12, "type":"empty", "text": ""},
+    {"id": 11, "type":"empty", "text": "", "sentence":""},
+    {"id": 12, "type":"empty", "text": "", "sentence":""},
 
-    {"id": 13, "type":"instruction", "text":" B + 1"},
-    {"id": 14, "type":"empty", "text": ""},
-    {"id": 15, "type":"empty", "text":""},
+    {"id": 13, "type":"instruction", "text":" B + 1", "sentence":"ifelse"},
+    {"id": 14, "type":"empty", "text": "", "sentence":""},
+    {"id": 15, "type":"empty", "text":"", "sentence":""},
 
-    {"id": 16, "type":"arrowDown", "text": ""},
-    {"id": 17, "type":"empty", "text": ""},
-    {"id": 18, "type":"empty", "text": ""},
+    {"id": 16, "type":"arrowDown", "text": "", "sentence":""},
+    {"id": 17, "type":"empty", "text": "", "sentence":""},
+    {"id": 18, "type":"empty", "text": "", "sentence":""},
 
-    {"id": 19, "type":"end", "text": "FIN"},
-    {"id": 20, "type":"empty", "text": ""},
-    {"id": 21, "type":"empty", "text": ""}
+    {"id": 19, "type":"end", "text": "FIN", "sentence":""},
+    {"id": 20, "type":"empty", "text": "", "sentence":""},
+    {"id": 21, "type":"empty", "text": "", "sentence":""}
 ]}
