@@ -1,0 +1,28 @@
+{"initMessages":[
+    "A continuación, encontrarás un diagrama de flujo correspondiente a un condicional." ,
+    "Presiona cada una de las partes del diagrama, excepto las ramificaciones, para ver su equivalente en código."
+],
+"threshold":{
+    "max" : 1,
+    "min" : 0,
+    "perfect": 1
+},
+"path": "87",
+"color": "#1B6893",
+"name":"Observa el algoritmo",
+"id": 87,
+"column" : [
+    {"id": 1, "type":"begin", "text": " P = 58 ", "sentence":"assign"},
+    {"id": 2, "type":"arrowDown", "text": ""},
+    {"id": 3, "type":"instruction", "text": " P + 2 ", "sentence":"assign"},
+    {"id": 4, "type":"arrowDown", "text": ""},
+    {"id": 5, "type":"instruction", "text": " P * 2 ", "sentence":"assign"},
+    {"id": 6, "type":"arrowDown", "text": ""},
+    {"id": 7, "type":"instruction", "text": " S = 4 ", "sentence":"assign"},
+    {"id": 8, "type":"arrowDown", "text": ""},
+    {"id": 9, "type":"instruction", "text": "P = S", "sentence":"assign"},
+    {"id": 10, "type":"arrowDown", "text": ""},
+    {"id": 11, "type":"end", "text": "FIN"}
+    
+    
+]}

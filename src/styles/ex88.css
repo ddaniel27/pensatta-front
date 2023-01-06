@@ -1,0 +1,23 @@
+.elementContainer{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    gap:1%;
+    width: 45%;
+    justify-content: center;
+}
+.column{
+    display : grid;
+    padding: 0% 16% 0% 16%;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows : repeat(11,auto);
+}
+.dnd-context-container{
+    width:95%;
+    height: 95%;
+    display: grid;
+    grid-template-columns : repeat(2,1fr);
+    justify-items: center;
+    padding:2%;
+}
