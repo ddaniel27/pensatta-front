@@ -1,0 +1,5 @@
+{
+    "pista1":{
+                    "startPosition":{"x": 5, "y": 48},
+                    "finishHitbox":{ "x": 0.61 ,"y": 60 ,"width": 0.1 ,"height": 9 }}
+}

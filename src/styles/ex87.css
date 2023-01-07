@@ -1,18 +1,18 @@
-.elementContainer{
+.elementContainer-game-87{
     display: grid;
     grid-template-rows: repeat(4,1fr);
     gap:1%;
     width: 45%;
     justify-content: center;
 }
-.column{
+.column-game-87{
     display : grid;
     align-items: center;
     justify-content: center;
     grid-template-columns : 4fr 1fr 4fr;
     grid-template-rows : repeat(8,auto);
 }
-.dnd-context-container{
+.dnd-context-container-game-87{
     width:95%;
     height: 95%;
     display: grid;

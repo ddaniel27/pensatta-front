@@ -1,0 +1,1094 @@
+<svg width="480" height="480" viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1_13)">
+<rect width="480" height="480" fill="#008E86"/>
+<g clip-path="url(#clip1_1_13)">
+<rect width="40" height="40" transform="translate(20 300) rotate(-90)" fill="#BDBDBD"/>
+<rect x="20" y="290" width="20" height="40" transform="rotate(-90 20 290)" fill="#008E86"/>
+</g>
+<g clip-path="url(#clip2_1_13)">
+<rect width="40" height="40" transform="translate(-20 -20)" fill="#008E86"/>
+<rect x="10" y="10" width="10" height="10" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip3_1_13)">
+<rect width="40" height="40" transform="translate(-20 500) rotate(-90)" fill="#008E86"/>
+<rect x="10" y="470" width="10" height="10" transform="rotate(-90 10 470)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip4_1_13)">
+<rect width="40" height="40" transform="translate(500 500) rotate(180)" fill="#008E86"/>
+<rect x="470" y="470" width="10" height="10" transform="rotate(180 470 470)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip5_1_13)">
+<rect width="40" height="40" transform="translate(500 -20) rotate(90)" fill="#008E86"/>
+<rect x="470" y="10" width="10" height="10" transform="rotate(90 470 10)" fill="#BDBDBD"/>
+</g>
+<rect width="40" height="40" transform="translate(20 100)" fill="#4F4F4F"/>
+<rect x="39" y="105" width="2" height="10" fill="#EDCA71"/>
+<rect x="39" y="125" width="2" height="10" fill="#EDCA71"/>
+<g clip-path="url(#clip6_1_13)">
+<rect width="40" height="40" transform="translate(260 180)" fill="#4F4F4F"/>
+<rect x="279" y="185" width="2" height="10" fill="#EDCA71"/>
+<rect x="279" y="205" width="2" height="10" fill="#EDCA71"/>
+<path d="M266.389 210H273.611C274.378 210 275 209.378 275 208.611V208.211C275 207.665 274.557 207.222 274.012 207.222C273.507 207.222 273.084 206.842 273.029 206.341L271.385 191.243C271.308 190.536 270.711 190 270 190C269.289 190 268.692 190.536 268.615 191.243L266.971 206.341C266.916 206.842 266.493 207.222 265.988 207.222C265.443 207.222 265 207.665 265 208.211V208.611C265 209.378 265.622 210 266.389 210Z" fill="#F97D61"/>
+<path d="M272.188 198.889H267.75L267.5 201.111H272.438L272.188 198.889Z" fill="white"/>
+<path d="M272.812 204.111H267.187L266.937 206.333H273.062L272.812 204.111Z" fill="white"/>
+<path d="M286.389 210H293.611C294.378 210 295 209.378 295 208.611V208.211C295 207.665 294.557 207.222 294.012 207.222C293.507 207.222 293.084 206.842 293.029 206.341L291.385 191.243C291.308 190.536 290.711 190 290 190C289.289 190 288.692 190.536 288.615 191.243L286.971 206.341C286.916 206.842 286.493 207.222 285.988 207.222C285.443 207.222 285 207.665 285 208.211V208.611C285 209.378 285.622 210 286.389 210Z" fill="#F97D61"/>
+<path d="M292.188 198.889H287.75L287.5 201.111H292.438L292.188 198.889Z" fill="white"/>
+<path d="M292.812 204.111H287.187L286.937 206.333H293.062L292.812 204.111Z" fill="white"/>
+</g>
+<rect width="40" height="40" transform="translate(260 220)" fill="#4F4F4F"/>
+<rect x="279" y="225" width="2" height="10" fill="#EDCA71"/>
+<rect x="279" y="245" width="2" height="10" fill="#EDCA71"/>
+<rect width="40" height="40" transform="translate(260 260)" fill="#4F4F4F"/>
+<rect x="279" y="265" width="2" height="10" fill="#EDCA71"/>
+<rect x="279" y="285" width="2" height="10" fill="#EDCA71"/>
+<rect width="40" height="40" transform="translate(420 380)" fill="#4F4F4F"/>
+<rect x="439" y="385" width="2" height="10" fill="#EDCA71"/>
+<rect x="439" y="405" width="2" height="10" fill="#EDCA71"/>
+<rect width="40" height="40" transform="translate(420 340)" fill="#4F4F4F"/>
+<rect x="439" y="345" width="2" height="10" fill="#EDCA71"/>
+<rect x="439" y="365" width="2" height="10" fill="#EDCA71"/>
+<rect width="40" height="40" transform="translate(100 220)" fill="#4F4F4F"/>
+<rect x="119" y="225" width="2" height="10" fill="#EDCA71"/>
+<rect x="119" y="245" width="2" height="10" fill="#EDCA71"/>
+<rect width="40" height="40" transform="translate(100 260)" fill="#4F4F4F"/>
+<rect x="119" y="265" width="2" height="10" fill="#EDCA71"/>
+<rect x="119" y="285" width="2" height="10" fill="#EDCA71"/>
+<rect width="40" height="40" transform="translate(380 220) rotate(90)" fill="#4F4F4F"/>
+<rect x="375" y="239" width="2" height="10" transform="rotate(90 375 239)" fill="#EDCA71"/>
+<rect x="355" y="239" width="2" height="10" transform="rotate(90 355 239)" fill="#EDCA71"/>
+<rect width="40" height="40" transform="translate(180 180) rotate(90)" fill="#4F4F4F"/>
+<rect x="175" y="199" width="2" height="10" transform="rotate(90 175 199)" fill="#EDCA71"/>
+<rect x="155" y="199" width="2" height="10" transform="rotate(90 155 199)" fill="#EDCA71"/>
+<rect width="40" height="40" transform="translate(220 260) rotate(90)" fill="#4F4F4F"/>
+<rect x="215" y="279" width="2" height="10" transform="rotate(90 215 279)" fill="#EDCA71"/>
+<rect x="195" y="279" width="2" height="10" transform="rotate(90 195 279)" fill="#EDCA71"/>
+<rect width="40" height="40" transform="translate(220 220) rotate(-180)" fill="#4F4F4F"/>
+<rect x="201" y="215" width="2" height="10" transform="rotate(-180 201 215)" fill="#EDCA71"/>
+<rect x="195" y="199" width="2" height="10" transform="rotate(90 195 199)" fill="#EDCA71"/>
+<rect width="40" height="40" transform="translate(140 180) rotate(90)" fill="#4F4F4F"/>
+<rect x="135" y="199" width="2" height="10" transform="rotate(90 135 199)" fill="#EDCA71"/>
+<rect x="119" y="205" width="2" height="10" fill="#EDCA71"/>
+<rect width="40" height="40" transform="translate(20 420)" fill="#4F4F4F"/>
+<rect x="39" y="425" width="2" height="10" fill="#EDCA71"/>
+<rect x="45" y="441" width="2" height="10" transform="rotate(-90 45 441)" fill="#EDCA71"/>
+<rect width="40" height="40" transform="translate(420 460) rotate(-90)" fill="#4F4F4F"/>
+<rect x="425" y="441" width="2" height="10" transform="rotate(-90 425 441)" fill="#EDCA71"/>
+<rect x="441" y="435" width="2" height="10" transform="rotate(180 441 435)" fill="#EDCA71"/>
+<rect width="40" height="40" transform="translate(460 340) rotate(180)" fill="#4F4F4F"/>
+<rect x="441" y="335" width="2" height="10" transform="rotate(180 441 335)" fill="#EDCA71"/>
+<rect x="435" y="319" width="2" height="10" transform="rotate(90 435 319)" fill="#EDCA71"/>
+<rect width="40" height="40" transform="translate(340 380) rotate(-90)" fill="#4F4F4F"/>
+<rect x="345" y="361" width="2" height="10" transform="rotate(-90 345 361)" fill="#EDCA71"/>
+<rect x="361" y="355" width="2" height="10" transform="rotate(180 361 355)" fill="#EDCA71"/>
+<rect width="40" height="40" transform="translate(380 300) rotate(90)" fill="#4F4F4F"/>
+<rect x="375" y="319" width="2" height="10" transform="rotate(90 375 319)" fill="#EDCA71"/>
+<rect x="359" y="325" width="2" height="10" fill="#EDCA71"/>
+<rect width="40" height="40" transform="translate(220 340) rotate(90)" fill="#4F4F4F"/>
+<rect x="215" y="359" width="2" height="10" transform="rotate(90 215 359)" fill="#EDCA71"/>
+<rect x="199" y="365" width="2" height="10" fill="#EDCA71"/>
+<rect width="40" height="40" transform="translate(100 340) rotate(-90)" fill="#4F4F4F"/>
+<rect x="105" y="321" width="2" height="10" transform="rotate(-90 105 321)" fill="#EDCA71"/>
+<rect x="121" y="315" width="2" height="10" transform="rotate(180 121 315)" fill="#EDCA71"/>
+<rect width="40" height="40" transform="translate(420 60)" fill="#4F4F4F"/>
+<rect x="439" y="65" width="2" height="10" fill="#EDCA71"/>
+<rect x="439" y="85" width="2" height="10" fill="#EDCA71"/>
+<rect width="40" height="40" transform="translate(420 100)" fill="#4F4F4F"/>
+<rect x="439" y="105" width="2" height="10" fill="#EDCA71"/>
+<rect x="439" y="125" width="2" height="10" fill="#EDCA71"/>
+<rect width="40" height="40" transform="translate(420 140)" fill="#4F4F4F"/>
+<rect x="439" y="145" width="2" height="10" fill="#EDCA71"/>
+<rect x="439" y="165" width="2" height="10" fill="#EDCA71"/>
+<g clip-path="url(#clip7_1_13)">
+<rect width="40" height="40" transform="translate(220 20) rotate(90)" fill="#4F4F4F"/>
+<rect x="215" y="39" width="2" height="10" transform="rotate(90 215 39)" fill="#EDCA71"/>
+<rect x="195" y="39" width="2" height="10" transform="rotate(90 195 39)" fill="#EDCA71"/>
+<path d="M196.389 42H203.611C204.378 42 205 41.3782 205 40.6111V40.2106C205 39.6647 204.557 39.2222 204.012 39.2222C203.507 39.2222 203.084 38.8423 203.029 38.3408L201.385 23.2427C201.308 22.5356 200.711 22 200 22C199.289 22 198.692 22.5356 198.615 23.2427L196.971 38.3408C196.916 38.8423 196.493 39.2222 195.988 39.2222C195.443 39.2222 195 39.6647 195 40.2106V40.6111C195 41.3782 195.622 42 196.389 42Z" fill="#F27B60"/>
+<path d="M202.188 30.8889H197.75L197.5 33.1111H202.438L202.188 30.8889Z" fill="white"/>
+<path d="M202.812 36.1111H197.187L196.937 38.3333H203.062L202.812 36.1111Z" fill="white"/>
+<path d="M196.389 58H203.611C204.378 58 205 57.3782 205 56.6111V56.2106C205 55.6647 204.557 55.2222 204.012 55.2222C203.507 55.2222 203.084 54.8423 203.029 54.3408L201.385 39.2427C201.308 38.5356 200.711 38 200 38C199.289 38 198.692 38.5356 198.615 39.2427L196.971 54.3408C196.916 54.8423 196.493 55.2222 195.988 55.2222C195.443 55.2222 195 55.6647 195 56.2106V56.6111C195 57.3782 195.622 58 196.389 58Z" fill="#F97D61"/>
+<path d="M202.188 46.8889H197.75L197.5 49.1111H202.438L202.188 46.8889Z" fill="white"/>
+<path d="M202.812 52.1111H197.187L196.937 54.3333H203.062L202.812 52.1111Z" fill="white"/>
+</g>
+<rect width="40" height="40" transform="translate(220 100) rotate(90)" fill="#4F4F4F"/>
+<rect x="215" y="119" width="2" height="10" transform="rotate(90 215 119)" fill="#EDCA71"/>
+<rect x="195" y="119" width="2" height="10" transform="rotate(90 195 119)" fill="#EDCA71"/>
+<rect width="40" height="40" transform="translate(420 20) rotate(90)" fill="#4F4F4F"/>
+<rect x="415" y="39" width="2" height="10" transform="rotate(90 415 39)" fill="#EDCA71"/>
+<rect x="395" y="39" width="2" height="10" transform="rotate(90 395 39)" fill="#EDCA71"/>
+<rect width="40" height="40" transform="translate(20 140)" fill="#4F4F4F"/>
+<rect x="39" y="145" width="2" height="10" fill="#EDCA71"/>
+<rect x="39" y="165" width="2" height="10" fill="#EDCA71"/>
+<rect width="40" height="40" transform="translate(20 180)" fill="#4F4F4F"/>
+<rect x="39" y="185" width="2" height="10" fill="#EDCA71"/>
+<rect x="39" y="205" width="2" height="10" fill="#EDCA71"/>
+<rect width="40" height="40" transform="translate(20 220)" fill="#4F4F4F"/>
+<rect x="39" y="225" width="2" height="10" fill="#EDCA71"/>
+<rect x="39" y="245" width="2" height="10" fill="#EDCA71"/>
+<rect width="40" height="40" transform="translate(20 380)" fill="#4F4F4F"/>
+<rect x="39" y="385" width="2" height="10" fill="#EDCA71"/>
+<rect x="39" y="405" width="2" height="10" fill="#EDCA71"/>
+<rect width="40" height="40" transform="translate(100 420) rotate(90)" fill="#4F4F4F"/>
+<rect x="95" y="439" width="2" height="10" transform="rotate(90 95 439)" fill="#EDCA71"/>
+<rect x="75" y="439" width="2" height="10" transform="rotate(90 75 439)" fill="#EDCA71"/>
+<rect width="40" height="40" transform="translate(140 420) rotate(90)" fill="#4F4F4F"/>
+<rect x="135" y="439" width="2" height="10" transform="rotate(90 135 439)" fill="#EDCA71"/>
+<rect x="115" y="439" width="2" height="10" transform="rotate(90 115 439)" fill="#EDCA71"/>
+<rect width="40" height="40" transform="translate(340 340) rotate(90)" fill="#4F4F4F"/>
+<rect x="335" y="359" width="2" height="10" transform="rotate(90 335 359)" fill="#EDCA71"/>
+<rect x="315" y="359" width="2" height="10" transform="rotate(90 315 359)" fill="#EDCA71"/>
+<rect width="40" height="40" transform="translate(300 420) rotate(90)" fill="#4F4F4F"/>
+<rect x="295" y="439" width="2" height="10" transform="rotate(90 295 439)" fill="#EDCA71"/>
+<rect x="275" y="439" width="2" height="10" transform="rotate(90 275 439)" fill="#EDCA71"/>
+<rect width="40" height="40" transform="translate(260 420) rotate(90)" fill="#4F4F4F"/>
+<rect x="255" y="439" width="2" height="10" transform="rotate(90 255 439)" fill="#EDCA71"/>
+<rect x="235" y="439" width="2" height="10" transform="rotate(90 235 439)" fill="#EDCA71"/>
+<g clip-path="url(#clip8_1_13)">
+<rect width="40" height="40" transform="translate(100 300) rotate(90)" fill="#4F4F4F"/>
+<rect x="95" y="319" width="2" height="10" transform="rotate(90 95 319)" fill="#EDCA71"/>
+<rect x="75" y="319" width="2" height="10" transform="rotate(90 75 319)" fill="#EDCA71"/>
+<path d="M76.3889 322H83.6111C84.3782 322 85 321.378 85 320.611V320.211C85 319.665 84.5575 319.222 84.0116 319.222C83.5072 319.222 83.0836 318.842 83.029 318.341L81.3853 303.243C81.3083 302.536 80.7112 302 80 302C79.2888 302 78.6917 302.536 78.6147 303.243L76.971 318.341C76.9164 318.842 76.4928 319.222 75.9884 319.222C75.4425 319.222 75 319.665 75 320.211V320.611C75 321.378 75.6218 322 76.3889 322Z" fill="#F27B60"/>
+<path d="M82.1875 310.889H77.75L77.5 313.111H82.4375L82.1875 310.889Z" fill="white"/>
+<path d="M82.8125 316.111H77.1875L76.9375 318.333H83.0625L82.8125 316.111Z" fill="white"/>
+<path d="M76.3889 338H83.6111C84.3782 338 85 337.378 85 336.611V336.211C85 335.665 84.5575 335.222 84.0116 335.222C83.5072 335.222 83.0836 334.842 83.029 334.341L81.3853 319.243C81.3083 318.536 80.7112 318 80 318C79.2888 318 78.6917 318.536 78.6147 319.243L76.971 334.341C76.9164 334.842 76.4928 335.222 75.9884 335.222C75.4425 335.222 75 335.665 75 336.211V336.611C75 337.378 75.6218 338 76.3889 338Z" fill="#F97D61"/>
+<path d="M82.1875 326.889H77.75L77.5 329.111H82.4375L82.1875 326.889Z" fill="white"/>
+<path d="M82.8125 332.111H77.1875L76.9375 334.333H83.0625L82.8125 332.111Z" fill="white"/>
+</g>
+<rect width="40" height="40" transform="translate(60 300) rotate(90)" fill="#4F4F4F"/>
+<rect x="55" y="319" width="2" height="10" transform="rotate(90 55 319)" fill="#EDCA71"/>
+<rect x="35" y="319" width="2" height="10" transform="rotate(90 35 319)" fill="#EDCA71"/>
+<g clip-path="url(#clip9_1_13)">
+<rect width="40" height="40" transform="translate(20 60)" fill="#4F4F4F"/>
+<rect x="39" y="65" width="2" height="10" fill="#EDCA71"/>
+<rect x="39" y="85" width="2" height="10" fill="#EDCA71"/>
+<rect x="46" y="60" width="4" height="20" fill="#E0E0E0"/>
+<rect x="54" y="60" width="4" height="20" fill="#E0E0E0"/>
+<rect x="38" y="60" width="4" height="20" fill="#E0E0E0"/>
+<rect x="30" y="60" width="4" height="20" fill="#E0E0E0"/>
+<rect x="22" y="60" width="4" height="20" fill="#E0E0E0"/>
+</g>
+<g clip-path="url(#clip10_1_13)">
+<rect width="40" height="40" transform="translate(20 340)" fill="#4F4F4F"/>
+<rect x="39" y="345" width="2" height="10" fill="#EDCA71"/>
+<rect x="39" y="365" width="2" height="10" fill="#EDCA71"/>
+<rect x="46" y="340" width="4" height="20" fill="#E0E0E0"/>
+<rect x="54" y="340" width="4" height="20" fill="#E0E0E0"/>
+<rect x="38" y="340" width="4" height="20" fill="#E0E0E0"/>
+<rect x="30" y="340" width="4" height="20" fill="#E0E0E0"/>
+<rect x="22" y="340" width="4" height="20" fill="#E0E0E0"/>
+</g>
+<g clip-path="url(#clip11_1_13)">
+<rect width="40" height="40" transform="translate(260 140)" fill="#4F4F4F"/>
+<rect x="279" y="145" width="2" height="10" fill="#EDCA71"/>
+<rect x="279" y="165" width="2" height="10" fill="#EDCA71"/>
+<rect x="286" y="140" width="4" height="20" fill="#E0E0E0"/>
+<rect x="294" y="140" width="4" height="20" fill="#E0E0E0"/>
+<rect x="278" y="140" width="4" height="20" fill="#E0E0E0"/>
+<rect x="270" y="140" width="4" height="20" fill="#E0E0E0"/>
+<rect x="262" y="140" width="4" height="20" fill="#E0E0E0"/>
+</g>
+<g clip-path="url(#clip12_1_13)">
+<rect width="40" height="40" transform="translate(460 220) rotate(-180)" fill="#4F4F4F"/>
+<rect x="441" y="215" width="2" height="10" transform="rotate(-180 441 215)" fill="#EDCA71"/>
+<rect x="441" y="195" width="2" height="10" transform="rotate(-180 441 195)" fill="#EDCA71"/>
+<rect x="434" y="220" width="4" height="20" transform="rotate(-180 434 220)" fill="#E0E0E0"/>
+<rect x="426" y="220" width="4" height="20" transform="rotate(-180 426 220)" fill="#E0E0E0"/>
+<rect x="442" y="220" width="4" height="20" transform="rotate(-180 442 220)" fill="#E0E0E0"/>
+<rect x="450" y="220" width="4" height="20" transform="rotate(-180 450 220)" fill="#E0E0E0"/>
+<rect x="458" y="220" width="4" height="20" transform="rotate(-180 458 220)" fill="#E0E0E0"/>
+</g>
+<g clip-path="url(#clip13_1_13)">
+<rect width="40" height="40" transform="translate(420 220) rotate(90)" fill="#4F4F4F"/>
+<rect x="415" y="239" width="2" height="10" transform="rotate(90 415 239)" fill="#EDCA71"/>
+<rect x="395" y="239" width="2" height="10" transform="rotate(90 395 239)" fill="#EDCA71"/>
+<rect x="420" y="246" width="4" height="20" transform="rotate(90 420 246)" fill="#E0E0E0"/>
+<rect x="420" y="254" width="4" height="20" transform="rotate(90 420 254)" fill="#E0E0E0"/>
+<rect x="420" y="238" width="4" height="20" transform="rotate(90 420 238)" fill="#E0E0E0"/>
+<rect x="420" y="230" width="4" height="20" transform="rotate(90 420 230)" fill="#E0E0E0"/>
+<rect x="420" y="222" width="4" height="20" transform="rotate(90 420 222)" fill="#E0E0E0"/>
+</g>
+<g clip-path="url(#clip14_1_13)">
+<rect width="40" height="40" transform="translate(300 260) rotate(-90)" fill="#4F4F4F"/>
+<rect x="305" y="241" width="2" height="10" transform="rotate(-90 305 241)" fill="#EDCA71"/>
+<rect x="325" y="241" width="2" height="10" transform="rotate(-90 325 241)" fill="#EDCA71"/>
+<rect x="300" y="234" width="4" height="20" transform="rotate(-90 300 234)" fill="#E0E0E0"/>
+<rect x="300" y="226" width="4" height="20" transform="rotate(-90 300 226)" fill="#E0E0E0"/>
+<rect x="300" y="242" width="4" height="20" transform="rotate(-90 300 242)" fill="#E0E0E0"/>
+<rect x="300" y="250" width="4" height="20" transform="rotate(-90 300 250)" fill="#E0E0E0"/>
+<rect x="300" y="258" width="4" height="20" transform="rotate(-90 300 258)" fill="#E0E0E0"/>
+</g>
+<g clip-path="url(#clip15_1_13)">
+<rect width="40" height="40" transform="translate(260 260) rotate(90)" fill="#4F4F4F"/>
+<rect x="255" y="279" width="2" height="10" transform="rotate(90 255 279)" fill="#EDCA71"/>
+<rect x="235" y="279" width="2" height="10" transform="rotate(90 235 279)" fill="#EDCA71"/>
+<rect x="260" y="286" width="4" height="20" transform="rotate(90 260 286)" fill="#E0E0E0"/>
+<rect x="260" y="294" width="4" height="20" transform="rotate(90 260 294)" fill="#E0E0E0"/>
+<rect x="260" y="278" width="4" height="20" transform="rotate(90 260 278)" fill="#E0E0E0"/>
+<rect x="260" y="270" width="4" height="20" transform="rotate(90 260 270)" fill="#E0E0E0"/>
+<rect x="260" y="262" width="4" height="20" transform="rotate(90 260 262)" fill="#E0E0E0"/>
+</g>
+<g clip-path="url(#clip16_1_13)">
+<rect width="40" height="40" transform="translate(300 340) rotate(-180)" fill="#4F4F4F"/>
+<rect x="281" y="335" width="2" height="10" transform="rotate(-180 281 335)" fill="#EDCA71"/>
+<rect x="281" y="315" width="2" height="10" transform="rotate(-180 281 315)" fill="#EDCA71"/>
+<rect x="274" y="340" width="4" height="20" transform="rotate(-180 274 340)" fill="#E0E0E0"/>
+<rect x="266" y="340" width="4" height="20" transform="rotate(-180 266 340)" fill="#E0E0E0"/>
+<rect x="282" y="340" width="4" height="20" transform="rotate(-180 282 340)" fill="#E0E0E0"/>
+<rect x="290" y="340" width="4" height="20" transform="rotate(-180 290 340)" fill="#E0E0E0"/>
+<rect x="298" y="340" width="4" height="20" transform="rotate(-180 298 340)" fill="#E0E0E0"/>
+</g>
+<g clip-path="url(#clip17_1_13)">
+<rect width="40" height="40" transform="translate(260 340) rotate(90)" fill="#4F4F4F"/>
+<rect x="255" y="359" width="2" height="10" transform="rotate(90 255 359)" fill="#EDCA71"/>
+<rect x="235" y="359" width="2" height="10" transform="rotate(90 235 359)" fill="#EDCA71"/>
+<rect x="260" y="366" width="4" height="20" transform="rotate(90 260 366)" fill="#E0E0E0"/>
+<rect x="260" y="374" width="4" height="20" transform="rotate(90 260 374)" fill="#E0E0E0"/>
+<rect x="260" y="358" width="4" height="20" transform="rotate(90 260 358)" fill="#E0E0E0"/>
+<rect x="260" y="350" width="4" height="20" transform="rotate(90 260 350)" fill="#E0E0E0"/>
+<rect x="260" y="342" width="4" height="20" transform="rotate(90 260 342)" fill="#E0E0E0"/>
+</g>
+<g clip-path="url(#clip18_1_13)">
+<rect width="40" height="40" transform="translate(420 420) rotate(90)" fill="#4F4F4F"/>
+<rect x="415" y="439" width="2" height="10" transform="rotate(90 415 439)" fill="#EDCA71"/>
+<rect x="395" y="439" width="2" height="10" transform="rotate(90 395 439)" fill="#EDCA71"/>
+<rect x="420" y="446" width="4" height="20" transform="rotate(90 420 446)" fill="#E0E0E0"/>
+<rect x="420" y="454" width="4" height="20" transform="rotate(90 420 454)" fill="#E0E0E0"/>
+<rect x="420" y="438" width="4" height="20" transform="rotate(90 420 438)" fill="#E0E0E0"/>
+<rect x="420" y="430" width="4" height="20" transform="rotate(90 420 430)" fill="#E0E0E0"/>
+<rect x="420" y="422" width="4" height="20" transform="rotate(90 420 422)" fill="#E0E0E0"/>
+</g>
+<g clip-path="url(#clip19_1_13)">
+<rect width="40" height="40" transform="translate(340 460) rotate(-90)" fill="#4F4F4F"/>
+<rect x="345" y="441" width="2" height="10" transform="rotate(-90 345 441)" fill="#EDCA71"/>
+<rect x="365" y="441" width="2" height="10" transform="rotate(-90 365 441)" fill="#EDCA71"/>
+<rect x="340" y="434" width="4" height="20" transform="rotate(-90 340 434)" fill="#E0E0E0"/>
+<rect x="340" y="426" width="4" height="20" transform="rotate(-90 340 426)" fill="#E0E0E0"/>
+<rect x="340" y="442" width="4" height="20" transform="rotate(-90 340 442)" fill="#E0E0E0"/>
+<rect x="340" y="450" width="4" height="20" transform="rotate(-90 340 450)" fill="#E0E0E0"/>
+<rect x="340" y="458" width="4" height="20" transform="rotate(-90 340 458)" fill="#E0E0E0"/>
+</g>
+<g clip-path="url(#clip20_1_13)">
+<rect width="40" height="40" transform="translate(420 300) rotate(90)" fill="#4F4F4F"/>
+<rect x="415" y="319" width="2" height="10" transform="rotate(90 415 319)" fill="#EDCA71"/>
+<rect x="395" y="319" width="2" height="10" transform="rotate(90 395 319)" fill="#EDCA71"/>
+<rect x="420" y="326" width="4" height="20" transform="rotate(90 420 326)" fill="#E0E0E0"/>
+<rect x="420" y="334" width="4" height="20" transform="rotate(90 420 334)" fill="#E0E0E0"/>
+<rect x="420" y="318" width="4" height="20" transform="rotate(90 420 318)" fill="#E0E0E0"/>
+<rect x="420" y="310" width="4" height="20" transform="rotate(90 420 310)" fill="#E0E0E0"/>
+<rect x="420" y="302" width="4" height="20" transform="rotate(90 420 302)" fill="#E0E0E0"/>
+</g>
+<g clip-path="url(#clip21_1_13)">
+<rect width="40" height="40" transform="translate(180 420) rotate(90)" fill="#4F4F4F"/>
+<rect x="175" y="439" width="2" height="10" transform="rotate(90 175 439)" fill="#EDCA71"/>
+<rect x="155" y="439" width="2" height="10" transform="rotate(90 155 439)" fill="#EDCA71"/>
+<rect x="180" y="446" width="4" height="20" transform="rotate(90 180 446)" fill="#E0E0E0"/>
+<rect x="180" y="454" width="4" height="20" transform="rotate(90 180 454)" fill="#E0E0E0"/>
+<rect x="180" y="438" width="4" height="20" transform="rotate(90 180 438)" fill="#E0E0E0"/>
+<rect x="180" y="430" width="4" height="20" transform="rotate(90 180 430)" fill="#E0E0E0"/>
+<rect x="180" y="422" width="4" height="20" transform="rotate(90 180 422)" fill="#E0E0E0"/>
+</g>
+<g clip-path="url(#clip22_1_13)">
+<rect width="40" height="40" transform="translate(340 420) rotate(-180)" fill="#4F4F4F"/>
+<rect x="321" y="415" width="2" height="10" transform="rotate(-180 321 415)" fill="#EDCA71"/>
+<rect x="321" y="395" width="2" height="10" transform="rotate(-180 321 395)" fill="#EDCA71"/>
+<rect x="314" y="420" width="4" height="20" transform="rotate(-180 314 420)" fill="#E0E0E0"/>
+<rect x="306" y="420" width="4" height="20" transform="rotate(-180 306 420)" fill="#E0E0E0"/>
+<rect x="322" y="420" width="4" height="20" transform="rotate(-180 322 420)" fill="#E0E0E0"/>
+<rect x="330" y="420" width="4" height="20" transform="rotate(-180 330 420)" fill="#E0E0E0"/>
+<rect x="338" y="420" width="4" height="20" transform="rotate(-180 338 420)" fill="#E0E0E0"/>
+<path d="M306.389 410H313.611C314.378 410 315 409.378 315 408.611V408.211C315 407.665 314.557 407.222 314.012 407.222C313.507 407.222 313.084 406.842 313.029 406.341L311.385 391.243C311.308 390.536 310.711 390 310 390C309.289 390 308.692 390.536 308.615 391.243L306.971 406.341C306.916 406.842 306.493 407.222 305.988 407.222C305.443 407.222 305 407.665 305 408.211V408.611C305 409.378 305.622 410 306.389 410Z" fill="#F97D61"/>
+<path d="M312.188 398.889H307.75L307.5 401.111H312.438L312.188 398.889Z" fill="white"/>
+<path d="M312.812 404.111H307.187L306.937 406.333H313.062L312.812 404.111Z" fill="white"/>
+<path d="M326.389 410H333.611C334.378 410 335 409.378 335 408.611V408.211C335 407.665 334.557 407.222 334.012 407.222C333.507 407.222 333.084 406.842 333.029 406.341L331.385 391.243C331.308 390.536 330.711 390 330 390C329.289 390 328.692 390.536 328.615 391.243L326.971 406.341C326.916 406.842 326.493 407.222 325.988 407.222C325.443 407.222 325 407.665 325 408.211V408.611C325 409.378 325.622 410 326.389 410Z" fill="#F97D61"/>
+<path d="M332.188 398.889H327.75L327.5 401.111H332.438L332.188 398.889Z" fill="white"/>
+<path d="M332.812 404.111H327.187L326.937 406.333H333.062L332.812 404.111Z" fill="white"/>
+</g>
+<g clip-path="url(#clip23_1_13)">
+<rect width="40" height="40" transform="translate(220 420) rotate(-180)" fill="#4F4F4F"/>
+<rect x="201" y="415" width="2" height="10" transform="rotate(-180 201 415)" fill="#EDCA71"/>
+<rect x="201" y="395" width="2" height="10" transform="rotate(-180 201 395)" fill="#EDCA71"/>
+<rect x="194" y="420" width="4" height="20" transform="rotate(-180 194 420)" fill="#E0E0E0"/>
+<rect x="186" y="420" width="4" height="20" transform="rotate(-180 186 420)" fill="#E0E0E0"/>
+<rect x="202" y="420" width="4" height="20" transform="rotate(-180 202 420)" fill="#E0E0E0"/>
+<rect x="210" y="420" width="4" height="20" transform="rotate(-180 210 420)" fill="#E0E0E0"/>
+<rect x="218" y="420" width="4" height="20" transform="rotate(-180 218 420)" fill="#E0E0E0"/>
+<path d="M186.389 410H193.611C194.378 410 195 409.378 195 408.611V408.211C195 407.665 194.557 407.222 194.012 407.222C193.507 407.222 193.084 406.842 193.029 406.341L191.385 391.243C191.308 390.536 190.711 390 190 390C189.289 390 188.692 390.536 188.615 391.243L186.971 406.341C186.916 406.842 186.493 407.222 185.988 407.222C185.443 407.222 185 407.665 185 408.211V408.611C185 409.378 185.622 410 186.389 410Z" fill="#F97D61"/>
+<path d="M192.188 398.889H187.75L187.5 401.111H192.438L192.188 398.889Z" fill="white"/>
+<path d="M192.812 404.111H187.187L186.937 406.333H193.062L192.812 404.111Z" fill="white"/>
+<path d="M206.389 410H213.611C214.378 410 215 409.378 215 408.611V408.211C215 407.665 214.557 407.222 214.012 407.222C213.507 407.222 213.084 406.842 213.029 406.341L211.385 391.243C211.308 390.536 210.711 390 210 390C209.289 390 208.692 390.536 208.615 391.243L206.971 406.341C206.916 406.842 206.493 407.222 205.988 407.222C205.443 407.222 205 407.665 205 408.211V408.611C205 409.378 205.622 410 206.389 410Z" fill="#F97D61"/>
+<path d="M212.188 398.889H207.75L207.5 401.111H212.438L212.188 398.889Z" fill="white"/>
+<path d="M212.812 404.111H207.187L206.937 406.333H213.062L212.812 404.111Z" fill="white"/>
+</g>
+<g clip-path="url(#clip24_1_13)">
+<rect width="40" height="40" transform="translate(140 300) rotate(-90)" fill="#4F4F4F"/>
+<rect x="145" y="281" width="2" height="10" transform="rotate(-90 145 281)" fill="#EDCA71"/>
+<rect x="165" y="281" width="2" height="10" transform="rotate(-90 165 281)" fill="#EDCA71"/>
+<rect x="140" y="274" width="4" height="20" transform="rotate(-90 140 274)" fill="#E0E0E0"/>
+<rect x="140" y="266" width="4" height="20" transform="rotate(-90 140 266)" fill="#E0E0E0"/>
+<rect x="140" y="282" width="4" height="20" transform="rotate(-90 140 282)" fill="#E0E0E0"/>
+<rect x="140" y="290" width="4" height="20" transform="rotate(-90 140 290)" fill="#E0E0E0"/>
+<rect x="140" y="298" width="4" height="20" transform="rotate(-90 140 298)" fill="#E0E0E0"/>
+</g>
+<g clip-path="url(#clip25_1_13)">
+<rect width="40" height="40" transform="translate(220 260) rotate(180)" fill="#4F4F4F"/>
+<rect x="201" y="255" width="2" height="10" transform="rotate(180 201 255)" fill="#EDCA71"/>
+<rect x="201" y="235" width="2" height="10" transform="rotate(180 201 235)" fill="#EDCA71"/>
+<rect x="194" y="260" width="4" height="20" transform="rotate(180 194 260)" fill="#E0E0E0"/>
+<rect x="186" y="260" width="4" height="20" transform="rotate(180 186 260)" fill="#E0E0E0"/>
+<rect x="202" y="260" width="4" height="20" transform="rotate(180 202 260)" fill="#E0E0E0"/>
+<rect x="210" y="260" width="4" height="20" transform="rotate(180 210 260)" fill="#E0E0E0"/>
+<rect x="218" y="260" width="4" height="20" transform="rotate(180 218 260)" fill="#E0E0E0"/>
+</g>
+<rect width="40" height="40" transform="translate(60 20) rotate(90)" fill="#4F4F4F"/>
+<rect x="55" y="39" width="2" height="10" transform="rotate(90 55 39)" fill="#EDCA71"/>
+<rect x="39" y="45" width="2" height="10" fill="#EDCA71"/>
+<rect width="40" height="40" transform="translate(100 100)" fill="#4F4F4F"/>
+<rect x="119" y="105" width="2" height="10" fill="#EDCA71"/>
+<rect x="125" y="121" width="2" height="10" transform="rotate(-90 125 121)" fill="#EDCA71"/>
+<rect width="40" height="40" transform="translate(460 60) rotate(-180)" fill="#4F4F4F"/>
+<rect x="441" y="55" width="2" height="10" transform="rotate(-180 441 55)" fill="#EDCA71"/>
+<rect x="435" y="39" width="2" height="10" transform="rotate(90 435 39)" fill="#EDCA71"/>
+<rect width="40" height="40" transform="translate(340 100) rotate(-90)" fill="#4F4F4F"/>
+<rect x="345" y="81" width="2" height="10" transform="rotate(-90 345 81)" fill="#EDCA71"/>
+<rect x="361" y="75" width="2" height="10" transform="rotate(180 361 75)" fill="#EDCA71"/>
+<rect width="40" height="40" transform="translate(380 20) rotate(90)" fill="#4F4F4F"/>
+<rect x="375" y="39" width="2" height="10" transform="rotate(90 375 39)" fill="#EDCA71"/>
+<rect x="359" y="45" width="2" height="10" fill="#EDCA71"/>
+<rect width="40" height="40" transform="translate(60 60)" fill="#BDBDBD"/>
+<rect x="70" y="70" width="20" height="30" fill="#008E86"/>
+<g clip-path="url(#clip26_1_13)">
+<rect width="40" height="40" transform="translate(140 100) rotate(-90)" fill="#BDBDBD"/>
+<rect x="150" y="90" width="20" height="30" transform="rotate(-90 150 90)" fill="#008E86"/>
+</g>
+<rect width="40" height="40" transform="translate(260 60) rotate(90)" fill="#BDBDBD"/>
+<rect x="250" y="70" width="20" height="30" transform="rotate(90 250 70)" fill="#008E86"/>
+<rect width="40" height="40" transform="translate(260 260) rotate(-180)" fill="#BDBDBD"/>
+<rect x="250" y="250" width="20" height="30" transform="rotate(-180 250 250)" fill="#008E86"/>
+<g clip-path="url(#clip27_1_13)">
+<rect width="40" height="40" transform="translate(340 340) rotate(180)" fill="#BDBDBD"/>
+<rect x="330" y="330" width="20" height="30" transform="rotate(180 330 330)" fill="#008E86"/>
+</g>
+<rect width="40" height="40" transform="translate(260 300) rotate(90)" fill="#BDBDBD"/>
+<rect x="250" y="310" width="20" height="30" transform="rotate(90 250 310)" fill="#008E86"/>
+<rect width="40" height="40" transform="translate(380 340)" fill="#BDBDBD"/>
+<rect x="390" y="350" width="20" height="30" fill="#008E86"/>
+<g clip-path="url(#clip28_1_13)">
+<rect width="40" height="40" transform="translate(340 420) rotate(-90)" fill="#BDBDBD"/>
+<rect x="350" y="410" width="20" height="30" transform="rotate(-90 350 410)" fill="#008E86"/>
+</g>
+<g clip-path="url(#clip29_1_13)">
+<rect width="40" height="40" transform="translate(220 420) rotate(-90)" fill="#BDBDBD"/>
+<rect x="230" y="410" width="20" height="30" transform="rotate(-90 230 410)" fill="#008E86"/>
+</g>
+<rect width="40" height="40" transform="translate(300 380) rotate(90)" fill="#BDBDBD"/>
+<rect x="290" y="390" width="20" height="30" transform="rotate(90 290 390)" fill="#008E86"/>
+<rect width="40" height="40" transform="translate(340 60) rotate(-180)" fill="#BDBDBD"/>
+<rect x="330" y="50" width="20" height="30" transform="rotate(-180 330 50)" fill="#008E86"/>
+<rect width="40" height="40" transform="translate(380 60)" fill="#BDBDBD"/>
+<rect x="390" y="70" width="20" height="30" fill="#008E86"/>
+<g clip-path="url(#clip30_1_13)">
+<rect width="40" height="40" transform="translate(20 60) rotate(-180)" fill="#008E86"/>
+<rect x="20" y="60" width="10" height="40" transform="rotate(-180 20 60)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip31_1_13)">
+<rect width="40" height="40" transform="translate(20 20) rotate(-90)" fill="#008E86"/>
+<rect x="20" y="20" width="10" height="40" transform="rotate(-90 20 20)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip32_1_13)">
+<rect width="40" height="40" transform="translate(460 460) rotate(90)" fill="#008E86"/>
+<rect x="460" y="460" width="10" height="40" transform="rotate(90 460 460)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip33_1_13)">
+<rect width="40" height="40" transform="translate(60 20) rotate(-90)" fill="#008E86"/>
+<rect x="60" y="20" width="10" height="40" transform="rotate(-90 60 20)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip34_1_13)">
+<rect width="40" height="40" transform="translate(420 460) rotate(90)" fill="#008E86"/>
+<rect x="420" y="460" width="10" height="40" transform="rotate(90 420 460)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip35_1_13)">
+<rect width="40" height="40" transform="translate(100 20) rotate(-90)" fill="#008E86"/>
+<rect x="100" y="20" width="10" height="40" transform="rotate(-90 100 20)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip36_1_13)">
+<rect width="40" height="40" transform="translate(380 460) rotate(90)" fill="#008E86"/>
+<rect x="380" y="460" width="10" height="40" transform="rotate(90 380 460)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip37_1_13)">
+<rect width="40" height="40" transform="translate(140 20) rotate(-90)" fill="#008E86"/>
+<rect x="140" y="20" width="10" height="40" transform="rotate(-90 140 20)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip38_1_13)">
+<rect width="40" height="40" transform="translate(340 460) rotate(90)" fill="#008E86"/>
+<rect x="340" y="460" width="10" height="40" transform="rotate(90 340 460)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip39_1_13)">
+<rect width="40" height="40" transform="translate(180 20) rotate(-90)" fill="#008E86"/>
+<rect x="180" y="20" width="10" height="40" transform="rotate(-90 180 20)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip40_1_13)">
+<rect width="40" height="40" transform="translate(220 20) rotate(-90)" fill="#008E86"/>
+<rect x="220" y="20" width="10" height="40" transform="rotate(-90 220 20)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip41_1_13)">
+<rect width="40" height="40" transform="translate(260 20) rotate(-90)" fill="#008E86"/>
+<rect x="260" y="20" width="10" height="40" transform="rotate(-90 260 20)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip42_1_13)">
+<rect width="40" height="40" transform="translate(220 460) rotate(90)" fill="#008E86"/>
+<rect x="220" y="460" width="10" height="40" transform="rotate(90 220 460)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip43_1_13)">
+<rect width="40" height="40" transform="translate(260 460) rotate(90)" fill="#008E86"/>
+<rect x="260" y="460" width="10" height="40" transform="rotate(90 260 460)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip44_1_13)">
+<rect width="40" height="40" transform="translate(300 460) rotate(90)" fill="#008E86"/>
+<rect x="300" y="460" width="10" height="40" transform="rotate(90 300 460)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip45_1_13)">
+<rect width="40" height="40" transform="translate(180 460) rotate(90)" fill="#008E86"/>
+<rect x="180" y="460" width="10" height="40" transform="rotate(90 180 460)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip46_1_13)">
+<rect width="40" height="40" transform="translate(340 20) rotate(-90)" fill="#008E86"/>
+<rect x="340" y="20" width="10" height="40" transform="rotate(-90 340 20)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip47_1_13)">
+<rect width="40" height="40" transform="translate(140 460) rotate(90)" fill="#008E86"/>
+<rect x="140" y="460" width="10" height="40" transform="rotate(90 140 460)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip48_1_13)">
+<rect width="40" height="40" transform="translate(380 20) rotate(-90)" fill="#008E86"/>
+<rect x="380" y="20" width="10" height="40" transform="rotate(-90 380 20)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip49_1_13)">
+<rect width="40" height="40" transform="translate(380 100) rotate(90)" fill="#008E86"/>
+<rect x="380" y="100" width="10" height="40" transform="rotate(90 380 100)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip50_1_13)">
+<rect width="40" height="40" transform="translate(340 220) rotate(-90)" fill="#008E86"/>
+<rect x="340" y="220" width="10" height="40" transform="rotate(-90 340 220)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip51_1_13)">
+<rect width="40" height="40" transform="translate(140 340) rotate(90)" fill="#008E86"/>
+<rect x="140" y="340" width="10" height="40" transform="rotate(90 140 340)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip52_1_13)">
+<rect width="40" height="40" transform="translate(100 420) rotate(-90)" fill="#008E86"/>
+<rect x="100" y="420" width="10" height="40" transform="rotate(-90 100 420)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip53_1_13)">
+<rect width="40" height="40" transform="translate(100 460) rotate(90)" fill="#008E86"/>
+<rect x="100" y="460" width="10" height="40" transform="rotate(90 100 460)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip54_1_13)">
+<rect width="40" height="40" transform="translate(420 20) rotate(-90)" fill="#008E86"/>
+<rect x="420" y="20" width="10" height="40" transform="rotate(-90 420 20)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip55_1_13)">
+<rect width="40" height="40" transform="translate(60 460) rotate(90)" fill="#008E86"/>
+<rect x="60" y="460" width="10" height="40" transform="rotate(90 60 460)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip56_1_13)">
+<rect width="40" height="40" transform="translate(460 380)" fill="#008E86"/>
+<rect x="460" y="380" width="10" height="40" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip57_1_13)">
+<rect width="40" height="40" transform="translate(460 420)" fill="#008E86"/>
+<rect x="460" y="420" width="10" height="40" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip58_1_13)">
+<rect width="40" height="40" transform="translate(20 100) rotate(-180)" fill="#008E86"/>
+<rect x="20" y="100" width="10" height="40" transform="rotate(-180 20 100)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip59_1_13)">
+<rect width="40" height="40" transform="translate(460 340)" fill="#008E86"/>
+<rect x="460" y="340" width="10" height="40" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip60_1_13)">
+<rect width="40" height="40" transform="translate(20 140) rotate(-180)" fill="#008E86"/>
+<rect x="20" y="140" width="10" height="40" transform="rotate(-180 20 140)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip61_1_13)">
+<rect width="40" height="40" transform="translate(460 300)" fill="#008E86"/>
+<rect x="460" y="300" width="10" height="40" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip62_1_13)">
+<rect width="40" height="40" transform="translate(20 180) rotate(-180)" fill="#008E86"/>
+<rect x="20" y="180" width="10" height="40" transform="rotate(-180 20 180)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip63_1_13)">
+<rect width="40" height="40" transform="translate(20 220) rotate(-180)" fill="#008E86"/>
+<rect x="20" y="220" width="10" height="40" transform="rotate(-180 20 220)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip64_1_13)">
+<rect width="40" height="40" transform="translate(460 220)" fill="#008E86"/>
+<rect x="460" y="220" width="10" height="40" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip65_1_13)">
+<rect width="40" height="40" transform="translate(20 260) rotate(-180)" fill="#008E86"/>
+<rect x="20" y="260" width="10" height="40" transform="rotate(-180 20 260)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip66_1_13)">
+<rect width="40" height="40" transform="translate(460 180)" fill="#008E86"/>
+<rect x="460" y="180" width="10" height="40" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip67_1_13)">
+<rect width="40" height="40" transform="translate(460 140)" fill="#008E86"/>
+<rect x="460" y="140" width="10" height="40" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip68_1_13)">
+<rect width="40" height="40" transform="translate(460 100)" fill="#008E86"/>
+<rect x="460" y="100" width="10" height="40" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip69_1_13)">
+<rect width="40" height="40" transform="translate(20 420) rotate(-180)" fill="#008E86"/>
+<rect x="20" y="420" width="10" height="40" transform="rotate(-180 20 420)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip70_1_13)">
+<rect width="40" height="40" transform="translate(460 60)" fill="#008E86"/>
+<rect x="460" y="60" width="10" height="40" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip71_1_13)">
+<rect width="40" height="40" transform="translate(20 460) rotate(-180)" fill="#008E86"/>
+<rect x="20" y="460" width="10" height="40" transform="rotate(-180 20 460)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip72_1_13)">
+<rect width="40" height="40" transform="translate(460 20)" fill="#008E86"/>
+<rect x="460" y="20" width="10" height="40" fill="#BDBDBD"/>
+</g>
+<rect width="40" height="40" transform="translate(60 100)" fill="#BDBDBD"/>
+<rect x="70" y="100" width="20" height="40" fill="#008E86"/>
+<rect width="40" height="40" transform="translate(220 180)" fill="#BDBDBD"/>
+<rect x="230" y="180" width="20" height="40" fill="#008E86"/>
+<g clip-path="url(#clip73_1_13)">
+<rect width="40" height="40" transform="translate(220 60) rotate(90)" fill="#BDBDBD"/>
+<rect x="220" y="70" width="20" height="40" transform="rotate(90 220 70)" fill="#008E86"/>
+</g>
+<g clip-path="url(#clip74_1_13)">
+<rect width="40" height="40" transform="translate(60 140)" fill="#008E86"/>
+<rect x="60" y="140" width="10" height="40" fill="#BDBDBD"/>
+<rect x="90" y="140" width="10" height="10" fill="#BDBDBD"/>
+<rect x="90" y="170" width="10" height="10" fill="#BDBDBD"/>
+</g>
+<rect width="40" height="40" transform="translate(60 180)" fill="#BDBDBD"/>
+<rect x="70" y="180" width="20" height="40" fill="#008E86"/>
+<g clip-path="url(#clip75_1_13)">
+<rect width="40" height="40" transform="translate(140 140) rotate(90)" fill="#BDBDBD"/>
+<rect x="140" y="150" width="20" height="40" transform="rotate(90 140 150)" fill="#008E86"/>
+</g>
+<g clip-path="url(#clip76_1_13)">
+<rect width="40" height="40" transform="translate(180 140) rotate(90)" fill="#BDBDBD"/>
+<rect x="180" y="150" width="20" height="40" transform="rotate(90 180 150)" fill="#008E86"/>
+</g>
+<g clip-path="url(#clip77_1_13)">
+<rect width="40" height="40" transform="translate(220 140) rotate(90)" fill="#BDBDBD"/>
+<rect x="220" y="150" width="20" height="40" transform="rotate(90 220 150)" fill="#008E86"/>
+</g>
+<rect width="40" height="40" transform="translate(60 220)" fill="#BDBDBD"/>
+<rect x="70" y="220" width="20" height="40" fill="#008E86"/>
+<g clip-path="url(#clip78_1_13)">
+<rect width="40" height="40" transform="translate(-20 300) rotate(-90)" fill="#008E86"/>
+<rect x="-20" y="300" width="10" height="40" transform="rotate(-90 -20 300)" fill="#BDBDBD"/>
+<rect x="10" y="270" width="10" height="10" transform="rotate(-90 10 270)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip79_1_13)">
+<rect width="40" height="40" transform="translate(20 340) rotate(90)" fill="#BDBDBD"/>
+<rect x="10" y="350" width="30" height="30" transform="rotate(90 10 350)" fill="#008E86"/>
+</g>
+<rect width="40" height="40" transform="translate(140 20) rotate(90)" fill="#4F4F4F"/>
+<rect width="40" height="40" transform="translate(300 60) rotate(90)" fill="#4F4F4F"/>
+<rect width="40" height="40" transform="translate(460 220) rotate(90)" fill="#4F4F4F"/>
+<rect width="40" height="40" transform="translate(300 20) rotate(90)" fill="#4F4F4F"/>
+<rect width="40" height="40" transform="translate(300 100) rotate(90)" fill="#4F4F4F"/>
+<rect width="40" height="40" transform="translate(300 340) rotate(90)" fill="#4F4F4F"/>
+<rect width="40" height="40" transform="translate(220 420) rotate(90)" fill="#4F4F4F"/>
+<rect width="40" height="40" transform="translate(340 420) rotate(90)" fill="#4F4F4F"/>
+<g clip-path="url(#clip80_1_13)">
+<rect width="40" height="40" transform="translate(100 60)" fill="#4F4F4F"/>
+<rect x="119" y="65" width="2" height="10" fill="#EDCA71"/>
+<rect x="119" y="85" width="2" height="10" fill="#EDCA71"/>
+<rect x="126" y="60" width="4" height="20" fill="#E0E0E0"/>
+<rect x="134" y="60" width="4" height="20" fill="#E0E0E0"/>
+<rect x="118" y="60" width="4" height="20" fill="#E0E0E0"/>
+<rect x="110" y="60" width="4" height="20" fill="#E0E0E0"/>
+<rect x="102" y="60" width="4" height="20" fill="#E0E0E0"/>
+</g>
+<g clip-path="url(#clip81_1_13)">
+<rect width="40" height="40" transform="translate(140 60) rotate(-90)" fill="#4F4F4F"/>
+<rect x="145" y="41" width="2" height="10" transform="rotate(-90 145 41)" fill="#EDCA71"/>
+<rect x="165" y="41" width="2" height="10" transform="rotate(-90 165 41)" fill="#EDCA71"/>
+<rect x="140" y="34" width="4" height="20" transform="rotate(-90 140 34)" fill="#E0E0E0"/>
+<rect x="140" y="26" width="4" height="20" transform="rotate(-90 140 26)" fill="#E0E0E0"/>
+<rect x="140" y="42" width="4" height="20" transform="rotate(-90 140 42)" fill="#E0E0E0"/>
+<rect x="140" y="50" width="4" height="20" transform="rotate(-90 140 50)" fill="#E0E0E0"/>
+<rect x="140" y="58" width="4" height="20" transform="rotate(-90 140 58)" fill="#E0E0E0"/>
+</g>
+<g clip-path="url(#clip82_1_13)">
+<rect width="40" height="40" transform="translate(300 100) rotate(-90)" fill="#4F4F4F"/>
+<rect x="305" y="81" width="2" height="10" transform="rotate(-90 305 81)" fill="#EDCA71"/>
+<rect x="325" y="81" width="2" height="10" transform="rotate(-90 325 81)" fill="#EDCA71"/>
+<rect x="300" y="74" width="4" height="20" transform="rotate(-90 300 74)" fill="#E0E0E0"/>
+<rect x="300" y="66" width="4" height="20" transform="rotate(-90 300 66)" fill="#E0E0E0"/>
+<rect x="300" y="82" width="4" height="20" transform="rotate(-90 300 82)" fill="#E0E0E0"/>
+<rect x="300" y="90" width="4" height="20" transform="rotate(-90 300 90)" fill="#E0E0E0"/>
+<rect x="300" y="98" width="4" height="20" transform="rotate(-90 300 98)" fill="#E0E0E0"/>
+</g>
+<g clip-path="url(#clip83_1_13)">
+<rect width="40" height="40" transform="translate(140 140) rotate(-90)" fill="#4F4F4F"/>
+<rect x="145" y="121" width="2" height="10" transform="rotate(-90 145 121)" fill="#EDCA71"/>
+<rect x="165" y="121" width="2" height="10" transform="rotate(-90 165 121)" fill="#EDCA71"/>
+<rect x="140" y="114" width="4" height="20" transform="rotate(-90 140 114)" fill="#E0E0E0"/>
+<rect x="140" y="106" width="4" height="20" transform="rotate(-90 140 106)" fill="#E0E0E0"/>
+<rect x="140" y="122" width="4" height="20" transform="rotate(-90 140 122)" fill="#E0E0E0"/>
+<rect x="140" y="130" width="4" height="20" transform="rotate(-90 140 130)" fill="#E0E0E0"/>
+<rect x="140" y="138" width="4" height="20" transform="rotate(-90 140 138)" fill="#E0E0E0"/>
+</g>
+<g clip-path="url(#clip84_1_13)">
+<rect width="40" height="40" transform="translate(260 100) rotate(90)" fill="#4F4F4F"/>
+<rect x="255" y="119" width="2" height="10" transform="rotate(90 255 119)" fill="#EDCA71"/>
+<rect x="235" y="119" width="2" height="10" transform="rotate(90 235 119)" fill="#EDCA71"/>
+<rect x="260" y="126" width="4" height="20" transform="rotate(90 260 126)" fill="#E0E0E0"/>
+<rect x="260" y="134" width="4" height="20" transform="rotate(90 260 134)" fill="#E0E0E0"/>
+<rect x="260" y="118" width="4" height="20" transform="rotate(90 260 118)" fill="#E0E0E0"/>
+<rect x="260" y="110" width="4" height="20" transform="rotate(90 260 110)" fill="#E0E0E0"/>
+<rect x="260" y="102" width="4" height="20" transform="rotate(90 260 102)" fill="#E0E0E0"/>
+</g>
+<g clip-path="url(#clip85_1_13)">
+<rect width="40" height="40" transform="translate(260 20) rotate(90)" fill="#4F4F4F"/>
+<rect x="255" y="39" width="2" height="10" transform="rotate(90 255 39)" fill="#EDCA71"/>
+<rect x="235" y="39" width="2" height="10" transform="rotate(90 235 39)" fill="#EDCA71"/>
+<rect x="260" y="46" width="4" height="20" transform="rotate(90 260 46)" fill="#E0E0E0"/>
+<rect x="260" y="54" width="4" height="20" transform="rotate(90 260 54)" fill="#E0E0E0"/>
+<rect x="260" y="38" width="4" height="20" transform="rotate(90 260 38)" fill="#E0E0E0"/>
+<rect x="260" y="30" width="4" height="20" transform="rotate(90 260 30)" fill="#E0E0E0"/>
+<rect x="260" y="22" width="4" height="20" transform="rotate(90 260 22)" fill="#E0E0E0"/>
+</g>
+<g clip-path="url(#clip86_1_13)">
+<rect width="40" height="40" transform="translate(100 20) rotate(90)" fill="#4F4F4F"/>
+<rect x="95" y="39" width="2" height="10" transform="rotate(90 95 39)" fill="#EDCA71"/>
+<rect x="75" y="39" width="2" height="10" transform="rotate(90 75 39)" fill="#EDCA71"/>
+<rect x="100" y="46" width="4" height="20" transform="rotate(90 100 46)" fill="#E0E0E0"/>
+<rect x="100" y="54" width="4" height="20" transform="rotate(90 100 54)" fill="#E0E0E0"/>
+<rect x="100" y="38" width="4" height="20" transform="rotate(90 100 38)" fill="#E0E0E0"/>
+<rect x="100" y="30" width="4" height="20" transform="rotate(90 100 30)" fill="#E0E0E0"/>
+<rect x="100" y="22" width="4" height="20" transform="rotate(90 100 22)" fill="#E0E0E0"/>
+</g>
+<g clip-path="url(#clip87_1_13)">
+<rect width="40" height="40" transform="translate(340 -20) rotate(90)" fill="#008E86"/>
+<rect x="310" y="10" width="10" height="10" transform="rotate(90 310 10)" fill="#BDBDBD"/>
+<rect x="340" y="10" width="10" height="10" transform="rotate(90 340 10)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip88_1_13)">
+<rect width="40" height="40" transform="translate(260 140) rotate(90)" fill="#BDBDBD"/>
+<rect x="250" y="150" width="30" height="30" transform="rotate(90 250 150)" fill="#008E86"/>
+<rect x="230" y="180" width="10" height="10" transform="rotate(-180 230 180)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip89_1_13)">
+<rect width="40" height="40" transform="translate(100 300) rotate(-180)" fill="#BDBDBD"/>
+<rect x="90" y="290" width="30" height="30" transform="rotate(-180 90 290)" fill="#008E86"/>
+<rect x="60" y="270" width="10" height="10" transform="rotate(-90 60 270)" fill="#BDBDBD"/>
+</g>
+<rect width="40" height="40" transform="translate(300 260)" fill="#BDBDBD"/>
+<rect x="310" y="270" width="30" height="30" fill="#008E86"/>
+<rect x="340" y="290" width="10" height="10" transform="rotate(90 340 290)" fill="#BDBDBD"/>
+<rect width="40" height="40" transform="translate(140 300)" fill="#BDBDBD"/>
+<rect x="150" y="310" width="30" height="30" fill="#008E86"/>
+<rect x="180" y="330" width="10" height="10" transform="rotate(90 180 330)" fill="#BDBDBD"/>
+<g clip-path="url(#clip90_1_13)">
+<rect width="40" height="40" transform="translate(420 420) rotate(-180)" fill="#BDBDBD"/>
+<rect x="410" y="410" width="30" height="30" transform="rotate(-180 410 410)" fill="#008E86"/>
+<rect x="380" y="390" width="10" height="10" transform="rotate(-90 380 390)" fill="#BDBDBD"/>
+</g>
+<rect width="40" height="40" transform="translate(300 100)" fill="#BDBDBD"/>
+<rect x="310" y="110" width="30" height="30" fill="#008E86"/>
+<g clip-path="url(#clip91_1_13)">
+<rect width="40" height="40" transform="translate(300 220) rotate(-90)" fill="#BDBDBD"/>
+<rect x="310" y="210" width="30" height="30" transform="rotate(-90 310 210)" fill="#008E86"/>
+</g>
+<rect width="40" height="40" transform="translate(420 220) rotate(180)" fill="#BDBDBD"/>
+<rect x="410" y="210" width="30" height="30" transform="rotate(180 410 210)" fill="#008E86"/>
+<rect width="40" height="40" transform="translate(300 140)" fill="#008E86"/>
+<rect x="300" y="140" width="10" height="40" fill="#BDBDBD"/>
+<g clip-path="url(#clip92_1_13)">
+<rect width="40" height="40" transform="translate(420 140) rotate(-180)" fill="#008E86"/>
+<rect x="420" y="140" width="10" height="40" transform="rotate(-180 420 140)" fill="#BDBDBD"/>
+<rect x="390" y="110" width="10" height="10" transform="rotate(-180 390 110)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip93_1_13)">
+<rect width="40" height="40" transform="translate(420 180) rotate(-180)" fill="#BDBDBD"/>
+<rect x="410" y="180" width="30" height="40" transform="rotate(-180 410 180)" fill="#008E86"/>
+</g>
+<rect width="40" height="40" transform="translate(140 220)" fill="#BDBDBD"/>
+<rect x="150" y="230" width="20" height="20" fill="#008E86"/>
+<rect width="40" height="40" transform="translate(60 340)" fill="#BDBDBD"/>
+<rect x="70" y="350" width="30" height="30" fill="#008E86"/>
+<rect width="40" height="40" transform="translate(180 420) rotate(-180)" fill="#BDBDBD"/>
+<rect x="170" y="410" width="30" height="30" transform="rotate(-180 170 410)" fill="#008E86"/>
+<g clip-path="url(#clip94_1_13)">
+<rect width="40" height="40" transform="translate(60 420) rotate(-90)" fill="#BDBDBD"/>
+<rect x="70" y="410" width="30" height="30" transform="rotate(-90 70 410)" fill="#008E86"/>
+</g>
+<g clip-path="url(#clip95_1_13)">
+<rect width="40" height="40" transform="translate(460 260) rotate(90)" fill="#BDBDBD"/>
+<rect x="460" y="270" width="20" height="40" transform="rotate(90 460 270)" fill="#008E86"/>
+</g>
+<g clip-path="url(#clip96_1_13)">
+<rect width="40" height="40" transform="translate(420 260) rotate(90)" fill="#BDBDBD"/>
+<rect x="420" y="270" width="20" height="40" transform="rotate(90 420 270)" fill="#008E86"/>
+</g>
+<g clip-path="url(#clip97_1_13)">
+<rect width="40" height="40" transform="translate(380 260) rotate(90)" fill="#BDBDBD"/>
+<rect x="380" y="270" width="20" height="40" transform="rotate(90 380 270)" fill="#008E86"/>
+</g>
+<g clip-path="url(#clip98_1_13)">
+<rect width="40" height="40" transform="translate(220 300) rotate(90)" fill="#BDBDBD"/>
+<rect x="220" y="310" width="20" height="40" transform="rotate(90 220 310)" fill="#008E86"/>
+</g>
+<g clip-path="url(#clip99_1_13)">
+<rect width="40" height="40" transform="translate(500 300) rotate(-180)" fill="#008E86"/>
+<rect x="470" y="270" width="10" height="10" transform="rotate(-180 470 270)" fill="#BDBDBD"/>
+<rect x="470" y="300" width="10" height="10" transform="rotate(-180 470 300)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip100_1_13)">
+<rect width="40" height="40" transform="translate(180 380) rotate(-180)" fill="#008E86"/>
+<rect x="180" y="380" width="10" height="40" transform="rotate(-180 180 380)" fill="#BDBDBD"/>
+<rect x="150" y="350" width="10" height="10" transform="rotate(-180 150 350)" fill="#BDBDBD"/>
+</g>
+<g clip-path="url(#clip101_1_13)">
+<rect width="40" height="40" transform="translate(20 340) rotate(-180)" fill="#4F4F4F"/>
+<rect x="16" y="340" width="4" height="4" transform="rotate(-180 16 340)" fill="#333333"/>
+<rect x="16" y="332" width="4" height="4" transform="rotate(-180 16 332)" fill="#333333"/>
+<rect x="20" y="336" width="4" height="4" transform="rotate(-180 20 336)" fill="#333333"/>
+<rect x="16" y="324" width="4" height="4" transform="rotate(-180 16 324)" fill="#333333"/>
+<rect x="20" y="328" width="4" height="4" transform="rotate(-180 20 328)" fill="#333333"/>
+<rect x="16" y="316" width="4" height="4" transform="rotate(-180 16 316)" fill="#333333"/>
+<rect x="20" y="320" width="4" height="4" transform="rotate(-180 20 320)" fill="#333333"/>
+<rect x="16" y="308" width="4" height="4" transform="rotate(-180 16 308)" fill="#333333"/>
+<rect x="20" y="312" width="4" height="4" transform="rotate(-180 20 312)" fill="#333333"/>
+<rect x="20" y="304" width="4" height="4" transform="rotate(-180 20 304)" fill="#333333"/>
+<rect x="16" y="336" width="4" height="4" transform="rotate(-180 16 336)" fill="#F2F2F2"/>
+<rect x="20" y="340" width="4" height="4" transform="rotate(-180 20 340)" fill="#F2F2F2"/>
+<rect x="16" y="328" width="4" height="4" transform="rotate(-180 16 328)" fill="#F2F2F2"/>
+<rect x="20" y="332" width="4" height="4" transform="rotate(-180 20 332)" fill="#F2F2F2"/>
+<rect x="16" y="320" width="4" height="4" transform="rotate(-180 16 320)" fill="#F2F2F2"/>
+<rect x="20" y="324" width="4" height="4" transform="rotate(-180 20 324)" fill="#F2F2F2"/>
+<rect x="16" y="312" width="4" height="4" transform="rotate(-180 16 312)" fill="#F2F2F2"/>
+<rect x="20" y="316" width="4" height="4" transform="rotate(-180 20 316)" fill="#F2F2F2"/>
+<rect x="16" y="304" width="4" height="4" transform="rotate(-180 16 304)" fill="#F2F2F2"/>
+<rect x="20" y="308" width="4" height="4" transform="rotate(-180 20 308)" fill="#F2F2F2"/>
+<path d="M10 327.63L5.8 327.64L9.26 329.7L9.26 330.43L5.89 332.48L10 332.48L10 334L3 334L3 332.66L7.35 330.04L3 327.46L3 326.13L10 326.11L10 327.63Z" fill="#00D8CC"/>
+<path d="M8.7 319.5L10 319.5L10 324.92L3 324.92L3 319.63L4.3 319.63L4.3 323.31L5.82 323.31L5.82 320.06L7.08 320.06L7.08 323.31L8.7 323.31L8.7 319.5Z" fill="#00D8CC"/>
+<path d="M4.32 316.36L4.32 318.6L3 318.6L3 312.5L4.32 312.5L4.32 314.74L10 314.74L10 316.36L4.32 316.36Z" fill="#00D8CC"/>
+<path d="M8.5 308.32L8.5 311.57L10 312.19L10 313.85L3 310.73L3 309.13L10 306L10 307.7L8.5 308.32ZM7.27 308.83L4.59 309.94L7.27 311.05L7.27 308.83Z" fill="#00D8CC"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_1_13">
+<rect width="480" height="480" fill="white"/>
+</clipPath>
+<clipPath id="clip1_1_13">
+<rect width="40" height="40" fill="white" transform="translate(20 300) rotate(-90)"/>
+</clipPath>
+<clipPath id="clip2_1_13">
+<rect width="40" height="40" fill="white" transform="translate(-20 -20)"/>
+</clipPath>
+<clipPath id="clip3_1_13">
+<rect width="40" height="40" fill="white" transform="translate(-20 500) rotate(-90)"/>
+</clipPath>
+<clipPath id="clip4_1_13">
+<rect width="40" height="40" fill="white" transform="translate(500 500) rotate(180)"/>
+</clipPath>
+<clipPath id="clip5_1_13">
+<rect width="40" height="40" fill="white" transform="translate(500 -20) rotate(90)"/>
+</clipPath>
+<clipPath id="clip6_1_13">
+<rect width="40" height="40" fill="white" transform="translate(260 180)"/>
+</clipPath>
+<clipPath id="clip7_1_13">
+<rect width="40" height="40" fill="white" transform="translate(220 20) rotate(90)"/>
+</clipPath>
+<clipPath id="clip8_1_13">
+<rect width="40" height="40" fill="white" transform="translate(100 300) rotate(90)"/>
+</clipPath>
+<clipPath id="clip9_1_13">
+<rect width="40" height="40" fill="white" transform="translate(20 60)"/>
+</clipPath>
+<clipPath id="clip10_1_13">
+<rect width="40" height="40" fill="white" transform="translate(20 340)"/>
+</clipPath>
+<clipPath id="clip11_1_13">
+<rect width="40" height="40" fill="white" transform="translate(260 140)"/>
+</clipPath>
+<clipPath id="clip12_1_13">
+<rect width="40" height="40" fill="white" transform="translate(460 220) rotate(-180)"/>
+</clipPath>
+<clipPath id="clip13_1_13">
+<rect width="40" height="40" fill="white" transform="translate(420 220) rotate(90)"/>
+</clipPath>
+<clipPath id="clip14_1_13">
+<rect width="40" height="40" fill="white" transform="translate(300 260) rotate(-90)"/>
+</clipPath>
+<clipPath id="clip15_1_13">
+<rect width="40" height="40" fill="white" transform="translate(260 260) rotate(90)"/>
+</clipPath>
+<clipPath id="clip16_1_13">
+<rect width="40" height="40" fill="white" transform="translate(300 340) rotate(-180)"/>
+</clipPath>
+<clipPath id="clip17_1_13">
+<rect width="40" height="40" fill="white" transform="translate(260 340) rotate(90)"/>
+</clipPath>
+<clipPath id="clip18_1_13">
+<rect width="40" height="40" fill="white" transform="translate(420 420) rotate(90)"/>
+</clipPath>
+<clipPath id="clip19_1_13">
+<rect width="40" height="40" fill="white" transform="translate(340 460) rotate(-90)"/>
+</clipPath>
+<clipPath id="clip20_1_13">
+<rect width="40" height="40" fill="white" transform="translate(420 300) rotate(90)"/>
+</clipPath>
+<clipPath id="clip21_1_13">
+<rect width="40" height="40" fill="white" transform="translate(180 420) rotate(90)"/>
+</clipPath>
+<clipPath id="clip22_1_13">
+<rect width="40" height="40" fill="white" transform="translate(340 420) rotate(-180)"/>
+</clipPath>
+<clipPath id="clip23_1_13">
+<rect width="40" height="40" fill="white" transform="translate(220 420) rotate(-180)"/>
+</clipPath>
+<clipPath id="clip24_1_13">
+<rect width="40" height="40" fill="white" transform="translate(140 300) rotate(-90)"/>
+</clipPath>
+<clipPath id="clip25_1_13">
+<rect width="40" height="40" fill="white" transform="translate(220 260) rotate(180)"/>
+</clipPath>
+<clipPath id="clip26_1_13">
+<rect width="40" height="40" fill="white" transform="translate(140 100) rotate(-90)"/>
+</clipPath>
+<clipPath id="clip27_1_13">
+<rect width="40" height="40" fill="white" transform="translate(340 340) rotate(180)"/>
+</clipPath>
+<clipPath id="clip28_1_13">
+<rect width="40" height="40" fill="white" transform="translate(340 420) rotate(-90)"/>
+</clipPath>
+<clipPath id="clip29_1_13">
+<rect width="40" height="40" fill="white" transform="translate(220 420) rotate(-90)"/>
+</clipPath>
+<clipPath id="clip30_1_13">
+<rect width="40" height="40" fill="white" transform="translate(20 60) rotate(-180)"/>
+</clipPath>
+<clipPath id="clip31_1_13">
+<rect width="40" height="40" fill="white" transform="translate(20 20) rotate(-90)"/>
+</clipPath>
+<clipPath id="clip32_1_13">
+<rect width="40" height="40" fill="white" transform="translate(460 460) rotate(90)"/>
+</clipPath>
+<clipPath id="clip33_1_13">
+<rect width="40" height="40" fill="white" transform="translate(60 20) rotate(-90)"/>
+</clipPath>
+<clipPath id="clip34_1_13">
+<rect width="40" height="40" fill="white" transform="translate(420 460) rotate(90)"/>
+</clipPath>
+<clipPath id="clip35_1_13">
+<rect width="40" height="40" fill="white" transform="translate(100 20) rotate(-90)"/>
+</clipPath>
+<clipPath id="clip36_1_13">
+<rect width="40" height="40" fill="white" transform="translate(380 460) rotate(90)"/>
+</clipPath>
+<clipPath id="clip37_1_13">
+<rect width="40" height="40" fill="white" transform="translate(140 20) rotate(-90)"/>
+</clipPath>
+<clipPath id="clip38_1_13">
+<rect width="40" height="40" fill="white" transform="translate(340 460) rotate(90)"/>
+</clipPath>
+<clipPath id="clip39_1_13">
+<rect width="40" height="40" fill="white" transform="translate(180 20) rotate(-90)"/>
+</clipPath>
+<clipPath id="clip40_1_13">
+<rect width="40" height="40" fill="white" transform="translate(220 20) rotate(-90)"/>
+</clipPath>
+<clipPath id="clip41_1_13">
+<rect width="40" height="40" fill="white" transform="translate(260 20) rotate(-90)"/>
+</clipPath>
+<clipPath id="clip42_1_13">
+<rect width="40" height="40" fill="white" transform="translate(220 460) rotate(90)"/>
+</clipPath>
+<clipPath id="clip43_1_13">
+<rect width="40" height="40" fill="white" transform="translate(260 460) rotate(90)"/>
+</clipPath>
+<clipPath id="clip44_1_13">
+<rect width="40" height="40" fill="white" transform="translate(300 460) rotate(90)"/>
+</clipPath>
+<clipPath id="clip45_1_13">
+<rect width="40" height="40" fill="white" transform="translate(180 460) rotate(90)"/>
+</clipPath>
+<clipPath id="clip46_1_13">
+<rect width="40" height="40" fill="white" transform="translate(340 20) rotate(-90)"/>
+</clipPath>
+<clipPath id="clip47_1_13">
+<rect width="40" height="40" fill="white" transform="translate(140 460) rotate(90)"/>
+</clipPath>
+<clipPath id="clip48_1_13">
+<rect width="40" height="40" fill="white" transform="translate(380 20) rotate(-90)"/>
+</clipPath>
+<clipPath id="clip49_1_13">
+<rect width="40" height="40" fill="white" transform="translate(380 100) rotate(90)"/>
+</clipPath>
+<clipPath id="clip50_1_13">
+<rect width="40" height="40" fill="white" transform="translate(340 220) rotate(-90)"/>
+</clipPath>
+<clipPath id="clip51_1_13">
+<rect width="40" height="40" fill="white" transform="translate(140 340) rotate(90)"/>
+</clipPath>
+<clipPath id="clip52_1_13">
+<rect width="40" height="40" fill="white" transform="translate(100 420) rotate(-90)"/>
+</clipPath>
+<clipPath id="clip53_1_13">
+<rect width="40" height="40" fill="white" transform="translate(100 460) rotate(90)"/>
+</clipPath>
+<clipPath id="clip54_1_13">
+<rect width="40" height="40" fill="white" transform="translate(420 20) rotate(-90)"/>
+</clipPath>
+<clipPath id="clip55_1_13">
+<rect width="40" height="40" fill="white" transform="translate(60 460) rotate(90)"/>
+</clipPath>
+<clipPath id="clip56_1_13">
+<rect width="40" height="40" fill="white" transform="translate(460 380)"/>
+</clipPath>
+<clipPath id="clip57_1_13">
+<rect width="40" height="40" fill="white" transform="translate(460 420)"/>
+</clipPath>
+<clipPath id="clip58_1_13">
+<rect width="40" height="40" fill="white" transform="translate(20 100) rotate(-180)"/>
+</clipPath>
+<clipPath id="clip59_1_13">
+<rect width="40" height="40" fill="white" transform="translate(460 340)"/>
+</clipPath>
+<clipPath id="clip60_1_13">
+<rect width="40" height="40" fill="white" transform="translate(20 140) rotate(-180)"/>
+</clipPath>
+<clipPath id="clip61_1_13">
+<rect width="40" height="40" fill="white" transform="translate(460 300)"/>
+</clipPath>
+<clipPath id="clip62_1_13">
+<rect width="40" height="40" fill="white" transform="translate(20 180) rotate(-180)"/>
+</clipPath>
+<clipPath id="clip63_1_13">
+<rect width="40" height="40" fill="white" transform="translate(20 220) rotate(-180)"/>
+</clipPath>
+<clipPath id="clip64_1_13">
+<rect width="40" height="40" fill="white" transform="translate(460 220)"/>
+</clipPath>
+<clipPath id="clip65_1_13">
+<rect width="40" height="40" fill="white" transform="translate(20 260) rotate(-180)"/>
+</clipPath>
+<clipPath id="clip66_1_13">
+<rect width="40" height="40" fill="white" transform="translate(460 180)"/>
+</clipPath>
+<clipPath id="clip67_1_13">
+<rect width="40" height="40" fill="white" transform="translate(460 140)"/>
+</clipPath>
+<clipPath id="clip68_1_13">
+<rect width="40" height="40" fill="white" transform="translate(460 100)"/>
+</clipPath>
+<clipPath id="clip69_1_13">
+<rect width="40" height="40" fill="white" transform="translate(20 420) rotate(-180)"/>
+</clipPath>
+<clipPath id="clip70_1_13">
+<rect width="40" height="40" fill="white" transform="translate(460 60)"/>
+</clipPath>
+<clipPath id="clip71_1_13">
+<rect width="40" height="40" fill="white" transform="translate(20 460) rotate(-180)"/>
+</clipPath>
+<clipPath id="clip72_1_13">
+<rect width="40" height="40" fill="white" transform="translate(460 20)"/>
+</clipPath>
+<clipPath id="clip73_1_13">
+<rect width="40" height="40" fill="white" transform="translate(220 60) rotate(90)"/>
+</clipPath>
+<clipPath id="clip74_1_13">
+<rect width="40" height="40" fill="white" transform="translate(60 140)"/>
+</clipPath>
+<clipPath id="clip75_1_13">
+<rect width="40" height="40" fill="white" transform="translate(140 140) rotate(90)"/>
+</clipPath>
+<clipPath id="clip76_1_13">
+<rect width="40" height="40" fill="white" transform="translate(180 140) rotate(90)"/>
+</clipPath>
+<clipPath id="clip77_1_13">
+<rect width="40" height="40" fill="white" transform="translate(220 140) rotate(90)"/>
+</clipPath>
+<clipPath id="clip78_1_13">
+<rect width="40" height="40" fill="white" transform="translate(-20 300) rotate(-90)"/>
+</clipPath>
+<clipPath id="clip79_1_13">
+<rect width="40" height="40" fill="white" transform="translate(20 340) rotate(90)"/>
+</clipPath>
+<clipPath id="clip80_1_13">
+<rect width="40" height="40" fill="white" transform="translate(100 60)"/>
+</clipPath>
+<clipPath id="clip81_1_13">
+<rect width="40" height="40" fill="white" transform="translate(140 60) rotate(-90)"/>
+</clipPath>
+<clipPath id="clip82_1_13">
+<rect width="40" height="40" fill="white" transform="translate(300 100) rotate(-90)"/>
+</clipPath>
+<clipPath id="clip83_1_13">
+<rect width="40" height="40" fill="white" transform="translate(140 140) rotate(-90)"/>
+</clipPath>
+<clipPath id="clip84_1_13">
+<rect width="40" height="40" fill="white" transform="translate(260 100) rotate(90)"/>
+</clipPath>
+<clipPath id="clip85_1_13">
+<rect width="40" height="40" fill="white" transform="translate(260 20) rotate(90)"/>
+</clipPath>
+<clipPath id="clip86_1_13">
+<rect width="40" height="40" fill="white" transform="translate(100 20) rotate(90)"/>
+</clipPath>
+<clipPath id="clip87_1_13">
+<rect width="40" height="40" fill="white" transform="translate(340 -20) rotate(90)"/>
+</clipPath>
+<clipPath id="clip88_1_13">
+<rect width="40" height="40" fill="white" transform="translate(260 140) rotate(90)"/>
+</clipPath>
+<clipPath id="clip89_1_13">
+<rect width="40" height="40" fill="white" transform="translate(100 300) rotate(-180)"/>
+</clipPath>
+<clipPath id="clip90_1_13">
+<rect width="40" height="40" fill="white" transform="translate(420 420) rotate(-180)"/>
+</clipPath>
+<clipPath id="clip91_1_13">
+<rect width="40" height="40" fill="white" transform="translate(300 220) rotate(-90)"/>
+</clipPath>
+<clipPath id="clip92_1_13">
+<rect width="40" height="40" fill="white" transform="translate(420 140) rotate(-180)"/>
+</clipPath>
+<clipPath id="clip93_1_13">
+<rect width="40" height="40" fill="white" transform="translate(420 180) rotate(-180)"/>
+</clipPath>
+<clipPath id="clip94_1_13">
+<rect width="40" height="40" fill="white" transform="translate(60 420) rotate(-90)"/>
+</clipPath>
+<clipPath id="clip95_1_13">
+<rect width="40" height="40" fill="white" transform="translate(460 260) rotate(90)"/>
+</clipPath>
+<clipPath id="clip96_1_13">
+<rect width="40" height="40" fill="white" transform="translate(420 260) rotate(90)"/>
+</clipPath>
+<clipPath id="clip97_1_13">
+<rect width="40" height="40" fill="white" transform="translate(380 260) rotate(90)"/>
+</clipPath>
+<clipPath id="clip98_1_13">
+<rect width="40" height="40" fill="white" transform="translate(220 300) rotate(90)"/>
+</clipPath>
+<clipPath id="clip99_1_13">
+<rect width="40" height="40" fill="white" transform="translate(500 300) rotate(-180)"/>
+</clipPath>
+<clipPath id="clip100_1_13">
+<rect width="40" height="40" fill="white" transform="translate(180 380) rotate(-180)"/>
+</clipPath>
+<clipPath id="clip101_1_13">
+<rect width="40" height="40" fill="white" transform="translate(20 340) rotate(-180)"/>
+</clipPath>
+</defs>
+</svg>

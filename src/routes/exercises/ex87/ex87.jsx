@@ -20,8 +20,8 @@ const Ex87 = ()=>{
        <NoScoringComponent initMessages={myData.initMessages} background={myData.color} title={myData.name}>
        {
            (setPhase) => (
-            <div className="dnd-context-container">
-                    <DfdClickable column = {column} setTargetId={setTargetId}/>
+            <div className="dnd-context-container-game-87">
+                    <DfdClickable column = {column} setTargetId={setTargetId} game={87}/>
                     <BoardDfd targetId={targetId} column ={column}/>
        
                 <div className="buttons-field">

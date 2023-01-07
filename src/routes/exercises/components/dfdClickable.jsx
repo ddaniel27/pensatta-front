@@ -72,10 +72,10 @@ const ProcessComponent = ({process,text,idObj,setTargetId})=>{
 
 }
 
-const DfdClickable = ({data,column,setTargetId})=>{
+const DfdClickable = ({data,column,setTargetId,game})=>{
     
     return(
-            <div className="column">
+            <div className={`column-game-${game}`}>
                 { column.map((element)=>{
                       return (
                         <div className={element.type} >

@@ -22,7 +22,7 @@ const Ex88 = ()=>{
            (setPhase) => (
             <div className="dnd-context-container">
                     <div className="dfd-container">
-                        <DfdClickable column = {column} setTargetId={setTargetId}/>
+                        <DfdClickable column = {column} setTargetId={setTargetId} game={88}/>
                     </div>
                     <BoardDfd targetId={targetId} column ={column}/>
        
