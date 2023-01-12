@@ -1,5 +1,20 @@
 {
     "pista1":{
-                    "startPosition":{"x": 5, "y": 48},
-                    "finishHitbox":{ "x": 0.61 ,"y": 60 ,"width": 0.1 ,"height": 9 }}
+        "startPosition":{"x": 5, "y": 48},
+        "finishHitbox":{ "x": 0.31 ,"y": 60.7 ,"width": 0.1 ,"height": 8 }},
+    "pista2":{
+        "startPosition":{"x": 5, "y": 5},
+        "finishHitbox":{ "x": 87 ,"y": 98 ,"width": 9 ,"height": 0.1 }},
+    "pista3":{
+        "startPosition":{"x": 80, "y": 39},
+        "finishHitbox":{ "x": 46.2 ,"y": 0 ,"width": 9 ,"height": 0.1 }},
+    "pista4":{
+        "startPosition":{"x": 73, "y": 22},
+        "finishHitbox":{ "x": 100 ,"y": 19.6 ,"width": 0.1 ,"height": 9 }},
+    "pista5":{
+        "startPosition":{"x": 5, "y": 80},
+        "finishHitbox":{ "x": 43.96 ,"y": 100 ,"width": 9 ,"height": 0.1 }},
+    "pista6":{
+        "startPosition":{"x": 13, "y": 5},
+        "finishHitbox":{ "x": 0 ,"y": 19.17 ,"width": 0.1 ,"height": 9 }}
 }

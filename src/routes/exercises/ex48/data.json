@@ -1,0 +1,30 @@
+{   
+    "cards" : [
+        {"id": 1, "pair": 1, "text": "Gigabyte", "type": "name"},
+        {"id": 2, "pair": 1, "text": "GB", "type": "acron"},
+        {"id": 3, "pair": 2, "text": "Megabyte", "type": "name"},
+        {"id": 4, "pair": 2, "text": "MB", "type": "acron"},
+        {"id": 5, "pair": 3, "text": "Terabyte", "type": "name"},
+        {"id": 6, "pair": 3, "text": "TB", "type": "acron"},
+        {"id": 7, "pair": 4, "text": "Kylobyte", "type": "name"},
+        {"id": 8, "pair": 4, "text": "KB", "type": "acron"}
+    ],
+    "options": [
+
+    ],
+    "initMessages":[
+        "A continuación, encontrarás ocho tarjetas. Cuatro corresponden a un tipo de dato y las cuatro restantes a los nombres de esos tipos de datos.",
+        "Tienes tres minutos para emparejar los tipos de datos con sus respectivos nombres."
+    ],
+    "threshold":{
+        "max" : 4,
+        "min" : 0,
+        "perfect": 4
+    },
+    "path": "48",
+    "color": "#AE985E",
+    "name":"Encuentra las parejas",
+    "id": 48
+
+
+}

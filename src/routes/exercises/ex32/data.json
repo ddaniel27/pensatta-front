@@ -6,18 +6,18 @@
 
     ],
     "initMessages":[
-        "¡Ayúdame a atravesar el laberinto sin perder mis datos!",
-        "Guíame hasta la salida evitando a los enemigos que pueden robar mi información."
+        "Conduce el automóvil por la ciudad hasta llegar a la meta.",
+        "Muévete con los botones de dirección y evita los obstáculos."
     ],
     "threshold":{
         "max" : 3,
         "min" : 0,
         "perfect": 3
     },
-    "path": "09",
-    "color": "#53745B",
-    "name":"Cruza el laberinto",
-    "id": 9
+    "path": "32",
+    "color": "#AE985E",
+    "name":"Llega a la meta",
+    "id": 32
 
 
 }

@@ -61,6 +61,16 @@ const MazePistaComponent = ({lab,setPhase,setScore,colorLine,imagePath}) => {
         corazon:{
             width:"100%",
             height:"auto"
+        },
+        maze:{
+            
+                display: "flex",
+                position: "relative",
+                width: "480px",
+                height: "480px",
+                backgroundImage: `url("/images/exercises/32/pista${lab}.svg")`
+                
+            
         }
         
     }
@@ -329,11 +339,11 @@ window.onkeyup = cbup;
     return(
         <div className={styles.allContainer}>
             <div className={styles.mazeContainer}>
-                <div className={styles.maze}>
+                <div style={maze2Styles.maze}>
                     <div style={{display: "flex", position:"relative",width:"100%", height:"100%", top:"0%", left:"0%"}}>
                         <Maze pista={pista} colorLine={colorLine}/>
                         <Carrito style = {styleCarrito} />
-                        <Cono positions={posEnemies} imagePath={imagePath}/>
+                        
                     </div>
                 </div>
             </div>

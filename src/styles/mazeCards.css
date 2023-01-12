@@ -1,0 +1,25 @@
+.card{
+    position:relative;
+}
+.card .frontCard{
+    transform: rotateY(90deg);
+    position: absolute;
+    transition: all ease-in 0.2s;
+
+}
+.cardFlipped .frontCard{
+    transform: rotateY(0deg);
+    transition-delay: 0.2s;
+
+}
+
+.card .backCard{
+    transition: all ease-in 0.2s;
+    transition-delay: 0.2s;
+
+}
+
+.cardFlipped .backCard{
+    transform: rotateY(90deg);
+    transition-delay: 0s;
+}
