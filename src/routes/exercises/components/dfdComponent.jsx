@@ -84,7 +84,7 @@ const DfdComponent = ({data, column1, column2})=>{
                     }
                 </Droppable>
             
-            <div className="column-2">
+            <div className="column2Ex20">
                 { column2.map((element)=>{
                     if (element.type.includes("drag")){
                         return(

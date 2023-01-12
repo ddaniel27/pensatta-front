@@ -45,7 +45,7 @@ const Ex20 = ()=>{
        <NoScoringComponent initMessages={myData.initMessages} background={myData.color} title={myData.name}>
        {
            (setPhase) => (
-            <div className="dnd-context-container">
+            <div className="dndContextContainer">
                 <DragDropContext onDragEnd={onDragEnd}>
                     <DfdComponent data={myData} column1={column1} column2={column2}/>
                 </DragDropContext>
