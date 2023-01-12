@@ -1,0 +1,63 @@
+{
+    "initMessages":[
+        "Crea un mensaje cifrado.",
+        "Presiona los botones del teclado digital para escribir tu mensaje."
+    ],
+    "threshold": {
+        "max": 1,
+        "min": 0,
+        "perfect": 1
+    },
+    "path":"59",
+    "color": "#9968A6",
+    "name":"Cifra el texto",
+    "id": 59,
+    "keyPairs" : {
+        "keyBoard1" :
+        [
+            {"id":1, "char1":"!" , "char2":"A"},
+            {"id":2, "char1":"#" , "char2":"B"},
+            {"id":3, "char1":"*" , "char2":"C"},
+            {"id":4, "char1":"$" , "char2":"D"},
+            {"id":5, "char1":"-" , "char2":"E"},
+            {"id":6, "char1":"?" , "char2":"F"},
+            {"id":7, "char1":"{" , "char2":"G"},
+            {"id":8, "char1":"+" , "char2":"H"},
+            {"id":9, "char1":"@" , "char2":"I"},
+            {"id":10, "char1":"\\" , "char2":"J"},
+            {"id":11, "char1":"€" , "char2":"K"},
+            {"id":12, "char1":"}" , "char2":"L"},
+            {"id":13, "char1":"^" , "char2":"M"},
+            {"id":14, "char1":"°" , "char2":"N"},
+            {"id":15, "char1":":" , "char2":"Ñ"},
+            {"id":16, "char1":"¡" , "char2":"O"},
+            {"id":17, "char1":"[" , "char2":"P"},
+            {"id":18, "char1":"%" , "char2":"Q"},
+            {"id":19, "char1":"æ" , "char2":"R"},
+            {"id":20, "char1":"." , "char2":"S"},
+            {"id":21, "char1":"<" , "char2":"T"},
+            {"id":22, "char1":"¥" , "char2":"U"},
+            {"id":23, "char1":"&" , "char2":"V"},
+            {"id":24, "char1":"↔" , "char2":"W"},
+            {"id":26, "char1":"¿" , "char2":"X"},
+            {"id":27, "char1":"§" , "char2":"Y"},
+            {"id":28, "char1":"↕" , "char2":"Z"},
+            {"id":29, "char1":"backspace", "char2":""}
+        ],
+        "keyBoard2":  {"id":29, "char1":"space", "char2":" "}
+    },
+    "texType":[
+        {"id":1, "text": "KATTY TIENE"},
+        {"id":2, "text": "KATTY JUEGA"},
+        {"id":3, "text": "KATTY PROGRAMA"},
+        {"id":4, "text": "KATTY CREA"},
+        {"id":5, "text": "MENSAJE CIFRADO"},
+        {"id":6, "text": "JAVASCRIPT"},
+        {"id":7, "text": "PYTHON"},
+        {"id":8, "text": "HOLA MUNDO"},
+        {"id":9, "text": "ALGORITMOS"},
+        {"id":10, "text": "BUBBLE SORT"}
+        
+    ]    
+
+}

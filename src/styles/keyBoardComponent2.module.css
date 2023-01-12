@@ -1,0 +1,154 @@
+.timer{
+    font-family: Montserrat;
+    font-weight: bold;
+    color: #333333;
+    background: #69E485;
+    border-radius: 20px;
+    padding: 0.5%;
+    width: 7%;
+    text-align: center;
+    margin: 0.5%;
+       
+}
+.keyBoardContainer{
+    display: grid;
+    grid-template-rows: 10fr 2fr;
+    gap:3%;
+    height:35vh;
+    width: 60%;
+}
+.keypairContainer{
+    display: flex;
+    width: 80px;
+    height: 40px;
+    
+
+}
+.char1{
+    background-color: #F2F2F2;
+    color: #333333;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 20px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+.char2{
+    background-color: #333333;
+    color: #F2F2F2;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 20px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+.keyBoard1{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap:3%;
+    
+
+}
+.keyBoard2{
+    display:flex;
+    justify-content: center;
+
+}
+.backspaceKey{
+    display: flex;
+    background-color: #F2F2F2 ;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.spaceKey{
+    display: flex;
+    background-color: #F2F2F2 ;
+    width: 40%;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.screenContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
+    height: 30vh;
+    background-color:  #F2F2F2;
+    font-family: 'Montserrat';
+    border-radius: 10px;
+    margin: 2%;
+    margin-top: 1%;
+    align-items: center;
+    font-size: 120%;
+}
+.display{
+    position: relative;
+    display: flex;
+    height: 20%;
+    width: 80%;
+    border-radius: 10px;
+    background-color: #FFFF;
+    color: #4F4F4F;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.textType{
+    position: relative;
+    height: 10%;
+    width: 80%;
+    color: #00635D;
+    font-weight: bold;
+    text-align: center;
+}
+.info{
+    position: relative;
+    height: 30%;
+    width: 80%;
+    color: #008E86;
+    text-align: center;
+    font-size: 90%;
+}
+
+.char2:active{
+    width: 48%;
+    height: 96%;
+}
+.spaceKey:active{
+    height: 98%;
+    width: 39%;
+}
+.backspaceKey:active{
+    width: 97%;
+    height: 98%;
+}
+.keypairContainer:hover{
+    cursor: pointer;
+}
+.spaceKey:hover{
+    cursor: pointer;
+}
+.gameContainer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}

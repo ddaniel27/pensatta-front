@@ -10,3 +10,40 @@
     margin: 0.5%;
        
 }
+.keypairContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+
+}
+.char1{
+    background-color: #F2F2F2;
+    color: #333333;
+    
+
+}
+.char2{
+    background-color: #333333;
+    color: #F2F2F2;
+
+}
+.keyBoard1{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap:3%
+
+}
+.keyBoard2{
+    display:flex;
+
+}
+.backspaceKey{
+    background-color: #F2F2F2 ;
+    
+
+}
+.spaceKey{
+    background-color: #F2F2F2 ;
+    
+}
