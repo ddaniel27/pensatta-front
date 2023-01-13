@@ -7,14 +7,14 @@
     ],
 
     "initMessages":[
-        "Las redes sociales han generado nuevos conceptos como lo son “News” y “Trending”.",
-        "El primero se refiere a las últimas noticias, mientras el segundo se refiere a las noticias o temas que han sido tendencia recientemente.",
-        "A continuación, encontrarás contenido de la red social Twitter. Observalo y responde la pregunta que encontrarás al final del ejercicio."
+        "Los operadores son símbolos que permiten combinar diferentes términos entre sí y establecer relaciones lógicas entre ellos. El operador NOT indica negación.",
+        "Responde si las afirmaciones que verás a continuación son verdaderas o falsas.",
+        "Por cada acierto, el vehículo avanzará un espacio. Debes lograr que llegue a la meta."
     ],
     "threshold": {
-        "max": 1,
-        "min": 1,
-        "perfect": 1
+        "max": 4,
+        "min": 0,
+        "perfect": 4
     },
     "color": "#1B6893",
     "name": "Clasificación en redes sociales",
