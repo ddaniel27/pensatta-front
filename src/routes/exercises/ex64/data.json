@@ -1,0 +1,22 @@
+{   
+    "questions":[
+        {"id":1,"question": "NOT (1) = 0", "value":true},
+        {"id":2,"question": "S = 0,  NOT (S) = 0", "value":false},
+        {"id":3,"question": "S = 1, J = 1, NOT (J) = 0", "value":true},
+        {"id":4,"question": "X = 4, Y = 2, NOT (Y>X) -> X=1", "value":false}
+    ],
+
+    "initMessages":[
+        "Las redes sociales han generado nuevos conceptos como lo son “News” y “Trending”.",
+        "El primero se refiere a las últimas noticias, mientras el segundo se refiere a las noticias o temas que han sido tendencia recientemente.",
+        "A continuación, encontrarás contenido de la red social Twitter. Observalo y responde la pregunta que encontrarás al final del ejercicio."
+    ],
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 1
+    },
+    "color": "#1B6893",
+    "name": "Clasificación en redes sociales",
+    "id": 64
+}

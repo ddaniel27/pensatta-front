@@ -68,6 +68,7 @@ import Ex32 from "./ex32/ex32"
 import Ex48 from "./ex48/ex48"
 import Ex59 from "./ex59/ex59"
 import Ex62 from "./ex62/ex62"
+import Ex64 from "./ex64/ex64"
 
 export default function RouterActivity({ idExercise }){
 
@@ -144,6 +145,7 @@ export default function RouterActivity({ idExercise }){
             {idExercise === 48 && <Ex48 />}
             {idExercise === 59 && <Ex59 />}
             {idExercise === 62 && <Ex62 />}
+            {idExercise === 64 && <Ex64 />}
         </>
     )
 }

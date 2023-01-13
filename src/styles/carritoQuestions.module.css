@@ -1,0 +1,98 @@
+.pista{
+    position: relative;
+    background-image: url("/images/exercises/64/pista.svg");
+    background-repeat: no-repeat;
+    width: 380px;
+    height:190px;
+}
+.carrito0{
+    position: absolute;
+    left: 20%;
+    top: 35%;
+}
+@keyframes run1 {
+    0%{
+        left: 20%;
+    }
+    100%{
+        left: 36.5%;
+    }    
+}
+.carrito1{
+    position: absolute;
+    left: 20%;
+    top: 35%;
+    animation-name: run1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+
+}
+@keyframes run2 {
+    0%{
+        left: 20%;
+    }
+    50%{
+        left: 36.5%;
+    }
+    100%{
+        left: 53%;
+    }    
+}
+
+.carrito2{
+    position: absolute;
+    left: 20%;
+    top: 35%;
+    animation-name: run2;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes run3 {
+    0%{
+        left: 20%;
+    }
+    33%{
+        left: 36.5%;
+    }
+    66%{
+        left: 53%;
+    }
+    100%{
+        left: 69.5%;
+    }    
+}
+.carrito3{
+    position: absolute;
+    left: 20%;
+    top: 35%;
+    animation-name: run3;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes run4 {
+    0%{
+        left: 20%;
+    }
+    25%{
+        left: 36.5%;
+    }
+    50%{
+        left: 53%;
+    }
+    75%{
+        left: 69.5%;
+    }
+    100%{
+        left: 86%;
+    }    
+}
+.carrito4{
+    position: absolute;
+    left: 20%;
+    top: 35%;
+    animation-name: run4;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+}
