@@ -22,7 +22,7 @@ const Ex20 = ()=>{
         const draggableSelObj = column1.find(x => x.id == draggableSelId)
         const newColumn2 = column2.map( obj => {
             if(column2ObjId != obj.id)return obj;
-            return {...obj, type: draggableSelObj.type, text: draggableSelObj.text}
+            return {...obj, type: `drag${draggableSelObj.type}`, text: draggableSelObj.text}
         })
         setColumn2(newColumn2)
         

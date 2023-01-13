@@ -8,6 +8,8 @@ const ProcessComponent = ({process,text})=>{
         begin:"#E78CFE",
         end:"#3FDFE9",
         condition:"#EDCA71",
+        dragcondition: "#EDCA71",
+        draginstruction: "#69E485"
     }
     if (process == "arrowDown"){
         return(
@@ -31,7 +33,7 @@ const ProcessComponent = ({process,text})=>{
 
         )
     }
-    if(process == "condition"){
+    if(process == "condition" || process == "dragcondition"){
         return(
             <svg width="60%" height="80%" viewBox="0 0 180 108" fill="none" xmlns="http://www.w3.org/2000/svg">            
             <path d="M80.0959 2.64532L5.24171 45.3122C-1.48892 49.1487 -1.48891 58.8513 5.24171 62.6878L80.0959 105.355C86.235 108.854 93.765 108.854 99.9041 105.355L174.758 62.6878C181.489 58.8513 181.489 49.1487 174.758 45.3122L99.9041 2.64531C93.765 -0.853958 86.235 -0.853954 80.0959 2.64532Z" fill={colors[process]}/>

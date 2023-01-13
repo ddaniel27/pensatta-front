@@ -19,7 +19,7 @@
         { "id": 4, "type": "condition" , "text": "¿Está conectada?" }
     ],
     "column2" : [
-        {"id": 1, "type":"begin", "text": "la lámpara no funciona"},
+        {"id": 1, "type":"begin", "text": "La lámpara no funciona"},
         {"id": 2, "type":"empty", "text": ""},
         {"id": 3, "type":"empty", "text": ""},
 
