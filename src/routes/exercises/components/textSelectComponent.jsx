@@ -2,7 +2,7 @@ import { useEffect,useState } from "react";
 import Select from "react-select";
 import styles from "../../../styles/textSelect.module.css"
 
-const TextSelectComponent = ({text,options})=>{
+const TextSelectComponent = ({text,options,setPhase,setScore})=>{
     const [answers, setAnswers] = useState(options.map(option=>({value:option.value, answer:null, isCorrect:false})))
     const [allAnswered, setAllAnswered] = useState(false)
     const [isFinish, setIsFinish] = useState(false)
@@ -32,6 +32,11 @@ const TextSelectComponent = ({text,options})=>{
         console.log(answers)
     },[answers])
 
+    const handleFinish = ()=>{
+        setScore(answers.filter((obj)=>obj.isCorrect===true).length)
+        setPhase("end")
+    }
+
     const handleResponder = ()=>{
             setIsFinish(true)
             const newAnswers = answers.map(
@@ -48,32 +53,69 @@ const TextSelectComponent = ({text,options})=>{
 
     return(
         <>
-            <div>
-            {
-                text.map((str,index) =>{
-                    return str == "%INSERTTEXT%" ? <div className={styles.selects}> <Select key={index} options={options} onChange={(e)=>handleChange(e,index)} defaultValue={{label:"-", value:"empty"}}
-                    styles={{
-                        singleValue: (base) => ({
-                          ...base,
-                          padding: 5,
-                          borderRadius: 5,
-                          background: !isFinish? "#F2F2F2":answers.find(ans=>ans.value==index).isCorrect?'#69E485':'#FF7171',                
-                          display: 'flex',
-                        }),
-                      }}
-                      components={!isFinish?null:
-                                            {
-                                                Menu: () => null,
-                                                MenuList: () => null,
-                                                DropdownIndicator: () => null,
-                                                IndicatorSeparator: () => null
-                                            }
-                        }/> </div>: str
-                })
-            }
+        <div className={styles.allContainer}>
+            <div className={styles.gameContainer}>
+                <p>
+                {
+                    text.map((str,index) =>{
+                        return str == "%INSERTTEXT%" ? <div style={{display: "inline-block", verticalAlign: "middle"}}> <Select key={index} options={options} onChange={(e)=>handleChange(e,index)} defaultValue={{label:"-", value:"empty"}}
+                        styles={{
+                            singleValue: (base) => ({
+                            ...base,
+                            borderRadius: 5,
+                            background: !isFinish? "#F2F2F2":answers.find(ans=>ans.value==index).isCorrect?'#69E485':'#FF7171',                
+                            display: 'flex',
+                            minWidth:100,
+                            minHeight:20,
+                            maxHeight:20,
+                            color:'#00635D',
+                            fontSize:14,
+                            padding:0
+
+                            }), 
+                            indicatorsContainer: (provided) => ({
+                                ...provided,
+                                minHeight:22,
+                                maxHeight:22
+                              }),
+                            valueContainer:(provided)=>({
+                                ...provided,
+                                minHeight:22,
+                                maxHeight:22
+                            }),  
+                            input:(provided)=>({
+                                ...provided,
+                                minHeight:20,
+                                maxHeight:20
+                            }),                          
+                            indicatorSeparator: (provided) => ({
+                                ...provided,
+                                display: 'none'
+                              }),
+                            control: (provided) => ({
+                                ...provided,
+                                border: 'none',
+                                borderRadius: 10,
+                                background: '#F2F2F2',
+                                minHeight:22,
+                                maxHeight:22
+                              }),
+                        }}
+                        components={!isFinish?null:
+                                                {
+                                                    Menu: () => null,
+                                                    MenuList: () => null,
+                                                    DropdownIndicator: () => null,
+                                                    IndicatorSeparator: () => null
+                                                }
+                            }/> </div>: str
+                    })
+                }
+                </p>
             </div>
+        </div>
             {allAnswered&&!isFinish && <button onClick={handleResponder}>RESPONDER</button>}
-            {isFinish && <button>SIGUIENTE</button>}
+            {isFinish && <button onClick={handleFinish}>SIGUIENTE</button>}
         </>
     )
 

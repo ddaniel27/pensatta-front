@@ -17,5 +17,10 @@
     "path": "78",
     "color": "#53745B",
     "name": "Bloqueo Celulares",
-    "id": 78
+    "id": 78,
+    "threshold": {
+        "max": 5,
+        "min": 0,
+        "perfect": 5
+    }
 }

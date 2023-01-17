@@ -11,7 +11,7 @@ export default function Ex78(){
         <ScoringComponent initMessages={myData.initMessages} background={myData.color} title={myData.name} threshold={myData.threshold} exerciseId={myData.id}>
             {
                 (setScore, setPhase) => (
-                    <TextSelectComponent text={myData.options[1].texto} options={myData.options[1].opciones}/> 
+                    <TextSelectComponent text={myData.options[1].texto} options={myData.options[1].opciones} setPhase={setPhase} setScore={setScore}/> 
                 )
             }
         </ScoringComponent>
