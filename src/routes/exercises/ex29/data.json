@@ -1,13 +1,13 @@
 {
     "imgSrc": [
-        "./images/exercises/29/jigsaw-1.png"
+        "/images/exercises/29/1_Desktop01"
     ],
     "initMessages":[
         "Organiza las piezas del rompecabezas.",
         "Puedes deslizarlas en la dirección que desees para armar la figura."
     ],
     "path": "29",
-    "color": "#9968A6",
+    "color": "#1B6893",
     "name": "Rompecabezas",
     "id": 29
 }
