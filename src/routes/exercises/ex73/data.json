@@ -1,0 +1,186 @@
+{
+    
+    "initMessages":[
+        "A continuación, verás la interfaz de un software que probablemente has usado.",
+        "Selecciona la función que corresponde a las herramientas que se van a resaltar."
+    ],
+    "threshold": {
+        "max": 3,
+        "min": 0,
+        "perfect": 3
+    },
+    "path": "73",
+    "color": "#1B6893",
+    "name": "Herramientas ofimáticas",
+    "id": 73,
+    "options":{
+        "1": [
+            {
+                "question":"Archivo",
+                "answers":[
+                    {
+                        "text":"Permite la administración de los documentos creados",
+                        "isCorrect":true
+                    },
+                    {
+                        "text": "Permite escoger las cualidades del texto seleccionado",
+                        "isCorrect":false
+                    },
+                    {
+                        "text": "Permite dibujar sobre el documento",
+                        "isCorrect":false
+                    }
+                ],
+                "image":  "wordArchivo.svg"
+            },
+            {
+                "question":"Inicio",
+                "answers":[
+                    {
+                        "text":"Permite la administración de los documentos creados",
+                        "isCorrect":false
+                    },
+                    {
+                        "text": "Permite escoger las cualidades del texto seleccionado",
+                        "isCorrect":true
+                    },
+                    {
+                        "text": "Permite dibujar sobre el documento",
+                        "isCorrect":false
+                    }
+                ],
+                "image":  "wordInicio.svg"
+            },
+            {
+                "question":"Insertar",
+                "answers":[
+                    {
+                        "text":"Permite la administración de los documentos creados",
+                        "isCorrect":false
+                    },
+                    {
+                        "text": "Permite escoger las cualidades del texto seleccionado",
+                        "isCorrect":false
+                    },
+                    {
+                        "text": "Permite dibujar sobre el documento",
+                        "isCorrect":true
+                    }
+                ],
+                "image":  "wordInsertar.svg"
+            }
+        ],
+        "2": [
+            {
+                "question":"Archivo",
+                "answers":[
+                    {
+                        "text":"Permite la administración de los documentos creados",
+                        "isCorrect":true
+                    },
+                    {
+                        "text": "Permite escoger las cualidades del texto seleccionado",
+                        "isCorrect":false
+                    },
+                    {
+                        "text": "Permite dibujar sobre el documento",
+                        "isCorrect":false
+                    }
+                ],
+                "image":  "excelArchivo.svg"
+            },
+            {
+                "question":"Inicio",
+                "answers":[
+                    {
+                        "text":"Permite la administración de los documentos creados",
+                        "isCorrect":false
+                    },
+                    {
+                        "text": "Permite escoger las cualidades del texto seleccionado",
+                        "isCorrect":true
+                    },
+                    {
+                        "text": "Permite dibujar sobre el documento",
+                        "isCorrect":false
+                    }
+                ],
+                "image":  "excelInicio.svg"
+            },
+            {
+                "question":"Insertar",
+                "answers":[
+                    {
+                        "text":"Permite la administración de los documentos creados",
+                        "isCorrect":false
+                    },
+                    {
+                        "text": "Permite escoger las cualidades del texto seleccionado",
+                        "isCorrect":false
+                    },
+                    {
+                        "text": "Permite dibujar sobre el documento",
+                        "isCorrect":true
+                    }
+                ],
+                "image":  "excelInsertar.svg"
+            }
+        ],
+        "3": [
+            {
+                "question":"Archivo",
+                "answers":[
+                    {
+                        "text":"Permite la administración de los documentos creados",
+                        "isCorrect":true
+                    },
+                    {
+                        "text": "Permite escoger las cualidades del texto seleccionado",
+                        "isCorrect":false
+                    },
+                    {
+                        "text": "Permite dibujar sobre el documento",
+                        "isCorrect":false
+                    }
+                ],
+                "image":  "pptArchivo.svg"
+            },
+            {
+                "question":"Inicio",
+                "answers":[
+                    {
+                        "text":"Permite la administración de los documentos creados",
+                        "isCorrect":false
+                    },
+                    {
+                        "text": "Permite escoger las cualidades del texto seleccionado",
+                        "isCorrect":true
+                    },
+                    {
+                        "text": "Permite dibujar sobre el documento",
+                        "isCorrect":false
+                    }
+                ],
+                "image":  "pptInicio.svg"
+            },
+            {
+                "question":"Insertar",
+                "answers":[
+                    {
+                        "text":"Permite la administración de los documentos creados",
+                        "isCorrect":false
+                    },
+                    {
+                        "text": "Permite escoger las cualidades del texto seleccionado",
+                        "isCorrect":false
+                    },
+                    {
+                        "text": "Permite dibujar sobre el documento",
+                        "isCorrect":true
+                    }
+                ],
+                "image":  "pptInsertar.svg"
+            }
+        ]
+    }
+}
