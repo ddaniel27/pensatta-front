@@ -1,0 +1,35 @@
+{
+    "options": {"1":{
+        "texto":["La tecnología bluetooth es una tecnología inalámbrica de (corto alcance), que permite el intercambio de datos entre dispositivos",
+                 "%INSERTTEXT%",
+                 ", como pueden ser un sistema de audio y un teléfono. Funciona en un rango aproximado de 10 metros. Lo habitual es establecer una ",
+                 "%INSERTTEXT%" , 
+                 " entre 2 dispositivos. Posibilita la transmisión de voz y datos mediante un enlace por ",
+                  "%INSERTTEXT%",
+                  " de 2.4 GHz. Facilita la comunicación entre dispositivos móviles, permitiendo eliminar los ",
+                  "%INSERTTEXT%",
+                  "y conectores entre estos. Ofrece la funcionalidad de crear pequeñas ",
+                  "%INSERTTEXT%",
+                  "  y facilitar la sincronización de datos entre equipos."],
+        "opciones":[
+            {"value":1,"label":"digitales"},
+            {"value":3,"label":"conexión"},
+            {"value":5,"label":"radiofrecuencia"},
+            {"value":7,"label":"cables"},
+            {"value":9,"label":"redes inalámbricas"}
+        ]
+    }},
+    "initMessages":[
+        "A continuación, encontrarás un texto teórico sobre el uso de la conectividad WiFi.",
+        "Selecciona la palabra correcta para completar el párrafo en cada espacio del texto."
+    ],
+    "path": "102",
+    "color": "#AE985E",
+    "name": "Módulos WiFi",
+    "id": 102,
+    "threshold": {
+        "max": 5,
+        "min": 0,
+        "perfect": 5
+    }
+}

@@ -17,19 +17,14 @@ const TextSelectComponent = ({text,options,setPhase,setScore})=>{
             }
         )
         setAnswers(newAnswers)
-        console.log(event)
-        console.log(index)
-        if(index==event.value){
-            console.log("correcta")
-        }
+
     }
 
     useEffect(()=>{
         if(answers.filter((obj) => obj.answer != null).length >= options.length){
-            console.log("todo ha sido respondido")
             setAllAnswered(true)
         }
-        console.log(answers)
+        
     },[answers])
 
     const handleFinish = ()=>{
@@ -58,7 +53,7 @@ const TextSelectComponent = ({text,options,setPhase,setScore})=>{
                 <p>
                 {
                     text.map((str,index) =>{
-                        return str == "%INSERTTEXT%" ? <div style={{display: "inline-block", verticalAlign: "middle"}}> <Select key={index} options={options.sort(() => Math.random() - 0.5)} onChange={(e)=>handleChange(e,index)} defaultValue={{label:"-", value:"empty"}}
+                        return str == "%INSERTTEXT%" ? <div  key={index} style={{display: "inline-block", verticalAlign: "middle"}}> <Select options={options.sort(() => Math.random() - 0.5)} onChange={(e)=>handleChange(e,index)} defaultValue={{label:"-", value:"empty"}}
                         styles={{
                             singleValue: (base) => ({
                             ...base,
