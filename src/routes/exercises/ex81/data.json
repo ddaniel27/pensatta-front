@@ -1,0 +1,33 @@
+{
+    "options": {"1":{
+        "texto":["Debido a que el IoT hace referencia a la interconexión e interacción de objetos en una misma red, las aplicaciones son casi infinitas. Por ejemplo, permite tener un refrigerador en casa conectado a internet, generando alertas acerca de la caducidad de su contenido, inventario o estadísticas del mismo. El IoT permite acceder a la ",
+                 "%INSERTTEXT%",
+                 " del objeto conectado a la ",
+                 "%INSERTTEXT%" , 
+                 " , es por ello que su utilidad tiene gran impacto en el comportamiento digital de nuestra sociedad, llevando las aplicaciones de esta gran tecnología, desde la automatización en construcciones, hasta conceptos como las",
+                  "%INSERTTEXT%",
+                  "y los ",
+                  "%INSERTTEXT%",
+                  " , en donde se emplean dispositivos con esta tecnología para mejorar el control del tráfico, suministros de servicios públicos y privados, el transporte público, y los sectores a abasto."],
+        "opciones":[
+            {"value":1,"label":"respuesta 1"},
+            {"value":3,"label":"respuesta 2"},
+            {"value":5,"label":"respuesta 3"},
+            {"value":7,"label":"respuesta 4"}
+        ]
+    }},
+    "initMessages":[
+        "El IoT (Internet de las cosas), hace referencia a la agrupación e interconexión de dispositivos u objetos a través de una red, en la cual todos estos son visibles e interactúan.",
+        "Cualquier dispositivo podría estar conectado a la red, ¿puedes imaginarlo? Es 100% real y en la actualidad puede conllevar extensas aplicaciones que se mencionan en el siguiente texto.",
+        "Selecciona la palabra correcta para completar el párrafo en cada espacio."
+    ],
+    "path": "81",
+    "color": "#1B6893",
+    "name": "IoT",
+    "id": 81,
+    "threshold": {
+        "max": 4,
+        "min": 0,
+        "perfect": 4
+    }
+}
