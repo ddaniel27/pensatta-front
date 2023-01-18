@@ -58,7 +58,7 @@ const TextSelectComponent = ({text,options,setPhase,setScore})=>{
                 <p>
                 {
                     text.map((str,index) =>{
-                        return str == "%INSERTTEXT%" ? <div style={{display: "inline-block", verticalAlign: "middle"}}> <Select key={index} options={options} onChange={(e)=>handleChange(e,index)} defaultValue={{label:"-", value:"empty"}}
+                        return str == "%INSERTTEXT%" ? <div style={{display: "inline-block", verticalAlign: "middle"}}> <Select key={index} options={options.sort(() => Math.random() - 0.5)} onChange={(e)=>handleChange(e,index)} defaultValue={{label:"-", value:"empty"}}
                         styles={{
                             singleValue: (base) => ({
                             ...base,
