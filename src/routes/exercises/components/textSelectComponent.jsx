@@ -70,13 +70,13 @@ const TextSelectComponent = ({text,options,setPhase,setScore})=>{
                             }), 
                             indicatorsContainer: (provided) => ({
                                 ...provided,
-                                minHeight:22,
-                                maxHeight:22
+                                minHeight:20,
+                                maxHeight:20
                               }),
                             valueContainer:(provided)=>({
                                 ...provided,
-                                minHeight:22,
-                                maxHeight:22
+                                minHeight:20,
+                                maxHeight:20
                             }),  
                             input:(provided)=>({
                                 ...provided,
@@ -92,8 +92,8 @@ const TextSelectComponent = ({text,options,setPhase,setScore})=>{
                                 border: 'none',
                                 borderRadius: 10,
                                 background: '#F2F2F2',
-                                minHeight:22,
-                                maxHeight:22
+                                minHeight:20,
+                                maxHeight:20
                               }),
                         }}
                         components={!isFinish?null:

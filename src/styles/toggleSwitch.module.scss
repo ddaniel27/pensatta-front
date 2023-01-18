@@ -1,0 +1,48 @@
+.myThumb{
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        background-color: #4CAF50;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+    &::-moz-range-thumb {
+        width: 20px;
+        height: 20px;
+        background-color: #4CAF50;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+}
+.title{
+    color: #008E86;
+    font-weight: bold;
+    text-align: center;
+    padding:4px;
+}
+.left{
+    color:#1B6893;
+    padding:4px;
+}
+.right{
+    color:#9968A6;
+    padding:4px;
+}
+.cardSliderContainer{
+    background-color:#F2F2F2 ;
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 80px;
+    border-radius: 10px;
+    margin:8px;
+    justify-content: space-around;
+}
+.gameContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:3%;
+}

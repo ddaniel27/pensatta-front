@@ -1,0 +1,66 @@
+.slider-container input[type="range"] {
+  margin: auto;
+  -webkit-appearance: none;
+  position: relative;
+  overflow: hidden;
+  height: 20px;
+  width: 180px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.slider-container input[type="range"]::-webkit-slider-runnable-track {
+  background: #333333;
+  border: none;
+}
+
+.slider-container input[type="range"][value="1"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 80px;
+  height: 20px;
+  background-image: url("/images/exercises/100/buttonSlider.svg");
+  background-color: #008E86;
+  border: 0.5px solid #333333;
+  border-radius: 10px;
+}
+.slider-container input[type="range"][value="0"][name="in-game"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 80px;
+  height: 20px;
+  background-image: url("/images/exercises/100/buttonSlider.svg");
+  background-color: #1B6893;
+  border: 0.5px solid #333333;
+  border-radius: 10px;
+}
+.slider-container input[type="range"][value="2"][name="in-game"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 80px;
+  height: 20px;
+  background-image: url("/images/exercises/100/buttonSlider.svg");
+  background-color: #9968A6;
+  border: 0.5px solid #333333;
+  border-radius: 10px;
+}
+.slider-container input[type="range"][name="true"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 80px;
+  height: 20px;
+  background-image: url("/images/exercises/100/buttonSlider2.svg");
+  background-color: #69E485;
+  border: 0.5px solid #333333;
+  border-radius: 10px;
+}
+.slider-container input[type="range"][name="false"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 80px;
+  height: 20px;
+  background-image: url("/images/exercises/100/buttonSlider2.svg");
+  background-color: #FF7171;
+  border: 0.5px solid #333333;
+  border-radius: 10px;
+}
+
+.slider-container{
+  display: flex;
+  flex-direction: row;
+}
