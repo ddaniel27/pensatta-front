@@ -1,6 +1,7 @@
 .slider-container input[type="range"] {
   margin: auto;
   -webkit-appearance: none;
+  appearance: none;
   position: relative;
   overflow: hidden;
   height: 20px;

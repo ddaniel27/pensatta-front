@@ -1,0 +1,26 @@
+{
+    
+    "initMessages":[
+        "A continuación, encontrarás una serie de tecnologías.",
+        "Determina si son tecnologías antiguas o si son tecnologías actuales desplazando la barra hacia la izquierda o hacia la derecha."
+    ],
+    "threshold": {
+        "max": 3,
+        "min": 0,
+        "perfect": 3
+    },
+    "path": "97",
+    "color": "#53745B",
+    "name": "Tecnologías",
+    "id": 97,
+    "options": [
+        {"id":1, "colour":"black", "color":"Negro" ,"code": "111111"},
+        {"id":2, "colour":"white", "color":"Blanco" ,"code": "000000"},
+        {"id":3, "colour":"blue", "color":"Azul" ,"code": "101000"},
+        {"id":4, "colour":"yellow", "color":"Amarillo" ,"code": "001010"},
+        {"id":5, "colour":"red", "color":"Rojo" ,"code": "100010"},
+        {"id":6, "colour":"green", "color":"Verde" ,"code": "111000"},
+        {"id":7, "colour":"orange", "color":"Naranja" ,"code": "001100"},
+        {"id":8, "colour":"purple", "color":"Violeta" ,"code": "000111"}
+    ]
+}
