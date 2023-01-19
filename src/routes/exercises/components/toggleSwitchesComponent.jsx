@@ -57,9 +57,7 @@ const ToggleSwitches = ({setPhase,setScore,data})=>{
     const [isFinish, setIsFinish] = useState(false)
 
     useEffect(()=>{
-        console.log(answers)
        if(answers.filter(ans=> ans.isAnswered ==true).length == options.length){
-        console.log("todo ha sido respondido")
         setIsAllAnswered(true)
        }
     },[answers])
@@ -74,7 +72,6 @@ const ToggleSwitches = ({setPhase,setScore,data})=>{
     },[isFinish])
 
     useEffect(()=>{
-        console.log(corrects)
         setScore(corrects.filter(obj => obj.isCorrect).length)
     },[corrects])
 

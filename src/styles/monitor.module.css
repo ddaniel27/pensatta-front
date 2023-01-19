@@ -1,8 +1,9 @@
 .monitor{
     position: relative;
-    height: 280px;
-    width: 380px;
+    height: 210px;
+    width: 285px;
     background-image: url("/images/exercises/97/monitor.svg");
+    background-size: cover;
 }
 
 .screenMonitor {
@@ -157,19 +158,23 @@
   }
 
   .screenMonitorColor{
+    display: flex;
     position: absolute;
     width: 94%;
     height: 67%;
     border-radius: 10px;
     top: 3%;
     left: 3%;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
   }
   .green{
     background-color: #69E485;
   }
 
   .black{
-    background-color: #333333;
+    background-color: #080808;
   }
   .white{
     background-color: #FFFFFF;
@@ -197,13 +202,56 @@
     padding:2%;
   }
   .boardColorsInputs{
+    display: flex;
+    flex-direction: column;
     background-color: #F2F2F2;
     color:  #00635D;
     width: 30%;
     border-radius: 10px;
     padding:2%;
+    font-weight: bold;
+    justify-content: center;
   }
   .boardsContainer{
     display: flex;
     flex-direction: row;
+    gap:2%;
+    width: 70%;
+    justify-content: center;
+  }
+  .inputColor{
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    padding: 2%;
+    margin:4%;
+    width:50%;
+
+  }
+  .inputColor:focus-visible{
+    outline: 1px solid #00635D;
+  }
+  .gameContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+    gap:10px;
+  }
+  .inputTrue{
+    background-color: #69E485;
+    border: none;
+    border-radius: 20px;
+    padding: 2%;
+    margin:4%;
+    width:50%;
+  }
+  .inputFalse{
+    background-color: #FF7171;
+    border: none;
+    border-radius: 20px;
+    padding: 2%;
+    margin:4%;
+    width:50%;
+
   }

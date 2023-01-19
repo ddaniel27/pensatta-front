@@ -38,7 +38,7 @@ const BoardInfo = ({colors})=>{
         </div>
     )
 }
-function InputComponent({index,id,setAnswers,isFinish}) {
+function InputComponent({index,id,setAnswers,isFinish,correct}) {
     const [value, setValue] = useState("");
 
     const handleChange = (event) =>{
@@ -75,7 +75,8 @@ function InputComponent({index,id,setAnswers,isFinish}) {
         <label>
             Color {index+1}
             <input
-             pattern="[01]"
+            className={!isFinish?styles.inputColor:(correct?styles.inputTrue:styles.inputFalse)}
+            pattern="[01]"
             value={value}
             disabled={isFinish}
             onChange={handleChange}
@@ -85,13 +86,13 @@ function InputComponent({index,id,setAnswers,isFinish}) {
     );
   }
 
-const BoardInputs = ({secuence,setAnswers,isFinish})=>{
+const BoardInputs = ({secuence,setAnswers,isFinish,corrects})=>{
 
     return(
         <div className={styles.boardColorsInputs}>
             {
                 secuence.map((color,index)=>(
-                    <InputComponent index={index} id={color.id} setAnswers={setAnswers} isFinish={isFinish}/>
+                    <InputComponent index={index} id={color.id} setAnswers={setAnswers} isFinish={isFinish} correct={corrects.find(c=>c.id==color.id).isCorrect}/>
                 ))
             }
 
@@ -101,7 +102,7 @@ const BoardInputs = ({secuence,setAnswers,isFinish})=>{
 
 }
 
-const MonitorColorsComponent = ({data})=>{
+const MonitorColorsComponent = ({data,setPhase,setScore})=>{
     const shuffledData = data.slice().sort(() => Math.random() - 0.5).slice(0,3)
     const [color,setColor] = useState("white")
     const [phase, setPhaseSec] = useState("init")
@@ -136,6 +137,7 @@ const MonitorColorsComponent = ({data})=>{
     useEffect(()=>{
 
         if(isFinish){
+            setScore(corrects.filter(obj => obj.isCorrect).length)
             corrects.forEach((c,index) => {
                 setTimeout(() => {
                     if(c.isCorrect){
@@ -157,17 +159,17 @@ const MonitorColorsComponent = ({data})=>{
 
     return(
         <>
-            <div>
+            <div className={styles.gameContainer}>
                 <div>
                     <Monitor error={error} color={color} secuence={secuence} phase={phase}/>
                 </div>
                 <div className={styles.boardsContainer}>
                     <BoardInfo colors={data}/>
-                    <BoardInputs secuence={secuence} setAnswers={setAnswers} isFinish={isFinish}/>
+                    <BoardInputs secuence={secuence} setAnswers={setAnswers} isFinish={isFinish} corrects={corrects}/>
                 </div>
             </div>
             {isAllAnswered&&!isFinish&&<button onClick={handleResponder}>RESPONDER</button>}
-            {isFinish&&<button>SIGUIENTE</button>}
+            {isFinish&&<button onClick={()=>setPhase("end")}>SIGUIENTE</button>}
         </>
     )
 
