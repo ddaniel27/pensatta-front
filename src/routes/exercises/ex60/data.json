@@ -1,0 +1,97 @@
+{
+    "isSingle": "false",
+    "columns": {
+        "column-1": {
+            "id": "column-1",
+            "title": "",
+            "optionsIds": [
+                "option-1",
+                "option-2",
+                "option-3",
+                "option-4",
+                "option-5",
+                "option-6",
+                "option-7",
+                "option-8",
+                "option-9",
+                "option-x"
+            ],
+            "isDropDisabled":true
+        },
+        "column-2": {
+            "id": "column-2",
+            "title": "Cuando: presionar botón iniciar",
+            "optionsIds": []
+        }
+    },
+    "options": {
+        "option-1": {
+            "id": "option-1",
+            "key": "saludar",
+            "text": "Saludar",
+            "value": 1
+        },
+        "option-2": {
+            "id": "option-2",
+            "key": "no",
+            "text": "Decir no",
+            "value": 1
+        },
+        "option-3": {
+            "id": "option-3",
+            "key": "si",
+            "text": "Decir sí",
+            "value": 1
+        },
+        "option-4": {
+            "id": "option-4",
+            "key": "selfie",
+            "text": "Tomar una selfie",
+            "value": 1
+        },
+        "option-5": {
+            "id": "option-5",
+            "key": "saltar",
+            "text": "Saltar",
+            "value": 1
+        },
+        "option-6": {
+            "id": "option-6",
+            "key": "reir",
+            "text": "Reír",
+            "value": 1
+        },
+        "option-7": {
+            "id": "option-7",
+            "key": "sorpresa",
+            "text": "Sorpresa",
+            "value": 1
+        },
+        "option-8": {
+            "id": "option-8",
+            "key": "llorar",
+            "text": "Llorar",
+            "value": 1
+        },
+        "option-9": {
+            "id": "option-9",
+            "key": "celular",
+            "text": "Revisar el celular",
+            "value": 1
+        },
+        "option-x": {
+            "id": "option-x",
+            "key": "bailar",
+            "text": "Bailar",
+            "value": 1
+        }
+    },
+    "initMessages":[
+        "Selecciona los bloques y forma una torre. La plataforma tiene un espacio de memoria de 500 MB.",
+        "Cada bloque pesa 50 MB. Si excedes la capacidad de memoria, la instrucción no podrá ser ejecutada. "
+    ],
+    "path": "12",
+    "color": "#1B6893",
+    "name": "Desborde de memoria",
+    "id": 60
+}

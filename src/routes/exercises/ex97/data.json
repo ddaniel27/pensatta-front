@@ -1,8 +1,8 @@
 {
     
     "initMessages":[
-        "A continuación, encontrarás una serie de tecnologías.",
-        "Determina si son tecnologías antiguas o si son tecnologías actuales desplazando la barra hacia la izquierda o hacia la derecha."
+        "El lenguaje de las máquinas se basa en la combinación de unos y cero, denominada instrucciones en lenguaje ensamblador, que posteriormente son interpretadas por un procesador.",
+        "A continuación, encontrarás una solicitud de secuencia de color. Ingresa las instrucciones que corresponden para lograr dicha secuencia."
     ],
     "threshold": {
         "max": 3,
@@ -11,7 +11,7 @@
     },
     "path": "97",
     "color": "#53745B",
-    "name": "Tecnologías",
+    "name": "Binario",
     "id": 97,
     "options": [
         {"id":1, "colour":"black", "color":"Negro" ,"code": "111111"},

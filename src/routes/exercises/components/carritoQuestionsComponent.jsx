@@ -59,7 +59,7 @@ const GridCards = ({questions,setAnswers,isFinish})=>{
 }
 
 const CarritoQuestionsComponent = ({data,setPhase,setScore})=>{
-    const [questions, setQuestions] = useState(data.questions)
+    const [questions, setQuestions] = useState(data.questions.sort(() => Math.random() - 0.5).slice(0,4))
     const [answers, setAnswers] = useState(questions.map(
         q => ({id: q.id, answer:null, isSelected:false})
     ))

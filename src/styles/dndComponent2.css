@@ -1,0 +1,237 @@
+.drag-drop-context{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    align-items: start;
+    justify-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.droppable-container-2{
+    text-align: center;
+    border-radius: 12px;
+    height: 95%;
+    width: 80%;
+    margin-top: 8px;
+}
+.droppable-container-2 h2{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.droppable-list-2{
+    min-height: 200px;
+    width: 100%;
+}
+
+.column-1-2, .column-1-loop-2{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 60% 20%;
+    align-items: center;
+    justify-items: center;
+    background-color: #fff;
+    padding: 0 10px 20px;
+    height: 70%;
+    margin-top:20%;
+}
+
+.column-1-2 .draggable-item-2, .column-1-loop-2 .draggable-item-2{
+    margin: 8px auto;
+}
+
+.column-1-2 p, .column-1-loop-2 p{
+    font-size: 1.4rem;
+    color: #008E86;
+    padding: 10px;
+}
+
+
+.column-2-2{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 80%;
+    align-items: start;
+    justify-items: center;
+}
+
+.column-2-2.loop{
+    grid-template-rows: 20% 20% 40% 20%;
+}
+
+.column-2-2 .header-list-2, .column-2-2 .loop-top, .column-2-2.loop .block-top-2{
+    align-self: end;
+    aspect-ratio: 19/5;
+    background-image: url("../../images/Atomo_IDE_Cabezote3.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 35vw;
+    max-width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .7rem;
+    position: relative;
+    top: 2.3vh;
+    left:-3.05vw;
+}
+
+.column-2-2 .header-list-2 h2{
+    margin-top: 5%;
+}
+
+.column-2-2.loop .block-top-2{
+    aspect-ratio: 170/31;
+    background-image: url("../../images/IDE/Atomo_IDE_ContenedorTop.svg");
+    align-self: start;
+    top: 1.5vh;
+    left: .2vw;
+    font-weight: bold;
+    font-size: 1rem;
+    padding-bottom: 20px;
+}
+
+.column-2-2.loop .block-top-2 input{
+    margin: 0 20px;
+}
+
+.column-2-2 .droppable-list-2{
+    position: relative;
+    top: 1vh;
+    left: 1.8vw;
+}
+
+.column-2-2.loop .droppable-list-2{
+    left: 2vw;
+    top: -9vh;
+}
+
+.column-2-2 .draggable-item-2{
+    margin-bottom: -1.5vh;
+}
+
+.draggable-item-2{
+    aspect-ratio: 170/31;
+    background-image: url("../../images/Atomo_IDE_Bloque3.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 70%;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    align-items: center;
+    font-weight: bold;
+}
+
+
+
+.draggable-item-2 span{
+    justify-self: center;
+    padding-left: 1.5vw;
+    margin-bottom: 3px;
+}
+
+.draggable-item-2 input, .draggable-item-2 select, .column-2-2.loop .block-top-2 input{
+    text-align: center;
+    font-size: 1rem;
+    color: #008E86;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border: 2px solid #008E86;
+    border-radius: 7px;
+}
+
+.draggable-item-2 input, .column-2-2.loop .block-top-2 input{
+    width: 40px;
+    height: 40px;
+}
+
+.draggable-item-2 select{
+    width: 100px;
+    height: 40px;
+}
+
+.column-2-2 .draggable-item-2-grey{
+    margin-bottom: -1.5vh;
+}
+
+.draggable-item-2-grey{
+    aspect-ratio: 170/31;
+    background-image: url("../../images/Atomo_IDE_Bloque3_grey.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 70%;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    align-items: center;
+    font-weight: bold;
+    color:#f2f2f2;
+}
+.draggable-item-2-grey span{
+    justify-self: center;
+    padding-left: 1.5vw;
+    margin-bottom: 3px;
+}
+.draggable-item-2-grey input, .draggable-item-2-grey select, .column-2-2.loop .block-top-2 input{
+    text-align: center;
+    font-size: 1rem;
+    color: #008E86;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border: 2px solid #008E86;
+    border-radius: 7px;
+}
+
+.draggable-item-2-grey input, .column-2-2.loop .block-top-2 input{
+    width: 40px;
+    height: 40px;
+}
+
+.draggable-item-2-grey select{
+    width: 100px;
+    height: 40px;
+}
+
+
+@media screen and (max-width: 1250px){
+    .column-2-2 .droppable-list-2{
+        top:1.7vh;
+        left: 3.8vw;
+    }
+    .column-2-2.loop .droppable-list-2{
+        left: 4vw;
+        top: -9vh;
+    }
+    .draggable-item-2 span{
+        font-size: .8rem;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+    .drag-drop-context{
+        grid-template-columns: 100%;
+        grid-template-rows: 100% 100%;
+    }
+
+    .column-2-2 .header-list-2, .column-2 .loop-top, .column-2-2.loop .block-top-2{
+        width: 100%;
+    }
+
+    .column-2-2 .droppable-list-2{
+        top:1.5vh;
+        left: 6vw;
+    }
+
+    .column-2-2.loop .droppable-list-2{
+        left: 5.5vw;
+        top: -9vh;
+    }
+    
+    .column-2-2 .header-list-2 h2{
+        margin-top: 5%;
+    }
+}
