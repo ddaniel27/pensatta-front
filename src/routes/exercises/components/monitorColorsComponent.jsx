@@ -167,7 +167,9 @@ const MonitorColorsComponent = ({data,setPhase,setScore})=>{
                     <BoardInfo colors={data}/>
                     <BoardInputs secuence={secuence} setAnswers={setAnswers} isFinish={isFinish} corrects={corrects}/>
                 </div>
+                <div className={styles.infoText}>Utiliza el teclado para ingresar el código</div>
             </div>
+            
             {isAllAnswered&&!isFinish&&<button onClick={handleResponder}>RESPONDER</button>}
             {isFinish&&<button onClick={()=>setPhase("end")}>SIGUIENTE</button>}
         </>

@@ -87,7 +87,7 @@
         }
     },
     "initMessages":[
-        "Selecciona los bloques y forma una torre. La plataforma tiene un espacio de memoria de 500 MB.",
+        "Selecciona los bloques y forma una torre. La plataforma tiene un espacio de memoria de 300 MB.",
         "Cada bloque pesa 50 MB. Si excedes la capacidad de memoria, la instrucción no podrá ser ejecutada. "
     ],
     "path": "12",

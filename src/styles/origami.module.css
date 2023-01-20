@@ -27,11 +27,30 @@
     background-repeat: no-repeat;
 }
 .secondary-card{
-    width: 25%;
-    height:25%;
+    width: 90%;
+    height:90%;
     min-width: 120px;
     background-size: contain;
     background-repeat: no-repeat;
+}
+.cardSecondaryContainer{
+    width: 90%;
+    height:90%;
+    min-width: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+
+}
+.gridItemOwn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
 }
 .inputFile{
     width: 0.1px;
@@ -60,4 +79,13 @@
 .inputFile + label:active {
 	transform: translateY(5px);
     filter: none;
+}
+
+.cardSecondaryTrue{
+    background-color: #69E485;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.cardSecondaryFalse{
+    background-color: #FF7171;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }

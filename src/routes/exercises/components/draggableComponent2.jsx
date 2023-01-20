@@ -28,7 +28,7 @@ export default function DraggableComponent2({ option, index, setOwnValue,res }) 
                         ref={provided.innerRef}
                         {...provided.draggableProps}
                         {...provided.dragHandleProps}
-                        className={index<10?"draggable-item-2":"draggable-item-2-grey"}>
+                        className={index<6?"draggable-item-2":"draggable-item-2-grey"}>
                         <span>{option.text}</span>
                         {
                             option.hasInput && 

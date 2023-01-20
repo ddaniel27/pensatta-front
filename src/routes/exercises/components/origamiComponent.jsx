@@ -1,5 +1,11 @@
 import { useState } from "react";
 import styles from "../../../styles/origami.module.css"
+import {
+    GridContextProvider,
+    GridDropZone,
+    GridItem
+  } from "react-grid-dnd";
+import { useEffect } from "react";
 
 const ImageUpload = ({setIsFinish}) => {
     const [image, setImage] = useState(null);
@@ -20,37 +26,107 @@ const ImageUpload = ({setIsFinish}) => {
     return (
       <form onSubmit={handleSubmit}>
         <input type="file" onChange={handleImageChange} name="file" id="file" className={styles.inputFile} />
-        <label for="file">ADJUNTAR</label>
+        <label htmlFor="file">ADJUNTAR</label>
       </form>
     );
   };
   
 
-const Card = ({opt,cl})=>{
+const Card = ({opt,cl,pos,isFinish,isCorrect})=>{
     const style = {
-        backgroundImage: `url(${opt.link})`
+        backgroundImage: !isFinish || pos == 0?`url(${opt.link}.svg)`:`url(${opt.link}R.svg)`
     }
     return(
-        <div className={styles[cl]}style={style}></div>
+        <>
+        {pos == 1 &&
+            <div className={`${styles.cardSecondaryContainer} ${!isFinish?"":(isCorrect?styles.cardSecondaryTrue:styles.cardSecondaryFalse)}`}>
+                <div className={styles[cl]}style={style}></div>
+            </div>
+        }
+        {
+            pos== 0 && <div className={styles[cl]}style={style}></div>
+        }
+        </>
     )
 }
 
-const OrigamiComponent = ({data,setPhase})=>{
-    const[isFinish,setIsFinish] = useState(false)
-    return(
-        <>
+const JigsawOrigami = ({data,isFinish,setScore})=>{
+    const [items, setItems] = useState(data)
+    const [corrects, setCorrects] = useState(data.map(d => ({id: d.id, isCorrect:null })))
+    const [checkTrigger, setCheckTrigger] = useState(isFinish)
+
+    const sortCards = ()=>{
+        const shuffleItems = [...items]
+        shuffleItems.sort( () => Math.random() - 0.5)
+        setItems(shuffleItems)
+    }
+
+    useEffect(()=>{
+        sortCards()
+    },[])
+
+    useEffect(()=>{
+        setScore(corrects.filter(c => c.isCorrect).length)
+    },[checkTrigger])
+
+    useEffect(()=>{
             
+                setCorrects( items.map(
+                   (item,index )=> ({
+                    id: item.id,
+                    isCorrect: item.id-1 == index
+                   })            
+                ))
+            
+    },[items])
+
+    function onChange(sourceId, sourceIndex, targetIndex, targetId) {
+        if(!isFinish){
+            const newState = [...items];
+            if(targetIndex<items.length){
+                [newState[sourceIndex],newState[targetIndex]] = [newState[targetIndex],newState[sourceIndex]]
+            }
+            setItems(newState);
+        }
+      }
+
+    return(
+        <GridContextProvider onChange={onChange}>
+                    <GridDropZone
+                    id="items"
+                    boxesPerRow={3}
+                    rowHeight={160}
+                    style={{ height: "480px", width:"480px"}}
+                    >
+                    {items.map((item) => (
+                        <GridItem key={item.id} className={`griditemUI ${styles.gridItemOwn}` }>
+                        
+                            <Card opt={item} cl={"secondary-card"} pos={1} isFinish={isFinish} isCorrect={corrects.find(i =>item.id == i.id).isCorrect}/>
+            
+                        </GridItem>
+                    ))}
+                    </GridDropZone>
+        </GridContextProvider>
+    )
+}
+
+const OrigamiComponent = ({data,setPhase,setScore})=>{
+    const[isFinish,setIsFinish] = useState(false)
+
+    const handleResponder = ()=>{
+        setIsFinish(true)
+    }
+    return(
+        <>           
             <div className={styles.gameOrigamiContainer}>
                 <div className={styles["primary-origami-container"]}>
-                    <Card opt={data.primary} cl={"primary-card"}/>
+                    <Card opt={data.primary} cl={"primary-card"} pos={0}/>
                 </div>
                 <div className={styles["secondaries-origami-container"]}>
-                    {data.secondaries.map(opt=>{
-                        return <Card opt={opt} cl={"secondary-card"}/>
-                    })}
+                    <JigsawOrigami data={data.secondaries} isFinish={isFinish} setScore={setScore}/>
                 </div>
             </div>
-            {!isFinish&&<ImageUpload setIsFinish={setIsFinish}/>}
+            {!isFinish&&<button onClick={handleResponder}>RESPONDER</button>}
             {isFinish&&<button onClick={()=>setPhase("end")}>SIGUIENTE</button>}
         </>
     )

@@ -4,9 +4,9 @@
     "¡Adjunta la fotografía para que pueda ver tu obra de arte!"
 ],
 "threshold":{
-    "max" : 1,
+    "max" : 9,
     "min" : 0,
-    "perfect": 1
+    "perfect": 9
 },
 "path": "104",
 "color": "#1B6893",
@@ -14,17 +14,17 @@
 "id": 104,
 "column" : [
     {
-        "primary": {"id":1,"link":"/images/exercises/104/1principal.svg"},
+        "primary": {"id":1,"link":"/images/exercises/104/1principal"},
         "secondaries":[
-            {"id":1,"link":"/images/exercises/104/1_1.svg"},
-            {"id":2,"link":"/images/exercises/104/1_2.svg"},
-            {"id":3,"link":"/images/exercises/104/1_3.svg"},
-            {"id":4,"link":"/images/exercises/104/1_4.svg"},
-            {"id":5,"link":"/images/exercises/104/1_5.svg"},
-            {"id":6,"link":"/images/exercises/104/1_6.svg"},
-            {"id":7,"link":"/images/exercises/104/1_7.svg"},
-            {"id":8,"link":"/images/exercises/104/1_8.svg"},
-            {"id":9,"link":"/images/exercises/104/1_9.svg"}
+            {"id":1,"link":"/images/exercises/104/1_1"},
+            {"id":2,"link":"/images/exercises/104/1_2"},
+            {"id":3,"link":"/images/exercises/104/1_3"},
+            {"id":4,"link":"/images/exercises/104/1_4"},
+            {"id":5,"link":"/images/exercises/104/1_5"},
+            {"id":6,"link":"/images/exercises/104/1_6"},
+            {"id":7,"link":"/images/exercises/104/1_7"},
+            {"id":8,"link":"/images/exercises/104/1_8"},
+            {"id":9,"link":"/images/exercises/104/1_9"}
         ]
     }
     

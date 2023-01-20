@@ -77,7 +77,7 @@ export default function Ex60(){
 
 
     async function animate(peluche, animationSequence) {
-        for(const action of animationSequence.slice(0,10)){
+        for(const action of animationSequence.slice(0,6)){
             switch (action[0]) {
                 case "saludar":
                     peluche.playSegments([0, 120], true)
