@@ -50,7 +50,7 @@ const Card = ({opt,cl,pos,isFinish,isCorrect})=>{
     )
 }
 
-const JigsawOrigami = ({data,isFinish,setScore})=>{
+const JigsawOrigami = ({data,isFinish,setScore,dimensions})=>{
     const [items, setItems] = useState(data)
     const [corrects, setCorrects] = useState(data.map(d => ({id: d.id, isCorrect:null })))
     const [checkTrigger, setCheckTrigger] = useState(isFinish)
@@ -94,9 +94,9 @@ const JigsawOrigami = ({data,isFinish,setScore})=>{
         <GridContextProvider onChange={onChange}>
                     <GridDropZone
                     id="items"
-                    boxesPerRow={3}
-                    rowHeight={160}
-                    style={{ height: "480px", width:"480px"}}
+                    boxesPerRow={dimensions.columns}
+                    rowHeight={dimensions.sizeH}
+                    style={{ height: `${dimensions.rows*dimensions.sizeH}px`, width:`${dimensions.columns*dimensions.sizeW}px`}}
                     >
                     {items.map((item) => (
                         <GridItem key={item.id} className={`griditemUI ${styles.gridItemOwn}` }>
@@ -123,7 +123,7 @@ const OrigamiComponent = ({data,setPhase,setScore})=>{
                     <Card opt={data.primary} cl={"primary-card"} pos={0}/>
                 </div>
                 <div className={styles["secondaries-origami-container"]}>
-                    <JigsawOrigami data={data.secondaries} isFinish={isFinish} setScore={setScore}/>
+                    <JigsawOrigami data={data.secondaries} isFinish={isFinish} setScore={setScore} dimensions={data.dimensions}/>
                 </div>
             </div>
             {!isFinish&&<button onClick={handleResponder}>RESPONDER</button>}

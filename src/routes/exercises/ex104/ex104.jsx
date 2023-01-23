@@ -20,7 +20,7 @@ const Ex104 = ()=>{
            (setScore, setPhase) => (
             
                     <>
-                        <OrigamiComponent data={myData.column[0]} setPhase={setPhase} setScore={setScore}/>
+                        <OrigamiComponent data={myData.column[Math.floor(Math.random() * 7)]} setPhase={setPhase} setScore={setScore}/>
        
                        {
                         isLoaded&& <div className="buttons-field">
