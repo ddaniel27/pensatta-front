@@ -35,20 +35,28 @@ const Lines = ({id, type, text, isComment,comment,idSelected,setIdSelected,isFin
 }
 
 const Board = ({data,setIsSelection, isFinish,setScore})=>{
+    let found;
     const findCorrect = (datalines)=>{
+        datalines.map(element=>{
+            if(element.type =="inner"){
+                return findCorrect(element.text)
+            }
+            if(!found){
+                if(element.error === true){
+                    
+                    found = element
+                    
+                }
+            }
+        })
         
-        return datalines.find(element=>{
-                                        if(element.type=="inner"){
-                                            return findCorrect(element.text)
-                                        }
-                                        return element.error == true
-                                    })
+        return found
 
     }
+    
     const [idSelected, setIdSelected]=useState(null)
     const [correct, setCorrect] = useState(findCorrect(data.lines).id)
 
-    
     useEffect(()=>{
         if(idSelected!=null){
             setIsSelection(true)
@@ -57,7 +65,6 @@ const Board = ({data,setIsSelection, isFinish,setScore})=>{
 
     useEffect(()=>{
        if(isFinish==true){
-        console.log(correct)
         setScore(correct == idSelected?1:0)
        }
     },[isFinish])
