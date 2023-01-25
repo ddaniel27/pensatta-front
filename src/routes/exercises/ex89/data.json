@@ -1,0 +1,43 @@
+{"initMessages":[
+    "A continuación, encontrarás un código en el que se implementan repeticiones. " ,
+    "Presta atención a la descripción del código, te dirá lo que se espera del mismo, y a los comentarios en el código.",
+    "Identifica los errores de sintaxis y diseño con base a la descripción. Presiona la parte del código que consideres tiene el error."
+],
+"threshold":{
+    "max" : 1,
+    "min" : 0,
+    "perfect": 1
+},
+"path": "89",
+"color": "#53745B",
+"name":"Encuentra el error",
+"id": 89,
+"codigos":{
+    "1":{
+        "problem":"El código debería sumar 2 veces el número 4 a la variable A, y 4 veces el número 3 a la variable B.",
+        "lines":
+            [
+                {"id":1, "type":"instruction", "text":"A = 6;", "comments":false, "error":false},
+                {"id":2, "type":"instruction", "text":"B = 9;", "comments":false, "error":false},
+                {"id":3, "type":"br"},
+                {"id":4, "type":"instruction", "text":"for(i=0,i<2,i++)", "comments":true, "comment":" // i aumenta repitiendo la instrucción interna.", "error":false},
+                {"id":5, "type": "inner", "text":[{"id":5.1,"type":"instruction","text":"A = A + 4;","comments":false, "error":false}] ,"comments":false, "error":false},
+                {"id":6, "type":"instruction", "text":"for(j=0,j<6,j++)", "comments":true, "comment":" // j aumenta repitiendo la instrucción interna.", "error":true},
+                {"id":7, "type": "inner", "text":[{"id":7.1, "type":"instruction","text":"B = B + 3;","comments":false, "error":false}],"comments":false, "error":false}
+            ]
+        },
+    "2":{
+        "problem":"El código debería sumar 2 veces el número 4 a la variable A, y 4 veces el número 3 a la variable B.",
+        "lines":
+            [
+                {"id":1, "type":"instruction", "text":"A = 6;", "comments":false, "error":false},
+                {"id":2, "type":"instruction", "text":"B = 9;", "comments":false, "error":false},
+                {"id":3, "type":"br"},
+                {"id":4, "type":"instruction", "text":"for(i=0, i<2, i++)", "comments":true, "comment":" // i aumenta repitiendo la instrucción interna.", "error":false},
+                {"id":5, "type": "inner", "text":[{"id":5.1,"type":"instruction","text":"A = A + 7;","comments":false, "error":true}] ,"comments":false, "error":false},
+                {"id":6, "type":"instruction", "text":"for(j=0, j<5, j++)", "comments":true, "comment":" // j aumenta repitiendo la instrucción interna.", "error":false},
+                {"id":7, "type": "inner", "text":[{"id":7.1, "type":"instruction","text":"B = B + 3;","comments":false, "error":false}],"comments":false, "error":false}
+            ]
+        }
+}
+}

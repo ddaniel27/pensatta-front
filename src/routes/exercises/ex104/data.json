@@ -4,9 +4,9 @@
     "¡Adjunta la fotografía para que pueda ver tu obra de arte!"
 ],
 "threshold":{
-    "max" : 9,
+    "max" : 1,
     "min" : 0,
-    "perfect": 9
+    "perfect": 1
 },
 "path": "104",
 "color": "#1B6893",

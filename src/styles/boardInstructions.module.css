@@ -1,0 +1,40 @@
+.game-container{
+    display:flex;
+    flex-direction: column;
+    user-select: none;
+    width: 100%;
+    margin:20px;
+    gap:10px;
+    align-items: center;
+}
+.board-instructions{
+    color: #F2F2F2;
+    background-color: #333333;
+    cursor: pointer;
+    width:50%;
+    padding:15px;
+    border-radius: 15px;
+}
+.comments-instruction{
+    color:#008E86;
+}
+.problem-container{
+    color: #F2F2F2;
+    background-color: #00635D;
+    border: 3px solid #00D8CC;
+    border-radius: 20px;
+    width: 30%;
+    padding:5px;
+}
+.instruction-selected{
+    border: 2px solid #00D8CC;
+    border-radius: 10px;
+}
+.instruction-selected-false{
+    border: 2px solid #FF7171;
+    border-radius: 10px;
+}
+.instruction-true{
+    border: 2px solid #69E485;
+    border-radius: 10px;
+}

@@ -66,7 +66,7 @@ const JigsawOrigami = ({data,isFinish,setScore,dimensions})=>{
     },[])
 
     useEffect(()=>{
-        setScore(corrects.filter(c => c.isCorrect).length)
+        setScore(corrects.filter(c => c.isCorrect).length == corrects.length ? 1 : 0)
     },[checkTrigger])
 
     useEffect(()=>{
