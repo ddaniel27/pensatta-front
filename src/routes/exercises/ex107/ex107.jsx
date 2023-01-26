@@ -3,7 +3,7 @@ import ScreenRenderUniqueOptionsEncapsulate from "../components/screenRenderUniq
 import ScoringComponent from "../components/scoringComponent"
 import data from "./data.json"
 
-export default function Ex105(){
+export default function Ex107(){
     // eslint-disable-next-line no-unused-vars
     const [ myData, setMyData ] = React.useState({
         ...data,
