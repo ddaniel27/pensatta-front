@@ -1,0 +1,79 @@
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.login-form-exercise {
+    display:flex;
+    flex-direction: column;
+    min-height: 80px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    color: #00635D;
+    background-color: #fff;
+    height: 480px;
+    width: 30%;
+    padding: 40px 50px 60px;
+}
+.login-form-exercise input{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #008E86;
+    background-color: #F2F2F2;
+    font-weight: bold;
+}
+.login-form-exercise input:active, .login-form-exercise input:focus{
+    outline: none;
+}
+.login-exercise, .registration-exercise{
+    padding: 0;
+    width: 100%;
+    grid-template: 80px 80px 60px 80px 80px/100%;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.buttons-login-exercise{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin:20px;
+}
+.buttons-login-exercise button{
+    width: 20vw;
+    height: 40px;
+    border-radius: 20px;
+    border: 4px solid #008E86;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #008E86;
+    background-color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+.buttons-login-exercise button:active{
+    outline: none;
+    transform: translateY(4px);
+}
+.buttons-login-exercise .solid-button-exercise{
+    bottom: 0;
+    right:0;
+    position: relative;
+    background-color: #008E86;
+    color: #fff;
+    filter: drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.25));
+}
+.buttons-login-exercise .solid-button-exercise:active{
+    filter: none;
+}

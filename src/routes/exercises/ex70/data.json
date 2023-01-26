@@ -1,0 +1,16 @@
+{"initMessages":[
+    "Analiza el algoritmo. En él se ejecuta una tarea correspondiente a una ecotecnología." ,
+    "Tu misión es organizar los bloques del algoritmo y seleccionar las tarjetas del nombre de la ecotecnología y la descripción de la misma."
+],
+"threshold":{
+    "max" : 1,
+    "min" : 0,
+    "perfect": 1
+},
+"path": "70",
+"color": "#53745B",
+"name":"Ecotecnologías",
+"id": 70,
+"options":[]
+
+}
