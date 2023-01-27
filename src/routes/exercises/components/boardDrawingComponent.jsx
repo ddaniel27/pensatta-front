@@ -34,6 +34,12 @@ const BoardDrawing = ()=>{
                     <label for="ellipse">Ellipse<input type="radio" name="tool" value="ellipse" checked={tool==="ellipse"} onChange={(e)=>setTool(e.target.value)}/></label>
                 </div>
                 <div>
+                    <label for="triangle">Triangle<input type="radio" name="tool" value="triangle" checked={tool==="triangle"} onChange={(e)=>setTool(e.target.value)}/></label>
+                </div>
+                <div>
+                    <label for="star">Star<input type="radio" name="tool" value="star" checked={tool==="star"} onChange={(e)=>setTool(e.target.value)}/></label>
+                </div>
+                <div>
                     <label for="color">Color<input type="color" name="color" value={color} onChange={e=>setColor(e.target.value)}/></label>
                 </div>
             </div>

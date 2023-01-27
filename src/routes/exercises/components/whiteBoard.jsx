@@ -48,6 +48,14 @@ const WhiteBoard = ({canvasRef, ctxRef, elements, setElements, tool}) => {
                 roughCanvas.draw(
                     roughGenerator.ellipse(ele.offsetX, ele.offsetY, ele.width, ele.height)
                 )
+            }else if(ele.type==="triangle"){
+                roughCanvas.draw(
+                    roughGenerator.polygon(ele.path)
+                )
+            }else if(ele.type==="star"){
+                roughCanvas.draw(
+                    roughGenerator.polygon(ele.path)
+                )
             }
         });
 
@@ -116,6 +124,42 @@ const WhiteBoard = ({canvasRef, ctxRef, elements, setElements, tool}) => {
                     stroke: "black",
                 }
             ])
+        }else if(tool === "triangle"){
+            setElements(prev=>[
+                ...prev,
+                {
+                    type: "triangle",
+                    offsetX,
+                    offsetY,
+                    path:[
+                        [0,0],
+                        [0,0],
+                        [0,0]
+                    ],
+                    stroke: "black",
+                }
+            ])
+        }else if(tool === "star"){
+            let points = [];
+            const outerRadius = 0;
+            const innerRadius = 0;
+            const sides = 5;
+
+            for (let i = 0; i < sides; i++) {
+                let angle = i * 2 * Math.PI / sides;
+                let radius = i % 2 === 0 ? outerRadius : innerRadius;
+                points.push([radius * Math.cos(angle),radius * Math.sin(angle)]);
+            }
+            setElements(prev=>[
+                ...prev,
+                {
+                    type: "star",
+                    offsetX,
+                    offsetY,
+                    path: points,
+                    stroke: "black",
+                }
+             ])
         }
 
         setIsDrawing(true);
@@ -193,6 +237,54 @@ const WhiteBoard = ({canvasRef, ctxRef, elements, setElements, tool}) => {
                                     ...ele,
                                     width: offsetX - ele.offsetX,
                                     height: offsetY - ele.offsetY,
+                                }
+                            }else{
+                                return ele;
+                            }
+                        })
+                })
+            }else if(tool==="triangle"){
+                setElements(prev=>{
+                    return prev.map(
+                        (ele, index)=>{
+                            if(index === elements.length-1){
+                                return{
+                                    ...ele,
+                                    path:[
+                                        [ele.offsetX, ele.offsetY],
+                                        [offsetX, ele.offsetY],
+                                        [offsetX, offsetY]
+                                    ],
+                                }
+                            }else{
+                                return ele;
+                            }
+                        })
+                })
+            }else if(tool==="star"){
+                const pathCalc = (eoX, eoY, oX, oY) => {
+                    let points = [];
+                    const x = eoX;
+                    const y = eoY;
+                    const outerRadius = oX;
+                    const innerRadius = oY;
+                    const sides = 10;
+
+                    for (let i = 0; i < sides; i++) {
+                        let angle = i * 2 * Math.PI / sides;
+                        let radius = i % 2 === 0 ? outerRadius : innerRadius;
+                        points.push([x + radius * Math.cos(angle), y + radius * Math.sin(angle)]);
+                    }
+                    return points
+                }
+                
+                setElements(prev=>{
+                    return prev.map(
+                        (ele, index)=>{
+                            if(index === elements.length-1){
+                                return{
+                                    ...ele,
+                                    path: pathCalc(ele.offsetX, ele.offsetY, offsetX -ele.offsetX, offsetY-ele.offsetY),
                                 }
                             }else{
                                 return ele;
