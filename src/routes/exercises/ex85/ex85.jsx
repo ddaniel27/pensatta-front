@@ -5,9 +5,10 @@ import data from "./data.json"
 
 export default function Ex85(){
     // eslint-disable-next-line no-unused-vars
+    const [game, setGame] = React.useState(Math.floor(Math.random()*data.options.length))
     const [ myData, setMyData ] = React.useState({
         ...data,
-        options: data.options.sort(() => 0.5 - Math.random()).slice(0, data.threshold.perfect)
+        options: data.options[game].sort(() => 0.5 - Math.random()).slice(0, data.threshold.perfect)
     })
     const [ nextQuestion, setNextQuestion ] = React.useState(false)
 

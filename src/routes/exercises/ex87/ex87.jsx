@@ -8,7 +8,7 @@ import NoScoringComponent from "../components/noScoringComponent";
 
 const Ex87 = ()=>{
     const [myData, setmyData] = useState(data)
-    const [column, setColumn] = useState(data.column)
+    const [column, setColumn] = useState(data.options[Math.floor(Math.random()*10)+1].column)
     const [targetId, setTargetId] = useState(0)
 
     const handleFinish = (setPhase)=>{

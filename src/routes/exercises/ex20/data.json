@@ -12,41 +12,159 @@
     "color": "#1B6893",
     "name":"Estado de la lámpara",
     "id": 20,
-    "column1" : [
-        { "id": 1, "type": "instruction" , "text": "Conectar a la toma" },
-        { "id": 2, "type": "instruction" , "text": "Lleva a reparación" },
-        { "id": 3, "type": "condition" , "text": "¿La lámpara funcionó?" },
-        { "id": 4, "type": "condition" , "text": "¿Está conectada?" }
-    ],
-    "column2" : [
-        {"id": 1, "type":"begin", "text": "La lámpara no funciona"},
-        {"id": 2, "type":"empty", "text": ""},
-        {"id": 3, "type":"empty", "text": ""},
-
-        {"id": 4, "type":"arrowDown", "text": ""},
-        {"id": 5, "type":"empty", "text": ""},
-        {"id": 6, "type":"empty", "text": ""},
-
-        {"id": 7, "type":"drag-conditionEspace", "text":""},
-        {"id": 8, "type":"arrowLeftNo", "text": ""},
-        {"id": 9, "type":"drag-conditionEspace", "text":""},
-
-        {"id": 10, "type":"arrowDownYes", "text": ""},
-        {"id": 11, "type":"empty", "text": ""},
-        {"id": 12, "type":"empty", "text": ""},
-
-        {"id": 13, "type":"drag-instructionEspace", "text":""},
-        {"id": 14, "type":"arrowLeftNo", "text": ""},
-        {"id": 15, "type":"drag-instructionEspace", "text":""},
-
-        {"id": 16, "type":"arrowDownYes", "text": ""},
-        {"id": 17, "type":"empty", "text": ""},
-        {"id": 18, "type":"empty", "text": ""},
-
-        {"id": 19, "type":"end", "text": "FIN"},
-        {"id": 20, "type":"empty", "text": ""},
-        {"id": 21, "type":"empty", "text": ""}
-    ],
-    "correctPath" : [{"drag":7, "correct": 4},{"drag":9, "correct": 1},{"drag":13, "correct": 3},{"drag":15, "correct": 2}]
-    
+    "options":
+    {
+        "1":{
+            "column1" : [
+                { "id": 1, "type": "instruction" , "text": "Conectar a la toma" },
+                { "id": 2, "type": "instruction" , "text": "Lleva a reparación" },
+                { "id": 3, "type": "condition" , "text": "¿La lámpara funcionó?" },
+                { "id": 4, "type": "condition" , "text": "¿Está conectada?" }
+            ],
+            "column2" : [
+                {"id": 1, "type":"begin", "text": "La lámpara no funciona"},
+                {"id": 2, "type":"empty", "text": ""},
+                {"id": 3, "type":"empty", "text": ""},
+        
+                {"id": 4, "type":"arrowDown", "text": ""},
+                {"id": 5, "type":"empty", "text": ""},
+                {"id": 6, "type":"empty", "text": ""},
+        
+                {"id": 7, "type":"drag-conditionEspace", "text":""},
+                {"id": 8, "type":"arrowLeftNo", "text": ""},
+                {"id": 9, "type":"drag-conditionEspace", "text":""},
+        
+                {"id": 10, "type":"arrowDownYes", "text": ""},
+                {"id": 11, "type":"empty", "text": ""},
+                {"id": 12, "type":"empty", "text": ""},
+        
+                {"id": 13, "type":"drag-instructionEspace", "text":""},
+                {"id": 14, "type":"arrowLeftNo", "text": ""},
+                {"id": 15, "type":"drag-instructionEspace", "text":""},
+        
+                {"id": 16, "type":"arrowDownYes", "text": ""},
+                {"id": 17, "type":"empty", "text": ""},
+                {"id": 18, "type":"empty", "text": ""},
+        
+                {"id": 19, "type":"end", "text": "FIN"},
+                {"id": 20, "type":"empty", "text": ""},
+                {"id": 21, "type":"empty", "text": ""}
+            ],
+            "correctPath" : [{"drag":7, "correct": 4},{"drag":9, "correct": 1},{"drag":13, "correct": 3},{"drag":15, "correct": 2}]
+        },
+        "2":{
+            "column1" : [
+                { "id": 1, "type": "instruction" , "text": "Esperar a que se reestablezca el servicio" },
+                { "id": 2, "type": "instruction" , "text": "Recargar la línea" },
+                { "id": 3, "type": "condition" , "text": "¿El celular tiene señal?" },
+                { "id": 4, "type": "condition" , "text": "¿El número tiene saldo?" }
+            ],
+            "column2" : [
+                {"id": 1, "type":"begin", "text": "Las llamadas no salen"},
+                {"id": 2, "type":"empty", "text": ""},
+                {"id": 3, "type":"empty", "text": ""},
+        
+                {"id": 4, "type":"arrowDown", "text": ""},
+                {"id": 5, "type":"empty", "text": ""},
+                {"id": 6, "type":"empty", "text": ""},
+        
+                {"id": 7, "type":"drag-conditionEspace", "text":""},
+                {"id": 8, "type":"arrowLeftNo", "text": ""},
+                {"id": 9, "type":"drag-conditionEspace", "text":""},
+        
+                {"id": 10, "type":"arrowDownYes", "text": ""},
+                {"id": 11, "type":"empty", "text": ""},
+                {"id": 12, "type":"empty", "text": ""},
+        
+                {"id": 13, "type":"drag-instructionEspace", "text":""},
+                {"id": 14, "type":"arrowLeftNo", "text": ""},
+                {"id": 15, "type":"drag-instructionEspace", "text":""},
+        
+                {"id": 16, "type":"arrowDownYes", "text": ""},
+                {"id": 17, "type":"empty", "text": ""},
+                {"id": 18, "type":"empty", "text": ""},
+        
+                {"id": 19, "type":"end", "text": "FIN"},
+                {"id": 20, "type":"empty", "text": ""},
+                {"id": 21, "type":"empty", "text": ""}
+            ],
+            "correctPath" : [{"drag":7, "correct": 4},{"drag":9, "correct": 1},{"drag":13, "correct": 3},{"drag":15, "correct": 2}]
+        },
+        "3":{
+            "column1" : [
+                { "id": 1, "type": "instruction" , "text": "Restablecer contraseña" },
+                { "id": 2, "type": "instruction" , "text": "Ingresar contraseña correcta" },
+                { "id": 3, "type": "condition" , "text": "¿La contraseña es correcta?" },
+                { "id": 4, "type": "condition" , "text": "¿Se ingresó correctamente?" }
+            ],
+            "column2" : [
+                {"id": 1, "type":"begin", "text": "No se puede acceder al correo"},
+                {"id": 2, "type":"empty", "text": ""},
+                {"id": 3, "type":"empty", "text": ""},
+        
+                {"id": 4, "type":"arrowDown", "text": ""},
+                {"id": 5, "type":"empty", "text": ""},
+                {"id": 6, "type":"empty", "text": ""},
+        
+                {"id": 7, "type":"drag-conditionEspace", "text":""},
+                {"id": 8, "type":"arrowLeftNo", "text": ""},
+                {"id": 9, "type":"drag-conditionEspace", "text":""},
+        
+                {"id": 10, "type":"arrowDownYes", "text": ""},
+                {"id": 11, "type":"empty", "text": ""},
+                {"id": 12, "type":"empty", "text": ""},
+        
+                {"id": 13, "type":"drag-instructionEspace", "text":""},
+                {"id": 14, "type":"arrowLeftNo", "text": ""},
+                {"id": 15, "type":"drag-instructionEspace", "text":""},
+        
+                {"id": 16, "type":"arrowDownYes", "text": ""},
+                {"id": 17, "type":"empty", "text": ""},
+                {"id": 18, "type":"empty", "text": ""},
+        
+                {"id": 19, "type":"end", "text": "FIN"},
+                {"id": 20, "type":"empty", "text": ""},
+                {"id": 21, "type":"empty", "text": ""}
+            ],
+            "correctPath" : [{"drag":7, "correct": 4},{"drag":9, "correct": 1},{"drag":13, "correct": 3},{"drag":15, "correct": 2}]
+        },
+        "4":{
+            "column1" : [
+                { "id": 1, "type": "instruction" , "text": "Conectarlo" },
+                { "id": 2, "type": "instruction" , "text": "Conectarse a la red" },
+                { "id": 3, "type": "condition" , "text": "¿Hay conexión a internet?" },
+                { "id": 4, "type": "condition" , "text": "¿El módem está conectado?" }
+            ],
+            "column2" : [
+                {"id": 1, "type":"begin", "text": "No hay conexión a internet"},
+                {"id": 2, "type":"empty", "text": ""},
+                {"id": 3, "type":"empty", "text": ""},
+        
+                {"id": 4, "type":"arrowDown", "text": ""},
+                {"id": 5, "type":"empty", "text": ""},
+                {"id": 6, "type":"empty", "text": ""},
+        
+                {"id": 7, "type":"drag-conditionEspace", "text":""},
+                {"id": 8, "type":"arrowLeftNo", "text": ""},
+                {"id": 9, "type":"drag-conditionEspace", "text":""},
+        
+                {"id": 10, "type":"arrowDownYes", "text": ""},
+                {"id": 11, "type":"empty", "text": ""},
+                {"id": 12, "type":"empty", "text": ""},
+        
+                {"id": 13, "type":"drag-instructionEspace", "text":""},
+                {"id": 14, "type":"arrowLeftNo", "text": ""},
+                {"id": 15, "type":"drag-instructionEspace", "text":""},
+        
+                {"id": 16, "type":"arrowDownYes", "text": ""},
+                {"id": 17, "type":"empty", "text": ""},
+                {"id": 18, "type":"empty", "text": ""},
+        
+                {"id": 19, "type":"end", "text": "FIN"},
+                {"id": 20, "type":"empty", "text": ""},
+                {"id": 21, "type":"empty", "text": ""}
+            ],
+            "correctPath" : [{"drag":7, "correct": 4},{"drag":9, "correct": 1},{"drag":13, "correct": 3},{"drag":15, "correct": 2}]
+        }
+    }
 }

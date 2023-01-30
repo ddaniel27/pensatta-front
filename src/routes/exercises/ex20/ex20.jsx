@@ -7,9 +7,10 @@ import NoScoringComponent from "../components/noScoringComponent";
 
 
 const Ex20 = ()=>{
+    const [game, setGame] = useState(Math.floor(Math.random() * 4) + 1)
     const [myData, setmyData] = useState(data)
-    const [column1, setColumn1] = useState(data.column1)
-    const [column2, setColumn2] = useState(data.column2)
+    const [column1, setColumn1] = useState(data.options[game].column1)
+    const [column2, setColumn2] = useState(data.options[game].column2)
     
     
 
@@ -28,15 +29,6 @@ const Ex20 = ()=>{
         
     }
     const handleFinish = (setPhase) =>{
-        
-        const corrects = myData.correctPath;
-        const isOk = corrects.map( (element)=>{
-            const objC1 = column1.find(x => x.id == element.correct)
-            const objC2 = column2.find( x=> x.id == element.drag )
-            return objC1.type == objC2.type && objC1.text == objC2.text  
-        } )
-        const win = isOk.every(element => element === true);
-
         setPhase("end")
     }
 
