@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useRef, useLayoutEffect} from "react";
+import {useState, useEffect, useRef, useLayoutEffect} from "react";
 import zorrito from "/images/exercises/09/zorrito.svg"
 import styles from "../../../styles/maze2Component.module.css"
 import laberintos from "../ex09/laberintos.json"
@@ -9,14 +9,9 @@ import Enemigos from "./maze2EnemieComponent"
 import positionEnemies from "../ex09/enemies.json"
 
 
-
-
-
-
-
 const Zorrito = ({style}) => (<img src={zorrito} alt="zorrito" style={style}/>)
 const Maze = ({style, laberinto})=>{
-    const canvas = laberinto.map( line => {
+    const canvas = laberinto.map( (line,index) => {
             const linedraw = {
                 position:"absolute",
                 top : `${line.y}%`,
@@ -26,7 +21,7 @@ const Maze = ({style, laberinto})=>{
                 background : "#00D8CC"
             };
 
-             return <canvas style={linedraw}></canvas>
+             return <canvas key={index} style={linedraw}></canvas>
     })
   
     return(
@@ -40,7 +35,7 @@ const Hearts = ({vidas,style}) =>{
 
     for( var i = 1; i <= vidas; i++) {
             hearts.push(
-            <div>
+            <div key={`heart-${i}`}>
                 <img src={corazon} style={style} />
             </div>  );
         }
@@ -313,7 +308,8 @@ const Maze2Component = ({lab,setPhase,setScore}) => {
            
             
             intervalRef.current = setInterval(() => {
-            if(!isCollide){
+            if(true){
+                console.log("avanzando en x")
                 setPosx((prevCounter) => {
                     counter = prevCounter
                     return prevCounter + incremento});
@@ -361,11 +357,11 @@ const Maze2Component = ({lab,setPhase,setScore}) => {
                         setVidas(vidas-1);
                         setIsCollide(true)
                         clearInterval(intervalRef.current);
-                        intervalRef.current = null;
+                        
                         return
                     }
                     clearInterval(intervalRef.current);
-                    intervalRef.current = null;
+                    
                 }
                 
                
@@ -383,7 +379,7 @@ const Maze2Component = ({lab,setPhase,setScore}) => {
         if (intervalRef.current) return;
         
         intervalRef.current = setInterval(() => {
-        if(!isCollide){
+        if(true){
             setPosy((prevCounter) => {
                 counter = prevCounter
                 return prevCounter + incremento});
@@ -428,11 +424,11 @@ const Maze2Component = ({lab,setPhase,setScore}) => {
                     })
                     setVidas(vidas-1);
                     clearInterval(intervalRef.current);
-                    intervalRef.current = null;
+                    
                     return
                 }
                 clearInterval(intervalRef.current);
-                intervalRef.current = null;
+                
             }
             
            
@@ -450,6 +446,7 @@ const cbdown = (event)=>{
         ArrowDown: () => {startCounterY(0.2)},
         ArrowUp: () => {startCounterY(-0.2)}
     }
+    
     option[event.code]()
 }
 const cbup = (event)=>{

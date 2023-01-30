@@ -83,6 +83,7 @@ import Ex104 from "./ex104/ex104"
 import Ex89 from "./ex89/ex89"
 import Ex105 from "./ex105/ex105"
 import Ex27 from "./ex27/ex27"
+import Ex63 from "./ex63/ex63"
 
 export default function RouterActivity({ idExercise }){
 
@@ -173,6 +174,7 @@ export default function RouterActivity({ idExercise }){
             {idExercise === 89 && <Ex89 />}
             {idExercise === 105 && <Ex105/>}
             {idExercise === 27 && <Ex27 />}
+            {idExercise === 63 && <Ex63 />}
 
         </>
     )

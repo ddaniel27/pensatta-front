@@ -1,0 +1,66 @@
+.droppable-area{
+    width:180px;
+    height:90px;
+    background-color: #1312123a;
+    border-radius: 20px;
+    margin:20px;
+}
+.droppable-area2{
+    width:180px;
+    height:90px;
+    background-color: #fff8f800;
+    border-radius: 20px;
+    margin:20px;
+}
+.dnd-all-columns-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.card-question{ 
+    width:180px;
+    height:90px;
+    background: #3FDFE9;
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 10px;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #333333;
+    font-weight: bold;
+    
+}
+.answers-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #4F4F4F;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.answers-container .droppable-area{
+    margin: 10px;
+}
+.answers-container .droppable-area2{
+    margin: 10px;
+}
+.card-true{
+    background-color: #69E485;
+}
+.card-grey{
+    background-color: #BDBDBD;
+}
+.card-red{
+    background-color: #FF7171;
+}
+.game-container{
+    display: flex;
+    justify-content: center;
+    margin:10px;
+}
+.answers-container img{
+    padding: 5px;
+}

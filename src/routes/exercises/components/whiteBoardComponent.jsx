@@ -390,7 +390,7 @@ function resizeCanvas(canvas, whiteboard) {
   };
 }
 
-const WhiteboardComponent = ({ aspectRatio = 4 / 3 }) => {
+const WhiteboardComponent = ({ aspectRatio = 4 / 3 ,setPhase}) => {
   const [canvas, setCanvas] = useState(null);
   const [brushWidth, setBrushWidth] = useState(5);
   const [isFill, setIsFill] = useState(false);
@@ -482,6 +482,7 @@ const WhiteboardComponent = ({ aspectRatio = 4 / 3 }) => {
   }
 
   return (
+    <>
     <div className={styles["game-container"]}>
         <div ref={whiteboardRef} className={styles.whiteboard}>      
             <div className={styles["canvas-area"]}>
@@ -566,7 +567,8 @@ const WhiteboardComponent = ({ aspectRatio = 4 / 3 }) => {
         </div>
         </div>
     </div>
-    
+     <button onClick={()=>setPhase("end")}>SIGUIENTE</button>
+    </>
   );
 };
 

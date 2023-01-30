@@ -14,11 +14,11 @@
     "fabric": "^5.3.0",
     "file-saver": "^2.0.5",
     "lottie-web": "^5.9.4",
-    "react": "^18.2.0",
+    "react": "^17.0.2",
     "react-beautiful-dnd": "^13.1.0",
     "react-chartjs-2": "^4.2.0",
     "react-dnd": "^16.0.1",
-    "react-dom": "^18.2.0",
+    "react-dom": "^17.0.2",
     "react-game-snake": "^1.0.4",
     "react-gesture-responder": "^2.1.0",
     "react-grid-dnd": "^2.1.2",
@@ -30,8 +30,8 @@
     "vite-plugin-shim-react-pdf": "^1.0.7"
   },
   "devDependencies": {
-    "@types/react": "^18.0.27",
-    "@types/react-dom": "^18.0.10",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.2",
     "@vitejs/plugin-react": "^3.0.1",
     "sass": "^1.57.1",
     "vite": "^4.0.4"

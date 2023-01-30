@@ -4,7 +4,7 @@ import enemigo from "/images/exercises/09/enemigo.svg"
 
 const Enemigos = ({positions}) =>{
     
-    const canvas = positions.map( position => {
+    const canvas = positions.map( (position,index) => {
         const enemiedraw = {
             position:"absolute",
             top : `${position.y}%`,
@@ -13,7 +13,7 @@ const Enemigos = ({positions}) =>{
             height : `5%`          
         };
 
-         return <img src={enemigo} alt="enemigo" style={enemiedraw}/>
+         return <img key={`enemie-${index}`} src={enemigo} alt="enemigo" style={enemiedraw}/>
 })
 
 return(
