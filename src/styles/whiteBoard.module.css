@@ -1,0 +1,115 @@
+.canvas-area{
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.25));
+}
+.whiteboard{
+    width: 650px;
+}
+.game-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    margin:20px;
+}
+.toolbar{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap:10px;
+    align-items: center;
+    justify-items: center;
+}
+#btn-toolbar{
+    position: relative;
+    background-color: #f2f2f2;
+    border: 3px solid #333;
+    bottom: 0;
+    right: 0;
+}
+.inputFile{
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+#btn-toolbar img{
+    width: 30px;
+}
+
+.toolbar input[type=checkbox] {
+	display:none; 
+}
+.toolbar input[type=checkbox] + label {
+	cursor: pointer;
+}
+.toolbar label{
+    font-size: 20px;
+    font-weight: bold;
+}
+.toolbar label:before {
+	content: "";
+	background: transparent;
+	border: 3px solid #333;
+	border-radius: 10px;
+	display: inline-block;
+	height: 50px;
+	margin-right: 20px;
+	text-align: center;
+	vertical-align:middle;
+	width: 50px;
+    background-color: #f2f2f2;
+    filter: drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.25));
+}
+.toolbar input[type=checkbox]:checked + label:before {
+	content: '✓';
+    font-size: 40px;
+    font-weight: bold;
+	color: #333;
+	font-family: "Times New Roman";
+}
+.toolbar input[type=range]{
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 10px; /* Specified height */
+    background: #f2f2f2; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.9; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    border: 2px solid #333;
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.25));
+
+  }
+  
+  /* Mouse-over effects */
+  .toolbar input[type=range]:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .toolbar input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 15px; /* Set a specific slider handle width */
+    height: 15px; /* Slider handle height */
+    background: #000; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 8px;
+  }
+  
+  .toolbar input[type=range]::-moz-range-thumb {
+    width: 15px; /* Set a specific slider handle width */
+    height: 15px; /* Slider handle height */
+    background: #000; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  .toolbar input[type=color]{
+    filter: drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.25));
+    border: 2px solid #333;
+    border-radius: 5px;
+
+  }
