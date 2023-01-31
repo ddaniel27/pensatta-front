@@ -7,7 +7,7 @@
   * @returns {component}
   * */
 import '../../styles/horizontalBar.css'
-export default function HorizontalBar ({ label = '', valueGreen = 0.15, valueYellow = 0.40, valueRed = 0.45 }) {
+export default function HorizontalBar ({ label = '', valueGreen = 0.34, valueYellow = 0.33, valueRed = 0.33 }) {
   return (
     <div className='HorizontalBar'>
       <div className='HorizontalBar__label'>{label}</div>
