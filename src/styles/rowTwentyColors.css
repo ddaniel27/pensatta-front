@@ -1,0 +1,44 @@
+.RowTwentyColors {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 100%;
+  align-items: center;
+  border-top: 1px solid #828282;
+  border-bottom: 1px solid #828282;
+}
+
+.RowTwentyColors .RowTwentyColors__label {
+  text-align: left;
+  color: #00635D;
+  font-weight: 500;
+}
+
+
+.RowTwentyColors .RowTwentyColors__list {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.RowTwentyColors .RowTwentyColors__list .RowTwentyColors__item {
+  background-color: #4F4F4F;
+  text-align: center;
+  color: #828282;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.RowTwentyColors .RowTwentyColors__list .RowTwentyColorsRed {
+  background-color: #F87777;
+  color: #000;
+}
+
+.RowTwentyColors .RowTwentyColors__list .RowTwentyColorsYellow {
+  background-color: #EDCA71;
+  color: #000;
+}
+
+.RowTwentyColors .RowTwentyColors__list .RowTwentyColorsGreen {
+  background-color: #69E485;
+  color: #000;
+}
