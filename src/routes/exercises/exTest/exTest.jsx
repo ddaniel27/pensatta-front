@@ -1,6 +1,7 @@
-import HorizontalBar from '../../components/horizontalBar'
-import GradeInfoCard from '../../components/gradeInfoCard'
-import RowTwentyColors from '../../components/rowTwentyColors'
+// import HorizontalBar from '../../components/horizontalBar'
+// import GradeInfoCard from '../../components/gradeInfoCard'
+// import RowTwentyColors from '../../components/rowTwentyColors'
+import TableManageCourse from '../../components/tableManageCourse'
 // import data from './data.json'
 
 export default function ExTest () {
@@ -24,9 +25,7 @@ export default function ExTest () {
   ]
   return (
     <>
-      <HorizontalBar label='Hola' />
-      <GradeInfoCard title='Grado sexto' lista={listaGrados} />
-      <RowTwentyColors label='User1' list={[0.4, 0.65, 0.85]} />
+      <TableManageCourse />
     </>
   )
 }
