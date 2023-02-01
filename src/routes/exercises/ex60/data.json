@@ -86,10 +86,10 @@
             "value": 1
         }
     },
-    "initMessages":[
+    "game": { "1": {"initMessages":[
         "Selecciona los bloques y forma una torre. La plataforma tiene un espacio de memoria de 300 MB.",
         "Cada bloque pesa 50 MB. Si excedes la capacidad de memoria, la instrucción no podrá ser ejecutada. "
-    ],
+    ]}},
     "path": "12",
     "color": "#1B6893",
     "name": "Desborde de memoria",
