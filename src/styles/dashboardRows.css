@@ -1,0 +1,39 @@
+.DashboardRows {
+  display: grid;
+  grid-template-columns: 70%;
+  grid-template-rows: 7% 60% 20% 9%;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.DashboardRows .RowsGrid {
+  min-width: 750px;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.DashboardRows .DashboardRows__footer {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  align-items: center;
+  justify-items: center;
+  gap: 3%;
+}
+
+.DashboardRows .DashboardRows__footer .pie-container {
+  justify-self: end;
+  width: 50%;
+  height: 100%;
+}
+
+.DashboardRows .DashboardRows__footer .pie-container:last-child {
+  justify-self: start;
+}

@@ -1,0 +1,131 @@
+.TableManageCourse {
+  width: 90%;
+  height: 90%;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 90%;
+  padding: 10px 20px;
+}
+
+.TableManageCourse .TableManageCourse__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #008E86;
+  margin-bottom: 10px;
+}
+
+.TableManageCourse .TableManageCourse__title .TableManageCourse__button {
+  background-color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 1px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+.TableManageCourse .TableManageCourse__title .TableManageCourse__button:active {
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+  transform: translateY(3px);
+}
+
+.TableManageCourse .TableManageCourse__container {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* Style every course table */
+
+.CourseInfo {
+  width: 100%;
+  height: 75%;
+  display: grid;
+  grid-template-columns: 10% 90%;
+  grid-template-rows: 100%;
+  border-top: 1px solid #ccc;
+  padding-top: 5px;
+}
+
+.CourseInfo input {
+  display: none;
+}
+
+.CourseInfo.hiddeCourseInfo {
+  height: auto;
+}
+
+.CourseInfo .CourseInfo__title {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  color: #4F4F4F;
+  font-weight: 700;
+  cursor: pointer;
+}
+.CourseInfo input:checked + .CourseInfo__title {
+  color: #008E86;
+}
+
+.CourseInfo .CourseInfo__container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 8% 92%;
+  height: 100%;
+  width: 100%;
+}
+
+.CourseInfo .CourseInfo__container .CourseInfo__header {
+  display: flex;
+  justify-content: space-between;
+  color: #008E86;
+  font-weight: 700;
+  height: 100%;
+  padding-top: 6px;
+}
+
+.CourseInfo .CourseInfo__container .CourseInfo__header .CourseInfo__teacher_group {
+  display: flex;
+  gap: 20px;
+}
+.CourseInfo .CourseInfo__container .CourseInfo__header .CourseInfo__teacher_group .CourseInfo__header__Teacher {
+  color: #4F4F4F;
+}
+.CourseInfo .CourseInfo__container .CourseInfo__header .CourseInfo__teacher_group .CourseInfo__header__Reasign {
+  cursor: pointer;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.CourseInfo .CourseInfo__container .CourseInfo__body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.CourseInfo .CourseInfo__container .CourseInfo__body .CourseInfo__body__row {
+  display: grid;
+  grid-template-columns: 30% 50% 20%;
+  grid-template-rows: 100%;
+  width: 100%;
+  height: 10%;
+  min-height: 40px;
+  color: #008E86;
+  border-top: 1px solid #ccc;
+  align-items: center;
+}
+.CourseInfo .CourseInfo__container .CourseInfo__body .CourseInfo__body__row .CourseInfo__body__row__repass {
+  font-weight: 700;
+  cursor: pointer;
+}
+.CourseInfo .CourseInfo__container .CourseInfo__body .CourseInfo__body__row .CourseInfo__body__row__delete {
+  font-weight: 700;
+  color: #F97D61;
+  justify-self: end;
+  cursor: pointer;
+}

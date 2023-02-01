@@ -1,0 +1,45 @@
+.HorizontalBar {
+  height: 40px;
+  border: 1px solid #000;
+  border-radius: 30px;
+  width: 100%;
+  background-color: transparent;
+  display:grid;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: 100%;
+  align-items: center;
+  justify-items: center;
+}
+
+.HorizontalBar .HorizontalBar__label {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.HorizontalBar .HorizontalBar__bar {
+  height: 100%;
+  border-radius: 30px;
+  background-color: #fff;
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+  display: flex;
+}
+.HorizontalBar .HorizontalBar__bar * {
+  height: 100%;
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+.HorizontalBar .HorizontalBar__bar .HorizontalBar__bar__green {
+  background-color: #69E485;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.HorizontalBar .HorizontalBar__bar .HorizontalBar__bar__yellow {
+  background-color: #EDCA71;
+}
+.HorizontalBar .HorizontalBar__bar .HorizontalBar__bar__red {
+  background-color: #F87777;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
