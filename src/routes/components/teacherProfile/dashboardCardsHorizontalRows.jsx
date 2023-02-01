@@ -1,4 +1,4 @@
-import HorizontalBar from '../horizontalBar'
+import CardHorizontalRow from '../CardHorizontalRow'
 import FooterTeacherCoordinatorView from '../footerTeacherCoordinatorView'
 import '../../../styles/dashboardCardsHorizontalRows.css'
 
@@ -7,32 +7,12 @@ export default function DashboardCardsHorizontalRows ({ cards = defaultData }) {
     <div className='DashboardCardsHorizontalRows'>
       <div className='DashboardCardsHorizontalRows__container'>
         {cards.map((item, index) => (
-          <CardHorizontalRow key={index} {...item} />
+          <div className='DashboardCardsHorizontalRows__container__card' key={index}>
+            <CardHorizontalRow key={index} {...item} />
+          </div>
         ))}
       </div>
       <FooterTeacherCoordinatorView />
-    </div>
-  )
-}
-
-function CardHorizontalRow ({ title = 'Grado', average = 5, rows = [] }) {
-  return (
-    <div className='CardHorizontalRow'>
-      <div className='CardHorizontalRow__title'>
-        <div className='CardHorizontalRow__title__text'>{title}</div>
-        <div className='CardHorizontalRow__title__average'>Unidad promedio: {average}</div>
-      </div>
-      <HorizontalBarGrid data={rows} />
-    </div>
-  )
-}
-
-function HorizontalBarGrid ({ data }) {
-  return (
-    <div className='HorizontalBarGrid'>
-      {data.map((item, index) => (
-        <HorizontalBar key={index} {...item} />
-      ))}
     </div>
   )
 }
