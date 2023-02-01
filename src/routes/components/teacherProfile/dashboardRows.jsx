@@ -1,11 +1,19 @@
 import RowTwentyColors from '../rowTwentyColors'
 import PieChart from './pieChart'
+import leftArrow from '../../../../public/images/AuxButtons/left_Default.svg'
 import '../../../styles/dashboardRows.css'
 
-export default function DashboardRows () {
+export default function DashboardRows ({ title = 'Grado', grade = '6 A', average = 5, data = defaultData }) {
   return (
     <div className='DashboardRows'>
-      <div className='DashboardRows__header' />
+      <div className='DashboardRows__header'>
+        <div className='DashboardRows__header__group'>
+          <img src={leftArrow} alt='left arrow' />
+          <div className='DashboardRows__header__title'>{title}</div>
+          <div className='DashboardRows__header__id'>{grade}</div>
+        </div>
+        <div className='DashboardRows__header__average'>Unidad promedio: {average}</div>
+      </div>
       <RowsGrid students={data} />
       <div className='DashboardRows__footer'>
         <PieChart pieValues={{ 0: 12, 1: 15, 2: 20 }} />
@@ -33,7 +41,7 @@ function RowsGrid ({ students = [] }) {
   )
 }
 
-const data = [
+const defaultData = [
   {
     name: 'Juan',
     list: [0.1, 0.6, 0.83, 0.4, 0.9, 0.9, 0.8]
