@@ -1,13 +1,13 @@
 // import HorizontalBar from '../../components/horizontalBar'
-// import GradeInfoCard from '../../components/gradeInfoCard'
+import GradeInfoCard from '../../components/gradeInfoCard'
 // import TableManageCourse from '../../components/tableManageCourse'
-import DashboardStudentIndividual from '../../components/teacherProfile/dashboardHorizontalBar'
+// import DashboardStudentIndividual from '../../components/teacherProfile/dashboardMain'
 // import data from './data.json'
 
 export default function ExTest () {
   return (
     <>
-      <DashboardStudentIndividual />
+      <GradeInfoCard />
     </>
   )
 }
