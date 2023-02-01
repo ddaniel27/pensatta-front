@@ -16,6 +16,8 @@
   gap: 10px;
   justify-content: center;
   align-items: center;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .DashboardCardsHorizontalRows .DashboardCardsHorizontalRows__container .CardHorizontalRow {

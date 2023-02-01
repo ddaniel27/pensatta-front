@@ -1,6 +1,28 @@
 import '../../styles/gradeInfoCard.css'
 
-export default function GradeInfoCard ({ title = 'Grado', lista = [] }) {
+const defaultData = {
+  title: 'Grado',
+  lista: [
+    {
+      grade: '6 A',
+      teacher: 'Ramirez'
+    },
+    {
+      grade: '6 B',
+      teacher: 'Ramirez'
+    },
+    {
+      grade: '6 C',
+      teacher: 'Ramirez'
+    },
+    {
+      grade: '6 D',
+      teacher: 'Ramirez'
+    },
+  ]
+}
+
+export default function GradeInfoCard ({ title = defaultData.title, lista = defaultData.lista }) {
   return (
     <div className='GradeInfoCard'>
       <div className='GradeInfoCard__title'>
