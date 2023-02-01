@@ -25,7 +25,7 @@ ChartJS.register(
 
 export default function PieChart({ pieValues, setImgURL }){
 
-  const [ pieData, setPieData ] = useState({
+  const [pieData, setPieData] = useState({
     1: 0,
     2: 0,
     3: 0

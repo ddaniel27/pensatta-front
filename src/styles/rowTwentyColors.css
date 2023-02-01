@@ -3,14 +3,19 @@
   grid-template-columns: 20% 80%;
   grid-template-rows: 100%;
   align-items: center;
-  border-top: 1px solid #828282;
-  border-bottom: 1px solid #828282;
+  width: 100%;
 }
 
 .RowTwentyColors .RowTwentyColors__label {
   text-align: left;
   color: #00635D;
   font-weight: 500;
+  border-top: 1px solid #828282;
+  border-bottom: 1px solid #828282;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 
@@ -26,6 +31,8 @@
   color: #828282;
   font-weight: 700;
   padding: 10px;
+  border-top: 1px solid #828282;
+  border-bottom: 1px solid #828282;
 }
 
 .RowTwentyColors .RowTwentyColors__list .RowTwentyColorsRed {
