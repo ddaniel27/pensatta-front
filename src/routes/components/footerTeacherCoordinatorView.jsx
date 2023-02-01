@@ -1,9 +1,9 @@
 import '../../styles/footerTeacherCoordinatorView.css'
 
-export default function FooterTeacherCoordinatorView () {
+export default function FooterTeacherCoordinatorView ({downloadPDF=true}) {
   return (
     <div className='FooterTeacherCoordinatorView'>
-      <div className='FooterTeacherCoordinatorView__informe'>DESCARGAR INFORME DEL CURSO</div>
+      {downloadPDF?<div className='FooterTeacherCoordinatorView__informe'>DESCARGAR INFORME DEL CURSO</div>:<div></div>}
       <div className='FooterTeacherCoordinatorView__group'>
         <div className='FooterTeacherCoordinatorView__listado'>LISTADOS</div>
         <div className='FooterTeacherCoordinatorView__progreso'>PROGRESO</div>
