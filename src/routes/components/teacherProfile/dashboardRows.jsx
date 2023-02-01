@@ -3,6 +3,7 @@ import FooterTeacherCoordinator from '../footerTeacherCoordinatorView'
 import RowTwentyColors from '../rowTwentyColors'
 import PieChart from './pieChart'
 import '../../../styles/dashboardRows.css'
+import { MeanBarChart } from './meanBarChart'
 
 export default function DashboardRows ({ title = 'Grado', grade = '6 A', average = 5, data = defaultData }) {
   return (
@@ -10,7 +11,7 @@ export default function DashboardRows ({ title = 'Grado', grade = '6 A', average
       <HeaderTeacherCoordinator title={title} grade={grade} text={`Unidad promedio: ${average}`} />
       <RowsGrid students={data} />
       <div className='DashboardRows__footer'>
-        <PieChart pieValues={{ 0: 12, 1: 15, 2: 20 }} />
+        <MeanBarChart />
         <PieChart pieValues={{ 0: 12, 1: 15, 2: 20 }} />
       </div>
       <FooterTeacherCoordinator />

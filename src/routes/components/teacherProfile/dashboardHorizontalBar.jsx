@@ -2,6 +2,7 @@ import HeaderTeacherCoordinator from '../headerTeacherCoordinatorView'
 import FooterTeacherCoordinator from '../footerTeacherCoordinatorView'
 import HorizontalBar from '../horizontalBar'
 import PieChart from './pieChart'
+import { MeanBarChart } from './meanBarChart'
 import '../../../styles/dashboardHorizontalBar.css'
 
 export default function DashboardHorizontalBar ({ title = 'Grado', average = '5', data = defaultData }) {
@@ -10,7 +11,7 @@ export default function DashboardHorizontalBar ({ title = 'Grado', average = '5'
       <HeaderTeacherCoordinator title='' grade={title} text={`Unidad promedio: ${average}`} />
       <HorizontalBarGrid data={data} />
       <div className='DashboardRows__footer'>
-        <PieChart pieValues={{ 0: 12, 1: 15, 2: 20 }} />
+        <MeanBarChart/>
         <PieChart pieValues={{ 0: 12, 1: 15, 2: 20 }} />
       </div>
       <FooterTeacherCoordinator />

@@ -15,7 +15,7 @@ export default function DashboardStudentIndividual ({ title = 'Grado', grade = '
       <div className='DashboardStudentIndividual__graphs'>
         <Spider />
         <div className='DashboardStudentIndividual__graphs__group'>
-          <PieChart pieValues={{ 0: 12, 1: 15, 2: 20 }} />
+          <MeanBarChart />
           <PieChart pieValues={{ 0: 12, 1: 15, 2: 20 }} />
         </div>
       </div>
