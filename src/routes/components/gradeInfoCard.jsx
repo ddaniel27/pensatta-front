@@ -1,4 +1,4 @@
-import '../../styles/gradeInfoCard.css'
+import styles from '../../styles/gradeInfoCard.module.css'
 
 const defaultData = {
   title: 'Grado',
@@ -24,15 +24,15 @@ const defaultData = {
 
 export default function GradeInfoCard ({ title = defaultData.title, lista = defaultData.lista }) {
   return (
-    <div className='GradeInfoCard'>
-      <div className='GradeInfoCard__title'>
+    <div className={styles['grade-info-card']}>
+      <div className={styles['grade-info-card-title']}>
         <h2>{title}</h2>
       </div>
-      <div className='GradeInfoCard__list'>
+      <div className={styles['grade-info-card-list']}>
         {lista.map((item, index) => (
-          <div className='GradeInfoCard__item' key={index}>
-            <span className='GradeInfoCard__item__title'>{item.grade}</span>
-            <span className='GradeInfoCard__item__value'>Docente: {item.teacher}</span>
+          <div className={styles['grade-info-card-item']} key={index}>
+            <span className={styles['grade-info-card-item-title']}>{item.grade}</span>
+            <span className={styles['grade-info-card-item-value']}>Docente: {item.teacher}</span>
           </div>
         ))}
       </div>

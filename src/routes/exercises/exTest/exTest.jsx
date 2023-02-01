@@ -4,11 +4,12 @@
 import DashboardStudentIndividual from '../../components/teacherProfile/dashboardMain'
 // import DashboardStudentIndividual from '../../components/teacherProfile/dashboardCardsHorizontalRows'
 // import data from './data.json'
+import DashboardListGrades from '../../components/teacherProfile/dashboardListGrades'
 
 export default function ExTest () {
   return (
     <>
-      <DashboardStudentIndividual />
+      <DashboardListGrades />
     </>
   )
 }

@@ -1,27 +1,27 @@
-.GradeInfoCard {
+.grade-info-card {
   background-color: #fff;
   border-radius: 20px;
   padding: 30px 20px 10px 20px;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 25% 75%;
-  width: 100%;
+  width: 45%;
   height: 300px;
 }
 
-.GradeInfoCard .GradeInfoCard__title {
+.grade-info-card .grade-info-card-title {
   font-weight: 700;
   color: #008E86;
 }
 
-.GradeInfoCard .GradeInfoCard__list {
+.grade-info-card .grade-info-card-list {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
 }
 
-.GradeInfoCard .GradeInfoCard__list .GradeInfoCard__item {
+.grade-info-card .grade-info-card-list .grade-info-card-item {
   display: grid;
   grid-template-columns: 30% 70%;
   grid-template-rows: 100%;
@@ -31,6 +31,6 @@
   padding: 15px 0;
 }
 
-.GradeInfoCard .GradeInfoCard__list .GradeInfoCard__item .GradeInfoCard__item__title {
+.grade-info-card .grade-info-card-list .grade-info-card-item .grade-info-card-item-title {
   justify-self: center;
 }
