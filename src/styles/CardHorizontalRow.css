@@ -4,6 +4,9 @@
   background-color: #fff;
   padding: 20px 10px 10px 10px;
   border-radius: 20px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 80% 5%;
 }
 .CardHorizontalRow .CardHorizontalRow__title {
   display: flex;
