@@ -1,0 +1,49 @@
+.HeaderMainTeacherCoordinator {
+  display: grid;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+}
+
+.HeaderMainTeacherCoordinator .HeaderMainTeacherCoordinator__group {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: 100%;
+  align-items: center;
+  gap: 10px;
+}
+
+.HeaderMainTeacherCoordinator .HeaderMainTeacherCoordinator__group .HeaderMainTeacherCoordinator__group--logo {
+  aspect-ratio: 1/1;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #4F4F4F;
+}
+
+
+.HeaderMainTeacherCoordinator .HeaderMainTeacherCoordinator__group .HeaderMainTeacherCoordinator__group--title {
+  color: #008E86;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  gap: 10px;
+}
+.HeaderMainTeacherCoordinator .HeaderMainTeacherCoordinator__group .HeaderMainTeacherCoordinator__group--title p {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.HeaderMainTeacherCoordinator .HeaderMainTeacherCoordinator__pencil {
+  justify-self: end;
+}
+
+.HeaderMainTeacherCoordinator .HeaderMainTeacherCoordinator__pencil img {
+  width: 35px;
+  height: 35px;
+}

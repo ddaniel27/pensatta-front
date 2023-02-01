@@ -1,0 +1,12 @@
+.DashboardMain {
+  display: grid;
+  grid-template-columns: 70%;
+  grid-template-rows: 10% 70% 10%;
+  gap: 10px;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
