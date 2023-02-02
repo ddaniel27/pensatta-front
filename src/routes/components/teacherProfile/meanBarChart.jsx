@@ -23,7 +23,13 @@ export const options = {
   plugins: {
     title: {
       display: true,
-      text: 'Brechas frente a la media'
+      text: 'Brechas frente a la media',
+      color: '#000',
+      font: {
+        size: 16,
+        weight: 'bold',
+        family: 'Montserrat'
+      }
     },
     legend: {
       display: false
@@ -34,15 +40,16 @@ export const options = {
       stacked: true
     },
     y: {
-      stacked: true
+      stacked: true,
+      display: false
     }
   },
   layout: {
     padding: {
       top: 0,
       bottom: 0,
-      left: 0,
-      right: 25
+      left: 20,
+      right: 20
     }
   },
   responsive: true,
