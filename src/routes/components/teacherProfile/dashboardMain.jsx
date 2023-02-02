@@ -4,6 +4,7 @@ import CardHorizontalRow from '../CardHorizontalRow'
 import PieChart from './pieChart'
 import pencil from '../../../../public/images/Atomo_Icono_Editar.svg'
 import '../../../styles/dashboardMain.css'
+import { MeanBarChart } from './meanBarChart'
 
 export default function DashboardMain () {
   return (
@@ -13,7 +14,7 @@ export default function DashboardMain () {
         <CardHorizontalRow {...defaultData} />
         <div className='DashboardMain__content__group'>
           <div className='DashboardMain__content__group__graphs'>
-            <PieChart pieValues={{ 0: 12, 1: 15, 2: 20 }} />
+            <MeanBarChart />
             <PieChart pieValues={{ 0: 12, 1: 15, 2: 20 }} />
           </div>
           <div className='DashboardMain__content__group__buttons'>

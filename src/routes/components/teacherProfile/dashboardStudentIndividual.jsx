@@ -4,6 +4,7 @@ import RowTwentyColors from '../rowTwentyColors'
 import PieChart from './pieChart'
 import Spider from './spider'
 import '../../../styles/dashboardStudentIndividual.css'
+import { MeanBarChart } from './meanBarChart'
 
 export default function DashboardStudentIndividual ({ title = 'Grado', grade = '6 A', current = 11 }) {
   return (

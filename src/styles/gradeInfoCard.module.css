@@ -10,8 +10,13 @@
 }
 
 .grade-info-card .grade-info-card-title {
+  display: flex;
+  justify-content: space-between;
   font-weight: 700;
   color: #008E86;
+}
+.grade-info-card .grade-info-card-title img{
+  height: 40%;
 }
 
 .grade-info-card .grade-info-card-list {

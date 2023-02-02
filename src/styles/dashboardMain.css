@@ -55,14 +55,20 @@
 }
 
 .DashboardMain__content__group__buttons__pdf {
+  display:flex;
   border: 5px solid #008E86;
   border-radius: 30px;
   color: #008E86;
   font-weight: 700;
   cursor: pointer;
   width: 90%;
+  height: 50%;
   text-align: center;
   padding: 5px 0;
+  margin:5px;
+  font-size: 80%;
+  justify-content: center;
+  align-items: center;
 }
 
 .DashboardMain__content__group__buttons__teachers {

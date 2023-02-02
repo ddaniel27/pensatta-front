@@ -11,7 +11,9 @@ export default function DashboardRows ({ title = 'Grado', grade = '6 A', average
       <HeaderTeacherCoordinator title={title} grade={grade} text={`Unidad promedio: ${average}`} />
       <RowsGrid students={data} />
       <div className='DashboardRows__footer'>
-        <MeanBarChart />
+        <div className='DashboardRows__footer__meanChart'>
+          <MeanBarChart />
+        </div>
         <PieChart pieValues={{ 0: 12, 1: 15, 2: 20 }} />
       </div>
       <FooterTeacherCoordinator />

@@ -1,7 +1,7 @@
 .DashboardRows {
   display: grid;
   grid-template-columns: 70%;
-  grid-template-rows: 7% 60% 20% 9%;
+  grid-template-rows: 7% 50% 28% 11%;
   width: 100%;
   height: 100%;
   align-items: center;
@@ -26,6 +26,11 @@
   align-items: center;
   justify-items: center;
   gap: 3%;
+}
+.DashboardRows .DashboardRows__footer .DashboardRows__footer__meanChart{
+  display: flex;
+  justify-content: flex-end;
+  width: 70%;
 }
 
 .DashboardRows .DashboardRows__footer .pie-container {

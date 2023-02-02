@@ -9,6 +9,7 @@ import {
   Legend,
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
+import '../../../styles/charts.css'
 
 
 ChartJS.register(
@@ -26,6 +27,9 @@ export const options = {
       display: true,
       text: 'Brechas frente a la media',
     },
+    legend:{
+      display: false
+    }
   },
   responsive: true,
   scales: {
@@ -36,6 +40,8 @@ export const options = {
       stacked: true,
     },
   },
+  aspectRatio: 1,
+  maintainAspectRatio: false,
 };
 
 const labels = ['aprop1', 'aprop2', 'aprop3', 'aprop4', 'aprop5', 'aprop6'];
@@ -72,7 +78,7 @@ export const data = {
 };
 
 export function MeanBarChart({dataValues= data}) {
-  return <div>
+  return <div className='chart-container'>
           <Bar options={options} data={dataValues} />
         </div>;
 }
