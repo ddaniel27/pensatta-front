@@ -27,18 +27,15 @@
   justify-items: center;
   gap: 3%;
 }
-.DashboardRows .DashboardRows__footer .DashboardRows__footer__meanChart{
-  display: flex;
-  justify-content: flex-end;
-  width: 70%;
-}
 
 .DashboardRows .DashboardRows__footer .pie-container {
-  justify-self: end;
+  justify-self: start;
   width: 50%;
   height: 100%;
 }
 
-.DashboardRows .DashboardRows__footer .pie-container:last-child {
-  justify-self: start;
+.DashboardRows .DashboardRows__footer .bar-container {
+  justify-self: end;
+  width: 50%;
+  height: 100%;
 }

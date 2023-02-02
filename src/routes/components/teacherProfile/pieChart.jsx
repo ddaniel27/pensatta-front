@@ -1,38 +1,35 @@
 import { useEffect, useState } from 'react'
 import { Doughnut } from 'react-chartjs-2'
 import '../../../styles/charts.css'
-import { 
-    Chart as ChartJS,
-    RadialLinearScale,
-    PointElement,
-    LineElement,
-    Filler,
-    Tooltip,
-    Legend,
-    ArcElement
+import {
+  Chart as ChartJS,
+  RadialLinearScale,
+  PointElement,
+  LineElement,
+  Filler,
+  Tooltip,
+  Legend,
+  ArcElement
 } from 'chart.js'
 ChartJS.register(
-    RadialLinearScale,
-    PointElement,
-    LineElement,
-    Filler,
-    Tooltip,
-    Legend,
-    ArcElement
+  RadialLinearScale,
+  PointElement,
+  LineElement,
+  Filler,
+  Tooltip,
+  Legend,
+  ArcElement
 )
 
-
-
-export default function PieChart({ pieValues, setImgURL }){
-
+export default function PieChart ({ pieValues, setImgURL }) {
   const [pieData, setPieData] = useState({
     1: 0,
     2: 0,
     3: 0
   })
 
-  useEffect(()=>{
-    if(pieValues){
+  useEffect(() => {
+    if (pieValues) {
       Object.keys(pieValues).forEach(key => {
         setPieData(prevData => (
           {
@@ -65,19 +62,19 @@ export default function PieChart({ pieValues, setImgURL }){
   }
   const options = {
     animation: {
-      onComplete: ({chart}) => {
-        if(setImgURL){
+      onComplete: ({ chart }) => {
+        if (setImgURL) {
           setImgURL(chart.toBase64Image())
         }
       }
     },
     maintainAspectRatio: false,
     plugins: {
-      legend:{
+      legend: {
         position: 'bottom',
         labels: {
           color: '#000',
-          font:{
+          font: {
             size: 16,
             weight: 'bold',
             family: 'Montserrat'
@@ -86,7 +83,7 @@ export default function PieChart({ pieValues, setImgURL }){
       }
     }
   }
-  return(
+  return (
     <div className='chart-container pie-container'>
       <Doughnut data={data} options={options} />
     </div>
