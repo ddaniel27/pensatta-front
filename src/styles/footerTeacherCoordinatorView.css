@@ -33,6 +33,7 @@
   font-weight: 700;
   cursor: pointer;
   transition: all 0.2s ease;
+  text-align: center;
 }
 
 .FooterTeacherCoordinatorView .FooterTeacherCoordinatorView__group div:active {
@@ -48,4 +49,28 @@
 .FooterTeacherCoordinatorView .FooterTeacherCoordinatorView__perfil {
   background-color: #00D8CC;
   color: #00635D;
+}
+
+@media (max-width: 720px) {
+  .FooterTeacherCoordinatorView {
+    grid-template-columns: 100%;
+    grid-template-rows: 33% 66%;
+    justify-items: center;
+  }
+  .FooterTeacherCoordinatorView .FooterTeacherCoordinatorView__group {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    justify-items: center;
+    align-items: center;
+    gap: 0px;
+  }
+
+  .FooterTeacherCoordinatorView .FooterTeacherCoordinatorView__group div {
+    width: 95%;
+  }
+
+  .FooterTeacherCoordinatorView .FooterTeacherCoordinatorView__perfil {
+    grid-column: 1/3;
+  }
 }

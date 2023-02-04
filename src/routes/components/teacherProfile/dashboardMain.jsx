@@ -6,12 +6,12 @@ import pencil from '../../../../public/images/Atomo_Icono_Editar.svg'
 import '../../../styles/dashboardMain.css'
 import { MeanBarChart } from './meanBarChart'
 
-export default function DashboardMain () {
+export default function DashboardMain ({ data = defaultData }) {
   return (
     <div className='DashboardMain'>
       <HeaderMain />
       <div className='DashboardMain__content'>
-        <CardHorizontalRow {...defaultData} />
+        <CardHorizontalRow {...data} />
         <div className='DashboardMain__content__group'>
           <div className='DashboardMain__content__group__graphs'>
             <MeanBarChart />

@@ -47,3 +47,17 @@
   width: 35px;
   height: 35px;
 }
+
+
+@media (max-width: 720px) {
+  .HeaderMainTeacherCoordinator {
+    grid-template-columns: 80% 20%;
+  }
+
+  .HeaderMainTeacherCoordinator .HeaderMainTeacherCoordinator__group {
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100%;
+    align-items: center;
+    gap: 10px;
+  }
+}
