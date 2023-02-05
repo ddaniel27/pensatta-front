@@ -39,3 +39,9 @@
 .grade-info-card .grade-info-card-list .grade-info-card-item .grade-info-card-item-title {
   justify-self: center;
 }
+
+@media (max-width: 720px) {
+  .grade-info-card {
+    width: 100%;
+  }
+}

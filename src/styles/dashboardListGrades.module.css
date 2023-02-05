@@ -20,6 +20,7 @@
 .header-container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     color: #008E86;
     font-weight: bold;
     font-size: 30px;
@@ -50,3 +51,16 @@
     filter: none;
 }
 
+@media (max-width: 720px) {
+  .dashboard-list-grades {
+    overflow-y: auto;
+    overflow-x: hidden;
+    gap: 0px;
+    padding: 0px;
+    grid-template-rows: 12% 58% 30%;
+  }
+
+  .dashboard-list-grades .list-grades-container {
+    height: 115%;
+  }
+}

@@ -19,7 +19,7 @@ const defaultData = {
     {
       grade: '6 D',
       teacher: 'Ramirez'
-    },
+    }
   ]
 }
 
@@ -28,7 +28,7 @@ export default function GradeInfoCard ({ title = defaultData.title, lista = defa
     <div className={styles['grade-info-card']}>
       <div className={styles['grade-info-card-title']}>
         <h2>{title}</h2>
-        <img src={pencil} alt="pencil"/>
+        <img src={pencil} alt='pencil' />
       </div>
       <div className={styles['grade-info-card-list']}>
         {lista.map((item, index) => (
