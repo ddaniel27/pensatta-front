@@ -33,6 +33,7 @@
   padding: 10px;
   border-top: 1px solid #828282;
   border-bottom: 1px solid #828282;
+  font-size: 1rem;
 }
 
 .RowTwentyColors .RowTwentyColors__list .RowTwentyColorsRed {
@@ -48,4 +49,23 @@
 .RowTwentyColors .RowTwentyColors__list .RowTwentyColorsGreen {
   background-color: #69E485;
   color: #000;
+}
+
+@media (max-width: 720px) {
+  .RowTwentyColors {
+    grid-template-columns: 100%;
+  }
+
+  .RowTwentyColors .RowTwentyColors__label {
+    display: none;
+  }
+
+  .RowTwentyColors .RowTwentyColors__list {
+    justify-content: center;
+  }
+
+  .RowTwentyColors .RowTwentyColors__list .RowTwentyColors__item {
+    padding: 20px 2px;
+    font-size: 0.8rem;
+  }
 }

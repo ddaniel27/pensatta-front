@@ -28,3 +28,32 @@
   height: 70%;
   gap: 7%;
 }
+
+@media (max-width: 720px) {
+  .DashboardStudentIndividual {
+    overflow-y: auto;
+    overflow-x: hidden;
+    grid-template-columns: 100%;
+    grid-template-rows: 12% 12% 100% 30%;
+  }
+
+  .DashboardStudentIndividual .RowsGrid {
+    min-width: 100%;
+    padding-right: 0;
+  }
+
+  .DashboardStudentIndividual .DashboardStudentIndividual__graphs {
+    grid-template-columns: 100%;
+    grid-template-rows: 60% 40%;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .DashboardStudentIndividual .DashboardStudentIndividual__graphs .DashboardStudentIndividual__graphs__group {
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+}
