@@ -39,3 +39,15 @@
   width: 50%;
   height: 100%;
 }
+
+@media (max-width: 720px) {
+  .DashboardRows {
+    overflow-y: auto;
+    overflow-x: hidden;
+    grid-template-columns: 100%;
+    grid-template-rows: 12% 100% 30%;
+  }
+  .DashboardRows .DashboardRows__footer {
+    display: none;
+  }
+}
