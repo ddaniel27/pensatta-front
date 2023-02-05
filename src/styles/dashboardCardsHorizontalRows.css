@@ -25,3 +25,17 @@
 .DashboardCardsHorizontalRows .DashboardCardsHorizontalRows__container .DashboardCardsHorizontalRows__container__card {
   width: 40%;
 }
+
+@media (max-width: 720px) {
+  .DashboardCardsHorizontalRows {
+    overflow-y: auto;
+    overflow-x: hidden;
+    gap: 0px;
+    padding: 0px;
+    grid-template-rows: 70% 30%;
+  }
+
+  .DashboardCardsHorizontalRows .DashboardCardsHorizontalRows__container .DashboardCardsHorizontalRows__container__card {
+    width: 100%;
+  }
+}
