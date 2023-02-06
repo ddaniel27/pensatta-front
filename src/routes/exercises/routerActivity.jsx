@@ -146,6 +146,7 @@ export default function RouterActivity ({ idExercise }) {
       {idExercise === 62 && <Ex62 />}
       {idExercise === 63 && <Ex63 />}
       {idExercise === 64 && <Ex64 />}
+      {idExercise === 66 && <Ex66 />}
       {idExercise === 68 && <Ex68 />}
       {idExercise === 69 && <Ex69 />}
       {idExercise === 73 && <Ex73 />}
