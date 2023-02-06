@@ -1,0 +1,137 @@
+.DashboardMainTeacher {
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: 12% 70% 10%;
+    gap: 10px;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .DashboardMainTeacher .DashboardMainTeacher__content {
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: 55% 45%;
+    width: 45%;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    font-size: 1.4rem;
+  }
+  
+  .DashboardMainTeacher .DashboardMainTeacher__content .DashboardMainTeacher__content__group {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .DashboardMainTeacher .DashboardMainTeacher__content .DashboardMainTeacher__content__group .DashboardMainTeacher__content__group__graphs {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  
+  .DashboardMainTeacher .DashboardMainTeacher__content .DashboardMainTeacher__content__group .DashboardMainTeacher__content__group__buttons {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .DashboardMainTeacher__content__group__buttons__pdf {
+    display:flex;
+    border: 5px solid #008E86;
+    border-radius: 30px;
+    color: #008E86;
+    font-weight: 700;
+    cursor: pointer;
+    width: 90%;
+    height: 50%;
+    text-align: center;
+    padding: 5px 0;
+    margin:5px;
+    font-size: 1.1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .DashboardMainTeacher__content__group__buttons__teachers {
+    border-radius: 25px;
+    color: #008E86;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #fff;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+  }
+  
+  .DashboardMainTeacher__content__group__buttons__teachers img {
+    height: 40%;
+  }
+  
+  .DashboardMainTeacher__cards__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+  }
+  
+  
+  
+  @media (max-width: 720px) {
+    .DashboardMainTeacher {
+      overflow-y: auto;
+      overflow-x: hidden;
+      grid-template-columns: 100%;
+      grid-template-rows: 12% 150% 30%;
+      margin-top: 0;
+    }
+  
+    .DashboardMainTeacher .DashboardMainTeacher__content {
+      grid-template-columns: 100%;
+      grid-template-rows: 40% 60%;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-items: center;
+    }
+  
+    .DashboardMainTeacher .DashboardMainTeacher__content .DashboardMainTeacher__content__group {
+      grid-template-columns: 100%;
+      grid-template-rows: 60% 40%;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-items: center;
+    }
+    .DashboardMainTeacher .DashboardMainTeacher__content .DashboardMainTeacher__content__group .DashboardMainTeacher__content__group__graphs {
+      width: 100%;
+      gap: 10px;
+    }
+    .DashboardMainTeacher__content__group__buttons__teachers {
+      height: 70%;
+    }
+  }
+  

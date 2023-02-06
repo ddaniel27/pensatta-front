@@ -1,75 +1,156 @@
 import HeaderMain from '../headerMainTeacherCoordinator'
 import FooterTeacherCoordinatorView from '../footerTeacherCoordinatorView'
 import CardHorizontalRow from '../CardHorizontalRow'
-import PieChart from './pieChart'
-import pencil from '../../../../public/images/Atomo_Icono_Editar.svg'
-import '../../../styles/dashboardMain.css'
-import { MeanBarChart } from './meanBarChart'
+import PieChart from '../coordinatorProfile/pieChart'
+import styles from '../../../styles/dashboardMainTeacher.module.css'
+import { MeanBarChart } from '../coordinatorProfile/meanBarChart'
 
-export default function DashboardMain ({ data = defaultData }) {
+export default function DashboardMainTeacher ({ data = defaultData }) {
   return (
-    <div className='DashboardMain'>
-      <HeaderMain />
-      <div className='DashboardMain__content'>
-        <CardHorizontalRow {...data} />
-        <div className='DashboardMain__content__group'>
-          <div className='DashboardMain__content__group__graphs'>
-            <MeanBarChart />
-            <PieChart pieValues={{ 0: 12, 1: 15, 2: 20 }} />
-          </div>
-          <div className='DashboardMain__content__group__buttons'>
-            <div className='DashboardMain__content__group__buttons__pdf'>DESCARGAR INFORME EN PDF</div>
-            <div className='DashboardMain__content__group__buttons__teachers'>
-              <span>Listado docentes</span>
-              <img src={pencil} alt='pencil' />
-            </div>
-          </div>
-        </div>
+    <div className={styles['DashboardMainTeacher']}>
+      <HeaderMain title='Profe Ramirez' subtitle='Institucion Educativa Education Soul'/>
+      <div className={styles['DashboardMainTeacher__cards__container']}>
+        {
+            data.map(item => <GridElement data={item}/>)
+        }      
       </div>
       <FooterTeacherCoordinatorView />
     </div>
   )
 }
+function GridElement ({data}){
+    return(
+        <div className={styles['DashboardMainTeacher__content']}>
+            <CardHorizontalRow {...data} />
+            <div className={styles['DashboardMainTeacher__content__group']}>
+            <div className={styles['DashboardMainTeacher__content__group__graphs']}>
+                <MeanBarChart />
+                <PieChart pieValues={{ 0: 12, 1: 15, 2: 20 }} />
+            </div>
+            </div>
+        </div>
+    )
+}
 
-const defaultData = {
+const defaultData = [
+{
   title: 'Grado',
   average: 5,
   rows: [
     {
-      label: '6',
+      label: '6A',
       valueGreen: 0.3,
       valueYellow: 0.2,
       valueRed: 0.5
     },
     {
-      label: '7',
+      label: '6B',
       valueGreen: 0.5,
       valueYellow: 0.3,
       valueRed: 0.2
     },
     {
-      label: '8',
+      label: '6C',
       valueGreen: 0.2,
       valueYellow: 0.5,
       valueRed: 0.3
     },
     {
-      label: '9',
+      label: '6D',
       valueGreen: 0.3,
       valueYellow: 0.2,
       valueRed: 0.5
-    },
-    {
-      label: '10',
-      valueGreen: 0.34,
-      valueYellow: 0.33,
-      valueRed: 0.33
-    },
-    {
-      label: '11',
-      valueGreen: 0.2,
-      valueYellow: 0.2,
-      valueRed: 0.6
     }
   ]
-}
+},
+{
+    title: 'Grado',
+    average: 5,
+    rows: [
+      {
+        label: '7A',
+        valueGreen: 0.3,
+        valueYellow: 0.2,
+        valueRed: 0.5
+      },
+      {
+        label: '7B',
+        valueGreen: 0.5,
+        valueYellow: 0.3,
+        valueRed: 0.2
+      },
+      {
+        label: '7C',
+        valueGreen: 0.2,
+        valueYellow: 0.5,
+        valueRed: 0.3
+      },
+      {
+        label: '7D',
+        valueGreen: 0.3,
+        valueYellow: 0.2,
+        valueRed: 0.5
+      }
+    ]
+  },
+  {
+    title: 'Grado',
+    average: 5,
+    rows: [
+      {
+        label: '8A',
+        valueGreen: 0.3,
+        valueYellow: 0.2,
+        valueRed: 0.5
+      },
+      {
+        label: '8B',
+        valueGreen: 0.5,
+        valueYellow: 0.3,
+        valueRed: 0.2
+      },
+      {
+        label: '8C',
+        valueGreen: 0.2,
+        valueYellow: 0.5,
+        valueRed: 0.3
+      },
+      {
+        label: '8D',
+        valueGreen: 0.3,
+        valueYellow: 0.2,
+        valueRed: 0.5
+      }
+    ]
+  },
+  {
+    title: 'Grado',
+    average: 5,
+    rows: [
+      {
+        label: '9A',
+        valueGreen: 0.3,
+        valueYellow: 0.2,
+        valueRed: 0.5
+      },
+      {
+        label: '9B',
+        valueGreen: 0.5,
+        valueYellow: 0.3,
+        valueRed: 0.2
+      },
+      {
+        label: '9C',
+        valueGreen: 0.2,
+        valueYellow: 0.5,
+        valueRed: 0.3
+      },
+      {
+        label: '9D',
+        valueGreen: 0.3,
+        valueYellow: 0.2,
+        valueRed: 0.5
+      }
+    ]
+  }
+]

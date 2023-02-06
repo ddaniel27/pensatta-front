@@ -1,5 +1,5 @@
 import React from "react"
-import Information from "../../components/information"
+import Information from "../information"
 import ActivityContext from "../../../context/ActivityContext"
 import RouterActivity from "./routerActivity"
 import StudentProfileViewer from "./studentProfileViewer"
