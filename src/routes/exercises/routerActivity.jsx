@@ -55,6 +55,7 @@ import Ex61 from './ex61/ex61'
 import Ex62 from './ex62/ex62'
 import Ex63 from './ex63/ex63'
 import Ex64 from './ex64/ex64'
+import Ex66 from './ex66/ex66'
 import Ex68 from './ex68/ex68'
 import Ex69 from './ex69/ex69'
 import Ex73 from './ex73/ex73'
@@ -96,6 +97,7 @@ export default function RouterActivity ({ idExercise }) {
       {idExercise === 6 && <Ex06 />}
       {idExercise === 7 && <Ex07 />}
       {idExercise === 8 && <Ex08 />}
+      {idExercise === 9 && <Ex09 />}
       {idExercise === 10 && <Ex10 />}
       {idExercise === 11 && <Ex11 />}
       {idExercise === 12 && <Ex12 />}
@@ -104,14 +106,20 @@ export default function RouterActivity ({ idExercise }) {
       {idExercise === 15 && <Ex15 />}
       {idExercise === 16 && <Ex16 />}
       {idExercise === 17 && <Ex17 />}
+      {idExercise === 18 && <Ex18 />}
+      {idExercise === 19 && <Ex19 />}
+      {idExercise === 20 && <Ex20 />}
       {idExercise === 21 && <Ex21 />}
       {idExercise === 22 && <Ex22 />}
       {idExercise === 23 && <Ex23 />}
       {idExercise === 24 && <Ex24 />}
       {idExercise === 25 && <Ex25 />}
       {idExercise === 26 && <Ex26 />}
+      {idExercise === 27 && <Ex27 />}
       {idExercise === 28 && <Ex28 />}
+      {idExercise === 29 && <Ex29v2 />}
       {idExercise === 31 && <Ex31 />}
+      {idExercise === 32 && <Ex32 />}
       {idExercise === 33 && <Ex33 />}
       {idExercise === 34 && <Ex34 />}
       {idExercise === 35 && <Ex35 />}
@@ -124,6 +132,7 @@ export default function RouterActivity ({ idExercise }) {
       {idExercise === 44 && <Ex44 />}
       {idExercise === 46 && <Ex46 />}
       {idExercise === 47 && <Ex47 />}
+      {idExercise === 48 && <Ex48 />}
       {idExercise === 50 && <Ex50 />}
       {idExercise === 51 && <Ex51 />}
       {idExercise === 53 && <Ex53 />}
@@ -131,49 +140,40 @@ export default function RouterActivity ({ idExercise }) {
       {idExercise === 55 && <Ex55 />}
       {idExercise === 57 && <Ex57 />}
       {idExercise === 58 && <Ex58 />}
+      {idExercise === 59 && <Ex59 />}
+      {idExercise === 60 && <Ex60 />}
       {idExercise === 61 && <Ex61 />}
+      {idExercise === 62 && <Ex62 />}
+      {idExercise === 63 && <Ex63 />}
+      {idExercise === 64 && <Ex64 />}
       {idExercise === 68 && <Ex68 />}
       {idExercise === 69 && <Ex69 />}
+      {idExercise === 73 && <Ex73 />}
       {idExercise === 75 && <Ex75 />}
       {idExercise === 77 && <Ex77 />}
-      {idExercise === 82 && <Ex82 />}
-      {idExercise === 84 && <Ex84 />}
-      {idExercise === 86 && <Ex86 />}
-      {idExercise === 95 && <Ex95 />}
-      {idExercise === 98 && <Ex98 />}
-      {idExercise === 99 && <Ex99 />}
-      {idExercise === 101 && <Ex101 />}
-      {idExercise === 106 && <Ex106 />}
-      {idExercise === 107 && <Ex107 />}
-      {idExercise === 'test' && <ExTest />}
-      {idExercise === 9 && <Ex09 />}
-      {idExercise === 18 && <Ex18 />}
-      {idExercise === 19 && <Ex19 />}
-      {idExercise === 20 && <Ex20 />}
-      {idExercise === 87 && <Ex87 />}
-      {idExercise === 88 && <Ex88 />}
-      {idExercise === 85 && <Ex85 />}
-      {idExercise === 32 && <Ex32 />}
-      {idExercise === 48 && <Ex48 />}
-      {idExercise === 59 && <Ex59 />}
-      {idExercise === 62 && <Ex62 />}
-      {idExercise === 64 && <Ex64 />}
-      {idExercise === 29 && <Ex29v2 />}
-      {idExercise === 73 && <Ex73 />}
       {idExercise === 78 && <Ex78 />}
       {idExercise === 79 && <Ex79 />}
       {idExercise === 81 && <Ex81 />}
-      {idExercise === 103 && <Ex103 />}
-      {idExercise === 102 && <Ex102 />}
-      {idExercise === 100 && <Ex100 />}
-      {idExercise === 97 && <Ex97 />}
-      {idExercise === 60 && <Ex60 />}
-      {idExercise === 104 && <Ex104 />}
+      {idExercise === 82 && <Ex82 />}
+      {idExercise === 84 && <Ex84 />}
+      {idExercise === 85 && <Ex85 />}
+      {idExercise === 86 && <Ex86 />}
+      {idExercise === 87 && <Ex87 />}
+      {idExercise === 88 && <Ex88 />}
       {idExercise === 89 && <Ex89 />}
+      {idExercise === 95 && <Ex95 />}
+      {idExercise === 97 && <Ex97 />}
+      {idExercise === 98 && <Ex98 />}
+      {idExercise === 99 && <Ex99 />}
+      {idExercise === 100 && <Ex100 />}
+      {idExercise === 101 && <Ex101 />}
+      {idExercise === 102 && <Ex102 />}
+      {idExercise === 103 && <Ex103 />}
+      {idExercise === 104 && <Ex104 />}
       {idExercise === 105 && <Ex105 />}
-      {idExercise === 27 && <Ex27 />}
-      {idExercise === 63 && <Ex63 />}
-
+      {idExercise === 106 && <Ex106 />}
+      {idExercise === 107 && <Ex107 />}
+      {idExercise === 'test' && <ExTest />}
     </>
   )
 }
