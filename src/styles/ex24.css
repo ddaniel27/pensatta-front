@@ -36,7 +36,29 @@
     padding: 20px 40px;
     margin-top: 40px;
     text-align: center;
+}
 
+.maze-style-single .two-objects-grid-spaced {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.maze-style-single .info-box p{
+    cursor: pointer;
+    background-color: #00D8CC;
+    background-image: url('../../images/text_triangle.svg');
+    background-repeat: no-repeat;
+    background-position: 60% 50%;
+    background-size: 50%;
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    filter: drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.25));
+    transition: .2s ease-in-out;
 }
 
 
