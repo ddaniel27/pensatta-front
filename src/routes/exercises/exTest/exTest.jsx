@@ -14,7 +14,7 @@ import DashboardStudentIndividual from "../../components/teacherProfile/dashboar
 export default function ExTest () {
   return (
     <>
-      <DashboardStudentIndividual />
+      <DashboardStudentIndividual coordinator={false} />
     </>
   )
 }

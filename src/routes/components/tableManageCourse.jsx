@@ -40,7 +40,7 @@ const defaultData = [
   defaultCourseInfo
 ]
 
-export default function TableManageCourse ({ title = 'Grado', data = defaultData }) {
+export default function TableManageCourse ({ title = 'Grado', data = defaultData, coordinator = true }) {
   const [course, setCourse] = useState(false)
 
   return (
@@ -51,7 +51,7 @@ export default function TableManageCourse ({ title = 'Grado', data = defaultData
       </div>
       <div className='TableManageCourse__container'>
         {data.map((courseData, index) => (
-          <CourseInfo data={courseData} id={index} showCourses={course === `${index}`} courseSelected={setCourse} key={index} />
+          <CourseInfo data={courseData} id={index} showCourses={course === `${index}`} courseSelected={setCourse} key={index} coordinator={coordinator}/>
         ))}
       </div>
     </div>
@@ -64,7 +64,7 @@ export default function TableManageCourse ({ title = 'Grado', data = defaultData
   * @param {array} students
   **/
 
-function CourseInfo ({ data = defaultCourseInfo, showCourses = false, courseSelected = () => {}, id = 0 }) {
+function CourseInfo ({ data = defaultCourseInfo, showCourses = false, courseSelected = () => {}, id = 0, coordinator = true }) {
 
   const handleCourseSelected = ({ target }) => {
     courseSelected(target.id)
@@ -80,10 +80,10 @@ function CourseInfo ({ data = defaultCourseInfo, showCourses = false, courseSele
           <div className='CourseInfo__container'>
             <div className='CourseInfo__header'>
               <div className='CourseInfo__header__User'>Usuario</div>
-              <div className='CourseInfo__teacher_group'>
+              {coordinator&&<div className='CourseInfo__teacher_group'>
                 <div className='CourseInfo__header__Teacher'>Docente: {data.teacher}</div>
                 <div className='CourseInfo__header__Reasign'>Reasignar</div>
-              </div>
+              </div>}
             </div>
             <div className='CourseInfo__body'>
               {data.students.map((student, index) => (

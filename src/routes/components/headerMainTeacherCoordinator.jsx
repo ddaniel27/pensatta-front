@@ -1,4 +1,4 @@
-import pencil from '../../../public/images/Atomo_Icono_Editar.svg'
+import pencil from '/images/Atomo_Icono_Editar.svg'
 import '../../styles/headerMainTeacherCoordinator.css'
 
 export default function HeaderMainTeacherCoordinator ({ title = 'Coordinacion', subtitle = 'Institucion Educativa Education Soul' }) {

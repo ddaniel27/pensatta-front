@@ -23,18 +23,18 @@ const defaultData = {
   ]
 }
 
-export default function GradeInfoCard ({ title = defaultData.title, lista = defaultData.lista }) {
+export default function GradeInfoCard ({ title = defaultData.title, lista = defaultData.lista, coordinator = true}) {
   return (
     <div className={styles['grade-info-card']}>
       <div className={styles['grade-info-card-title']}>
         <h2>{title}</h2>
-        <img src={pencil} alt='pencil' />
+        {coordinator&&<img src={pencil} alt='pencil' />}
       </div>
       <div className={styles['grade-info-card-list']}>
         {lista.map((item, index) => (
           <div className={styles['grade-info-card-item']} key={index}>
             <span className={styles['grade-info-card-item-title']}>{item.grade}</span>
-            <span className={styles['grade-info-card-item-value']}>Docente: {item.teacher}</span>
+            <span className={styles['grade-info-card-item-value']}>{coordinator?`Docente: ${item.teacher}`:''}</span>
           </div>
         ))}
       </div>

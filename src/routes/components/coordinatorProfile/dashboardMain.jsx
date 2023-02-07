@@ -2,7 +2,7 @@ import HeaderMain from '../headerMainTeacherCoordinator'
 import FooterTeacherCoordinatorView from '../footerTeacherCoordinatorView'
 import CardHorizontalRow from '../CardHorizontalRow'
 import PieChart from './pieChart'
-import pencil from '../../../../public/images/Atomo_Icono_Editar.svg'
+import pencil from '/images/Atomo_Icono_Editar.svg'
 import '../../../styles/dashboardMain.css'
 import { MeanBarChart } from './meanBarChart'
 

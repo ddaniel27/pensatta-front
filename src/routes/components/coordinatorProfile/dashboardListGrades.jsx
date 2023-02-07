@@ -2,20 +2,20 @@ import FooterTeacherCoordinatorView from '../footerTeacherCoordinatorView'
 import styles from '../../../styles/dashboardListGrades.module.css'
 import GradeInfoCard from '../gradeInfoCard'
 
-export default function DashboardListGrades ({ cards = defaultData }) {
+export default function DashboardListGrades ({ cards = defaultData ,coordinator = true }) {
   return (
     <div className={styles['dashboard-list-grades']}>
       <div className={styles['header-container']}>
         <div className={styles['title-container']}>
-          Grupos
+          {coordinator?'Grupos':'Mis listados'}
         </div>
         <div className={styles['button-header-container']}>
-          <button id={styles['button-header']}>NUEVO GRUPO</button>
+          {coordinator&&<button id={styles['button-header']}>NUEVO GRUPO</button>}
         </div>
       </div>
       <div className={styles['list-grades-container']}>
         {cards.map((item, index) => (
-          <GradeInfoCard key={index} {...item} />
+          <GradeInfoCard key={index} {...item} coordinator={coordinator} />
         ))}
       </div>
       <FooterTeacherCoordinatorView downloadPDF={false} />
