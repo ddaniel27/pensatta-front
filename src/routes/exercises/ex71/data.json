@@ -1,14 +1,20 @@
 {
-    "inputs":[
-        {"text":"8 y 9", "isCorrect":[8, 9]}
+    "variations": [
+      {
+        "input": {
+          "text":"8 y 9",
+          "isCorrect":[8, 9, 1],
+          "title": "Sumar los dos valores"
+        },
+        "operators":[
+          {"text":"Sumar", "isCorrect":1},
+          {"text":"Restar", "isCorrect":2},
+          {"text":"Multiplicar", "isCorrect":3},
+          {"text":"Dividir", "isCorrect":4}
+        ]
+      }
     ],
-    "operators":[
-        {"text":"Sumar", "isCorrect":1},
-        {"text":"Restar", "isCorrect":2},
-        {"text":"Multiplicar", "isCorrect":3},
-        {"text":"Dividir", "isCorrect":4}
-    ],
-    "path":"40",
+    "path":"71",
     "initMessages":[
         "Tendrás una caja negra con una entrada y una salida.",
         "Puedes escoger valores de la lista de entradas y una función a realizar en la lista de funciones.",
@@ -16,5 +22,10 @@
     ],
     "color":"#53745B",
     "name":"Funciones",
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 1
+    },
     "id": "71"
 }
