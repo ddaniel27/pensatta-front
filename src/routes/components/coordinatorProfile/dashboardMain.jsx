@@ -6,7 +6,7 @@ import pencil from '/images/Atomo_Icono_Editar.svg'
 import '../../../styles/dashboardMain.css'
 import { MeanBarChart } from './meanBarChart'
 
-export default function DashboardMain ({ data = defaultData }) {
+export default function DashboardMain ({ data = defaultData}) {
   return (
     <div className='DashboardMain'>
       <HeaderMain />

@@ -1,13 +1,17 @@
 import CardHorizontalRow from '../CardHorizontalRow'
 import FooterTeacherCoordinatorView from '../footerTeacherCoordinatorView'
 import '../../../styles/dashboardCardsHorizontalRows.css'
+import CoordinatorContext from '../../../context/CoordinatorContext'
+import { useContext } from 'react'
 
 export default function DashboardCardsHorizontalRows ({ cards = defaultData }) {
+  const { setPhase } = useContext(CoordinatorContext)
+
   return (
     <div className='DashboardCardsHorizontalRows'>
       <div className='DashboardCardsHorizontalRows__container'>
         {cards.map((item, index) => (
-          <div className='DashboardCardsHorizontalRows__container__card' key={index}>
+          <div className='DashboardCardsHorizontalRows__container__card' key={index} onClick={()=>setPhase("horizontalBar")}>
             <CardHorizontalRow key={index} {...item} />
           </div>
         ))}

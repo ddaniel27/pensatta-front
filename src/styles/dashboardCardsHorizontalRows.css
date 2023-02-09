@@ -24,6 +24,7 @@
 
 .DashboardCardsHorizontalRows .DashboardCardsHorizontalRows__container .DashboardCardsHorizontalRows__container__card {
   width: 40%;
+  cursor: pointer;
 }
 
 @media (max-width: 720px) {

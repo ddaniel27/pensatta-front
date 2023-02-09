@@ -1,10 +1,15 @@
 import '../../styles/rowTwentyColors.css'
+import { useContext } from 'react'
+import CoordinatorContext from '../../context/CoordinatorContext'
 
 const rowList = new Array(20).fill(0)
 
 export default function RowTwentyColors ({ label = '', list = [] }) {
+
+  const { setPhase } = useContext(CoordinatorContext)
+
   return (
-    <div className='RowTwentyColors'>
+    <div className='RowTwentyColors' onClick={()=> setPhase("studentIndividual")}>
       <div className='RowTwentyColors__label'>{label}</div>
       <div className='RowTwentyColors__list'>
         {rowList.map((_item, index) => {

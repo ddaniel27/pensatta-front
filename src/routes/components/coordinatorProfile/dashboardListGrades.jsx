@@ -15,7 +15,7 @@ export default function DashboardListGrades ({ cards = defaultData ,coordinator 
       </div>
       <div className={styles['list-grades-container']}>
         {cards.map((item, index) => (
-          <GradeInfoCard key={index} {...item} coordinator={coordinator} />
+          <GradeInfoCard key={index} {...item} coordinator={coordinator}  />
         ))}
       </div>
       <FooterTeacherCoordinatorView downloadPDF={false} />

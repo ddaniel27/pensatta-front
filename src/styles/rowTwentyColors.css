@@ -4,6 +4,7 @@
   grid-template-rows: 100%;
   align-items: center;
   width: 100%;
+  cursor: pointer;
 }
 
 .RowTwentyColors .RowTwentyColors__label {
