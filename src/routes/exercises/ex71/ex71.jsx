@@ -48,38 +48,25 @@ export default function Ex40 () {
     if (operator === 4) {
       return typeof input[0] === 'number' ? (input[0] / input[1]).toFixed(3) : 'Error'
     }
-    if (operator === 5) {
-      return `${input[0]}${input[1]}`
-    }
-    if (operator === 6) {
-      return 'Vacio'
-    }
-    if (operator === 7) {
-      return `${input[0]} ${input[1]} ${input[0]} ${input[1]}`
-    }
-    if (operator === 8) {
-      return `${input[1]} ${input[0]}`
-    }
   }
 
   return (
     <NoScoringComponent initMessages={myData.initMessages} background={myData.color} title={myData.name}>
       {
-            (setPhase) => (
-              <>
-                <div className='blackbox'>
-                  <UniqueOption options={myInputs.options} uniqueName='entradas' isCorrectOption={setInputSel} />
-                  <UniqueOption options={myOperators.options} uniqueName='operador' isCorrectOption={setOperatorSel} />
-                  <div className='function'>
-                    <img src='./images/exercises/40/blackbox.svg' alt='blackbox' />
-                    <div className='message'><p>{result}</p></div>
-                  </div>
-                </div>
-                <button onClick={() => setPhase('end')}>SIGUIENTE</button>
-              </>
-            )
-        }
-
+        (setPhase) => (
+          <>
+            <div className='blackbox'>
+              <UniqueOption options={myInputs.options} uniqueName='entradas' isCorrectOption={setInputSel} />
+              <UniqueOption options={myOperators.options} uniqueName='operador' isCorrectOption={setOperatorSel} />
+              <div className='function'>
+                <img src='./images/exercises/40/blackbox.svg' alt='blackbox' />
+                <div className='message'><p>{result}</p></div>
+              </div>
+            </div>
+            <button onClick={() => setPhase('end')}>SIGUIENTE</button>
+          </>
+        )
+      }
     </NoScoringComponent>
   )
 }
