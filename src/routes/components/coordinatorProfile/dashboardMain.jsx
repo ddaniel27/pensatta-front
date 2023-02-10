@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import HeaderMain from '../headerMainTeacherCoordinator'
 import FooterTeacherCoordinatorView from '../footerTeacherCoordinatorView'
 import CardHorizontalRow from '../CardHorizontalRow'
@@ -5,11 +6,40 @@ import PieChart from './pieChart'
 import pencil from '/images/Atomo_Icono_Editar.svg'
 import '../../../styles/dashboardMain.css'
 import { MeanBarChart } from './meanBarChart'
+import { coordinacionMetricsAll } from '../../../requests'
 
-export default function DashboardMain ({ data = defaultData}) {
+export default function DashboardMain ({ data = defaultData, coordinator=true, userId}) {
+
+  const [coordinatorName, setCoordinatorName] = useState('');
+  const [coordinatorInstitution, setCoordinatorInstitution] = useState('');
+  const [metrics, setMetrics] = useState([]);
+  const [average, setAverage] = useState({});
+  const [conformedData, setConformedData] = useState(data)
+
+  useEffect(() => {
+    coordinacionMetricsAll(userId, (response)=>{
+      console.log(response)
+      setCoordinatorName(response.coordinator)
+      setCoordinatorInstitution(response.institution)
+      setMetrics(response.metrics)
+      setAverage(response.average)
+    })
+  },[])
+  
+  useEffect(()=>{
+    const title = coordinator ? 'Progreso' : 'Grado'
+    const average = 5
+    let rows = []
+    metrics.forEach((item)=>{
+      
+    })
+    console.log(metrics)
+  },[metrics])
+
+
   return (
     <div className='DashboardMain'>
-      <HeaderMain />
+      <HeaderMain title={coordinatorName} subtitle={coordinatorInstitution}/>
       <div className='DashboardMain__content'>
         <CardHorizontalRow {...data} />
         <div className='DashboardMain__content__group'>

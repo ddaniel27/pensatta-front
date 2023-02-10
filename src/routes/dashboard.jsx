@@ -4,6 +4,7 @@ import AdminView from "./components/adminView"
 import StudentView from "./components/studentView"
 import ActivityContext from "../context/ActivityContext"
 import UserContext from "../context/UserContext"
+import CoordinatorView from "./components/coordinatorProfile/coordinatorView"
 import '../styles/dashboard.css'
 
 export default function Dashboard(){
@@ -40,6 +41,10 @@ export default function Dashboard(){
                 {
                     loginUser.role.toLowerCase() === "admin" &&
                     <AdminView />
+                }
+                {
+                    loginUser.role.toLowerCase() === "coordinator" &&
+                    <CoordinatorView />
                 }
             </ActivityContext.Provider>
         </div>
