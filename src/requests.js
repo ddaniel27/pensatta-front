@@ -116,6 +116,12 @@ function coordinacionMetricsAll(coordinatorId, cb){
   .catch(error => {console.log(error)})
 }
 
+function coordinacionGrupos(coordinatorId, cb){
+  axios.get(`${URL}/coordinacion/grupos/${coordinatorId}`)
+  .then(response => {cb(response.data)})
+  .catch(error => {console.log(error)})
+}
+
 export {
   getLogin, 
   postLogin, 
@@ -128,5 +134,6 @@ export {
   getStudentsHistory, 
   getMetrics,
   getResumen,
-  coordinacionMetricsAll
+  coordinacionMetricsAll,
+  coordinacionGrupos
 }

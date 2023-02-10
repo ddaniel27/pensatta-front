@@ -57,43 +57,44 @@ export const options = {
   maintainAspectRatio: false
 }
 
-const labels = ['aprop1', 'aprop2', 'aprop3', 'aprop4', 'aprop5', 'aprop6']
+const labels = ['dim1', 'dim2', 'dim3', 'dim4', 'dim5', 'dim6']
 const dataSets = {
-  aprop1: { obt: 50, med: 50 },
-  aprop2: { obt: 20, med: 60 },
-  aprop3: { obt: 30, med: 70 },
-  aprop4: { obt: 40, med: 80 },
-  aprop5: { obt: 50, med: 90 },
-  aprop6: { obt: 60, med: 95 }
+  dim1: { obt: 50, med: 50 },
+  dim2: { obt: 20, med: 60 },
+  dim3: { obt: 30, med: 70 },
+  dim4: { obt: 40, med: 80 },
+  dim5: { obt: 50, med: 90 },
+  dim6: { obt: 60, med: 95 }
 }
 
-export const data = {
-  labels,
+const data = (dataVal, labs)=> ({
+  labels: labs,
   datasets: [
     {
       label: 'Obtenido',
-      data: labels.map((label) => {
-        const g = dataSets[label].obt / dataSets[label].med
+      data: labs.map((label) => {
+        const g = dataVal[label].obt / dataVal[label].med
         return 100 * g / (1 + g)
       }),
       backgroundColor: '#008E86'
     },
     {
       label: 'Media',
-      data: labels.map((label) => {
-        const g = dataSets[label].obt / dataSets[label].med
+      data: labs.map((label) => {
+        const g = dataVal[label].obt / dataVal[label].med
         return 100 / (1 + g)
       }),
       backgroundColor: '#F97D61'
     }
 
   ]
-}
+})
 
-export function MeanBarChart ({ dataValues = data }) {
+
+export function MeanBarChart ({ dataValues = dataSets, labs=labels }) {
   return (
     <div className='chart-container bar-container'>
-      <Bar options={options} data={dataValues} />
+      <Bar options={options} data={data(dataValues, labs)} />
     </div>
   )
 }

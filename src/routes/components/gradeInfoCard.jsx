@@ -25,10 +25,16 @@ const defaultData = {
   ]
 }
 
-export default function GradeInfoCard ({ title = defaultData.title, lista = defaultData.lista, coordinator = true}) {
-  const {setPhase} = useContext(CoordinatorContext)
+export default function GradeInfoCard ({ title = defaultData.title, lista = defaultData.lista, coordinator = true, level = 0}) {
+  const {setPhase, setCtx_lG_mC} = useContext(CoordinatorContext)
+
+  const handleClick = () => {
+    setCtx_lG_mC(prev => ({formData: prev, selected: level}))
+    setPhase("manageCourse")
+  }
+
   return (
-    <div className={styles['grade-info-card']} onClick={()=>setPhase("manageCourse")}>
+    <div className={styles['grade-info-card']} onClick={handleClick}>
       <div className={styles['grade-info-card-title']}>
         <h2>{title}</h2>
         {coordinator&&<img src={pencil} alt='pencil' />}
