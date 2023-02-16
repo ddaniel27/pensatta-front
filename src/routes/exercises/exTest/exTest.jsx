@@ -10,12 +10,12 @@
 // import DashboardStudentIndividual from '../../components/coordinatorProfile/dashboardStudentIndividual'
 // import data from './data.json'
 //Teacher
-//import DashboardStudentIndividual from "../../components/teacherProfile/dashboardMain"
+import DashboardStudentIndividual from "../../components/teacherProfile/dashboardMain"
 import CoordinatorRouter from "../../components/coordinatorProfile/coordinatorRouter"
 export default function ExTest () {
   return (
     <>
-      <CoordinatorRouter />
+      <DashboardStudentIndividual />
     </>
   )
 }

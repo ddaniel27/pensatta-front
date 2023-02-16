@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import HeaderMain from '../headerMainTeacherCoordinator'
 import FooterTeacherCoordinatorView from '../footerTeacherCoordinatorView'
 import CardHorizontalRow from '../CardHorizontalRow'
@@ -7,9 +7,11 @@ import pencil from '/images/Atomo_Icono_Editar.svg'
 import '../../../styles/dashboardMain.css'
 import { MeanBarChart } from './meanBarChart'
 import { coordinacionMetricsAll } from '../../../requests'
+import CoordinatorContext from '../../../context/CoordinatorContext'
 
 export default function DashboardMain ({ data = defaultData, coordinator=true, userId}) {
 
+  const {setCtx_main_hR} = useContext(CoordinatorContext)
   const [coordinatorName, setCoordinatorName] = useState('');
   const [coordinatorInstitution, setCoordinatorInstitution] = useState('');
   const [metrics, setMetrics] = useState([]);
@@ -27,6 +29,7 @@ export default function DashboardMain ({ data = defaultData, coordinator=true, u
       setMetrics(response.metrics)
       setAverage(response.average)
       setMetricsAverage(response.metricsAverage)
+      setCtx_main_hR(response.metricsByGroup)
     })
   },[])
   

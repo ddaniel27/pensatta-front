@@ -14,12 +14,14 @@ import UserContext from "../../../context/UserContext"
 export default function CoordinatorRouter () {
     const [phase, setPhase] = useState("main")
     const [ctx_lG_mC, setCtx_lG_mC] = useState([])
+    const [ctx_main_hR, setCtx_main_hR] = useState([])
+    const [ctx_hB_r_sI, setCtx_hB_r_sI] = useState([])
     const {loginUser} = useContext(UserContext)
     console.log(loginUser)
     
 
     return (
-        <CoordinatorContext.Provider value={{setPhase,phase, ctx_lG_mC, setCtx_lG_mC}}>
+        <CoordinatorContext.Provider value={{phase, setPhase, ctx_lG_mC, setCtx_lG_mC, ctx_main_hR, setCtx_main_hR, ctx_hB_r_sI, setCtx_hB_r_sI}}>
             {phase == "main" && <DashboardMain coordinator={true} userId={loginUser.id}/>}
             {phase == "listGrades" && <DashboardListGrades coordinator={true} userId={loginUser.id}/>}
             {phase == "manageCourse" && <DashboardTableManage coordinator={true} />}
