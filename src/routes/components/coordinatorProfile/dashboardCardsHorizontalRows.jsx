@@ -22,26 +22,26 @@ export default function DashboardCardsHorizontalRows ({ cards = defaultData }) {
 
   const handleClick = (level) => {
     setPhase("horizontalBar")
-    console.log(level)
-    console.log( conformedData.find((item) => item.level === level))
+    
     setCtx_hB_r_sI(
-      conformedData.find((item) => item.level === level)
+      {hB: conformedData.find((item) => item.level === level), level}
     )
    
   }
 
 
   useEffect(() => {
-    console.log(ctx_main_hR)
+    console.log("hola",ctx_main_hR)
     const levels = [... new Set(ctx_main_hR.map((curso) => curso.nivel))]
     const formData = levels.map((level) => {
       const lst = ctx_main_hR.filter((curso) => curso.nivel === level)
       const rows = lst.map((curso) => {
         return {
           label: `${curso.nivel} ${curso.curso}`,
-          valueGreen: curso.apropiacionValues[3],
-          valueYellow: curso.apropiacionValues[2],
-          valueRed: curso.apropiacionValues[1]
+          valueGreen: curso.apropiacionValues[3]?curso.apropiacionValues[3]:0,
+          valueYellow: curso.apropiacionValues[2]?curso.apropiacionValues[2]:0,
+          valueRed: curso.apropiacionValues[1]?curso.apropiacionValues[1]:0,
+          spiderValues: curso.spiderValues
         }
       })
 

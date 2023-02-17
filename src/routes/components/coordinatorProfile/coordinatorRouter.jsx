@@ -25,8 +25,8 @@ export default function CoordinatorRouter () {
             {phase == "main" && <DashboardMain coordinator={true} userId={loginUser.id}/>}
             {phase == "listGrades" && <DashboardListGrades coordinator={true} userId={loginUser.id}/>}
             {phase == "manageCourse" && <DashboardTableManage coordinator={true} />}
-            {phase == "horizontalRows" && <DashboardCardsHorizontalRows coordinator={true} />}
-            {phase == "horizontalBar" && <DashboardHorizontalBar coordinator={true}  />}
+            {phase == "horizontalRows" && <DashboardCardsHorizontalRows coordinator={true}  />}
+            {phase == "horizontalBar" && <DashboardHorizontalBar coordinator={true}  userId={loginUser.id} />}
             {phase == "rows" && <DashboardRows coordinator={true} />}
             {phase == "studentIndividual" && <DashboardStudentIndividual coordinator={true} />}              
         </CoordinatorContext.Provider >
