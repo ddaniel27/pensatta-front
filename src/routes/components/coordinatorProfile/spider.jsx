@@ -21,7 +21,7 @@ ChartJS.register(
 )
 
 export default function Spider({ spider, setImgURL }){
-
+    console.log(spider)
     const [ spiderData, setSpiderData ] = useState({
         1: 0,
         2: 0,

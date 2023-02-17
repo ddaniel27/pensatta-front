@@ -17,19 +17,16 @@ export default function DashboardHorizontalBar ({ title = 'Grado', average = '5'
   useEffect(() => {
        
     coordinacionMetrics(userId,ctx_hB_r_sI.level, (response)=>{
-      console.log("res",response)
-      console.log(response.result)
       const average = response.average
       const rows = response.result.map(
         (curso) => {
-          console.log(curso.apropsGrado)
           return {
             label: `${curso.nivelGrado} ${curso.cursoGrado}`,
             valueGreen: curso.apropsGrado[3]?curso.apropsGrado[3]:0,
             valueYellow: curso.apropsGrado[2]?curso.apropsGrado[2]:0,
             valueRed: curso.apropsGrado[1]?curso.apropsGrado[1]:0,
             spiderValues: curso.spiderGrado,
-            id: curso.idGrado
+            gradoId: curso.idGrado
           }
         }
       )

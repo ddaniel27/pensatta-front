@@ -10,14 +10,20 @@ import '../../styles/horizontalBar.css'
 import { useContext } from 'react'
 import CoordinatorContext from '../../context/CoordinatorContext'
 
-export default function HorizontalBar ({ label = '', valueGreen = 0.34, valueYellow = 0.33, valueRed = 0.33 }) {
-  const { setPhase, phase } = useContext(CoordinatorContext)
+export default function HorizontalBar ({ label = '', valueGreen = 0.34, valueYellow = 0.33, valueRed = 0.33, gradoId = null }) {
+
+  const { setPhase, phase, setCtx_hB_r_sI } = useContext(CoordinatorContext)
   const phases = {
     "horizontalBar": "rows"
   }
   const handleClickBar = () => {
     if(phases[phase]) {
-      setPhase(phases[phase])      
+      setPhase(phases[phase]) 
+          
+    }
+    if(gradoId) {
+      setCtx_hB_r_sI(prev => ({...prev, gradoId}))
+      console.log("gradoId", gradoId)
     }
     
   }

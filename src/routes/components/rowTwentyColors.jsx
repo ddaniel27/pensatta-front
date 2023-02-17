@@ -4,19 +4,23 @@ import CoordinatorContext from '../../context/CoordinatorContext'
 
 const rowList = new Array(20).fill(0)
 
-export default function RowTwentyColors ({ label = '', list = [] }) {
+export default function RowTwentyColors ({ label = '', list = {}, id=null }) {
+  const { setPhase, setCtx_hB_r_sI } = useContext(CoordinatorContext)
+  const handleClickRow = () => {
+    setCtx_hB_r_sI(prev => ({...prev, studentSelected: id}))
+    setPhase("studentIndividual")
 
-  const { setPhase } = useContext(CoordinatorContext)
+  }
 
   return (
-    <div className='RowTwentyColors' onClick={()=> setPhase("studentIndividual")}>
+    <div className='RowTwentyColors' onClick={handleClickRow}>
       <div className='RowTwentyColors__label'>{label}</div>
       <div className='RowTwentyColors__list'>
         {rowList.map((_item, index) => {
           const text = index < 9 ? `0${index + 1}` : `${index + 1}`
           let className = ''
-          if (index < list.length) {
-            className = list[index] < 0.6
+          if (list[index + 1]||list[index + 1]===0) {
+            className = list[index + 1] < 0.6
               ? 'RowTwentyColorsRed'
               : (list[index] < 0.8 ? 'RowTwentyColorsYellow' : 'RowTwentyColorsGreen')
           }

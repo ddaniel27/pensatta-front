@@ -23,7 +23,6 @@ export default function DashboardMain ({ data = defaultData, coordinator=true, u
 
   useEffect(() => {
     coordinacionMetricsAll(userId, (response)=>{
-      console.log(response)
       setCoordinatorName(response.coordinator)
       setCoordinatorInstitution(response.institution)
       setMetrics(response.metrics)
@@ -58,17 +57,16 @@ export default function DashboardMain ({ data = defaultData, coordinator=true, u
       { 0: metricsAverage.apropiacionValues? metricsAverage.apropiacionValues['1']:0, 
         1: metricsAverage.apropiacionValues? metricsAverage.apropiacionValues['2']:0, 
         2: metricsAverage.apropiacionValues? metricsAverage.apropiacionValues['3']:0})
+    
+    const labs = ['dim1','dim2','dim3','dim4','dim5','dim6']
+    const dataValues = {} 
+    labs.forEach((lab,index)=>{
+      dataValues[lab] = { obt: metricsAverage.spiderValues? metricsAverage.spiderValues[index+1]:0, med: average.spiderValues? average.spiderValues[index+1]:0 }
+    })
 
     setMeanBarProps({
-      labs: ['dim1','dim2','dim3','dim4','dim5','dim6'],
-      dataValues: {
-        dim1: { obt: metricsAverage.spiderValues? metricsAverage.spiderValues['1']:0, med: average.spiderValues? average.spiderValues['1']:0 },
-        dim2: { obt: metricsAverage.spiderValues? metricsAverage.spiderValues['2']:0, med: average.spiderValues? average.spiderValues['2']:0 },
-        dim3: { obt: metricsAverage.spiderValues? metricsAverage.spiderValues['3']:0, med: average.spiderValues? average.spiderValues['3']:0 },
-        dim4: { obt: metricsAverage.spiderValues? metricsAverage.spiderValues['4']:0, med: average.spiderValues? average.spiderValues['4']:0 },
-        dim5: { obt: metricsAverage.spiderValues? metricsAverage.spiderValues['5']:0, med: average.spiderValues? average.spiderValues['5']:0 },
-        dim6: { obt: metricsAverage.spiderValues? metricsAverage.spiderValues['6']:0, med: average.spiderValues? average.spiderValues['6']:0 }
-      }
+      labs,
+      dataValues
     })
   },[metricsAverage])
 

@@ -17,7 +17,6 @@ export default function CoordinatorRouter () {
     const [ctx_main_hR, setCtx_main_hR] = useState([])
     const [ctx_hB_r_sI, setCtx_hB_r_sI] = useState([])
     const {loginUser} = useContext(UserContext)
-    console.log(loginUser)
     
 
     return (
@@ -27,7 +26,7 @@ export default function CoordinatorRouter () {
             {phase == "manageCourse" && <DashboardTableManage coordinator={true} />}
             {phase == "horizontalRows" && <DashboardCardsHorizontalRows coordinator={true}  />}
             {phase == "horizontalBar" && <DashboardHorizontalBar coordinator={true}  userId={loginUser.id} />}
-            {phase == "rows" && <DashboardRows coordinator={true} />}
+            {phase == "rows" && <DashboardRows coordinator={true} userId={loginUser.id}/>}
             {phase == "studentIndividual" && <DashboardStudentIndividual coordinator={true} />}              
         </CoordinatorContext.Provider >
     )
