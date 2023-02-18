@@ -20,6 +20,7 @@
   overflow-y: auto;
   overflow-x: hidden;
   height: 100%;
+  width: 100%;
 }
 
 .DashboardCardsHorizontalRows .DashboardCardsHorizontalRows__container .DashboardCardsHorizontalRows__container__card {

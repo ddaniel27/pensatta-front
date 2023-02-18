@@ -102,39 +102,9 @@ const defaultData = {
   rows: [
     {
       label: '6',
-      valueGreen: 0.3,
-      valueYellow: 0.2,
-      valueRed: 0.5
-    },
-    {
-      label: '7',
-      valueGreen: 0.5,
-      valueYellow: 0.3,
-      valueRed: 0.2
-    },
-    {
-      label: '8',
-      valueGreen: 0.2,
-      valueYellow: 0.5,
-      valueRed: 0.3
-    },
-    {
-      label: '9',
-      valueGreen: 0.3,
-      valueYellow: 0.2,
-      valueRed: 0.5
-    },
-    {
-      label: '10',
-      valueGreen: 0.34,
-      valueYellow: 0.33,
-      valueRed: 0.33
-    },
-    {
-      label: '11',
-      valueGreen: 0.2,
-      valueYellow: 0.2,
-      valueRed: 0.6
+      valueGreen: 0,
+      valueYellow: 0,
+      valueRed: 0
     }
   ]
 }

@@ -10,12 +10,16 @@ import '../../styles/horizontalBar.css'
 import { useContext } from 'react'
 import CoordinatorContext from '../../context/CoordinatorContext'
 
-export default function HorizontalBar ({ label = '', valueGreen = 0.34, valueYellow = 0.33, valueRed = 0.33, gradoId = null }) {
+export default function HorizontalBar ({ label = '', valueGreen = 0, valueYellow = 0, valueRed = 0, gradoId = null }) {
 
   const { setPhase, phase, setCtx_hB_r_sI } = useContext(CoordinatorContext)
   const phases = {
     "horizontalBar": "rows"
   }
+  console.log('valueGreen', valueGreen)
+  console.log('valueYellow', valueYellow)
+  console.log('valueRed', valueRed)
+  const total = valueGreen + valueYellow + valueRed
   const handleClickBar = () => {
     if(phases[phase]) {
       setPhase(phases[phase]) 
@@ -32,9 +36,9 @@ export default function HorizontalBar ({ label = '', valueGreen = 0.34, valueYel
     <div className='HorizontalBar' onClick={handleClickBar}>
       <div className='HorizontalBar__label'>{label}</div>
       <div className='HorizontalBar__bar'>
-        <div className='HorizontalBar__bar__green' style={{ width: `${valueGreen * 100}%` }} />
-        <div className='HorizontalBar__bar__yellow' style={{ width: `${valueYellow * 100}%` }} />
-        <div className='HorizontalBar__bar__red' style={{ width: `${valueRed * 100}%` }} />
+        <div className='HorizontalBar__bar__green' style={{ width: `${valueGreen/(total!=0?total:1) * 100}%` }} />
+        <div className='HorizontalBar__bar__yellow' style={{ width: `${valueYellow/(total!=0?total:1) * 100}%` }} />
+        <div className='HorizontalBar__bar__red' style={{ width: `${valueRed/(total!=0?total:1) * 100}%` }} />
       </div>
     </div>
   )

@@ -90,26 +90,26 @@ function HorizontalBarGrid ({ data }) {
 const defaultData = [
   {
     label: '6 A',
-    valueGreen: 0.3,
-    valueYellow: 0.2,
-    valueRed: 0.5
+    valueGreen: 0,
+    valueYellow: 0,
+    valueRed: 0
   },
   {
     label: '6 B',
-    valueGreen: 0.5,
-    valueYellow: 0.2,
-    valueRed: 0.3
+    valueGreen: 0,
+    valueYellow: 0,
+    valueRed: 0
   },
   {
     label: '6 C',
-    valueGreen: 0.2,
-    valueYellow: 0.5,
-    valueRed: 0.3
+    valueGreen: 0,
+    valueYellow: 0,
+    valueRed: 0
   },
   {
     label: '6 D',
-    valueGreen: 0.34,
-    valueYellow: 0.33,
-    valueRed: 0.33
+    valueGreen: 0,
+    valueYellow: 0,
+    valueRed: 0
   }
 ]
