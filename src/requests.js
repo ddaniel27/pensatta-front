@@ -132,6 +132,28 @@ function coordinacionMetricsStudents(coordinatorId, gradoId, cb){
   .catch(error => {console.log(error)})
 }
 
+function profesorMetricsAll(profesorId, cb){
+  axios.get(`${URL}/profesor/inicio/${profesorId}`)
+  .then(response => {cb(response.data)})
+  .catch(error => {console.log(error)})
+
+}
+function profesorResumen(profesorId, cb){
+  axios.get(`${URL}/profesor/resumen/${profesorId}`)
+  .then(response => {cb(response.data)})
+  .catch(error => {console.log(error)})
+}
+function profesorMetrics(profesorId, nivel, cb){
+  axios.get(`${URL}/profesor/metrics/${profesorId}/${nivel}`)
+  .then(response => {cb(response.data)})
+  .catch(error => {console.log(error)})
+}
+function profesorMetricsStudents(profesorId, gradoId, cb){
+  axios.get(`${URL}/profesor/grado/${profesorId}/${gradoId}`)
+  .then(response => {cb(response.data)})
+  .catch(error => {console.log(error)})
+}
+
 export {
   getLogin, 
   postLogin, 
@@ -147,5 +169,9 @@ export {
   coordinacionMetricsAll,
   coordinacionGrupos,
   coordinacionMetrics,
-  coordinacionMetricsStudents
+  coordinacionMetricsStudents,
+  profesorMetricsAll,
+  profesorResumen,
+  profesorMetrics,
+  profesorMetricsStudents
 }

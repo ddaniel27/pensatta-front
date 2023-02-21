@@ -3,7 +3,7 @@ import styles from '../../../styles/dashboardListGrades.module.css'
 import GradeInfoCard from '../gradeInfoCard'
 import { useEffect, useState, useContext } from 'react'
 import CoordinatorContext from '../../../context/CoordinatorContext'
-import { coordinacionGrupos } from '../../../requests'
+import { coordinacionGrupos, profesorResumen } from '../../../requests'
 
 export default function DashboardListGrades ({ cards = defaultData ,coordinator = true, userId }) {
   const {setCtx_lG_mC} = useContext(CoordinatorContext)
@@ -19,10 +19,15 @@ export default function DashboardListGrades ({ cards = defaultData ,coordinator 
   }
 
   useEffect(()=>{
-    coordinacionGrupos(userId, (response)=>{
-      console.log(response)
+    if(coordinator) {
+      coordinacionGrupos(userId, (response)=>{
       setCursos(response.cursos)
-    })
+    })}
+    else{
+      profesorResumen(userId, (response)=>{
+        setCursos(response.courses)
+      })
+    }
   },[])
 
   useEffect(()=>{

@@ -16,9 +16,7 @@ export default function HorizontalBar ({ label = '', valueGreen = 0, valueYellow
   const phases = {
     "horizontalBar": "rows"
   }
-  console.log('valueGreen', valueGreen)
-  console.log('valueYellow', valueYellow)
-  console.log('valueRed', valueRed)
+ 
   const total = valueGreen + valueYellow + valueRed
   const handleClickBar = () => {
     if(phases[phase]) {

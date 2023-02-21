@@ -6,6 +6,7 @@ import ActivityContext from "../context/ActivityContext"
 import UserContext from "../context/UserContext"
 import CoordinatorView from "./components/coordinatorProfile/coordinatorView"
 import '../styles/dashboard.css'
+import TeacherView from "./components/teacherProfile/teacherView"
 
 export default function Dashboard(){
 
@@ -45,6 +46,10 @@ export default function Dashboard(){
                 {
                     loginUser.role.toLowerCase() === "coordinator" &&
                     <CoordinatorView />
+                }
+                {
+                    loginUser.role.toLowerCase() === "teacher" &&
+                    <TeacherView/>
                 }
             </ActivityContext.Provider>
         </div>
