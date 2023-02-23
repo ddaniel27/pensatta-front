@@ -58,7 +58,7 @@ export default function Ex40 () {
   }
 
   return (
-    <ScoringComponent initMessages={myData.initMessages} background={myData.color} title={myData.name}>
+    <ScoringComponent initMessages={myData.initMessages} background={myData.color} title={myData.name} threshold={myData.threshold} exerciseId={myData.id}>
       {
         (setScore, setPhase) => (
           <>
