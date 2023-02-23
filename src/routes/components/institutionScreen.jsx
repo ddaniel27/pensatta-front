@@ -1,6 +1,6 @@
 import React from 'react'
 import EditorModal from './editorModal'
-import NewInstModal from './newInstModal'
+import NewInstModal from './newUserModal'
 import '../../styles/institutionScreen.css'
 
 export default function InstitutionScreen ({ institutionList }) {
