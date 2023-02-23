@@ -4,7 +4,9 @@ import AdminView from './components/adminView'
 import StudentView from './components/studentView'
 import ActivityContext from '../context/ActivityContext'
 import UserContext from '../context/UserContext'
+import CoordinatorView from './components/coordinatorProfile/coordinatorView'
 import '../styles/dashboard.css'
+import TeacherView from './components/teacherProfile/teacherView'
 
 export default function Dashboard () {
   const { loginUser } = React.useContext(UserContext)
@@ -34,13 +36,21 @@ export default function Dashboard () {
       >
         <Header headerText={title} />
         {
-                    loginUser.role.toLowerCase() === 'student' &&
-                      <StudentView />
-                }
+          loginUser.role.toLowerCase() === 'student' &&
+            <StudentView />
+        }
         {
-                    loginUser.role.toLowerCase() === 'admin' &&
-                      <AdminView />
-                }
+          loginUser.role.toLowerCase() === 'admin' &&
+            <AdminView />
+        }
+        {
+          loginUser.role.toLowerCase() === 'coordinator' &&
+            <CoordinatorView />
+        }
+        {
+          loginUser.role.toLowerCase() === 'teacher' &&
+            <TeacherView />
+        }
       </ActivityContext.Provider>
     </div>
   )
