@@ -17,3 +17,10 @@
 .HeaderTeacherCoordinatorView__group .HeaderTeacherCoordinatorView__title {
   font-weight: 400;
 }
+.HeaderTeacherCoordinatorView .HeaderTeacherCoordinatorView__group img{
+  cursor: pointer;
+}
+.HeaderTeacherCoordinatorView .HeaderTeacherCoordinatorView__group img:active{
+  transform: scale(0.9);
+}
+

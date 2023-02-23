@@ -1,5 +1,7 @@
 import styles from '../../styles/gradeInfoCard.module.css'
 import pencil from '/images/Atomo_Icono_Editar.svg'
+import { useContext } from 'react'
+import CoordinatorContext from '../../context/CoordinatorContext'
 
 const defaultData = {
   title: 'Grado',
@@ -23,9 +25,16 @@ const defaultData = {
   ]
 }
 
-export default function GradeInfoCard ({ title = defaultData.title, lista = defaultData.lista, coordinator = true}) {
+export default function GradeInfoCard ({ title = defaultData.title, lista = defaultData.lista, coordinator = true, level = 0}) {
+  const {setPhase, setCtx_lG_mC} = useContext(CoordinatorContext)
+
+  const handleClick = () => {
+    setCtx_lG_mC(prev => ({formData: prev, selected: level}))
+    setPhase("manageCourse")
+  }
+
   return (
-    <div className={styles['grade-info-card']}>
+    <div className={styles['grade-info-card']} onClick={handleClick}>
       <div className={styles['grade-info-card-title']}>
         <h2>{title}</h2>
         {coordinator&&<img src={pencil} alt='pencil' />}

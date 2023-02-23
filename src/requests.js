@@ -110,6 +110,50 @@ function getResumen(studentId, cb){
   .catch(error => {console.log(error)})
 }
 
+function coordinacionMetricsAll(coordinatorId, cb){
+  axios.get(`${URL}/coordinacion/inicio/${coordinatorId}`)
+  .then(response => {cb(response.data)})
+  .catch(error => {console.log(error)})
+}
+
+function coordinacionGrupos(coordinatorId, cb){
+  axios.get(`${URL}/coordinacion/grupos/${coordinatorId}`)
+  .then(response => {cb(response.data)})
+  .catch(error => {console.log(error)})
+}
+function coordinacionMetrics(coordinatorId, nivel, cb){
+  axios.get(`${URL}/coordinacion/metrics/${coordinatorId}/${nivel}`)
+  .then(response => {cb(response.data)})
+  .catch(error => {console.log(error)})
+}
+function coordinacionMetricsStudents(coordinatorId, gradoId, cb){
+  axios.get(`${URL}/coordinacion/grado/${coordinatorId}/${gradoId}`)
+  .then(response => {cb(response.data)})
+  .catch(error => {console.log(error)})
+}
+
+function profesorMetricsAll(profesorId, cb){
+  axios.get(`${URL}/profesor/inicio/${profesorId}`)
+  .then(response => {cb(response.data)})
+  .catch(error => {console.log(error)})
+
+}
+function profesorResumen(profesorId, cb){
+  axios.get(`${URL}/profesor/resumen/${profesorId}`)
+  .then(response => {cb(response.data)})
+  .catch(error => {console.log(error)})
+}
+function profesorMetrics(profesorId, nivel, cb){
+  axios.get(`${URL}/profesor/metrics/${profesorId}/${nivel}`)
+  .then(response => {cb(response.data)})
+  .catch(error => {console.log(error)})
+}
+function profesorMetricsStudents(profesorId, gradoId, cb){
+  axios.get(`${URL}/profesor/grado/${profesorId}/${gradoId}`)
+  .then(response => {cb(response.data)})
+  .catch(error => {console.log(error)})
+}
+
 export {
   getLogin, 
   postLogin, 
@@ -121,5 +165,13 @@ export {
   addInstitution, 
   getStudentsHistory, 
   getMetrics,
-  getResumen
+  getResumen,
+  coordinacionMetricsAll,
+  coordinacionGrupos,
+  coordinacionMetrics,
+  coordinacionMetricsStudents,
+  profesorMetricsAll,
+  profesorResumen,
+  profesorMetrics,
+  profesorMetricsStudents
 }
