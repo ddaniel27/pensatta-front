@@ -2,6 +2,7 @@ import React from 'react'
 import ActivityContext from '../../../context/ActivityContext'
 import UniqueOption from '../components/uniqueOption'
 import NoScoringComponent from '../components/noScoringComponent'
+import blackboxSrc from '../../../../public/images/exercises/40/blackbox.svg'
 import data from './data.json'
 import '../../../styles/ex40.css'
 
@@ -71,7 +72,7 @@ export default function Ex40 () {
                   <UniqueOption options={myInputs.options} uniqueName='entradas' isCorrectOption={setInputSel} />
                   <UniqueOption options={myOperators.options} uniqueName='operador' isCorrectOption={setOperatorSel} />
                   <div className='function'>
-                    <img src='./images/exercises/40/blackbox.svg' alt='blackbox' />
+                    <img src={blackboxSrc} alt='blackbox' />
                     <div className='message'><p>{result}</p></div>
                   </div>
                 </div>

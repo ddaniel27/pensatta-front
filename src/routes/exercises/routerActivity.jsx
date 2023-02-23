@@ -73,6 +73,7 @@ import Ex86 from './ex86/ex86'
 import Ex87 from './ex87/ex87'
 import Ex88 from './ex88/ex88'
 import Ex89 from './ex89/ex89'
+import Ex94 from './ex94/ex94'
 import Ex95 from './ex95/ex95'
 import Ex97 from './ex97/ex97'
 import Ex98 from './ex98/ex98'
@@ -166,6 +167,7 @@ export default function RouterActivity ({ idExercise }) {
       {idExercise === 87 && <Ex87 />}
       {idExercise === 88 && <Ex88 />}
       {idExercise === 89 && <Ex89 />}
+      {idExercise === 94 && <Ex94 />}
       {idExercise === 95 && <Ex95 />}
       {idExercise === 97 && <Ex97 />}
       {idExercise === 98 && <Ex98 />}
