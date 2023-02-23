@@ -1,6 +1,6 @@
 import React from 'react'
 import { updateInsitutions } from '../../requests'
-import '../../styles/editorModal.css'
+import styles from '../../styles/popups.module.css'
 
 export default function EditorModal ({ institution, field, close }) {
   const [value, setValue] = React.useState('')
@@ -15,6 +15,7 @@ export default function EditorModal ({ institution, field, close }) {
       setEnabled(true)
     }
   }, [value])
+
   const handleClick = () => {
     updateInsitutions(
       { institution_code: institution, field, value },
@@ -32,8 +33,8 @@ export default function EditorModal ({ institution, field, close }) {
   }
 
   return (
-    <div className='big-container'>
-      <div className='editor-modal'>
+    <div className={styles['big-container']}>
+      <div className={styles['editor-modal']}>
         {
           done
             ? <>

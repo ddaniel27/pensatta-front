@@ -1,29 +1,36 @@
 import React from 'react'
 import { addInstitution } from '../../requests'
+import GenericSelector from '../components/genericSelector'
 import styles from '../../styles/popups.module.css'
 
-export default function NewInstModal ({ close }) {
+const options = [
+  { value: '1', label: 'Option 1' },
+  { value: '2', label: 'Option 2' },
+  { value: '3', label: 'Option 3' },
+  { value: '4', label: 'Option 4' },
+  { value: '5', label: 'Option 5' }
+]
+
+export default function NewUserModal ({ close }) {
   const [code, setCode] = React.useState('')
   const [name, setName] = React.useState('')
-  const [email, setEmail] = React.useState('')
-  const [country, setCountry] = React.useState('')
-  const [province, setProvince] = React.useState('')
-  const [city, setCity] = React.useState('')
+  const [username, setUsername] = React.useState('')
+  const [password, setPassword] = React.useState('')
 
   const [enabled, setEnabled] = React.useState(false)
   const [done, setDone] = React.useState(false)
   const [textDone, setTextDone] = React.useState('')
 
   React.useEffect(() => {
-    if (code !== '' && name !== '' && email !== '' && country !== '' && province !== '' && city !== '') {
+    if (code !== '' && name !== '' && username !== '' && password !== '') {
       setEnabled(false)
     } else {
       setEnabled(true)
     }
-  }, [code, name, email, country, province, city])
+  }, [code, name, username, password])
   const handleClick = () => {
     addInstitution(
-      { institution_code: code, name, email, country, province, city },
+      { institution_code: code, name, username, password },
       (data) => {
         if (data.registered) {
           setTextDone('Se ha añadido correctamente')
@@ -49,12 +56,13 @@ export default function NewInstModal ({ close }) {
                       : <>
                         <span onClick={() => { close(false) }} />
                         <h2>Llene los siguientes campos</h2>
-                        <input type='text' placeholder='Código' value={code} onChange={(e) => { setCode(e.target.value) }} />
-                        <input type='text' placeholder='Nombre' value={name} onChange={(e) => { setName(e.target.value) }} />
-                        <input type='text' placeholder='Email' value={email} onChange={(e) => { setEmail(e.target.value) }} />
-                        <input type='text' placeholder='País' value={country} onChange={(e) => { setCountry(e.target.value) }} />
-                        <input type='text' placeholder='Provincia' value={province} onChange={(e) => { setProvince(e.target.value) }} />
-                        <input type='text' placeholder='Ciudad' value={city} onChange={(e) => { setCity(e.target.value) }} />
+                        <div className={styles['form-container']}>
+                          <input type='text' placeholder='Código' value={code} onChange={(e) => { setCode(e.target.value) }} />
+                          <input type='text' placeholder='Nombre Completo' value={name} onChange={(e) => { setName(e.target.value) }} />
+                          <input type='text' placeholder='Nombre de usuario' value={username} onChange={(e) => { setUsername(e.target.value) }} />
+                          <input type='text' placeholder='Contraseña' value={password} onChange={(e) => { setPassword(e.target.value) }} />
+                          <GenericSelector options={options} />
+                        </div>
                         <button onClick={handleClick} disabled={enabled}>Guardar</button>
                       </>
                 }

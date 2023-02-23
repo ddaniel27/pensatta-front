@@ -1,9 +1,10 @@
 import React from 'react'
-import SelectExercise from './selectExercise'
+import GenericSelector from './genericSelector'
 import ActivityContext from '../../context/ActivityContext'
 import RouterActivity from '../exercises/routerActivity'
 import InstitutionScreen from './institutionScreen'
 import NavMenu from './navMenu'
+import data from '../../exercisesList.json'
 import { getInstitutions } from '../../requests'
 import '../../styles/adminView.css'
 
@@ -30,6 +31,14 @@ export default function AdminView () {
     }
   }, [activity, setBackground, setTitle])
 
+  React.useEffect(() => {
+    if (exerciseId) {
+      setDisableButton(false)
+    } else {
+      setDisableButton(true)
+    }
+  }, [exerciseId])
+
   const handleStart = () => {
     setActivity(false)
   }
@@ -43,7 +52,7 @@ export default function AdminView () {
             {
                 screen === 'exercise' &&
                   <>
-                    <SelectExercise setId={setExerciseId} disableButton={setDisableButton} />
+                    <GenericSelector setCurrentValue={setExerciseId} options={data.ex} defaultLabel='Seleccione un ejercicio' />
                     <button className='button-play' onClick={handleStart} disabled={disableButton}>JUGAR</button>
                   </>
             }
