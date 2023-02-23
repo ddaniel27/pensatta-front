@@ -153,6 +153,16 @@ function profesorMetricsStudents(profesorId, gradoId, cb){
   .then(response => {cb(response.data)})
   .catch(error => {console.log(error)})
 }
+function addGroup(coordinatorId,objParams, cb, cbError){
+  axios.post(`${URL}/coordinacion/grupos/addgrupos/${coordinatorId}`, objParams)
+        .then(function (response) {
+          cb(response.data)
+        })
+        .catch(function (error) {
+          console.log(error)
+          cbError('Un error ha ocurrido')
+        })
+}
 
 export {
   getLogin, 
@@ -173,5 +183,6 @@ export {
   profesorMetricsAll,
   profesorResumen,
   profesorMetrics,
-  profesorMetricsStudents
+  profesorMetricsStudents,
+  addGroup
 }

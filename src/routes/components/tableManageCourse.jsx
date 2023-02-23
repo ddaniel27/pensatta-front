@@ -47,7 +47,7 @@ export default function TableManageCourse ({ title = 'Grado', data = defaultData
     <div className='TableManageCourse'>
       <div className='TableManageCourse__title'>
         <div className='TableManageCourse__title__text'>{title}</div>
-        <div className='TableManageCourse__button'>NUEVO USUARIO</div>
+        {coordinator&&<div className='TableManageCourse__button'>NUEVO USUARIO</div>}
       </div>
       <div className='TableManageCourse__container'>
         {data.map((courseData, index) => (
