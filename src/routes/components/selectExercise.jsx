@@ -1,5 +1,4 @@
 import React from 'react'
-import data from '../../exercisesList.json'
 import '../../styles/selectExercise.css'
 
 export default function SelectExercise ({ setId, disableButton }) {
