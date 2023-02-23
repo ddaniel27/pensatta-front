@@ -1,66 +1,68 @@
-import {useState, useEffect} from "react"
-import { addGroup } from "../../../requests"
-import styles from "../../../styles/popups.module.css"
-import Select from "react-select"
+import { useState, useEffect } from 'react'
+import { addGroup, getTeachers } from '../../../requests'
+import styles from '../../../styles/popups.module.css'
 
-export default function NewGradeModal({close}){
+export default function NewGradeModal ({ close, userId }) {
+  const [level, setLevel] = useState('')
+  const [course, setCourse] = useState('')
+  const [teacherSelected, setTeacherSelected] = useState('')
+  const [teachers, setTeachers] = useState([])
 
-    const [code, setCode] = useState("")
-    const [name, setName] = useState("")
-    const [email, setEmail] = useState("")
-    const [country, setCountry] = useState("")
-    const [province, setProvince] = useState("")
-    const [city, setCity] = useState("")
+  useEffect(() => {
+    getTeachers(userId, response => {
+      setTeachers(response.profesores)
+    })
+  }, [])
 
-    const [enabled, setEnabled] = useState(false)
-    const [done, setDone] = useState(false)
-    const [textDone, setTextDone] = useState("")
+  useEffect(() => {
 
-    useEffect(()=>{
-        if(code !== "" && name !== "" && email !== "" && country !== "" && province !== "" && city !== ""){
-            setEnabled(false)
-        }else{
-            setEnabled(true)
-        }
-    },[code, name, email, country, province, city])
-    const handleClick = () => {
-        addInstitution(
-            { institution_code: code, name: name, email: email, country: country, province: province, city: city },
-            (data)=>{
-                if( data.registered ){
-                    setTextDone("Se ha añadido correctamente")
-                }else{
-                    setTextDone("No se ha podido añadir")
-                }
-                setDone(true)
-            },
-            ()=>{
-                alert("Error")
-            })
+  }, [teachers])
+
+  const [enabled, setEnabled] = useState(false)
+  const [done, setDone] = useState(false)
+  const [textDone, setTextDone] = useState('')
+
+  useEffect(() => {
+    if (level !== '' && course !== '' && teacherSelected !== '') {
+      setEnabled(false)
+    } else {
+      setEnabled(true)
     }
+  }, [level, course, teacherSelected])
+  const handleClick = () => {
+    addGroup(
+      { nivel: level, curso: course, profesor: teacherSelected },
+      (response) => {
+        if (response.added) {
+          setTextDone('Se ha añadido correctamente')
+        } else {
+          setTextDone('No se ha podido añadir')
+        }
+        setDone(true)
+      },
+      () => {
+        alert('Error')
+      })
+  }
 
-    return(
-        <div className="big-container">
-            <div className="editor-modal">
-                {
-                    done ?
-                    <>
-                        <h2>{textDone}</h2>
-                        <button onClick={()=>{window.location.reload()}}>ACTUALIZAR</button>
-                    </> :
-                    <>
-                        <span onClick={()=>{close(false)}}></span>
-                        <h2>Llene los siguientes campos</h2>
-                        <input type="text" placeholder={"Código"} value={code} onChange={(e)=>{setCode(e.target.value)}} />
-                        <input type="text" placeholder={"Nombre"} value={name} onChange={(e)=>{setName(e.target.value)}} />
-                        <input type="text" placeholder={"Email"} value={email} onChange={(e)=>{setEmail(e.target.value)}} />
-                        <input type="text" placeholder={"País"} value={country} onChange={(e)=>{setCountry(e.target.value)}} />
-                        <input type="text" placeholder={"Provincia"} value={province} onChange={(e)=>{setProvince(e.target.value)}} />
-                        <input type="text" placeholder={"Ciudad"} value={city} onChange={(e)=>{setCity(e.target.value)}} />
-                        <button onClick={handleClick} disabled={enabled}>Guardar</button>
-                    </>
-                }
-            </div>
-        </div>
-    )
+  return (
+    <div className={styles['big-container']}>
+      <div className={styles['editor-modal']}>
+        {
+          done
+            ? <>
+              <h2>{textDone}</h2>
+              <button onClick={() => { window.location.reload() }}>ACTUALIZAR</button>
+            </>
+            : <>
+              <span onClick={() => { close(false) }} />
+              <h2>Llene los siguientes campos</h2>
+              <input type='text' placeholder='Grado' value={level} onChange={(e) => { setLevel(e.target.value) }} />
+              <input type='text' placeholder='Grupo' value={course} onChange={(e) => { setCourse(e.target.value) }} />
+              <button onClick={handleClick} disabled={enabled}>Guardar</button>
+            </>
+        }
+      </div>
+    </div>
+  )
 }
