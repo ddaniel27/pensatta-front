@@ -3,7 +3,7 @@ import { addGroup, getTeachers } from '../../../requests'
 import styles from '../../../styles/popups.module.css'
 import GenericSelector from '../genericSelector'
 
-export default function NewGradeModal ({ close, userId }) {
+export default function NewStudentModal ({ close, userId }) {
   const [level, setLevel] = useState('')
   const [course, setCourse] = useState('')
   const [teacherSelected, setTeacherSelected] = useState('')

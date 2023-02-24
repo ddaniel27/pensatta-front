@@ -1,5 +1,6 @@
 import '../../styles/tableManageCourse.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import NewStudentModal from './coordinatorProfile/newStudentModal'
 
 const defaultCourseInfo = {
   title: '6 A',
@@ -40,20 +41,27 @@ const defaultData = [
   defaultCourseInfo
 ]
 
-export default function TableManageCourse ({ title = 'Grado', data = defaultData, coordinator = true }) {
+export default function TableManageCourse ({ title = 'Grado', data = defaultData, coordinator = true, userId }) {
+  const [showAddModal, setShowAddModal] = useState(false)
   const [course, setCourse] = useState(false)
+  const [courseId, setCourseId] = useState(false)
+
+  useEffect(() => {
+    console.log(courseId)
+  }, [courseId])
 
   return (
     <div className='TableManageCourse'>
       <div className='TableManageCourse__title'>
         <div className='TableManageCourse__title__text'>{title}</div>
-        {coordinator&&<div className='TableManageCourse__button'>NUEVO USUARIO</div>}
+        {coordinator && !showAddModal && course && <div className='TableManageCourse__button' onClick={() => { setShowAddModal(true) }}>NUEVO USUARIO</div>}
       </div>
       <div className='TableManageCourse__container'>
         {data.map((courseData, index) => (
-          <CourseInfo data={courseData} id={index} showCourses={course === `${index}`} courseSelected={setCourse} key={index} coordinator={coordinator}/>
+          <CourseInfo data={courseData} id={index} showCourses={course === `${index}`} courseSelected={setCourse} key={index} coordinator={coordinator} courseId={courseData.course_id} setCourseId={setCourseId}/>
         ))}
       </div>
+      {showAddModal && <NewStudentModal close={setShowAddModal} userId={userId} />}
     </div>
   )
 }
@@ -64,10 +72,10 @@ export default function TableManageCourse ({ title = 'Grado', data = defaultData
   * @param {array} students
   **/
 
-function CourseInfo ({ data = defaultCourseInfo, showCourses = false, courseSelected = () => {}, id = 0, coordinator = true }) {
-
+function CourseInfo ({ data = defaultCourseInfo, showCourses = false, courseSelected = () => {}, id = 0, coordinator = true, courseId, setCourseId }) {
   const handleCourseSelected = ({ target }) => {
     courseSelected(target.id)
+    setCourseId(courseId)
   }
   return (
     <div className={`CourseInfo ${!showCourses && 'hiddeCourseInfo'}`}>
@@ -80,7 +88,7 @@ function CourseInfo ({ data = defaultCourseInfo, showCourses = false, courseSele
           <div className='CourseInfo__container'>
             <div className='CourseInfo__header'>
               <div className='CourseInfo__header__User'>Usuario</div>
-              {coordinator&&<div className='CourseInfo__teacher_group'>
+              {coordinator && <div className='CourseInfo__teacher_group'>
                 <div className='CourseInfo__header__Teacher'>Docente: {data.teacher}</div>
                 <div className='CourseInfo__header__Reasign'>Reasignar</div>
               </div>}
