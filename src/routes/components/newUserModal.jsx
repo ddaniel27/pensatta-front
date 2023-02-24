@@ -11,8 +11,9 @@ const options = [
 
 export default function NewUserModal ({ close }) {
   const [code, setCode] = React.useState('')
-  const [name, setName] = React.useState('')
-  const [username, setUsername] = React.useState('')
+  const [firstname, setFirstname] = React.useState('')
+  const [lastname, setLastname] = React.useState('')
+  const [numb, setNumb] = React.useState('')
   const [password, setPassword] = React.useState('')
   const [rol, setRol] = React.useState('')
 
@@ -21,12 +22,12 @@ export default function NewUserModal ({ close }) {
   const [textDone, setTextDone] = React.useState('')
 
   React.useEffect(() => {
-    if (code !== '' && name !== '' && username !== '' && password !== '' && rol !== '') {
+    if (code !== '' && firstname !== '' && lastname !== '' && numb !== '' && password !== '' && rol !== '') {
       setEnabled(false)
     } else {
       setEnabled(true)
     }
-  }, [code, name, username, password, rol])
+  }, [code, firstname, lastname, numb, password, rol])
   const handleClick = () => {
     addInstitution(
       { institution_code: code, name, username, password },
@@ -56,10 +57,11 @@ export default function NewUserModal ({ close }) {
               <span onClick={() => { close(false) }} />
               <h2>Llene los siguientes campos</h2>
               <div className={styles['form-container']}>
-                <input type='text' placeholder='Código' value={code} onChange={(e) => { setCode(e.target.value) }} />
-                <input type='text' placeholder='Nombre Completo' value={name} onChange={(e) => { setName(e.target.value) }} />
-                <input type='text' placeholder='Nombre de usuario' value={username} onChange={(e) => { setUsername(e.target.value) }} />
-                <input type='text' placeholder='Contraseña' value={password} onChange={(e) => { setPassword(e.target.value) }} />
+                <input type='text' placeholder='Código de la Institución' value={code} onChange={(e) => { setCode(e.target.value) }} />
+                <input type='text' placeholder='Primer Nombre' value={firstname} onChange={(e) => { setFirstname(e.target.value) }} />
+                <input type='text' placeholder='Primer Apellido' value={lastname} onChange={(e) => { setLastname(e.target.value) }} />
+                <input type='text' placeholder='Numero de lista' value={numb} onChange={(e) => { setNumb(e.target.value) }} />
+                <input type='password' placeholder='Contraseña' value={password} onChange={(e) => { setPassword(e.target.value) }} />
                 <GenericSelector options={options} defaultLabel='Rol' setCurrentValue={setRol} />
               </div>
               <button onClick={handleClick} disabled={enabled}>Guardar</button>
