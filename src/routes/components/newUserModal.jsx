@@ -22,7 +22,7 @@ export default function NewUserModal ({ close }) {
   const [textDone, setTextDone] = React.useState('')
 
   React.useEffect(() => {
-    if (code !== '' && name !== '' && username !== '' && password !== '' && rol !== '') {
+    if (code !== '' && firstname !== '' && lastname !== '' && numb !== '' && password !== '' && rol !== '') {
       setEnabled(false)
     } else {
       setEnabled(true)
