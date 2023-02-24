@@ -1,12 +1,14 @@
 import React from 'react'
 import EditorModal from './editorModal'
-import NewInstModal from './newUserModal'
+import NewInstModal from './newInstModal'
+import NewUserModal from './newUserModal'
 import '../../styles/institutionScreen.css'
 
 export default function InstitutionScreen ({ institutionList }) {
   const [currInst, setCurrInst] = React.useState(null)
   const [showModal, setShowModal] = React.useState(false)
-  const [showAddModal, setShowAddModal] = React.useState(false)
+  const [showInstModal, setShowInstModal] = React.useState(false)
+  const [showUserModal, setShowUserModal] = React.useState(false)
   const [data, setData] = React.useState({ institution: '', field: '' })
 
   const handleChange = ({ target }) => {
@@ -47,9 +49,16 @@ export default function InstitutionScreen ({ institutionList }) {
           <p>Puntuación: {institutionList[currInst]?.average_score}</p>
         </div>
       </div>
-      {!showAddModal && <button onClick={() => { setShowAddModal(true) }}>Nueva Institución</button>}
+      <div className='buttons-container'>
+        {!showInstModal && !showUserModal &&
+          <>
+            <button onClick={() => { setShowInstModal(true) }}>Nueva Institución</button>
+            <button onClick={() => { setShowUserModal(true) }}>Nuevo Usuario</button>
+          </>}
+      </div>
       {showModal && <EditorModal institution={data.institution} field={data.field} close={setShowModal} />}
-      {showAddModal && <NewInstModal close={setShowAddModal} />}
+      {showInstModal && <NewInstModal close={setShowInstModal} />}
+      {showUserModal && <NewUserModal close={setShowUserModal} />}
     </div>
   )
 }
