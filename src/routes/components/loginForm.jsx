@@ -282,7 +282,6 @@ export default function LoginForm(){
                     !createAccount ?
                     <>
                         <button className='solid-button' onClick={login} >INICIAR SESIÓN</button>
-                        <button onClick={handleCreateAccount}>CREAR CUENTA</button>
                         <button className = 'demo-button' onClick={() => setDemoValidation(true)}>DEMO</button>
                     </>:
                     (firstRegister ?
