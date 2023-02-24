@@ -14,18 +14,19 @@ export default function NewUserModal ({ close }) {
   const [name, setName] = React.useState('')
   const [username, setUsername] = React.useState('')
   const [password, setPassword] = React.useState('')
+  const [rol, setRol] = React.useState('')
 
   const [enabled, setEnabled] = React.useState(false)
   const [done, setDone] = React.useState(false)
   const [textDone, setTextDone] = React.useState('')
 
   React.useEffect(() => {
-    if (code !== '' && name !== '' && username !== '' && password !== '') {
+    if (code !== '' && name !== '' && username !== '' && password !== '' && rol !== '') {
       setEnabled(false)
     } else {
       setEnabled(true)
     }
-  }, [code, name, username, password])
+  }, [code, name, username, password, rol])
   const handleClick = () => {
     addInstitution(
       { institution_code: code, name, username, password },
@@ -46,24 +47,24 @@ export default function NewUserModal ({ close }) {
     <div className={styles['big-container']}>
       <div className={styles['editor-modal']}>
         {
-                    done
-                      ? <>
-                        <h2>{textDone}</h2>
-                        <button onClick={() => { window.location.reload() }}>ACTUALIZAR</button>
-                      </>
-                      : <>
-                        <span onClick={() => { close(false) }} />
-                        <h2>Llene los siguientes campos</h2>
-                        <div className={styles['form-container']}>
-                          <input type='text' placeholder='Código' value={code} onChange={(e) => { setCode(e.target.value) }} />
-                          <input type='text' placeholder='Nombre Completo' value={name} onChange={(e) => { setName(e.target.value) }} />
-                          <input type='text' placeholder='Nombre de usuario' value={username} onChange={(e) => { setUsername(e.target.value) }} />
-                          <input type='text' placeholder='Contraseña' value={password} onChange={(e) => { setPassword(e.target.value) }} />
-                          <GenericSelector options={options} defaultLabel='Rol' />
-                        </div>
-                        <button onClick={handleClick} disabled={enabled}>Guardar</button>
-                      </>
-                }
+          done
+          ? <>
+            <h2>{textDone}</h2>
+            <button onClick={() => { window.location.reload() }}>ACTUALIZAR</button>
+          </>
+          : <>
+            <span onClick={() => { close(false) }} />
+            <h2>Llene los siguientes campos</h2>
+            <div className={styles['form-container']}>
+              <input type='text' placeholder='Código' value={code} onChange={(e) => { setCode(e.target.value) }} />
+              <input type='text' placeholder='Nombre Completo' value={name} onChange={(e) => { setName(e.target.value) }} />
+              <input type='text' placeholder='Nombre de usuario' value={username} onChange={(e) => { setUsername(e.target.value) }} />
+              <input type='text' placeholder='Contraseña' value={password} onChange={(e) => { setPassword(e.target.value) }} />
+              <GenericSelector options={options} defaultLabel='Rol' setCurrentValue={setRol} />
+            </div>
+            <button onClick={handleClick} disabled={enabled}>Guardar</button>
+          </>
+        }
       </div>
     </div>
   )

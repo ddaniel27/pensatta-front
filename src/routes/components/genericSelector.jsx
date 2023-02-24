@@ -9,8 +9,8 @@ export default function GenericSelector ({ setCurrentValue, options = [], defaul
 
   return (
     <div className={styles['exercise-selector-area']}>
-      <select defaultValue={0} onChange={handleChange}>
-        <option value='0' hidden disabled>{defaultLabel}</option>
+      <select defaultValue='' onChange={handleChange}>
+        <option value='' hidden disabled>{defaultLabel}</option>
         {
           options.map((option, index) => (
             <option key={index} value={option.value}>{option.label}</option>
