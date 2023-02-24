@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from '../../styles/genericSelector.module.css'
 
 export default function GenericSelector ({ setCurrentValue, options = [], defaultLabel = 'Select an option' }) {
