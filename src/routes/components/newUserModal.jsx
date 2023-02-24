@@ -4,11 +4,9 @@ import GenericSelector from '../components/genericSelector'
 import styles from '../../styles/popups.module.css'
 
 const options = [
-  { value: '1', label: 'Option 1' },
-  { value: '2', label: 'Option 2' },
-  { value: '3', label: 'Option 3' },
-  { value: '4', label: 'Option 4' },
-  { value: '5', label: 'Option 5' }
+  { value: 'student', label: 'Estudiante' },
+  { value: 'teacher', label: 'Profesor' },
+  { value: 'coordinator', label: 'Coordinador' }
 ]
 
 export default function NewUserModal ({ close }) {
@@ -16,18 +14,19 @@ export default function NewUserModal ({ close }) {
   const [name, setName] = React.useState('')
   const [username, setUsername] = React.useState('')
   const [password, setPassword] = React.useState('')
+  const [rol, setRol] = React.useState('')
 
   const [enabled, setEnabled] = React.useState(false)
   const [done, setDone] = React.useState(false)
   const [textDone, setTextDone] = React.useState('')
 
   React.useEffect(() => {
-    if (code !== '' && name !== '' && username !== '' && password !== '') {
+    if (code !== '' && name !== '' && username !== '' && password !== '' && rol !== '') {
       setEnabled(false)
     } else {
       setEnabled(true)
     }
-  }, [code, name, username, password])
+  }, [code, name, username, password, rol])
   const handleClick = () => {
     addInstitution(
       { institution_code: code, name, username, password },
@@ -61,7 +60,7 @@ export default function NewUserModal ({ close }) {
                 <input type='text' placeholder='Nombre Completo' value={name} onChange={(e) => { setName(e.target.value) }} />
                 <input type='text' placeholder='Nombre de usuario' value={username} onChange={(e) => { setUsername(e.target.value) }} />
                 <input type='text' placeholder='Contraseña' value={password} onChange={(e) => { setPassword(e.target.value) }} />
-                <GenericSelector options={options} />
+                <GenericSelector options={options} defaultLabel='Rol' setCurrentValue={setRol} />
               </div>
               <button onClick={handleClick} disabled={enabled}>Guardar</button>
             </>

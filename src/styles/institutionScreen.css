@@ -103,3 +103,17 @@
     font-weight: bold;
     color: #00635D;
 }
+
+.buttons-container{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  right: 0;
+  bottom: 0;
+  gap: 20px;
+}
+
+
+.buttons-container > button{
+  position: relative !important;
+}
