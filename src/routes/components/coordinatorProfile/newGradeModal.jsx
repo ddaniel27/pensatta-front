@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { addGroup, getTeachers } from '../../../requests'
 import styles from '../../../styles/popups.module.css'
+import GenericSelector from '../genericSelector'
 
 export default function NewGradeModal ({ close, userId }) {
   const [level, setLevel] = useState('')
@@ -8,16 +9,23 @@ export default function NewGradeModal ({ close, userId }) {
   const [teacherSelected, setTeacherSelected] = useState('')
   const [teachers, setTeachers] = useState([])
 
+  const onChangeGrado = (e) => {
+    const value = e.target.value
+    if (/^\d*$/.test(value)) {
+      setLevel(value)
+    }
+  }
+
   useEffect(() => {
     getTeachers(userId, response => {
-      setTeachers(response.profesores)
+      const options = response.profesores.map(teacher => ({
+        value: teacher.id,
+        label: `${teacher.first_name} ${teacher.last_name}`
+      }))
+      setTeachers(options)
+      console.log(response.profesores)
     })
   }, [])
-
-  useEffect(() => {
-
-  }, [teachers])
-
   const [enabled, setEnabled] = useState(false)
   const [done, setDone] = useState(false)
   const [textDone, setTextDone] = useState('')
@@ -31,7 +39,8 @@ export default function NewGradeModal ({ close, userId }) {
   }, [level, course, teacherSelected])
   const handleClick = () => {
     addGroup(
-      { nivel: level, curso: course, profesor: teacherSelected },
+      userId,
+      { nivel: level, curso: course, id_Profesor: teacherSelected },
       (response) => {
         if (response.added) {
           setTextDone('Se ha añadido correctamente')
@@ -44,6 +53,9 @@ export default function NewGradeModal ({ close, userId }) {
         alert('Error')
       })
   }
+  useEffect(() => {
+    console.log(teacherSelected)
+  }, [teacherSelected])
 
   return (
     <div className={styles['big-container']}>
@@ -57,8 +69,11 @@ export default function NewGradeModal ({ close, userId }) {
             : <>
               <span onClick={() => { close(false) }} />
               <h2>Llene los siguientes campos</h2>
-              <input type='text' placeholder='Grado' value={level} onChange={(e) => { setLevel(e.target.value) }} />
-              <input type='text' placeholder='Grupo' value={course} onChange={(e) => { setCourse(e.target.value) }} />
+              <div className={styles['form-container']}>
+                <input type='text' placeholder='Grado' value={level} onChange={onChangeGrado} />
+                <input type='text' placeholder='Grupo' value={course} onChange={(e) => { setCourse(e.target.value) }} />
+                <GenericSelector setCurrentValue={setTeacherSelected} defaultLabel='Elige un profesor' options={teachers}/>
+              </div>
               <button onClick={handleClick} disabled={enabled}>Guardar</button>
             </>
         }

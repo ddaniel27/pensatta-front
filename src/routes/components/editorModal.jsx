@@ -40,13 +40,13 @@ export default function EditorModal ({ institution, field, close }) {
             ? <>
               <h2>{textDone}</h2>
               <button onClick={() => { window.location.reload() }}>ACTUALIZAR</button>
-              </>
+            </>
             : <>
               <span onClick={() => { close(false) }} />
               <h2>Ingrese el nuevo valor</h2>
               <input type='text' placeholder={field} value={value} onChange={(e) => { setValue(e.target.value) }} />
               <button onClick={handleClick} disabled={enabled}>Guardar</button>
-              </>
+            </>
         }
       </div>
     </div>

@@ -48,24 +48,24 @@ export default function NewUserModal ({ close }) {
     <div className={styles['big-container']}>
       <div className={styles['editor-modal']}>
         {
-                    done
-                      ? <>
-                        <h2>{textDone}</h2>
-                        <button onClick={() => { window.location.reload() }}>ACTUALIZAR</button>
-                      </>
-                      : <>
-                        <span onClick={() => { close(false) }} />
-                        <h2>Llene los siguientes campos</h2>
-                        <div className={styles['form-container']}>
-                          <input type='text' placeholder='Código' value={code} onChange={(e) => { setCode(e.target.value) }} />
-                          <input type='text' placeholder='Nombre Completo' value={name} onChange={(e) => { setName(e.target.value) }} />
-                          <input type='text' placeholder='Nombre de usuario' value={username} onChange={(e) => { setUsername(e.target.value) }} />
-                          <input type='text' placeholder='Contraseña' value={password} onChange={(e) => { setPassword(e.target.value) }} />
-                          <GenericSelector options={options} />
-                        </div>
-                        <button onClick={handleClick} disabled={enabled}>Guardar</button>
-                      </>
-                }
+          done
+            ? <>
+              <h2>{textDone}</h2>
+              <button onClick={() => { window.location.reload() }}>ACTUALIZAR</button>
+            </>
+            : <>
+              <span onClick={() => { close(false) }} />
+              <h2>Llene los siguientes campos</h2>
+              <div className={styles['form-container']}>
+                <input type='text' placeholder='Código' value={code} onChange={(e) => { setCode(e.target.value) }} />
+                <input type='text' placeholder='Nombre Completo' value={name} onChange={(e) => { setName(e.target.value) }} />
+                <input type='text' placeholder='Nombre de usuario' value={username} onChange={(e) => { setUsername(e.target.value) }} />
+                <input type='text' placeholder='Contraseña' value={password} onChange={(e) => { setPassword(e.target.value) }} />
+                <GenericSelector options={options} />
+              </div>
+              <button onClick={handleClick} disabled={enabled}>Guardar</button>
+            </>
+        }
       </div>
     </div>
   )
