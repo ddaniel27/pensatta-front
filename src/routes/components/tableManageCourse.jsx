@@ -61,7 +61,7 @@ export default function TableManageCourse ({ title = 'Grado', data = defaultData
           <CourseInfo data={courseData} id={index} showCourses={course === `${index}`} courseSelected={setCourse} key={index} coordinator={coordinator} courseId={courseData.course_id} setCourseId={setCourseId}/>
         ))}
       </div>
-      {showAddModal && <NewStudentModal close={setShowAddModal} userId={userId} />}
+      {showAddModal && <NewStudentModal close={setShowAddModal} userId={userId} courseId={courseId} />}
     </div>
   )
 }

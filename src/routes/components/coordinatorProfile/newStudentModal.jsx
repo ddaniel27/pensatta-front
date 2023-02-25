@@ -1,46 +1,27 @@
 import { useState, useEffect } from 'react'
-import { addGroup, getTeachers } from '../../../requests'
+import { addStudent } from '../../../requests'
 import styles from '../../../styles/popups.module.css'
-import GenericSelector from '../genericSelector'
 
-export default function NewStudentModal ({ close, userId }) {
-  const [level, setLevel] = useState('')
-  const [course, setCourse] = useState('')
-  const [teacherSelected, setTeacherSelected] = useState('')
-  const [teachers, setTeachers] = useState([])
+export default function NewStudentModal ({ close, userId, courseId }) {
+  const [firstName, setFirstName] = useState('')
+  const [lastName, setLastName] = useState('')
+  const [numLista, setNumLista] = useState('')
+  const [password, setPassword] = useState('')
   const [enabled, setEnabled] = useState(false)
   const [done, setDone] = useState(false)
   const [textDone, setTextDone] = useState('')
 
-  const onChangeGrado = (e) => {
-    const value = e.target.value
-    if (/^\d*$/.test(value)) {
-      setLevel(value)
-    }
-  }
-
   useEffect(() => {
-    getTeachers(userId, response => {
-      const options = response.profesores.map(teacher => ({
-        value: teacher.id,
-        label: `${teacher.first_name} ${teacher.last_name}`
-      }))
-      setTeachers(options)
-      console.log(response.profesores)
-    })
-  }, [])
-
-  useEffect(() => {
-    if (level !== '' && course !== '' && teacherSelected !== '') {
+    if (firstName !== '' && lastName !== '' && numLista !== '' && password !== '') {
       setEnabled(false)
     } else {
       setEnabled(true)
     }
-  }, [level, course, teacherSelected])
+  }, [firstName, lastName, numLista, password])
   const handleClick = () => {
-    addGroup(
+    addStudent(
       userId,
-      { nivel: level, curso: course, id_Profesor: teacherSelected },
+      { first_name: firstName, last_name: lastName, num_lista: numLista, password, id_Grado: courseId },
       (response) => {
         if (response.added) {
           setTextDone('Se ha añadido correctamente')
@@ -53,9 +34,6 @@ export default function NewStudentModal ({ close, userId }) {
         alert('Error')
       })
   }
-  useEffect(() => {
-    console.log(teacherSelected)
-  }, [teacherSelected])
 
   return (
     <div className={styles['big-container']}>
@@ -70,9 +48,10 @@ export default function NewStudentModal ({ close, userId }) {
               <span onClick={() => { close(false) }} />
               <h2>Llene los siguientes campos</h2>
               <div className={styles['form-container']}>
-                <input type='text' placeholder='Grado' value={level} onChange={onChangeGrado} />
-                <input type='text' placeholder='Grupo' value={course} onChange={(e) => { setCourse(e.target.value) }} />
-                <GenericSelector setCurrentValue={setTeacherSelected} defaultLabel='Elige un profesor' options={teachers}/>
+                <input type='text' placeholder='Primer Nombre' value={firstName} onChange={(e) => { setFirstName(e.target.value) }} />
+                <input type='text' placeholder='Primer Apellido' value={lastName} onChange={(e) => { setLastName(e.target.value) }} />
+                <input type='number' placeholder='Número de lista' value={numLista} onChange={(e) => { setNumLista(e.target.value) }} />
+                <input type='password' placeholder='Contraseña' value={password} onChange={(e) => { setPassword(e.target.value) }} />
               </div>
               <button onClick={handleClick} disabled={enabled}>GUARDAR</button>
             </>
