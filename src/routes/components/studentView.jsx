@@ -14,61 +14,61 @@ export default function StudentView () {
     setActivity(false)
     setRandomId(
       [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        21,
-        22,
-        23,
-        24,
-        25,
-        26,
-        28,
-        29,
-        31,
-        33,
-        34,
-        35,
-        37,
-        38,
-        39,
-        40,
-        41,
-        43,
-        44,
-        46,
-        47,
-        50,
-        51,
-        53,
-        54,
-        55,
-        57,
-        61,
-        68,
-        69,
-        75,
-        77,
-        82,
-        84,
-        86,
-        95,
-        99,
-        101,
-        107
+        '1',
+        '2',
+        '3',
+        '4',
+        '5',
+        '6',
+        '7',
+        '8',
+        '10',
+        '11',
+        '12',
+        '13',
+        '14',
+        '15',
+        '16',
+        '17',
+        '21',
+        '22',
+        '23',
+        '24',
+        '25',
+        '26',
+        '28',
+        '29',
+        '31',
+        '33',
+        '34',
+        '35',
+        '37',
+        '38',
+        '39',
+        '40',
+        '41',
+        '43',
+        '44',
+        '46',
+        '47',
+        '50',
+        '51',
+        '53',
+        '54',
+        '55',
+        '57',
+        '61',
+        '68',
+        '69',
+        '75',
+        '77',
+        '82',
+        '84',
+        '86',
+        '95',
+        '99',
+        '101',
+        '107'
       ][Math.floor(Math.random() * 55)]
     )
   }
@@ -81,18 +81,18 @@ export default function StudentView () {
   }, [activity, setBackground, setTitle])
 
   return (
-    <div className="main-area">
+    <div className='main-area'>
       {
         profile
-          ? <StudentProfileViewer/>
+          ? <StudentProfileViewer />
           : (
-            activity
-              ? <>
-                <Information messages={['¡Qué gusto tenerte por acá!']} />
-                <button className="button-play" onClick={handleMessages}>JUGAR</button>
-              </>
-              : <RouterActivity idExercise={randomId}/>
-          )
+              activity
+                ? <>
+                  <Information messages={['¡Qué gusto tenerte por acá!']} />
+                  <button className='button-play' onClick={handleMessages}>JUGAR</button>
+                  </>
+                : <RouterActivity idExercise={randomId} />
+            )
       }
     </div>
   )
