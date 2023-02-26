@@ -1,6 +1,7 @@
 import '../../styles/tableManageCourse.css'
 import { useState, useEffect } from 'react'
 import NewStudentModal from './coordinatorProfile/newStudentModal'
+import EditStudentModal from './coordinatorProfile/editStudentModal'
 
 const defaultCourseInfo = {
   title: '6 A',
@@ -43,6 +44,8 @@ const defaultData = [
 
 export default function TableManageCourse ({ title = 'Grado', data = defaultData, coordinator = true, userId }) {
   const [showAddModal, setShowAddModal] = useState(false)
+  const [showEditModal, setShowEditModal] = useState(false)
+  const [studentId, setStudentId] = useState(false)
   const [course, setCourse] = useState(false)
   const [courseId, setCourseId] = useState(false)
 
@@ -58,10 +61,11 @@ export default function TableManageCourse ({ title = 'Grado', data = defaultData
       </div>
       <div className='TableManageCourse__container'>
         {data.map((courseData, index) => (
-          <CourseInfo data={courseData} id={index} showCourses={course === `${index}`} courseSelected={setCourse} key={index} coordinator={coordinator} courseId={courseData.course_id} setCourseId={setCourseId}/>
+          <CourseInfo data={courseData} id={index} showCourses={course === `${index}`} courseSelected={setCourse} key={index} coordinator={coordinator} courseId={courseData.course_id} setCourseId={setCourseId} setStudentId={setStudentId} setShowEditModal={setShowEditModal}/>
         ))}
       </div>
       {showAddModal && <NewStudentModal close={setShowAddModal} userId={userId} courseId={courseId} />}
+      {showEditModal && <EditStudentModal close={setShowEditModal} userId={userId} courseId={courseId} studentId={studentId} />}
     </div>
   )
 }
@@ -72,10 +76,15 @@ export default function TableManageCourse ({ title = 'Grado', data = defaultData
   * @param {array} students
   **/
 
-function CourseInfo ({ data = defaultCourseInfo, showCourses = false, courseSelected = () => {}, id = 0, coordinator = true, courseId, setCourseId }) {
+function CourseInfo ({ data = defaultCourseInfo, showCourses = false, courseSelected = () => {}, id = 0, coordinator = true, courseId, setCourseId, setStudentId, setShowEditModal }) {
   const handleCourseSelected = ({ target }) => {
     courseSelected(target.id)
     setCourseId(courseId)
+  }
+  const handleClick = (id, student) => {
+    console.log(student)
+    setStudentId(id)
+    setShowEditModal(true)
   }
   return (
     <div className={`CourseInfo ${!showCourses && 'hiddeCourseInfo'}`}>
@@ -97,7 +106,7 @@ function CourseInfo ({ data = defaultCourseInfo, showCourses = false, courseSele
               {data.students.map((student, index) => (
                 <div className='CourseInfo__body__row' key={index}>
                   <div className='CourseInfo__body__row__name'>{student.name}</div>
-                  <div className='CourseInfo__body__row__repass'>Reestablecer contraseña</div>
+                  <div className='CourseInfo__body__row__repass' onClick={() => { handleClick(student.id, student) }}>Reestablecer contraseña</div>
                   <div className='CourseInfo__body__row__delete'>Eliminar</div>
                 </div>
               ))}

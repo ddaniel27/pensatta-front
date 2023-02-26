@@ -183,6 +183,16 @@ function getTeachers (coordinatorId, cb) {
       console.log(error)
     })
 }
+function changePassword (coordinatorId, objParams, cb, cbError) {
+  axios.put(`${URL}/coordinacion/changepassword/${coordinatorId}`, objParams)
+    .then(function (response) {
+      cb(response.data)
+    })
+    .catch(function (error) {
+      console.log(error)
+      cbError('Un error ha ocurrido')
+    })
+}
 
 export {
   getLogin,
@@ -206,5 +216,6 @@ export {
   profesorMetricsStudents,
   addGroup,
   getTeachers,
-  addStudent
+  addStudent,
+  changePassword
 }

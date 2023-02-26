@@ -86,13 +86,13 @@ export default function StudentView () {
         profile
           ? <StudentProfileViewer />
           : (
-              activity
-                ? <>
-                  <Information messages={['¡Qué gusto tenerte por acá!']} />
-                  <button className='button-play' onClick={handleMessages}>JUGAR</button>
-                  </>
-                : <RouterActivity idExercise={randomId} />
-            )
+            activity
+              ? <>
+                <Information messages={['¡Qué gusto tenerte por acá!']} />
+                <button className='button-play' onClick={handleMessages}>JUGAR</button>
+              </>
+              : <RouterActivity idExercise={randomId} />
+          )
       }
     </div>
   )
