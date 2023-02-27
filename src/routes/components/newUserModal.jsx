@@ -1,5 +1,5 @@
-import React from 'react'
-import { addInstitution } from '../../requests'
+import { useState, useEffect } from 'react'
+import { postRegister } from '../../requests'
 import GenericSelector from '../components/genericSelector'
 import styles from '../../styles/popups.module.css'
 
@@ -10,18 +10,18 @@ const options = [
 ]
 
 export default function NewUserModal ({ close }) {
-  const [code, setCode] = React.useState('')
-  const [firstname, setFirstname] = React.useState('')
-  const [lastname, setLastname] = React.useState('')
-  const [numb, setNumb] = React.useState('')
-  const [password, setPassword] = React.useState('')
-  const [rol, setRol] = React.useState('')
+  const [code, setCode] = useState('')
+  const [firstname, setFirstname] = useState('')
+  const [lastname, setLastname] = useState('')
+  const [numb, setNumb] = useState('')
+  const [password, setPassword] = useState('')
+  const [rol, setRol] = useState('')
 
-  const [enabled, setEnabled] = React.useState(false)
-  const [done, setDone] = React.useState(false)
-  const [textDone, setTextDone] = React.useState('')
+  const [enabled, setEnabled] = useState(false)
+  const [done, setDone] = useState(false)
+  const [textDone, setTextDone] = useState('')
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (code !== '' && firstname !== '' && lastname !== '' && numb !== '' && password !== '' && rol !== '') {
       setEnabled(false)
     } else {
@@ -29,8 +29,8 @@ export default function NewUserModal ({ close }) {
     }
   }, [code, firstname, lastname, numb, password, rol])
   const handleClick = () => {
-    addInstitution(
-      { institution_code: code, name, username, password },
+    postRegister(
+      { institution_code: code, password, first_name: firstname, last_name: lastname, list_number: numb, role: rol },
       (data) => {
         if (data.registered) {
           setTextDone('Se ha añadido correctamente')

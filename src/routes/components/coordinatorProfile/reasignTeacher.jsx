@@ -1,26 +1,40 @@
 import { useState, useEffect } from 'react'
-import { changePassword } from '../../../requests'
+import { getTeachers, reasignTeacher } from '../../../requests'
 import styles from '../../../styles/popups.module.css'
+import GenericSelector from '../genericSelector'
 
-export default function EditStudentModal ({ close, userId, studentId }) {
-  const [password, setPassword] = useState('')
+export default function ReasignTeacherModal ({ close, userId, courseId }) {
+  const [teachers, setTeachers] = useState([])
+  const [teacher, setTeacher] = useState('')
   const [enabled, setEnabled] = useState(false)
   const [done, setDone] = useState(false)
   const [textDone, setTextDone] = useState('')
 
   useEffect(() => {
-    if (password !== '') {
+    getTeachers(userId, response => {
+      const options = response.profesores.map(teacher => ({
+        value: teacher.id,
+        label: `${teacher.first_name} ${teacher.last_name}`
+      }))
+      setTeachers(options)
+      console.log(response.profesores)
+    })
+  }, [])
+
+  useEffect(() => {
+    if (teacher !== '') {
       setEnabled(false)
     } else {
       setEnabled(true)
     }
-  }, [password])
+  }, [teacher])
+
   const handleClick = () => {
-    changePassword(
+    reasignTeacher(
       userId,
-      { value: password, field: 'password', id_Estudiante: studentId },
+      { id_Grado: courseId, id_Profesor: teacher },
       (response) => {
-        if (response.updated) {
+        if (response.reassigned) {
           setTextDone('Se cambió correctamente')
         } else {
           setTextDone('No se ha podido cambiar')
@@ -39,13 +53,13 @@ export default function EditStudentModal ({ close, userId, studentId }) {
           done
             ? <>
               <h2>{textDone}</h2>
-              <button onClick={() => { close(false) }}>OK</button>
+              <button onClick={() => { window.location.reload() }}>ACTUALIZAR</button>
             </>
             : <>
               <span onClick={() => { close(false) }} />
               <h2>Llene los siguientes campos</h2>
               <div className={styles['form-container']}>
-                <input type='password' placeholder='Contraseña' value={password} onChange={(e) => { setPassword(e.target.value) }} />
+                <GenericSelector setCurrentValue={setTeacher} defaultLabel='Elige un profesor' options={teachers}/>
               </div>
               <button onClick={handleClick} disabled={enabled}>GUARDAR</button>
             </>

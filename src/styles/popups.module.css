@@ -8,8 +8,10 @@
 }
 
 .editor-modal{
-    width: 450px;
-    height: 680px;
+    width: 40vw;
+    min-width: 430px;
+    height: auto;
+    padding: 10% 0;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 12px;
@@ -93,4 +95,8 @@
 
 .editor-modal > button:active{
     transform: translate(0, 5px) !important;
+}
+
+.editor-modal h2{
+    text-align: center;
 }

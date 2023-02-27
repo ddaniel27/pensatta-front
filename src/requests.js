@@ -194,6 +194,28 @@ function changePassword (coordinatorId, objParams, cb, cbError) {
     })
 }
 
+function reasignTeacher (coordinatorId, objParams, cb, cbError) {
+  axios.put(`${URL}/coordinacion/grupos/reasignteacher/${coordinatorId}`, objParams)
+    .then(function (response) {
+      cb(response.data)
+    })
+    .catch(function (error) {
+      console.log(error)
+      cbError('Un error ha ocurrido')
+    })
+}
+
+function deleteStudentFromCourse (coordinatorId, objParams, cb, cbError) {
+  axios.put(`${URL}/coordinacion/grupos/deletestudent/${coordinatorId}`, objParams)
+    .then(function (response) {
+      cb(response.data)
+    })
+    .catch(function (error) {
+      console.log(error)
+      cbError('Un error ha ocurrido')
+    })
+}
+
 export {
   getLogin,
   postLogin,
@@ -217,5 +239,7 @@ export {
   addGroup,
   getTeachers,
   addStudent,
-  changePassword
+  changePassword,
+  reasignTeacher,
+  deleteStudentFromCourse
 }
