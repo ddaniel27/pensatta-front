@@ -1,6 +1,9 @@
 .pacman {
     position: relative;
-    width: 12px * 28;
+    width: auto;
+    border: 10px solid #333333;
+    background-color: #333333;
+    border-radius: 10px;
 }
 .pacman-game-container{
     display: flex;
