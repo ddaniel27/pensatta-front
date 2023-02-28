@@ -1,0 +1,20 @@
+.food {
+    display: block;
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    margin-left: -2px;
+    margin-top: -2px;
+    border-radius: 100%;
+    background: #F97D61;
+
+    &.big {
+        width: 10px;
+        height: 10px;
+        margin-left: -5px;
+        margin-top: -5px;
+        background-color: #69E485;
+        border-radius: 0 0 100% 100%;
+    }
+}
+

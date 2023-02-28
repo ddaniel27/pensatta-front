@@ -1,64 +1,94 @@
-import { useState, useEffect, useRef } from 'react'
+import { Component } from 'react'
 import { EAST, NORTH, WEST, SOUTH } from './constants'
 import getInitialState from './state'
 import { animate, changeDirection } from './game/game'
+import Board from './Board/board'
+import AllFood from './AllFood/allFood'
+import Monster from './Monster/monster'
 import Player from './Player/playerPac'
 import './style.scss'
+import CrossButtons from './buttons/buttons'
 
-export default function GameComponent ({ gridSize = 12, isAnimate = true, onEnd = () => {} }) {
-  const [state, setState] = useState(getInitialState())
-  const timerStart = useRef(null)
-  const timerAnimate = useRef(null)
-  const props = { gridSize, animate: isAnimate }
+export default class Pacman extends Component {
+  constructor (props) {
+    super(props)
 
-  const changeDirectionOnThis = direction => {
-    const result = changeDirection(state, direction)
-    setState(result)
+    this.state = getInitialState()
+
+    this.onKey = evt => {
+      if (evt.key === 'ArrowRight') {
+        return this.changeDirection(EAST)
+      }
+      if (evt.key === 'ArrowUp') {
+        return this.changeDirection(NORTH)
+      }
+      if (evt.key === 'ArrowLeft') {
+        return this.changeDirection(WEST)
+      }
+      if (evt.key === 'ArrowDown') {
+        return this.changeDirection(SOUTH)
+      }
+
+      return null
+    }
+
+    this.timers = {
+      start: null,
+      animate: null
+    }
   }
 
-  const onKey = evt => {
-    if (evt.key === 'ArrowRight') {
-      return changeDirectionOnThis(EAST)
-    }
-    if (evt.key === 'ArrowUp') {
-      return changeDirectionOnThis(NORTH)
-    }
-    if (evt.key === 'ArrowLeft') {
-      return changeDirectionOnThis(WEST)
-    }
-    if (evt.key === 'ArrowDown') {
-      return changeDirectionOnThis(SOUTH)
-    }
+  componentDidMount () {
+    window.addEventListener('keydown', this.onKey)
 
-    return null
-  }
-  const step = () => {
-    const result = animate(state)
-    setState(result)
-    clearTimeout(timerAnimate.current)
-    timerAnimate.current = setTimeout(step, 20)
-  }
+    this.timers.start = setTimeout(() => {
+      this.setState({ stepTime: Date.now() })
 
-  useEffect(() => {
-    window.addEventListener('keydown', onKey)
-    timerStart.current = setTimeout(() => {
-      setState({ stepTime: Date.now() })
-      step()
+      this.step()
     }, 3000)
+  }
 
-    return () => {
-      window.removeEventListener('keydown', onKey)
+  componentWillUnmount () {
+    window.removeEventListener('keydown', this.onKey)
 
-      clearTimeout(timerStart.current)
-      clearTimeout(timerAnimate.current)
-    }
-  }, [])
+    clearTimeout(this.timers.start)
+    clearTimeout(this.timers.animate)
+  }
 
-  return (
-    <div className="pacman">
-      <Player {...props} {...state.player} lost={state.lost} onEnd={onEnd} />
-    </div>
-  )
+  step () {
+    const result = animate(this.state)
+
+    this.setState(result)
+
+    clearTimeout(this.timers.animate)
+    this.timers.animate = setTimeout(() => this.step(), 20)
+  }
+
+  changeDirection (direction) {
+    this.setState(changeDirection(this.state, { direction }))
+  }
+
+  render () {
+    const { onEnd, ...otherProps } = this.props
+
+    const props = { gridSize: 12, ...otherProps }
+
+    const monsters = this.state.monsters.map(({ id, ...monster }) => (
+      <Monster key={id} {...props} {...monster} />
+    ))
+
+    return (
+      <div className='pacman-game-container'>
+        <div className="pacman">
+          <Board {...props} />
+          <AllFood {...props} food={this.state.food} />
+          {monsters}
+          <Player {...props} {...this.state.player} lost={this.state.lost} onEnd={onEnd} />
+        </div>
+        <CrossButtons onClickDown={() => this.changeDirection(SOUTH)} onClickUp={() => this.changeDirection(NORTH)} onClickLeft={() => this.changeDirection(WEST)} onClickRight={() => this.changeDirection(EAST)} />
+      </div>
+    )
+  }
 }
 
 /**

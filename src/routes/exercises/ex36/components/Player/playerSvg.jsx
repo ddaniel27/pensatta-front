@@ -1,6 +1,6 @@
-export default function PlayerPath ({ style, radius, className }) {
+export default function PlayerPath ({ style, className }) {
   return (
-    <svg className={className} width={radius} height={radius * (12 / 17)} viewBox={`0 0 ${radius} ${radius * (12 / 17)}`} fill="none" xmlns="http://www.w3.org/2000/svg" style={style}>
+    <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={style} className={className}>
       <path fillRule="evenodd" clipRule="evenodd" d="M12.7486 6.39822L7.12696 0L6.80249 3.12444L7.12696 7.06291L8.45704 9.55575L12.7486 6.39822ZM21.0369 6.39822L26.6585 0L26.983 3.12444L26.6585 7.06291L25.3285 9.55575L21.0369 6.39822Z" fill="#E6C786"/>
       <path fillRule="evenodd" clipRule="evenodd" d="M16.8922 4.677L20.0597 5.15953L23.2329 7.15361L25.328 9.56553L26.658 13.3014L16.8922 15.6635L7.12646 13.3014L8.45655 9.56553L10.5516 7.15361L13.7248 5.15953L16.8922 4.677Z" fill="#E55636"/>
       <path fillRule="evenodd" clipRule="evenodd" d="M13.7248 5.14976L11.3394 2.73473L7.12646 0L8.57686 3.43433L9.01018 6.35523L9.77508 9.28354L12.0094 8.2489L13.4829 6.505L13.7248 5.14976ZM20.0597 5.14976L22.4451 2.73473L26.658 0L25.2077 3.43433L24.7744 6.35523L24.0095 9.28354L21.7752 8.2489L20.3017 6.505L20.0597 5.14976Z" fill="#99250C"/>

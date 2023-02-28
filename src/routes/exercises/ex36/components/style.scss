@@ -2,3 +2,10 @@
     position: relative;
     width: 12px * 28;
 }
+.pacman-game-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}

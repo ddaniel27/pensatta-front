@@ -69,7 +69,7 @@ export default function getInitialState () {
         startingPosition: [12.5, 15],
         deadTime: 0,
         eatingTime: 0,
-        color: 'red'
+        color: '#FF7171'
       },
       {
         id: 'monster-cyan',
@@ -79,7 +79,7 @@ export default function getInitialState () {
         startingPosition: [10.5, 15],
         deadTime: 0,
         eatingTime: 0,
-        color: 'cyan',
+        color: '#3FDFE9',
         directionBias: true
       },
       {
@@ -90,7 +90,7 @@ export default function getInitialState () {
         startingPosition: [14.5, 15],
         deadTime: 0,
         eatingTime: 0,
-        color: 'darkorange'
+        color: '#EDCA71'
       },
       {
         id: 'monster-pink',
@@ -100,7 +100,7 @@ export default function getInitialState () {
         startingPosition: [12.5, 17],
         deadTime: 0,
         eatingTime: 0,
-        color: 'pink',
+        color: '#E78CFE',
         directionBias: true
       }
     ],

@@ -1,47 +1,80 @@
-import { useEffect, useState } from 'react'
-import { PLAYER_RADIUS } from '../constants.js'
-import { cssPosition } from '../helpers.js'
+import React, { Component } from 'react'
+import { PLAYER_RADIUS } from '../constants'
+import { cssPosition } from '../helpers'
+import PlayerPath from './playerSvg'
 import './style.scss'
-import PlayerPath from './playerSvg.jsx'
 
-export default function Player ({ lost, onEnd, gridSize, position }) {
-  const [timerLose, setTimerLose] = useState(null)
+const ANIMATION_SPEED = 30
 
-  const radius = gridSize * PLAYER_RADIUS
+export default class Player extends Component {
+  constructor (props) {
+    super(props)
 
-  const style = {
-    ...cssPosition(position, gridSize),
-    width: radius * 2,
-    height: radius * 2,
-    marginLeft: -radius,
-    marginTop: -radius
+    this.state = {
+      angle: 1,
+      timerBite: null,
+      timerLose: null
+    }
+
+    this.startTime = Date.now()
   }
 
-  const onLoseAnimation = () => {
-    if (onEnd) {
-      setImmediate(() => onEnd())
+  componentDidMount () {
+    this.setState({
+      timerBite: setInterval(() => this.setState({
+        angle: 1 + 0.5 * Math.sin((Date.now() - this.startTime) / 50)
+      }), ANIMATION_SPEED)
+    })
+  }
+
+  componentWillUnmount () {
+    clearInterval(this.state.timerBite)
+    clearTimeout(this.state.timerLose)
+  }
+
+  onLoseAnimation () {
+    if (this.state.angle < Math.PI * 2) {
+      return setTimeout(() => {
+        this.setState({
+          angle: Math.min(Math.PI * 2, this.state.angle + 0.1),
+          timerLose: this.onLoseAnimation()
+        })
+      }, ANIMATION_SPEED)
+    }
+
+    if (this.props.onEnd) {
+      setImmediate(() => this.props.onEnd())
     }
 
     return null
   }
 
-  useEffect(() => {
-    return () => {
-      clearTimeout(timerLose)
-    }
-  }, [])
+  componentDidUpdate (prevProps) {
+    if (!prevProps.lost && this.props.lost) {
+      clearInterval(this.state.timerBite)
+      clearTimeout(this.state.timerLose)
 
-  useEffect(() => {
-    if (!lost) {
-      return
+      this.setState({ angle: 0, timerLose: this.onLoseAnimation() })
     }
-    clearTimeout(timerLose)
-    setTimerLose(onLoseAnimation())
-  })
+  }
 
-  return (
-    <PlayerPath style={style} radius={radius} className="pacman-player"/>
-  )
+  render () {
+    const { gridSize, position } = this.props
+
+    const radius = gridSize * PLAYER_RADIUS
+
+    const style = {
+      ...cssPosition(position, gridSize),
+      width: radius * 2,
+      height: radius * 2,
+      marginLeft: -radius,
+      marginTop: -radius
+    }
+
+    return (
+      <PlayerPath style={style} className="pacman-player"/>
+    )
+  }
 }
 
 /**
