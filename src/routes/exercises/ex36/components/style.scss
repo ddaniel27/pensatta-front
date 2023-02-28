@@ -6,9 +6,14 @@
     border-radius: 10px;
 }
 .pacman-game-container{
+    width: 55%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 10px;
+}
+.pacman-game-all-container{
+    display: flex;
+    justify-content: center;
 }

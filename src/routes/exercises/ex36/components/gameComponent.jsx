@@ -78,14 +78,17 @@ export default class Pacman extends Component {
     ))
 
     return (
-      <div className='pacman-game-container'>
-        <div className="pacman">
-          <Board {...props} />
-          <AllFood {...props} food={this.state.food} />
-          {monsters}
-          <Player {...props} {...this.state.player} lost={this.state.lost} onEnd={onEnd} />
+      <div className='pacman-game-all-container'>
+        <div className='pacman-game-container'>
+          <div className="pacman">
+            <Board {...props} />
+            <AllFood {...props} food={this.state.food} setPhase={this.props.setIsFinish}/>
+            {monsters}
+            <Player {...props} {...this.state.player} lost={this.state.lost} onEnd={onEnd} />
+          </div>
+          <CrossButtons onClickDown={() => this.changeDirection(SOUTH)} onClickUp={() => this.changeDirection(NORTH)} onClickLeft={() => this.changeDirection(WEST)} onClickRight={() => this.changeDirection(EAST)} />
+          {(this.state.lost || this.props.isFinish) && <button onClick={() => this.props.setPhase('end')}>SIGUIENTE</button>}
         </div>
-        <CrossButtons onClickDown={() => this.changeDirection(SOUTH)} onClickUp={() => this.changeDirection(NORTH)} onClickLeft={() => this.changeDirection(WEST)} onClickRight={() => this.changeDirection(EAST)} />
       </div>
     )
   }

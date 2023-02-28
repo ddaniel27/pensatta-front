@@ -1,0 +1,14 @@
+{
+"initMessages":[
+    "Vence a los virus informáticos. Toma los escudos que te brindan los antivirus para poder atacarlos sin peligro. No te acerques sin protección."
+],
+"threshold": {
+    "max": 1,
+    "min": 1,
+    "perfect": 1
+},
+"path": "36",
+"color": "#53745B",
+"name": "Antivirus",
+"id": "36"
+}
