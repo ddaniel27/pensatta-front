@@ -6,7 +6,6 @@ import { postLogin } from '../../requests'
 import '../../styles/loginForm.css'
 
 function validateEmail (email) {
-  // eslint-disable-next-line no-useless-escape
   const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
   return re.test(String(email).toLowerCase())
 }
@@ -92,7 +91,7 @@ export default function LoginForm () {
         : <div className='login'>
           <input
             type='text'
-            placeholder='Correo'
+            placeholder='Código de usuario'
             id='emailLoginInput'
             value={emailLogin}
             onChange={(e) => setEmailLogin(e.target.value)}
