@@ -1,23 +1,21 @@
-import { useState, useContext, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import ProfileCard from './profileCard'
 import ProgressBar from './progressBar'
 import BadgeDisplayer from './badgeDisplayer'
 import TableDisplayExercises from './tableDisplayExercises'
-import UserContext from '../../../context/UserContext'
 import { getResumen } from '../../../requests'
 import '../../../styles/studentProfileResume.css'
 
-export default function StudentProfileResume ({ toggleView }) {
+export default function StudentProfileResume ({ toggleView, userObject }) {
   const [resumenData, setResumenData] = useState({})
   const [registers, setRegisters] = useState([])
-  const { loginUser } = useContext(UserContext)
 
   const callHistoryEndpoint = async (user) => {
     getResumen(user, setResumenData)
   }
 
   useEffect(() => {
-    callHistoryEndpoint(loginUser.id)
+    callHistoryEndpoint(userObject.id)
   }, [])
 
   useEffect(() => {
@@ -36,14 +34,14 @@ export default function StudentProfileResume ({ toggleView }) {
   return (
     <div className='student-profile-viewer'>
       <div className='student-profile-viewer-header-left'>
-        <ProfileCard {...loginUser} institution_code={resumenData.institution_name} />
+        <ProfileCard {...userObject} institution_code={resumenData.institution_name} />
       </div>
       <div className='student-profile-viewer-header-right'>
-        <span>Última conexión: {new Date(loginUser.last_login).toLocaleString()}</span>
-        <span className='level-span'>Nivel {Math.ceil(loginUser.total_exercises / 4)}</span>
+        <span>Última conexión: {new Date(userObject.last_login).toLocaleString()}</span>
+        <span className='level-span'>Nivel {Math.ceil(userObject.total_exercises / 4)}</span>
       </div>
       <div className='student-profile-viewer-body-left'>
-        <ProgressBar actual={registers[0]?.exercise_id || loginUser.total_exercises} />
+        <ProgressBar actual={registers[0]?.exercise_id || userObject.total_exercises} />
         <TableDisplayExercises
           registers={registers}
           headers_titles={['Ejercicios', 'Tiempo (mm:ss)', 'Promedio (%)']}
@@ -51,7 +49,7 @@ export default function StudentProfileResume ({ toggleView }) {
         />
       </div>
       <div className='student-profile-viewer-body-right'>
-        <BadgeDisplayer actual={registers[0]?.exercise_id || loginUser.total_exercises} />
+        <BadgeDisplayer actual={registers[0]?.exercise_id || userObject.total_exercises} />
       </div>
 
       <button onClick={() => { toggleView(true) }}>ESTADISTICAS</button>
