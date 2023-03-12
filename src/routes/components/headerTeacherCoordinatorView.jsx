@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import leftArrow from '/images/AuxButtons/left_Default.svg'
 import '../../styles/headerTeacherCoordinatorView.css'
 import { useContext } from 'react'
@@ -8,9 +9,10 @@ export default function HeaderTeacherCoordinatorView ({ title = 'Grado', grade =
 
   const handleClick = () => {
     const phases = {
-      "horizontalBar": "horizontalRows",
-      "rows": "horizontalBar",
-      "studentIndividual": "rows"      
+      horizontalBar: 'horizontalRows',
+      rows: 'horizontalBar',
+      studentIndividual: 'rows',
+      studentView: 'studentIndividual'
     }
     setPhase(phases[phase])
   }
@@ -18,11 +20,11 @@ export default function HeaderTeacherCoordinatorView ({ title = 'Grado', grade =
   return (
     <div className='HeaderTeacherCoordinatorView'>
       <div className='HeaderTeacherCoordinatorView__group'>
-        <img src={leftArrow} alt='left arrow'  onClick={handleClick}/>
-        <div className='HeaderTeacherCoordinatorView__title'>{title}</div>
-        <div className='HeaderTeacherCoordinatorView__id'>{grade}</div>
+        <img src={leftArrow} alt='left arrow' onClick={handleClick}/>
+        {title && <div className='HeaderTeacherCoordinatorView__title'>{title}</div>}
+        {grade && <div className='HeaderTeacherCoordinatorView__id'>{grade}</div>}
       </div>
-      <div className='HeaderTeacherCoordinatorView__average'>{text}</div>
+      {text && <div className='HeaderTeacherCoordinatorView__average'>{text}</div>}
     </div>
   )
 }

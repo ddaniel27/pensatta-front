@@ -5,8 +5,9 @@ import BadgeDisplayer from './badgeDisplayer'
 import TableDisplayExercises from './tableDisplayExercises'
 import { getResumen } from '../../../requests'
 import '../../../styles/studentProfileResume.css'
+import HeaderTeacherCoordinatorView from '../headerTeacherCoordinatorView'
 
-export default function StudentProfileResume ({ toggleView, userObject }) {
+export default function StudentProfileResume ({ toggleView, userObject, coordinator = false }) {
   const [resumenData, setResumenData] = useState({})
   const [registers, setRegisters] = useState([])
 
@@ -37,26 +38,30 @@ export default function StudentProfileResume ({ toggleView, userObject }) {
   }, [registers])
 
   return (
-    <div className='student-profile-viewer'>
-      <div className='student-profile-viewer-header-left'>
-        <ProfileCard {...userObject} institution_code={resumenData.institution_name} />
+    <div className='student-profile-viewer-container'>
+      {coordinator && <HeaderTeacherCoordinatorView title={null} grade={null} text={null}/>}
+      <div className='student-profile-viewer'>
+
+        <div className='student-profile-viewer-header-left'>
+          <ProfileCard {...userObject} institution_code={resumenData.institution_name} />
+        </div>
+        <div className='student-profile-viewer-header-right'>
+          <span>Última conexión: {new Date(resumenData.last_login).toLocaleString()}</span>
+          <span className='level-span'>Nivel {Math.ceil(resumenData.resumen?.total_exercises / 4)}</span>
+        </div>
+        <div className='student-profile-viewer-body-left'>
+          <ProgressBar actual={registers[0]?.exercise_id || resumenData.resumen?.total_exercises} />
+          <TableDisplayExercises
+            registers={registers}
+            headers_titles={['Ejercicios', 'Tiempo (mm:ss)', 'Promedio (%)']}
+            resumen={true}
+          />
+        </div>
+        <div className='student-profile-viewer-body-right'>
+          <BadgeDisplayer actual={registers[0]?.exercise_id || resumenData.resumen?.total_exercises} />
+        </div>
+        <button onClick={() => { toggleView(true) }}>ESTADISTICAS</button>
       </div>
-      <div className='student-profile-viewer-header-right'>
-        <span>Última conexión: {new Date(userObject.last_login).toLocaleString()}</span>
-        <span className='level-span'>Nivel {Math.ceil(userObject.total_exercises / 4)}</span>
-      </div>
-      <div className='student-profile-viewer-body-left'>
-        <ProgressBar actual={registers[0]?.exercise_id || userObject.total_exercises} />
-        <TableDisplayExercises
-          registers={registers}
-          headers_titles={['Ejercicios', 'Tiempo (mm:ss)', 'Promedio (%)']}
-          resumen={true}
-        />
-      </div>
-      <div className='student-profile-viewer-body-right'>
-        <BadgeDisplayer actual={registers[0]?.exercise_id || userObject.total_exercises} />
-      </div>
-      <button onClick={() => { toggleView(true) }}>ESTADISTICAS</button>
     </div>
   )
 }

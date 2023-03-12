@@ -5,7 +5,7 @@ import ActivityContext from '../../context/ActivityContext'
 import UserContext from '../../context/UserContext'
 import '../../styles/studentProfileViewer.css'
 
-export default function StudentProfileViewer() {
+export default function StudentProfileViewer () {
   const { setTitle } = useContext(ActivityContext)
   const { loginUser } = useContext(UserContext)
   const [toggleView, setToggleView] = useState(false)
@@ -17,7 +17,7 @@ export default function StudentProfileViewer() {
     }
   }, [])
 
-  return(
+  return (
     <>
       {
         toggleView
