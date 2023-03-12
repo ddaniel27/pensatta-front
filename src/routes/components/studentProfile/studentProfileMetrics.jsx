@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import { useState, useEffect } from 'react'
-=======
-import { useState, useEffect, useContext } from 'react'
->>>>>>> c00bc8471477e46d705f38d76ed1aa3a08fb7920
 import { Link } from 'react-router-dom'
 import Spider from './spider'
 import PieChart from './pieChart'
@@ -11,20 +7,11 @@ import ProfileCard from './profileCard'
 import { getMetrics, getStudentsHistory } from '../../../requests'
 import '../../../styles/studentProfileMetrics.css'
 
-<<<<<<< HEAD
 export default function StudentProfileMetrics ({ toggleView, userObject }) {
-=======
-export default function StudentProfileMetrics ({ toggleView }) {
->>>>>>> c00bc8471477e46d705f38d76ed1aa3a08fb7920
   const [dummyHistory, setDummyHistory] = useState([])
   const [spiderURL, setSpiderURL] = useState('')
   const [pieURL, setPieURL] = useState('')
   const [metrics, setMetrics] = useState({})
-<<<<<<< HEAD
-=======
-  const { loginUser } = useContext(UserContext)
->>>>>>> c00bc8471477e46d705f38d76ed1aa3a08fb7920
-
   const callMetricsEndpoint = async (user) => {
     getMetrics(user, setMetrics)
   }
@@ -38,15 +25,9 @@ export default function StudentProfileMetrics ({ toggleView }) {
   }, [])
 
   return (
-<<<<<<< HEAD
     <div className='student-profile-metrics'>
       <div className='student-profile-metrics-header'>
         <ProfileCard {...userObject} institution_code='Estadísticas' />
-=======
-    <div className="student-profile-metrics">
-      <div className="student-profile-metrics-header">
-        <ProfileCard {...loginUser} institution_code={'Estadísticas'} />
->>>>>>> c00bc8471477e46d705f38d76ed1aa3a08fb7920
       </div>
       <div className='student-profile-metrics-body'>
         <div className='student-profile-metrics-body-chart'>
@@ -65,15 +46,9 @@ export default function StudentProfileMetrics ({ toggleView }) {
       </div>
       <div className='student-pdf-button'>
         <Link
-<<<<<<< HEAD
           to={`/resumen/${userObject.id}`}
           state={{
             userObject,
-=======
-          to={`/resumen/${loginUser.id}`}
-          state={{
-            loginUser,
->>>>>>> c00bc8471477e46d705f38d76ed1aa3a08fb7920
             dummyHistory,
             spiderImg: spiderURL,
             pieImg: pieURL,
