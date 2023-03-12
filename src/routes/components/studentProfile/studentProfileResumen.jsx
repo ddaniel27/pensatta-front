@@ -9,11 +9,6 @@ import '../../../styles/studentProfileResume.css'
 export default function StudentProfileResume ({ toggleView, userObject }) {
   const [resumenData, setResumenData] = useState({})
   const [registers, setRegisters] = useState([])
-<<<<<<< HEAD
-=======
-  const { loginUser } = useContext(UserContext)
-  console.log(loginUser)
->>>>>>> c00bc8471477e46d705f38d76ed1aa3a08fb7920
 
   const callHistoryEndpoint = async (user) => {
     getResumen(user, setResumenData)
@@ -42,7 +37,6 @@ export default function StudentProfileResume ({ toggleView, userObject }) {
   }, [registers])
 
   return (
-<<<<<<< HEAD
     <div className='student-profile-viewer'>
       <div className='student-profile-viewer-header-left'>
         <ProfileCard {...userObject} institution_code={resumenData.institution_name} />
@@ -53,33 +47,15 @@ export default function StudentProfileResume ({ toggleView, userObject }) {
       </div>
       <div className='student-profile-viewer-body-left'>
         <ProgressBar actual={registers[0]?.exercise_id || userObject.total_exercises} />
-=======
-    <div className="student-profile-viewer">
-      <div className="student-profile-viewer-header-left">
-        <ProfileCard {...loginUser} institution_code={resumenData.institution_name} />
-      </div>
-      <div className="student-profile-viewer-header-right">
-        <span>Última conexión: { new Date(resumenData.last_login).toLocaleString() }</span>
-        <span className="level-span">Nivel { Math.ceil(resumenData.resumen?.total_exercises / 4) }</span>
-      </div>
-      <div className="student-profile-viewer-body-left">
-        <ProgressBar actual={registers[0]?.exercise_id || resumenData.resumen?.total_exercises} />
->>>>>>> c00bc8471477e46d705f38d76ed1aa3a08fb7920
         <TableDisplayExercises
           registers={registers}
           headers_titles={['Ejercicios', 'Tiempo (mm:ss)', 'Promedio (%)']}
-          resumen={true}
+          resumen
         />
       </div>
-<<<<<<< HEAD
       <div className='student-profile-viewer-body-right'>
         <BadgeDisplayer actual={registers[0]?.exercise_id || userObject.total_exercises} />
-=======
-      <div className="student-profile-viewer-body-right">
-        <BadgeDisplayer actual={registers[0]?.exercise_id || resumenData.resumen?.total_exercises} />
->>>>>>> c00bc8471477e46d705f38d76ed1aa3a08fb7920
       </div>
-
       <button onClick={() => { toggleView(true) }}>ESTADISTICAS</button>
     </div>
   )
