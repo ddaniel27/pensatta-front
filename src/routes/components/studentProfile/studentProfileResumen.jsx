@@ -45,7 +45,7 @@ export default function StudentProfileResume ({ toggleView }) {
         <ProfileCard {...loginUser} institution_code={resumenData.institution_name} />
       </div>
       <div className="student-profile-viewer-header-right">
-        <span>Última conexión: { new Date(loginUser.last_login).toLocaleString() }</span>
+        <span>Última conexión: { new Date(resumenData.last_login).toLocaleString() }</span>
         <span className="level-span">Nivel { Math.ceil(resumenData.resumen?.total_exercises / 4) }</span>
       </div>
       <div className="student-profile-viewer-body-left">
