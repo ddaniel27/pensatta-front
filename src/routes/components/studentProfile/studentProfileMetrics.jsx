@@ -1,19 +1,19 @@
-import { useState, useEffect, useContext} from 'react'
+import { useState, useEffect, useContext } from 'react'
 import { Link } from 'react-router-dom'
-import Spider from "./spider"
-import PieChart from "./pieChart"
-import TableDisplayExercises from "./tableDisplayExercises"
+import Spider from './spider'
+import PieChart from './pieChart'
+import TableDisplayExercises from './tableDisplayExercises'
 import ProfileCard from './profileCard'
 import { getMetrics, getStudentsHistory } from '../../../requests'
 import UserContext from '../../../context/UserContext'
 import '../../../styles/studentProfileMetrics.css'
 
-export default function StudentProfileMetrics({ toggleView }){
-  const [ dummyHistory, setDummyHistory ] = useState([])
-  const [ spiderURL, setSpiderURL ] = useState('')
-  const [ pieURL, setPieURL ] = useState('')
-  const [ metrics, setMetrics ] = useState({})
-  const { loginUser } = useContext(UserContext) 
+export default function StudentProfileMetrics ({ toggleView }) {
+  const [dummyHistory, setDummyHistory] = useState([])
+  const [spiderURL, setSpiderURL] = useState('')
+  const [pieURL, setPieURL] = useState('')
+  const [metrics, setMetrics] = useState({})
+  const { loginUser } = useContext(UserContext)
 
   const callMetricsEndpoint = async (user) => {
     getMetrics(user, setMetrics)
@@ -27,8 +27,7 @@ export default function StudentProfileMetrics({ toggleView }){
     callMetricsEndpoint(loginUser.id)
   }, [])
 
-
-  return(
+  return (
     <div className="student-profile-metrics">
       <div className="student-profile-metrics-header">
         <ProfileCard {...loginUser} institution_code={'Estadísticas'} />
@@ -46,21 +45,21 @@ export default function StudentProfileMetrics({ toggleView }){
           <span>Historial</span>
           <TableDisplayExercises registers={dummyHistory} />
         </div>
-        <button onClick={()=>{toggleView(false)}}>RESUMEN</button>
+        <button onClick={() => { toggleView(false) }}>RESUMEN</button>
       </div>
       <div className='student-pdf-button'>
-      <Link 
-        to={`/resumen/${loginUser.id}`}
-        state={{
-          loginUser,
-          dummyHistory,
-          spiderImg: spiderURL,
-          pieImg: pieURL,
-          badges: Number(((dummyHistory.length / 30) * 100).toFixed(2))
-        }}
-      >
+        <Link
+          to={`/resumen/${loginUser.id}`}
+          state={{
+            loginUser,
+            dummyHistory,
+            spiderImg: spiderURL,
+            pieImg: pieURL,
+            badges: Number(((dummyHistory.length / 30) * 100).toFixed(2))
+          }}
+        >
           DESCARGAR PDF
-      </Link>
+        </Link>
       </div>
     </div>
   )
