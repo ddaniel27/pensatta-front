@@ -8,9 +8,9 @@ import { MeanBarChart } from './meanBarChart'
 import { useContext, useEffect, useState } from 'react'
 import CoordinatorContext from '../../../context/CoordinatorContext'
 
-export default function DashboardStudentIndividual ({ title = 'Grado', grade = '6 A', current = 11 }) {
-  const { ctx_hB_r_sI, setCtx_hB_r_sI } = useContext(CoordinatorContext)
-  const [conformedData, setConformedData] = useState({label:'', list:{ 1:0, 2:0}})
+export default function DashboardStudentIndividual ({ title = 'Grado', grade = '6 A', current = 11, coordinator = true }) {
+  const { ctx_hB_r_sI } = useContext(CoordinatorContext)
+  const [conformedData, setConformedData] = useState({ label: '', list: { 1: 0, 2: 0 } })
   const [pieValues, setPieValues] = useState({ 0: 12, 1: 15, 2: 20 })
   const [meanBarProps, setMeanBarProps] = useState({})
   const [spiderProps, setSpiderProps] = useState({})
@@ -18,19 +18,19 @@ export default function DashboardStudentIndividual ({ title = 'Grado', grade = '
   useEffect(() => {
     const idStudent = ctx_hB_r_sI.studentSelected
     const student = ctx_hB_r_sI.r.find((student) => student.id === idStudent)
-    console.log('SADS',ctx_hB_r_sI)
-    setConformedData({label: student.name, list: student.list})
+    console.log('SADS', ctx_hB_r_sI)
+    setConformedData({ label: student.name, list: student.list })
     setPieValues({
       0: student.stdAprops[1],
       1: student.stdAprops[2],
       2: student.stdAprops[3]
     })
-    const labs = ['dim1','dim2','dim3','dim4','dim5','dim6']
+    const labs = ['dim1', 'dim2', 'dim3', 'dim4', 'dim5', 'dim6']
     const dataValues = {}
     labs.forEach((lab, index) => {
       dataValues[lab] = {
-        obt: student.stdSpider[index+1],
-        med: ctx_hB_r_sI.average.spiderValues[index+1]
+        obt: student.stdSpider[index + 1],
+        med: ctx_hB_r_sI.average.spiderValues[index + 1]
       }
     })
     setMeanBarProps({
@@ -38,10 +38,9 @@ export default function DashboardStudentIndividual ({ title = 'Grado', grade = '
       dataValues
     })
     setSpiderProps({
-      spider : student.stdSpider
+      spider: student.stdSpider
     })
   }, [])
-    
 
   return (
     <div className='DashboardStudentIndividual'>
@@ -56,7 +55,7 @@ export default function DashboardStudentIndividual ({ title = 'Grado', grade = '
           <PieChart pieValues={pieValues} />
         </div>
       </div>
-      <FooterTeacherCoordinator />
+      <FooterTeacherCoordinator coordinator={coordinator} />
     </div>
   )
 }

@@ -81,7 +81,7 @@ export default function DashboardListGrades ({ cards = defaultData, coordinator 
         ))}
       </div>
       {showAddModal && <NewGradeModal close={setShowAddModal} userId={userId} />}
-      <FooterTeacherCoordinatorView downloadPDF={false} />
+      <FooterTeacherCoordinatorView downloadPDF={false} coordinator={coordinator}/>
     </div>
   )
 }

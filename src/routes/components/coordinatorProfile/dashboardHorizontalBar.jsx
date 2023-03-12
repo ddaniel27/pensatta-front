@@ -8,64 +8,57 @@ import { useContext, useEffect, useState } from 'react'
 import CoordinatorContext from '../../../context/CoordinatorContext'
 import { coordinacionMetrics, profesorMetrics } from '../../../requests'
 
-export default function DashboardHorizontalBar ({ title = 'Grado', average = '5', data = defaultData , userId, coordinator=true}) {
-  const { ctx_hB_r_sI, setCtx_hB_r_sI } = useContext(CoordinatorContext)
+export default function DashboardHorizontalBar ({ title = 'Grado', average = '5', data = defaultData, userId, coordinator = true }) {
+  const { ctx_hB_r_sI } = useContext(CoordinatorContext)
   const [conformedData, setConformedData] = useState(data)
   const [pieValues, setPieValues] = useState({ 0: 12, 1: 15, 2: 20 })
   const [meanBarProps, setMeanBarProps] = useState({})
 
-  const cb = (response)=>{
+  const cb = (response) => {
     const average = response.average
     const rows = response.result.map(
       (curso) => {
         return {
           label: `${curso.nivelGrado} ${curso.cursoGrado}`,
-          valueGreen: curso.apropsGrado[3]?curso.apropsGrado[3]:0,
-          valueYellow: curso.apropsGrado[2]?curso.apropsGrado[2]:0,
-          valueRed: curso.apropsGrado[1]?curso.apropsGrado[1]:0,
+          valueGreen: curso.apropsGrado[3] ? curso.apropsGrado[3] : 0,
+          valueYellow: curso.apropsGrado[2] ? curso.apropsGrado[2] : 0,
+          valueRed: curso.apropsGrado[1] ? curso.apropsGrado[1] : 0,
           spiderValues: curso.spiderGrado,
           gradoId: curso.idGrado
         }
       }
     )
-    console.log("rows2",rows)
+    console.log('rows2', rows)
     setConformedData(rows)
     setPieValues({
-      0:rows.reduce((acc, next) => acc + (next.valueRed?next.valueRed:0), 0)/rows.length,
-      1:rows.reduce((acc, next) => acc + (next.valueYellow?next.valueYellow:0), 0)/rows.length,
-      2:rows.reduce((acc, next) => acc + (next.valueGreen?next.valueGreen:0), 0)/rows.length
+      0: rows.reduce((acc, next) => acc + (next.valueRed ? next.valueRed : 0), 0) / rows.length,
+      1: rows.reduce((acc, next) => acc + (next.valueYellow ? next.valueYellow : 0), 0) / rows.length,
+      2: rows.reduce((acc, next) => acc + (next.valueGreen ? next.valueGreen : 0), 0) / rows.length
     })
 
-    const labs = ['dim1','dim2','dim3','dim4','dim5','dim6']
+    const labs = ['dim1', 'dim2', 'dim3', 'dim4', 'dim5', 'dim6']
     const dataValues = {}
     labs.forEach((lab, index) => {
       dataValues[lab] = {
-        obt: rows.reduce((acc, next) => acc + (next.spiderValues[index+1]?next.spiderValues[index+1]:0), 0)/rows.length,
-        med: average.spiderValues? average.spiderValues[index+1]:0
+        obt: rows.reduce((acc, next) => acc + (next.spiderValues[index + 1] ? next.spiderValues[index + 1] : 0), 0) / rows.length,
+        med: average.spiderValues ? average.spiderValues[index + 1] : 0
       }
     })
-        
+
     setMeanBarProps({
       labs,
       dataValues
     })
-    
-
   }
 
   useEffect(() => {
-       
-    if(coordinator){
-      coordinacionMetrics(userId,ctx_hB_r_sI.level, cb)
-    }else{
-      profesorMetrics(userId,ctx_hB_r_sI.level, cb)
+    if (coordinator) {
+      coordinacionMetrics(userId, ctx_hB_r_sI.level, cb)
+    } else {
+      profesorMetrics(userId, ctx_hB_r_sI.level, cb)
     }
-    
-  },[])
+  }, [])
 
-
-
-  
   return (
     <div className='DashboardHorizontalBar'>
       <HeaderTeacherCoordinator title='' grade={title} text={`Unidad promedio: ${average}`} />
@@ -74,7 +67,7 @@ export default function DashboardHorizontalBar ({ title = 'Grado', average = '5'
         <MeanBarChart {...meanBarProps} />
         <PieChart pieValues={pieValues} />
       </div>
-      <FooterTeacherCoordinator />
+      <FooterTeacherCoordinator coordinator={coordinator}/>
     </div>
   )
 }

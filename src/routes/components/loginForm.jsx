@@ -5,11 +5,6 @@ import DemoContext from '../../context/DemoContext'
 import { postLogin } from '../../requests'
 import '../../styles/loginForm.css'
 
-function validateEmail (email) {
-  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-  return re.test(String(email).toLowerCase())
-}
-
 export default function LoginForm () {
   const [emailLogin, setEmailLogin] = React.useState('')
   const [passwordLogin, setPasswordLogin] = React.useState('')
@@ -24,7 +19,7 @@ export default function LoginForm () {
   const { setDemo } = React.useContext(DemoContext)
 
   const login = () => {
-    if (!emailLogin.length || !validateEmail(emailLogin)) {
+    if (!emailLogin.length) {
       setErrorMessage('Email invalido')
       setSuccessMessage('')
       document.getElementById('emailLoginInput').style.color = '#F97D61'
