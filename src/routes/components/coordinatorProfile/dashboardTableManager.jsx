@@ -26,7 +26,7 @@ export default function DashboardTableManage ({ coordinator = true, userId }) {
   return (
     <div className={styles['dashboard-table-manage']}>
       <TableManageCourse {...conformedData} coordinator={coordinator} userId={userId} />
-      <FooterTeacherCoordinatorView downloadPDF={false} />
+      <FooterTeacherCoordinatorView downloadPDF={false} coordinator={coordinator}/>
     </div>
   )
 }

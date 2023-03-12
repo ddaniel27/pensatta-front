@@ -12,7 +12,6 @@ export default function StudentProfileMetrics ({ toggleView, userObject }) {
   const [spiderURL, setSpiderURL] = useState('')
   const [pieURL, setPieURL] = useState('')
   const [metrics, setMetrics] = useState({})
-
   const callMetricsEndpoint = async (user) => {
     getMetrics(user, setMetrics)
   }

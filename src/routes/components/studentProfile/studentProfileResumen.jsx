@@ -29,7 +29,12 @@ export default function StudentProfileResume ({ toggleView, userObject }) {
       }
       setRegisters([objeMaped])
     }
+    console.log('hola', resumenData)
   }, [resumenData])
+
+  useEffect(() => {
+    console.log('registest', registers)
+  }, [registers])
 
   return (
     <div className='student-profile-viewer'>
@@ -45,13 +50,12 @@ export default function StudentProfileResume ({ toggleView, userObject }) {
         <TableDisplayExercises
           registers={registers}
           headers_titles={['Ejercicios', 'Tiempo (mm:ss)', 'Promedio (%)']}
-          resumen
+          resumen={true}
         />
       </div>
       <div className='student-profile-viewer-body-right'>
         <BadgeDisplayer actual={registers[0]?.exercise_id || userObject.total_exercises} />
       </div>
-
       <button onClick={() => { toggleView(true) }}>ESTADISTICAS</button>
     </div>
   )
