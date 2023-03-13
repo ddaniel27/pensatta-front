@@ -26,7 +26,7 @@ export default function StudentProfileMetrics ({ toggleView, userObject, coordin
   }, [])
 
   return (
-    <div className='student-profile-metrics-container'>
+    <div className={coordinator ? 'student-profile-metrics-container' : 'student-profile-metrics-stuser' }>
       {coordinator && <HeaderTeacherCoordinatorView title={null} grade={null} text={null}/>}
       <div className='student-profile-metrics'>
         <div className='student-profile-metrics-header'>

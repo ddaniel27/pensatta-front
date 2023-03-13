@@ -38,7 +38,7 @@ export default function StudentProfileResume ({ toggleView, userObject, coordina
   }, [registers])
 
   return (
-    <div className='student-profile-viewer-container'>
+    <div className={coordinator ? 'student-profile-viewer-container' : 'student-profile-viewer-stuser' }>
       {coordinator && <HeaderTeacherCoordinatorView title={null} grade={null} text={null}/>}
       <div className='student-profile-viewer'>
 
