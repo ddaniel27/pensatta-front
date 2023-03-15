@@ -38,8 +38,8 @@ export default function StudentProfileResume ({ toggleView, userObject, coordina
   }, [registers])
 
   return (
-    <div className={coordinator ? 'student-profile-viewer-container' : 'student-profile-viewer-stuser' }>
-      {coordinator && <HeaderTeacherCoordinatorView title={null} grade={null} text={null}/>}
+    <div className={coordinator ? 'student-profile-viewer-container' : 'student-profile-viewer-stuser'}>
+      {coordinator && <HeaderTeacherCoordinatorView title={null} grade={null} text={null} />}
       <div className='student-profile-viewer'>
 
         <div className='student-profile-viewer-header-left'>
@@ -54,13 +54,13 @@ export default function StudentProfileResume ({ toggleView, userObject, coordina
           <TableDisplayExercises
             registers={registers}
             headers_titles={['Ejercicios', 'Tiempo (mm:ss)', 'Promedio (%)']}
-            resumen={true}
+            resumen
           />
         </div>
         <div className='student-profile-viewer-body-right'>
           <BadgeDisplayer actual={registers[0]?.exercise_id || resumenData.resumen?.total_exercises} />
         </div>
-        <button onClick={() => { toggleView(true) }}>ESTADISTICAS</button>
+        <button className='student-profile-viewer-button' onClick={() => { toggleView(true) }}>ESTADISTICAS</button>
       </div>
     </div>
   )
