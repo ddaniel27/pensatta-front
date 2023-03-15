@@ -4,21 +4,21 @@
 
 }
 .student-profile-metrics-container{
-        width: 100%;
-        height: 95%;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 10% 86%;
-        justify-items: center;
-        align-items: center;
-        overflow-y: auto;
+  width: 100%;
+  height: 95%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 86%;
+  justify-items: center;
+  align-items: center;
+  overflow-y: auto;
 }
 .student-profile-metrics{
     width: 100%;
-    height: 95%;
+    height: 100%;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 24% 70%;
+    grid-template-rows: 25% 65% 10%;
     justify-items: center;
     align-items: center;
     overflow-y: auto;
@@ -61,7 +61,7 @@
     padding: 10px 40px;
     cursor: pointer;
     position: absolute;
-    bottom: 4vh;
+    bottom: 18vh;
 }
 
 .student-pdf-button *{
@@ -69,6 +69,23 @@
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
+}
+
+.student-profile-metrics-button{
+  position: relative;
+  left: 74vw;
+  top: 0vh;
+  background: #F97D61;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 20px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  filter: drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.25));
+  transition: 0.2s;
+  z-index: 2;
 }
 
 @media screen and (max-width: 1080px){
