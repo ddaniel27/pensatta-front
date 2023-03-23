@@ -1,0 +1,37 @@
+{
+    "options": [
+        {
+          "src": "placeholder.svg",
+          "code": "test code1"
+        },
+        {
+          "src": "placeholder.svg",
+          "code": "test code2"
+        },
+        {
+          "src": "placeholder.svg",
+          "code": "test code3"
+        },
+        {
+          "src": "placeholder.svg",
+          "code": "test code4"
+        },
+        {
+          "src": "placeholder.svg",
+          "code": "test code5"
+        }
+    ],
+    "initMessages":[
+        "Gestiona las alertas del sistema de la manera más eficiente.",
+        "Selecciona la opción correcta según el ícono del mensaje."
+    ],
+    "threshold": {
+        "max": 2,
+        "min": 1,
+        "perfect": 3
+    },
+    "path": "56",
+    "color": "#9968A6",
+    "name": "Iconos comunes",
+    "id": 56
+}

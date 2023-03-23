@@ -20,4 +20,5 @@ export default function LoginScreen () {
 
 /*
 56, 65, 66, 67, 70, 71, 94, 96, 108
+2B, 11B,
 */
