@@ -60,7 +60,7 @@ export default function Ex37 () {
   }, [optionsData])
 
   const handleClick = async (cb1) => {
-    document.querySelector('.maze-style').scrollTop = 0
+    document.querySelector('.maze-style-single').scrollTop = 0
     setStart(true)
     const result = optionsData.map(item => item[0])
     const result2 = myData.patterns[0].map(item => item[0])
