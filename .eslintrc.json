@@ -25,7 +25,9 @@
         "react/react-in-jsx-scope":"off",
         "react/jsx-key": "off",
         "camelcase": "off",
-        "eqeqeq": "off"
+        "eqeqeq": "off",
+        "import/no-absolute-path": "off",
+        "no-callback-literal": "off"
         
     }
     

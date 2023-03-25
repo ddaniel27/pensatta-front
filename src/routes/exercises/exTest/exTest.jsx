@@ -11,11 +11,11 @@
 // import data from './data.json'
 // Teacher
 // import DashboardStudentIndividual from '../../components/teacherProfile/dashboardMain'
-import Ex36 from '../ex36/ex36'
+import FishGame from '../components/fishGame'
 export default function ExTest () {
   return (
     <>
-      <Ex36 />
+      <FishGame />
     </>
   )
 }
