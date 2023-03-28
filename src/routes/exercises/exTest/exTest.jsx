@@ -11,11 +11,11 @@
 // import data from './data.json'
 // Teacher
 // import DashboardStudentIndividual from '../../components/teacherProfile/dashboardMain'
-import ServerGame from '../components/serverGame'
+import DigitalCircuitGame from '../components/digitalCircuitGame'
 export default function ExTest () {
   return (
     <>
-      <ServerGame />
+      <DigitalCircuitGame/>
     </>
   )
 }
