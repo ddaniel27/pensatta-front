@@ -1,0 +1,100 @@
+.network-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.receiver-network{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+
+}
+.receiver-network .computer-container svg{
+    height: 100%;
+}
+.transceiver-network{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+}
+.computer-container{
+    position: relative;
+    display: flex;
+}
+.computer-container img{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}
+.computer-container .mouse{
+    top: 22%;
+    left: 44%;
+}
+.computer-container span{
+    position: absolute;
+    top: 25%;
+    left: 28%;
+    z-index: 2;
+    font-weight: bolder;
+}
+.info-to-send-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #F2F2F2;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+    justify-content: center;
+    width: 20%;
+}
+.info-to-send{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.game-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+.server-container{
+    display: flex;
+    width: 100%;
+    height:10vh;
+    background-color: #333333;
+    border-radius: 20px;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+}
+.server-container span{
+    color: white;
+    margin: 0;
+}
+.cables-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 20px;
+}
+.cable{
+    height: 100%;
+    width:3px;
+    background-color:#F2F2F2;
+}
+.select-container{
+    margin:5px;
+}

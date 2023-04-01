@@ -1,0 +1,149 @@
+.game-container{
+  display:flex;
+  flex-direction:column;
+  height: 100%;
+  width: 100%;
+  user-select: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.io-gates-container{
+  display:flex;
+  flex-direction:row;
+  gap:20px;
+}
+.inputs-container{
+  display:flex;
+  flex-direction:column;
+  justify-content: space-around;
+}
+.input-container{
+  position: relative;
+  width: 80px;
+  height: 30px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2F2F2;
+  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  font-weight: bolder;
+}
+.input-container::after{
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 10px;
+  background-color: #333333;
+  left: 100%;
+  z-index: 0;
+}
+.first-gates-container{
+  display:flex;
+  flex-direction:column;
+  justify-content: space-around;
+  z-index:1;
+}
+.first-gate{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  background-color: #F2F2F2;
+  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.first-gate::after{
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 10px;
+  background-color: #333333;
+  left: 100%;
+  z-index: 0;
+}
+.second-gates-container{
+  position: relative;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+  width: 180px;
+  background-color: #F2F2F2;
+  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  z-index: 1;
+}
+.second-gate{
+  
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.second-gate::after{
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 10px;
+  background-color: #333333;
+  left: 100%;
+  z-index: -1;
+}
+.second-gates-container .second-gate img{
+  height: 100%;
+}
+.output-container{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 180px;
+  background: #F2F2F2;
+  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  gap:10px;
+  color: #00635D;
+  font-weight: bolder;
+  z-index:1;
+
+}
+.output{
+  background-color: #00635D;
+  width: 80px;
+  height: 40px;
+  color: #F2F2F2;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.output-selected{
+  background-color: #9261F9;
+}
+.output-correct{
+  background-color: #69E485;
+
+}
+.output-wrong{
+  background-color: #FF7171;
+}
+.first-gate-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333333;
+  color: #F2F2F2;
+  padding: 10px;
+  border-radius: 10px;
+  width: 280px;
+  height: 80px;
+  margin: 10px;
+}
+
