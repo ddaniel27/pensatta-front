@@ -1,0 +1,63 @@
+.drag-drop-108-context{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    align-items: center;
+}
+
+.drag-drop-108-content{
+  width: 120%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  right: 10%;
+}
+
+.drag-drop-108-content-item{
+  background-color: #333;
+  color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  height: clamp(50px, 100%, 75px);
+  margin-bottom: 20px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-left: 10%;
+}
+
+.droppable-108-container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    border-radius: 20px;
+    align-items: center;
+    justify-items: end;
+    z-index: 3;
+}
+
+.draggable-108-item{
+    height: clamp(45px, 100%, 75px);
+    border-radius: 20px;
+    padding: 30px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #fff;
+    color: #333;
+    filter: drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.25));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}

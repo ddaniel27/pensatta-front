@@ -1,18 +1,19 @@
-import React from 'react'
+import { useState, useEffect, memo } from 'react'
 import { DragDropContext } from 'react-beautiful-dnd'
 import DroppableComponent from './droppableFor108'
+import '../../../styles/dndFor108.css'
 
 function DndVonListComponent ({ data, returnScore, block }) {
-  const [myData, setmyData] = React.useState(data)
+  const [myData, setmyData] = useState(data)
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (returnScore) {
       const finalReturn = myData.columns.column.optionsIds
       returnScore(finalReturn)
     }
   }, [myData])
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (block) {
       setmyData(prevState => ({
         ...prevState,
@@ -62,9 +63,22 @@ function DndVonListComponent ({ data, returnScore, block }) {
           column={myData.columns.column}
           options={myData.columns.column.optionsIds.map(optionId => myData.options[optionId])}
         />
+        <ContentComponent sequence={myData.sequence} />
       </div>
     </DragDropContext>
   )
 }
 
-export default React.memo(DndVonListComponent)
+function ContentComponent ({ sequence = [{}, {}, {}, {}] }) {
+  return (
+    <div className='drag-drop-108-content'>
+      {sequence.map((item, index) => (
+        <div className='drag-drop-108-content-item' key={index}>
+          <span>{item.text}</span>
+        </div>
+      ))}
+    </div>
+  )
+}
+
+export default memo(DndVonListComponent)

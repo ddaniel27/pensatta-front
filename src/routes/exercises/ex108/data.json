@@ -17,289 +17,56 @@
                 "option-1": {
                     "id": "option-1",
                     "key": "arriba",
-                    "text": "CPU"
+                    "text": "SCOPUS"
                 },
                 "option-2": {
                     "id": "option-2",
                     "key": "abajo",
-                    "text": "Dispositivos de entrada"
+                    "text": "arXiv.org"
                 },
                 "option-3": {
                     "id": "option-3",
                     "key": "derecha",
-                    "text": "Dispositivos de salida"
+                    "text": "EBSCOHost"
                 },
                 "option-4": {
                     "id": "option-4",
                     "key": "izquierda",
-                    "text": "Memoria de datos y programas"
+                    "text": "diccionarios.com"
                 }
             },
             "sequence":[
-                "option-1",
-                "option-2",
-                "option-3",
-                "option-4"
-            ]
-        },
-        {
-            "columns": {
-                "column": {
-                    "id": "column",
-                    "title": "Definir función",
-                    "optionsIds": [
-                        "option-2",
-                        "option-1",
-                        "option-4",
-                        "option-3"
-                    ]
-                }
-            },
-            "options": {
-                "option-1": {
-                    "id": "option-1",
-                    "key": "arriba",
-                    "text": "Nombre de función y parámetros que recibe"
-                },
-                "option-2": {
-                    "id": "option-2",
-                    "key": "abajo",
-                    "text": "Instrucciones de la función"
-                },
-                "option-3": {
-                    "id": "option-3",
-                    "key": "derecha",
-                    "text": "Retorno de la función"
-                },
-                "option-4": {
-                    "id": "option-4",
-                    "key": "izquierda",
-                    "text": "Cierre de corchetes"
-                }
-            },
-            "sequence":[
-                "option-1",
-                "option-2",
-                "option-3",
-                "option-4"
-            ]
-        },
-        {
-            "columns": {
-                "column": {
-                    "id": "column",
-                    "title": "Izquierda a derecha objetos de la ventana",
-                    "optionsIds": [
-                        "option-2",
-                        "option-1",
-                        "option-4",
-                        "option-3"
-                    ]
-                }
-            },
-            "options": {
-                "option-1": {
-                    "id": "option-1",
-                    "key": "arriba",
-                    "text": "Titulo de la ventana"
-                },
-                "option-2": {
-                    "id": "option-2",
-                    "key": "abajo",
-                    "text": "Botón de minimización"
-                },
-                "option-3": {
-                    "id": "option-3",
-                    "key": "derecha",
-                    "text": "Botón de maximización"
-                },
-                "option-4": {
-                    "id": "option-4",
-                    "key": "izquierda",
-                    "text": "Botón de cierre"
-                }
-            },
-            "sequence":[
-                "option-1",
-                "option-2",
-                "option-3",
-                "option-4"
-            ]
-        },
-        {
-            "columns": {
-                "column": {
-                    "id": "column",
-                    "title": "Izquierda a derecha barra de tareas",
-                    "optionsIds": [
-                        "option-2",
-                        "option-1",
-                        "option-4",
-                        "option-3"
-                    ]
-                }
-            },
-            "options": {
-                "option-1": {
-                    "id": "option-1",
-                    "key": "arriba",
-                    "text": "Barra de búsqueda"
-                },
-                "option-2": {
-                    "id": "option-2",
-                    "key": "abajo",
-                    "text": "Asistente virtual Cortana"
-                },
-                "option-3": {
-                    "id": "option-3",
-                    "key": "derecha",
-                    "text": "Programas anclados"
-                },
-                "option-4": {
-                    "id": "option-4",
-                    "key": "izquierda",
-                    "text": "Area de notificaciones"
-                }
-            },
-            "sequence":[
-                "option-1",
-                "option-2",
-                "option-3",
-                "option-4"
-            ]
-        },
-        {
-            "columns": {
-                "column": {
-                    "id": "column",
-                    "title": "Ventana de hora y fecha",
-                    "optionsIds": [
-                        "option-2",
-                        "option-1",
-                        "option-4",
-                        "option-3"
-                    ]
-                }
-            },
-            "options": {
-                "option-1": {
-                    "id": "option-1",
-                    "key": "arriba",
-                    "text": "Hora"
-                },
-                "option-2": {
-                    "id": "option-2",
-                    "key": "abajo",
-                    "text": "Fecha"
-                },
-                "option-3": {
-                    "id": "option-3",
-                    "key": "derecha",
-                    "text": "Calendario"
-                },
-                "option-4": {
-                    "id": "option-4",
-                    "key": "izquierda",
-                    "text": "Agenda"
-                }
-            },
-            "sequence":[
-                "option-1",
-                "option-2",
-                "option-3",
-                "option-4"
-            ]
-        },
-        {
-            "columns": {
-                "column": {
-                    "id": "column",
-                    "title": "Ventana de batería",
-                    "optionsIds": [
-                        "option-2",
-                        "option-1",
-                        "option-3"
-                    ]
-                }
-            },
-            "options": {
-                "option-1": {
-                    "id": "option-1",
-                    "key": "arriba",
-                    "text": "Porcentaje de batería"
-                },
-                "option-2": {
-                    "id": "option-2",
-                    "key": "abajo",
-                    "text": "Modo de energía vs rendimiento"
-                },
-                "option-3": {
-                    "id": "option-3",
-                    "key": "derecha",
-                    "text": "Configuración de la batería"
-                }
-            },
-            "sequence":[
-                "option-1",
-                "option-2",
-                "option-3"
-            ]
-        },
-        {
-            "columns": {
-                "column": {
-                    "id": "column",
-                    "title": "Ventana de conexión",
-                    "optionsIds": [
-                        "option-2",
-                        "option-1",
-                        "option-4",
-                        "option-3"
-                    ]
-                }
-            },
-            "options": {
-                "option-1": {
-                    "id": "option-1",
-                    "key": "arriba",
-                    "text": "Red conectada"
-                },
-                "option-2": {
-                    "id": "option-2",
-                    "key": "abajo",
-                    "text": "Redes disponibles"
-                },
-                "option-3": {
-                    "id": "option-3",
-                    "key": "derecha",
-                    "text": "Configuración de red e internet"
-                },
-                "option-4": {
-                    "id": "option-4",
-                    "key": "izquierda",
-                    "text": "Botones de activación"
-                }
-            },
-            "sequence":[
-                "option-1",
-                "option-2",
-                "option-3",
-                "option-4"
+              {
+                "id": "option-1",
+                "text": "Es una de las bases de datos referenciales más grandes del mundo. Contiene resumenes y citas de literatura científica, revistas y enlaces web a fuentes de calidad comprobada."
+              },
+              {
+                "id": "option-2",
+                "text": "Es un repositorio temático de acceso abierto que contiene preprints de artículos de investigación del campo de las matemáticas, física, informática, biología cuantitativa y estadística."
+              },
+              {
+                "id": "option-3",
+                "text": "Ofrece una amplia gama de contenido de texto completo e indexado que cubre todo el espectro de las ciencias aplicadas y las disciplinas informáticas, desde la acústica hasta la aeronáutica, las redes neuronales y la ingeniería nuclear."
+              },
+              {
+                "id": "option-4",
+                "text": "Es un portal de Larousse Editorial, que publica diccionarios, enciclopedias y otras obras de referencia con las marcas Larousse y Vox."
+              }
             ]
         }
     ],
     "initMessages":[
-        "Ordena los componentes de las arquitecturas de acuerdo a la prioridad.",
-        "Tienes 20 Segundos luego de presionar el botón de inicio."
+        "Internet es una gran fuente de información. Para encontrarla, contamos con el motor de búsqueda, que es una herramienta que nos permite filtrar información bajo ciertos parámetros.",
+        "Existe una amplia variedad de motores de búsqueda, y conocer las funciones de cada uno resulta muy productivo.",
+        "A continuación, encontrarás una lista de motores de búsqueda. Arrástralos hasta su respectiva descripción. Puedes buscarlos en la red para conocerlos antes de responder el ejercicio."
     ],
     "threshold": {
         "max": 3,
         "min": 1,
         "perfect": 4
     },
-    "path": "15",
+    "path": "108",
     "color": "#9968A6",
-    "name": "Arquitecturas",
-    "id": 15
+    "name": "Motores de búsqueda",
+    "id": 108
 }
-
