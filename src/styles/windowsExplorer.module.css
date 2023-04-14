@@ -1,0 +1,52 @@
+.window-content-element-image{
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  width:20px;
+  height:20px;
+}
+.window-container{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.window-header-tabs{
+  display: flex;
+  flex-direction: row;
+  width: 35%;
+  align-items: center;
+  height: 30px;
+  background-color: #F2F2F2;
+}
+.window-header-tabs-element{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  user-select: none;
+}
+
+.window-header-tabs-element-selected{
+  background-color: #E0E0E0;
+
+}
+.panels-container{
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  height: 100%;
+}
+
+.panel-navigation{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+  background-image: url('/images/exercises/76/panelNavigation.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
