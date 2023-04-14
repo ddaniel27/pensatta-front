@@ -1,0 +1,72 @@
+{
+    "variations":[
+        {
+            "columns": {
+                "column": {
+                    "id": "column",
+                    "title": "",
+                    "optionsIds": [
+                        "option-2",
+                        "option-1",
+                        "option-4",
+                        "option-3"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "arriba",
+                    "text": "SCOPUS"
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "abajo",
+                    "text": "arXiv.org"
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "derecha",
+                    "text": "EBSCOHost"
+                },
+                "option-4": {
+                    "id": "option-4",
+                    "key": "izquierda",
+                    "text": "diccionarios.com"
+                }
+            },
+            "sequence":[
+              {
+                "id": "option-1",
+                "text": "Es una de las bases de datos referenciales más grandes del mundo. Contiene resumenes y citas de literatura científica, revistas y enlaces web a fuentes de calidad comprobada."
+              },
+              {
+                "id": "option-2",
+                "text": "Es un repositorio temático de acceso abierto que contiene preprints de artículos de investigación del campo de las matemáticas, física, informática, biología cuantitativa y estadística."
+              },
+              {
+                "id": "option-3",
+                "text": "Ofrece una amplia gama de contenido de texto completo e indexado que cubre todo el espectro de las ciencias aplicadas y las disciplinas informáticas, desde la acústica hasta la aeronáutica, las redes neuronales y la ingeniería nuclear."
+              },
+              {
+                "id": "option-4",
+                "text": "Es un portal de Larousse Editorial, que publica diccionarios, enciclopedias y otras obras de referencia con las marcas Larousse y Vox."
+              }
+            ]
+        }
+    ],
+    "initMessages":[
+        "Internet es una gran fuente de información. Para encontrarla, contamos con el motor de búsqueda, que es una herramienta que nos permite filtrar información bajo ciertos parámetros.",
+        "Existe una amplia variedad de motores de búsqueda, y conocer las funciones de cada uno resulta muy productivo.",
+        "A continuación, encontrarás una lista de motores de búsqueda. Arrástralos hasta su respectiva descripción. Puedes buscarlos en la red para conocerlos antes de responder el ejercicio."
+    ],
+    "threshold": {
+        "max": 3,
+        "min": 1,
+        "perfect": 4
+    },
+    "path": "108",
+    "color": "#9968A6",
+    "name": "Motores de búsqueda",
+    "id": 108
+}

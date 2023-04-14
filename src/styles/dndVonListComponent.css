@@ -42,7 +42,6 @@
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    transition: .2s ease-in-out;
     background-color: #00635D;
     color: #fff;
     filter: drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.25));
