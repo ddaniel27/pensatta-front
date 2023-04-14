@@ -4,6 +4,36 @@
       { "inputs": [40, 4] },
       { "inputs": [10, 5] }
     ],
+    "options2":[
+      {
+        "text": "Sumar y multiplicar por 2",
+        "isCorrect": {
+          "arguments": "a, b, c",
+          "body": "return (a + b + c) * 2;"
+        }
+      },
+      {
+        "text": "Restar y multiplicar por 3",
+        "isCorrect": {
+          "arguments": "a, b, c",
+          "body": "return (a - b - c) * 3;"
+        }
+      },
+      {
+        "text": "Sumar y Multiplicar por 4",
+        "isCorrect": {
+          "arguments": "a, b, c",
+          "body": "return (a + b + c) * 4;"
+        }
+      },
+      {
+        "text": "Restar y dividir en 3",
+        "isCorrect": {
+          "arguments": "a, b, c",
+          "body": "return parseFloat((a - b - c) / 3).toFixed(2);"
+        }
+      }
+    ],
     "initMessages":[
         "A continuación, encontrarás un ejercicio dividido en dos secciones.",
         "En la primera, encontrarás tres cajas negras. Debes asignarle una función a cada una.",

@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react'
-import NoScoringComponent from '../components/noScoringComponent'
+import blackboxSrc from '../../../../public/images/exercises/40/blackbox.svg'
 import data from './data.json'
-import '../../../styles/ex94.css'
+import NoScoringComponent from '../components/noScoringComponent'
 import BlackboxWithDropdown from '../components/blackboxWithDropdown'
+import UniqueOption from '../components/uniqueOption'
+import '../../../styles/ex94.css'
 
 export default function Ex94 () {
   const [myData] = useState({
@@ -11,12 +13,7 @@ export default function Ex94 () {
   })
 
   const [results, setResults] = useState({})
-  const [total, setTotal] = useState(0)
   const [nextScreen, setNextScreen] = useState(false)
-
-  useEffect(() => {
-    console.log(results)
-  }, [results])
 
   return (
     <NoScoringComponent initMessages={myData.initMessages} background={myData.color} title={myData.name}>
@@ -28,7 +25,7 @@ export default function Ex94 () {
               <button onClick={() => setNextScreen(true)} disabled={Object.keys(results).length < 3}>SIGUIENTE</button>
             </>}
             {nextScreen && <>
-              <SecondScreen />
+              <SecondScreen data={myData} prevInputs={results} />
               <button onClick={() => setPhase('end')}>FINALIZAR</button>
             </>}
           </>
@@ -48,10 +45,28 @@ function FirstScreen ({ data, setResults }) {
   )
 }
 
-function SecondScreen ({ data }) {
+function SecondScreen ({ data, prevInputs }) {
+  const [inputSel, setInputSel] = useState(null)
+  const [total, setTotal] = useState(null)
+  const [myInputs] = useState({
+    options: data.options2.sort(() => 0.5 - Math.random()).slice(0, 4)
+  })
+
+  useEffect(() => {
+    if (inputSel) {
+      const f = Function(inputSel.arguments, inputSel.body)
+      const result = f(...Object.values(prevInputs))
+      setTotal(result)
+    }
+  }, [inputSel])
+
   return (
-    <div className='ex94-container'>
-    <BlackboxWithDropdown inputs={option.inputs} idBox={index + 1} setOperationResult={(currentResult) => setResults(prev => ({ ...prev, [index + 1]: currentResult }))} />
+    <div className='ex94-second-container'>
+      <div className='ex94-second-container-blackbox'>
+        <img src={blackboxSrc} alt='blackbox' />
+        <span>{total}</span>
+      </div>
+      <UniqueOption options={myInputs.options} uniqueName='entradas' isCorrectOption={setInputSel} />
     </div>
   )
 }
