@@ -11,11 +11,11 @@
 // import data from './data.json'
 // Teacher
 // import DashboardStudentIndividual from '../../components/teacherProfile/dashboardMain'
-import DigitalCircuitGame from '../components/digitalCircuitGame'
+import WindowsExplorer from '../components/windowsExplorer'
 export default function ExTest () {
   return (
     <>
-      <DigitalCircuitGame/>
+      <WindowsExplorer content={[{ image: 'image.svg' }]}/>
     </>
   )
 }
