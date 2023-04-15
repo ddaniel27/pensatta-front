@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react'
 export default function Ex80 () {
   const [variation, setVariation] = useState(null)
   useEffect(() => {
-    setVariation(Math.floor(Math.random() * 10))
+    setVariation(Math.ceil(Math.random() * 10))
   }, [])
   return (
     <ScoringComponent initMessages={data.initMessages} title={data.name} background={data.color} threshold={data.threshold} exerciseId={data.id}>
