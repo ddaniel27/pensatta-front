@@ -30,12 +30,7 @@ export default function StudentProfileResume ({ toggleView, userObject, coordina
       }
       setRegisters([objeMaped])
     }
-    console.log('hola', resumenData)
   }, [resumenData])
-
-  useEffect(() => {
-    console.log('registest', registers)
-  }, [registers])
 
   return (
     <div className={coordinator ? 'student-profile-viewer-container' : 'student-profile-viewer-stuser'}>

@@ -25,7 +25,6 @@ export default function DashboardMainTeacher ({ data = defaultData, userId, coor
 
   useEffect(() => {
     profesorMetricsAll(userId, (response) => {
-      console.log(response)
       setName(response.name)
       setInstitution(response.institution)
       const metrics = response.metrics

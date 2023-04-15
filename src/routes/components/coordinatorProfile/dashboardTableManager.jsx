@@ -6,7 +6,6 @@ import CoordinatorContext from '../../../context/CoordinatorContext'
 
 export default function DashboardTableManage ({ coordinator = true, userId }) {
   const { ctx_lG_mC } = useContext(CoordinatorContext)
-  console.log(ctx_lG_mC.formData)
   const formData = ctx_lG_mC.formData.find((d) => d.level == ctx_lG_mC.selected)
   const conformedData = {
     title: formData.title,

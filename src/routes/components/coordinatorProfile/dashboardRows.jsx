@@ -14,7 +14,6 @@ export default function DashboardRows ({ title = 'Grado', grade = '6 A', average
   const [pieValues, setPieValues] = useState({ 0: 12, 1: 15, 2: 20 })
   const [meanBarProps, setMeanBarProps] = useState({})
   const cb = (response) => {
-    console.log('rows res', response)
     const students = response.infoUsuario
     const average = response.average
     const formedData = students.map((student) => {

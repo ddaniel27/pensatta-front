@@ -40,7 +40,6 @@ export default function DashboardListGrades ({ cards = defaultData, coordinator 
       const levels = [...lvls]
 
       const formData = levels.map((level) => {
-        console.log(cursos)
         const lst = cursos.filter((curso) => {
           return curso.level === level
         })

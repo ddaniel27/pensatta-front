@@ -1,5 +1,5 @@
 import '../../styles/tableManageCourse.css'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import NewStudentModal from './coordinatorProfile/newStudentModal'
 import EditStudentModal from './coordinatorProfile/editStudentModal'
 import ReasignTeacher from './coordinatorProfile/reasignTeacher'
@@ -53,10 +53,6 @@ export default function TableManageCourse ({ title = 'Grado', data = defaultData
   const [course, setCourse] = useState(false)
   const [courseId, setCourseId] = useState(false)
   const [studentName, setStudentName] = useState('')
-
-  useEffect(() => {
-    console.log(courseId)
-  }, [courseId])
 
   return (
     <div className='TableManageCourse'>

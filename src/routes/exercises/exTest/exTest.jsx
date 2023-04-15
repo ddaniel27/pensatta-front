@@ -11,11 +11,11 @@
 // import data from './data.json'
 // Teacher
 // import DashboardStudentIndividual from '../../components/teacherProfile/dashboardMain'
-import WindowsExplorer from '../components/windowsExplorer'
+import LaboratoryGame from '../components/laboratoryComponent'
 export default function ExTest () {
   return (
     <>
-      <WindowsExplorer content={[{ image: 'image.svg' }]}/>
+      <LaboratoryGame/>
     </>
   )
 }

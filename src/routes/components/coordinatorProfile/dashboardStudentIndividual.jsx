@@ -18,7 +18,6 @@ export default function DashboardStudentIndividual ({ title = 'Grado', grade = '
   useEffect(() => {
     const idStudent = ctx_hB_r_sI.studentSelected
     const student = ctx_hB_r_sI.r.find((student) => student.id === idStudent)
-    console.log('SADS', ctx_hB_r_sI)
     setConformedData({ label: student.name, list: student.list })
     setPieValues({
       0: student.stdAprops[1],

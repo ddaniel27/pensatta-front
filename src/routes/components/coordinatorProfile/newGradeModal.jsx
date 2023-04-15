@@ -26,7 +26,6 @@ export default function NewGradeModal ({ close, userId }) {
         label: `${teacher.first_name} ${teacher.last_name}`
       }))
       setTeachers(options)
-      console.log(response.profesores)
     })
   }, [])
 
@@ -53,9 +52,6 @@ export default function NewGradeModal ({ close, userId }) {
         alert('Error')
       })
   }
-  useEffect(() => {
-    console.log(teacherSelected)
-  }, [teacherSelected])
 
   return (
     <div className={styles['big-container']}>

@@ -1,4 +1,4 @@
-import { useState, useContext, useEffect } from 'react'
+import { useState, useContext } from 'react'
 import DashboardCardsHorizontalRows from './dashboardCardsHorizontalRows'
 import DashboardHorizontalBar from './dashboardHorizontalBar'
 import DashboardListGrades from './dashboardListGrades'
@@ -18,10 +18,6 @@ export default function CoordinatorRouter () {
   const [ctx_main_hR, setCtx_main_hR] = useState([])
   const [ctx_hB_r_sI, setCtx_hB_r_sI] = useState([])
   const { loginUser } = useContext(UserContext)
-
-  useEffect(() => {
-    console.log('ctx_hB_r_sI', ctx_hB_r_sI)
-  }, [ctx_hB_r_sI])
 
   return (
     <CoordinatorContext.Provider value={{ phase, setPhase, ctx_lG_mC, setCtx_lG_mC, ctx_main_hR, setCtx_main_hR, ctx_hB_r_sI, setCtx_hB_r_sI }}>

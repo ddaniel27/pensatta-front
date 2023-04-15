@@ -1,0 +1,140 @@
+.bowl{
+  position: absolute;
+  aspect-ratio: 1/1;
+  width: 90%;
+  bottom: 30%;
+  background-image: url("/images/exercises/80/bowl.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: burner-animation 0.2s;
+}
+@keyframes burner-animation {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.burner{
+  position: absolute;
+  aspect-ratio: 1/1;
+  width: 90%;
+  background-image: url("/images/exercises/80/burner.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 0%;
+}
+.lab-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height:75%;
+}
+.experiment-container{
+  position:relative;
+  height: 100%;
+  width: 30%;
+}
+.fire{
+  position: absolute;
+  left:27%;
+  bottom: 27%;
+  aspect-ratio: 1/1;
+  width: 45%;
+  background-image: url("/images/exercises/80/fire.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: burner-animation 0.2s;
+}
+.game-algorithm{
+  aspect-ratio: 1/1;
+  width: 30%;
+  min-width: 200px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.all-game-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.game-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  height: 90%;
+}
+.bottles-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 20%;
+}
+.game-button{
+  text-align: center;
+  border-radius: 50px;
+  font-weight: bold;
+  filter: drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.25));
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+  margin: 10px;
+  cursor: pointer;
+  
+}
+.game-button:active{
+  filter: none;
+  transform: translateY(2px);  
+}
+.game-button-bowl{
+  background-color: #F2F2F2;
+  color: #008E86;
+}
+.game-button-fire{
+  background-color: #F2F2F2;
+  color: #F97D61;
+}
+.game-button-mix{
+  background-color: #00D8CC;
+  color: #00635D;
+}
+.game-lab{
+  height: 380px;
+  width: 280px;
+  min-width: 280px;
+  min-height: 380px;
+  background-color: #333333;
+  padding-top: 30px;
+  border-radius: 20px;
+}
+.bottle-selected{
+  border: 4px solid #00D8CC;
+  border-radius: 10px;
+}
+.experiment-container svg{
+  position: absolute;
+  aspect-ratio: 1/1;
+  width: 90%;
+  bottom: 28.5%;
+  left: 0%;
+  animation: fill-animation 2s;
+}
+@keyframes fill-animation {
+  0% {
+    transform: scale(0);
+    transform-origin: bottom;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: bottom;
+  }
+}

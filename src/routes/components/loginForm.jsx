@@ -40,8 +40,6 @@ export default function LoginForm () {
         function (response) {
           if (response.logged) {
             setLoginUser(response.user)
-            console.log(response.user)
-            console.log('si esta logged')
           } else {
             setErrorMessage('Usuario o contraseña incorrectos')
             setSuccessMessage('')
@@ -64,7 +62,6 @@ export default function LoginForm () {
             demoPass !== 'katty2024' &&
             demoPass !== 'katty2025'
     ) {
-      console.log(demoPass)
       return setErrorMessage('Error en validacion')
     }
     setDemo(true)

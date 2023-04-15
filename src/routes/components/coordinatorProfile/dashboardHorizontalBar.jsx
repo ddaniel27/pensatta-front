@@ -28,7 +28,7 @@ export default function DashboardHorizontalBar ({ title = 'Grado', average = '5'
         }
       }
     )
-    console.log('rows2', rows)
+
     setConformedData(rows)
     setPieValues({
       0: rows.reduce((acc, next) => acc + (next.valueRed ? next.valueRed : 0), 0) / rows.length,

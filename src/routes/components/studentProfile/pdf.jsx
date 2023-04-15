@@ -209,8 +209,6 @@ export default function Pdf () {
 
   const myDate = new Date().toLocaleString('en-GB', { timeZone: 'America/Bogota' })
 
-  console.log(badges)
-
   return (
     <PDFViewer style={{ width: '100vw', height: '100vh' }}>
       <Document>

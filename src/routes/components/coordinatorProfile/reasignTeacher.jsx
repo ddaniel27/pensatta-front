@@ -17,7 +17,6 @@ export default function ReasignTeacherModal ({ close, userId, courseId }) {
         label: `${teacher.first_name} ${teacher.last_name}`
       }))
       setTeachers(options)
-      console.log(response.profesores)
     })
   }, [])
 

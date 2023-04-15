@@ -27,7 +27,6 @@ export default function DashboardCardsHorizontalRows ({ cards = defaultData, coo
   }
 
   useEffect(() => {
-    console.log('hola', ctx_main_hR)
     const levels = [...new Set(ctx_main_hR.map((curso) => curso.nivel))]
     const formData = levels.map((level) => {
       const lst = ctx_main_hR.filter((curso) => curso.nivel === level)
