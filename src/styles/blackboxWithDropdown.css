@@ -1,0 +1,23 @@
+.blackbox-with-dropdown {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.blackbox-with-dropdown__selector-area {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #008E86;
+  gap: 10px;
+  width: 90%;
+}
