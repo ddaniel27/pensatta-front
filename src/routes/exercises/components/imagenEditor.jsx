@@ -1,12 +1,12 @@
-import React from 'react'
+import { useState, useEffect, useRef } from 'react'
 import '../../../styles/imagenEditor.css'
 
 export default function ImagenEditor ({ sequence, startSequence, isFinished, setScore, correctSequence, reset, isFinishedGlobal }) {
-  const img = React.useRef(null)
-  const [bg, setBg] = React.useState(null)
-  const [opacity, setOpacity] = React.useState(null)
-  const [color, setColor] = React.useState(null)
-  const [initBackground, setInitBackground] = React.useState(null)
+  const img = useRef(null)
+  const [bg, setBg] = useState(null)
+  const [opacity, setOpacity] = useState(null)
+  const [color, setColor] = useState(null)
+  const [initBackground, setInitBackground] = useState(null)
 
   function delay (n) {
     return new Promise(function (resolve) {
@@ -14,7 +14,7 @@ export default function ImagenEditor ({ sequence, startSequence, isFinished, set
     })
   }
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (reset) {
       opacity.removeAttribute('opacity')
       color.removeAttribute('opacity')
@@ -22,10 +22,10 @@ export default function ImagenEditor ({ sequence, startSequence, isFinished, set
     }
   }, [reset])
 
-  React.useEffect(() => {
+  useEffect(() => {
     async function test () {
       while (!img.current.contentWindow.document.querySelector('#Bg')) {
-        await new Promise(r => setTimeout(r, 500))
+        await new Promise(resolve => setTimeout(resolve, 500))
       }
       setBg(img.current.contentWindow.document.querySelector('#Bg'))
       setOpacity(img.current.contentWindow.document.querySelector('#Oscuro'))
@@ -35,13 +35,21 @@ export default function ImagenEditor ({ sequence, startSequence, isFinished, set
     test()
   }, [])
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (bg && opacity && color && startSequence) {
       async function init () {
         const obj = correctSequence.reduce((o, key) => ({ ...o, [key]: 0 }), {})
 
         for (let i = 0; i < sequence.length; i++) {
-          if (sequence[i][0] == 'brillo') { opacity.setAttribute('opacity', '0') } else if (sequence[i][0] == 'color') { color.setAttribute('opacity', '0') } else if (sequence[i][0] == 'nuevo') { bg.setAttribute('fill', '#008E86') } else if (sequence[i][0] == 'eliminar') { bg.setAttribute('fill', '#FFFFFF') }
+          if (sequence[i][0] === 'brillo') {
+            opacity.setAttribute('opacity', '0')
+          } else if (sequence[i][0] === 'color') {
+            color.setAttribute('opacity', '0')
+          } else if (sequence[i][0] === 'nuevo') {
+            bg.setAttribute('fill', '#008E86')
+          } else if (sequence[i][0] === 'eliminar') {
+            bg.setAttribute('fill', '#FFFFFF')
+          }
 
           await delay(2000)
 
@@ -52,7 +60,7 @@ export default function ImagenEditor ({ sequence, startSequence, isFinished, set
           }
         }
 
-        if (Object.values(obj).every(v => v == 1)) {
+        if (Object.values(obj).every(v => v === 1)) {
           setScore(1)
           await delay(2000)
           isFinishedGlobal('end')

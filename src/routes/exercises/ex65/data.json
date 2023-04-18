@@ -22,26 +22,26 @@
     "options": {
         "option-1": {
             "id": "option-1",
-            "key": "brillo",
-            "text": "Filtro de brillo",
+            "key": "Pinos",
+            "text": "Agregar pinos",
             "value": 1
         },
         "option-2": {
             "id": "option-2",
-            "key": "color",
-            "text": "Filtro de color",
+            "key": "Montanas",
+            "text": "Agregar montaña",
             "value": 1
         },
         "option-3": {
             "id": "option-3",
-            "key": "nuevo",
-            "text": "Nuevo fondo",
+            "key": "Cielo 1",
+            "text": "Atardecer",
             "value": 1
         },
         "option-4": {
             "id": "option-4",
-            "key": "eliminar",
-            "text": "Eliminar fondo",
+            "key": "Cielo 2",
+            "text": "Noche",
             "value": 1
         }
     },
@@ -59,8 +59,8 @@
         "min": 1,
         "perfect": 1
     },
-    "path": "11",
+    "path": "65",
     "color": "#9968A6",
     "name": "Editar fotografía",
-    "id": "11"
+    "id": "65"
 }

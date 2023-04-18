@@ -1,21 +1,21 @@
-import React from 'react'
-import ScoringComponent from '../components/scoringComponent'
+import { useState, useLayoutEffect } from 'react'
+import NoScoringComponent from '../components/noScoringComponent'
 import DndComponent from '../components/dndComponent'
-import ImagenEditor from '../components/imagenEditor'
+import ImagenEditor from '../components/imageEditor65'
 import data from './data.json'
 import '../../../styles/ex10.css'
 
-export default function Ex11 () {
-  const [myData] = React.useState({
+export default function Ex65 () {
+  const [myData] = useState({
     ...data
   })
-  const [start, setStart] = React.useState(false)
-  const [reset, setReset] = React.useState(false)
-  const [finished, setFinished] = React.useState(false)
+  const [start, setStart] = useState(false)
+  const [reset, setReset] = useState(false)
+  const [finished, setFinished] = useState(false)
 
-  const [optionsData, setOptionsData] = React.useState({})
+  const [optionsData, setOptionsData] = useState({})
 
-  React.useLayoutEffect(() => {
+  useLayoutEffect(() => {
     if (reset) {
       setReset(false)
     }
@@ -34,19 +34,17 @@ export default function Ex11 () {
   }
 
   return (
-    <ScoringComponent initMessages={myData.initMessages} background={myData.color} title={myData.name} threshold={myData.threshold}>
+    <NoScoringComponent initMessages={myData.initMessages} background={myData.color} title={myData.name}>
       {
-        (setScore, setPhase) => (
+        (setPhase) => (
           <div className='maze-style'>
             <DndComponent data={myData} returnScore={setOptionsData} reset={reset} />
             <ImagenEditor
               sequence={optionsData}
               startSequence={start}
               isFinished={setFinished}
-              setScore={setScore}
-              correctSequence={myData.correctSequence}
               reset={reset}
-              isFinishedGlobal={setPhase}
+              num={1}
             />
             <div className='buttons-field'>
               {optionsData.length > 0 && <button onClick={handleReset} className='restart'>REINTENTAR</button>}
@@ -56,6 +54,6 @@ export default function Ex11 () {
           </div>
         )
       }
-    </ScoringComponent>
+    </NoScoringComponent>
   )
 }
