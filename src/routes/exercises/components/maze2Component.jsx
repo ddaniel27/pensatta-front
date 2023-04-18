@@ -416,6 +416,13 @@ const Maze2Component = ({ lab, setPhase, setScore }) => {
   window.onkeydown = cbdown
   window.onkeyup = cbup
 
+  useEffect(() => {
+    return () => {
+      window.onkeydown = null
+      window.onkeyup = null
+    }
+  }, [])
+
   return (
     <div className={styles.allContainer}>
       <div className={styles.mazeContainer}>

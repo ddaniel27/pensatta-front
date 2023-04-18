@@ -1,0 +1,5 @@
+{
+  "laberinto1":{
+      "startPosition":{"x": 0.5, "y": 0.5},
+      "finishHitbox":{ "x": 100 ,"y": 0 ,"width": 0.1 ,"height": 8 }}
+}

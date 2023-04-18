@@ -1,0 +1,52 @@
+.maze{
+  display: flex;
+  position: relative;
+  width: 1180px;
+  height: 208px;
+}
+.options-selected{
+  display: flex;
+  flex-direction: row;
+  background-color: #E0E0E0;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  height: 80px;
+  width: 380px;
+  color:#00635D;
+  font-weight: bolder;
+}
+.empty{
+  width: 60px;
+  height: 60px;
+  background-color: #C4C4C4;
+  border-radius: 10px;
+}
+.ArrowUp{
+  width: 60px;
+  height: 60px;
+  background-image: url(/images/exercises/49/up.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.ArrowDown{
+  width: 60px;
+  height: 60px;
+  background-image: url(/images/exercises/49/down.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.ArrowLeft{
+  width: 60px;
+  height: 60px;
+  background-image: url(/images/exercises/49/left.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.ArrowRight{
+  width: 60px;
+  height: 60px;
+  background-image: url(/images/exercises/49/right.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}

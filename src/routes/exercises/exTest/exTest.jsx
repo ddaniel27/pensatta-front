@@ -11,11 +11,11 @@
 // import data from './data.json'
 // Teacher
 // import DashboardStudentIndividual from '../../components/teacherProfile/dashboardMain'
-import LaboratoryGame from '../components/laboratoryComponent'
+import MazeMouseComponent from '../components/labratComponent'
 export default function ExTest () {
   return (
     <>
-      <LaboratoryGame/>
+      <MazeMouseComponent lab={1}/>
     </>
   )
 }
