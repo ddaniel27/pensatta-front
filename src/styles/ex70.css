@@ -8,9 +8,13 @@
   gap: 10px;
 }
 
+.ex70-dnd-container .droppable-list {
+  width: 75%;
+  left: 0.7vw !important;
+}
+
 .ex70-container .column-2 {
   grid-template-columns: none;
-  height: 50%;
 }
 
 .ex70-radio-group {

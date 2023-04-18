@@ -64,7 +64,9 @@ const Ex70 = () => {
         <div className='ex70-container'>
           <RadioGroup options={myData.options['radio-1']} setSelected={setOption1} block={response} isTitle />
           <RadioGroup options={myData.options['radio-2']} setSelected={setOption2} block={response} />
-          <DndComponent data={myData.options.dnd} />
+          <div className='ex70-dnd-container'>
+            <DndComponent data={myData.options.dnd} block={response} />
+          </div>
           {!response && <button onClick={handleClick} disabled={selectedSpan.length < 2}>RESPONDER</button>}
           {response && <button onClick={() => handleEnd(setScore, setPhase)}>SIGUIENTE</button>}
         </div>
