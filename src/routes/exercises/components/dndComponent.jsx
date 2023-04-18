@@ -3,7 +3,7 @@ import { DragDropContext } from 'react-beautiful-dnd'
 import DroppableComponent from './droppableComponent'
 import '../../../styles/dndComponent.css'
 
-export default function DndComponent ({ data, returnScore, reset }) {
+export default function DndComponent ({ data, returnScore, reset, block }) {
   const [myData, setmyData] = React.useState(data)
   const [counter, setCounter] = React.useState(0)
   const [optionsData, setOptionsData] = React.useState({})
@@ -34,7 +34,18 @@ export default function DndComponent ({ data, returnScore, reset }) {
     const start = myData.columns[source.droppableId]
     const finish = myData.columns[destination.droppableId]
 
-    if (start === finish) {
+    if (block) {
+      setmyData(prevState => ({
+        ...prevState,
+        columns: {
+          ...prevState.columns,
+          column: {
+            ...prevState.columns.column,
+            isDropDisabled: block
+          }
+        }
+      }))
+    } else if (start === finish) {
       const newoptionsIds = Array.from(start.optionsIds)
       newoptionsIds.splice(source.index, 1)
       newoptionsIds.splice(destination.index, 0, draggableId)
@@ -94,13 +105,13 @@ export default function DndComponent ({ data, returnScore, reset }) {
     <DragDropContext onDragEnd={onDragEnd}>
       <div className='drag-drop-context'>
         {
-                    !myData.isSingle
-                      ? <DroppableComponent column={myData.columns['column-2']} options={myData.columns['column-2'].optionsIds.map(optionId => myData.options[optionId])} returnData={setOptionsData} />
-                      : <>
-                        <DroppableComponent column={myData.columns['column-1']} options={myData.columns['column-1'].optionsIds.map(optionId => myData.options[optionId])} />
-                        <DroppableComponent column={myData.columns['column-2']} options={myData.columns['column-2'].optionsIds.map(optionId => myData.options[optionId])} returnData={setOptionsData} isLoop={myData.isLoop} />
-                        </>
-                }
+          !myData.isSingle
+            ? <DroppableComponent column={myData.columns['column-2']} options={myData.columns['column-2'].optionsIds.map(optionId => myData.options[optionId])} returnData={setOptionsData} />
+            : <>
+              <DroppableComponent column={myData.columns['column-1']} options={myData.columns['column-1'].optionsIds.map(optionId => myData.options[optionId])} />
+              <DroppableComponent column={myData.columns['column-2']} options={myData.columns['column-2'].optionsIds.map(optionId => myData.options[optionId])} returnData={setOptionsData} isLoop={myData.isLoop} />
+              </>
+        }
       </div>
     </DragDropContext>
   )
