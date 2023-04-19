@@ -1,0 +1,70 @@
+.ex70-container {
+  display: grid;
+  grid-template-columns: 20% 40% 40%;
+  grid-template-rows: 100%;
+  width: 80%;
+  height: 80%;
+  margin: 2% auto 0;
+  gap: 10px;
+}
+
+.ex70-dnd-container .droppable-list {
+  width: 75%;
+  left: 0.7vw !important;
+}
+
+.ex70-container .column-2 {
+  grid-template-columns: none;
+}
+
+.ex70-radio-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+}
+
+.ex70-radio {
+  width: 100%;
+  height: 100%;
+}
+
+.ex70-radio input {
+  display: none;
+}
+
+.ex70-radio span {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  color: #333;
+  text-align: center;
+  padding: 0px 10px;
+  font-weight: bold;
+}
+
+.ex70-radio-group.isTitle span {
+  font-size: 1.5rem;
+}
+
+.ex70-radio input:checked + span {
+  background-color: #333;
+  color: #fff;
+}
+
+.correct {
+  background-color: #69E485 !important;
+  color: #333 !important;
+}
+
+.wrong {
+  background-color: #FF7171 !important;
+  color: #333 !important;
+}
