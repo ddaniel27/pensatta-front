@@ -1,10 +1,12 @@
 import { useState, useEffect, useRef } from 'react'
 import mouse from '/images/exercises/49/rat.svg'
+import cheese from '/images/exercises/49/cheese.svg'
 import styles from '../../../styles/labrat.module.css'
 import pistas from '../ex49/laberintos.json'
 import starts from '../ex49/starts.json'
 import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd'
 
+const Cheese = ({ style }) => (<img src={cheese} alt="cheese" style={style}/>)
 const Mouse = ({ style }) => (<img src={mouse} alt="mouse" style={style}/>)
 const Maze = ({ pista, colorLine }) => {
   const canvas = pista.map((line, index) => {
@@ -45,6 +47,13 @@ const MazeMouseComponent = ({ lab, setPhase, setScore, colorLine }) => {
     },
     maze: {
       backgroundImage: `url("/images/exercises/49/lab${lab}.svg")`
+    },
+    cheese: {
+      position: 'absolute',
+      left: `${starts[`laberinto${lab}`].finishHitbox.x - 11}%`,
+      top: `${starts[`laberinto${lab}`].finishHitbox.y}%`,
+      width: `${starts[`laberinto${lab}`].finishHitbox.width}%`,
+      height: `${starts[`laberinto${lab}`].finishHitbox.height}%`
     }
 
   }
@@ -64,7 +73,10 @@ const MazeMouseComponent = ({ lab, setPhase, setScore, colorLine }) => {
   const [dirY, setDirY] = useState(0)
   const [optionsSelected, setOptionsSelected] = useState(Array.from({ length: 4 }, () => ('empty')))
   const [beginAnimation, setBeginAnimation] = useState(false)
+  const [disabledInit, setDisabledInit] = useState(true)
+  const [disableReset, setDisabledReset] = useState(true)
   const directions = ['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight']
+  const [isFinish, setIsFinish] = useState(false)
 
   const collisionDetection = (rect1, rect2) => (
     rect1.x <= rect2.x + rect2.width &&
@@ -72,6 +84,13 @@ const MazeMouseComponent = ({ lab, setPhase, setScore, colorLine }) => {
         rect1.y <= rect2.y + rect2.height &&
         rect1.height + rect1.y >= rect2.y
   )
+
+  useEffect(() => {
+    if (isFinish) {
+      setScore(isWin ? 1 : 0)
+      setPhase('end')
+    }
+  }, [isFinish])
 
   useEffect(() => {
     setStyleMouse({
@@ -130,80 +149,70 @@ const MazeMouseComponent = ({ lab, setPhase, setScore, colorLine }) => {
       setIsCollide(false)
     }
   }
-
-  const startCounterX = (incremento) => {
+  const startCounter = (incrementoX, incrementoY, axis) => {
     let counter = 0
 
     if (intervalRef.current) return
-
     intervalRef.current = setInterval(() => {
       if (!isCollide) {
-        setDirX(Math.sign(incremento))
-        setStyleMouse({
-          ...styleMouse,
-          transform: `rotate(${-(Math.sign(incremento)) * 90}deg)`
-        })
-        setPosx((prevCounter) => {
-          counter = prevCounter
-          return prevCounter + incremento
-        })
-
-        setMouseHitbox({
-          ...mouseHitbox,
-          x: counter + incremento
-        })
-
-        if (
-          collisionDetection({ ...mouseHitbox, x: counter + 2 * incremento }, finish) ||
-                pista.some(line => {
-                  return collisionDetection({ ...mouseHitbox, x: counter + 2 * incremento }, line)
-                })) {
-          setPosx((prevCounter) => {
-            return prevCounter - incremento
+        if (axis == 'x') {
+          setDirX(Math.sign(incrementoX))
+          setStyleMouse({
+            ...styleMouse,
+            transform: `rotate(${-(Math.sign(incrementoX)) * 90}deg)`
           })
-          setIsCollide(false)
-          if (collisionDetection({ ...mouseHitbox, x: counter + 2 * incremento }, finish)) {
-            setIsWin(true)
-          }
+          setPosx((prevCounter) => {
+            counter = prevCounter
+            return prevCounter + incrementoX
+          })
+          setMouseHitbox({
+            ...mouseHitbox,
+            x: counter + incrementoX
+          })
 
-          clearInterval(intervalRef.current)
-          intervalRef.current = null
+          if (
+            collisionDetection({ ...mouseHitbox, x: counter + 2 * incrementoX }, finish) ||
+                pista.some(line => {
+                  return collisionDetection({ ...mouseHitbox, x: counter + 2 * incrementoX }, line)
+                })) {
+            setPosx((prevCounter) => {
+              return prevCounter - incrementoX
+            })
+            setIsCollide(false)
+            if (collisionDetection({ ...mouseHitbox, x: counter + 2 * incrementoX }, finish)) {
+              setIsWin(true)
+            }
+
+            clearInterval(intervalRef.current)
+            intervalRef.current = null
+          }
         }
       }
-    }, velocidad)
-  }
-
-  const startCounterY = (incremento) => {
-    let counter = 0
-
-    if (intervalRef.current) return
-
-    intervalRef.current = setInterval(() => {
-      if (!isCollide) {
-        setDirY(Math.sign(incremento))
+      if (axis == 'y') {
+        setDirY(Math.sign(incrementoY))
         setStyleMouse({
           ...styleMouse,
-          transform: `rotate(${(Math.sign(incremento) - 1) * 90}deg)`
+          transform: `rotate(${(Math.sign(incrementoY) - 1) * 90}deg)`
         })
         setPosy((prevCounter) => {
           counter = prevCounter
-          return prevCounter + incremento
+          return prevCounter + incrementoY
         })
         setMouseHitbox({
           ...mouseHitbox,
-          y: counter + incremento
+          y: counter + incrementoY
         })
         if (
-          collisionDetection({ ...mouseHitbox, y: counter + 2 * incremento }, finish) ||
+          collisionDetection({ ...mouseHitbox, y: counter + 2 * incrementoY }, finish) ||
             pista.some(line => {
-              return collisionDetection({ ...mouseHitbox, y: counter + 2 * incremento }, line)
+              return collisionDetection({ ...mouseHitbox, y: counter + 2 * incrementoY }, line)
             })) {
           setPosy((prevCounter) => {
-            return prevCounter - incremento
+            return prevCounter - incrementoY
           })
-          setDirY(Math.sign(incremento))
+          setDirY(Math.sign(incrementoY))
           setIsCollide(false)
-          if (collisionDetection({ ...mouseHitbox, y: counter + 2 * incremento }, finish)) {
+          if (collisionDetection({ ...mouseHitbox, y: counter + 2 * incrementoY }, finish)) {
             setIsWin(true)
           }
 
@@ -213,14 +222,15 @@ const MazeMouseComponent = ({ lab, setPhase, setScore, colorLine }) => {
       }
     }, velocidad)
   }
+
   const cbdown = (event) => {
     if (event.repeat) return
     if (isWin) return
     const option = {
-      ArrowRight: () => { startCounterX(0.3) },
-      ArrowLeft: () => { startCounterX(-0.3) },
-      ArrowDown: () => { startCounterY(2) },
-      ArrowUp: () => { startCounterY(-2) }
+      CustomArrowRight: () => { startCounter(0.3, 0, 'x') },
+      CustomArrowLeft: () => { startCounter(-0.3, 0, 'x') },
+      CustomArrowDown: () => { startCounter(0, 2, 'y') },
+      CustomArrowUp: () => { startCounter(0, -2, 'y') }
     }
     if (event.code in option) { option[event.code]() }
   }
@@ -228,24 +238,12 @@ const MazeMouseComponent = ({ lab, setPhase, setScore, colorLine }) => {
     stopCounter()
   }
 
-  const move = (direction) => {
-    const option = {
-      ArrowRight: () => { startCounterX(0.3) },
-      ArrowLeft: () => { startCounterX(-0.3) },
-      ArrowDown: () => { startCounterY(2) },
-      ArrowUp: () => { startCounterY(-2) }
-    }
-    if (direction in option) {
-      option[direction]()
-    }
+  function sleep (ms) {
+    return new Promise(resolve => setTimeout(resolve, ms))
   }
 
   window.onkeydown = cbdown
   window.onkeyup = cbup
-
-  function sleep (ms) {
-    return new Promise(resolve => setTimeout(resolve, ms))
-  }
 
   useEffect(() => {
     return () => {
@@ -255,23 +253,40 @@ const MazeMouseComponent = ({ lab, setPhase, setScore, colorLine }) => {
   }, [])
 
   async function animate (option) {
-    move(option)
+    console.log(option)
+    const event = new KeyboardEvent('keydown', {
+      code: option,
+      bubbles: true,
+      cancelable: true
+    })
+    window.dispatchEvent(event)
     await sleep(2000)
     stopCounter()
   }
 
+  async function animation () {
+    await animate(`Custom${optionsSelected[0]}`)
+    await animate(`Custom${optionsSelected[1]}`)
+    await animate(`Custom${optionsSelected[2]}`)
+    await animate(`Custom${optionsSelected[3]}`)
+    await animate(`Custom${optionsSelected[0]}`)
+    await animate(`Custom${optionsSelected[1]}`)
+    await animate(`Custom${optionsSelected[2]}`)
+    await animate(`Custom${optionsSelected[3]}`)
+    await animate(`Custom${optionsSelected[0]}`)
+    await animate(`Custom${optionsSelected[1]}`)
+    await animate(`Custom${optionsSelected[2]}`)
+    await animate(`Custom${optionsSelected[3]}`)
+    await animate(`Custom${optionsSelected[0]}`)
+    await animate(`Custom${optionsSelected[1]}`)
+    await animate(`Custom${optionsSelected[2]}`)
+    await animate(`Custom${optionsSelected[3]}`)
+    setIsFinish(true)
+  }
+
   useEffect(() => {
     if (beginAnimation) {
-      animate(optionsSelected[0])
-        .then(
-          () => animate(optionsSelected[1])
-        )
-        .then(
-          () => animate(optionsSelected[2])
-        )
-        .then(
-          () => animate(optionsSelected[3])
-        )
+      animation()
     }
   }, [beginAnimation])
 
@@ -295,6 +310,31 @@ const MazeMouseComponent = ({ lab, setPhase, setScore, colorLine }) => {
     setOptionsSelected(newOptionsSelected)
   }
 
+  useEffect(() => {
+    if (optionsSelected.every(option => option !== 'empty')) {
+      setDisabledInit(false)
+    } else {
+      setDisabledInit(true)
+    }
+    if (optionsSelected.some(option => option !== 'empty')) {
+      setDisabledReset(false)
+    } else {
+      setDisabledReset(true)
+    }
+  }, [optionsSelected])
+
+  const handleInit = () => {
+    if (!disabledInit) {
+      setDisabledReset(true)
+      setBeginAnimation(true)
+    }
+  }
+  const handleReset = () => {
+    if (!disableReset) {
+      setOptionsSelected(Array.from({ length: 4 }, () => ('empty')))
+    }
+  }
+
   return (
     <div className={styles.allContainer}>
       <div className={styles.mazeContainer}>
@@ -302,6 +342,7 @@ const MazeMouseComponent = ({ lab, setPhase, setScore, colorLine }) => {
           <div style={{ display: 'flex', position: 'relative', width: '100%', height: '100%', top: '0%', left: '0%' }}>
             <Maze pista={pista} colorLine={colorLine}/>
             <Mouse style = {styleMouse} />
+            <Cheese style = {maze2Styles.cheese} />
           </div>
         </div>
       </div>
@@ -347,8 +388,9 @@ const MazeMouseComponent = ({ lab, setPhase, setScore, colorLine }) => {
           </DragDropContext>
         </div>
       </div>
-      <div>
-        <button onClick={() => { setBeginAnimation(true) }}>Iniciar</button>
+      <div className={styles['buttons-container']}>
+        <div className={`${styles['game-button']} ${styles['restart-button']} ${disableReset ? styles['button-disabled'] : ''}`} onClick={handleReset}>REINICIAR</div>
+        <div className={`${styles['game-button']} ${styles['start-button']} ${disabledInit ? styles['button-disabled'] : ''}`} onClick={handleInit}>INICIAR</div>
       </div>
     </div>
   )
