@@ -11,11 +11,19 @@
 // import data from './data.json'
 // Teacher
 // import DashboardStudentIndividual from '../../components/teacherProfile/dashboardMain'
-import MazeMouseComponent from '../components/labratComponent'
+import WindowsExplorer from '../components/windowsExplorer'
 export default function ExTest () {
+  const content = [{
+    name: 'Costos de producción',
+    type: 'Archivo Excel',
+    size: '24 KB',
+    date: '5-Oct-2022 12:00 p.m.',
+    image: 'excel.svg'
+  }]
+
   return (
     <>
-      <MazeMouseComponent lab={1}/>
+      <WindowsExplorer content={content} />
     </>
   )
 }
