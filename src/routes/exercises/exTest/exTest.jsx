@@ -19,6 +19,83 @@ export default function ExTest () {
     size: '24 KB',
     date: '5-Oct-2022 12:00 p.m.',
     image: 'excel.svg'
+  },
+  {
+    name: 'Costos de producción',
+    type: 'Archivo Excel',
+    size: '24 KB',
+    date: '5-Oct-2022 12:00 p.m.',
+    image: 'excel.svg'
+  },
+  {
+    name: 'Costos de producción',
+    type: 'Archivo Excel',
+    size: '24 KB',
+    date: '5-Oct-2022 12:00 p.m.',
+    image: 'excel.svg'
+  },
+  {
+    name: 'Costos de producción',
+    type: 'Archivo Excel',
+    size: '24 KB',
+    date: '5-Oct-2022 12:00 p.m.',
+    image: 'excel.svg'
+  },
+  {
+    name: 'Costos de producción',
+    type: 'Archivo Excel',
+    size: '24 KB',
+    date: '5-Oct-2022 12:00 p.m.',
+    image: 'excel.svg'
+  },
+  {
+    name: 'Costos de producción',
+    type: 'Archivo Excel',
+    size: '24 KB',
+    date: '5-Oct-2022 12:00 p.m.',
+    image: 'excel.svg'
+  },
+  {
+    name: 'Costos de producción',
+    type: 'Archivo Excel',
+    size: '24 KB',
+    date: '5-Oct-2022 12:00 p.m.',
+    image: 'excel.svg'
+  },
+  {
+    name: 'Costos de producción',
+    type: 'Archivo Excel',
+    size: '24 KB',
+    date: '5-Oct-2022 12:00 p.m.',
+    image: 'excel.svg'
+  },
+  {
+    name: 'Costos de producción',
+    type: 'Archivo Excel',
+    size: '24 KB',
+    date: '5-Oct-2022 12:00 p.m.',
+    image: 'excel.svg'
+  },
+  {
+    name: 'Costos de producción',
+    type: 'Archivo Excel',
+    size: '24 KB',
+    date: '5-Oct-2022 12:00 p.m.',
+    image: 'excel.svg'
+  },
+  {
+    name: 'Costos de producción',
+    type: 'Archivo Excel',
+    size: '24 KB',
+    date: '5-Oct-2022 12:00 p.m.',
+    image: 'excel.svg'
+  },
+  {
+    name: 'Costos de producción',
+    type: 'Archivo Excel',
+    size: '24 KB',
+    date: '5-Oct-2022 12:00 p.m.',
+    image: 'excel.svg'
   }]
 
   return (
