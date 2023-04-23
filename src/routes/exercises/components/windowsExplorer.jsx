@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import styles from '../../../styles/windowsExplorer.module.css'
 
 const Panels = () => {
@@ -74,7 +74,92 @@ const Design = ({ setView }) => {
   )
 }
 
-const OrderBy = () => {
+const OrderBy = ({ setContentState }) => {
+  const [orderBy, setOrderBy] = useState('name')
+  const [order, setOrder] = useState('ascendant')
+
+  const changeFormatDate = (date) => {
+    const parts = date.split(' ')
+    const dateParts = parts[0].split('-')
+    const timeParts = parts[1].split(':')
+    const amPm = `${parts[2].split('.')[0]}${parts[2].split('.')[1]}`
+    const newdate = new Date(`${dateParts[1]} ${dateParts[0]} ${dateParts[2]}  ${timeParts[0]}:${timeParts[1]} ${amPm.toUpperCase()}`)
+    return newdate
+  }
+
+  useEffect(() => {
+    if (orderBy === 'name') {
+      setContentState((prevState) => {
+        const newState = [...prevState]
+        newState.sort((a, b) => {
+          if (a.name > b.name) {
+            return 1
+          }
+          if (a.name < b.name) {
+            return -1
+          }
+          return 0
+        })
+
+        if (order === 'descendant') {
+          return newState.reverse()
+        }
+        return newState
+      })
+    } else if (orderBy === 'size') {
+      setContentState((prevState) => {
+        const newState = [...prevState]
+        newState.sort((a, b) => {
+          if (a.sizeNumber > b.sizeNumber) {
+            return 1
+          }
+          if (a.sizeNumber < b.sizeNumber) {
+            return -1
+          }
+          return 0
+        })
+
+        if (order === 'descendant') {
+          return newState.reverse()
+        }
+        return newState
+      })
+    } else if (orderBy === 'type') {
+      setContentState((prevState) => {
+        const newState = [...prevState]
+        newState.sort((a, b) => {
+          if (a.image > b.image) {
+            return 1
+          }
+          if (a.image < b.image) {
+            return -1
+          }
+          return 0
+        })
+
+        if (order === 'descendant') {
+          return newState.reverse()
+        }
+        return newState
+      })
+    } else if (orderBy === 'date') {
+      setContentState((prevState) => {
+        const newState = [...prevState]
+        newState.sort((a, b) => {
+          const date1 = changeFormatDate(a.date)
+          const date2 = changeFormatDate(b.date)
+          console.log(date1, date2)
+          console.log('resta, ', date1 - date2, '')
+          return date1 - date2
+        })
+        if (order === 'descendant') {
+          return newState.reverse()
+        }
+        return newState
+      })
+    }
+  }, [orderBy, order])
+
   return (
     <div className={styles['current-view-container']}>
       <div className={styles['current-view-options']}>
@@ -83,14 +168,14 @@ const OrderBy = () => {
           <span> Ordenar por</span>
           <div className={styles['order-by-dropdown']}>
             <div className={styles['order-by-dropdown-options']}>
-              <p className={`${styles['on-hover']}`}>Nombre</p>
-              <p className={`${styles['on-hover']}`}>Fecha</p>
-              <p className={`${styles['on-hover']}`}>Tipo</p>
-              <p className={`${styles['on-hover']}`}>Tamaño</p>
+              <p className={`${styles['on-hover']}`} onClick={() => { setOrderBy('name') }}>{orderBy === 'name' ? '⦿ ' : <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>}Nombre</p>
+              <p className={`${styles['on-hover']}`} onClick={() => { setOrderBy('date') }}>{orderBy === 'date' ? '⦿ ' : <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>}Fecha</p>
+              <p className={`${styles['on-hover']}`} onClick={() => { setOrderBy('type') }}>{orderBy === 'type' ? '⦿ ' : <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>}Tipo</p>
+              <p className={`${styles['on-hover']}`} onClick={() => { setOrderBy('size') }}>{orderBy === 'size' ? '⦿ ' : <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>}Tamaño</p>
             </div>
             <div>
-              <p className={`${styles['on-hover']}`}>Ascendente</p>
-              <p className={`${styles['on-hover']}`}>Descendente</p>
+              <p className={`${styles['on-hover']}`} onClick={() => { setOrder('ascendant') }}>{order === 'ascendant' ? '✓ ' : <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>}Ascendente</p>
+              <p className={`${styles['on-hover']}`} onClick={() => { setOrder('descendant') }}>{order === 'descendant' ? '✓ ' : <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>}Descendente</p>
             </div>
           </div>
         </div>
@@ -166,19 +251,37 @@ const WindowHeaderTabs = () => {
   )
 }
 
-const WindowHeaderOptions = ({ setView }) => {
+const WindowHeaderOptions = ({ setView, setContentState }) => {
   return (
     <div className={styles['windows-header-options']}>
       <Panels />
       <Design setView={setView} />
-      <OrderBy />
+      <OrderBy setContentState={setContentState}/>
       <ShowOccult />
       <Options />
     </div>
   )
 }
 
-const WindowHeaderSearch = () => {
+const WindowHeaderSearch = ({ setContentState, prevContent }) => {
+  const prevContentState = useRef(prevContent)
+  const [inputValue, setInputValue] = useState('')
+
+  const handleInputChange = (event) => {
+    setInputValue(event.target.value)
+  }
+  useEffect(() => {
+    if (inputValue === '') {
+      setContentState(prevContentState.current)
+    } else {
+      setContentState(
+        prevContentState.current.filter((item) =>
+          item.name.toLowerCase().includes(inputValue.toLowerCase())
+        )
+      )
+    }
+  }, [inputValue])
+
   return (
     <div className={styles['window-header-search']}>
       <div className={styles['arrows-container']}>
@@ -195,7 +298,7 @@ const WindowHeaderSearch = () => {
       </div>
       <div className={styles['search-container']}>
         <div className={styles['search-icon']}/>
-        <input className={styles['search-input']} type="text" placeholder="Buscar"/>
+        <input className={styles['search-input']} value={inputValue} onChange={handleInputChange} type="text" placeholder="Buscar"/>
       </div>
     </div>
   )
@@ -268,7 +371,7 @@ const ContentElement = ({ name, type, size, date, image, index, view }) => {
       <div className={`${imageStyle[view]}`} style={{ backgroundImage: `url(/images/exercises/76/${image})` }} />
       <div className={`${nameStyle[view]} ${styles['overflow-hidden']} `} >{name}</div>
       {(view === 'details' || view === 'content') && <div className={`${dateStyle[view]}`} >{date}</div>}
-      {(view === 'details') && <div className={`${typeStyle[view]}`} >{type}</div>}
+      {(view === 'details' || view === 'content') && <div className={`${typeStyle[view]}`} >{type}</div>}
       {(view === 'details' || view === 'content') && <div className={`${sizeStyle[view]}`} >{size}</div>}
     </div>
   )
@@ -289,13 +392,13 @@ const WindowsExplorer = ({ content }) => {
 
   }
   return (
-    <>
+    <div className={styles['game-container']}>
       <div className={styles['window-container']}>
         <div className={styles['window-header']}>
           <WindowHeaderButtons />
           <WindowHeaderTabs />
-          <WindowHeaderOptions setView={setView} />
-          <WindowHeaderSearch />
+          <WindowHeaderOptions setView={setView} setContentState={setContentState} />
+          <WindowHeaderSearch setContentState={setContentState} prevContent={contentState}/>
         </div>
         <div className={styles['window-content']} >
           {view === 'details' && <div className={styles['window-content-header']}>
@@ -328,7 +431,7 @@ const WindowsExplorer = ({ content }) => {
         <div />
 
       </div>
-    </>
+    </div>
   )
 }
 export default WindowsExplorer

@@ -17,6 +17,7 @@ export default function ExTest () {
     name: 'Costos de producción',
     type: 'Archivo Excel',
     size: '24 KB',
+    sizeNumber: 24000,
     date: '5-Oct-2022 12:00 p.m.',
     image: 'excel.svg'
   },
@@ -24,6 +25,7 @@ export default function ExTest () {
     name: 'Costos de producción',
     type: 'Archivo Excel',
     size: '24 KB',
+    sizeNumber: 24000,
     date: '5-Oct-2022 12:00 p.m.',
     image: 'excel.svg'
   },
@@ -31,6 +33,7 @@ export default function ExTest () {
     name: 'Costos de producción',
     type: 'Archivo Excel',
     size: '24 KB',
+    sizeNumber: 24000,
     date: '5-Oct-2022 12:00 p.m.',
     image: 'excel.svg'
   },
@@ -38,6 +41,7 @@ export default function ExTest () {
     name: 'Costos de producción',
     type: 'Archivo Excel',
     size: '24 KB',
+    sizeNumber: 24000,
     date: '5-Oct-2022 12:00 p.m.',
     image: 'excel.svg'
   },
@@ -45,6 +49,7 @@ export default function ExTest () {
     name: 'Costos de producción',
     type: 'Archivo Excel',
     size: '24 KB',
+    sizeNumber: 24000,
     date: '5-Oct-2022 12:00 p.m.',
     image: 'excel.svg'
   },
@@ -52,6 +57,7 @@ export default function ExTest () {
     name: 'Costos de producción',
     type: 'Archivo Excel',
     size: '24 KB',
+    sizeNumber: 24000,
     date: '5-Oct-2022 12:00 p.m.',
     image: 'excel.svg'
   },
@@ -59,6 +65,7 @@ export default function ExTest () {
     name: 'Costos de producción',
     type: 'Archivo Excel',
     size: '24 KB',
+    sizeNumber: 24000,
     date: '5-Oct-2022 12:00 p.m.',
     image: 'excel.svg'
   },
@@ -66,6 +73,7 @@ export default function ExTest () {
     name: 'Costos de producción',
     type: 'Archivo Excel',
     size: '24 KB',
+    sizeNumber: 24000,
     date: '5-Oct-2022 12:00 p.m.',
     image: 'excel.svg'
   },
@@ -73,6 +81,15 @@ export default function ExTest () {
     name: 'Costos de producción',
     type: 'Archivo Excel',
     size: '24 KB',
+    sizeNumber: 24000,
+    date: '12-Oct-2022 12:00 p.m.',
+    image: 'excel.svg'
+  },
+  {
+    name: 'Costos de producción',
+    type: 'Archivo Excel',
+    size: '34 KB',
+    sizeNumber: 34000,
     date: '5-Oct-2022 12:00 p.m.',
     image: 'excel.svg'
   },
@@ -80,6 +97,7 @@ export default function ExTest () {
     name: 'Costos de producción',
     type: 'Archivo Excel',
     size: '24 KB',
+    sizeNumber: 24000,
     date: '5-Oct-2022 12:00 p.m.',
     image: 'excel.svg'
   },
@@ -87,15 +105,17 @@ export default function ExTest () {
     name: 'Costos de producción',
     type: 'Archivo Excel',
     size: '24 KB',
+    sizeNumber: 24000,
     date: '5-Oct-2022 12:00 p.m.',
     image: 'excel.svg'
   },
   {
-    name: 'Costos de producción',
+    name: 'Archivo de prueba',
     type: 'Archivo Excel',
-    size: '24 KB',
-    date: '5-Oct-2022 12:00 p.m.',
-    image: 'excel.svg'
+    size: '14 KB',
+    sizeNumber: 14000,
+    date: '6-Oct-2022 12:00 p.m.',
+    image: 'pdf.svg'
   }]
 
   return (
