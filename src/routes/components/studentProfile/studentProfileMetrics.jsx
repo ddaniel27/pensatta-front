@@ -45,7 +45,7 @@ export default function StudentProfileMetrics ({ toggleView, userObject, coordin
             <span>Historial</span>
             <TableDisplayExercises registers={dummyHistory} />
           </div>
-          <button className='student-profile-metrics-button' onClick={() => { toggleView(false) }}>RESUMEN</button>
+          <button id='resumen-button' className='student-profile-metrics-button' onClick={() => { toggleView(false) }}>RESUMEN</button>
         </div>
         <div className='student-pdf-button'>
           <Link
