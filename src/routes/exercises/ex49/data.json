@@ -1,0 +1,15 @@
+{
+  "initMessages":[
+    "Ayuda a Rex a llegar al queso. Debes crear una secuencia de ocho instrucciones que se repetirá cuatro veces.",
+    "Arrastra las instrucciones en el orden que consideres hasta el cajón y presiona iniciar cuando hayas finalizado."
+  ],
+  "id":49,
+  "name":"Ratoncito",
+  "color":"#9968A6",
+  "threshold":{
+    "max":1,
+    "min":0,
+    "perfect":1
+  }
+
+}

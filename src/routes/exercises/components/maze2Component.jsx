@@ -122,9 +122,7 @@ const Maze2Component = ({ lab, setPhase, setScore }) => {
         if (
           collisionDetection({ ...pos, x: pos.x + incremento }, zorritoHitbox) ||
                     laberinto.some(line => {
-                      if (collisionDetection({ ...pos, x: pos.x + incremento }, line)) {
-                        return true
-                      }
+                      return collisionDetection({ ...pos, x: pos.x + incremento }, line)
                     }) ||
                     collisionDetection({ ...pos, x: pos.x + incremento }, start) ||
                     collisionDetection({ ...pos, x: pos.x + incremento }, finish)
@@ -158,9 +156,7 @@ const Maze2Component = ({ lab, setPhase, setScore }) => {
         if (
           collisionDetection({ ...pos, y: pos.y + incremento }, zorritoHitbox) ||
                     laberinto.some(line => {
-                      if (collisionDetection({ ...pos, y: pos.y + incremento }, line)) {
-                        return true
-                      }
+                      return collisionDetection({ ...pos, y: pos.y + incremento }, line)
                     }) ||
                     collisionDetection({ ...pos, y: pos.y + incremento }, finish) ||
                     collisionDetection({ ...pos, y: pos.y + incremento }, start)
@@ -193,9 +189,7 @@ const Maze2Component = ({ lab, setPhase, setScore }) => {
         if (
           collisionDetection({ ...pos, y: pos.y - incremento }, zorritoHitbox) ||
                     laberinto.some(line => {
-                      if (collisionDetection({ ...pos, y: pos.y - incremento }, line)) {
-                        return true
-                      }
+                      return collisionDetection({ ...pos, y: pos.y - incremento }, line)
                     }) ||
                     collisionDetection({ ...pos, y: pos.y - incremento }, start) ||
                     collisionDetection({ ...pos, y: pos.y - incremento }, finish)
@@ -228,9 +222,7 @@ const Maze2Component = ({ lab, setPhase, setScore }) => {
         if (
           collisionDetection({ ...pos, x: pos.x - incremento }, zorritoHitbox) ||
                     laberinto.some(line => {
-                      if (collisionDetection({ ...pos, x: pos.x - incremento }, line)) {
-                        return true
-                      }
+                      return collisionDetection({ ...pos, x: pos.x - incremento }, line)
                     }) ||
                     collisionDetection({ ...pos, x: pos.x - incremento }, start) ||
                     collisionDetection({ ...pos, x: pos.x - incremento }, finish)
@@ -298,63 +290,55 @@ const Maze2Component = ({ lab, setPhase, setScore }) => {
     if (intervalRef.current) return
 
     intervalRef.current = setInterval(() => {
-      if (true) {
-        console.log('avanzando en x')
-        setPosx((prevCounter) => {
-          counter = prevCounter
-          return prevCounter + incremento
-        })
-        setZorritoHitbox({
-          ...zorritoHitbox,
-          x: counter + incremento
-        })
+      console.log('avanzando en x')
+      setPosx((prevCounter) => {
+        counter = prevCounter
+        return prevCounter + incremento
+      })
+      setZorritoHitbox({
+        ...zorritoHitbox,
+        x: counter + incremento
+      })
 
-        if (
-          posEnemies.some(enemie => {
-            if (collisionDetection({ ...zorritoHitbox, x: counter + 2 * incremento }, enemie)) {
-              return true
-            }
-          }) ||
+      if (
+        posEnemies.some(enemie => {
+          return collisionDetection({ ...zorritoHitbox, x: counter + 2 * incremento }, enemie)
+        }) ||
                 collisionDetection({ ...zorritoHitbox, x: counter + 2 * incremento }, start) ||
                 collisionDetection({ ...zorritoHitbox, x: counter + 2 * incremento }, finish) ||
                 laberinto.some(line => {
-                  if (collisionDetection({ ...zorritoHitbox, x: counter + 2 * incremento }, line)) {
-                    return true
-                  }
+                  return collisionDetection({ ...zorritoHitbox, x: counter + 2 * incremento }, line)
                 })) {
-          setPosx((prevCounter) => {
-            return prevCounter - incremento
-          })
-          setIsCollide(false)
-          if (collisionDetection({ ...zorritoHitbox, x: counter + 2 * incremento }, finish)) {
-            setIsWin(true)
-          }
-          if (posEnemies.some(enemie => {
-            if (collisionDetection({ ...zorritoHitbox, x: counter }, enemie)) {
-              return true
-            }
-          })) {
-            setPosEnemies(enemiesPos)
-            setPosx(enemiX)
-            setPosy(enemiY)
-            setZorritoHitbox({
-              ...zorritoHitbox,
-              y: enemiY,
-              x: enemiX
-            })
-            setStyleZorrito({
-              ...styleZorrito,
-              top: `${enemiY}%`,
-              left: `${enemiX}%`
-            })
-            setVidas(vidas - 1)
-            setIsCollide(true)
-            clearInterval(intervalRef.current)
-
-            return
-          }
-          clearInterval(intervalRef.current)
+        setPosx((prevCounter) => {
+          return prevCounter - incremento
+        })
+        setIsCollide(false)
+        if (collisionDetection({ ...zorritoHitbox, x: counter + 2 * incremento }, finish)) {
+          setIsWin(true)
         }
+        if (posEnemies.some(enemie => {
+          return collisionDetection({ ...zorritoHitbox, x: counter }, enemie)
+        })) {
+          setPosEnemies(enemiesPos)
+          setPosx(enemiX)
+          setPosy(enemiY)
+          setZorritoHitbox({
+            ...zorritoHitbox,
+            y: enemiY,
+            x: enemiX
+          })
+          setStyleZorrito({
+            ...styleZorrito,
+            top: `${enemiY}%`,
+            left: `${enemiX}%`
+          })
+          setVidas(vidas - 1)
+          setIsCollide(true)
+          clearInterval(intervalRef.current)
+
+          return
+        }
+        clearInterval(intervalRef.current)
       }
     }, velocidad)
   }
@@ -364,60 +348,52 @@ const Maze2Component = ({ lab, setPhase, setScore }) => {
     if (intervalRef.current) return
 
     intervalRef.current = setInterval(() => {
-      if (true) {
-        setPosy((prevCounter) => {
-          counter = prevCounter
-          return prevCounter + incremento
-        })
-        setZorritoHitbox({
-          ...zorritoHitbox,
-          y: counter + incremento
-        })
-        if (
-          posEnemies.some(enemie => {
-            if (collisionDetection({ ...zorritoHitbox, y: counter + 2 * incremento }, enemie)) {
-              return true
-            }
-          }) ||
+      setPosy((prevCounter) => {
+        counter = prevCounter
+        return prevCounter + incremento
+      })
+      setZorritoHitbox({
+        ...zorritoHitbox,
+        y: counter + incremento
+      })
+      if (
+        posEnemies.some(enemie => {
+          return collisionDetection({ ...zorritoHitbox, y: counter + 2 * incremento }, enemie)
+        }) ||
             collisionDetection({ ...zorritoHitbox, y: counter + 2 * incremento }, start) ||
             collisionDetection({ ...zorritoHitbox, y: counter + 2 * incremento }, finish) ||
             laberinto.some(line => {
-              if (collisionDetection({ ...zorritoHitbox, y: counter + 2 * incremento }, line)) {
-                return true
-              }
+              return collisionDetection({ ...zorritoHitbox, y: counter + 2 * incremento }, line)
             })) {
-          setPosy((prevCounter) => {
-            return prevCounter - incremento
-          })
-          setIsCollide(false)
-          if (collisionDetection({ ...zorritoHitbox, y: counter + 2 * incremento }, finish)) {
-            setIsWin(true)
-          }
-          if (posEnemies.some(enemie => {
-            if (collisionDetection({ ...zorritoHitbox, y: counter }, enemie)) {
-              return true
-            }
-          })) {
-            setPosEnemies(enemiesPos)
-            setPosx(enemiX)
-            setPosy(enemiY)
-            setZorritoHitbox({
-              ...zorritoHitbox,
-              y: enemiY,
-              x: enemiX
-            })
-            setStyleZorrito({
-              ...styleZorrito,
-              top: `${enemiY}%`,
-              left: `${enemiX}%`
-            })
-            setVidas(vidas - 1)
-            clearInterval(intervalRef.current)
-
-            return
-          }
-          clearInterval(intervalRef.current)
+        setPosy((prevCounter) => {
+          return prevCounter - incremento
+        })
+        setIsCollide(false)
+        if (collisionDetection({ ...zorritoHitbox, y: counter + 2 * incremento }, finish)) {
+          setIsWin(true)
         }
+        if (posEnemies.some(enemie => {
+          return collisionDetection({ ...zorritoHitbox, y: counter }, enemie)
+        })) {
+          setPosEnemies(enemiesPos)
+          setPosx(enemiX)
+          setPosy(enemiY)
+          setZorritoHitbox({
+            ...zorritoHitbox,
+            y: enemiY,
+            x: enemiX
+          })
+          setStyleZorrito({
+            ...styleZorrito,
+            top: `${enemiY}%`,
+            left: `${enemiX}%`
+          })
+          setVidas(vidas - 1)
+          clearInterval(intervalRef.current)
+
+          return
+        }
+        clearInterval(intervalRef.current)
       }
     }, velocidad)
   }
@@ -439,6 +415,13 @@ const Maze2Component = ({ lab, setPhase, setScore }) => {
 
   window.onkeydown = cbdown
   window.onkeyup = cbup
+
+  useEffect(() => {
+    return () => {
+      window.onkeydown = null
+      window.onkeyup = null
+    }
+  }, [])
 
   return (
     <div className={styles.allContainer}>

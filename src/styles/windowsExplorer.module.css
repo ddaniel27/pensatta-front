@@ -1,22 +1,30 @@
 .window-content-element-image{
   background-repeat: no-repeat;
   background-size: contain;
-
   width:20px;
   height:20px;
 }
 .window-container{
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 980px;
+  height: 99%;
+  cursor: default;
+  user-select: none;
+  background-color: #F2F2F2;
+  border-radius: 10px;
+}
+.window-header{
+  background-color:  #E0E0E0;
 }
 .window-header-tabs{
   display: flex;
   flex-direction: row;
   width: 35%;
   align-items: center;
-  height: 30px;
+  height: 20px;
   background-color: #F2F2F2;
+  font-size: 14px;
 }
 .window-header-tabs-element{
   display: flex;
@@ -25,7 +33,6 @@
   align-items: center;
   width: 100%;
   height: 100%;
-  cursor: pointer;
   user-select: none;
 }
 
@@ -38,15 +45,622 @@
   flex-direction: row;
   width: 30%;
   height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .panel-navigation{
   display: flex;
   flex-direction: column;
-  width: 20%;
-  height: 100%;
+  width: 30px;
+  height: 20px;
   background-image: url('/images/exercises/76/panelNavigation.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.windows-header-options{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+}
+.panel-preview{
+  display: flex;
+  flex-direction: column;
+  width: 20px;
+  height: 14px;
+  background-image: url('/images/exercises/76/panelPreview.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.panel-preview-container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.panel-details{
+  display: flex;
+  flex-direction: column;
+  width: 20px;
+  height: 14px;
+  background-image: url('/images/exercises/76/panelDetails.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.panel-details-container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.panels-elements-container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+.panels-container{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.panel-navigation-container{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 100%;
+}
+.panel-other-container{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+}
+.design-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.design-options{
+  display: flex;
+  flex-direction: row;
+}
+.design-icons-very-large{
+  width: 20px;
+  height: 20px;
+  background-image: url('/images/exercises/76/designIconsVeryLarge.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.design-icons-very-large-container{
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+}
+.design-icons-large{
+  width: 20px;
+  height: 20px;
+  background-image: url('/images/exercises/76/designIconsLarge.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.design-icons-large-container{
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+}
+.design-icons-medium{
+  width: 20px;
+  height: 20px;
+  background-image: url('/images/exercises/76/designIconsMedium.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.design-icons-medium-container{
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+}
+.design-icons-small{
+  width: 20px;
+  height: 20px;
+  background-image: url('/images/exercises/76/designIconsSmall.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.design-icons-small-container{
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+}
+.design-icons-list{
+  width: 20px;
+  height: 20px;
+  background-image: url('/images/exercises/76/designIconsList.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.design-icons-list-container{
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+}
+.design-icons-details{
+  width: 20px;
+  height: 20px;
+  background-image: url('/images/exercises/76/designIconsDetails.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.design-icons-details-container{
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+}
+.design-icons-mosaico{
+  width: 20px;
+  height: 20px;
+  background-image: url('/images/exercises/76/designIconsMosaico.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.design-icons-mosaico-container{
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+}
+.design-icons-content{
+  width: 20px;
+  height: 20px;
+  background-image: url('/images/exercises/76/designIconsContent.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.design-icons-content-container{
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+}
+.order-by-icon{
+  width: 29px;
+  height: 30px;
+  background-image: url('/images/exercises/76/orderByIcon.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.current-view-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.current-view-options{
+  display: flex;
+  flex-direction: row;
+}
+.group-by-icon{
+  width: 29px;
+  height: 30px;
+  background-image: url('/images/exercises/76/groupByIcon.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.mark-box{
+  width: 8px;
+  height: 8px;
+  border: 1px solid #828282;
+}
+.show-occult-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.show-occult-element-box{
+  display: flex;
+  flex-direction: row;
+}
+.show-occult-extension{
+  display: flex;
+  flex-direction: row;
+}
+.show-occult-hidden{
+  display: flex;
+  flex-direction: row;
+}
+.hidden-select-icon{
+  width: 27px;
+  height: 37px;
+  background-image: url('/images/exercises/76/hiddenSelectIcon.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.show-occult{
+  display: flex;
+  flex-direction: row;
+}
+.options-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.options-icon{
+  width: 40px;
+  height: 30px;
+  background-image: url('/images/exercises/76/optionsIcon.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.back-arrow{
+  width: 16px;
+  height: 15px;
+  background-image: url('/images/exercises/76/horizontalArrowIcon.svg');
   background-repeat: no-repeat;
   background-size: contain;
 
 }
+.forward-arrow{
+  width: 16px;
+  height: 15px;
+  background-image: url('/images/exercises/76/horizontalArrowIcon.svg');
+  transform: rotateX(180deg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotate(180deg);
+}
+.up-arrow{
+  width: 16px;
+  height: 15px;
+  background-image: url('/images/exercises/76/horizontalArrowIcon.svg');
+  transform: rotate(90deg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.recents-arrow{
+  width: 16px;
+  height: 15px;
+  background-image: url('/images/exercises/76/recentsArrowIcon.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.arrows-container{
+  display: flex;
+  flex-direction: row;
+}
+.window-header-search{
+  display: flex;
+  flex-direction: row;
+  background-color: #F2F2F2;
+  font-size: 12px;
+  border: #F2F2F2 5px solid;
+  justify-content: space-between;
+}
+.path-element{
+  border: #828282 1px solid;
+}
+.path-container{
+  height: 20px;
+  width: 595px;
+  display: flex;
+  flex-direction: row;
+}
+.path-element{
+  height: 20px;
+  width: 550px;
+}
+.reload-arrow-icon{
+  width: 16px;
+  height: 16px;
+  background-image: url('/images/exercises/76/reloadArrowIcon.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.window-content-header{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+}
+.window-content-header-name{
+  position: absolute;
+  left: 11px;
+}
+.window-content-header-date{
+  position: absolute;
+  left: 200px;
+}
+.window-content-header-type{
+  position: absolute;
+  left: 400px;
+}
+.window-content-header-size{
+  position: absolute;
+  left: 600px;
+}
+.window-content{
+  display: flex;
+  flex-direction: column;
+}
+.window-content-element{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 30px;
+  align-items: center;
+}
+.on-hover:hover{
+  background-color: #56CCF2;
+  border: 1px solid #2D9CDB;
+  border-radius: 2px;
+}
+.window-content-element-image{
+  position: absolute;
+  left: 11px;
+}
+.window-content-element-name{
+  position: absolute;
+  left: 30px;
+}
+.window-content-element-date{
+  position: absolute;
+  left: 200px;
+}
+.window-content-element-type{
+  position: absolute;
+  left: 400px;
+}
+.window-content-element-size{
+  position: absolute;
+  left: 600px;
+}
+.window-content-files{
+  font-size: 14px;
+  margin-top: 15px;
+  overflow-y: scroll;
+}
+.window-header-buttons-folder-name{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.window-header-folder-name{
+  display: flex;
+  flex-direction: row;
+}
+.folder-icon{
+  width: 20px;
+  height: 20px;
+  background-image: url('/images/exercises/76/folderIcon.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.sheet-icon{
+  width: 20px;
+  height: 20px;
+  background-image: url('/images/exercises/76/sheetIcon.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.new-folder-icon{
+  width: 20px;
+  height: 20px;
+  background-image: url('/images/exercises/76/newFolderIcon.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.window-content-files-vl{
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  gap: 10px;
+}
+.window-content-element-vl{
+  display: flex;
+  flex-direction: column;
+  width: 145px;
+  font-size: 13px;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+}
+.window-content-element-image-vl{
+  background-repeat: no-repeat;
+  background-size: contain;
+  width:100px;
+  height:140px;
+  overflow-x: hidden;
+}
+.window-content-files-s{
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  gap: 10px;
+  flex-direction: column;
+}
+.window-content-element-s{
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  font-size: 13px;
+  white-space: nowrap;
+  align-items: center;
+  margin: 2px;
+}
+.window-content-element-image-s{
+  background-repeat: no-repeat;
+  background-size: contain;
+  width:20px;
+  height:20px;
+}
+.window-content-files-l{
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  gap: 10px;
+}
+.window-content-element-l{
+  display: flex;
+  flex-direction: column;
+  width: 90px;
+  font-size: 13px;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+}
+.window-content-element-image-l{
+  background-repeat: no-repeat;
+  background-size: contain;
+  width:80px;
+  height:80px;
+  overflow-x: hidden;
+}
+.window-content-files-m{
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  gap: 10px;
+}
+.window-content-element-m{
+  display: flex;
+  flex-direction: column;
+  width: 75px;
+  font-size: 13px;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+}
+.window-content-element-image-m{
+  background-repeat: no-repeat;
+  background-size: contain;
+  width:60px;
+  height:60px;
+  overflow-x: hidden;
+}
+.overflow-hidden{
+  overflow-x: hidden;
+}
+.height-335{
+  height: 335px;
+}
+.window-content-files-li{
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: scroll;
+  gap: 10px;
+  flex-direction: column;
+}
+.window-content-element-li{
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  font-size: 13px;
+  white-space: nowrap;
+  align-items: center;
+  margin: 2px;
+}
+.window-content-element-image-li{
+  background-repeat: no-repeat;
+  background-size: contain;
+  width:20px;
+  height:20px;
+}
+.window-content-files-mo{
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  gap: 10px;
+  flex-direction: column;
+}
+.window-content-element-mo{
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  font-size: 13px;
+  white-space: nowrap;
+  margin: 2px;
+}
+.window-content-element-image-mo{
+  background-repeat: no-repeat;
+  background-size: contain;
+  width:40px;
+  height:40px;
+}
+.window-content-element-image-c{
+  position: absolute;
+  left: 11px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width:45px;
+  height:45px;
+}
+.window-content-element-name-c{
+  position: absolute;
+  left: 60px;
+}
+.window-content-element-date-c{
+  position: absolute;
+  left: 600px;
+}
+.window-content-element-type-c{
+  position: absolute;
+  left: 60px;
+  bottom: 10px;
+}
+.window-content-element-size-c{
+  position: absolute;
+  left: 600px;
+  bottom: 10px;
+}
+.window-content-element-c{
+  height: 60px;
+  border-bottom: #828282 1px solid;
+  margin: 3px;
+  position: relative;
+}
+.window-content-files-c{
+  font-size: 14px;
+  margin-top: 15px;
+  overflow-y: scroll;
+}
+.order-by-container{
+  position: relative;
+}
+.order-by-dropdown{
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: #ffffff;
+  border: 1px solid #828282;
+  border-radius: 5px;
+  padding: 5px;
+  z-index: 1;
+  height: 160px;
+  width: 130px;
+}
+.order-by-container:hover .order-by-dropdown{
+  display: block;  
+}
+.order-by-dropdown-options{
+  border-bottom: #828282 1px solid;
+}
+.order-by-dropdown p{
+  margin: 5px;
+}
+.window-header-buttons-folder-name{
+  font-size: 14px;
+  height: 30px;
+  background-color: #F2F2F2;
+}
+.game-container{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  left:8%;
+}
+
