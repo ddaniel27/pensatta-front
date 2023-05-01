@@ -1,0 +1,65 @@
+.text{
+    fill: #4F4F4F;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: bolder;
+}
+.textyn{
+    fill: #F2F2F2;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: bolder;
+}
+.dropdownButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #008E86;
+    background-color: #F2F2F2;
+    transform: rotate(90deg);
+    font-weight: bolder;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.dropdown{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    position: absolute;
+}
+.dropdown:hover .dropdownButton{
+    background-color: #333333;
+    color: #00D8CC;
+    transform: rotate(0deg);
+}
+.options{
+    color: #4F4F4F;
+    background-color: #F2F2F2;
+    display: none; 
+    border-radius: 10px;   
+    font-weight: bolder;
+    padding: 10px;
+    width: fit-content;
+}
+.options .option{
+    margin: 5px;
+}
+
+.options .option:hover{
+    color: #00D8CC;
+    cursor: pointer;
+}
+
+.dropdown:hover .options{
+    display: flex;
+    flex-direction: column;
+}
+.dfd-container{
+    position:relative;
+    width: fit-content;
+    user-select: none;
+}
