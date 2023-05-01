@@ -8,5 +8,15 @@
       "gray3": "2*(X + B)", 
       "gray4": "X - 1",
       "corrects": { "1": "B / 2", "2": "2*(X + B)", "3": "X - 1" }}
-  ]
+  ],
+  "threshold": {
+    "max":3,
+    "min":0,
+    "perfect":3
+  },
+  "name":"Diagrama de flujo",
+  "color": "#53745B",
+  "id": 83,
+  "initMessages":["A continuación, encontrarás un algoritmo descrito como una serie de pasos y un diagrama de flujo equivalente.",
+                  "El diagrama tiene un par de errores. Selecciona las instrucciones correctas."]
 }
