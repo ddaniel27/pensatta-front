@@ -66,9 +66,11 @@ export default function DfdSelect ({ purple = 'X=9 ; B=6;', blue = 'Fin del prog
           <text x="330" y="110" className={styles.textyn}>NO</text>
           <text x="150" y="195" className={styles.textyn}>SÍ</text>
         </svg>
-        <SelectDropdown options = {[gray2, gray3, gray4]} x={52} y={62.5} id={1} setAnswers={setAnswers}/>
-        <SelectDropdown options = {[gray2, gray3, gray4]} x={52} y={76.5} id={2} setAnswers={setAnswers}/>
-        <SelectDropdown options = {[gray2, gray3, gray4]} x={52} y={90.5} id={3} setAnswers={setAnswers}/>
+        {!isFinish && <>
+          <SelectDropdown options = {[gray2, gray3, gray4]} x={52} y={62.5} id={1} setAnswers={setAnswers}/>
+          <SelectDropdown options = {[gray2, gray3, gray4]} x={52} y={76.5} id={2} setAnswers={setAnswers}/>
+          <SelectDropdown options = {[gray2, gray3, gray4]} x={52} y={90.5} id={3} setAnswers={setAnswers}/>
+        </>}
       </div>
       {!isFinish && <button onClick={() => setIsFinish(true)}>RESPONDER</button>}
       {isFinish && <button onClick={() => setPhase('end')}>FINALIZAR</button>}

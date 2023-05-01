@@ -1,0 +1,12 @@
+{
+  "variations":[
+    {
+      "purple": "X=9 ; B=6;", 
+      "yellow": "¿X > B?",  
+      "gray1": "X + B",
+      "gray2": "B / 2",
+      "gray3": "2*(X + B)", 
+      "gray4": "X - 1",
+      "corrects": { "1": "B / 2", "2": "2*(X + B)", "3": "X - 1" }}
+  ]
+}
