@@ -3,6 +3,7 @@ import styles from '../../../styles/bloodstream.module.css'
 import red from '/images/exercises/52/red.svg'
 import white from '/images/exercises/52/white.svg'
 import anomalia from '/images/exercises/52/anomalia.svg'
+import Timer from './timer2.jsx'
 
 const White = ({ id, setToDelete, appearsWhite, setWhitePositions }) => {
   const [position, setPosition] = useState({ top: Math.random() < 0.5 ? 0 : 50, left: -10 })
@@ -83,7 +84,7 @@ const Red = () => {
   )
 }
 
-const Anomalia = ({ whitePositions, id, appearsAnomalia, setToDeleteAnomalia }) => {
+const Anomalia = ({ whitePositions, id, appearsAnomalia, setToDeleteAnomalia, setScore, setPhase }) => {
   const [position, setPosition] = useState({ top: Math.random() < 0.5 ? 0 : 50, left: -10 })
   const whiteRef = useRef(null)
   const [time, setTime] = useState(0)
@@ -123,8 +124,9 @@ const Anomalia = ({ whitePositions, id, appearsAnomalia, setToDeleteAnomalia }) 
   }, [time])
 
   useEffect(() => {
-    if (position.left >= 100) {
-      console.log('perdio')
+    if (position.left >= 98) {
+      setScore(0)
+      setPhase('end')
     }
   }, [position])
   return (
@@ -132,11 +134,11 @@ const Anomalia = ({ whitePositions, id, appearsAnomalia, setToDeleteAnomalia }) 
   )
 }
 
-const BloodnameComponent = () => {
+const BloodnameComponent = ({ setPhase, setScore }) => {
   const [appears, setAppears] = useState(Array(30).fill(false))
   const [appearsWhite, setAppearsWhite] = useState([])
   const [whitePositions, setWhitePositions] = useState([])
-  const [appearsAnomalia, setAppearsAnomalia] = useState(Array.from({ length: 30 }, () => ({ id: Math.random(), view: false })))
+  const [appearsAnomalia, setAppearsAnomalia] = useState(Array.from({ length: 4 }, () => ({ id: Math.random(), view: false })))
   const [time, setTime] = useState(0)
   const [timeAnomalia, setTimeAnomalia] = useState(0)
   const intervalBlood = useRef(null)
@@ -213,22 +215,32 @@ const BloodnameComponent = () => {
       clearInterval(intervalAnomalia.current)
     }
   }, [])
+
+  const handleFinish = () => {
+    setScore(1)
+    setPhase('end')
+  }
   return (
-    <div className={styles['game-container']}>
-      <div className={styles['blood-stream-container']}>
-        <div className={styles['blood-stream']}>
-          {
-            appearsWhite.map((element, index) => element.view && <White key= {element.id} id={element.id} setToDelete={setToDelete} setWhitePositions={setWhitePositions} appearsWhite={appearsWhite}/>)
-          }
-          {
-            appears.map((_, index) => appears[index] && <Red key={index}/>)
-          }
-          {
-            appearsAnomalia.map((element, index) => element.view && <Anomalia key={index} whitePositions={whitePositions} id={element.id} appearsAnomalia={appearsAnomalia} setToDeleteAnomalia={setToDeleteAnomalia}/>)
-          }
+    <div className={styles['all-game-container']}>
+      <div className={styles['game-container']}>
+        <div className={styles['timer-container']}>
+          <Timer startTime={60} finishFunction={handleFinish}/>
         </div>
+        <div className={styles['blood-stream-container']}>
+          <div className={styles['blood-stream']}>
+            {
+              appearsWhite.map((element, index) => element.view && <White key= {element.id} id={element.id} setToDelete={setToDelete} setWhitePositions={setWhitePositions} appearsWhite={appearsWhite}/>)
+            }
+            {
+              appears.map((_, index) => appears[index] && <Red key={index}/>)
+            }
+            {
+              appearsAnomalia.map((element, index) => element.view && <Anomalia key={index} whitePositions={whitePositions} id={element.id} appearsAnomalia={appearsAnomalia} setToDeleteAnomalia={setToDeleteAnomalia} setScore={setScore} setPhase={setPhase}/>)
+            }
+          </div>
+        </div>
+        <div className={styles['game-button']} onClick={handleClickAnomalia}>GLÓBULOS BLANCOS</div>
       </div>
-      <button className={styles['game-button']} onClick={handleClickAnomalia}>GLÓBULOS BLANCOS</button>
     </div>
   )
 }
