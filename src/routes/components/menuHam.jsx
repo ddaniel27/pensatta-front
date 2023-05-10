@@ -5,10 +5,13 @@ import ActivityContext from '../../context/ActivityContext'
 import '../../styles/menuHam.css'
 
 export default function MenuHam ({ setShow }) {
-  const { setLoginUser } = React.useContext(UserContext)
+  const { setLoginUser, loginUser } = React.useContext(UserContext)
   const { setProfile } = React.useContext(ActivityContext)
 
   const logout = () => {
+    if (loginUser.role.toLowerCase() === 'student') {
+      window.open('https://forms.gle/NipJYn7xQwv2PNCHA')
+    }
     postLogout(setLoginUser)
   }
 
