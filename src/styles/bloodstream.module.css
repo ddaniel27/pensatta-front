@@ -1,0 +1,19 @@
+.blood-stream-container{
+  width: 1180px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #96003F;
+  border-radius: 20px;
+}
+.blood-stream{
+  width: 1180px;
+  height: 220px;
+  background-color: #6B002D;
+  position: relative;
+  overflow-x: hidden;
+}
+.white-particle{
+  position:absolute;
+}
