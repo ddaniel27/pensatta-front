@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import styles from '../../../styles/toggleSwitch.module.scss'
 import '../../../styles/toggleSwitch.css'
 
@@ -48,22 +48,22 @@ const Switch = ({ right, left, title, setAnswers, id, corrects, isFinish }) => {
 }
 
 const ToggleSwitches = ({ setPhase, setScore, data }) => {
-  const shuffledData = data.slice().sort(() => Math.random() - 0.5).slice(0, 4)
-  const options = shuffledData
-  const [answers, setAnswers] = useState(shuffledData.map(obj => ({ id: obj.id, isAnswered: false, value: null })))
-  const [corrects, setCorrects] = useState(shuffledData.map(obj => ({ id: obj.id, isCorrect: null })))
+  const shuffledData = useRef(data.slice().sort(() => Math.random() - 0.5).slice(0, 4))
+  const options = useRef(shuffledData.current)
+  const [answers, setAnswers] = useState(shuffledData.current.map(obj => ({ id: obj.id, isAnswered: false, value: null })))
+  const [corrects, setCorrects] = useState(shuffledData.current.map(obj => ({ id: obj.id, isCorrect: null })))
   const [isAllAnswered, setIsAllAnswered] = useState(false)
   const [isFinish, setIsFinish] = useState(false)
 
   useEffect(() => {
-    if (answers.filter(ans => ans.isAnswered == true).length == options.length) {
+    if (answers.filter(ans => ans.isAnswered == true).length == options.current.length) {
       setIsAllAnswered(true)
     }
   }, [answers])
 
   useEffect(() => {
     const corr = corrects.map(c => {
-      return { ...c, isCorrect: options.find(option => option.id == c.id).value == answers.find(ans => ans.id == c.id).value }
+      return { ...c, isCorrect: options.current.find(option => option.id == c.id).value == answers.find(ans => ans.id == c.id).value }
     }
     )
     setCorrects(corr)
@@ -76,7 +76,7 @@ const ToggleSwitches = ({ setPhase, setScore, data }) => {
   return (
     <>
       <div className={styles.gameContainer}>
-        {options.map(option => <Switch key={option.id}
+        {options.current.map(option => <Switch key={option.id}
           left={'Antigua'}
           right={'Actual'}
           title={option.text}

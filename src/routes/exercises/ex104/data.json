@@ -1,7 +1,7 @@
 {"initMessages":[
-    "A continuación, encontrarás un algoritmo que te indica cómo crear una escultura en papel." ,
-    "Sigue los pasos con una hoja y toma una fotografía a tu resultado.",
-    "¡Adjunta la fotografía para que pueda ver tu obra de arte!"
+    "A continuación, encontrarás un algoritmo gráfico que te indica cómo crear una escultura en papel." ,
+    "Ordena los pasos para lograr la figura propuesta.",
+    "Una vez los organices da click en iniciar para ver el orden correcto."
 ],
 "threshold":{
     "max" : 1,

@@ -10,10 +10,10 @@
                   "%INSERTTEXT%",
                   " , en donde se emplean dispositivos con esta tecnología para mejorar el control del tráfico, suministros de servicios públicos y privados, el transporte público, y los sectores a abasto."],
         "opciones":[
-            {"value":1,"label":"respuesta 1"},
-            {"value":3,"label":"respuesta 2"},
-            {"value":5,"label":"respuesta 3"},
-            {"value":7,"label":"respuesta 4"}
+            {"value":1,"label":"información"},
+            {"value":3,"label":"internet"},
+            {"value":5,"label":"smart cities"},
+            {"value":7,"label":"smart buildings"}
         ]
     }},
     "initMessages":[

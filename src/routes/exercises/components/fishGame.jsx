@@ -116,7 +116,7 @@ const FishGame = ({ setPhase }) => {
         <div className={styles['options-container']}>
           <div className={styles['timer-container']} >
             <div className={styles['timer-container-child']}>
-              <Timer stopTimer={isFinish} finishFunction={finishTimer}/>
+              <Timer stopTimer={isFinish} finishFunction={finishTimer} startTime={60}/>
             </div>
           </div>
           <div className={styles['inputs-container']}>

@@ -6,7 +6,7 @@ import CoordinatorContext from '../../../context/CoordinatorContext'
 import { coordinacionGrupos, profesorResumen } from '../../../requests'
 import NewGradeModal from './newGradeModal'
 
-export default function DashboardListGrades ({ cards = defaultData, coordinator = true, userId }) {
+export default function DashboardListGrades ({ cards = [], coordinator = true, userId }) {
   const [showAddModal, setShowAddModal] = useState(false)
   const { setCtx_lG_mC } = useContext(CoordinatorContext)
   const [cursos, setCursos] = useState([])
@@ -84,7 +84,7 @@ export default function DashboardListGrades ({ cards = defaultData, coordinator 
     </div>
   )
 }
-const defaultData = [{
+/* const defaultData = [{
   title: 'Grado',
   lista: [
     {
@@ -93,4 +93,4 @@ const defaultData = [{
     }
   ]
 }
-]
+] */

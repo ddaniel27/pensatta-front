@@ -9,20 +9,19 @@ import { MeanBarChart } from './meanBarChart'
 import { coordinacionMetricsAll } from '../../../requests'
 import CoordinatorContext from '../../../context/CoordinatorContext'
 
-export default function DashboardMain ({ data = defaultData, coordinator=true, userId}) {
-
-  const {setCtx_main_hR} = useContext(CoordinatorContext)
-  const [coordinatorName, setCoordinatorName] = useState('');
-  const [coordinatorInstitution, setCoordinatorInstitution] = useState('');
-  const [metrics, setMetrics] = useState([]);
+export default function DashboardMain ({ data = defaultData, coordinator = true, userId }) {
+  const { setCtx_main_hR } = useContext(CoordinatorContext)
+  const [coordinatorName, setCoordinatorName] = useState('')
+  const [coordinatorInstitution, setCoordinatorInstitution] = useState('')
+  const [metrics, setMetrics] = useState([])
   const [metricsAverage, setMetricsAverage] = useState([])
-  const [average, setAverage] = useState({});
+  const [average, setAverage] = useState({})
   const [conformedData, setConformedData] = useState(data)
   const [pieValues, setPieValues] = useState({ 0: 12, 1: 15, 2: 20 })
   const [meanBarProps, setMeanBarProps] = useState({})
 
   useEffect(() => {
-    coordinacionMetricsAll(userId, (response)=>{
+    coordinacionMetricsAll(userId, (response) => {
       setCoordinatorName(response.coordinator)
       setCoordinatorInstitution(response.institution)
       setMetrics(response.metrics)
@@ -30,9 +29,9 @@ export default function DashboardMain ({ data = defaultData, coordinator=true, u
       setMetricsAverage(response.metricsAverage)
       setCtx_main_hR(response.metricsByGroup)
     })
-  },[])
-  
-  useEffect(()=>{
+  }, [])
+
+  useEffect(() => {
     const title = coordinator ? 'Progreso' : 'Grado'
     const average = 5
     const rows = metrics.map((metric) => {
@@ -45,32 +44,31 @@ export default function DashboardMain ({ data = defaultData, coordinator=true, u
     })
 
     setConformedData({
-      title: title,
-      average: average,
-      rows: rows
+      title,
+      average,
+      rows
     })
+  }, [metrics])
 
-  },[metrics])
-
-  useEffect(()=>{
+  useEffect(() => {
     setPieValues(
-      { 0: metricsAverage.apropiacionValues? metricsAverage.apropiacionValues['1']:0, 
-        1: metricsAverage.apropiacionValues? metricsAverage.apropiacionValues['2']:0, 
-        2: metricsAverage.apropiacionValues? metricsAverage.apropiacionValues['3']:0})
-    
-    const labs = ['dim1','dim2','dim3','dim4','dim5','dim6']
-    const dataValues = {} 
-    labs.forEach((lab,index)=>{
-      dataValues[lab] = { obt: metricsAverage.spiderValues? metricsAverage.spiderValues[index+1]:0, med: average.spiderValues? average.spiderValues[index+1]:0 }
+      {
+        0: metricsAverage.apropiacionValues ? metricsAverage.apropiacionValues['1'] : 0,
+        1: metricsAverage.apropiacionValues ? metricsAverage.apropiacionValues['2'] : 0,
+        2: metricsAverage.apropiacionValues ? metricsAverage.apropiacionValues['3'] : 0
+      })
+
+    const labs = ['dim1', 'dim2', 'dim3', 'dim4', 'dim5', 'dim6']
+    const dataValues = {}
+    labs.forEach((lab, index) => {
+      dataValues[lab] = { obt: metricsAverage.spiderValues ? metricsAverage.spiderValues[index + 1] : 0, med: average.spiderValues ? average.spiderValues[index + 1] : 0 }
     })
 
     setMeanBarProps({
       labs,
       dataValues
     })
-  },[metricsAverage])
-
-
+  }, [metricsAverage])
 
   return (
     <div className='DashboardMain'>
