@@ -48,7 +48,6 @@ export default function ScoringComponent ({ initMessages = ['Inicia dando click 
       }
     }
     postScore()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [phase, timeMeasure])
 
   const handleStart = () => {
@@ -67,10 +66,10 @@ export default function ScoringComponent ({ initMessages = ['Inicia dando click 
         phase === 'activity' && children(setScore, setPhase)
       }
       {
-        phase === 'activity' && <BackButtonInGame onClick={() => { setPhase('init') }}/>
+        phase === 'activity' && <BackButtonInGame onClick={() => { setPhase('init') }} />
       }
       {
-        phase === 'end' && <><Information messages={resultMessage} /> <button onClick={() => { setActivity(true) }} disabled={disableButton} >FINALIZAR</button></>
+        phase === 'end' && <><Information messages={resultMessage} /> <button onClick={() => { setActivity(true) }} disabled={disableButton}>FINALIZAR</button></>
       }
     </>
   )
