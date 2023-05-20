@@ -97,7 +97,8 @@
   ],
   "initMessages":[
     "Analiza el algoritmo. En él se ejecuta una tarea correspondiente a una ecotecnología." ,
-    "Tu misión es organizar los bloques del algoritmo y seleccionar las tarjetas del nombre de la ecotecnología y la descripción de la misma."
+    "Tu misión es organizar los bloques del algoritmo y seleccionar las tarjetas del nombre de la ecotecnología y la descripción de la misma.",
+    "Recuerda que solo existe una pareja correcta y un orden correcto para los bloques asociado a ella"
   ],
   "threshold":{
     "max" : 1,
