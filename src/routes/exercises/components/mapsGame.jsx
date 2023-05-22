@@ -17,76 +17,83 @@ import EastAsia from './continentEastAsia'
 import SouthAsia from './continentSouthAsia'
 import Oceania from './continentOceania'
 import AllWorld from './continentsAll'
+import styles from '../../../styles/mapsGame.module.css'
 
-const SecondStage = ({ options = [] }) => {
+const SecondStage = ({ options = [], countries = {} }) => {
   const [country, setCountry] = useState('usa')
   const [continent, setContinent] = useState('north-america')
 
   return (
-    <div>
-      <div>
-        {
-          continent === 'north-america' && <NorthAmerica setCountry={setCountry} country={country} />
-        }
-        {
-          continent === 'central-america' && <CentralAmerica setCountry={setCountry} country={country} />
-        }
-        {
-          continent === 'south-america' && <SouthAmerica setCountry={setCountry} country={country} />
-        }
-        {
-          continent === 'north-europe' && <NorthEurope setCountry={setCountry} country={country} />
-        }
-        {
-          continent === 'central-europe' && <CentralEurope setCountry={setCountry} country={country} />
-        }
-        {
-          continent === 'south-europe' && <SouthEurope setCountry={setCountry} country={country} />
-        }
-        {
-          continent === 'north-africa' && <SeptentrionalAfrica setCountry={setCountry} country={country} />
-        }
-        {
-          continent === 'west-africa' && <WestAfrica setCountry={setCountry} country={country} />
-        }
-        {
-          continent === 'east-africa' && <EastAfrica setCountry={setCountry} country={country} />
-        }
-        {
-          continent === 'south-africa' && <MeridionalAfrica setCountry={setCountry} country={country} />
-        }
-        {
-          continent === 'central-africa' && <CentralAfrica setCountry={setCountry} country={country} />
-        }
-        {
-          continent === 'west-asia' && <WestAsia setCountry={setCountry} country={country} />
-        }
-        {
-          continent === 'central-asia' && <CentralAsia setCountry={setCountry} country={country} />
-        }
-        {
-          continent === 'east-asia' && <EastAsia setCountry={setCountry} country={country} />
-        }
-        {
-          continent === 'south-asia' && <SouthAsia setCountry={setCountry} country={country} />
-        }
-        {
-          continent === 'oceania' && <Oceania setCountry={setCountry} country={country} />
-        }
-      </div>
-      <div>
-        <div>
-          <AllWorld setContinent={setContinent} continent={continent}/>
-        </div>
-        <div>
+    <div className={styles['game-container']}>
+      <div className={styles['maps-info-container']}>
+        <div className={styles['big-map-container']}>
           {
-            options.map((option, index) => (
-              <div key={index}>
-                <div>{option}</div>
-                <div>{}</div>
-              </div>
-            ))
+            continent === 'north-america' && <NorthAmerica setCountry={setCountry} country={country} />
           }
+          {
+            continent === 'central-america' && <CentralAmerica setCountry={setCountry} country={country} />
+          }
+          {
+            continent === 'south-america' && <SouthAmerica setCountry={setCountry} country={country} />
+          }
+          {
+            continent === 'north-europe' && <NorthEurope setCountry={setCountry} country={country} />
+          }
+          {
+            continent === 'central-europe' && <CentralEurope setCountry={setCountry} country={country} />
+          }
+          {
+            continent === 'south-europe' && <SouthEurope setCountry={setCountry} country={country} />
+          }
+          {
+            continent === 'north-africa' && <SeptentrionalAfrica setCountry={setCountry} country={country} />
+          }
+          {
+            continent === 'west-africa' && <WestAfrica setCountry={setCountry} country={country} />
+          }
+          {
+            continent === 'east-africa' && <EastAfrica setCountry={setCountry} country={country} />
+          }
+          {
+            continent === 'south-africa' && <MeridionalAfrica setCountry={setCountry} country={country} />
+          }
+          {
+            continent === 'central-africa' && <CentralAfrica setCountry={setCountry} country={country} />
+          }
+          {
+            continent === 'west-asia' && <WestAsia setCountry={setCountry} country={country} />
+          }
+          {
+            continent === 'central-asia' && <CentralAsia setCountry={setCountry} country={country} />
+          }
+          {
+            continent === 'east-asia' && <EastAsia setCountry={setCountry} country={country} />
+          }
+          {
+            continent === 'south-asia' && <SouthAsia setCountry={setCountry} country={country} />
+          }
+          {
+            continent === 'oceania' && <Oceania setCountry={setCountry} country={country} />
+          }
+        </div>
+        <div className={styles['info-container']}>
+          <div className={styles['small-map']}>
+            <AllWorld setContinent={setContinent} continent={continent}/>
+          </div>
+          <div className={styles['info-country-card']}>
+            <div className={styles['option-container']}>
+              <div className={`${styles['size-20px']} ${styles['bolder-font']} ${styles['color-dark-green']}`}>Nombre</div>
+              <div className={`${styles['size-20px']} ${styles['color-dark-green']}`}>{countries[country]?.name}</div>
+            </div>
+            {
+              options.map((option, index) => (
+                <div key={index} className={styles['option-container']}>
+                  <div>{option}</div>
+                  <div>{countries[option]}</div>
+                </div>
+              ))
+            }
+          </div>
         </div>
       </div>
     </div>
