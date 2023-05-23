@@ -1,42 +1,40 @@
-import React from "react"
-import "../../../styles/binaryAnswerComponent.css"
+import React from 'react'
+import '../../../styles/binaryAnswerComponent.css'
 
+function BinaryAnswerComponent ({ options, showCorrect, returnScore, indexGlobal = 0 }) {
+  const [selected, setSelected] = React.useState({ classList: { add: (e) => {} } })
 
-function BinaryAnswerComponent({ options, showCorrect, returnScore, indexGlobal=0 }) {
+  React.useEffect(() => {
+    selected.classList.add('selected')
+  }, [selected])
 
-    const [selected, setSelected] = React.useState({classList:{add:(e)=>{}}})
+  React.useEffect(() => {
+    const inputsOpts = []
+    document.querySelectorAll('.binary-item').forEach(label => inputsOpts.push(label.childNodes[0]))
+    inputsOpts.forEach(input => { input.checked = false })
+    selected.classList.add('selected')
+  }, [showCorrect])
 
-    React.useEffect(()=>{
-        selected.classList.add('selected')
-    },[selected])
+  const handleChange = (isCorrect, { target }) => {
+    if (showCorrect) { return }
+    if (target.checked) { returnScore(isCorrect, indexGlobal) }
+    document.querySelectorAll('.binary-item').forEach(label => label.classList.remove('selected'))
+    setSelected(target.parentNode)
+  }
 
-    React.useEffect(()=>{
-        const inputsOpts = []
-        document.querySelectorAll('.binary-item').forEach(label => inputsOpts.push(label.childNodes[0]))
-        inputsOpts.forEach(input => { input.checked = false })
-        selected.classList.add('selected')
-    },[showCorrect])
-
-    const handleChange = (isCorrect, {target}) => {
-        if(showCorrect){ return }
-        if(target.checked){ returnScore(isCorrect, indexGlobal) }
-        document.querySelectorAll('.binary-item').forEach(label => label.classList.remove('selected'))
-        setSelected(target.parentNode)
-    }
-
-    return(
-        <div className="binary-option">
-            {
+  return (
+    <div className='binary-option'>
+      {
                 options
-                    .map((option, index) =>
-                        <label className={`binary-item ${showCorrect && "show-value"} ${option.isCorrect ? "right" : "wrong"} ${option.name}`} key={index}> 
-                            <input type="radio" name={`binary-${indexGlobal}`} disabled={showCorrect} onChange={(e)=>{handleChange(option.isCorrect,e)}} value={option.isCorrect} />
-                            <p></p>
-                        </label>
-                    )
+                  .map((option, index) =>
+                    <label className={`binary-item ${showCorrect && 'show-value'} ${option.isCorrect ? 'right-binary' : 'wrong-binary'} ${option.name}`} key={index}>
+                      <input type='radio' name={`binary-${indexGlobal}`} disabled={showCorrect} onChange={(e) => { handleChange(option.isCorrect, e) }} value={option.isCorrect} />
+                      <p />
+                    </label>
+                  )
             }
-        </div>
-    )
+    </div>
+  )
 }
 
 export default React.memo(BinaryAnswerComponent)

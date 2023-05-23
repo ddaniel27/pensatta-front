@@ -5,8 +5,7 @@ import data from './data.json'
 import '../../../styles/ex16.css'
 
 export default function Ex16 () {
-  // eslint-disable-next-line no-unused-vars
-  const [myData, setMyData] = React.useState({
+  const [myData] = React.useState({
     ...data,
     options: data.options.sort(() => 0.5 - Math.random()).slice(0, data.threshold.perfect)
   })
