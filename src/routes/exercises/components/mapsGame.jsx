@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 import NorthAmerica from './continentNorthAmerica'
 import CentralAmerica from './continentCentralAmerica'
@@ -19,9 +19,42 @@ import Oceania from './continentOceania'
 import AllWorld from './continentsAll'
 import styles from '../../../styles/mapsGame.module.css'
 
-const SecondStage = ({ options = [], countries = {} }) => {
+const ButtonOption = ({ option, setOptions, options }) => {
+  const handleClick = () => {
+    if (options.includes(option[1])) {
+      setOptions(options.filter((opt) => opt !== option[1]))
+    } else {
+      setOptions([...options, option[1]])
+    }
+  }
+  return (
+    <div className={`${styles['btn-option']} ${options.includes(option[1]) ? styles['btn-option-selected'] : ''}`} onClick={handleClick} >{option[0]}</div>
+  )
+}
+
+const FirstStage = ({ setOptions, options, setStage }) => {
+  const preOptions = [['Gentilicio', 'demonym'], ['Moneda', 'money'], ['Dominio internet', 'domain'], ['Idioma', 'language'], ['Capital', 'capital']]
+
+  return (
+    <div className={styles['game-container']}>
+      <div className={styles['options-buttons']}>
+        <span>Al tocar un país, mostrar</span>
+        {
+          preOptions.map((option, index) => (
+            <ButtonOption key={index} option={option} setOptions={setOptions} options={options} />
+          ))
+        }
+      </div>
+      <button className={styles['btn-start']} disabled={options.length == 0} onClick={() => setStage(2)}>SIGUIENTE</button>
+    </div>
+
+  )
+}
+
+const SecondStage = ({ options = [], countries = {}, setPhase, setStage }) => {
   const [country, setCountry] = useState('usa')
   const [continent, setContinent] = useState('north-america')
+  const preOptions = { demonym: 'Gentilicio', money: 'Moneda', domain: 'Dominio internet', language: 'Idioma', capital: 'Capital' }
 
   return (
     <div className={styles['game-container']}>
@@ -82,28 +115,34 @@ const SecondStage = ({ options = [], countries = {} }) => {
           </div>
           <div className={styles['info-country-card']}>
             <div className={styles['option-container']}>
-              <div className={`${styles['size-20px']} ${styles['bolder-font']} ${styles['color-dark-green']}`}>Nombre</div>
-              <div className={`${styles['size-20px']} ${styles['color-dark-green']}`}>{countries[continent][country]?.name}</div>
+              <div className={`${styles['size-20px']} ${styles['color-dark-green']}`}>Nombre</div>
+              <div className={`${styles['size-20px']} ${styles['bolder-font']} ${styles['color-dark-green']}`}>{countries?.[continent]?.[country]?.name ?? '-'}</div>
             </div>
             {
               options.map((option, index) => (
                 <div key={index} className={styles['option-container']}>
-                  <div>{option}</div>
-                  <div>{countries[option]}</div>
+                  <div className={`${styles['size-20px']} ${styles['color-dark-gray']}`}>{preOptions[option]}</div>
+                  <div className={`${styles['size-20px']} ${styles['bolder-font']} ${styles['color-dark-gray']}`}>{countries?.[continent]?.[country]?.[option] ?? '-'}</div>
                 </div>
               ))
             }
           </div>
         </div>
       </div>
+      <button id={styles['btn-finish']} onClick={() => { setPhase('end') }}>FINALIZAR</button>
+      <button id={styles['btn-back']} onClick={() => { setStage(1) }}>VOLVER</button>
     </div>
   )
 }
 
-const MapsGame = ({ countries }) => {
+const MapsGame = ({ countries, setPhase }) => {
+  const [stage, setStage] = useState(1)
+  const [options, setOptions] = useState([])
+
   return (
     <>
-      <SecondStage countries={countries} />
+      {stage === 1 && <FirstStage setOptions={setOptions} options={options} setStage={setStage} />}
+      {stage === 2 && <SecondStage countries={countries} setPhase={setPhase} setStage={setStage} options={options}/>}
     </>
 
   )

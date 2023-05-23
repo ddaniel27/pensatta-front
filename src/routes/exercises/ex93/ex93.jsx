@@ -4,7 +4,7 @@ import MapsGame from '../components/mapsGame'
 
 export default function Ex93 () {
   return (
-    <NoScoringComponent>
+    <NoScoringComponent initMessages={data.initMessages} title={data.name} background={data.color}>
       {(setPhase) => (
         <MapsGame setPhase={setPhase} countries={data.countries} />
       )}
