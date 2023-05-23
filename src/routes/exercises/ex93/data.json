@@ -1,0 +1,43 @@
+{
+  "initMessages":[
+    "A continuación, encontrarás un explorador de mapas.",
+    "Configúralo seleccionando de la lista dos datos que quieras visualizar sobre cada país.",
+    "Al tocar cada región, el software te dará la información que programaste."
+  ],
+  "countries":{
+    "north-america":{
+      "usa":{
+        "name":"Estados Unidos",
+        "demonym":"estadounidense",
+        "capital":"Washington D. C.",
+        "money": "Dólar estadounidense",
+        "language":"Inglés",
+        "domain":".us"
+      },
+      "canada":{
+        "name":"Canadá",
+        "demonym":"canadiense",
+        "capital":"Ottawa",
+        "money": "Dólar canadiense",
+        "language":"Inglés, francés",
+        "domain":".ca"
+      },
+      "mexico":{
+        "name":"México",
+        "demonym":"mexicano",
+        "capital":"Ciudad de México",
+        "money": "Peso mexicano",
+        "language":"Español",
+        "domain":".mx"
+      },
+      "groenlandia":{
+        "name":"Groenlandia",
+        "demonym":"groenlandés",
+        "capital":"Nuuk",
+        "money": "Corona danesa",
+        "language":"Groenlandés",
+        "domain":".gl"
+      }
+    }
+    }
+}

@@ -83,7 +83,7 @@ const SecondStage = ({ options = [], countries = {} }) => {
           <div className={styles['info-country-card']}>
             <div className={styles['option-container']}>
               <div className={`${styles['size-20px']} ${styles['bolder-font']} ${styles['color-dark-green']}`}>Nombre</div>
-              <div className={`${styles['size-20px']} ${styles['color-dark-green']}`}>{countries[country]?.name}</div>
+              <div className={`${styles['size-20px']} ${styles['color-dark-green']}`}>{countries[continent][country]?.name}</div>
             </div>
             {
               options.map((option, index) => (
@@ -100,10 +100,10 @@ const SecondStage = ({ options = [], countries = {} }) => {
   )
 }
 
-const MapsGame = () => {
+const MapsGame = ({ countries }) => {
   return (
     <>
-      <SecondStage />
+      <SecondStage countries={countries} />
     </>
 
   )
