@@ -1,8 +1,9 @@
 {
   "initMessages":[
     "A continuación, encontrarás un explorador de mapas.",
-    "Configúralo seleccionando de la lista dos datos que quieras visualizar sobre cada país.",
-    "Al tocar cada región, el software te dará la información que programaste."
+    "Configúralo seleccionando de la lista los datos que quieras visualizar sobre cada país.",
+    "Al tocar un país, el software te dará la información que pediste.",
+    "Puedes apoyarte en el mapa de la derecha para ubicar la región que prefieras."
   ],
   "name":"Mapa del Mundo",
   "color":"#53745B",

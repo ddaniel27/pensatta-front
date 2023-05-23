@@ -20,7 +20,7 @@ function SelectDropdown ({ x = 0, y = 0, options = ['B / 2', '2*(X + B)', 'X - 1
   )
 }
 
-export default function DfdSelect ({ purple = 'X=9 ; B=6;', blue = 'Fin del programa', gray1 = 'X + B', gray2 = 'B / 2', gray3 = '2*(X + B)', gray4 = 'X - 1', yellow = '¿X > B?', corrects = { 1: 'B / 2', 2: '2*(X + B)', 3: 'X - 1' }, setScore = () => {}, setPhase = () => {} }) {
+export default function DfdSelect ({ purple = 'X=9 ; B=6;', blue = 'Fin del programa', gray1 = 'X + B', gray2 = 'B / 2', gray3 = '2*(X + B)', gray4 = 'X - 1', yellow = '¿X > B?', corrects = { 1: '2*(X + B)', 2: 'X - 1', 3: 'B / 2' }, setScore = () => {}, setPhase = () => {} }) {
   const [isFinish, setIsFinish] = useState(false)
   const [validations, setValidations] = useState({ 1: false, 2: false, 3: false })
   const optionsRef = useRef([gray2, gray3, gray4].sort(() => Math.random() - 0.5))
