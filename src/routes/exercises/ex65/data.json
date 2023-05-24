@@ -19,7 +19,9 @@
             "optionsIds": []
         }
     },
-    "options": {
+    "variations": [
+      {
+        "img": 1,
         "option-1": {
             "id": "option-1",
             "key": "Pinos",
@@ -44,7 +46,62 @@
             "text": "Noche",
             "value": 1
         }
-    },
+      },
+      {
+        "img": 2,
+        "option-1": {
+            "id": "option-1",
+            "key": "Pinos",
+            "text": "Agregar murcielago",
+            "value": 1
+        },
+        "option-2": {
+            "id": "option-2",
+            "key": "Montanas",
+            "text": "Agregar estrellas",
+            "value": 1
+        },
+        "option-3": {
+            "id": "option-3",
+            "key": "Cielo 1",
+            "text": "Soleado",
+            "value": 1
+        },
+        "option-4": {
+            "id": "option-4",
+            "key": "Cielo 2",
+            "text": "Noche clara",
+            "value": 1
+        }
+      },
+      {
+        "img": 3,
+        "option-1": {
+            "id": "option-1",
+            "key": "Pinos",
+            "text": "Agregar aves",
+            "value": 1
+        },
+        "option-2": {
+            "id": "option-2",
+            "key": "Montanas",
+            "text": "Agregar flores",
+            "value": 1
+        },
+        "option-3": {
+            "id": "option-3",
+            "key": "Cielo 1",
+            "text": "Soleado",
+            "value": 1
+        },
+        "option-4": {
+            "id": "option-4",
+            "key": "Cielo 2",
+            "text": "Noche",
+            "value": 1
+        }
+      }
+    ],
     "correctSequence":[
         "brillo",
         "color",

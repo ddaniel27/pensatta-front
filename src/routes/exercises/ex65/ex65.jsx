@@ -7,7 +7,8 @@ import '../../../styles/ex10.css'
 
 export default function Ex65 () {
   const [myData] = useState({
-    ...data
+    ...data,
+    options: data.variations.sort(() => Math.random() - 0.5).slice(0, 1)[0]
   })
   const [start, setStart] = useState(false)
   const [reset, setReset] = useState(false)
@@ -44,7 +45,7 @@ export default function Ex65 () {
               startSequence={start}
               isFinished={setFinished}
               reset={reset}
-              num={1}
+              num={myData.options.img}
             />
             <div className='buttons-field'>
               {optionsData.length > 0 && <button onClick={handleReset} className='restart'>REINTENTAR</button>}

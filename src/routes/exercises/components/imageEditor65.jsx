@@ -22,9 +22,9 @@ export default function ImagenEditor ({
 
   useEffect(() => {
     if (reset) {
-      pinos.removeAttribute('pinos')
-      montana.removeAttribute('montana')
       bg.setAttribute('fill', initBackground)
+      pinos.setAttribute('style', 'opacity: 0')
+      montana.setAttribute('style', 'opacity: 0')
     }
   }, [reset])
 
