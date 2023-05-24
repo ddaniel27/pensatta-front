@@ -4,7 +4,7 @@ import CoordinatorContext from '../../context/CoordinatorContext'
 
 const rowList = new Array(20).fill(0)
 
-export default function RowTwentyColors ({ label = '', list = {}, id = null }) {
+export default function RowTwentyColors ({ label = '', list = [{ id: 0, score: 0 }], id = null }) {
   const { setPhase, setCtx_hB_r_sI, phase } = useContext(CoordinatorContext)
   const handleClickRow = () => {
     if (phase === 'rows') {
@@ -15,20 +15,22 @@ export default function RowTwentyColors ({ label = '', list = {}, id = null }) {
     }
   }
 
+  console.log('list', list)
+
   return (
     <div className='RowTwentyColors' onClick={handleClickRow}>
       <div className='RowTwentyColors__label'>{label}</div>
       <div className='RowTwentyColors__list'>
         {rowList.map((_item, index) => {
-          const text = index < 9 ? `0${index + 1}` : `${index + 1}`
+          const text = list[index]?.id < 9 ? `0${list[index]?.id}` : `${list[index]?.id}`
           let className = ''
-          if (list[index + 1] || list[index + 1] === 0) {
-            className = list[index + 1] < 0.6
+          if (list[index]?.score || list[index]?.score === 0) {
+            className = list[index]?.score < 0.6
               ? 'RowTwentyColorsRed'
-              : (list[index] < 0.8 ? 'RowTwentyColorsYellow' : 'RowTwentyColorsGreen')
+              : (list[index]?.score < 0.8 ? 'RowTwentyColorsYellow' : 'RowTwentyColorsGreen')
           }
           return (
-            <div className={`RowTwentyColors__item ${className}`} key={index}>{text}</div>
+            <div className={`RowTwentyColors__item ${className}`} key={index}>{text !== 'undefined' ? text : '-'}</div>
           )
         })}
       </div>

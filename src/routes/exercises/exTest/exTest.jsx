@@ -11,11 +11,11 @@
 // import data from './data.json'
 // Teacher
 // import DashboardStudentIndividual from '../../components/teacherProfile/dashboardMain'
-import BloodnameComponent from '../components/bloodnameComponent'
+import MapsGame from '../components/mapsGame'
 export default function ExTest () {
   return (
     <>
-      <BloodnameComponent />
+      <MapsGame />
     </>
   )
 }

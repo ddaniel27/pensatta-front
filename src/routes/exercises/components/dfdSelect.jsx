@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import styles from '../../../styles/dfdSelect.module.css'
 
 function SelectDropdown ({ x = 0, y = 0, options = ['B / 2', '2*(X + B)', 'X - 1'], setAnswers, id }) {
@@ -20,10 +20,11 @@ function SelectDropdown ({ x = 0, y = 0, options = ['B / 2', '2*(X + B)', 'X - 1
   )
 }
 
-export default function DfdSelect ({ purple = 'X=9 ; B=6;', blue = 'Fin del programa', gray1 = 'X + B', gray2 = 'B / 2', gray3 = '2*(X + B)', gray4 = 'X - 1', yellow = '¿X > B?', corrects = { 1: 'B / 2', 2: '2*(X + B)', 3: 'X - 1' }, setScore = () => {}, setPhase = () => {} }) {
-  const [answers, setAnswers] = useState({ 1: gray2, 2: gray3, 3: gray4 })
+export default function DfdSelect ({ purple = 'X=9 ; B=6;', blue = 'Fin del programa', gray1 = 'X + B', gray2 = 'B / 2', gray3 = '2*(X + B)', gray4 = 'X - 1', yellow = '¿X > B?', corrects = { 1: '2*(X + B)', 2: 'X - 1', 3: 'B / 2' }, setScore = () => {}, setPhase = () => {} }) {
   const [isFinish, setIsFinish] = useState(false)
   const [validations, setValidations] = useState({ 1: false, 2: false, 3: false })
+  const optionsRef = useRef([gray2, gray3, gray4].sort(() => Math.random() - 0.5))
+  const [answers, setAnswers] = useState({ 1: optionsRef.current[0], 2: optionsRef.current[1], 3: optionsRef.current[2] })
 
   useEffect(() => {
     if (isFinish) {
@@ -67,9 +68,9 @@ export default function DfdSelect ({ purple = 'X=9 ; B=6;', blue = 'Fin del prog
           <text x="150" y="195" className={styles.textyn}>SÍ</text>
         </svg>
         {!isFinish && <>
-          <SelectDropdown options = {[gray2, gray3, gray4]} x={52} y={62.5} id={1} setAnswers={setAnswers}/>
-          <SelectDropdown options = {[gray2, gray3, gray4]} x={52} y={76.5} id={2} setAnswers={setAnswers}/>
-          <SelectDropdown options = {[gray2, gray3, gray4]} x={52} y={90.5} id={3} setAnswers={setAnswers}/>
+          <SelectDropdown options = {optionsRef.current} x={52} y={62.5} id={1} setAnswers={setAnswers}/>
+          <SelectDropdown options = {optionsRef.current} x={52} y={76.5} id={2} setAnswers={setAnswers}/>
+          <SelectDropdown options = {optionsRef.current} x={52} y={90.5} id={3} setAnswers={setAnswers}/>
         </>}
       </div>
       {!isFinish && <button onClick={() => setIsFinish(true)}>RESPONDER</button>}

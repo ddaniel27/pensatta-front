@@ -10,15 +10,16 @@ import CoordinatorContext from '../../../context/CoordinatorContext'
 
 export default function DashboardStudentIndividual ({ title = 'Grado', grade = '6 A', current = 11, coordinator = true }) {
   const { ctx_hB_r_sI } = useContext(CoordinatorContext)
-  const [conformedData, setConformedData] = useState({ label: '', list: { 1: 0, 2: 0 } })
+  const [conformedData, setConformedData] = useState({ label: '', list: [{ id: 0, score: 0 }] })
   const [pieValues, setPieValues] = useState({ 0: 12, 1: 15, 2: 20 })
   const [meanBarProps, setMeanBarProps] = useState({})
   const [spiderProps, setSpiderProps] = useState({})
+  console.log('ctx_hB_r_sI', ctx_hB_r_sI)
 
   useEffect(() => {
     const idStudent = ctx_hB_r_sI.studentSelected
     const student = ctx_hB_r_sI.r.find((student) => student.id === idStudent)
-    setConformedData({ label: student.name, list: student.list })
+    setConformedData({ label: student.name, list: student.lastHistory })
     setPieValues({
       0: student.stdAprops[1],
       1: student.stdAprops[2],
@@ -43,7 +44,7 @@ export default function DashboardStudentIndividual ({ title = 'Grado', grade = '
 
   return (
     <div className='DashboardStudentIndividual'>
-      <HeaderTeacherCoordinator title={title} grade={grade} text={`Unidad actual: ${current}`} />
+      <HeaderTeacherCoordinator title={title} grade={ctx_hB_r_sI?.label} text={`Unidad actual: ${current}`} />
       <div className='RowsGrid'>
         <RowTwentyColors {...conformedData} />
       </div>
