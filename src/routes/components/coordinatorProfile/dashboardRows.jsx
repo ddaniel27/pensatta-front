@@ -13,16 +13,19 @@ export default function DashboardRows ({ title = 'Grado', grade = '6 A', average
   const [conformedData, setConformedData] = useState(data)
   const [pieValues, setPieValues] = useState({ 0: 12, 1: 15, 2: 20 })
   const [meanBarProps, setMeanBarProps] = useState({})
+  console.log('ctx_hB_r_sI2', ctx_hB_r_sI)
   const cb = (response) => {
     const students = response.infoUsuario
     const average = response.average
     const formedData = students.map((student) => {
+      console.log(student.lastHistory)
       return {
         name: `${student.first_name} ${student.last_name}`,
         list: student.exercisesScore,
         id: student.id,
         stdAprops: student.allExercisesAprops,
-        stdSpider: student.allExercisesSpider
+        stdSpider: student.allExercisesSpider,
+        lastHistory: student.lastHistory
       }
     })
     setConformedData(formedData)
@@ -56,7 +59,7 @@ export default function DashboardRows ({ title = 'Grado', grade = '6 A', average
   }, [])
   return (
     <div className='DashboardRows'>
-      <HeaderTeacherCoordinator title={title} grade={grade} text={`Unidad promedio: ${average}`} />
+      <HeaderTeacherCoordinator title={title} grade={ctx_hB_r_sI?.label} text={`Unidad promedio: ${average}`} />
       <RowsGrid students={conformedData} />
       <div className='DashboardRows__footer'>
         <MeanBarChart {...meanBarProps} />
@@ -68,10 +71,11 @@ export default function DashboardRows ({ title = 'Grado', grade = '6 A', average
 }
 
 function RowsGrid ({ students = [] }) {
+  console.log(students)
   return (
     <div className='RowsGrid'>
       {students.map((student, index) => (
-        <RowTwentyColors label={student.name} list={student.list} id={student.id} key={index} />
+        <RowTwentyColors label={student.name} list={student.lastHistory} id={student.id} key={index} />
       ))}
     </div>
   )
@@ -79,47 +83,7 @@ function RowsGrid ({ students = [] }) {
 
 const defaultData = [
   {
-    name: 'Juan',
-    list: [0.1, 0.6, 0.83, 0.4, 0.9, 0.9, 0.8]
-  },
-  {
-    name: 'Carlos',
-    list: [0.6, 0.4, 0.4, 0.8, 0.7, 0.8, 0.7, 0.4]
-  },
-  {
-    name: 'Kevin',
-    list: [0.1, 0.6, 0.83, 0.6, 0.9, 0.1]
-  },
-  {
-    name: 'Manuel',
-    list: [0.1, 0.6, 0.83, 0.4, 0.9, 0.9, 0.8]
-  },
-  {
-    name: 'Jorge',
-    list: [0.6, 0.4, 0.4, 0.8, 0.7, 0.8, 0.7, 0.4]
-  },
-  {
-    name: 'Alex',
-    list: [0.1, 0.6, 0.83, 0.6, 0.9, 0.1]
-  },
-  {
-    name: 'Daniel',
-    list: [0.1, 0.6, 0.83, 0.4, 0.9, 0.9, 0.8]
-  },
-  {
-    name: 'Luis',
-    list: [0.6, 0.4, 0.4, 0.8, 0.7, 0.8, 0.7, 0.4]
-  },
-  {
-    name: 'Pedro',
-    list: [0.1, 0.6, 0.83, 0.6, 0.9, 0.1]
-  },
-  {
-    name: 'Jose',
-    list: [0.1, 0.6, 0.83, 0.4, 0.9, 0.9, 0.8]
-  },
-  {
-    name: 'Raul',
-    list: [0.6, 0.4, 0.4, 0.8, 0.7, 0.8, 0.7, 0.4]
+    name: 'Dummy',
+    lastHistory: [{ id: 1, score: 0 }]
   }
 ]

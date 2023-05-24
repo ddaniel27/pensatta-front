@@ -22,7 +22,7 @@ export default function HorizontalBar ({ label = '', valueGreen = 0, valueYellow
       setPhase(phases[phase])
     }
     if (gradoId) {
-      setCtx_hB_r_sI(prev => ({ ...prev, gradoId }))
+      setCtx_hB_r_sI(prev => ({ ...prev, gradoId, label }))
     }
   }
 
