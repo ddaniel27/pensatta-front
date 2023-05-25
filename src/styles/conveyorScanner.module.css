@@ -1,0 +1,15 @@
+.scanner-container{
+  width: 380px;
+  overflow: hidden;
+}
+.belts-container{
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  height: 114px;
+}
+.belt-atom{
+  position: absolute;
+
+}

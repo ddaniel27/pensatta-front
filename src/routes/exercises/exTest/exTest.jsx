@@ -11,11 +11,11 @@
 // import data from './data.json'
 // Teacher
 // import DashboardStudentIndividual from '../../components/teacherProfile/dashboardMain'
-import MapsGame from '../components/mapsGame'
+import ConveyorScanner from '../components/conveyorScanner'
 export default function ExTest () {
   return (
     <>
-      <MapsGame />
+      <ConveyorScanner />
     </>
   )
 }
