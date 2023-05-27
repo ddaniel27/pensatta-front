@@ -1,15 +1,37 @@
 .scanner-container{
   width: 380px;
+  height: 380px;
   overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #4F4F4F;
+  border-radius: 20px;
 }
 .belts-container{
-  position: relative;
+  position: absolute;
   display: flex;
   width: 100%;
   flex-direction: row;
   height: 114px;
+  bottom: 0%;
 }
 .belt-atom{
   position: absolute;
+}
+.candy-svg{
+  position: absolute;
+  width: 20%;
+  z-index: 1;
+}
+.scanner-laser{
+  width:30%;
+  height: 4px;
+  background-color: #69E485;
+  position: absolute;
+  z-index: 2;
+  box-shadow: 0 0 10px #69E485;
+  mix-blend-mode: screen;
+  filter: blur(1px);
 
 }
