@@ -11,10 +11,17 @@ export default function Ex55 () {
 
   const [idx, setIdx] = React.useState(-1)
   const [text, setText] = React.useState('')
+  const pRef = React.useRef(null)
 
   React.useEffect(() => {
     setText(myData.options[idx]?.code || '')
   }, [idx])
+
+  React.useEffect(() => {
+    if (pRef.current) {
+      pRef.current.innerHTML = text
+    }
+  }, [text])
 
   return (
     <NoScoringComponent initMessages={myData.initMessages} background={myData.color} title={myData.name} exerciseId={myData.id}>
@@ -22,7 +29,7 @@ export default function Ex55 () {
         (setPhase) => (
           <div className='ex56-play-area'>
             <div className='ex56-textarea-container'>
-              <p>{text}</p>
+              <p ref={pRef} />
             </div>
             <div className='ex56-buttons-container'>
               {myData.options.map((option, index) => (
