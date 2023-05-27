@@ -1,0 +1,27 @@
+.btn-game{
+  text-align: center;
+  border-radius: 50px;
+  font-weight: bold;
+  filter: drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.25));
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+  margin: 10px;
+  cursor: pointer;
+  
+}
+.btn-game:active{
+  filter: none;
+  transform: translateY(2px);  
+}
+.btn-game-orange{
+  background-color: #F97D61;
+  color: #F2F2F2;
+}
+.btn-game-white{
+  background-color: #F2F2F2;
+  color: #F97D61;
+}
+.btn-game-purple{
+  background-color: #FC79FF;
+  color: #F2F2F2;
+}

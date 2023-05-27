@@ -42,7 +42,7 @@ const Belt = ({ position, setPosition }) => {
   )
 }
 
-const ConveyorScanner = ({ algorithmIn, reinit, init }) => {
+const ConveyorScanner = ({ algorithmIn, reinit, init, setScore }) => {
   const [positionBelt1, setPositionBelt1] = useState({ top: 0, left: 0 })
   const [positionBelt2, setPositionBelt2] = useState({ top: 0, left: 120 })
   const [positionCandies, setPositionCandies] = useState({ top: -10, left: -18 })
