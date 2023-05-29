@@ -1,14 +1,38 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import data from './data.json'
 import ScoringComponent from '../components/scoringComponent'
 import ConveyorScanner from '../components/conveyorScanner'
+import DndForComponent from '../components/dndForComponent'
 import styles from '../../../styles/ex18.module.css'
 const Ex18 = () => {
-  const myData = data
+  const [myData] = useState({
+    ...data
+  })
   const [init, setInit] = useState(false)
+  const [optionsData, setOptionsData] = useState([])
+  const [dao, setDao] = useState([])
   const [reinit, setReinit] = useState(false)
   const [isFinish, setIsFinish] = useState(false)
   const [numberOfCandies, setNumberOfCandies] = useState(0)
+
+  useEffect(() => {
+    let rep = Number(optionsData[optionsData.length - 1]?.[1])
+    if (rep >= 9) {
+      rep = 9
+    } else if (isNaN(rep) || rep < 1) {
+      rep = 1
+    }
+
+    const newDao = []
+    for (let i = 0; i < rep; i++) {
+      for (let j = 0; j < optionsData.length - 1; j++) {
+        newDao.push(optionsData[j][0])
+      }
+    }
+
+    setDao(newDao)
+    console.log(newDao)
+  }, [optionsData])
   return (
     <ScoringComponent initMessages={myData.initMessages} background={myData.color} title={myData.name} threshold={myData.threshold}>
       {
@@ -19,15 +43,20 @@ const Ex18 = () => {
                 <div className={styles['production-info']}>
                   {`Producción de hoy: ${numberOfCandies} dulces.`}
                 </div>
-                <div>
-                  ALGORITMO IZQUIERDA DANIEL
-                </div>
+                <DndForComponent data={myData} returnScore={setOptionsData} reset={reinit} />
               </div>
               <div>
-                ALGORITMO DERECHA DANIEL
-              </div>
-              <div>
-                <ConveyorScanner setNCandies={setNumberOfCandies} isFinish={isFinish} setScore={setScore} setPhase={setPhase} init={init} reinit={reinit} setInit={setInit} setReinit={setReinit} />
+                <ConveyorScanner
+                  setNCandies={setNumberOfCandies}
+                  isFinish={isFinish}
+                  setScore={setScore}
+                  setPhase={setPhase}
+                  init={init}
+                  reinit={reinit}
+                  setInit={setInit}
+                  setReinit={setReinit}
+                  algorithmIn={dao}
+                />
               </div>
             </div>
             <div className={`${styles['btns-container']}`}>

@@ -1,4 +1,36 @@
 {
+    "isSingle": true,
+    "isLoop": true,
+    "columns": {
+        "column-1": {
+            "id": "column-1",
+            "title": "",
+            "optionsIds": [
+                "option-1",
+                "option-2"
+            ],
+            "isDropDisabled":true
+        },
+        "column-2": {
+            "id": "column-2",
+            "title": "Cuando: presionar botón iniciar",
+            "optionsIds": []
+        }
+    },
+    "options": {
+        "option-1": {
+            "id": "option-1",
+            "key": "scan",
+            "text": "Escanear",
+            "value": 1
+        },
+        "option-2": {
+            "id": "option-2",
+            "key": "move",
+            "text": "Mover banda",
+            "value": 1
+        }
+    },
    "initMessages":[
         "Programa la máquina para verificar el estado de los dulces.",
         "Debes lograr que la banda se desplace y que el lector revise cada dulce.",
