@@ -31,7 +31,6 @@ const Ex18 = () => {
     }
 
     setDao(newDao)
-    console.log(newDao)
   }, [optionsData])
   return (
     <ScoringComponent initMessages={myData.initMessages} background={myData.color} title={myData.name} threshold={myData.threshold}>
@@ -64,7 +63,6 @@ const Ex18 = () => {
               <div className={`${styles['btn-game']} ${styles['btn-game-purple']}`} onClick={() => { setInit(true) }}>INICIAR</div>
               <div
                 className={`${styles['btn-game']} ${styles['btn-game-orange']}`} onClick={() => {
-                  setPhase('end')
                   setIsFinish(true)
                 }}
               >FINALIZAR
