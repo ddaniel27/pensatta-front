@@ -166,7 +166,6 @@ const ConveyorScanner = ({ algorithmIn, reinit, init, setScore, setReinit, setIn
   }, [])
 
   useEffect(() => {
-    console.log(timeGame)
     if (timeGame % timeStep.current === 0) {
       if (algorithm[timeGame / timeStep.current] === 'move' && algorithm[(timeGame / timeStep.current) - 1] !== 'move') {
         stopScaning()

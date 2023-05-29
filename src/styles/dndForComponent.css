@@ -52,12 +52,14 @@
 
 .column-2-loop .block-top input{
     margin: 0 20px;
+    position: relative;
+    z-index:5;
 }
 
 .column-2-loop .droppable-list{
     position: relative;
-    bottom: 15.5vh;
-    left: 1.6vw;
+    bottom: 11vh;
+    left: 1.2vw;
     display: flex;
     flex-direction: column;
     width: 100%;

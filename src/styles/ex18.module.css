@@ -5,15 +5,23 @@
   align-items: center;
 }
 .algorithm-animation-container{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 100%;
+  width: 100%;
+  height: 100%;
   align-items: center;
-  gap: 20px;
+  justify-items: center;
 }
+
 .production-draggables{
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 80%;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-items: center;
 }
 .production-info{
   display: flex;
@@ -27,12 +35,14 @@
   font-weight: bolder;
 }
 .game-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
   align-items: center;
-  margin: 20px;
+  justify-items: center;
+  grid-template-columns: 100%;
+  grid-template-rows: 90% 10%;
   user-select: none;
+  width: 100%;
+  height: 100%;
 }
 .btn-game{
   text-align: center;
