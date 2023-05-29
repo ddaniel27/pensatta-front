@@ -42,7 +42,8 @@ const Belt = ({ position, setPosition }) => {
   )
 }
 
-const ConveyorScanner = ({ algorithmIn, reinit, init, setScore }) => {
+const ConveyorScanner = ({ algorithmIn, reinit, init, setScore, setReinit, setInit, isFinish, setNCandies }) => {
+  const [startAnimation, setStartAnimation] = useState(true)
   const [positionBelt1, setPositionBelt1] = useState({ top: 0, left: 0 })
   const [positionBelt2, setPositionBelt2] = useState({ top: 0, left: 120 })
   const [positionCandies, setPositionCandies] = useState({ top: -10, left: -18 })
@@ -70,6 +71,13 @@ const ConveyorScanner = ({ algorithmIn, reinit, init, setScore }) => {
   const algorithmToDo = Array(candiesSelected.length).fill('scan').flatMap((item) => ([item].concat(Array(skips.current).fill('move')))).concat(['stop'])
   const [algorithm, setAlgorithm] = useState(algorithmToDo)
 
+  const arraysAreEqual = (arr1, arr2) => {
+    if (arr1.length !== arr2.length) {
+      return false
+    }
+    return arr1.every((element, index) => element === arr2[index])
+  }
+
   const beginMovement = () => {
     timeRef.current = setInterval(() => {
       setTime(prev => prev + 1)
@@ -89,8 +97,19 @@ const ConveyorScanner = ({ algorithmIn, reinit, init, setScore }) => {
   }
 
   useEffect(() => {
+    if (isFinish) {
+      const alg = algorithmIn
+      alg.push('stop')
+      const score = arraysAreEqual(alg, algorithmToDo) ? 1 : 0
+      setScore(score)
+    }
+  }, [isFinish])
+
+  useEffect(() => {
     if (init) {
-      setAlgorithm(algorithmIn)
+      const alg = algorithmIn
+      alg.push('stop')
+      setAlgorithm(alg)
       clearInterval(timeRef.current)
       clearInterval(timeScanRef.current)
       clearInterval(timeGameRef.current)
@@ -101,6 +120,11 @@ const ConveyorScanner = ({ algorithmIn, reinit, init, setScore }) => {
       setTimeGame(0)
       setTime(0)
       setTimeScan(0)
+      setStartAnimation(true)
+      timeGameRef.current = setInterval(() => {
+        setTimeGame(prev => prev + 1)
+      }, millis)
+      setInit(false)
     }
   }, [init])
 
@@ -117,14 +141,23 @@ const ConveyorScanner = ({ algorithmIn, reinit, init, setScore }) => {
       setTimeGame(0)
       setTime(0)
       setTimeScan(0)
+      timeGameRef.current = setInterval(() => {
+        setTimeGame(prev => prev + 1)
+      }, millis)
+      setReinit(false)
     }
   }, [reinit])
 
   useEffect(() => {
-    timeGameRef.current = setInterval(() => {
-      setTimeGame(prev => prev + 1)
-    }, millis)
+    if (startAnimation) {
+      timeGameRef.current = setInterval(() => {
+        setTimeGame(prev => prev + 1)
+      }, millis)
+    }
+  }, [startAnimation])
 
+  useEffect(() => {
+    setNCandies(candiesSelected.length)
     return () => {
       clearInterval(timeRef.current)
       clearInterval(timeScanRef.current)
@@ -133,6 +166,7 @@ const ConveyorScanner = ({ algorithmIn, reinit, init, setScore }) => {
   }, [])
 
   useEffect(() => {
+    console.log(timeGame)
     if (timeGame % timeStep.current === 0) {
       if (algorithm[timeGame / timeStep.current] === 'move' && algorithm[(timeGame / timeStep.current) - 1] !== 'move') {
         stopScaning()
@@ -143,6 +177,7 @@ const ConveyorScanner = ({ algorithmIn, reinit, init, setScore }) => {
       } else if (algorithm[timeGame / timeStep.current] === 'stop') {
         stopMovement()
         stopScaning()
+        setStartAnimation(false)
       }
     }
   }, [timeGame])
