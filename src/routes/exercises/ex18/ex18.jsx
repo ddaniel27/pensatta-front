@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import { useState } from 'react'
 import data from './data.json'
 import ScoringComponent from '../components/scoringComponent'
 import ConveyorScanner from '../components/conveyorScanner'
@@ -13,7 +13,7 @@ const Ex18 = () => {
     <ScoringComponent initMessages={myData.initMessages} background={myData.color} title={myData.name} threshold={myData.threshold}>
       {
         (setScore, setPhase) => (
-          <div className={styles['game-container']} >
+          <div className={styles['game-container']}>
             <div className={styles['algorithm-animation-container']}>
               <div className={styles['production-draggables']}>
                 <div className={styles['production-info']}>
@@ -33,10 +33,13 @@ const Ex18 = () => {
             <div className={`${styles['btns-container']}`}>
               <div className={`${styles['btn-game']} ${styles['btn-game-white']}`} onClick={() => { setReinit(true) }}>REINICIAR</div>
               <div className={`${styles['btn-game']} ${styles['btn-game-purple']}`} onClick={() => { setInit(true) }}>INICIAR</div>
-              <div className={`${styles['btn-game']} ${styles['btn-game-orange']}`} onClick={() => {
-                setPhase('end')
-                setIsFinish(true)
-              }}>FINALIZAR</div>
+              <div
+                className={`${styles['btn-game']} ${styles['btn-game-orange']}`} onClick={() => {
+                  setPhase('end')
+                  setIsFinish(true)
+                }}
+              >FINALIZAR
+              </div>
             </div>
           </div>
         )

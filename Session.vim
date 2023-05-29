@@ -13,23 +13,11 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +25 ~/Documents/projects/pensatta/pensattanet-frontend-vite/src/routes/exercises/ex56/ex56.jsx
-badd +59 ~/Documents/projects/pensatta/pensattanet-frontend-vite/src/routes/exercises/ex51/ex51.jsx
-badd +0 ~/Documents/projects/pensatta/pensattanet-frontend-vite/src/routes/exercises/components/dndListComponent.jsx
-badd +7 ~/Documents/projects/pensatta/pensattanet-frontend-vite/src/routes/exercises/ex65/ex65.jsx
-badd +2 ~/Documents/projects/pensatta/pensattanet-frontend-vite/src/routes/exercises/ex65/data.json
-badd +7 term://~/Documents/projects/pensatta/pensattanet-frontend-vite//14060:powershell
-badd +8 ~/Documents/projects/pensatta/pensattanet-frontend-vite/public/images/exercises/65/2.svg
-badd +50 ~/Documents/projects/pensatta/pensattanet-frontend-vite/src/routes/exercises/components/imageEditor65.jsx
-badd +12 ~/Documents/projects/pensatta/pensattanet-frontend-vite/public/images/exercises/65/1.svg
-badd +7 term://~/Documents/projects/pensatta/pensattanet-frontend-vite//16912:powershell
-badd +4 ~/Documents/projects/pensatta/pensattanet-frontend-vite/public/images/exercises/65/3.svg
-badd +5 ~/Documents/projects/pensatta/pensattanet-frontend-vite/src/routes/exercises/ex56/data.json
-badd +0 ~/Documents/projects/pensatta/pensattanet-frontend-vite/public/images/exercises/56/1.svg
-badd +7 term://~/Documents/projects/pensatta/pensattanet-frontend-vite//11060:powershell
+badd +40 ~/Documents/projects/pensatta/pensattanet-frontend-vite/src/routes/exercises/ex18/ex18.jsx
+badd +0 ~/Documents/projects/pensatta/pensattanet-frontend-vite/src/routes/exercises/ex18/data.json
 argglobal
 %argdel
-edit ~/Documents/projects/pensatta/pensattanet-frontend-vite/src/routes/exercises/ex56/ex56.jsx
+edit ~/Documents/projects/pensatta/pensattanet-frontend-vite/src/routes/exercises/ex18/ex18.jsx
 let s:save_splitbelow = &splitbelow
 let s:save_splitright = &splitright
 set splitbelow splitright
@@ -49,7 +37,7 @@ set winwidth=1
 exe '1resize ' . ((&lines * 53 + 55) / 110)
 exe '2resize ' . ((&lines * 53 + 55) / 110)
 argglobal
-balt ~/Documents/projects/pensatta/pensattanet-frontend-vite/src/routes/exercises/ex65/ex65.jsx
+balt ~/Documents/projects/pensatta/pensattanet-frontend-vite/src/routes/exercises/ex18/ex18.jsx
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -60,19 +48,19 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 25 - ((24 * winheight(0) + 26) / 53)
+let s:l = 40 - ((35 * winheight(0) + 26) / 53)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 25
-normal! 021|
+keepjumps 40
+normal! 018|
 wincmd w
 argglobal
-if bufexists(fnamemodify("~/Documents/projects/pensatta/pensattanet-frontend-vite/src/routes/exercises/ex56/data.json", ":p")) | buffer ~/Documents/projects/pensatta/pensattanet-frontend-vite/src/routes/exercises/ex56/data.json | else | edit ~/Documents/projects/pensatta/pensattanet-frontend-vite/src/routes/exercises/ex56/data.json | endif
+if bufexists(fnamemodify("~/Documents/projects/pensatta/pensattanet-frontend-vite/src/routes/exercises/ex18/data.json", ":p")) | buffer ~/Documents/projects/pensatta/pensattanet-frontend-vite/src/routes/exercises/ex18/data.json | else | edit ~/Documents/projects/pensatta/pensattanet-frontend-vite/src/routes/exercises/ex18/data.json | endif
 if &buftype ==# 'terminal'
-  silent file ~/Documents/projects/pensatta/pensattanet-frontend-vite/src/routes/exercises/ex56/data.json
+  silent file ~/Documents/projects/pensatta/pensattanet-frontend-vite/src/routes/exercises/ex18/data.json
 endif
-balt ~/Documents/projects/pensatta/pensattanet-frontend-vite/src/routes/exercises/ex56/ex56.jsx
+balt ~/Documents/projects/pensatta/pensattanet-frontend-vite/src/routes/exercises/ex18/ex18.jsx
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -83,12 +71,12 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 5 - ((4 * winheight(0) + 26) / 53)
+let s:l = 1 - ((0 * winheight(0) + 26) / 53)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 5
-normal! 030|
+keepjumps 1
+normal! 0
 wincmd w
 exe '1resize ' . ((&lines * 53 + 55) / 110)
 exe '2resize ' . ((&lines * 53 + 55) / 110)
