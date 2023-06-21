@@ -1,0 +1,32 @@
+{
+  "lab-1":{
+    "startPosition":{"x": 8, "y": 3},
+    "finishHitbox":{ "x": 65 ,"y": 99 ,"width": 9 ,"height": 0.1 }},
+  "lab-2":{
+    "startPosition":{"x": 80, "y": 3},
+    "finishHitbox":{ "x": 0 ,"y": 3 ,"width": 9 ,"height": 0.1 }},
+  "lab-3":{
+    "startPosition":{"x": 35, "y": 35},
+    "finishHitbox":{ "x": 99 ,"y": 3 ,"width": 0.1 ,"height": 20 }},
+  "lab-4":{
+    "startPosition":{"x": 77, "y": 50},
+    "finishHitbox":{ "x": 72 ,"y": 99 ,"width": 20 ,"height": 0.1 }},
+  "lab-5":{
+    "startPosition":{"x": 75, "y": 4},
+    "finishHitbox":{ "x": 0 ,"y": 0 ,"width": 20 ,"height": 0.1 }},
+  "lab-6":{
+    "startPosition":{"x": 6, "y": 6},
+    "finishHitbox":{ "x": 0 ,"y": 65 ,"width": 0.1 ,"height": 20 }},
+  "lab-7":{
+    "startPosition":{"x": 74, "y": 6},
+    "finishHitbox":{ "x": 0 ,"y": 99 ,"width": 20 ,"height": 0.1 }},
+  "lab-8":{
+    "startPosition":{"x": 30, "y": 30},
+    "finishHitbox":{ "x": 0 ,"y": 73 ,"width": 0.1 ,"height": 20 }},
+  "lab-9":{
+    "startPosition":{"x": 5, "y": 80},
+    "finishHitbox":{ "x": 73 ,"y": 99 ,"width": 20 ,"height": 0.1 }},
+  "lab-10":{
+    "startPosition":{"x": 4, "y": 6},
+    "finishHitbox":{ "x": 99 ,"y": 0 ,"width": 0.1 ,"height": 20 }}
+}

@@ -1,0 +1,15 @@
+{
+  "initMessages":[
+    "A continuación, encontrarás un algoritmo de movimiento de un personaje que tiene ciertos errores.",
+    "Arregla el algoritmo y guíame hasta salir del laberinto."
+],
+"threshold": {
+    "max": 4,
+    "min": 0,
+    "perfect": 4
+},
+"path": "74",
+"color": "#53745B",
+"name": "Programa el laberinto",
+"id": 74
+}

@@ -1,0 +1,10 @@
+<svg width="380" height="381" viewBox="0 0 380 381" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 21C5 12.7158 11.7157 6.00003 20 6.00003L360 6.00003C368.284 6.00003 375 12.7158 375 21L375 374C375 375.105 374.105 376 373 376L20 376C11.7157 376 5 369.284 5 361L5 21Z" fill="#4F4F4F" stroke="#333333" stroke-width="10"/>
+<path d="M190 6L190 376L282 376L282 5.99999L190 6Z" stroke="#333333" stroke-width="10"/>
+<path d="M97.9997 6L97.9998 376L190 376L190 5.99999L97.9997 6Z" stroke="#333333" stroke-width="10"/>
+<path d="M375 191L4.99976 191L4.99976 283L375 283L375 191Z" stroke="#333333" stroke-width="10"/>
+<path d="M375 99.0001L4.99976 99.0001L4.99976 191L375 191L375 99.0001Z" stroke="#333333" stroke-width="10"/>
+<path d="M375 375L375 20C375 11.7157 368.284 5 360 5L19.9998 5C11.7155 5 4.99976 11.7157 4.99976 20L4.99976 360C4.99976 368.284 11.7155 375 19.9998 375L267.5 375C275.785 375 282.5 368.284 282.5 360L282.5 99" stroke="#E0E0E0" stroke-width="10" stroke-linecap="round"/>
+<path d="M98.0002 99L98.0002 374" stroke="#E0E0E0" stroke-width="10" stroke-linecap="round"/>
+<path d="M190.487 5.00001L190.487 280" stroke="#E0E0E0" stroke-width="10" stroke-linecap="round"/>
+</svg>

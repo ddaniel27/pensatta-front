@@ -11,11 +11,11 @@
 // import data from './data.json'
 // Teacher
 // import DashboardStudentIndividual from '../../components/teacherProfile/dashboardMain'
-import ConveyorScanner from '../components/conveyorScanner'
+import MazeProgMoveComponent from '../components/zorritoMazeProgMove'
 export default function ExTest () {
   return (
     <>
-      <ConveyorScanner />
+      <MazeProgMoveComponent lab ={10} />
     </>
   )
 }
