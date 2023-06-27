@@ -27,7 +27,7 @@ const Maze = ({ pista, colorLine }) => {
   )
 }
 
-const MazeProgMoveComponent = ({ lab = 1, setPhase, setScore, colorLine, imagePath, algorithm = ['ArrowRight', 'ArrowLeft', 'ArrowDown', 'ArrowUp'] }) => {
+const MazeProgMoveComponent = ({ isFinish, setIsFinish, lab = 1, setPhase, setScore, score, colorLine, imagePath, algorithm = ['ArrowRight', 'ArrowLeft', 'ArrowDown', 'ArrowUp'] }) => {
   const carInitX = starts[`lab-${lab}`].startPosition.x
   const carInitY = starts[`lab-${lab}`].startPosition.y
   const maze2Styles = {
@@ -151,6 +151,7 @@ const MazeProgMoveComponent = ({ lab = 1, setPhase, setScore, colorLine, imagePa
           setIsCollide(false)
           if (collisionDetection({ ...carritoHitbox, x: counter + 2 * incremento }, finish)) {
             setIsWin(true)
+            setIsFinish(true)
           }
           clearInterval(intervalRef.current)
           intervalRef.current = null
@@ -183,6 +184,7 @@ const MazeProgMoveComponent = ({ lab = 1, setPhase, setScore, colorLine, imagePa
           setIsCollide(false)
           if (collisionDetection({ ...carritoHitbox, y: counter + 2 * incremento }, finish)) {
             setIsWin(true)
+            setIsFinish(true)
           }
           clearInterval(intervalRef.current)
           intervalRef.current = null
@@ -193,6 +195,7 @@ const MazeProgMoveComponent = ({ lab = 1, setPhase, setScore, colorLine, imagePa
   const cbdown = (event, isKey = true) => {
     if (isKey && event.repeat) return
     if (isWin) return
+    if (isFinish) return
     const startsCounters = [() => { startCounterX(1) }, () => { startCounterX(-1) }, () => { startCounterY(1) }, () => { startCounterY(-1) }]
     const option = algorithm.reduce((obj, key, index) => {
       obj[key] = startsCounters[index]

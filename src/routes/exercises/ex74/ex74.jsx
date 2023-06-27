@@ -4,33 +4,46 @@ import ScoringComponent from '../components/ScoringComponent'
 import GenericSelector from '../../components/genericSelector'
 import styles from '../../../styles/ex74.module.css'
 import data from './data.json'
+import Timer from '../components/timer2'
 
 export default function Ex74 () {
   const [left, setLeft] = useState('')
   const [right, setRight] = useState('')
   const [up, setUp] = useState('')
   const [down, setDown] = useState('')
-  const [validation, setValidation] = useState(false)
+  const [scr, setScr] = useState(0)
+  const [isFinish, setIsFinish] = useState(false)
+
+  const onFinishTime = () => {
+    setIsFinish(true)
+  }
 
   useEffect(() => {
-    if (left === 'ArrowLeft' && right === 'ArrowRight' && up === 'ArrowUp' && down === 'ArrowDown') {
-      setValidation(true)
-    } else {
-      setValidation(false)
+    if (!isFinish) {
+      const corrects = ['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown']
+      const numberOfCorrects = [left, right, up, down].filter((direction, index) => direction === corrects[index]).length
+      setScr(numberOfCorrects)
     }
   }, [left, right, up, down])
 
   return (
     <ScoringComponent initMessages={data.initMessages} title={data.name} background={data.color} exerciseId={data.id} threshold={data.threshold}>
       {(setScore, setPhase) => (
-        <div className={styles['whole-game']}>
-          <div className={styles['dropdown-section']}>
-            <ChangeKey text='Moverse hacia arriba' setDirection={setUp} />
-            <ChangeKey text='Moverse hacia abajo' setDirection={setDown} />
-            <ChangeKey text='Moverse hacia la izquierda' setDirection={setLeft} />
-            <ChangeKey text='Moverse hacia la derecha' setDirection={setRight} />
+        <div className={styles['all-game-container']}>
+          <div className={styles['timer-container']}><Timer finishFunction={onFinishTime} startTime={30} stopTimer={isFinish}/></div>
+          <div className={styles['whole-game']}>
+            <div className={styles['dropdown-section']}>
+              <ChangeKey text='Moverse hacia arriba' setDirection={setUp} />
+              <ChangeKey text='Moverse hacia abajo' setDirection={setDown} />
+              <ChangeKey text='Moverse hacia la izquierda' setDirection={setLeft} />
+              <ChangeKey text='Moverse hacia la derecha' setDirection={setRight} />
+            </div>
+            <MazeProgMoveComponent lab={10} algorithm={[right, left, down, up]} score={scr} setIsFinish={setIsFinish} isFinish={isFinish}/>
           </div>
-          <MazeProgMoveComponent lab={10} algorithm={[right, left, down, up]} />
+          {isFinish && <button onClick={ () => {
+            setScore(scr)
+            setPhase('end')
+          }}>SIGUIENTE</button>}
         </div>
       )}
     </ScoringComponent>
