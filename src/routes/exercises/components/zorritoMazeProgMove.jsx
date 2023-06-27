@@ -5,9 +5,9 @@ import pistas from '../ex74/walls.json'
 import starts from '../ex74/starts.json'
 import MazeButton from './mazeButton'
 
-const Carrito = ({ style }) => (<img src={carrito} alt="carrito" style={style}/>)
+const Carrito = ({ style }) => (<img src={carrito} alt='carrito' style={style} />)
 const Maze = ({ pista, colorLine }) => {
-  const canvas = pista.map(line => {
+  const canvas = pista.map((line, idx) => {
     const linedraw = {
       position: 'absolute',
       top: `${line.y}%`,
@@ -17,11 +17,11 @@ const Maze = ({ pista, colorLine }) => {
       background: `${colorLine}`
     }
 
-    return <canvas style={linedraw} />
+    return <canvas key={idx} style={linedraw} />
   })
 
   return (
-    <div style={ { display: 'flex', position: 'relative', width: '100%', height: '100%' }}>
+    <div style={{ display: 'flex', position: 'relative', width: '100%', height: '100%' }}>
       {canvas}
     </div>
   )
@@ -219,8 +219,8 @@ const MazeProgMoveComponent = ({ lab = 1, setPhase, setScore, colorLine, imagePa
       <div className={styles.mazeContainer}>
         <div style={maze2Styles.maze}>
           <div style={{ display: 'flex', position: 'relative', width: '100%', height: '100%', top: '0%', left: '0%' }}>
-            <Maze pista={pista} colorLine={colorLine}/>
-            <Carrito style = {styleCarrito} />
+            <Maze pista={pista} colorLine={colorLine} />
+            <Carrito style={styleCarrito} />
 
           </div>
         </div>
@@ -230,32 +230,40 @@ const MazeProgMoveComponent = ({ lab = 1, setPhase, setScore, colorLine, imagePa
           <div className={styles.containerBtnsText}>
             <div className={styles.buttonsContainer}>
               <div className={styles.btnR}>
-                <MazeButton onMouseDown = { !isWin ? () => startCounterX(1) : null }
-                  onMouseUp = {stopCounter}
-                  onMouseLeave = {stopCounter}
-                  direction="right" />
+                <MazeButton
+                  onMouseDown={!isWin ? () => startCounterX(1) : null}
+                  onMouseUp={stopCounter}
+                  onMouseLeave={stopCounter}
+                  direction='right'
+                />
               </div>
               <div className={styles.btnD}>
-                <MazeButton onMouseDown = { !isWin ? () => startCounterY(1) : null }
-                  onMouseUp = {stopCounter}
-                  onMouseLeave = {stopCounter}
-                  direction="down" />
+                <MazeButton
+                  onMouseDown={!isWin ? () => startCounterY(1) : null}
+                  onMouseUp={stopCounter}
+                  onMouseLeave={stopCounter}
+                  direction='down'
+                />
               </div>
               <div className={styles.btnL}>
-                <MazeButton onMouseDown = { !isWin ? () => startCounterX(-1) : null }
-                  onMouseUp = {stopCounter}
-                  onMouseLeave = {stopCounter}
-                  direction = "left" />
+                <MazeButton
+                  onMouseDown={!isWin ? () => startCounterX(-1) : null}
+                  onMouseUp={stopCounter}
+                  onMouseLeave={stopCounter}
+                  direction='left'
+                />
               </div>
               <div className={styles.btnU}>
-                <MazeButton onMouseDown = { !isWin ? () => startCounterY(-1) : null}
-                  onMouseUp = {stopCounter}
-                  onMouseLeave = {stopCounter}
-                  direction = "up"/>
+                <MazeButton
+                  onMouseDown={!isWin ? () => startCounterY(-1) : null}
+                  onMouseUp={stopCounter}
+                  onMouseLeave={stopCounter}
+                  direction='up'
+                />
               </div>
             </div>
             <div className={styles.infoText}>
-                            Muévete oprimiendo estos botones o presionando las teclas de dirección de tu teclado.
+              Muévete oprimiendo estos botones o presionando las teclas de dirección de tu teclado.
             </div>
 
           </div>
