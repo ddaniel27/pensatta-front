@@ -190,18 +190,31 @@ const MazeProgMoveComponent = ({ lab = 1, setPhase, setScore, colorLine, imagePa
       }
     }, velocidad)
   }
-  const cbdown = (event) => {
-    if (event.repeat) return
+  const cbdown = (event, isKey = true) => {
+    if (isKey && event.repeat) return
     if (isWin) return
     const startsCounters = [() => { startCounterX(1) }, () => { startCounterX(-1) }, () => { startCounterY(1) }, () => { startCounterY(-1) }]
     const option = algorithm.reduce((obj, key, index) => {
       obj[key] = startsCounters[index]
       return obj
     }, {})
-    option[event.code]()
+    if (isKey) {
+      option[event.code]()
+    } else {
+      option[event]()
+    }
   }
   const cbup = (event) => {
     stopCounter()
+  }
+
+  function onClickButton (option) {
+    const event = new KeyboardEvent('keydown', {
+      code: option,
+      bubbles: true,
+      cancelable: true
+    })
+    window.dispatchEvent(event)
   }
 
   window.onkeydown = cbdown
@@ -231,7 +244,7 @@ const MazeProgMoveComponent = ({ lab = 1, setPhase, setScore, colorLine, imagePa
             <div className={styles.buttonsContainer}>
               <div className={styles.btnR}>
                 <MazeButton
-                  onMouseDown={!isWin ? () => startCounterX(1) : null}
+                  onMouseDown={!isWin ? () => onClickButton('ArrowRight') : null}
                   onMouseUp={stopCounter}
                   onMouseLeave={stopCounter}
                   direction='right'
@@ -239,7 +252,7 @@ const MazeProgMoveComponent = ({ lab = 1, setPhase, setScore, colorLine, imagePa
               </div>
               <div className={styles.btnD}>
                 <MazeButton
-                  onMouseDown={!isWin ? () => startCounterY(1) : null}
+                  onMouseDown={!isWin ? () => onClickButton('ArrowDown') : null}
                   onMouseUp={stopCounter}
                   onMouseLeave={stopCounter}
                   direction='down'
@@ -247,7 +260,7 @@ const MazeProgMoveComponent = ({ lab = 1, setPhase, setScore, colorLine, imagePa
               </div>
               <div className={styles.btnL}>
                 <MazeButton
-                  onMouseDown={!isWin ? () => startCounterX(-1) : null}
+                  onMouseDown={!isWin ? () => onClickButton('ArrowLeft') : null}
                   onMouseUp={stopCounter}
                   onMouseLeave={stopCounter}
                   direction='left'
@@ -255,7 +268,7 @@ const MazeProgMoveComponent = ({ lab = 1, setPhase, setScore, colorLine, imagePa
               </div>
               <div className={styles.btnU}>
                 <MazeButton
-                  onMouseDown={!isWin ? () => startCounterY(-1) : null}
+                  onMouseDown={!isWin ? () => onClickButton('ArrowUp') : null}
                   onMouseUp={stopCounter}
                   onMouseLeave={stopCounter}
                   direction='up'
