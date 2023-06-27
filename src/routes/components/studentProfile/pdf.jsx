@@ -205,20 +205,20 @@ const style = StyleSheet.create({
 })
 
 export default function Pdf () {
-  const { spiderImg, pieImg, loginUser, dummyHistory, badges } = useLocation().state
+  const { spiderImg, pieImg, userObject, dummyHistory, badges } = useLocation().state
 
   const myDate = new Date().toLocaleString('en-GB', { timeZone: 'America/Bogota' })
 
   return (
     <PDFViewer style={{ width: '100vw', height: '100vh' }}>
       <Document>
-        <Page size="A4" style={style.page}>
+        <Page size='A4' style={style.page}>
           <View style={style.viewHeader}>
-            <Image src='/images/pdf/logoEduSoul.png' style={style.imageHeader}/>
+            <Image src='/images/pdf/logoEduSoul.png' style={style.imageHeader} />
             <View style={style.viewProfile}>
-              <Image src='/images/pdf/kattypdf.png' style={style.image}/>
+              <Image src='/images/pdf/kattypdf.png' style={style.image} />
               <View>
-                <Text style={style.text}>{loginUser.name}</Text>
+                <Text style={style.text}>{userObject.name}</Text>
                 <Text style={style.textSub}>{myDate}</Text>
               </View>
             </View>
@@ -254,13 +254,12 @@ export default function Pdf () {
               <View style={style.dummyContainerAgain}>
                 <Text style={style.textTitle}>Insignias</Text>
                 <View style={style.badgeContainer}>
-                  {badges >= 50 && <Image src='/images/3.png' style={style.badge}/>}
-                  {badges >= 75 && <Image src='/images/2.png' style={style.badge}/>}
-                  {badges >= 100 && <Image src='/images/1.png' style={style.badge}/>}
+                  {badges >= 50 && <Image src='/images/3.png' style={style.badge} />}
+                  {badges >= 75 && <Image src='/images/2.png' style={style.badge} />}
+                  {badges >= 100 && <Image src='/images/1.png' style={style.badge} />}
                 </View>
               </View>
-            </View>
-          }
+            </View>}
 
           <Text style={style.textTitle}>Historial</Text>
           <View style={style.tableContainer}>
@@ -289,13 +288,13 @@ export default function Pdf () {
                       }
                       return acc
                     }, [[]]).map((itemRow, idx) => (
-                      <Page key={idx} size="A4" style={style.page}>
+                      <Page key={idx} size='A4' style={style.page}>
                         <View style={style.viewHeader}>
-                          <Image src='/images/pdf/logoEduSoul.png' style={style.imageHeader}/>
+                          <Image src='/images/pdf/logoEduSoul.png' style={style.imageHeader} />
                           <View style={style.viewProfile}>
-                            <Image src='/images/pdf/kattypdf.png' style={style.image}/>
+                            <Image src='/images/pdf/kattypdf.png' style={style.image} />
                             <View>
-                              <Text style={style.text}>{loginUser.name}</Text>
+                              <Text style={style.text}>{userObject.name}</Text>
                               <Text style={style.textSub}>{myDate}</Text>
                             </View>
                           </View>

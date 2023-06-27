@@ -26,8 +26,8 @@ export default function StudentProfileMetrics ({ toggleView, userObject, coordin
   }, [])
 
   return (
-    <div className={coordinator ? 'student-profile-metrics-container' : 'student-profile-metrics-stuser' }>
-      {coordinator && <HeaderTeacherCoordinatorView title={null} grade={null} text={null}/>}
+    <div className={coordinator ? 'student-profile-metrics-container' : 'student-profile-metrics-stuser'}>
+      {coordinator && <HeaderTeacherCoordinatorView title={null} grade={null} text={null} />}
       <div className='student-profile-metrics'>
         <div className='student-profile-metrics-header'>
           <ProfileCard {...userObject} institution_code='Estadísticas' />
@@ -58,7 +58,7 @@ export default function StudentProfileMetrics ({ toggleView, userObject, coordin
               badges: Number(((dummyHistory.length / 30) * 100).toFixed(2))
             }}
           >
-          DESCARGAR PDF
+            DESCARGAR PDF
           </Link>
         </div>
       </div>
