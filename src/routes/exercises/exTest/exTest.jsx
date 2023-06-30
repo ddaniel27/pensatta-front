@@ -11,11 +11,11 @@
 // import data from './data.json'
 // Teacher
 // import DashboardStudentIndividual from '../../components/teacherProfile/dashboardMain'
-import MazeProgMoveComponent from '../components/zorritoMazeProgMove'
+import TankGameComponent from '../components/tankGameComponent'
 export default function ExTest () {
   return (
     <>
-      <MazeProgMoveComponent lab ={10} />
+      <TankGameComponent />
     </>
   )
 }
