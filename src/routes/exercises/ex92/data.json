@@ -1,0 +1,14 @@
+{
+  "initMessages":["A continuación, encontrarás un simulador de tanques de agua controlados por un panel.",
+    "En la primera parte, deberás construir el panel de control en el orden específicado. Lee las instrucciones y arrástra los botones que necesites para ejecutarlas.",
+    "En la segunda parte, se ejecutarán las instrucciones seleccionadas."
+    ],
+  "color":"#1B6893",
+   "name":"Control de tanques de agua",
+   "threshold":{
+    "max":4,
+    "min":0,
+    "perfect":4
+   },
+   "id":92
+}
