@@ -11,11 +11,11 @@
 // import data from './data.json'
 // Teacher
 // import DashboardStudentIndividual from '../../components/teacherProfile/dashboardMain'
-import TankGameComponent from '../components/tankGameComponent'
+import EyeTracking from '../components/robotGame'
 export default function ExTest () {
   return (
     <>
-      <TankGameComponent />
+      <EyeTracking />
     </>
   )
 }

@@ -1,0 +1,15 @@
+{
+  "initMessages":[
+    "Realiza una programación por bloques para que la banda clasifique los objetos que salen de la máquina en las cajas mostradas en la parte inferior de la pantalla.",
+    "Debes nombrar de la manera más acertada los procedimientos."
+  ],
+  "title":"Clasificación de objetos",
+  "threshold":{
+    "min":"0",
+    "max":"1",
+    "perfect":"1"
+  },
+  "id":30,
+  "color":"#53745B"
+  
+}
