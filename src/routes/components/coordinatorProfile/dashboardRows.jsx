@@ -7,18 +7,19 @@ import { MeanBarChart } from './meanBarChart'
 import { useContext, useEffect, useState } from 'react'
 import CoordinatorContext from '../../../context/CoordinatorContext'
 import { coordinacionMetricsStudents, profesorMetricsStudents } from '../../../requests'
+import Loading from '../loadingView'
 
 export default function DashboardRows ({ title = 'Grado', grade = '6 A', average = 5, data = defaultData, userId, coordinator = true }) {
   const { ctx_hB_r_sI, setCtx_hB_r_sI } = useContext(CoordinatorContext)
   const [conformedData, setConformedData] = useState(data)
   const [pieValues, setPieValues] = useState({ 0: 12, 1: 15, 2: 20 })
   const [meanBarProps, setMeanBarProps] = useState({})
-  console.log('ctx_hB_r_sI2', ctx_hB_r_sI)
+  const [isLoaded, setIsLoaded] = useState(false)
+
   const cb = (response) => {
     const students = response.infoUsuario
     const average = response.average
     const formedData = students.map((student) => {
-      console.log(student.lastHistory)
       return {
         name: `${student.first_name} ${student.last_name}`,
         list: student.exercisesScore,
@@ -49,6 +50,7 @@ export default function DashboardRows ({ title = 'Grado', grade = '6 A', average
       labs,
       dataValues
     })
+    setIsLoaded(true)
   }
   useEffect(() => {
     if (coordinator) {
@@ -58,20 +60,21 @@ export default function DashboardRows ({ title = 'Grado', grade = '6 A', average
     }
   }, [])
   return (
-    <div className='DashboardRows'>
-      <HeaderTeacherCoordinator title={title} grade={ctx_hB_r_sI?.label} text={`Unidad promedio: ${average}`} />
-      <RowsGrid students={conformedData} />
-      <div className='DashboardRows__footer'>
-        <MeanBarChart {...meanBarProps} />
-        <PieChart pieValues={pieValues} />
+    isLoaded
+      ? <div className='DashboardRows'>
+        <HeaderTeacherCoordinator title={title} grade={ctx_hB_r_sI?.label} text={`Unidad promedio: ${average}`} />
+        <RowsGrid students={conformedData} />
+        <div className='DashboardRows__footer'>
+          <MeanBarChart {...meanBarProps} />
+          <PieChart pieValues={pieValues} />
+        </div>
+        <FooterTeacherCoordinator coordinator={coordinator} />
       </div>
-      <FooterTeacherCoordinator coordinator={coordinator} />
-    </div>
+      : <Loading/>
   )
 }
 
 function RowsGrid ({ students = [] }) {
-  console.log(students)
   return (
     <div className='RowsGrid'>
       {students.map((student, index) => (

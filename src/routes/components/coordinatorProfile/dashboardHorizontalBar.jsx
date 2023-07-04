@@ -7,12 +7,14 @@ import '../../../styles/dashboardHorizontalBar.css'
 import { useContext, useEffect, useState } from 'react'
 import CoordinatorContext from '../../../context/CoordinatorContext'
 import { coordinacionMetrics, profesorMetrics } from '../../../requests'
+import Loading from '../loadingView'
 
 export default function DashboardHorizontalBar ({ title = 'Grado', average = '5', data = defaultData, userId, coordinator = true }) {
   const { ctx_hB_r_sI } = useContext(CoordinatorContext)
   const [conformedData, setConformedData] = useState(data)
   const [pieValues, setPieValues] = useState({ 0: 12, 1: 15, 2: 20 })
   const [meanBarProps, setMeanBarProps] = useState({})
+  const [isLoaded, setIsLoaded] = useState(false)
 
   const cb = (response) => {
     const average = response.average
@@ -49,6 +51,7 @@ export default function DashboardHorizontalBar ({ title = 'Grado', average = '5'
       labs,
       dataValues
     })
+    setIsLoaded(true)
   }
 
   useEffect(() => {
@@ -60,15 +63,17 @@ export default function DashboardHorizontalBar ({ title = 'Grado', average = '5'
   }, [])
 
   return (
-    <div className='DashboardHorizontalBar'>
-      <HeaderTeacherCoordinator title='' grade={title} text={`Unidad promedio: ${average}`} />
-      <HorizontalBarGrid data={conformedData} />
-      <div className='DashboardRows__footer'>
-        <MeanBarChart {...meanBarProps} />
-        <PieChart pieValues={pieValues} />
+    isLoaded
+      ? <div className='DashboardHorizontalBar'>
+        <HeaderTeacherCoordinator title='' grade={title} text={`Unidad promedio: ${average}`} />
+        <HorizontalBarGrid data={conformedData} />
+        <div className='DashboardRows__footer'>
+          <MeanBarChart {...meanBarProps} />
+          <PieChart pieValues={pieValues} />
+        </div>
+        <FooterTeacherCoordinator coordinator={coordinator}/>
       </div>
-      <FooterTeacherCoordinator coordinator={coordinator}/>
-    </div>
+      : <Loading/>
   )
 }
 

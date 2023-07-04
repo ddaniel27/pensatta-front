@@ -8,6 +8,7 @@ import '../../../styles/dashboardMain.css'
 import { MeanBarChart } from './meanBarChart'
 import { coordinacionMetricsAll } from '../../../requests'
 import CoordinatorContext from '../../../context/CoordinatorContext'
+import Loading from '../loadingView'
 
 export default function DashboardMain ({ data = defaultData, coordinator = true, userId }) {
   const { setCtx_main_hR } = useContext(CoordinatorContext)
@@ -19,6 +20,7 @@ export default function DashboardMain ({ data = defaultData, coordinator = true,
   const [conformedData, setConformedData] = useState(data)
   const [pieValues, setPieValues] = useState({ 0: 12, 1: 15, 2: 20 })
   const [meanBarProps, setMeanBarProps] = useState({})
+  const [isLoaded, setIsLoaded] = useState(false)
 
   useEffect(() => {
     coordinacionMetricsAll(userId, (response) => {
@@ -28,6 +30,7 @@ export default function DashboardMain ({ data = defaultData, coordinator = true,
       setAverage(response.average)
       setMetricsAverage(response.metricsAverage)
       setCtx_main_hR(response.metricsByGroup)
+      setIsLoaded(true)
     })
   }, [])
 
@@ -71,26 +74,28 @@ export default function DashboardMain ({ data = defaultData, coordinator = true,
   }, [metricsAverage])
 
   return (
-    <div className='DashboardMain'>
-      <HeaderMain title={coordinatorName} subtitle={coordinatorInstitution}/>
-      <div className='DashboardMain__content'>
-        <CardHorizontalRow {...conformedData} />
-        <div className='DashboardMain__content__group'>
-          <div className='DashboardMain__content__group__graphs'>
-            <MeanBarChart {...meanBarProps}/>
-            <PieChart pieValues={pieValues} />
-          </div>
-          <div className='DashboardMain__content__group__buttons'>
-            <div className='DashboardMain__content__group__buttons__pdf'>DESCARGAR INFORME EN PDF</div>
-            <div className='DashboardMain__content__group__buttons__teachers'>
-              <span>Listado docentes</span>
-              <img src={pencil} alt='pencil' />
+    isLoaded
+      ? <div className='DashboardMain'>
+        <HeaderMain title={coordinatorName} subtitle={coordinatorInstitution}/>
+        <div className='DashboardMain__content'>
+          <CardHorizontalRow {...conformedData} />
+          <div className='DashboardMain__content__group'>
+            <div className='DashboardMain__content__group__graphs'>
+              <MeanBarChart {...meanBarProps}/>
+              <PieChart pieValues={pieValues} />
+            </div>
+            <div className='DashboardMain__content__group__buttons'>
+              <div className='DashboardMain__content__group__buttons__pdf'>DESCARGAR INFORME EN PDF</div>
+              <div className='DashboardMain__content__group__buttons__teachers'>
+                <span>Listado docentes</span>
+                <img src={pencil} alt='pencil' />
+              </div>
             </div>
           </div>
         </div>
+        <FooterTeacherCoordinatorView />
       </div>
-      <FooterTeacherCoordinatorView />
-    </div>
+      : <Loading />
   )
 }
 

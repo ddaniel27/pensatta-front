@@ -7,12 +7,14 @@ import { MeanBarChart } from '../coordinatorProfile/meanBarChart'
 import { useEffect, useState, useContext } from 'react'
 import { profesorMetricsAll } from '../../../requests'
 import CoordinatorContext from '../../../context/CoordinatorContext'
+import Loading from '../loadingView'
 
 export default function DashboardMainTeacher ({ data = defaultData, userId, coordinator }) {
   const [conformedData, setConformedData] = useState(data)
   const [name, setName] = useState('Profesor de Pensatta')
   const [institution, setInstitution] = useState('Institución de Pensatta')
   const { setCtx_main_hR } = useContext(CoordinatorContext)
+  const [isLoaded, setIsLoaded] = useState(false)
 
   const title = {
     6: 'Grado sexto',
@@ -46,8 +48,6 @@ export default function DashboardMainTeacher ({ data = defaultData, userId, coor
             valueRed: curso.apropiacionValues[1]
           }
         })
-
-        console.log('lst', lst)
         const aprops = [0, 1, 2]
         const dataAprops = {}
         aprops.forEach((aprop, index) => {
@@ -75,24 +75,25 @@ export default function DashboardMainTeacher ({ data = defaultData, userId, coor
         }
       })
       setConformedData(dataFormed)
+      setIsLoaded(true)
     }
     )
   }, [])
   return (
-    <div className={styles.DashboardMainTeacher}>
-      <HeaderMain title={name} subtitle={institution}/>
-      <div className={styles.DashboardMainTeacher__cards__container}>
-        {
-          conformedData.map(item => <GridElement data={item} meanBarProps={item.meanBarProps} pieChartProps={item.pieChartProps}/>)
-        }
+    isLoaded
+      ? <div className={styles.DashboardMainTeacher}>
+        <HeaderMain title={name} subtitle={institution}/>
+        <div className={styles.DashboardMainTeacher__cards__container}>
+          {
+            conformedData.map(item => <GridElement data={item} meanBarProps={item.meanBarProps} pieChartProps={item.pieChartProps}/>)
+          }
+        </div>
+        <FooterTeacherCoordinatorView coordinator={coordinator}/>
       </div>
-      <FooterTeacherCoordinatorView coordinator={coordinator}/>
-    </div>
+      : <Loading/>
   )
 }
 function GridElement ({ data, meanBarProps, pieChartProps }) {
-  console.log('mbp', meanBarProps)
-  console.log('pcp', pieChartProps)
   return (
     <div className={styles.DashboardMainTeacher__content}>
       <CardHorizontalRow {...data} />
