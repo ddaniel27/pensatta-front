@@ -40,7 +40,7 @@
       },
       "option-2": {
           "id": "option-2",
-          "key": "color",
+          "key": "direction",
           "text": "Arrojar a la ",
           "hasInput": true,
           "type": "select",
