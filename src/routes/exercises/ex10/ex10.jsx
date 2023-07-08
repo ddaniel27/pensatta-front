@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState, useLayoutEffect } from 'react'
 import ScoringComponent from '../components/scoringComponent'
 import DndComponent from '../components/dndComponent'
 import MazeComponent from '../components/mazeComponent'
@@ -6,17 +6,16 @@ import data from './data.json'
 import '../../../styles/ex10.css'
 
 export default function Ex10 () {
-  // eslint-disable-next-line no-unused-vars
-  const [myData, setMyData] = React.useState({
+  const [myData] = useState({
     ...data,
     matrices: data.matrices.sort(() => 0.5 - Math.random()).slice(0, data.threshold.perfect)
   })
-  const [start, setStart] = React.useState(false)
-  const [reset, setReset] = React.useState(false)
+  const [start, setStart] = useState(false)
+  const [reset, setReset] = useState(false)
 
-  const [optionsData, setOptionsData] = React.useState({})
+  const [optionsData, setOptionsData] = useState({})
 
-  React.useLayoutEffect(() => {
+  useLayoutEffect(() => {
     if (reset) {
       setReset(false)
     }

@@ -9,7 +9,47 @@
     "max":"1",
     "perfect":"1"
   },
+  "isSingle": "false",
+  "columns": {
+      "column-1": {
+          "id": "column-1",
+          "optionsIds": [
+              "option-1",
+              "option-2"
+          ],
+          "isDropDisabled":true,
+          "info":"Organiza los bloques y selecciona los valores correctos"
+      },
+      "column-2": {
+          "id": "column-2",
+          "title": "Cuando: presionar botón iniciar",
+          "optionsIds": []
+      }
+  },
+  "options": {
+      "option-1": {
+          "id": "option-1",
+          "key": "color",
+          "text": "Si el objeto es ",
+          "hasInput": true,
+          "type": "select",
+          "options": [
+              "verde",
+              "rosa"
+          ]
+      },
+      "option-2": {
+          "id": "option-2",
+          "key": "color",
+          "text": "Arrojar a la ",
+          "hasInput": true,
+          "type": "select",
+          "options": [
+              "derecha",
+              "izquierda"
+          ]
+      }
+  },
   "id":30,
   "color":"#53745B"
-  
 }
