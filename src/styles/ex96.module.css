@@ -1,0 +1,136 @@
+.game-area {
+  width: 70%;
+  height: 90%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 70% 20%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ram {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 15% 85%;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2F2F2;
+  border-radius: 20px;
+}
+
+.ram-title {
+  color: #00635D;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ram-slots {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: 50% 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.slot {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 80% 10%;
+  justify-content: center;
+  align-items: center;
+}
+
+.slot-title {
+  color: #828282;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.slot-content {
+  height: 80%;
+  aspect-ratio: 1/1;
+  background-color: #BDBDBD;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+.slot-content-audio {
+  background: url('/images/exercises/96/Audio.svg') no-repeat center center #E78CFE;
+}
+
+.slot-content-doc {
+  background: url('/images/exercises/96/Doc.svg') no-repeat center center #3FDFE9;
+}
+
+.modal {
+  width: 80vw;
+  height: 60vh;
+  background-color: #E0E0E0;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 90%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-content {
+  width: 90%;
+  height: 90%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 80% 10%;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.modal-textarea {
+  height: 100%;
+  resize: none;
+  padding: 10px;
+  font-size: 1.1rem;
+  color: #828282;
+  font-weight: bold;
+  border: none;
+}
+
+.modal-buttons {
+  text-align: center;
+  width: 15%;
+  justify-self: end;
+  background-color: #F97D61;
+  padding: 10px;
+  border-radius: 20rem;
+  color: #FFFFFF;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.game-area-button {
+  text-align: center;
+  width: 15%;
+  justify-self: end;
+  background-color: #F97D61;
+  padding: 10px;
+  border-radius: 20rem;
+  color: #FFFFFF;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}

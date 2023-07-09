@@ -1,0 +1,11 @@
+{
+    
+    "initMessages":[
+        "El lenguaje de las máquinas se basa en la combinación de unos y ceros, denominada instrucciones en lenguaje ensamblador, que posteriormente son interpretadas por un procesador.",
+        "A continuación, encontrarás una solicitud de secuencia de color. Ingresa las instrucciones que corresponden para lograr dicha secuencia."
+    ],
+    "path": "96",
+    "color": "#53745B",
+    "name": "Memoria RAM",
+    "id": 96
+}
