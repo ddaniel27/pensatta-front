@@ -48,6 +48,7 @@ const Fills = ({ oneSign = -1, twoSign = 1, triggerFill = false, oneColor = '#2F
 
   useEffect(() => {
     if (one >= 330 || two >= 330) {
+      console.log('entro')
       clearInterval(fillInterval.current)
       setTriggerFill(false)
     }
@@ -63,7 +64,7 @@ const Fills = ({ oneSign = -1, twoSign = 1, triggerFill = false, oneColor = '#2F
   )
 }
 
-const TankGameComponent = ({ setPhase, setScore, algorithm = [{ function: 'tempIncrease', tank: 1 }, { function: 'decreasePressure', tank: 1 }, { function: 'fromOneToAnother', tank: 1 }, { function: 'tempDecrease', tank: 2 }], corrects = [{ function: 'tempIncrease', tank: 1 }, { function: 'decreasePressure', tank: 1 }, { function: 'fromOneToAnother', tank: 2 }, { function: 'tempDecrease', tank: 2 }] }) => {
+const TankGameComponent = ({ setAct1, setAct2, setAct3, setAct4, setStage, setPhase, setScore, algorithm = [{ function: 'tempIncrease', tank: 1 }, { function: 'decreasePressure', tank: 1 }, { function: 'fromOneToAnother', tank: 1 }, { function: 'tempDecrease', tank: 2 }], corrects = [{ function: 'tempIncrease', tank: 1 }, { function: 'decreasePressure', tank: 1 }, { function: 'fromOneToAnother', tank: 2 }, { function: 'tempDecrease', tank: 2 }] }) => {
   const [oneSign, setOneSign] = useState(1)
   const [twoSign, setTwoSign] = useState(1)
   const [colorOne, setColorOne] = useState('#2F80ED')
@@ -138,11 +139,11 @@ const TankGameComponent = ({ setPhase, setScore, algorithm = [{ function: 'tempI
 
   const fromOneToAnother = (tank) => {
     if (tank == 1) {
-      setOneSign(prev => prev * 1)
-      setTwoSign(prev => prev * -1)
+      setOneSign(prev => Math.abs(prev))
+      setTwoSign(prev => -Math.abs(prev))
     } else {
-      setOneSign(prev => prev * -1)
-      setTwoSign(prev => prev * 1)
+      setOneSign(prev => -Math.abs(prev))
+      setTwoSign(prev => Math.abs(prev))
     }
     setTriggerFill(true)
   }
@@ -186,9 +187,15 @@ const TankGameComponent = ({ setPhase, setScore, algorithm = [{ function: 'tempI
 
   useEffect(() => {
     runAlgorithm()
-  }, [])
 
-  useEffect(() => { console.log('validationAns', validationAns) }, [validationAns])
+    return () => {
+      setStage(0)
+      setAct1(null)
+      setAct2(null)
+      setAct3(null)
+      setAct4(null)
+    }
+  }, [])
 
   return (
     <>
@@ -200,7 +207,7 @@ const TankGameComponent = ({ setPhase, setScore, algorithm = [{ function: 'tempI
         <div className={styles['answers-container']}>
         Panel de control
           {
-            corrects.map((item, index) => {
+            algorithm.map((item, index) => {
               return (
                 <div key={index} className={`${styles.answer} ${isFinish ? (validationAns[index] ? styles['correct-answer'] : styles['wrong-answer']) : ''}`}>
                   {

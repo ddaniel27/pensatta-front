@@ -80,7 +80,7 @@ function checkResult (data, cb1, cb2) {
   if ((color2[0] === 'green' && direction2[0] === 'left') || (color2[0] === 'fuchsia' && direction2[0] === 'right')) {
     cb1(1)
   } else {
-    cb1(1)
+    cb1(0)
   }
 
   cb2('end')

@@ -11,7 +11,88 @@
         { "function": "fromOneToAnother", "tank": 2 },
         { "function": "tempDecrease", "tank": 2 }
       ],
-      "text": "INSTRUCCIONES: <br/> <ol><li>Aumentar la temperatura del tanque 1</li> <li>Disminuir la presión del tanque 1</li> <li>Pasar el agua del tanque 1 al tanque 2</li> <li>Disminuir la temperatura del tanque 2</li></ol>"
+      "text": "INSTRUCCIONES: <br/> <ol><li>Aumentar la temperatura del tanque 1</li> <li>Disminuir la presión del tanque 1</li> <li>Pasar el agua del tanque 2 al tanque 1</li> <li>Disminuir la temperatura del tanque 2</li></ol>"
+    },
+    {
+      "sequence": [
+        { "function": "tempDecrease", "tank": 1 },
+        { "function": "increasePressure", "tank": 1 },
+        { "function": "fromOneToAnother", "tank": 2 },
+        { "function": "tempDecrease", "tank": 2 }
+      ],
+      "text": "INSTRUCCIONES: <br/> <ol><li>Disminuir la temperatura del tanque 1</li> <li>Incrementar la presión del tanque 1</li> <li>Pasar el agua del tanque 2 al tanque 1</li> <li>Disminuir la temperatura del tanque 2</li></ol>"
+    },
+    {
+      "sequence": [
+        { "function": "tempIncrease", "tank": 2 },
+        { "function": "increasePressure", "tank": 2 },
+        { "function": "fromOneToAnother", "tank": 1 },
+        { "function": "tempDecrease", "tank": 1 }
+      ],
+      "text": "INSTRUCCIONES: <br/> <ol><li>Disminuir la temperatura del tanque 2</li> <li>Incrementar la presión del tanque 2</li> <li>Pasar el agua del tanque 1 al tanque 2</li> <li>Disminuir la temperatura del tanque 1</li></ol>"
+    },
+    {
+      "sequence": [
+        { "function": "decreasePressure", "tank": 1 },
+        { "function": "increasePressure", "tank": 2 },
+        { "function": "fromOneToAnother", "tank": 1 },
+        { "function": "tempDecrease", "tank": 1 }
+      ],
+      "text": "INSTRUCCIONES: <br/> <ol><li>Disminuir la presión del tanque 1</li> <li>Incrementar la presión del tanque 2</li> <li>Pasar el agua del tanque 1 al tanque 2</li> <li>Disminuir la temperatura del tanque 1</li></ol>"
+    },
+    {
+      "sequence": [
+        { "function": "tempIncrease", "tank": 1 },
+        { "function": "tempDecrease", "tank": 1 },
+        { "function": "increasePressure", "tank": 2 },
+        { "function": "fromOneToAnother", "tank": 2 }
+      ],
+      "text": "INSTRUCCIONES: <br/> <ol><li>Aumentar la temperatura del tanque 1</li> <li>Disminuir la temperatura del tanque 1</li> <li>Incrementar la presión del tanque 2</li> <li>Pasar líquido del tanque 2 al tanque 1</li></ol>"
+    },
+    {
+      "sequence": [
+        { "function": "tempIncrease", "tank": 2 },
+        { "function": "tempDecrease", "tank": 1 },
+        { "function": "increasePressure", "tank": 1 },
+        { "function": "fromOneToAnother", "tank": 1 }
+      ],
+      "text": "INSTRUCCIONES: <br/> <ol><li>Aumentar la temperatura del tanque 2</li> <li>Disminuir la temperatura del tanque 1</li> <li>Incrementar la presión del tanque 1</li> <li>Pasar líquido del tanque 1 al tanque 2</li></ol>"
+    },
+    {
+      "sequence": [
+        { "function": "decreasePressure", "tank": 2 },
+        { "function": "increasePressure", "tank": 1 },
+        { "function": "fromOneToAnother", "tank": 2 },
+        { "function": "tempDecrease", "tank": 2 }
+      ],
+      "text": "INSTRUCCIONES: <br/> <ol><li>Disminuir la presión del tanque 2</li> <li>Incrementar la presión del tanque 1</li> <li>Pasar el agua del tanque 2 al tanque 1</li> <li>Disminuir la temperatura del tanque 2</li></ol>"
+    },
+    {
+      "sequence": [
+        { "function": "tempIncrease", "tank": 1 },
+        { "function": "tempIncrease", "tank": 2 },
+        { "function": "increasePressure", "tank": 1 },
+        { "function": "fromOneToAnother", "tank": 1 }
+      ],
+      "text": "INSTRUCCIONES: <br/> <ol><li>Aumentar la temperatura del tanque 1</li> <li>Aumentar la temperatura del tanque 2</li> <li>Incrementar la presión del tanque 1</li> <li>Pasar líquido del tanque 1 al tanque 2</li></ol>"
+    },
+    {
+      "sequence": [
+        { "function": "tempDecrease", "tank": 1 },
+        { "function": "tempDecrease", "tank": 2 },
+        { "function": "increasePressure", "tank": 2 },
+        { "function": "fromOneToAnother", "tank": 2 }
+      ],
+      "text": "INSTRUCCIONES: <br/> <ol><li>Disminuir la temperatura del tanque 1</li> <li>Disminuir la temperatura del tanque 2</li> <li>Incrementar la presión del tanque 2</li> <li>Pasar líquido del tanque 2 al tanque 1</li></ol>"
+    },
+    {
+      "sequence": [
+        { "function": "tempIncrease", "tank": 2 },
+        { "function": "tempDecrease", "tank": 1 },
+        { "function": "increasePressure", "tank": 2 },
+        { "function": "fromOneToAnother", "tank": 2 }
+      ],
+      "text": "INSTRUCCIONES: <br/> <ol><li>Aumentar la temperatura del tanque 2</li> <li>Disminuir la temperatura del tanque 1</li> <li>Incrementar la presión del tanque 2</li> <li>Pasar líquido del tanque 2 al tanque 1</li></ol>"
     }
   ],
   "color":"#1B6893",

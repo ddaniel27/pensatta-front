@@ -13,10 +13,11 @@ export default function Ex92 () {
   const [act2, setAct2] = useState(null)
   const [act3, setAct3] = useState(null)
   const [act4, setAct4] = useState(null)
+  const gameNum = useRef(Math.floor(Math.random() * 10))
 
   const [myData] = useState({
     ...data,
-    variations: data.variations.sort(() => 0.5 - Math.random()).slice(0, 1)[0]
+    variations: data.variations.sort(() => 0.5 - Math.random())[gameNum.current]
   })
 
   const pRef = useRef()
@@ -30,10 +31,15 @@ export default function Ex92 () {
   }, [act1, act2, act3, act4])
 
   useEffect(() => {
+    if (stage === 1) {
+      setConti(false)
+    }
+  }, [stage])
+
+  useEffect(() => {
     async function test () {
       while (!pRef.current) {
         await new Promise(resolve => setTimeout(resolve, 500))
-        console.log('waiting...')
       }
       pRef.current.innerHTML = myData.variations.text
     }
@@ -65,6 +71,11 @@ export default function Ex92 () {
                 setPhase={setPhase} setScore={setScore}
                 algorithm={[act1, act2, act3, act4]}
                 corrects={myData.variations.sequence}
+                setStage={setStage}
+                setAct1={setAct1}
+                setAct2={setAct2}
+                setAct3={setAct3}
+                setAct4={setAct4}
               />}
           </>
         )
@@ -88,7 +99,7 @@ function ActionSelector ({ setAction }) {
     { value: 'tempDecrease', label: 'Disminuir temperatura' },
     { value: 'increasePressure', label: 'Aumentar presión' },
     { value: 'decreasePressure', label: 'Disminuir presión' },
-    { value: 'fromOneToAnother', label: 'Transferir de un tanque a otro' }
+    { value: 'fromOneToAnother', label: 'Transferir líquido desde' }
   ]
 
   const tanks = [
