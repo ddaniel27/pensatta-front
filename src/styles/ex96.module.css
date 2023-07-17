@@ -134,3 +134,17 @@
   cursor: pointer;
   font-weight: bold;
 }
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  height: 60vh;
+  background-color: #E0E0E0;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 20px;
+}
