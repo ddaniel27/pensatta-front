@@ -92,7 +92,7 @@ function Slot ({ label = 'Empty', content = 'Empty', txt = 'Empty', setTextPopUp
   return (
     <div className={styles.slot}>
       <div className={`${styles['slot-content']} ${content !== 'Empty' && (content === 'audio' ? styles['slot-content-audio'] : styles['slot-content-doc'])}`} onClick={handleClick} />
-      <div className={styles['slot-title']}>{label}</div>
+      <div className={styles['slot-title']}>{label === 'Empty' ? 'Vacio' : label}</div>
     </div>
   )
 }
