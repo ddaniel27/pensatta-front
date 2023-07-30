@@ -51,14 +51,14 @@ export default function AdminView () {
             <NavMenu setScreen={setScreen} />
             {
               screen === 'exercise' &&
-                  <>
-                    <GenericSelector setCurrentValue={setExerciseId} options={data.ex} defaultLabel='Seleccione un ejercicio' />
-                    <button className='button-play' onClick={handleStart} disabled={disableButton}>JUGAR</button>
-                  </>
+                <>
+                  <GenericSelector setCurrentValue={setExerciseId} options={data.ex} defaultLabel='Seleccione un ejercicio' />
+                  <button className='button-play' onClick={handleStart} disabled={disableButton}>JUGAR</button>
+                </>
             }
             {
               screen === 'institution' &&
-                  <InstitutionScreen institutionList={refContainer.current.institutionList} />
+                <InstitutionScreen institutionList={refContainer.current.institutionList} />
             }
           </div>
           : <RouterActivity idExercise={exerciseId} />

@@ -22,6 +22,16 @@ export default function InstitutionScreen ({ institutionList }) {
     setShowModal(true)
   }
 
+  const handleDownloadCSV = () => {
+    const url = 'https://informes.pensatta.net/general'
+    fetch(url)
+      .then(response => response.blob())
+      .then(blob => {
+        const file = window.URL.createObjectURL(blob)
+        window.location.assign(file)
+      })
+  }
+
   return (
     <div className='institution-screen'>
       <div className='institutions-list'>
@@ -54,6 +64,7 @@ export default function InstitutionScreen ({ institutionList }) {
           <>
             <button onClick={() => { setShowInstModal(true) }}>Nueva Institución</button>
             <button onClick={() => { setShowUserModal(true) }}>Nuevo Usuario</button>
+            <button onClick={handleDownloadCSV}>Descargar Informe</button>
           </>}
       </div>
       {showModal && <EditorModal institution={data.institution} field={data.field} close={setShowModal} />}
