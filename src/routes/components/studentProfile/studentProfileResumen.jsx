@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import ProfileCard from './profileCard'
+import ProfileCard from './ProfileCard'
 import ProgressBar from './progressBar'
 import BadgeDisplayer from './badgeDisplayer'
 import TableDisplayExercises from './tableDisplayExercises'

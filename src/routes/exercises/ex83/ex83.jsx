@@ -1,4 +1,4 @@
-import ScoringComponent from '../components/ScoringComponent'
+import ScoringComponent from '../components/scoringComponent'
 import DfdSelect from '../components/dfdSelect'
 import data from './data.json'
 import '../../../styles/ex83.css'

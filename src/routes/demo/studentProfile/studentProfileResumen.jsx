@@ -1,6 +1,6 @@
 import { useContext, useState, useEffect } from 'react'
 import ActivityContext from '../../../context/ActivityContext'
-import ProfileCard from '../../components/studentProfile/profileCard'
+import ProfileCard from '../../components/studentProfile/ProfileCard'
 import ProgressBar from '../../components/studentProfile/progressBar'
 import BadgeDisplayer from '../../components/studentProfile/badgeDisplayer'
 import TableDisplayExercises from '../../components/studentProfile/tableDisplayExercises'

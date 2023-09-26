@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import MazeProgMoveComponent from '../components/zorritoMazeProgMove'
-import ScoringComponent from '../components/ScoringComponent'
+import ScoringComponent from '../components/scoringComponent'
 import GenericSelector from '../../components/genericSelector'
 import styles from '../../../styles/ex74.module.css'
 import data from './data.json'

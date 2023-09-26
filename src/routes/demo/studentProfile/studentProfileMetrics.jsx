@@ -4,7 +4,7 @@ import ActivityContext from '../../../context/ActivityContext'
 import Spider from '../../components/studentProfile/spider'
 import PieChart from '../../components/studentProfile/pieChart'
 import TableDisplayExercises from '../../components/studentProfile/tableDisplayExercises'
-import ProfileCard from '../../components/studentProfile/profileCard'
+import ProfileCard from '../../components/studentProfile/ProfileCard'
 import '../../../styles/studentProfileMetrics.css'
 
 export default function StudentProfileMetrics ({ toggleView }) {

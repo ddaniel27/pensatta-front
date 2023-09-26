@@ -1,4 +1,4 @@
-import HorizontalBar from './HorizontalBar'
+import HorizontalBar from './horizontalBar'
 import '../../styles/CardHorizontalRow.css'
 
 export default function CardHorizontalRow ({ title = 'Grado', average = 5, rows = [] }) {

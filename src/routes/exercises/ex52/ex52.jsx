@@ -1,4 +1,4 @@
-import ScoringComponent from '../components/ScoringComponent.jsx'
+import ScoringComponent from '../components/scoringComponent.jsx'
 import data from './data.json'
 import BloodnameComponent from '../components/bloodnameComponent.jsx'
 

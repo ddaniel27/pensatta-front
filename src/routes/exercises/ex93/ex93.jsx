@@ -1,5 +1,5 @@
 import data from './data.json'
-import NoScoringComponent from '../components/NoScoringComponent'
+import NoScoringComponent from '../components/noScoringComponent'
 import MapsGame from '../components/mapsGame'
 
 export default function Ex93 () {
