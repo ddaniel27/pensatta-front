@@ -148,8 +148,6 @@ const OrderBy = ({ setContentState }) => {
         newState.sort((a, b) => {
           const date1 = changeFormatDate(a.date)
           const date2 = changeFormatDate(b.date)
-          console.log(date1, date2)
-          console.log('resta, ', date1 - date2, '')
           return date1 - date2
         })
         if (order === 'descendant') {

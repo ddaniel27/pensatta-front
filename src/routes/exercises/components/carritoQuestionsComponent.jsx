@@ -86,9 +86,6 @@ const CarritoQuestionsComponent = ({data,setPhase,setScore})=>{
     useEffect(()=>{
         sortQuestions()
     },[])
-    useEffect(()=>{
-        console.log(answers)
-    },[answers])
 
     useEffect(()=>{
         setAnswered(answers.filter((ans) => ans.isSelected === true).length)
@@ -105,7 +102,6 @@ const CarritoQuestionsComponent = ({data,setPhase,setScore})=>{
         })
         setIsFinish(true)
     }
-    useEffect(()=>{console.log(corrects)},[corrects])
     useEffect(()=>{
         setScore(corrects)
     },[isFinish])

@@ -3,16 +3,12 @@ import "../../../styles/boardDfd.css"
 
 const BoardDfd = ({column,targetId})=>{
     const [columnObjs, setColumnObjs] = useState(column)
-    console.log(targetId)
-    console.log(columnObjs)
-
     
     return(
         <>
             <div className="board">
                 {
                     columnObjs.map( (obj) =>{
-                        console.log(obj.sentence)
                         if(obj.sentence == "if"){
                             const text = obj.text.replace('¿','').replace('?','')
                             return(<p style={targetId == obj.id ? {color:"#00D8CC"}:{color:"#F2F2F2"}}>{ `

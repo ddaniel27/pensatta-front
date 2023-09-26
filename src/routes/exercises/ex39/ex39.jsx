@@ -33,7 +33,6 @@ export default function Ex39(){
 
     React.useEffect(() => {
         if(value){
-            console.log(value)
             value.innerHTML = `${Math.floor(Math.random() * 100)}`
         }
     }, [value])
@@ -56,7 +55,6 @@ export default function Ex39(){
             })
             let ans = dataToEval[0]
             for(let i = 1; i < dataToEval.length; i+=2){
-                console.log(ans, dataToEval[i], dataToEval[i+1])
                 ans = eval(`${ans} ${dataToEval[i]} ${dataToEval[i+1]}`)
             }
             if(ans === Number(value.innerHTML)){

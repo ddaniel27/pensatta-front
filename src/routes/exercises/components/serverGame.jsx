@@ -98,7 +98,6 @@ export default function ServerGame ({ setPhase }) {
   }
   const onDragEnd = (result) => {
     const { destination, source, draggableId } = result
-    console.log(result)
     if (!destination) {
       return
     }
@@ -111,12 +110,6 @@ export default function ServerGame ({ setPhase }) {
       setTransmitters(newTransmitters)
     }
   }
-  useEffect(() => {
-    console.log(receivers)
-  }, [receivers])
-  useEffect(() => {
-    console.log(transmitters)
-  }, [transmitters])
 
   return (
     <>

@@ -17,7 +17,6 @@ const BalloonSVG = ({color,text,id}) => {
     }
     function makeDraggable(evt) {
         var svg = evt.target;
-        console.log(svg);
         svg.onmousedown=startDrag;
         svg.onmousemove=drag;
         svg.onmouseup= endDrag;
@@ -59,7 +58,6 @@ const BalloonSVG = ({color,text,id}) => {
         }
 
         function startDrag(evt) {
-          console.log("ha empezado el drag")
           if (evt.target.classList.contains('draggable')) {
             selectedElement = evt.target;
             initialiseDragging(evt);
@@ -70,7 +68,6 @@ const BalloonSVG = ({color,text,id}) => {
         }
 
         function drag(evt) {
-            console.log("ha empezado el movedrag")
           if (selectedElement) {
             evt.preventDefault();
             var coord = getMousePosition(evt);

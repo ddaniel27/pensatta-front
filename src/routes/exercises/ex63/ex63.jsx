@@ -38,10 +38,8 @@ const Ex63 = ()=>{
         if(result.source.index === result.destination.index &&
             result.source.droppableId === result.destination.droppableId) return
         if(isFinish) return
-        console.log(result)
         if(result.destination.droppableId.includes("column-answers")&&
             (result.source.droppableId.includes("column-1") || result.source.droppableId.includes("column-2"))){
-            console.log("entro")
             setColumnAnswer( prev =>{
                 const option = options.find(o=> o.id === result.source.index)
                 return prev.map(
@@ -94,10 +92,6 @@ const Ex63 = ()=>{
 
     }
     useEffect(()=>{
-        console.log("options",options)
-        console.log("ans",columnAnswer)
-        console.log("col1",column1)
-        console.log("col2",column2)
         if(columnAnswer.every(a=> !a.isEmpty)){
             setIsAllAnswered(true)}
     },[columnAnswer,column1,column2])

@@ -9,7 +9,6 @@ const ProcessComponent = ({process,text,idObj,setTargetId})=>{
         condition:"#EDCA71",
     }
     const handleClick = (event)=>{
-        //console.log(event.target.parentNode.id)
         setTargetId(event.target.parentNode.id)
         
     }

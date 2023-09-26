@@ -53,7 +53,14 @@ export default function DashboardMainTeacher ({ data = defaultData, userId, coor
         aprops.forEach((aprop, index) => {
           dataAprops[aprop] = lst.reduce((acc, next) => acc + next.apropiacionValues[index + 1], 0) / lst.length
         })
-        const labs = ['dim1', 'dim2', 'dim3', 'dim4', 'dim5', 'dim6']
+        const labs = [
+          'abst',
+          'p. algo',
+          'desc',
+          'rec pat',
+          'mod & sim',
+          'eval'
+        ]
         const dataValues = {}
         labs.forEach((lab, index) => {
           dataValues[lab] = {

@@ -1,4 +1,4 @@
-import { useState, useContext } from 'react'
+import { useState, useContext, useEffect } from 'react'
 import DashboardCardsHorizontalRows from './dashboardCardsHorizontalRows'
 import DashboardHorizontalBar from './dashboardHorizontalBar'
 import DashboardListGrades from './dashboardListGrades'

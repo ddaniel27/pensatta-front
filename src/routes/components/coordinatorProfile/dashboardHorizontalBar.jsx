@@ -2,7 +2,7 @@ import HeaderTeacherCoordinator from '../headerTeacherCoordinatorView'
 import FooterTeacherCoordinator from '../footerTeacherCoordinatorView'
 import HorizontalBar from '../horizontalBar'
 import PieChart from './pieChart'
-import { MeanBarChart } from './meanBarChart'
+import Spider from './spider'
 import '../../../styles/dashboardHorizontalBar.css'
 import { useContext, useEffect, useState } from 'react'
 import CoordinatorContext from '../../../context/CoordinatorContext'
@@ -13,11 +13,10 @@ export default function DashboardHorizontalBar ({ title = 'Grado', average = '5'
   const { ctx_hB_r_sI } = useContext(CoordinatorContext)
   const [conformedData, setConformedData] = useState(data)
   const [pieValues, setPieValues] = useState({ 0: 12, 1: 15, 2: 20 })
-  const [meanBarProps, setMeanBarProps] = useState({})
+  const [spiderProps, setSpiderProps] = useState({})
   const [isLoaded, setIsLoaded] = useState(false)
 
   const cb = (response) => {
-    const average = response.average
     const rows = response.result.map(
       (curso) => {
         return {
@@ -38,18 +37,8 @@ export default function DashboardHorizontalBar ({ title = 'Grado', average = '5'
       2: rows.reduce((acc, next) => acc + (next.valueGreen ? next.valueGreen : 0), 0) / rows.length
     })
 
-    const labs = ['dim1', 'dim2', 'dim3', 'dim4', 'dim5', 'dim6']
-    const dataValues = {}
-    labs.forEach((lab, index) => {
-      dataValues[lab] = {
-        obt: rows.reduce((acc, next) => acc + (next.spiderValues[index + 1] ? next.spiderValues[index + 1] : 0), 0) / rows.length,
-        med: average.spiderValues ? average.spiderValues[index + 1] : 0
-      }
-    })
-
-    setMeanBarProps({
-      labs,
-      dataValues
+    setSpiderProps({
+      spider: rows[0].spiderValues,
     })
     setIsLoaded(true)
   }
@@ -68,12 +57,12 @@ export default function DashboardHorizontalBar ({ title = 'Grado', average = '5'
         <HeaderTeacherCoordinator title='' grade={title} text={`Unidad promedio: ${average}`} />
         <HorizontalBarGrid data={conformedData} />
         <div className='DashboardRows__footer'>
-          <MeanBarChart {...meanBarProps} />
+          <Spider {...spiderProps} />
           <PieChart pieValues={pieValues} />
         </div>
-        <FooterTeacherCoordinator coordinator={coordinator}/>
+        <FooterTeacherCoordinator coordinator={coordinator} />
       </div>
-      : <Loading/>
+      : <Loading />
   )
 }
 

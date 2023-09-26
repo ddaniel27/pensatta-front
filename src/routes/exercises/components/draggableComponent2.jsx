@@ -18,7 +18,6 @@ export default function DraggableComponent2({ option, index, setOwnValue,res }) 
             }))
         }
     }, [value])
-    console.log(res.destination)
 
     return (
         <Draggable draggableId={option.id} index={index} isDragDisabled={option.isDragDisabled}>

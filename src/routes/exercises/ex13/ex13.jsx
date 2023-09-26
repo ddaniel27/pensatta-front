@@ -23,10 +23,6 @@ export default function Ex13 () {
   }, [optionsData])
 
   React.useEffect(() => {
-    console.log(start)
-  }, [start])
-
-  React.useEffect(() => {
     async function test () {
       while (!document.querySelector('.animation-container')) {
         await new Promise(resolve => setTimeout(resolve, 500))

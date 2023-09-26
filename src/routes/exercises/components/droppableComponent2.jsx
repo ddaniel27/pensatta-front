@@ -7,7 +7,6 @@ export default function DroppableComponent2({ column, options, returnData, isLoo
 
     const [ currValue, setCurrValue ] = React.useState({})
     const [value, setValue] = React.useState("")
-    console.log(options)
 
     React.useEffect(() => {
         if(returnData){

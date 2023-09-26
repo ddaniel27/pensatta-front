@@ -16,16 +16,19 @@ export default function MenuHam ({ setShow }) {
   }
 
   return (
-    <div className="menu-ham">
-      <div className="logout" onClick={logout}>
-        <img src='./images/Katty-Retrato.svg' alt='Katty'/>
+    <div className='menu-ham'>
+      <div className={`logout ${loginUser.role.toLowerCase()}`} onClick={logout}>
+        <img src='./images/Katty-Retrato.svg' alt='Katty' />
         <h4>Cerrar Sesion</h4>
       </div>
-      <div className="settings" onClick={() => { setProfile(true); setShow(false) }}>
-        <img src='./images/Katty-Retrato.svg' alt='Katty'/>
-        <h4>Mi tablero</h4>
-      </div>
-      <div className="close" onClick={() => { setShow(false) }} />
+      {
+        loginUser.role.toLowerCase() === 'student' &&
+        <div className='settings' onClick={() => { setProfile(true); setShow(false) }}>
+          <img src='./images/Katty-Retrato.svg' alt='Katty' />
+          <h4>Mi tablero</h4>
+        </div>
+      }
+      <div className={`close ${loginUser.role.toLowerCase()}`} onClick={() => { setShow(false) }} />
     </div>
   )
 }

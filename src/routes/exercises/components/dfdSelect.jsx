@@ -3,7 +3,6 @@ import styles from '../../../styles/dfdSelect.module.css'
 
 function SelectDropdown ({ x = 0, y = 0, options = ['B / 2', '2*(X + B)', 'X - 1'], setAnswers, id }) {
   const handleClick = (option) => {
-    console.log(option)
     setAnswers(prev => ({ ...prev, [id]: option }))
   }
   return (

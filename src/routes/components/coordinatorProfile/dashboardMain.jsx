@@ -61,7 +61,15 @@ export default function DashboardMain ({ data = defaultData, coordinator = true,
         2: metricsAverage.apropiacionValues ? metricsAverage.apropiacionValues['3'] : 0
       })
 
-    const labs = ['dim1', 'dim2', 'dim3', 'dim4', 'dim5', 'dim6']
+    const labs = [
+      'abst',
+      'p. algo',
+      'desc',
+      'rec pat',
+      'mod & sim',
+      'eval'
+    ]
+
     const dataValues = {}
     labs.forEach((lab, index) => {
       dataValues[lab] = { obt: metricsAverage.spiderValues ? metricsAverage.spiderValues[index + 1] : 0, med: average.spiderValues ? average.spiderValues[index + 1] : 0 }

@@ -191,7 +191,6 @@ const MazePistaComponent = ({ lab, setPhase, setScore, colorLine, imagePath }) =
                     return true
                   }
                 })) {
-          console.log('colision')
           setPosx((prevCounter) => {
             return prevCounter - incremento
           })

@@ -23,9 +23,14 @@
 }
 .menu-ham .logout{
     grid-column: 1;
-    border-bottom: 1px solid #E0E0E0;
+    grid-row: 1/3;
     border-radius: 12px 0 0 0;
 }
+.menu-ham .logout.student{
+  grid-row: 1;
+  border-bottom: 1px solid #E0E0E0;
+}
+
 .menu-ham .settings{
     grid-column: 1;
     border-radius: 0 0 0 12px;
@@ -33,15 +38,19 @@
 }
 .menu-ham .close{
     grid-column: 2;
-    grid-row: 1;
+    grid-row: 1/3;
     justify-content: center;
     background-image: url("../../images/Atomo_Icono_Salir.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    border-bottom: 1px solid #E0E0E0;
     border-radius: 0 12px 0 0;
 }
+.menu-ham .close.student{
+    grid-row: 1;
+    border-bottom: 1px solid #E0E0E0;
+}
+
 .menu-ham .close:hover{
     background-color: #69E485;
 }

@@ -38,7 +38,6 @@ export default function ScoringComponent ({ initMessages = ['Inicia dando click 
         postExercise(data,
           function (response) {
             setDisableButton(false)
-            console.log(response)
           },
           function (error) {
             setDisableButton(false)

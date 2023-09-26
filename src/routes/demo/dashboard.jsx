@@ -28,10 +28,6 @@ export default function Dashboard(){
             setBackground("#E0E0E0")
         }
     },[])
-
-    React.useEffect(()=>{
-        console.log(exercises)
-    },[exercises])
     
     return (
         <div className="dashboard" style={{backgroundColor:background}}>

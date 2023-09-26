@@ -37,7 +37,15 @@ export default function DashboardRows ({ title = 'Grado', grade = '6 A', average
       dataAprops[aprop] = students.reduce((acc, next) => acc + next.allExercisesAprops[index + 1], 0) / students.length
     })
     setPieValues(dataAprops)
-    const labs = ['dim1', 'dim2', 'dim3', 'dim4', 'dim5', 'dim6']
+    const labs = [
+      'abst',
+      'p. algo',
+      'desc',
+      'rec pat',
+      'mod & sim',
+      'eval'
+    ]
+
     const dataValues = {}
     labs.forEach((lab, index) => {
       dataValues[lab] = {

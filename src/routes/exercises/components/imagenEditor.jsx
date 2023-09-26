@@ -69,7 +69,6 @@ export default function ImagenEditor ({ sequence, startSequence, isFinished, set
         }
         await delay(500)
         isFinished(true)
-        console.log(img.current, opacity, color, bg, initBackground)
       }
       init()
     }

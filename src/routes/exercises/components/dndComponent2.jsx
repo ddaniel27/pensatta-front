@@ -28,7 +28,6 @@ export default function DndComponent2 ({ data, returnScore, reset }) {
   }, [reset])
 
   const onDragEnd = result => {
-    console.log(result)
     setRes(result)
     const { destination, source, draggableId } = result
     if (!destination) { return }

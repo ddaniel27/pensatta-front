@@ -37,7 +37,6 @@ export default function Ex60 () {
         }
       }
     }
-    console.log(shuffledData)
     return shuffledData
   }
   // eslint-disable-next-line no-unused-vars

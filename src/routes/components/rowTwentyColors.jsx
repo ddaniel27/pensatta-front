@@ -15,8 +15,6 @@ export default function RowTwentyColors ({ label = '', list = [{ id: 0, score: 0
     }
   }
 
-  console.log('list', list)
-
   return (
     <div className='RowTwentyColors' onClick={handleClickRow}>
       <div className='RowTwentyColors__label'>{label}</div>

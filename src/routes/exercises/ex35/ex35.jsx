@@ -78,7 +78,6 @@ export default function Ex35(){
                         pauseAllowed={true}
                         restartAllowed={false}
                         onLoose={(context) => {
-                                    console.log(context)
                                     setScore(+context.game.points * 10)
                                     setPhase("end")
                                     setStopped(true)

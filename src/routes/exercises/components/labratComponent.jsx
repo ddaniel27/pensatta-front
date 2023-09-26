@@ -253,7 +253,6 @@ const MazeMouseComponent = ({ lab, setPhase, setScore, colorLine }) => {
   }, [])
 
   async function animate (option) {
-    console.log(option)
     const event = new KeyboardEvent('keydown', {
       code: option,
       bubbles: true,

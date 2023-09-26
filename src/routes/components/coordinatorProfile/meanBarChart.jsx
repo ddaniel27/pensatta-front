@@ -57,7 +57,14 @@ export const options = {
   maintainAspectRatio: false
 }
 
-const labels = ['dim1', 'dim2', 'dim3', 'dim4', 'dim5', 'dim6']
+const labels = [
+  'abstraccion',
+  'pensamiento algoritmico',
+  'descomposicion',
+  'reconocimiento de patrones',
+  'modelado y simulacion',
+  'evaluacion'
+]
 const dataSets = {
   dim1: { obt: 50, med: 50 },
   dim2: { obt: 20, med: 60 },
@@ -67,7 +74,7 @@ const dataSets = {
   dim6: { obt: 60, med: 95 }
 }
 
-const data = (dataVal, labs)=> ({
+const data = (dataVal, labs) => ({
   labels: labs,
   datasets: [
     {
@@ -90,8 +97,7 @@ const data = (dataVal, labs)=> ({
   ]
 })
 
-
-export function MeanBarChart ({ dataValues = dataSets, labs=labels }) {
+export function MeanBarChart ({ dataValues = dataSets, labs = labels }) {
   return (
     <div className='chart-container bar-container'>
       <Bar options={options} data={data(dataValues, labs)} />

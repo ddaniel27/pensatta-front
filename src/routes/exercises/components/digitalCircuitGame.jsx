@@ -7,7 +7,6 @@ import { useState, useRef } from 'react'
 import styles from '../../../styles/digitalCircuit.module.css'
 
 const DigitalCircuitGame = ({ setPhase, setScore, texts }) => {
-  console.log('texts', texts)
   const randomChoice = (array, n) => {
     const randomIndexes = []
     while (randomIndexes.length < n) {
@@ -44,9 +43,6 @@ const DigitalCircuitGame = ({ setPhase, setScore, texts }) => {
     const firstResult = gatesFunctions[firstGates.current[0]](inputs.current[0], inputs.current[1])
     const secondResult = gatesFunctions[firstGates.current[1]](inputs.current[2], inputs.current[3])
     const finalResult = gatesFunctions[secondGates.current[0]](firstResult, secondResult)
-    console.log('ans', answer)
-    console.log('fr', finalResult)
-    console.log('co', finalResult == answer)
     setResponse(finalResult == answer)
     setIsFinish(true)
   }

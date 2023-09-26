@@ -44,7 +44,6 @@ const FormExercise = ({ inputs, setPhase }) => {
 
   const handleChangeSelect = (event, id) => {
     setAnswers(prev => prev.map(a => {
-      console.log(a)
       if (a.id == id) {
         return { id: a.id, ans: event.label, isAnswer: true }
       }

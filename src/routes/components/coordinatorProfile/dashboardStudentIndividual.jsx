@@ -12,24 +12,35 @@ export default function DashboardStudentIndividual ({ title = 'Grado', grade = '
   const { ctx_hB_r_sI } = useContext(CoordinatorContext)
   const [conformedData, setConformedData] = useState({ label: '', list: [{ id: 0, score: 0 }] })
   const [pieValues, setPieValues] = useState({ 0: 12, 1: 15, 2: 20 })
-  const [meanBarProps, setMeanBarProps] = useState({})
   const [spiderProps, setSpiderProps] = useState({})
-  console.log('ctx_hB_r_sI', ctx_hB_r_sI)
+  const [meanBarProps, setMeanBarProps] = useState({
+    labs: [],
+    dataValues: {}
+  })
 
   useEffect(() => {
     const idStudent = ctx_hB_r_sI.studentSelected
     const student = ctx_hB_r_sI.r.find((student) => student.id === idStudent)
+
     setConformedData({ label: student.name, list: student.lastHistory })
     setPieValues({
       0: student.stdAprops[1],
       1: student.stdAprops[2],
       2: student.stdAprops[3]
     })
-    const labs = ['dim1', 'dim2', 'dim3', 'dim4', 'dim5', 'dim6']
+    const labs = [
+      'abst',
+      'p. algo',
+      'desc',
+      'rec pat',
+      'mod & sim',
+      'eval'
+    ]
+
     const dataValues = {}
     labs.forEach((lab, index) => {
       dataValues[lab] = {
-        obt: student.stdSpider[index + 1],
+        obt: student.stdSpider[index + 1] || 0,
         med: ctx_hB_r_sI.average.spiderValues[index + 1]
       }
     })
@@ -49,7 +60,7 @@ export default function DashboardStudentIndividual ({ title = 'Grado', grade = '
         <RowTwentyColors {...conformedData} />
       </div>
       <div className='DashboardStudentIndividual__graphs'>
-        <Spider {...spiderProps}/>
+        <Spider {...spiderProps} />
         <div className='DashboardStudentIndividual__graphs__group'>
           <MeanBarChart {...meanBarProps} />
           <PieChart pieValues={pieValues} />

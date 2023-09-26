@@ -112,7 +112,7 @@ function CourseInfo ({ data = defaultCourseInfo, showCourses = false, courseSele
             <div className='CourseInfo__body'>
               {data.students.map((student, index) => (
                 <div className='CourseInfo__body__row' key={index}>
-                  <div className='CourseInfo__body__row__name'>{student.name}</div>
+                  <div className='CourseInfo__body__row__name'>{student.username}</div>
                   <div className='CourseInfo__body__row__repass' onClick={() => { handleClick(student.id) }}>Reestablecer contraseña</div>
                   <div className='CourseInfo__body__row__delete' onClick={() => { handleClickEliminar(student.id, student.name) }}>Eliminar</div>
                 </div>

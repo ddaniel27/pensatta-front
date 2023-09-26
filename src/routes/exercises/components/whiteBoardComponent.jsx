@@ -407,8 +407,6 @@ const WhiteboardComponent = ({ aspectRatio = 4 / 3 ,setPhase}) => {
 
   useEffect(() => {
     if (!canvas && canvasRef.current) {
-        console.log(whiteboardRef.current)
-        console.log(whiteboardRef.current.clientWidth / aspectRatio)
       const canvas = initCanvas(
         whiteboardRef.current.clientWidth,
         whiteboardRef.current.clientWidth / aspectRatio,

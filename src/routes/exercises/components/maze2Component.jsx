@@ -290,7 +290,6 @@ const Maze2Component = ({ lab, setPhase, setScore }) => {
     if (intervalRef.current) return
 
     intervalRef.current = setInterval(() => {
-      console.log('avanzando en x')
       setPosx((prevCounter) => {
         counter = prevCounter
         return prevCounter + incremento

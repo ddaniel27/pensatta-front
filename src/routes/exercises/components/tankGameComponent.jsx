@@ -48,7 +48,6 @@ const Fills = ({ oneSign = -1, twoSign = 1, triggerFill = false, oneColor = '#2F
 
   useEffect(() => {
     if (one >= 330 || two >= 330) {
-      console.log('entro')
       clearInterval(fillInterval.current)
       setTriggerFill(false)
     }
