@@ -1,3 +1,328 @@
 {
-  "button": "CONTINUE"
+  "informative_text": [
+    {
+      "title": "Input devices",
+      "text": "They are the components that allow information to be entered into the computer, such as the keyboard, mouse, scanner, webcam, microphone, among others. Its functions and mode of use vary according to each device.",
+      "id": "INPUT"
+    },
+    {
+      "title": "Motherboard",
+      "text": "The motherboard, baseboard or motherboard, is a printed circuit board that enables the integration of all computer components. It has a basic software called BIOS that allows you to perform these functions.",
+      "id": "Board"
+    },
+    {
+      "title": "Video card",
+      "text": "A Graphics Processing Unit, or video / graphics card, processes the data that comes from the main processor (CPU) and converts it into information that can be viewed on the monitor.",
+      "id": "GPU"
+    },
+    {
+      "title": "Output devices",
+      "text": "They are the components that allow information to be output from the computer, such as the monitor, printer, projector, headphones, among others. Its functions and mode of use vary according to each device.",
+      "id": "OUTPUT"
+    },
+    {
+      "title": "RAM",
+      "text": "Random Access Memory. It is the main memory of the computer, where the data of the programs that you are using at the moment are temporarily stored.",
+      "id": "RAM"
+    },
+    {
+      "title": "Reading unit",
+      "text": "It is a device that allows the reading of CD's by means of a laser beam that the computer later translates into information. It also allows the collection or recording of data on CD's.",
+      "id": "READER"
+    },
+    {
+      "title": "CPU",
+      "text": "The Central Processing Unit is the hardware inside a computer. It interprets the instructions of a program executing the basic arithmetic, logical and external operations (coming from the input and output units).",
+      "id": "CPU"
+    },
+    {
+      "title": "Hard disk",
+      "text": "It is a component that permanently stores your data, that is, this information is not deleted when the computer is turned off, as is the case with the data stored in RAM memory.",
+      "id": "HDD"
+    }
+  ],
+  "options": [
+    {
+      "question":"",
+      "answers":[
+        {
+          "text":"CPU",
+          "isCorrect":true
+        },
+        {
+          "text":"RAM",
+          "isCorrect":true
+        },
+        {
+          "text":"GPU",
+          "isCorrect":true
+        },
+        {
+          "text":"Bios",
+          "isCorrect":false
+        },
+        {
+          "text":"Cache memory",
+          "isCorrect":false
+        }
+      ],
+      "multiple":true,
+      "maxOptions":3
+    },
+    {
+      "question":"",
+      "answers":[
+        {
+          "text":"Motherboard",
+          "isCorrect":true
+        },
+        {
+          "text":"HDD",
+          "isCorrect":true
+        },
+        {
+          "text":"Keyboard",
+          "isCorrect":true
+        },
+        {
+          "text":"HDMI Port",
+          "isCorrect":false
+        },
+        {
+          "text":"SATA Port",
+          "isCorrect":false
+        }
+      ],
+      "multiple":true,
+      "maxOptions":3
+    },
+    {
+      "question":"",
+      "answers":[
+        {
+          "text":"Mouse",
+          "isCorrect":true
+        },
+        {
+          "text":"Microphone",
+          "isCorrect":true
+        },
+        {
+          "text":"Camera",
+          "isCorrect":true
+        },
+        {
+          "text":"PCI Port",
+          "isCorrect":false
+        },
+        {
+          "text":"USB Port",
+          "isCorrect":false
+        }
+      ],
+      "multiple":true,
+      "maxOptions":3
+    },
+    {
+      "question":"",
+      "answers":[
+        {
+          "text":"Screen",
+          "isCorrect":true
+        },
+        {
+          "text":"Speaker",
+          "isCorrect":true
+        },
+        {
+          "text":"Motherboard",
+          "isCorrect":true
+        },
+        {
+          "text":"Heatsink",
+          "isCorrect":false
+        },
+        {
+          "text":"Fan",
+          "isCorrect":false
+        }
+      ],
+      "multiple":true,
+      "maxOptions":3
+    },
+    {
+      "question":"",
+      "answers":[
+        {
+          "text":"CPU",
+          "isCorrect":true
+        },
+        {
+          "text":"Motherboard",
+          "isCorrect":true
+        },
+        {
+          "text":"Mouse",
+          "isCorrect":true
+        },
+        {
+          "text":"HDMI Port",
+          "isCorrect":false
+        },
+        {
+          "text":"Power supply",
+          "isCorrect":false
+        }
+      ],
+      "multiple":true,
+      "maxOptions":3
+    },
+    {
+      "question":"",
+      "answers":[
+        {
+          "text":"RAM",
+          "isCorrect":true
+        },
+        {
+          "text":"HDD",
+          "isCorrect":true
+        },
+        {
+          "text":"Microphone",
+          "isCorrect":true
+        },
+        {
+          "text":"Modem",
+          "isCorrect":false
+        },
+        {
+          "text":"NFC",
+          "isCorrect":false
+        }
+      ],
+      "multiple":true,
+      "maxOptions":3
+    },
+    {
+      "question":"",
+      "answers":[
+        {
+          "text":"GPU",
+          "isCorrect":true
+        },
+        {
+          "text":"Keyboard",
+          "isCorrect":true
+        },
+        {
+          "text":"Camera",
+          "isCorrect":true
+        },
+        {
+          "text":"USB",
+          "isCorrect":false
+        },
+        {
+          "text":"PCI Port",
+          "isCorrect":false
+        }
+      ],
+      "multiple":true,
+      "maxOptions":3
+    },
+    {
+      "question":"",
+      "answers":[
+        {
+          "text":"Speaker",
+          "isCorrect":true
+        },
+        {
+          "text":"Keyboard",
+          "isCorrect":true
+        },
+        {
+          "text":"Screen",
+          "isCorrect":true
+        },
+        {
+          "text":"Heatsink",
+          "isCorrect":false
+        },
+        {
+          "text":"Fan",
+          "isCorrect":false
+        }
+      ],
+      "multiple":true,
+      "maxOptions":3
+    },
+    {
+      "question":"",
+      "answers":[
+        {
+          "text":"RAM",
+          "isCorrect":true
+        },
+        {
+          "text":"Mouse",
+          "isCorrect":true
+        },
+        {
+          "text":"Speaker",
+          "isCorrect":true
+        },
+        {
+          "text":"Heatsink",
+          "isCorrect":false
+        },
+        {
+          "text":"Modem",
+          "isCorrect":false
+        }
+      ],
+      "multiple":true,
+      "maxOptions":3
+    },
+    {
+      "question":"",
+      "answers":[
+        {
+          "text":"HDD",
+          "isCorrect":true
+        },
+        {
+          "text":"Microphone",
+          "isCorrect":true
+        },
+        {
+          "text":"CPU",
+          "isCorrect":true
+        },
+        {
+          "text":"SATA Port",
+          "isCorrect":false
+        },
+        {
+          "text":"Bios",
+          "isCorrect":false
+        }
+      ],
+      "multiple":true,
+      "maxOptions":3
+    }
+  ],
+  "initMessages":[
+    "Explore the internal parts of the computer and select the ones you identify in the list at the end."
+  ],
+  "threshold": {
+    "max": 1,
+    "min": 1,
+    "perfect": 2
+  },
+  "path": "01",
+  "color": "#9968A6",
+  "name": "Internal Components",
+  "id": 1
 }
