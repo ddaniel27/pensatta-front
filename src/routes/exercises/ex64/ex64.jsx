@@ -1,10 +1,15 @@
-import React from "react"
+import { useState, useEffect } from "react"
 import CarritoQuestionsComponent from "../components/carritoQuestionsComponent"
 import ScoringComponent from "../components/scoringComponent"
-import data from "./data.json"
+import useData from "../../../hooks/useData"
 
 const Ex64 = ()=>{
-    const [ myData, setMyData ] = React.useState(data)
+  const { data } = useData("ex64")
+    const [ myData, setMyData ] = useState({ ...data })
+
+  useEffect(() => {
+    setMyData({ ...data })
+  }, [data])
 
     return(
         <ScoringComponent initMessages={myData.initMessages} background={myData.color} title={myData.name} threshold={myData.threshold} exerciseId={myData.id}>

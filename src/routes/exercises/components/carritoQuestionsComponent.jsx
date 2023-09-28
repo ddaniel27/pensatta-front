@@ -1,4 +1,5 @@
 import { useState, useEffect,useLayoutEffect } from "react";
+import { useTranslation } from 'react-i18next'
 import carrito from "/images/exercises/64/carrito.svg"
 import styles from "../../../styles/carritoQuestions.module.css"
 
@@ -15,6 +16,7 @@ const Pista = ({corrects})=>{
 const Card = ({id, question, value, isFinish,setAnswers})=>{
     const [selection, setSelection] = useState(null)
     const [isSelection, setIsSelection] = useState(false)
+  const { t } = useTranslation("carritoQuestionsComponent")
 
     const handleClick = (selected)=>{
         if(!isFinish){
@@ -39,7 +41,7 @@ const Card = ({id, question, value, isFinish,setAnswers})=>{
             <div className={styles.cardSentence}>{question}</div>
             <div className={styles.cardButtonsContainer}>
                 <div className={isSelection&&!selection?styles.buttonPress:styles.cardButton} style={isFinish&&!selection?(selection==value?{backgroundColor:"#69E485"}:{backgroundColor:"#FF7171"}):null} onClick={()=>{handleClick(false)}}>F</div>
-                <div className={isSelection&&selection?styles.buttonPress:styles.cardButton} style={isFinish&&selection?(selection==value?{backgroundColor:"#69E485"}:{backgroundColor:"#FF7171"}):null} onClick={()=>{handleClick(true)}}>V</div>
+                <div className={isSelection&&selection?styles.buttonPress:styles.cardButton} style={isFinish&&selection?(selection==value?{backgroundColor:"#69E485"}:{backgroundColor:"#FF7171"}):null} onClick={()=>{handleClick(true)}}>{t("true")}</div>
             </div>
         </div>
     )
@@ -66,6 +68,7 @@ const CarritoQuestionsComponent = ({data,setPhase,setScore})=>{
     const [answered, setAnswered] = useState(0)
     const [isFinish, setIsFinish] = useState(false)
     const [corrects, setCorrects] = useState(0)
+  const { t } = useTranslation("carritoQuestionsComponent")
 
     function selectRandomElements(arr, num) {
         let selectedElements = [];
@@ -110,8 +113,8 @@ const CarritoQuestionsComponent = ({data,setPhase,setScore})=>{
         <div className={styles.gameContainer}>
             <Pista corrects={corrects} />
             <GridCards questions={questions} setAnswers={setAnswers} isFinish={isFinish}/>
-            {answered == questions.length && !isFinish?<button onClick={handleResponder}>RESPONDER</button>:<></>}
-            {isFinish?<button onClick={()=>{setPhase("end")}}>SIGUIENTE</button>:<></>}
+            {answered == questions.length && !isFinish?<button onClick={handleResponder}>{t("answer-button")}</button>:<></>}
+            {isFinish?<button onClick={()=>{setPhase("end")}}>{t("next-button")}</button>:<></>}
         </div>
     )
 

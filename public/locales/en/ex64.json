@@ -1,0 +1,39 @@
+{
+  "questions": [
+    {"id": 1, "question": "NOT (1) = 0", "value": true},
+    {"id": 2, "question": "S = 0,  NOT (S) = 0", "value": false},
+    {"id": 3, "question": "S = 1, J = 1, NOT (J) = 0", "value": true},
+    {"id": 4, "question": "X = 4, Y = 2, NOT (Y+X) = 6", "value": false},
+    {"id": 5, "question": "X = 6, Y = 3, NOT (Y+X) = 1", "value": true},
+    {"id": 6, "question": "X = 3, Y = 2, NOT (X-Y) = 1", "value": false},
+    {"id": 7, "question": "X = 1, Y = 2, NOT (X+Y) = 5", "value": true},
+    {"id": 8, "question": "X = 1, Y = 2, NOT (X+Y) = 3", "value": false},
+    {"id": 9, "question": "X=BLUE, Y=YELLOW, NOT(X+Y)=RED", "value": true},
+    {"id": 10, "question": "X=BLUE, Y=YELLOW, NOT(X+Y)=GREEN", "value": false},
+    {"id": 11, "question": "X=YELLOW, Y=RED, NOT(X+Y)=BLUE", "value": true},
+    {"id": 12, "question": "X=YELLOW, Y=RED, NOT(X+Y)=ORANGE", "value": false},
+    {"id": 13, "question": "X=BLUE, Y=RED, NOT(X+Y)=BLUE", "value": true},
+    {"id": 14, "question": "X=WHITE, Y=BLACK, NOT(X+Y)=GRAY", "value": false},
+    {"id": 15, "question": "X = 0, Y = 1, NOT (X) = 1", "value": true},
+    {"id": 16, "question": "X = 0, Y = 1, NOT (X) = 0", "value": false},
+    {"id": 17, "question": "X=WHITE, Y=BLACK, NOT(X+Y)=WHITE", "value": true},
+    {"id": 18, "question": "X=LILAC, Y=BLUE, NOT(X+Y)=YELLOW", "value": false},
+    {"id": 19, "question": "X = 4, Y = 2, NOT (Y+X) = 1", "value": true},
+    {"id": 20, "question": "X=RED, Y=BLUE, NOT(X+Y)=GREEN", "value": false},
+    {"id": 21, "question": "X = 0, Y  =1, NOT (X) = 1", "value": true},
+    {"id": 22, "question": "X=RED, Y=BLUE, NOT(X+Y)=VIOLET", "value": false}
+  ],
+  "initMessages": [
+    "Operators are symbols that allow you to combine different terms with each other and establish logical relationships between them. The NOT operator indicates negation.",
+    "Answer whether the statements you will see below are true or false.",
+    "For each correct answer, the vehicle will advance one space. You must get it to the finish line."
+  ],
+  "threshold": {
+    "max": 4,
+    "min": 0,
+    "perfect": 4
+  },
+  "color": "#1B6893",
+  "name": "NOT Operator",
+  "id": 64
+}

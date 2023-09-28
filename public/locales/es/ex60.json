@@ -1,4 +1,7 @@
 {
+  "retry-button": "REINICIAR",
+  "finish-button": "FINALIZAR",
+  "start-button": "INICIAR",
     "isSingle": "false",
     "columns": {
         "column-1": {

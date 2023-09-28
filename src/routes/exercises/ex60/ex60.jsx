@@ -1,11 +1,12 @@
-import React from 'react'
+import { useState, useLayoutEffect, useEffect } from 'react'
 import NoScoringComponent from '../components/noScoringComponent'
 import Animation from '../components/animation'
 import DndComponent2 from '../components/dndComponent2'
-import data from './data.json'
+import useData from "../../../hooks/useData"
 import '../../../styles/ex12.css'
 
 export default function Ex60 () {
+  const { data } = useData("ex60")
   const shufflingData = () => {
     const generateNewObject = (originalObject) => {
       const newObject = {}
@@ -40,13 +41,17 @@ export default function Ex60 () {
     return shuffledData
   }
   // eslint-disable-next-line no-unused-vars
-  const [myData, setMyData] = React.useState(shufflingData())
-  const [start, setStart] = React.useState(false)
-  const [reset, setReset] = React.useState(false)
+  const [myData, setMyData] = useState(shufflingData())
+  const [start, setStart] = useState(false)
+  const [reset, setReset] = useState(false)
 
-  const [optionsData, setOptionsData] = React.useState({})
+  const [optionsData, setOptionsData] = useState({})
 
-  React.useLayoutEffect(() => {
+  useEffect(() => {
+    setMyData(shufflingData())
+  }, [data])
+
+  useLayoutEffect(() => {
     if (reset) {
       setReset(false)
     }
@@ -134,10 +139,10 @@ export default function Ex60 () {
             <Animation animationSequence={optionsData} path={myData.path} functionToAnimate={animate} simple={true} start={start} />
 
             <div className="buttons-field">
-              {optionsData.length > 0 && <button onClick={handleReset} className="restart">REINTENTAR</button>}
+              {optionsData.length > 0 && <button onClick={handleReset} className="restart">{data["retry-button"]}</button>}
               {start
-                ? <button onClick={() => { handleFinish(setPhase) }}>FINALIZAR</button>
-                : <button onClick={handleClick} disabled={!optionsData.length}>INICIAR</button>
+                ? <button onClick={() => { handleFinish(setPhase) }}>{data["finish-button"]}</button>
+                : <button onClick={handleClick} disabled={!optionsData.length}>{data["start-button"]}</button>
               }
             </div>
           </div>
