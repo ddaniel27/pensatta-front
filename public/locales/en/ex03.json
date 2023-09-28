@@ -1,0 +1,274 @@
+{
+    "options":[
+        {
+            "question":"Select two characteristics of a computer operating system.",
+            "answers":[
+                {
+                    "text":"Convenience",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Efficiency",
+                    "isCorrect":true
+                },
+                {
+                    "text":"hardware management",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Endurance",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Coexistence",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Defragment",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Format",
+                    "isCorrect":false
+                }
+            ],
+            "multiple":true,
+            "maxOptions":2
+        },
+        {
+            "question":"Select a computer operating system.",
+            "answers":[
+                {
+                    "text": "Ubuntu",
+                    "isCorrect": true
+                },
+                {
+                    "text":"MacOS",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Windows",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Lime",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Cookies",
+                    "isCorrect":false
+                }
+            ]
+        },
+        {
+            "question":"Select a mobile operating system.",
+            "answers":[
+                {
+                    "text": "Andriod",
+                    "isCorrect": true
+                },
+                {
+                    "text":"IOS",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Windows Mobile",
+                    "isCorrect":true
+                },
+                {
+                    "text":"ARPANET",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Cookies",
+                    "isCorrect":false
+                }
+            ]
+        },
+        {
+            "question":"Select two components of a mobile operating system.",
+            "answers":[
+                {
+                    "text":"Kernel",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Middleware",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Apple",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Transistors",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Resistors",
+                    "isCorrect":false
+                },
+                {
+                    "text":"HDD",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Diode",
+                    "isCorrect":false
+                }
+            ],
+            "multiple":true,
+            "maxOptions":2
+        },
+        {
+            "question":"Select two applications that could have an operating system.",
+            "answers":[
+                {
+                    "text":"Complete calculation tasks",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Represent three-dimensional graphic information",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Surf the web",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Discover new drugs",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Creation of artistic works",
+                    "isCorrect":false
+                }
+            ],
+            "multiple":true,
+            "maxOptions":2
+        },
+        {
+            "question":"Mark two possible applications of the use of an algorithm",
+            "answers":[
+                {
+                    "text":"Cook",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Draw",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Program a device",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Do an exercise routine",
+                    "isCorrect":true
+                }
+            ],
+            "multiple":true,
+            "maxOptions":2
+        },
+        {
+            "question":"Check the options that you consider correspond to the possibility of representing an algorithm",
+            "answers":[
+                {
+                    "text":"Venn diagram",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Flowchart",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Code representation",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Free-Body diagram",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Block representation",
+                    "isCorrect":true
+                }
+            ],
+            "multiple":true,
+            "maxOptions":3
+        },
+        {
+            "question":"Is it possible to formulate an algorithm to solve a mathematical problem?",
+            "answers":[
+                {
+                    "text":"True",
+                    "isCorrect":true
+                },
+                {
+                    "text":"False",
+                    "isCorrect":false
+                }
+            ]
+        },
+        {
+            "question":"Check at least 3 representations of storage units",
+            "answers":[
+                {
+                    "text":"KB",
+                    "isCorrect":true
+                },
+                {
+                    "text":"GB",
+                    "isCorrect":true
+                },
+                {
+                    "text":"TB",
+                    "isCorrect":true
+                },
+                {
+                    "text":"HZ",
+                    "isCorrect":false
+                }
+            ],
+            "multiple":true,
+            "maxOptions":3
+        },
+        {
+            "question":"What is the minimum unit of storage in a computer system?",
+            "answers":[
+                {
+                    "text":"Bit",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Byte",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Kilobyte",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Megabyte",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Gigabyte",
+                    "isCorrect":false
+                }
+            ]
+        }
+    ],
+    "initMessages":[
+        "Spin the wheel to get a question.",
+        "Select one of the possible answers."
+    ],
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 1
+    },
+    "color": "#9968A6",
+    "name":"Characteristics of an operating system",
+    "id": 3
+}

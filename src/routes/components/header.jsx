@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState, useContext } from 'react'
 import MenuHam from './menuHam'
 import { useTranslation } from 'react-i18next'
 import ActivityContext from '../../context/ActivityContext'
@@ -6,8 +6,8 @@ import '../../styles/header.css'
 
 export default function Header({ headerText }){
 
-    const { setActivity, setProfile } = React.useContext(ActivityContext)
-    const [menuHam, setMenuHam] = React.useState(false)
+    const { setActivity, setProfile } = useContext(ActivityContext)
+    const [menuHam, setMenuHam] = useState(false)
     const { i18n } = useTranslation()
 
     const toggleMenuHam = () => {

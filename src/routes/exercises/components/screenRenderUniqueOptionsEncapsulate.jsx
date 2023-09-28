@@ -1,22 +1,24 @@
-import React from 'react'
+import { useState, useEffect, useRef } from 'react'
+import { useTranslation } from 'react-i18next'
 import UniqueOption from './uniqueOption'
 import MultipleOption from './multipleOption'
 import '../../../styles/screenRenderUniqueOptionsEncapsulate.css'
 import '../../../styles/screenRenderUniqueOption.css'
 
 export default function ScreenRenderUniqueOptionsEncapsulate ({ data, hasImages = false, returnScore, isFinished, center = false, hasBackground = false, smallImg = false }) {
-  const [currentOption, setCurrentOption] = React.useState({})
-  const [optionsSet, setOptionsSet] = React.useState([])
-  const [score, setScore] = React.useState(false)
-  const [gobalScore, setGlobalScore] = React.useState(0)
-  const [disabled, setDisabled] = React.useState(true)
-  const [options, setOptions] = React.useState(data.options)
-  const [nextQuestion, setNextQuestion] = React.useState(false)
-  const [loadedImg, setLoadedImg] = React.useState(false)
-  const [prevPath, setPrevPath] = React.useState(false)
-  const didMount = React.useRef(false)
+  const [currentOption, setCurrentOption] = useState({})
+  const [optionsSet, setOptionsSet] = useState([])
+  const [score, setScore] = useState(false)
+  const [gobalScore, setGlobalScore] = useState(0)
+  const [disabled, setDisabled] = useState(true)
+  const [options, setOptions] = useState(data.options)
+  const [nextQuestion, setNextQuestion] = useState(false)
+  const [loadedImg, setLoadedImg] = useState(false)
+  const [prevPath, setPrevPath] = useState(false)
+  const { t } = useTranslation("screenRenderUniqueOptionsEncapsulate")
+  const didMount = useRef(false)
 
-  React.useEffect(() => {
+  useEffect(() => {
     setOptions(data.options)
     setCurrentOption(getRandomOption())
     return () => {
@@ -25,7 +27,7 @@ export default function ScreenRenderUniqueOptionsEncapsulate ({ data, hasImages 
     }
   }, [])
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (!didMount.current) {
       didMount.current = true
       return
@@ -85,8 +87,8 @@ export default function ScreenRenderUniqueOptionsEncapsulate ({ data, hasImages 
       {currentOption.multiple
         ? <MultipleOption options={optionsSet} isCorrectOption={setScore} enableButton={setDisabled} showCorrect={nextQuestion} title={currentOption.question} maxOptions={currentOption.maxOptions} />
         : <UniqueOption options={optionsSet} isCorrectOption={setScore} enableButton={setDisabled} showCorrect={nextQuestion} title={currentOption.question} />}
-      {!nextQuestion && <button className='button-play' onClick={() => { setNextQuestion(true) }} disabled={disabled}>RESPONDER</button>}
-      {nextQuestion && <button className='button-play' onClick={handleClick}>SIGUIENTE</button>}
+      {!nextQuestion && <button className='button-play' onClick={() => { setNextQuestion(true) }} disabled={disabled}>{t("answer-button")}</button>}
+      {nextQuestion && <button className='button-play' onClick={handleClick}>{t("next-button")}</button>}
     </div>
   )
 }

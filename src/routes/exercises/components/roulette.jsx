@@ -1,12 +1,15 @@
-import React from "react"
+import { useState, useRef, useEffect } from "react"
+import { useTranslation } from 'react-i18next'
 import "../../../styles/roulette.css"
 
 export default function Roulette({data, setContinue}){
-    const [rotate, setRotate] = React.useState(0)
-    const [display, setDisplay] = React.useState(true)
-    const didMount = React.useRef(false)
+    const [rotate, setRotate] = useState(0)
+    const [display, setDisplay] = useState(true)
+    const didMount = useRef(false)
 
-    React.useEffect(()=>{
+  const { t } = useTranslation("roulette")
+
+    useEffect(()=>{
         if ( !didMount.current ) {
             didMount.current = true;
             return;
@@ -16,7 +19,6 @@ export default function Roulette({data, setContinue}){
                 setContinue(true)
             }
         }, (data.time * 1000) + 100 )
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[rotate])
 
 
@@ -89,7 +91,7 @@ export default function Roulette({data, setContinue}){
             </filter>
             </defs>
             </svg>
-            <span style={{display:`${display?"flex":"none"}`}} onClick={handleClick}>GIRAR</span>
+            <span style={{display:`${display?"flex":"none"}`}} onClick={handleClick}>{t("button")}</span>
         </div>
     )
 

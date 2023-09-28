@@ -1,33 +1,35 @@
-import React from 'react'
+import { useState, useEffect, useContext } from 'react'
+import { useTranslation } from 'react-i18next'
 import Information from '../../components/information'
 import ActivityContext from '../../../context/ActivityContext'
 import { postExercise } from '../../../requests'
 import BackButtonInGame from './backButtonIngame'
 
 export default function ScoringComponent ({ initMessages = ['Inicia dando click al boton'], title = 'Actividad', children, background = '#E0E0E0', threshold = { perfect: 1, max: 1, min: 1 }, exerciseId = 0 }) {
-  const { setActivity, setTitle, setBackground } = React.useContext(ActivityContext)
-  const [score, setScore] = React.useState(0)
-  const [phase, setPhase] = React.useState('init')
-  const [resultMessage, setResultMessage] = React.useState(['Buen trabajo'])
-  const [timeMeasure, setTimeMeasure] = React.useState(0)
-  const [disableButton, setDisableButton] = React.useState(true)
+  const { t } = useTranslation("scoringComponent")
+  const { setActivity, setTitle, setBackground } = useContext(ActivityContext)
+  const [score, setScore] = useState(0)
+  const [phase, setPhase] = useState('init')
+  const [resultMessage, setResultMessage] = useState(['Buen trabajo'])
+  const [timeMeasure, setTimeMeasure] = useState(0)
+  const [disableButton, setDisableButton] = useState(true)
 
-  React.useEffect(() => {
+  useEffect(() => {
     setTitle(title)
     setBackground(background)
   }, [setTitle, title, setBackground, background])
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (score >= threshold.max) {
-      setResultMessage(['¡Felicidades! Has terminado el ejercicio.', `Tu puntuación es ${score} de ${threshold.perfect} puntos.`])
+      setResultMessage([t("result-excelent"), `${t("result-1")}${score}${t("result-2")}${threshold.perfect}${t("result-3")}`])
     } else if (score < threshold.max && score > threshold.min) {
-      setResultMessage(['¡Vaya! Has terminado el ejercicio.', `Tu puntuación es ${score} de ${threshold.perfect} puntos.`])
+      setResultMessage([t("result-good"), `${t("result-1")}${score}${t("result-2")}${threshold.perfect}${t("result-3")}`])
     } else {
-      setResultMessage(['¡Mejor suerte para la proxima!', `Tu puntuación es ${score} de ${threshold.perfect} puntos.`])
+      setResultMessage([t("result-bad"), `${t("result-1")}${score}${t("result-2")}${threshold.perfect}${t("result-3")}`])
     }
   }, [score, threshold.max, threshold.min, threshold.perfect])
 
-  React.useEffect(() => {
+  useEffect(() => {
     function postScore () {
       if (phase === 'end') {
         const data = {
@@ -58,7 +60,7 @@ export default function ScoringComponent ({ initMessages = ['Inicia dando click 
     <>
 
       {
-        phase === 'init' && <><Information messages={initMessages} /> <button onClick={handleStart}>INICIAR</button></>
+        phase === 'init' && <><Information messages={initMessages} /> <button onClick={handleStart}>{t("button-init")}</button></>
       }
 
       {
@@ -68,7 +70,7 @@ export default function ScoringComponent ({ initMessages = ['Inicia dando click 
         phase === 'activity' && <BackButtonInGame onClick={() => { setPhase('init') }} />
       }
       {
-        phase === 'end' && <><Information messages={resultMessage} /> <button onClick={() => { setActivity(true) }} disabled={disableButton}>FINALIZAR</button></>
+        phase === 'end' && <><Information messages={resultMessage} /> <button onClick={() => { setActivity(true) }} disabled={disableButton}>{t("button-end")}</button></>
       }
     </>
   )

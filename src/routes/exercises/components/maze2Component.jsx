@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-// eslint-disable-next-line
+import { useTranslation } from 'react-i18next'
 import zorrito from "/images/exercises/09/zorrito.svg"
 import styles from '../../../styles/maze2Component.module.css'
 import laberintos from '../ex09/laberintos.json'
@@ -44,6 +44,7 @@ const Hearts = ({ vidas, style }) => {
 }
 
 const Maze2Component = ({ lab, setPhase, setScore }) => {
+  const { t } = useTranslation("maze2Component")
   const enemiX = starts[`laberinto${lab}`].startPosition.x
   const enemiY = starts[`laberinto${lab}`].startPosition.y
   const maze2Styles = {
@@ -435,7 +436,7 @@ const Maze2Component = ({ lab, setPhase, setScore }) => {
       </div>
       <div className={styles.infoContainer}>
         <div className={styles.intentosContainer}>
-                    Intentos:
+    {t("tries")}
           <div className={styles.corazones}>
             <Hearts vidas={vidas} style={maze2Styles.corazon}/>
           </div>
@@ -469,7 +470,7 @@ const Maze2Component = ({ lab, setPhase, setScore }) => {
               </div>
             </div>
             <div className={styles.infoText}>
-                            Muévete oprimiendo estos botones o presionando las teclas de dirección de tu teclado.
+    {t("info-text")}
             </div>
 
           </div>
@@ -479,7 +480,7 @@ const Maze2Component = ({ lab, setPhase, setScore }) => {
                 setPhase('end')
                 setScore(vidas)
               }}
-              className={styles.btnNext}>SIGUIENTE</button>
+              className={styles.btnNext}>{t("next-button")}</button>
             </div>
             : <></>}
         </div>

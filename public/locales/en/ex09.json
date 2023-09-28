@@ -1,0 +1,21 @@
+{   
+    "informative_text":[
+        "Move by pressing these buttons or by pressing the arrow keys on your keyboard."
+    ],
+    "options": [
+
+    ],
+    "initMessages":[
+        "Help me get through the maze without losing my data!",
+        "Guide me to the exit avoiding enemies that can steal my information."
+    ],
+    "threshold":{
+        "max" : 3,
+        "min" : 0,
+        "perfect": 3
+    },
+    "path": "09",
+    "color": "#53745B",
+    "name":"Cross the maze",
+    "id": 9
+}

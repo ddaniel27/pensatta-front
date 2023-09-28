@@ -1,4 +1,4 @@
-import React from "react"
+import { useState, useEffect } from 'react'
 import useData from "../../../hooks/useData"
 import ScoringComponent from "../components/scoringComponent"
 import ScreenRenderUniqueOptionsEncapsulate from "../components/screenRenderUniqueOptionsEncapsulate"
@@ -6,31 +6,31 @@ import ScreenRenderUniqueOptionsEncapsulate from "../components/screenRenderUniq
 export default function Ex01(){
     const { data } = useData("ex01")
 
-    const [ myData, setMyData ] = React.useState({
+    const [ myData, setMyData ] = useState({
         ...data,
         options: data.options.sort(() => 0.5 - Math.random()).slice(0, data.threshold.perfect)
     })
 
-    const [currentOption, setCurrentOption] = React.useState({})
-    const [counter, setCounter] = React.useState({})
-    const [nextQuestion, setNextQuestion] = React.useState(false)
-    const [nextPhase, setNextPhase] = React.useState(false)
+    const [currentOption, setCurrentOption] = useState({})
+    const [counter, setCounter] = useState({})
+    const [nextQuestion, setNextQuestion] = useState(false)
+    const [nextPhase, setNextPhase] = useState(false)
 
 
-    React.useEffect(() => {
+    useEffect(() => {
       setMyData({
         ...data,
         options: data.options.sort(() => 0.5 - Math.random()).slice(0, data.threshold.perfect)
       })
     }, [data])
 
-    React.useEffect(()=>{
+    useEffect(()=>{
         if(myData){
             setCounter(Object.fromEntries(myData.informative_text.map(item=>[item.id,0])))
         }
     },[myData])
 
-    React.useEffect(()=>{
+    useEffect(()=>{
         setNextQuestion(Object.values(counter).every(item => item >= 1))
     },[counter])
 
