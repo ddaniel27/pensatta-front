@@ -1,4 +1,4 @@
-import React from "react"
+import { useState, useEffect } from "react"
 
 import Battery from "./battery"
 import CircuitCard from "./circuitCard"
@@ -7,10 +7,10 @@ import CircuitDisplay from "./circuitDisplay"
 import '../../../styles/circuit.css'
 export default function Circuit({book, left, right, showValue=false, isCorrect}){
 
-    const [site, setSite] = React.useState(false)
-    const [author, setAuthor] = React.useState(false)
+    const [site, setSite] = useState(false)
+    const [author, setAuthor] = useState(false)
 
-    React.useEffect(()=>{
+    useEffect(()=>{
         if(isCorrect){
             isCorrect((site && author))
         }

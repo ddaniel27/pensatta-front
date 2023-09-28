@@ -1,18 +1,24 @@
-import React from "react"
+import { useState, useEffect } from "react"
 import Circuit from "../components/circuit"
 import ScoringComponent from "../components/scoringComponent"
-
-import data from "./data.json"
+import useData from "../../../hooks/useData"
 import "../../../styles/ex44.css"
 
 export default function Ex44(){
-    const [ myData, setMyData ] = React.useState({
-        ...data,
-        options: data.options.sort(() => 0.5 - Math.random()).slice(0, data.threshold.perfect)
+  const { data } = useData("ex44")
+  const [ myData, setMyData ] = useState({
+    ...data,
+    options: data.options.sort(() => 0.5 - Math.random()).slice(0, data.threshold.perfect)
+  })
+  useEffect(() => {
+    setMyData({
+      ...data,
+      options: data.options.sort(() => 0.5 - Math.random()).slice(0, data.threshold.perfect)
     })
+  }, [data])
 
-    const [ nextQuestion, setNextQuestion ] = React.useState(false)
-    const [ value, setValue ] = React.useState(false)
+    const [ nextQuestion, setNextQuestion ] = useState(false)
+    const [ value, setValue ] = useState(false)
 
     const handleClick = (cb1, cb2) => {
         cb1( value ? 1 : 0 )
@@ -25,8 +31,8 @@ export default function Ex44(){
                 (setScore, setPhase) => (
                     <div className="ex44">
                         <Circuit book={myData.options[0].book} left={myData.options[0].left} right={myData.options[0].right} showValue={nextQuestion} isCorrect={setValue} />
-                        {!nextQuestion && <button onClick={()=>{setNextQuestion(true)}}>RESPONDER</button>}
-                        {nextQuestion && <button onClick={()=>{handleClick(setScore, setPhase)}}>FINALIZAR</button>}
+                        {!nextQuestion && <button onClick={()=>{setNextQuestion(true)}}>{data["answer-button"]}</button>}
+                        {nextQuestion && <button onClick={()=>{handleClick(setScore, setPhase)}}>{data["finish-button"]}</button>}
                     </div>
                 )
             }

@@ -1,27 +1,35 @@
-import React from 'react'
+import { useContext, useState, useEffect } from 'react'
 import ActivityContext from '../../../context/ActivityContext'
 import UniqueOption from '../components/uniqueOption'
 import NoScoringComponent from '../components/noScoringComponent'
 import blackboxSrc from '../../../../public/images/exercises/40/blackbox.svg'
-import data from './data.json'
+import useData from "../../../hooks/useData"
 import '../../../styles/ex40.css'
 
 export default function Ex40 () {
-  const { setActivity, setTitle, setBackground } = React.useContext(ActivityContext)
-  const [inputSel, setInputSel] = React.useState([])
-  const [operatorSel, setOperatorSel] = React.useState(null)
-  const [result, setResult] = React.useState(null)
-  const [myInputs] = React.useState({
+  const { setActivity, setTitle, setBackground } = useContext(ActivityContext)
+  const [inputSel, setInputSel] = useState([])
+  const [operatorSel, setOperatorSel] = useState(null)
+  const [result, setResult] = useState(null)
+  const { data } = useData("ex40")
+
+  const [myInputs, setMyInputs] = useState({
     options: data.inputs
   })
-  const [myOperators] = React.useState({
+  const [myOperators, setMyOperators] = useState({
     options: data.operators
   })
-  const [myData] = React.useState({
+  const [myData, setMyData] = useState({
     ...data
   })
 
-  React.useEffect(() => {
+  useEffect(() => {
+    setMyData({ ...data })
+    setMyOperators({ options: data.operators })
+    setMyInputs({ options: data.inputs })
+  }, [data])
+
+  useEffect(() => {
     setTitle(data.name)
     setBackground(data.color)
     return () => {
@@ -29,7 +37,7 @@ export default function Ex40 () {
     }
   }, [setActivity, setBackground, setTitle])
 
-  React.useEffect(() => {
+  useEffect(() => {
     setResult(handleOperation(inputSel, operatorSel))
   }, [inputSel, operatorSel])
 
@@ -76,7 +84,7 @@ export default function Ex40 () {
                     <div className='message'><p>{result}</p></div>
                   </div>
                 </div>
-                <button onClick={() => setPhase('end')}>SIGUIENTE</button>
+                <button onClick={() => setPhase('end')}>{data["next-button"]}</button>
               </>
             )
         }

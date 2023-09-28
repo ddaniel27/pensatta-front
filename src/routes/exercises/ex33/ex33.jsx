@@ -1,18 +1,23 @@
-import React from "react"
+import { useState, useEffect } from "react"
 import PixelPaint from "../components/pixelPaint"
 import ScoringComponent from "../components/scoringComponent"
-import data from "./data.json"
+import useData from "../../../hooks/useData"
 import "../../../styles/ex33.css"
 
 export default function ExTest(){
-
-
-    const [ myData, setMyData ] = React.useState({
+  const { data } = useData("ex33")
+    const [ myData, setMyData ] = useState({
         ...data,
         drawMatrix: data.drawMatrix.sort(() => 0.5 - Math.random()).slice(0, 1)[0]
 
     })
-    const [ currMatrix, setCurrMatrix ] = React.useState([])
+  useEffect(() => {
+    setMyData({
+      ...data,
+        drawMatrix: data.drawMatrix.sort(() => 0.5 - Math.random()).slice(0, 1)[0]
+    })
+  }, [data])
+    const [ currMatrix, setCurrMatrix ] = useState([])
 
     const handleClick = (cb1, cb2) => {
         const value = currMatrix.every((row,i)=> row.every((item,j) => item === myData.drawMatrix[j][i])) ? 1 : 0
@@ -61,7 +66,7 @@ export default function ExTest(){
                 setCurrMatrix={setCurrMatrix}
                 />
 
-                <button onClick={()=>{handleClick(setScore, setPhase)}}>FINALIZAR</button>
+                <button onClick={()=>{handleClick(setScore, setPhase)}}>{data["finish-button"]}</button>
 
             </div>
         )}

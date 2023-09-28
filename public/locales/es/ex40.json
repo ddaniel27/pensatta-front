@@ -1,4 +1,5 @@
 {
+  "next-button": "SIGUIENTE",
     "inputs":[
         {"text":"1 y 3", "isCorrect":[1,3]},
         {"text":"A y B", "isCorrect":["A","B"]},

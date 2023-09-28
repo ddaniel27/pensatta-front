@@ -1,11 +1,13 @@
+import { useTranslation } from 'react-i18next'
 import '../../../styles/battery.css'
 
-export default function Battery({text = "Novela escrita"}){
+export default function Battery(){
+  const { t } = useTranslation("battery")
 
     return(
         <div className="battery">
             <div className="battery-text">
-                <p>{text}</p>
+                <p>{t("text")}</p>
             </div>
         </div>
     )

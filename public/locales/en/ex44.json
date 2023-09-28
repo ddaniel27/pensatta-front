@@ -1,126 +1,128 @@
 {
+  "answer-button": "ANSWER",
+  "finish-button": "FINISH",
     "options":[
         {
             "book": "Harry Potter",
             "left": [
                 {
                     "correct": true,
-                    "text": "en Inglaterra..."
+                    "text": "in England..."
                 },
                 {
                     "correct": false,
-                    "text": "en Francia..."
+                    "text": "in France..."
                 },
                 {
                     "correct": false,
-                    "text": "en Alemania..."
+                    "text": "in Germany..."
                 }
             ],
             "right":[
                 {
                     "correct": false,
-                    "text": "por J.R.R. Tolkien."
+                    "text": "by J.R.R. Tolkien."
                 },
                 {
                     "correct": true,
-                    "text": "por J.K. Rowling."
+                    "text": "by J.K. Rowling."
                 },
                 {
                     "correct": false,
-                    "text": "por Cornelia Funke."
+                    "text": "by Cornelia Funke."
                 }
             ]
         },
         {
-            "book": "La metamorfosis",
+            "book": "The Metamorphosis",
             "left": [
                 {
                     "correct": false,
-                    "text": "en Canadá..."
+                    "text": "in Canada..."
                 },
                 {
                     "correct": true,
-                    "text": "en Alemania..."
+                    "text": "in Germany..."
                 },
                 {
                     "correct": false,
-                    "text": "en Rusia..."
+                    "text": "in Russia..."
                 }
             ],
             "right":[
                 {
                     "correct": true,
-                    "text": "por Faranz Kafka."
+                    "text": "by Franz Kafka."
                 },
                 {
                     "correct": false,
-                    "text": "por J.K. Rowling."
+                    "text": "by J.K. Rowling."
                 },
                 {
                     "correct": false,
-                    "text": "por Gorge Orwell."
+                    "text": "by George Orwell."
                 }
             ]
         },
         {
-            "book": "Cien años de soledad",
+            "book": "One Hundred Years of Solitude",
             "left": [
                 {
                     "correct": false,
-                    "text": "en México..."
+                    "text": "in Mexico..."
                 },
                 {
                     "correct": false,
-                    "text": "en Argentina..."
+                    "text": "in Argentina..."
                 },
                 {
                     "correct": true,
-                    "text": "en Colombia..."
+                    "text": "in Colombia..."
                 }
             ],
             "right":[
                 {
                     "correct": false,
-                    "text": "por Mario Vargas Llosa."
+                    "text": "by Mario Vargas Llosa."
                 },
                 {
                     "correct": true,
-                    "text": "por Gabriel García Márquez."
+                    "text": "by Gabriel García Márquez."
                 },
                 {
                     "correct": false,
-                    "text": "por Isabel Allende."
+                    "text": "by Isabel Allende."
                 }
             ]
         },
         {
-            "book": "Viaje al centro de la Tierra",
+            "book": "Journey to the Center of the Earth",
             "left": [
                 {
                     "correct": true,
-                    "text": "en Francia..."
+                    "text": "in France..."
                 },
                 {
                     "correct": false,
-                    "text": "en Italia..."
+                    "text": "in Italy..."
                 },
                 {
                     "correct": false,
-                    "text": "en Grecia..."
+                    "text": "in Greece..."
                 }
             ],
             "right":[
                 {
                     "correct": false,
-                    "text": "por William Shakespeare."
+                    "text": "by William Shakespeare."
                 },
                 {
                     "correct": false,
-                    "text": "por Charles Dickens."
+                    "text": "by Charles Dickens."
                 },
                 {
                     "correct": true,
-                    "text": "por Julio Verne."
+                    "text": "by Jules Verne."
                 }
             ]
         },
@@ -129,191 +131,191 @@
             "left": [
                 {
                     "correct": false,
-                    "text": "en Egipto..."
+                    "text": "in Egypt..."
                 },
                 {
                     "correct": true,
-                    "text": "en Inglaterra..."
+                    "text": "in England..."
                 },
                 {
                     "correct": false,
-                    "text": "en Japón..."
+                    "text": "in Japan..."
                 }
             ],
             "right":[
                 {
                     "correct": true,
-                    "text": "por Mary Shelley."
+                    "text": "by Mary Shelley."
                 },
                 {
                     "correct": false,
-                    "text": "por Franz Kafka."
+                    "text": "by Franz Kafka."
                 },
                 {
                     "correct": false,
-                    "text": "por Aldous Huxley."
+                    "text": "by Aldous Huxley."
                 }
             ]
         },
         {
-            "book": "Canción de navidad",
+            "book": "A Christmas Carol",
             "left": [
                 {
                     "correct": false,
-                    "text": "en Canadá..."
+                    "text": "in Canada..."
                 },
                 {
                     "correct": false,
-                    "text": "en Francia..."
+                    "text": "in France..."
                 },
                 {
                     "correct": true,
-                    "text": "en Inglaterra..."
+                    "text": "in England..."
                 }
             ],
             "right":[
                 {
                     "correct": false,
-                    "text": "por J.R.R. Tolkien."
+                    "text": "by J.R.R. Tolkien."
                 },
                 {
                     "correct": true,
-                    "text": "Charles Dickens."
+                    "text": "by Charles Dickens."
                 },
                 {
                     "correct": false,
-                    "text": "por Victor Hugo."
+                    "text": "by Victor Hugo."
                 }
             ]
         },
         {
-            "book": "Rebelión en la granja",
+            "book": "Animal Farm",
             "left": [
                 {
                     "correct": true,
-                    "text": "en Inglaterra..."
+                    "text": "in England..."
                 },
                 {
                     "correct": false,
-                    "text": "en Francia..."
+                    "text": "in France..."
                 },
                 {
                     "correct": false,
-                    "text": "en Alemania..."
+                    "text": "in Germany..."
                 }
             ],
             "right":[
                 {
                     "correct": false,
-                    "text": "por J.R.R. Tolkien."
+                    "text": "by J.R.R. Tolkien."
                 },
                 {
                     "correct": false,
-                    "text": "por J.K. Rowling."
+                    "text": "by J.K. Rowling."
                 },
                 {
                     "correct": true,
-                    "text": "por George Orwell."
+                    "text": "by George Orwell."
                 }
             ]
         },
         {
-            "book": "El señor de los anillos",
+            "book": "The Lord of the Rings",
             "left": [
                 {
                     "correct": true,
-                    "text": "en Inglaterra..."
+                    "text": "in England..."
                 },
                 {
                     "correct": false,
-                    "text": "en Australia..."
+                    "text": "in Australia..."
                 },
                 {
                     "correct": false,
-                    "text": "en Alemania..."
+                    "text": "in Germany..."
                 }
             ],
             "right":[
                 {
                     "correct": true,
-                    "text": "por J.R.R. Tolkien."
+                    "text": "by J.R.R. Tolkien."
                 },
                 {
                     "correct": false,
-                    "text": "por J.K. Rowling."
+                    "text": "by J.K. Rowling."
                 },
                 {
                     "correct": false,
-                    "text": "por Cornelia Funke."
+                    "text": "by Cornelia Funke."
                 }
             ]
         },
         {
-            "book": "El retrato de Dorian Gray",
+            "book": "The Picture of Dorian Gray",
             "left": [
                 {
                     "correct": false,
-                    "text": "en Francia..."
+                    "text": "in France..."
                 },
                 {
                     "correct": true,
-                    "text": "en Inglaterra..."
+                    "text": "in England..."
                 },
                 {
                     "correct": false,
-                    "text": "en India..."
+                    "text": "in India..."
                 }
             ],
             "right":[
                 {
                     "correct": false,
-                    "text": "por J.R.R. Tolkien."
+                    "text": "by J.R.R. Tolkien."
                 },
                 {
                     "correct": true,
-                    "text": "por Oscar Wilde."
+                    "text": "by Oscar Wilde."
                 },
                 {
                     "correct": false,
-                    "text": "por Aldous Huxley."
+                    "text": "by Aldous Huxley."
                 }
             ]
         },
         {
-            "book": "Don Quijote de La Mancha",
+            "book": "Don Quixote of La Mancha",
             "left": [
                 {
                     "correct": false,
-                    "text": "en México..."
+                    "text": "in Mexico..."
                 },
                 {
                     "correct": false,
-                    "text": "en Chile..."
+                    "text": "in Chile..."
                 },
                 {
                     "correct": true,
-                    "text": "en España..."
+                    "text": "in Spain..."
                 }
             ],
             "right":[
                 {
                     "correct": true,
-                    "text": "por Miguel de Cervantes Saavedra."
+                    "text": "by Miguel de Cervantes Saavedra."
                 },
                 {
                     "correct": false,
-                    "text": "por Franz Kafka."
+                    "text": "by Franz Kafka."
                 },
                 {
                     "correct": false,
-                    "text": "por Aldous Huxley."
+                    "text": "by Aldous Huxley."
                 }
             ]
         }
     ],
     "initMessages":[
-        "A continuación, encontrarás la simulación de un circuito que podrás encender activando los elementos correctos.",
-        "Selecciona los cuadros indicados para formar una frase verdadera."
+        "Next, you'll find the simulation of a circuit that you can turn on by activating the correct elements.",
+        "Select the indicated boxes to form a true statement."
     ],
     "threshold": {
         "max": 1,
@@ -322,6 +324,6 @@
     },
     "path": "44",
     "color": "#53745B",
-    "name": "Circuito literario",
+    "name": "Literary Circuit",
     "id": 44
 }
