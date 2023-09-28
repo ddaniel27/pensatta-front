@@ -1,0 +1,166 @@
+{
+  "retry-button": "RETRY",
+  "start-button": "START",
+  "finish-button": "FINISH",
+    "isSingle": "false",
+    "columns": {
+        "column-1": {
+            "id": "column-1",
+            "title": "Blocks you can use",
+            "optionsIds": [
+                "option-1",
+                "option-3",
+                "option-4"
+            ],
+            "isDropDisabled": true,
+            "info": "Enter values into the blocks and drag them to build the algorithm."
+        },
+        "column-2": {
+            "id": "column-2",
+            "title": "When: press start button",
+            "optionsIds": []
+        }
+    },
+    "options": {
+        "option-1": {
+            "id": "option-1",
+            "key": "draw",
+            "hasInput": true,
+            "type": "select",
+            "text": "Draw towards",
+            "options": [
+                "up",
+                "down",
+                "left",
+                "right"
+            ]
+        },
+        "option-2": {
+            "id": "option-2",
+            "key": "move",
+            "hasInput": true,
+            "type": "select",
+            "text": "Move towards",
+            "options": [
+                "up",
+                "down",
+                "left",
+                "right"
+            ]
+        },
+        "option-3": {
+            "id": "option-3",
+            "key": "steps",
+            "hasInput": true,
+            "type": "text",
+            "text": "Steps"
+        },
+        "option-4": {
+            "id": "option-4",
+            "key": "color",
+            "hasInput": true,
+            "type": "select",
+            "text": "Color",
+            "options": [
+                "red",
+                "blue",
+                "green",
+                "yellow"
+            ]
+        }
+    },
+    "correctSequence": [
+        {
+            "sequence": [
+                ["color", "blue"],
+                ["draw", "down"],
+                ["steps", "7"],
+                ["draw", "right"],
+                ["steps", "5"],
+                ["draw", "down"],
+                ["steps", "7"],
+                ["draw", "left"],
+                ["steps", "1"]
+            ],
+            "initPos": {"x": 1, "y": 1},
+            "endPos": {"x": 5, "y": 15}
+        },
+        {
+            "sequence": [
+                ["draw", "down"],
+                ["steps", "5"],
+                ["draw", "right"],
+                ["steps", "5"],
+                ["draw", "up"],
+                ["steps", "3"],
+                ["draw", "right"],
+                ["steps", "3"]
+            ],
+            "initPos": {"x": 1, "y": 1},
+            "endPos": {"x": 9, "y": 3}
+        },
+        {
+            "sequence": [
+                ["color", "green"],
+                ["draw", "left"],
+                ["steps", "5"],
+                ["draw", "up"],
+                ["steps", "5"],
+                ["draw", "right"],
+                ["steps", "7"],
+                ["draw", "down"],
+                ["steps", "7"],
+                ["draw", "left"],
+                ["steps", "7"]
+            ],
+            "initPos": {"x": 10, "y": 10},
+            "endPos": {"x": 5, "y": 12}
+        },
+        {
+            "sequence": [
+                ["draw", "right"],
+                ["steps", "3"],
+                ["draw", "down"],
+                ["steps", "3"],
+                ["draw", "right"],
+                ["steps", "3"],
+                ["draw", "down"],
+                ["steps", "3"],
+                ["draw", "right"],
+                ["steps", "3"]
+            ],
+            "initPos": {"x": 6, "y": 10},
+            "endPos": {"x": 15, "y": 16}
+        },
+        {
+            "sequence": [
+                ["color", "green"],
+                ["draw", "left"],
+                ["steps", "3"],
+                ["draw", "down"],
+                ["steps", "5"],
+                ["draw", "left"],
+                ["steps", "13"],
+                ["draw", "down"],
+                ["steps", "9"],
+                ["draw", "right"],
+                ["steps", "9"]
+            ],
+            "initPos": {"x": 17, "y": 2},
+            "endPos": {"x": 10, "y": 16}
+        }
+    ],
+    "initMessages": [
+        "Using an algorithm, replicate the drawing you will find next.",
+        "Program the route that the digital brush will take with the programming blocks."
+    ],
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 1
+    },
+    "path": "14",
+    "color": "#9968A6",
+    "name": "Draw lines",
+    "id": "14"
+}

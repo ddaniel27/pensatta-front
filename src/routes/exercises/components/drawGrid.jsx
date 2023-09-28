@@ -1,10 +1,12 @@
-import React from "react"
+import { useRef, useEffect } from "react"
+import { useTranslation } from 'react-i18next'
 import "../../../styles/drawGrid.css"
 
 export default function DrawGrid({sequence, initPos, endPos, start, correctSequence, returnScore, isFinished}) {
 
-    const canvasRef = React.useRef(null)
-    const objectiveRef = React.useRef(null)
+    const canvasRef = useRef(null)
+    const objectiveRef = useRef(null)
+  const { t } = useTranslation("drawGrid")
 
 
     function delay(n) {
@@ -44,23 +46,22 @@ export default function DrawGrid({sequence, initPos, endPos, start, correctSeque
         currentPos.x = currentPos.x * canvas.width/20
         currentPos.y = currentPos.y * canvas.height/20
         
-        const movementMap = {
-            "derecha": {x: 1, y: 0},
-            "izquierda": {x: -1, y: 0},
-            "arriba": {x: 0, y: -1},
-            "abajo": {x: 0, y: 1}
-        }
+      const movementMap = {}
+      movementMap[t("left")] = {x: -1, y: 0}
+      movementMap[t("right")] = {x: 1, y: 0}
+      movementMap[t("up")] = {x: 0, y: -1}
+      movementMap[t("down")] = {x: 0, y: 1}
 
-        const colorMap = {
-            "rojo": "#FF0000",
-            "verde": "#00FF00",
-            "azul": "#0000FF",
-            "amarillo": "#FFFF00"
-        }
+
+      const colorMap = {}
+      colorMap[t("red")] = "#FF0000"
+      colorMap[t("green")] = "#00FF00"
+      colorMap[t("blue")] = "#0000FF"
+      colorMap[t("yellow")] = "#FFFF00"
 
         const obj = {
-            color: "#FF0000",
-            direction: "derecha",
+            color: t("red"),
+            direction: t("right"),
             action: "move"
         }
 
@@ -115,7 +116,7 @@ export default function DrawGrid({sequence, initPos, endPos, start, correctSeque
         }
     }
 
-    React.useEffect(() => {
+    useEffect(() => {
         const canvas = canvasRef.current
         const ctx = canvas.getContext("2d")
 

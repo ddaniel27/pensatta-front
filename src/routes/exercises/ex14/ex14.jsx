@@ -1,28 +1,36 @@
-import React from "react"
+import { useState, useLayoutEffect, useEffect } from "react"
 import ScoringComponent from "../components/scoringComponent"
 import DrawGrid from "../components/drawGrid"
 import DndComponent from "../components/dndComponent"
-import data from "./data.json"
+import useData from "../../../hooks/useData"
 import "../../../styles/ex10.css"
 
 export default function Ex14(){
 
-    // eslint-disable-next-line no-unused-vars
-    const [ myData, setMyData ] = React.useState({
+  const { data } = useData("ex14")
+
+    const [ myData, setMyData ] = useState({
         ...data,
         correctSequence: data.correctSequence.sort(() => 0.5 - Math.random()).slice(0, data.threshold.perfect)[0]
     })
-    const [start, setStart] = React.useState(false)
-    const [reset, setReset] = React.useState(false)
-    const [finished, setFinished] = React.useState(false)
+    const [start, setStart] = useState(false)
+    const [reset, setReset] = useState(false)
+    const [finished, setFinished] = useState(false)
 
-    const [ optionsData, setOptionsData ] = React.useState({})
+    const [ optionsData, setOptionsData ] = useState({})
 
-    React.useLayoutEffect(() => {
+    useLayoutEffect(() => {
         if(reset){
             setReset(false)
         }
     }, [optionsData])
+
+  useEffect(() => {
+    setMyData({
+      ...data,
+        correctSequence: data.correctSequence.sort(() => 0.5 - Math.random()).slice(0, data.threshold.perfect)[0]
+    })
+  }, [data])
 
     const handleClick = ()=>{
         document.querySelector(`.maze-style`).scrollTop = 0;
@@ -54,9 +62,9 @@ export default function Ex14(){
                             />
                        
                         <div className="buttons-field">
-                            {optionsData.length > 0 && <button onClick={handleReset} className="restart">REINTENTAR</button>}
-                            {!start && <button onClick={handleClick} disabled={!optionsData.length}>INICIAR</button>}
-                            {finished && <button onClick={()=>{setPhase("end")}}>FINALIZAR</button>}
+                            {optionsData.length > 0 && <button onClick={handleReset} className="restart">{data["retry-button"]}</button>}
+                            {!start && <button onClick={handleClick} disabled={!optionsData.length}>{data["start-button"]}</button>}
+                            {finished && <button onClick={()=>{setPhase("end")}}>{data["finish-button"]}</button>}
                         </div>
                     </div>
                 )
