@@ -1,0 +1,28 @@
+{   
+    "cards" : [
+        {"id": 1, "pair": 1, "text": "Gigabyte", "type": "name"},
+        {"id": 2, "pair": 1, "text": "GB", "type": "acron"},
+        {"id": 3, "pair": 2, "text": "Megabyte", "type": "name"},
+        {"id": 4, "pair": 2, "text": "MB", "type": "acron"},
+        {"id": 5, "pair": 3, "text": "Terabyte", "type": "name"},
+        {"id": 6, "pair": 3, "text": "TB", "type": "acron"},
+        {"id": 7, "pair": 4, "text": "Kilobyte", "type": "name"},
+        {"id": 8, "pair": 4, "text": "KB", "type": "acron"}
+    ],
+    "options": [
+
+    ],
+    "initMessages":[
+        "Next, you will find eight cards. Four correspond to a data type and the remaining four to the names of those data types.",
+        "You have three minutes to match the data types with their respective names."
+    ],
+    "threshold":{
+        "max" : 4,
+        "min" : 0,
+        "perfect": 4
+    },
+    "path": "48",
+    "color": "#AE985E",
+    "name":"Find the pairs",
+    "id": 48
+}

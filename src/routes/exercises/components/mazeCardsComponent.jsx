@@ -1,4 +1,5 @@
-import React, { useEffect, useState, useRef } from 'react'
+import { useEffect, useState, useRef } from 'react'
+import { useTranslation } from 'react-i18next'
 import cover from '/images/exercises/48/cardCover.svg'
 import styles from '../../../styles/mazeCards.module.css'
 import '../../../styles/mazeCards.css'
@@ -50,6 +51,7 @@ const MazeCardsComponent = ({ cardsArray, setPhase, setScore }) => {
   const [isFinish, setIsFinish] = useState(false)
   const [time, setTime] = useState(180)
   const interval = useRef(null)
+  const { t } = useTranslation("mazeCardsComponent")
 
   const shuffleCards = () => {
     const shuffledCards = cardsArray.sort(() => Math.random() - 0.5).map(card => ({ ...card, isMatched: false }))
@@ -115,7 +117,7 @@ const MazeCardsComponent = ({ cardsArray, setPhase, setScore }) => {
   const finished = () => {
     clearInterval(interval.current)
     return (
-      <button onClick={handleFinish}> FINALIZAR</button>
+      <button onClick={handleFinish}>{t("finish-button")}</button>
     )
   }
 
@@ -124,7 +126,7 @@ const MazeCardsComponent = ({ cardsArray, setPhase, setScore }) => {
       <div className={styles.gameContainer}>
         <div className={styles.mazeContainer}>
           <BoardMazeCard cards={cards} handleChoice={handleChoice} choiceOne={choiceOne} choiceTwo={choiceTwo} disabled={disabled}/>
-          <div className={styles.pairsText}> Parejas encontradas: {numCorrects}/{cards.length / 2} </div>
+          <div className={styles.pairsText}>{t("pairs")}{numCorrects}/{cards.length / 2} </div>
         </div>
         <div className={styles.timer}>{`${padTo2Digits(Math.floor(time / 60))} : ${padTo2Digits(time % 60)}`}</div>
       </div>

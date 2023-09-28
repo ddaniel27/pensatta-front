@@ -1,10 +1,15 @@
 import {useEffect, useState} from "react";
 import KeyBoardComponent from "../components/keyBoardComponent";
-import data from "./data.json"
+import useData from "../../../hooks/useData"
 import ScoringComponent from "../components/scoringComponent";
 
 const Ex59 = ()=>{
-    const [myData, setMyData] = useState(data)
+  const { data } = useData("ex59")
+  const [myData, setMyData] = useState({ ...data })
+
+  useEffect(() => {
+    setMyData({ ...data })
+  }, [data])
 
     return(
         <ScoringComponent initMessages={myData.initMessages} background={myData.color} title={myData.name} threshold={myData.threshold} exerciseId={myData.id}>

@@ -1,14 +1,16 @@
 import { useState, useEffect, useRef } from "react";
+import { useTranslation } from 'react-i18next'
 import styles from "../../../styles/keyBoardComponent2.module.css"
 import backspacesvg from "/images/exercises/59/backspace.svg"
 import spacesvg from "/images/exercises/59/space.svg"
 
 const ScreenText = ({textType, textTyped})=>{
+  const { t } = useTranslation("keyBoardComponent")
     return(
         <div className={styles.screenContainer}>
             <div className={styles.display}>{textTyped}</div>
             <div className={styles.textType}>{textType}</div>
-            <div className={styles.info}>Escribe el mensaje presionando los botones del teclado digital.</div>
+            <div className={styles.info}>{t("screen-text")}</div>
         </div>
     )
 }
@@ -102,6 +104,7 @@ const KeyBoardComponent = ({keyPairs, textType, setPhase, setScore})=>{
     const [textTyped, setTextTyped] = useState("")
     const [isFinish, setIsFinish] = useState(false)
     const [textDecoded, setTextDecoded] = useState("")
+  const { t } = useTranslation("keyBoardComponent")
 
     useEffect(()=>{
         setScore( textDecoded==textType.text ? 1:0)
@@ -126,7 +129,7 @@ const KeyBoardComponent = ({keyPairs, textType, setPhase, setScore})=>{
 
             </div>
         </div>
-        {isFinish? <button onClick={()=>setPhase("end")}>SIGUIENTE</button>:<></>}
+        {isFinish? <button onClick={()=>setPhase("end")}>{t("next-button")}</button>:<></>}
         </>
     )
 }

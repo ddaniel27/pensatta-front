@@ -1,0 +1,14 @@
+{
+  "initMessages": [
+    "Help Rex get to the cheese. You must create a sequence of eight instructions that will repeat four times.",
+    "Drag the instructions in the order you consider to the drawer and press start when you have finished."
+  ],
+  "id": 49,
+  "name": "Little Mouse",
+  "color": "#9968A6",
+  "threshold": {
+    "max": 1,
+    "min": 0,
+    "perfect": 1
+  }
+}

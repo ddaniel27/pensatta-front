@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
+import { useTranslation } from 'react-i18next'
 import mouse from '/images/exercises/49/rat.svg'
 import cheese from '/images/exercises/49/cheese.svg'
 import styles from '../../../styles/labrat.module.css'
@@ -30,6 +31,7 @@ const Maze = ({ pista, colorLine }) => {
 }
 
 const MazeMouseComponent = ({ lab, setPhase, setScore, colorLine }) => {
+  const { t } = useTranslation("labratComponent")
   const mouseInitX = starts[`laberinto${lab}`].startPosition.x
   const mouseInitY = starts[`laberinto${lab}`].startPosition.y
   const maze2Styles = {
@@ -388,8 +390,8 @@ const MazeMouseComponent = ({ lab, setPhase, setScore, colorLine }) => {
         </div>
       </div>
       <div className={styles['buttons-container']}>
-        <div className={`${styles['game-button']} ${styles['restart-button']} ${disableReset ? styles['button-disabled'] : ''}`} onClick={handleReset}>REINICIAR</div>
-        <div className={`${styles['game-button']} ${styles['start-button']} ${disabledInit ? styles['button-disabled'] : ''}`} onClick={handleInit}>INICIAR</div>
+        <div className={`${styles['game-button']} ${styles['restart-button']} ${disableReset ? styles['button-disabled'] : ''}`} onClick={handleReset}>{t("retry-button")}</div>
+        <div className={`${styles['game-button']} ${styles['start-button']} ${disabledInit ? styles['button-disabled'] : ''}`} onClick={handleInit}>{t("start-button")}</div>
       </div>
     </div>
   )
