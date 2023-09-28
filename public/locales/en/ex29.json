@@ -1,0 +1,13 @@
+{
+    "imgSrc": [
+        "/images/exercises/29/1_Desktop01"
+    ],
+    "initMessages": [
+        "Organize the puzzle pieces.",
+        "You can slide them in any direction you want to assemble the figure."
+    ],
+    "path": "29",
+    "color": "#1B6893",
+    "name": "Puzzle",
+    "id": 29
+}

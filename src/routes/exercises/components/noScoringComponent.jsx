@@ -1,13 +1,16 @@
-import React from 'react'
+import { useContext, useState, useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 import Information from '../../components/information'
 import ActivityContext from '../../../context/ActivityContext'
 import BackButtonInGame from './backButtonIngame'
 
-export default function NoScoringComponent ({ initMessages = ['Inicia dando click al boton'], finalMessages = ['Buen trabajo'], title = 'Actividad', children, background = '#E0E0E0' }) {
-  const { setActivity, setTitle, setBackground } = React.useContext(ActivityContext)
-  const [phase, setPhase] = React.useState('init')
+export default function NoScoringComponent ({ initMessages = ['Inicia dando click al boton'], title = 'Actividad', children, background = '#E0E0E0' }) {
+  const { setActivity, setTitle, setBackground } = useContext(ActivityContext)
+  const [phase, setPhase] = useState('init')
+  const { t } = useTranslation("noScoringComponent")
+  const [finalMessages] = useState([t("final-messages")])
 
-  React.useEffect(() => {
+  useEffect(() => {
     setTitle(title)
     setBackground(background)
   }, [setTitle, title, setBackground, background])
@@ -20,7 +23,7 @@ export default function NoScoringComponent ({ initMessages = ['Inicia dando clic
     <>
 
       {
-        phase === 'init' && <><Information messages={initMessages} /> <button onClick={handleStart}>INICIAR</button></>
+        phase === 'init' && <><Information messages={initMessages} /> <button onClick={handleStart}>{t("start-button")}</button></>
       }
 
       {
@@ -30,7 +33,7 @@ export default function NoScoringComponent ({ initMessages = ['Inicia dando clic
         phase === 'activity' && <BackButtonInGame onClick={() => { setPhase('init') }}/>
       }
       {
-        phase === 'end' && <><Information messages={finalMessages} /> <button onClick={() => { setActivity(true) }} >FINALIZAR</button></>
+        phase === 'end' && <><Information messages={finalMessages} />{t("finish-button")} <button onClick={() => { setActivity(true) }} >{t("finish-button")}</button></>
       }
     </>
   )

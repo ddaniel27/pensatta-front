@@ -1,18 +1,26 @@
-import React from 'react'
+import { useState, useEffect } from 'react'
 import ScoringComponent from '../components/scoringComponent'
 import Timer from '../components/timer'
 import DndVonListComponent from '../components/dndVonListComponent'
-import data from './data.json'
+import useData from "../../../hooks/useData"
 import '../../../styles/ex15.css'
 
 export default function Ex15 () {
-  const [myData] = React.useState({
+  const { data } = useData("ex15")
+  const [myData, setMyData] = useState({
     ...data,
     variations: data.variations.sort(() => 0.5 - Math.random()).slice(0, 1)[0]
   })
 
-  const [value, setValue] = React.useState(null)
-  const [nextQuestion, setNextQuestion] = React.useState(false)
+  useEffect(() => {
+    setMyData({
+      ...data,
+      variations: data.variations.sort(() => 0.5 - Math.random()).slice(0, 1)[0]
+    })
+  }, [data])
+
+  const [value, setValue] = useState(null)
+  const [nextQuestion, setNextQuestion] = useState(false)
 
   function delay (n) {
     return new Promise(function (resolve) {
@@ -43,7 +51,7 @@ export default function Ex15 () {
       {
         (setScore, setPhase) => (
           <div className='list-ex15'>
-            <Timer startTime={20} returnTimerValue={(t) => { handleTimer(t, setScore, setPhase) }} />
+            <Timer startTime={20} returnTimerValue={(ti) => { handleTimer(ti, setScore, setPhase) }} />
             <DndVonListComponent data={myData.variations} returnScore={setValue} block={nextQuestion} />
           </div>
         )

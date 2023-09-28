@@ -1,0 +1,304 @@
+{
+    "variations": [
+        {
+            "columns": {
+                "column": {
+                    "id": "column",
+                    "title": "Components of the Von Neumann architecture",
+                    "optionsIds": [
+                        "option-2",
+                        "option-1",
+                        "option-4",
+                        "option-3"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "up",
+                    "text": "CPU"
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "down",
+                    "text": "Input devices"
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "right",
+                    "text": "Output devices"
+                },
+                "option-4": {
+                    "id": "option-4",
+                    "key": "left",
+                    "text": "Data and programs memory"
+                }
+            },
+            "sequence": [
+                "option-1",
+                "option-2",
+                "option-3",
+                "option-4"
+            ]
+        },
+        {
+            "columns": {
+                "column": {
+                    "id": "column",
+                    "title": "Define function",
+                    "optionsIds": [
+                        "option-2",
+                        "option-1",
+                        "option-4",
+                        "option-3"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "up",
+                    "text": "Function name and parameters it receives"
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "down",
+                    "text": "Function instructions"
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "right",
+                    "text": "Function return"
+                },
+                "option-4": {
+                    "id": "option-4",
+                    "key": "left",
+                    "text": "Closing brackets"
+                }
+            },
+            "sequence": [
+                "option-1",
+                "option-2",
+                "option-3",
+                "option-4"
+            ]
+        },
+        {
+            "columns": {
+                "column": {
+                    "id": "column",
+                    "title": "Left to right window objects",
+                    "optionsIds": [
+                        "option-2",
+                        "option-1",
+                        "option-4",
+                        "option-3"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "up",
+                    "text": "Window title"
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "down",
+                    "text": "Minimize button"
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "right",
+                    "text": "Maximize button"
+                },
+                "option-4": {
+                    "id": "option-4",
+                    "key": "left",
+                    "text": "Close button"
+                }
+            },
+            "sequence": [
+                "option-1",
+                "option-2",
+                "option-3",
+                "option-4"
+            ]
+        },
+        {
+            "columns": {
+                "column": {
+                    "id": "column",
+                    "title": "Left to right taskbar",
+                    "optionsIds": [
+                        "option-2",
+                        "option-1",
+                        "option-4",
+                        "option-3"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "up",
+                    "text": "Search bar"
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "down",
+                    "text": "Virtual assistant Cortana"
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "right",
+                    "text": "Pinned programs"
+                },
+                "option-4": {
+                    "id": "option-4",
+                    "key": "left",
+                    "text": "Notification area"
+                }
+            },
+            "sequence": [
+                "option-1",
+                "option-2",
+                "option-3",
+                "option-4"
+            ]
+        },
+        {
+            "columns": {
+                "column": {
+                    "id": "column",
+                    "title": "Time and date window",
+                    "optionsIds": [
+                        "option-2",
+                        "option-1",
+                        "option-4",
+                        "option-3"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "up",
+                    "text": "Time"
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "down",
+                    "text": "Date"
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "right",
+                    "text": "Calendar"
+                },
+                "option-4": {
+                    "id": "option-4",
+                    "key": "left",
+                    "text": "Agenda"
+                }
+            },
+            "sequence": [
+                "option-1",
+                "option-2",
+                "option-3",
+                "option-4"
+            ]
+        },
+        {
+            "columns": {
+                "column": {
+                    "id": "column",
+                    "title": "Battery window",
+                    "optionsIds": [
+                        "option-2",
+                        "option-1",
+                        "option-3"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "up",
+                    "text": "Battery percentage"
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "down",
+                    "text": "Power vs performance mode"
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "right",
+                    "text": "Battery settings"
+                }
+            },
+            "sequence": [
+                "option-1",
+                "option-2",
+                "option-3"
+            ]
+        },
+        {
+            "columns": {
+                "column": {
+                    "id": "column",
+                    "title": "Connection window",
+                    "optionsIds": [
+                        "option-2",
+                        "option-1",
+                        "option-4",
+                        "option-3"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "up",
+                    "text": "Connected network"
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "down",
+                    "text": "Available networks"
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "right",
+                    "text": "Network and internet settings"
+                },
+                "option-4": {
+                    "id": "option-4",
+                    "key": "left",
+                    "text": "Activation buttons"
+                }
+            },
+            "sequence": [
+                "option-1",
+                "option-2",
+                "option-3",
+                "option-4"
+            ]
+        }
+    ],
+    "initMessages": [
+        "Order the components of the architectures according to priority.",
+        "You have 20 seconds after pressing the start button."
+    ],
+    "threshold": {
+        "max": 3,
+        "min": 1,
+        "perfect": 4
+    },
+    "path": "15",
+    "color": "#9968A6",
+    "name": "Architectures",
+    "id": 15
+}

@@ -1,0 +1,178 @@
+{
+    "options": [
+        {
+            "question":"What solutions would you give to Anna?",
+            "answers":[
+                {
+                    "text":"Delete inappropriate content from her social media.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Properly monitor the published content.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Secure her personal information.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Share the attackers' information.",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Respond to offensive comments with insults.",
+                    "isCorrect":false
+                }
+            ],
+            "multiple":true,
+            "maxOptions":3
+        },
+        {
+            "question":"What solutions would you give to Anna?",
+            "answers":[
+                {
+                    "text":"Secure her contact details.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Identify the content that caused the most conflict with the public.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Delete the identified content from her social media.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Share the attackers' information.",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Respond to offensive comments with insults.",
+                    "isCorrect":false
+                }
+            ],
+            "multiple":true,
+            "maxOptions":3
+        },
+        {
+            "question":"What solutions would you give to Anna?",
+            "answers":[
+                {
+                    "text":"Secure content locations and contact information on the account.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Properly monitor the published content.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Identify which content she posted is not appropriate.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Share the attackers' information.",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Respond to offensive comments with insults.",
+                    "isCorrect":false
+                }
+            ],
+            "multiple":true,
+            "maxOptions":3
+        },
+        {
+            "question":"What solutions would you give to Anna?",
+            "answers":[
+                {
+                    "text":"Delete inappropriate content from her social media.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Identify inappropriate content she has posted.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Secure her personal information.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Share the attackers' information.",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Respond to offensive comments with insults.",
+                    "isCorrect":false
+                }
+            ],
+            "multiple":true,
+            "maxOptions":3
+        },
+        {
+            "question":"What solutions would you give to Anna?",
+            "answers":[
+                {
+                    "text":"Identify profiles of people affected by the published content.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Delete content that displeases followers.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Secure her personal information.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Restrict access to personal information for followers.",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Respond to offensive comments with insults.",
+                    "isCorrect":false
+                }
+            ],
+            "multiple":true,
+            "maxOptions":3
+        },
+        {
+            "question":"What solutions would you give to Anna?",
+            "answers":[
+                {
+                    "text":"Privatize the observation of her personal data.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Identify which content she posted is not appropriate.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Apologize to the identified profiles.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Share the attackers' information.",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Respond to offensive comments with insults.",
+                    "isCorrect":false
+                }
+            ],
+            "multiple":true,
+            "maxOptions":3
+        }
+    ],
+    "initMessages":[
+        "Anna is a public figure who is being attacked on her social media due to posts about her private life.",
+        "Choose from the options, three possible solutions to Anna's problem."
+    ],
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 1
+    },
+    "color": "#9968A6",
+    "name": "Online Security",
+    "id": 25
+}

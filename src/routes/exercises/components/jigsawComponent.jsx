@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useTranslation } from 'react-i18next'
 import {
     GridContextProvider,
     GridDropZone,
@@ -34,6 +35,7 @@ const JigsawComponent = ({game,setPhase})=>{
     const initItems = Array.from({length: 16}, (_, i) => i + 1)
     const [items, setItems] = useState(initItems);
     const [isFinish, setIsFinish] = useState(false)
+  const { t } = useTranslation("jigsawComponent")
 
     const sortCards = ()=>{
         const shuffleItems = [...items]
@@ -94,7 +96,7 @@ const JigsawComponent = ({game,setPhase})=>{
                 <TrafficLight isFinish={isFinish}/>
             </div>
         </div>
-        {isFinish?<div><button onClick={()=>{setPhase("end")}}>SIGUIENTE</button></div>:<></>}
+        {isFinish?<div><button onClick={()=>{setPhase("end")}}>{t("button")}</button></div>:<></>}
         </>
       );
 }
