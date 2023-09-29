@@ -1,0 +1,10 @@
+{
+  "result-excelent": "Parabéns! Você terminou o exercício.",
+  "result-good": "Uau! Você terminou o exercício.",
+  "result-bad": "Melhor sorte na próxima!",
+  "result-1": "Sua pontuação é ",
+  "result-2": " de ",
+  "result-3": " pontos.",
+  "button-init": "INICIAR",
+  "button-end": "FINALIZAR"
+}

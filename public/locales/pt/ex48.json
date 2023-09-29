@@ -1,0 +1,28 @@
+{   
+    "cards" : [
+        {"id": 1, "pair": 1, "text": "Gigabyte", "type": "name"},
+        {"id": 2, "pair": 1, "text": "GB", "type": "acron"},
+        {"id": 3, "pair": 2, "text": "Megabyte", "type": "name"},
+        {"id": 4, "pair": 2, "text": "MB", "type": "acron"},
+        {"id": 5, "pair": 3, "text": "Terabyte", "type": "name"},
+        {"id": 6, "pair": 3, "text": "TB", "type": "acron"},
+        {"id": 7, "pair": 4, "text": "Kylobyte", "type": "name"},
+        {"id": 8, "pair": 4, "text": "KB", "type": "acron"}
+    ],
+    "options": [
+
+    ],
+    "initMessages":[
+        "A seguir, você encontrará oito cartas. Quatro correspondem a um tipo de dado e as quatro restantes aos nomes desses tipos de dados.",
+        "Você tem três minutos para emparelhar os tipos de dados com seus respectivos nomes."
+    ],
+    "threshold":{
+        "max" : 4,
+        "min" : 0,
+        "perfect": 4
+    },
+    "path": "48",
+    "color": "#AE985E",
+    "name":"Encontre os pares",
+    "id": 48
+}

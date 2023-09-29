@@ -1,0 +1,304 @@
+{
+    "variations":[
+        {
+            "columns": {
+                "column": {
+                    "id": "column",
+                    "title": "Componentes da arquitetura Von Neumann",
+                    "optionsIds": [
+                        "option-2",
+                        "option-1",
+                        "option-4",
+                        "option-3"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "acima",
+                    "text": "CPU"
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "abaixo",
+                    "text": "Dispositivos de entrada"
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "direita",
+                    "text": "Dispositivos de saída"
+                },
+                "option-4": {
+                    "id": "option-4",
+                    "key": "esquerda",
+                    "text": "Memória de dados e programas"
+                }
+            },
+            "sequence":[
+                "option-1",
+                "option-2",
+                "option-3",
+                "option-4"
+            ]
+        },
+        {
+            "columns": {
+                "column": {
+                    "id": "column",
+                    "title": "Definir função",
+                    "optionsIds": [
+                        "option-2",
+                        "option-1",
+                        "option-4",
+                        "option-3"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "acima",
+                    "text": "Nome da função e parâmetros recebidos"
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "abaixo",
+                    "text": "Instruções da função"
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "direita",
+                    "text": "Retorno da função"
+                },
+                "option-4": {
+                    "id": "option-4",
+                    "key": "esquerda",
+                    "text": "Fechamento de colchetes"
+                }
+            },
+            "sequence":[
+                "option-1",
+                "option-2",
+                "option-3",
+                "option-4"
+            ]
+        },
+        {
+            "columns": {
+                "column": {
+                    "id": "column",
+                    "title": "Esquerda para direita, objetos da janela",
+                    "optionsIds": [
+                        "option-2",
+                        "option-1",
+                        "option-4",
+                        "option-3"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "acima",
+                    "text": "Título da janela"
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "abaixo",
+                    "text": "Botão de minimização"
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "direita",
+                    "text": "Botão de maximização"
+                },
+                "option-4": {
+                    "id": "option-4",
+                    "key": "esquerda",
+                    "text": "Botão de fechamento"
+                }
+            },
+            "sequence":[
+                "option-1",
+                "option-2",
+                "option-3",
+                "option-4"
+            ]
+        },
+        {
+            "columns": {
+                "column": {
+                    "id": "column",
+                    "title": "Esquerda para direita, barra de tarefas",
+                    "optionsIds": [
+                        "option-2",
+                        "option-1",
+                        "option-4",
+                        "option-3"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "acima",
+                    "text": "Barra de pesquisa"
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "abaixo",
+                    "text": "Assistente virtual Cortana"
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "direita",
+                    "text": "Programas fixados"
+                },
+                "option-4": {
+                    "id": "option-4",
+                    "key": "esquerda",
+                    "text": "Área de notificações"
+                }
+            },
+            "sequence":[
+                "option-1",
+                "option-2",
+                "option-3",
+                "option-4"
+            ]
+        },
+        {
+            "columns": {
+                "column": {
+                    "id": "column",
+                    "title": "Janela de hora e data",
+                    "optionsIds": [
+                        "option-2",
+                        "option-1",
+                        "option-4",
+                        "option-3"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "acima",
+                    "text": "Hora"
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "abaixo",
+                    "text": "Data"
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "direita",
+                    "text": "Calendário"
+                },
+                "option-4": {
+                    "id": "option-4",
+                    "key": "esquerda",
+                    "text": "Agenda"
+                }
+            },
+            "sequence":[
+                "option-1",
+                "option-2",
+                "option-3",
+                "option-4"
+            ]
+        },
+        {
+            "columns": {
+                "column": {
+                    "id": "column",
+                    "title": "Janela de bateria",
+                    "optionsIds": [
+                        "option-2",
+                        "option-1",
+                        "option-3"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "acima",
+                    "text": "Porcentagem da bateria"
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "abaixo",
+                    "text": "Modo de energia vs desempenho"
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "direita",
+                    "text": "Configuração da bateria"
+                }
+            },
+            "sequence":[
+                "option-1",
+                "option-2",
+                "option-3"
+            ]
+        },
+        {
+            "columns": {
+                "column": {
+                    "id": "column",
+                    "title": "Janela de conexão",
+                    "optionsIds": [
+                        "option-2",
+                        "option-1",
+                        "option-4",
+                        "option-3"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "acima",
+                    "text": "Rede conectada"
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "abaixo",
+                    "text": "Redes disponíveis"
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "direita",
+                    "text": "Configurações de rede e internet"
+                },
+                "option-4": {
+                    "id": "option-4",
+                    "key": "esquerda",
+                    "text": "Botões de ativação"
+                }
+            },
+            "sequence":[
+                "option-1",
+                "option-2",
+                "option-3",
+                "option-4"
+            ]
+        }
+    ],
+    "initMessages":[
+        "Ordene os componentes das arquiteturas de acordo com a prioridade.",
+        "Você tem 20 segundos após pressionar o botão de início."
+    ],
+    "threshold": {
+        "max": 3,
+        "min": 1,
+        "perfect": 4
+    },
+    "path": "15",
+    "color": "#9968A6",
+    "name": "Arquiteturas",
+    "id": 15
+}

@@ -1,0 +1,274 @@
+{
+    "options": [
+        {
+            "question": "Selecione duas características de um sistema operacional para computador.",
+            "answers": [
+                {
+                    "text": "Conveniência",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Eficiência",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Administração de hardware",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Resistência",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Convivência",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Desfragmentar",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Formatar",
+                    "isCorrect": false
+                }
+            ],
+            "multiple": true,
+            "maxOptions": 2
+        },
+        {
+            "question": "Selecione um sistema operacional para computador.",
+            "answers": [
+                {
+                    "text": "Ubuntu",
+                    "isCorrect": true
+                },
+                {
+                    "text": "MacOS",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Windows",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Lime",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Cookies",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "question": "Selecione um sistema operacional para dispositivos móveis.",
+            "answers": [
+                {
+                    "text": "Android",
+                    "isCorrect": true
+                },
+                {
+                    "text": "IOS",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Windows Mobile",
+                    "isCorrect": true
+                },
+                {
+                    "text": "ARPANET",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Cookies",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "question": "Selecione dois componentes de um sistema operacional móvel.",
+            "answers": [
+                {
+                    "text": "Kernel",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Middleware",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Apple",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Transistores",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Resistores",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Disco rígido",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Diodo",
+                    "isCorrect": false
+                }
+            ],
+            "multiple": true,
+            "maxOptions": 2
+        },
+        {
+            "question": "Selecione duas aplicações que um sistema operacional poderia ter.",
+            "answers": [
+                {
+                    "text": "Completar tarefas de cálculo",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Representar informação gráfica tridimensional",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Navegar na web",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Descobrir novos medicamentos",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Criação de obras artísticas",
+                    "isCorrect": false
+                }
+            ],
+            "multiple": true,
+            "maxOptions": 2
+        },
+        {
+            "question": "Marque duas possíveis aplicações no uso de um algoritmo",
+            "answers": [
+                {
+                    "text": "Cozinhar",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Desenhar",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Programar um dispositivo",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Fazer uma rotina de exercício",
+                    "isCorrect": true
+                }
+            ],
+            "multiple": true,
+            "maxOptions": 2
+        },
+        {
+            "question": "Marque as opções que considere corresponder à possibilidade de representar um algoritmo",
+            "answers": [
+                {
+                    "text": "Diagrama de Venn",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Diagrama de Fluxo",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Representação em código",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Diagrama de corpo livre",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Representação em blocos",
+                    "isCorrect": true
+                }
+            ],
+            "multiple": true,
+            "maxOptions": 3
+        },
+        {
+            "question": "É possível formular um algoritmo para resolver um problema matemático",
+            "answers": [
+                {
+                    "text": "Verdadeiro",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Falso",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "question": "Marque pelo menos 3 representações de unidades de armazenamento.",
+            "answers": [
+                {
+                    "text": "KB",
+                    "isCorrect": true
+                },
+                {
+                    "text": "GB",
+                    "isCorrect": true
+                },
+                {
+                    "text": "TB",
+                    "isCorrect": true
+                },
+                {
+                    "text": "HZ",
+                    "isCorrect": false
+                }
+            ],
+            "multiple": true,
+            "maxOptions": 3
+        },
+        {
+            "question": "Qual é a unidade mínima de armazenamento em um sistema de computação?",
+            "answers": [
+                {
+                    "text": "O bit",
+                    "isCorrect": true
+                },
+                {
+                    "text": "O byte",
+                    "isCorrect": false
+                },
+                {
+                    "text": "O kilobyte",
+                    "isCorrect": false
+                },
+                {
+                    "text": "O megabyte",
+                    "isCorrect": false
+                },
+                {
+                    "text": "O gigabyte",
+                    "isCorrect": false
+                }
+            ]
+        }
+    ],
+    "initMessages": [
+        "Gire a roleta para obter uma pergunta.",
+        "Selecione uma das possíveis respostas."
+    ],
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 1
+    },
+    "color": "#9968A6",
+    "name": "Características de um Sistema Operacional",
+    "id": 3
+}

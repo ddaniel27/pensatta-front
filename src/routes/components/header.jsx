@@ -19,17 +19,22 @@ export default function Header({ headerText }){
         setProfile(false)
     }
 
-    const handleChangeLanguage = () => {
-      i18n.changeLanguage(i18n.language === 'es' ? 'en' : 'es')
+    const handleChangeLanguage = ({ target }) => {
+      i18n.changeLanguage(target.value)
     }
 
     return(
         <header>
             <img src='./images/Atomo_Pensatta-Símbolo.svg' alt='Atomo Pensatta' onClick={handleReset}/>
             <h1>{headerText}</h1>
-            <div>
+            <div className="ham-div">
               <img src='./images/Atomo_Icono_MenúHamburguesa.svg' alt='Menú' onClick={toggleMenuHam}/>
-              <button className="header__language__selector" onClick={handleChangeLanguage}>{i18n.language}</button>
+              <select className="select-header-lang" name="type" onChange={handleChangeLanguage} >
+                <option value='' hidden disabled></option>
+                <option value="es">ES</option>
+                <option value="en">EN</option>
+                <option value="pt">PT</option>
+              </select>
             </div>
             {menuHam && <MenuHam setShow={setMenuHam} />}
         </header>

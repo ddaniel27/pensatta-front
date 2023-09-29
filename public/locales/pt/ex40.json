@@ -1,0 +1,28 @@
+{
+  "next-button": "PRÓXIMO",
+    "inputs":[
+        {"text":"1 e 3", "isCorrect":[1,3]},
+        {"text":"A e B", "isCorrect":["A","B"]},
+        {"text":"32 e 4", "isCorrect":[32,4]},
+        {"text":"Mundo digital", "isCorrect":["Mundo","digital"]}
+    ],
+    "operators":[
+        {"text":"Somar", "isCorrect":1},
+        {"text":"Subtrair", "isCorrect":2},
+        {"text":"Multiplicar", "isCorrect":3},
+        {"text":"Dividir", "isCorrect":4},
+        {"text":"Concatenar", "isCorrect":5},
+        {"text":"Desaparecer", "isCorrect":6},
+        {"text":"Duplicar", "isCorrect":7},
+        {"text":"Inverter", "isCorrect":8}
+    ],
+    "path":"40",
+    "initMessages":[
+        "Você terá uma caixa preta com uma entrada e uma saída.",
+        "Você pode escolher valores da lista de entradas e uma função a ser realizada na lista de funções.",
+        "Pratique um pouco e observe a saída gerada pela caixa preta."
+    ],
+    "color":"#53745B",
+    "name":"Funções",
+    "id": "40"
+}

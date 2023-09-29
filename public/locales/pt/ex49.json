@@ -1,0 +1,14 @@
+{
+  "initMessages":[
+    "Ajude o Rex a chegar ao queijo. Você deve criar uma sequência de oito instruções que será repetida quatro vezes.",
+    "Arraste as instruções na ordem que considerar até a gaveta e pressione iniciar quando tiver terminado."
+  ],
+  "id":49,
+  "name":"Ratinho",
+  "color":"#9968A6",
+  "threshold":{
+    "max":1,
+    "min":0,
+    "perfect":1
+  }
+}

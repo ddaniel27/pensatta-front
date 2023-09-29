@@ -1,0 +1,329 @@
+{
+    "informative_text": [
+        {
+            "title": "CPU",
+            "text": "A unidade central de processamento (Central Processing Unit) é o hardware dentro de um computador. Interpreta as instruções de um programa executando as operações básicas aritméticas, lógicas e externas (provenientes das unidades de entrada e saída).",
+            "id": "CPU"
+        },
+        {
+            "title": "Dispositivos de Saída",
+            "text": "São os componentes que emitem sinais com informações, como o monitor, que mostra os dados na tela, os fones de ouvido e alto-falantes, que emitem sons e a impressora que recebe a informação do computador e imprime no papel.",
+            "id": "OUTPUT"
+        },
+        {
+            "title": "Placa gráfica (GPU)",
+            "text": "Uma Unidade de Processamento Gráfico, ou placa de vídeo/gráfica, processa os dados que vêm do processador principal (CPU) e os converte em informação que pode ser visualizada no monitor.",
+            "id": "GPU"
+        },
+        {
+            "title": "Memória RAM",
+            "text": "Random Access Memory (Memória de Acesso Aleatório). É a memória principal do computador, onde são armazenados temporariamente os dados dos programas que estão sendo usados no momento.",
+            "id": "RAM"
+        },
+        {
+            "title": "Disco Rígido",
+            "text": "É um componente que armazena permanentemente seus dados, ou seja, essa informação não é apagada quando o computador é desligado, como acontece com os dados armazenados na memória RAM.",
+            "id": "HDD"
+        },
+        {
+            "title": "Placa-mãe",
+            "text": "A placa-mãe, placa base ou motherboard, é uma placa de circuito impresso que possibilita a integração de todos os componentes do computador. Tem um software básico chamado BIOS que permite executar essas funções.",
+            "id": "Board"
+        },
+        {
+            "title": "Unidade leitora",
+            "text": "É um dispositivo que permite a leitura de CDs por meio de um raio laser que, posteriormente, o computador traduz em informação. Também permite a coleta ou gravação de dados em CDs.",
+            "id": "READER"
+        },
+        {
+            "title": "Dispositivos de Entrada",
+            "text": "São os componentes que permitem inserir informações no computador, como o teclado, o mouse, o scanner, a webcam, o microfone, entre outros. Suas funções e modo de uso variam de acordo com cada dispositivo.",
+            "id": "INPUT"
+        }
+    ],
+    "options": [
+        {
+            "question": "",
+            "answers": [
+                {
+                    "text": "CPU",
+                    "isCorrect": true
+                },
+                {
+                    "text": "RAM",
+                    "isCorrect": true
+                },
+                {
+                    "text": "GPU",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Bios",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Memória cache",
+                    "isCorrect": false
+                }
+            ],
+            "multiple": true,
+            "maxOptions": 3
+        },
+        {
+            "question": "",
+            "answers": [
+                {
+                    "text": "Placa-mãe",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Disco rígido",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Teclado",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Porta HDMI",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Porta SATA",
+                    "isCorrect": false
+                }
+            ],
+            "multiple": true,
+            "maxOptions": 3
+        },
+        {
+            "question": "",
+            "answers": [
+                {
+                    "text": "Mouse",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Microfone",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Câmera",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Porta PCI",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Porta USB",
+                    "isCorrect": false
+                }
+            ],
+            "multiple": true,
+            "maxOptions": 3
+        },
+        {
+            "question": "",
+            "answers": [
+                {
+                    "text": "Monitor",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Alto-falantes",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Placa-mãe",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Dissipador",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Ventilador",
+                    "isCorrect": false
+                }
+            ],
+            "multiple": true,
+            "maxOptions": 3
+        },
+        {
+            "question": "",
+            "answers": [
+                {
+                    "text": "CPU",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Placa-mãe",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Mouse",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Porta HDMI",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Fonte de alimentação",
+                    "isCorrect": false
+                }
+            ],
+            "multiple": true,
+            "maxOptions": 3
+        },
+        {
+            "question": "",
+            "answers": [
+                {
+                    "text": "RAM",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Disco rígido",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Microfone",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Modem",
+                    "isCorrect": false
+                },
+                {
+                    "text": "NFC",
+                    "isCorrect": false
+                }
+            ],
+            "multiple": true,
+            "maxOptions": 3
+        },
+        {
+            "question": "",
+            "answers": [
+                {
+                    "text": "GPU",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Teclado",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Câmera",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Barramento serial",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Porta PCI",
+                    "isCorrect": false
+                }
+            ],
+            "multiple": true,
+            "maxOptions": 3
+        },
+        {
+            "question": "",
+            "answers": [
+                {
+                    "text": "Alto-falantes",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Teclado",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Monitor",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Dissipador",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Ventilador",
+                    "isCorrect": false
+                }
+            ],
+            "multiple": true,
+            "maxOptions": 3
+        },
+        {
+            "question": "",
+            "answers": [
+                {
+                    "text": "RAM",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Mouse",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Alto-falantes",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Dissipador",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Modem",
+                    "isCorrect": false
+                }
+            ],
+            "multiple": true,
+            "maxOptions": 3
+        },
+        {
+            "question": "",
+            "answers": [
+                {
+                    "text": "Disco rígido",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Microfone",
+                    "isCorrect": true
+                },
+                {
+                    "text": "CPU",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Porta SATA",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Bios",
+                    "isCorrect": false
+                }
+            ],
+            "multiple": true,
+            "maxOptions": 3
+        }
+    ],
+    "initMessages": [
+        "Explore o interior do computador e na tela final indique algumas das partes que você aprendeu."
+    ],
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 2
+    },
+    "path": "01",
+    "color": "#9968A6",
+    "name": "Componentes internos",
+    "id": 1
+}
+

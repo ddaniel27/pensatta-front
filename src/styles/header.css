@@ -18,6 +18,21 @@ header img{
     object-fit: contain;
 }
 
+.ham-div{
+  display:flex;
+}
+
+.select-header-lang {
+        width: max-content;
+        padding: 5px 10px;
+        border: double 1px transparent;
+        border-radius: 20px;
+}
+
+.select-header-lang:focus {
+  outline: none;
+}
+
 @media screen and (max-width: 700px){
     header h1{
         font-size: 1.2rem;

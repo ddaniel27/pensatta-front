@@ -1,0 +1,21 @@
+{
+    "informative_text": [
+        "Mova-se pressionando estes botões ou usando as teclas de direção do seu teclado."
+    ],
+    "options": [
+
+    ],
+    "initMessages": [
+        "Ajude-me a atravessar o labirinto sem perder meus dados!",
+        "Guie-me até a saída, evitando os inimigos que podem roubar minha informação."
+    ],
+    "threshold": {
+        "max": 3,
+        "min": 0,
+        "perfect": 3
+    },
+    "path": "09",
+    "color": "#53745B",
+    "name": "Atravesse o labirinto",
+    "id": 9
+}

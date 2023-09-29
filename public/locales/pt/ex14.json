@@ -1,0 +1,166 @@
+{
+  "retry-button": "TENTAR NOVAMENTE",
+  "start-button": "INICIAR",
+  "finish-button": "FINALIZAR",
+    "isSingle": "false",
+    "columns": {
+        "column-1": {
+            "id": "column-1",
+            "title": "Blocos que você pode usar",
+            "optionsIds": [
+                "option-1",
+                "option-3",
+                "option-4"
+            ],
+            "isDropDisabled":true,
+            "info":"Insira os valores nos blocos e arraste-os para construir o algoritmo."
+        },
+        "column-2": {
+            "id": "column-2",
+            "title": "Quando: pressionar botão iniciar",
+            "optionsIds": []
+        }
+    },
+    "options": {
+        "option-1": {
+            "id": "option-1",
+            "key": "draw",
+            "hasInput": true,
+            "type": "select",
+            "text": "Desenhar para",
+            "options": [
+                "cima",
+                "baixo",
+                "esquerda",
+                "direita"
+            ]
+        },
+        "option-2": {
+            "id": "option-2",
+            "key": "move",
+            "hasInput": true,
+            "type": "select",
+            "text": "Mover para",
+            "options": [
+                "cima",
+                "baixo",
+                "esquerda",
+                "direita"
+            ]
+        },
+        "option-3": {
+            "id": "option-3",
+            "key": "steps",
+            "hasInput": true,
+            "type": "text",
+            "text": "Passos"
+        },
+        "option-4": {
+            "id": "option-4",
+            "key": "color",
+            "hasInput": true,
+            "type": "select",
+            "text": "Cor",
+            "options": [
+                "vermelho",
+                "azul",
+                "verde",
+                "amarelo"
+            ]
+        }
+    },
+    "correctSequence":[
+        {
+            "sequence": [
+                            ["color","azul"],
+                            ["draw","baixo"],
+                            ["steps","7"],
+                            ["draw","direita"],
+                            ["steps","5"],
+                            ["draw","baixo"],
+                            ["steps","7"],
+                            ["draw","esquerda"],
+                            ["steps","1"]
+                        ],
+            "initPos": {"x":1,"y":1},
+            "endPos": {"x":5,"y":15}
+        },
+        {
+            "sequence": [
+                            ["draw","baixo"],
+                            ["steps","5"],
+                            ["draw","direita"],
+                            ["steps","5"],
+                            ["draw","cima"],
+                            ["steps","3"],
+                            ["draw","direita"],
+                            ["steps","3"]
+                        ],
+            "initPos": {"x":1,"y":1},
+            "endPos": {"x":9,"y":3}
+        },
+        {
+            "sequence": [
+                            ["color","verde"],
+                            ["draw","esquerda"],
+                            ["steps","5"],
+                            ["draw","cima"],
+                            ["steps","5"],
+                            ["draw","direita"],
+                            ["steps","7"],
+                            ["draw","baixo"],
+                            ["steps","7"],
+                            ["draw","esquerda"],
+                            ["steps","7"]
+                        ],
+            "initPos": {"x":10,"y":10},
+            "endPos": {"x":5,"y":12}
+        },
+        {
+            "sequence": [
+                            ["draw","direita"],
+                            ["steps","3"],
+                            ["draw","baixo"],
+                            ["steps","3"],
+                            ["draw","direita"],
+                            ["steps","3"],
+                            ["draw","baixo"],
+                            ["steps","3"],
+                            ["draw","direita"],
+                            ["steps","3"]
+                        ],
+            "initPos": {"x":6,"y":10},
+            "endPos": {"x":15,"y":16}
+        },
+        {
+            "sequence": [
+                            ["color","verde"],
+                            ["draw","esquerda"],
+                            ["steps","3"],
+                            ["draw","baixo"],
+                            ["steps","5"],
+                            ["draw","esquerda"],
+                            ["steps","13"],
+                            ["draw","baixo"],
+                            ["steps","9"],
+                            ["draw","direita"],
+                            ["steps","9"]
+                        ],
+            "initPos": {"x":17,"y":2},
+            "endPos": {"x":10,"y":16}
+        }
+    ],
+    "initMessages":[
+        "Usando um algoritmo, replique o desenho que você vai encontrar a seguir.",
+        "Programe o percurso que o pincel digital vai realizar com os blocos de programação."
+    ],
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 1
+    },
+    "path": "14",
+    "color": "#9968A6",
+    "name": "Desenhar linhas",
+    "id": "14"
+}

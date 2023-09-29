@@ -1,0 +1,104 @@
+{
+  "retry-button": "REINICIAR",
+  "finish-button": "FINALIZAR",
+  "start-button": "INICIAR",
+  "isSingle": "false",
+  "columns": {
+    "column-1": {
+      "id": "column-1",
+      "title": "",
+      "optionsIds": [
+        "option-1",
+        "option-2",
+        "option-3",
+        "option-4",
+        "option-5",
+        "option-6",
+        "option-7",
+        "option-8",
+        "option-9",
+        "option-x"
+      ],
+      "isDropDisabled": true
+    },
+    "column-2": {
+      "id": "column-2",
+      "title": "Quando: pressionar botão iniciar",
+      "optionsIds": []
+    }
+  },
+  "options": {
+    "option-1": {
+      "id": "option-1",
+      "key": "saudar",
+      "text": "Cumprimentar",
+      "value": 1
+    },
+    "option-2": {
+      "id": "option-2",
+      "key": "nao",
+      "text": "Dizer não",
+      "value": 1
+    },
+    "option-3": {
+      "id": "option-3",
+      "key": "sim",
+      "text": "Dizer sim",
+      "value": 1
+    },
+    "option-4": {
+      "id": "option-4",
+      "key": "selfie",
+      "text": "Tirar uma selfie",
+      "value": 1
+    },
+    "option-5": {
+      "id": "option-5",
+      "key": "pular",
+      "text": "Pular",
+      "value": 1
+    },
+    "option-6": {
+      "id": "option-6",
+      "key": "rir",
+      "text": "Rir",
+      "value": 1
+    },
+    "option-7": {
+      "id": "option-7",
+      "key": "surpresa",
+      "text": "Surpresa",
+      "value": 1
+    },
+    "option-8": {
+      "id": "option-8",
+      "key": "chorar",
+      "text": "Chorar",
+      "value": 1
+    },
+    "option-9": {
+      "id": "option-9",
+      "key": "celular",
+      "text": "Verificar o celular",
+      "value": 1
+    },
+    "option-x": {
+      "id": "option-x",
+      "key": "dancar",
+      "text": "Dançar",
+      "value": 1
+    }
+  },
+  "game": {
+    "1": {
+      "initMessages": [
+        "Selecione os blocos e forme uma torre. A plataforma tem uma capacidade de memória de 300 MB.",
+        "Cada bloco pesa 50 MB. Se exceder a capacidade de memória, a instrução não poderá ser executada."
+      ]
+    }
+  },
+  "path": "12",
+  "color": "#1B6893",
+  "name": "Overflow de memória",
+  "id": 60
+}

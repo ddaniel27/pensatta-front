@@ -1,0 +1,13 @@
+{
+    "imgSrc": [
+        "/images/exercises/29/1_Desktop01"
+    ],
+    "initMessages":[
+        "Organize as peças do quebra-cabeça.",
+        "Você pode deslizá-las na direção que desejar para montar a figura."
+    ],
+    "path": "29",
+    "color": "#1B6893",
+    "name": "Quebra-cabeça",
+    "id": 29
+}

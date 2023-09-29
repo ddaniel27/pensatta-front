@@ -1,0 +1,57 @@
+{
+  "initMessages" : ["A continuación, encontrarás una simulación de laboratiorio químico.",
+                    "En este ambiente simulado podrás realizar mezclas entre los componentes ofrecidos.",
+                    "Para esto, debes seguir las instrucciones del algoritmo."],
+  "color": "#9968A6",
+  "threshold": {
+    "max":1,
+    "min":0,
+    "perfect":1
+  },
+  "id":80,
+  "name":"Laboratorio de Química",
+  "algorithms":{
+    "1":{
+        "algorithm":["green", "blue", "bowl", "fire", "mix"],
+        "image": "var1"
+        },
+    "2":{
+        "algorithm":["yellow", "red", "bowl", "fire", "mix"],
+        "image": "var2"
+        },
+    "3":{
+        "algorithm":["red", "blue", "bowl", "fire", "mix"],
+        "image": "var3"
+        },
+    "4":{
+        "algorithm":["violet", "orange", "bowl", "fire", "mix"],
+        "image": "var4"
+        },
+    "5":{
+        "algorithm":["violet", "blue", "bowl", "fire", "mix"],
+        "image": "var5"
+        },
+    "6":{
+        "algorithm":["red", "blue", "bowl", "mix", "fire"],
+        "image": "var6"
+        },
+    "7":{
+        "algorithm":["green", "blue", "bowl", "mix", "fire"],
+        "image": "var7"
+        },
+    "8":{
+        "algorithm":["green", "orange", "bowl", "mix", "fire"],
+        "image": "var8"
+        },
+    "9":{
+        "algorithm":["red", "orange", "bowl", "mix", "fire"],
+        "image": "var9"
+        },
+    "10":{
+        "algorithm":["yellow", "orange", "bowl", "mix", "fire"],
+        "image": "var10"
+        }
+    }
+  }
+ 
+
