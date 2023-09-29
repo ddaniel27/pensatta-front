@@ -1,0 +1,13 @@
+{
+  "name": "Nome: ",
+  "email": "Email: ",
+  "country": "País: ",
+  "province": "Província: ",
+  "city": "Cidade: ",
+  "students": "Estudantes: ",
+  "score": "Pontuação: ",
+  "new-institution": "Nova instituição",
+  "new-user": "Novo usuário",
+  "download-report": "Baixar relatório"
+}
+

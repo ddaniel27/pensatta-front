@@ -1,20 +1,22 @@
-import React from 'react'
+import { useState, useEffect } from 'react'
 import { addInstitution } from '../../requests'
+import { useTranslation } from 'react-i18next'
 import styles from '../../styles/popups.module.css'
 
 export default function NewInstModal ({ close }) {
-  const [code, setCode] = React.useState('')
-  const [name, setName] = React.useState('')
-  const [email, setEmail] = React.useState('')
-  const [country, setCountry] = React.useState('')
-  const [province, setProvince] = React.useState('')
-  const [city, setCity] = React.useState('')
+  const { t } = useTranslation("newInstModal")
+  const [code, setCode] = useState('')
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [country, setCountry] = useState('')
+  const [province, setProvince] = useState('')
+  const [city, setCity] = useState('')
 
-  const [enabled, setEnabled] = React.useState(false)
-  const [done, setDone] = React.useState(false)
-  const [textDone, setTextDone] = React.useState('')
+  const [enabled, setEnabled] = useState(false)
+  const [done, setDone] = useState(false)
+  const [textDone, setTextDone] = useState('')
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (code !== '' && name !== '' && email !== '' && country !== '' && province !== '' && city !== '') {
       setEnabled(false)
     } else {
@@ -26,9 +28,9 @@ export default function NewInstModal ({ close }) {
       { institution_code: code, name, email, country, province, city },
       (data) => {
         if (data.registered) {
-          setTextDone('Se ha añadido correctamente')
+          setTextDone(t("success"))
         } else {
-          setTextDone('No se ha podido añadir')
+          setTextDone(t("error"))
         }
         setDone(true)
       },
@@ -44,18 +46,18 @@ export default function NewInstModal ({ close }) {
                     done
                       ? <>
                         <h2>{textDone}</h2>
-                        <button onClick={() => { window.location.reload() }}>ACTUALIZAR</button>
+                        <button onClick={() => { window.location.reload() }}>{t("update-button")}</button>
                       </>
                       : <>
                         <span onClick={() => { close(false) }} />
-                        <h2>Llene los siguientes campos</h2>
-                        <input type='text' placeholder='Código' value={code} onChange={(e) => { setCode(e.target.value) }} />
-                        <input type='text' placeholder='Nombre' value={name} onChange={(e) => { setName(e.target.value) }} />
-                        <input type='text' placeholder='Email' value={email} onChange={(e) => { setEmail(e.target.value) }} />
-                        <input type='text' placeholder='País' value={country} onChange={(e) => { setCountry(e.target.value) }} />
-                        <input type='text' placeholder='Provincia' value={province} onChange={(e) => { setProvince(e.target.value) }} />
-                        <input type='text' placeholder='Ciudad' value={city} onChange={(e) => { setCity(e.target.value) }} />
-                        <button onClick={handleClick} disabled={enabled}>Guardar</button>
+                        <h2>{t("info-text")}</h2>
+                        <input type='text' placeholder={t("code")} value={code} onChange={(e) => { setCode(e.target.value) }} />
+                        <input type='text' placeholder={t("name")} value={name} onChange={(e) => { setName(e.target.value) }} />
+                        <input type='text' placeholder={t("email")} value={email} onChange={(e) => { setEmail(e.target.value) }} />
+                        <input type='text' placeholder={t("country")} value={country} onChange={(e) => { setCountry(e.target.value) }} />
+                        <input type='text' placeholder={t("province")} value={province} onChange={(e) => { setProvince(e.target.value) }} />
+                        <input type='text' placeholder={t("city")} value={city} onChange={(e) => { setCity(e.target.value) }} />
+                        <button onClick={handleClick} disabled={enabled}>{t("save")}</button>
                       </>
                 }
       </div>

@@ -1,0 +1,7 @@
+{
+  "success": "Se ha actualizado correctamente",
+  "error": "No se ha podido actualizar",
+  "update-button": "ACTUALIZAR",
+  "new-value": "Ingrese el nuevo valor",
+  "save": "GUARDAR"
+}

@@ -1,7 +1,9 @@
 {
-  "initMessages" : ["A continuación, encontrarás una simulación de laboratiorio químico.",
-                    "En este ambiente simulado podrás realizar mezclas entre los componentes ofrecidos.",
-                    "Para esto, debes seguir las instrucciones del algoritmo."],
+  "initMessages" : [
+    "A seguir, você encontrará uma simulação de laboratório químico.",
+    "Neste ambiente simulado, você poderá realizar misturas entre os componentes oferecidos.",
+    "Para isso, você deve seguir as instruções do algoritmo."
+  ],
   "color": "#9968A6",
   "threshold": {
     "max":1,
@@ -9,7 +11,7 @@
     "perfect":1
   },
   "id":80,
-  "name":"Laboratorio de Química",
+  "name":"Laboratório de Química",
   "algorithms":{
     "1":{
         "algorithm":["green", "blue", "bowl", "fire", "mix"],

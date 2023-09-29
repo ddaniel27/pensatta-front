@@ -8,26 +8,25 @@
         {"id":6,"question": "X = 3, Y = 2, NOT (X-Y) = 1", "value":false},
         {"id":7,"question": "X = 1, Y = 2, NOT (X+Y) = 5", "value":true},
         {"id":8,"question": "X = 1, Y = 2, NOT (X+Y) = 3", "value":false},
-        {"id":9,"question": "X=AZUL, Y=AMARILLO, NOT(X+Y)=ROJO", "value":true},
-        {"id":10,"question": "X=AZUL, Y=AMARILLO, NOT(X+Y)=VERDE", "value":false},
-        {"id":11,"question": "X=AMARILLO, Y=ROJO, NOT(X+Y)=AZUL", "value":true},
-        {"id":12,"question": "X=AMARILLO, Y=ROJO, NOT(X+Y)=NARANJA", "value":false},
-        {"id":13,"question": "X=AZUL, Y=ROJO, NOT(X+Y)=AZUL", "value":true},
-        {"id":14,"question": "X=BLANCO, Y=NEGRO, NOT(X+Y)=GRIS", "value":false},
+        {"id":9,"question": "X=AZUL, Y=AMARELO, NOT(X+Y)=VERMELHO", "value":true},
+        {"id":10,"question": "X=AZUL, Y=AMARELO, NOT(X+Y)=VERDE", "value":false},
+        {"id":11,"question": "X=AMARELO, Y=VERMELHO, NOT(X+Y)=AZUL", "value":true},
+        {"id":12,"question": "X=AMARELO, Y=VERMELHO, NOT(X+Y)=NARANJA", "value":false},
+        {"id":13,"question": "X=AZUL, Y=VERMELHO, NOT(X+Y)=AZUL", "value":true},
+        {"id":14,"question": "X=BRANCO, Y=PRETO, NOT(X+Y)=GRIS", "value":false},
         {"id":15,"question": "X = 0, Y = 1, NOT (X) = 1", "value":true},
         {"id":16,"question": "X = 0, Y = 1, NOT (X) = 0", "value":false},
-        {"id":17,"question": "X=BLANCO, Y=NEGRO, NOT(X+Y)=BLANCO", "value":true},
-        {"id":18,"question": "X=LILA, Y=AZUL, NOT(X+Y)=AMARILLO", "value":false},
+        {"id":17,"question": "X=BRANCO, Y=PRETO, NOT(X+Y)=BRANCO", "value":true},
+        {"id":18,"question": "X=LILAS, Y=AZUL, NOT(X+Y)=AMARELO", "value":false},
         {"id":19,"question": "X = 4, Y = 2, NOT (Y+X) = 1", "value":true},
-        {"id":20,"question": "X=ROJO, Y=AZUL, NOT(X+Y)=VERDE", "value":false},
+        {"id":20,"question": "X=VERMELHO, Y=AZUL, NOT(X+Y)=VERDE", "value":false},
         {"id":21,"question": "X = 0, Y  =1, NOT (X) = 1", "value":true},
-        {"id":22,"question": "X=ROJO, Y=AZUL, NOT(X+Y)=VIOLETA", "value":false}
+        {"id":22,"question": "X=VERMELHO, Y=AZUL, NOT(X+Y)=VIOLETA", "value":false}
     ],
-
-    "initMessages":[
-        "Los operadores son símbolos que permiten combinar diferentes términos entre sí y establecer relaciones lógicas entre ellos. El operador NOT indica negación.",
-        "Responde si las afirmaciones que verás a continuación son verdaderas o falsas.",
-        "Por cada acierto, el vehículo avanzará un espacio. Debes lograr que llegue a la meta."
+    "initMessages": [
+        "Os operadores são símbolos que permitem combinar diferentes termos entre si e estabelecer relações lógicas entre eles. O operador NOT indica negação.",
+        "Responda se as afirmações que verá a seguir são verdadeiras ou falsas.",
+        "A cada acerto, o veículo avançará um espaço. Você deve fazer com que ele chegue ao destino."
     ],
     "threshold": {
         "max": 4,

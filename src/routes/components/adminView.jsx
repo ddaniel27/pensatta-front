@@ -1,4 +1,4 @@
-import React from 'react'
+import { useContext, useRef, useState, useEffect } from 'react'
 import GenericSelector from './genericSelector'
 import ActivityContext from '../../context/ActivityContext'
 import RouterActivity from '../exercises/routerActivity'
@@ -6,16 +6,18 @@ import InstitutionScreen from './institutionScreen'
 import NavMenu from './navMenu'
 import data from '../../exercisesList.json'
 import { getInstitutions } from '../../requests'
+import { useTranslation } from 'react-i18next'
 import '../../styles/adminView.css'
 
 export default function AdminView () {
-  const { activity, setTitle, setBackground, setActivity } = React.useContext(ActivityContext)
-  const [exerciseId, setExerciseId] = React.useState(0)
-  const [disableButton, setDisableButton] = React.useState(true)
-  const [screen, setScreen] = React.useState('exercise')
-  const refContainer = React.useRef({})
+  const { activity, setTitle, setBackground, setActivity } = useContext(ActivityContext)
+  const [exerciseId, setExerciseId] = useState(0)
+  const [disableButton, setDisableButton] = useState(true)
+  const [screen, setScreen] = useState('exercise')
+  const refContainer = useRef({})
+  const { t } = useTranslation("adminView")
 
-  React.useEffect(() => {
+  useEffect(() => {
     async function getInst () {
       getInstitutions((data) => {
         refContainer.current.institutionList = data.institutions
@@ -24,14 +26,14 @@ export default function AdminView () {
     getInst()
   }, [])
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (activity) {
       setTitle('HUB')
       setBackground('#E0E0E0')
     }
   }, [activity, setBackground, setTitle])
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (exerciseId) {
       setDisableButton(false)
     } else {
@@ -52,8 +54,8 @@ export default function AdminView () {
             {
               screen === 'exercise' &&
                 <>
-                  <GenericSelector setCurrentValue={setExerciseId} options={data.ex} defaultLabel='Seleccione un ejercicio' />
-                  <button className='button-play' onClick={handleStart} disabled={disableButton}>JUGAR</button>
+                  <GenericSelector setCurrentValue={setExerciseId} options={data.ex} defaultLabel={t("label")} />
+                  <button className='button-play' onClick={handleStart} disabled={disableButton}>{t("play")}</button>
                 </>
             }
             {

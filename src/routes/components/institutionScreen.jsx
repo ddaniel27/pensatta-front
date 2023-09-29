@@ -1,15 +1,17 @@
-import React from 'react'
+import { useState } from 'react'
 import EditorModal from './editorModal'
 import NewInstModal from './newInstModal'
 import NewUserModal from './newUserModal'
+import { useTranslation } from 'react-i18next'
 import '../../styles/institutionScreen.css'
 
 export default function InstitutionScreen ({ institutionList }) {
-  const [currInst, setCurrInst] = React.useState(null)
-  const [showModal, setShowModal] = React.useState(false)
-  const [showInstModal, setShowInstModal] = React.useState(false)
-  const [showUserModal, setShowUserModal] = React.useState(false)
-  const [data, setData] = React.useState({ institution: '', field: '' })
+  const [currInst, setCurrInst] = useState(null)
+  const [showModal, setShowModal] = useState(false)
+  const [showInstModal, setShowInstModal] = useState(false)
+  const [showUserModal, setShowUserModal] = useState(false)
+  const [data, setData] = useState({ institution: '', field: '' })
+  const { t } = useTranslation("institutionScreen")
 
   const handleChange = ({ target }) => {
     if (target.checked) {
@@ -48,23 +50,23 @@ export default function InstitutionScreen ({ institutionList }) {
       </div>
       <div className='institution-info'>
         <div className='editable-info'>
-          <p>Nombre: {institutionList[currInst]?.nombre && <span>{institutionList[currInst]?.nombre} <i className='fas fa-edit' onClick={() => { handleShowModal({ institution: institutionList[currInst]?.id, field: 'nombre' }) }} /></span>}</p>
-          <p>Email: {institutionList[currInst]?.email && <span>{institutionList[currInst]?.email} <i className='fas fa-edit' onClick={() => { handleShowModal({ institution: institutionList[currInst]?.id, field: 'email' }) }} /></span>}</p>
-          <p>Pais: {institutionList[currInst]?.pais && <span>{institutionList[currInst]?.pais} <i className='fas fa-edit' onClick={() => { handleShowModal({ institution: institutionList[currInst]?.id, field: 'pais' }) }} /></span>}</p>
-          <p>Provincia: {institutionList[currInst]?.provincia && <span>{institutionList[currInst]?.provincia} <i className='fas fa-edit' onClick={() => { handleShowModal({ institution: institutionList[currInst]?.id, field: 'provincia' }) }} /></span>}</p>
-          <p>Ciudad: {institutionList[currInst]?.ciudad && <span>{institutionList[currInst]?.ciudad} <i className='fas fa-edit' onClick={() => { handleShowModal({ institution: institutionList[currInst]?.id, field: 'ciudad' }) }} /></span>}</p>
+          <p>{t("name")}{institutionList[currInst]?.nombre && <span>{institutionList[currInst]?.nombre} <i className='fas fa-edit' onClick={() => { handleShowModal({ institution: institutionList[currInst]?.id, field: t("name") }) }} /></span>}</p>
+          <p>{t("email")}{institutionList[currInst]?.email && <span>{institutionList[currInst]?.email} <i className='fas fa-edit' onClick={() => { handleShowModal({ institution: institutionList[currInst]?.id, field: t("email") }) }} /></span>}</p>
+          <p>{t("country")}{institutionList[currInst]?.pais && <span>{institutionList[currInst]?.pais} <i className='fas fa-edit' onClick={() => { handleShowModal({ institution: institutionList[currInst]?.id, field: t("country") }) }} /></span>}</p>
+          <p>{t("province")}{institutionList[currInst]?.provincia && <span>{institutionList[currInst]?.provincia} <i className='fas fa-edit' onClick={() => { handleShowModal({ institution: institutionList[currInst]?.id, field: t("province") }) }} /></span>}</p>
+          <p>{t("city")}{institutionList[currInst]?.ciudad && <span>{institutionList[currInst]?.ciudad} <i className='fas fa-edit' onClick={() => { handleShowModal({ institution: institutionList[currInst]?.id, field: t("city") }) }} /></span>}</p>
         </div>
         <div className='non-editable-info'>
-          <p>Estudiantes: {institutionList[currInst]?.num_students}</p>
-          <p>Puntuación: {institutionList[currInst]?.average_score}</p>
+          <p>{t("students")}{institutionList[currInst]?.num_students}</p>
+          <p>{t("score")}{institutionList[currInst]?.average_score}</p>
         </div>
       </div>
       <div className='buttons-container'>
         {!showInstModal && !showUserModal &&
           <>
-            <button onClick={() => { setShowInstModal(true) }}>Nueva Institución</button>
-            <button onClick={() => { setShowUserModal(true) }}>Nuevo Usuario</button>
-            <button onClick={handleDownloadCSV}>Descargar Informe</button>
+            <button onClick={() => { setShowInstModal(true) }}>{t("new-institution")}</button>
+            <button onClick={() => { setShowUserModal(true) }}>{t("new-user")}</button>
+            <button onClick={handleDownloadCSV}>{t("download-report")}</button>
           </>}
       </div>
       {showModal && <EditorModal institution={data.institution} field={data.field} close={setShowModal} />}

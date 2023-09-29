@@ -1,0 +1,16 @@
+{
+  "info-text": "Fill out the following fields",
+  "save": "SAVE",
+  "success": "Successfully added",
+  "error": "Could not add",
+  "first-name": "First Name",
+  "last-name": "Last Name",
+  "list-number": "List Number",
+  "password": "Password",
+  "code": "Institution Code",
+  "update-button": "UPDATE",
+  "student": "Student",
+  "teacher": "Teacher",
+  "principal": "Coordinator"
+}
+

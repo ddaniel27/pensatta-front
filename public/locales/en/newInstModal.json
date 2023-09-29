@@ -1,0 +1,13 @@
+{
+  "info-text": "Fill the next form",
+  "save": "SAVE",
+  "success": "Added successfully",
+  "error": "Error",
+  "name": "Name",
+  "email": "Email",
+  "country": "Country",
+  "province": "Province",
+  "city": "City",
+  "code": "Code",
+  "update-button": "UPDATE"
+}

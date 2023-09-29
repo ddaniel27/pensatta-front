@@ -1,0 +1,14 @@
+{
+  "info-text": "Preencha os campos a seguir",
+  "save": "SALVAR",
+  "success": "Foi adicionado corretamente",
+  "error": "Não foi possível adicionar",
+  "name": "Nome",
+  "email": "Email",
+  "country": "País",
+  "province": "Província",
+  "city": "Cidade",
+  "code": "Código",
+  "update-button": "ATUALIZAR"
+}
+

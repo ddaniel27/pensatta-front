@@ -1,0 +1,16 @@
+{
+  "info-text": "Preencha os campos a seguir",
+  "save": "SALVAR",
+  "success": "Foi adicionado corretamente",
+  "error": "Não foi possível adicionar",
+  "first-name": "Primeiro Nome",
+  "last-name": "Sobrenome",
+  "list-number": "Número da lista",
+  "password": "Senha",
+  "code": "Código da Instituição",
+  "update-button": "ATUALIZAR",
+  "student": "Estudante",
+  "teacher": "Professor",
+  "principal": "Coordenador"
+}
+

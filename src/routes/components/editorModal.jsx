@@ -1,14 +1,16 @@
-import React from 'react'
+import { useState, useEffect } from 'react'
 import { updateInsitutions } from '../../requests'
+import { useTranslation } from 'react-i18next'
 import styles from '../../styles/popups.module.css'
 
 export default function EditorModal ({ institution, field, close }) {
-  const [value, setValue] = React.useState('')
-  const [enabled, setEnabled] = React.useState(false)
-  const [done, setDone] = React.useState(false)
-  const [textDone, setTextDone] = React.useState('')
+  const [value, setValue] = useState('')
+  const [enabled, setEnabled] = useState(false)
+  const [done, setDone] = useState(false)
+  const [textDone, setTextDone] = useState('')
+  const { t } = useTranslation("editorModal")
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (value !== '') {
       setEnabled(false)
     } else {
@@ -21,9 +23,9 @@ export default function EditorModal ({ institution, field, close }) {
       { institution_code: institution, field, value },
       (data) => {
         if (data.updated) {
-          setTextDone('Se ha actualizado correctamente')
+          setTextDone(t("success"))
         } else {
-          setTextDone('No se ha podido actualizar')
+          setTextDone(t("error"))
         }
         setDone(true)
       },
@@ -39,13 +41,13 @@ export default function EditorModal ({ institution, field, close }) {
           done
             ? <>
               <h2>{textDone}</h2>
-              <button onClick={() => { window.location.reload() }}>ACTUALIZAR</button>
+              <button onClick={() => { window.location.reload() }}>{t("update-button")}</button>
             </>
             : <>
               <span onClick={() => { close(false) }} />
-              <h2>Ingrese el nuevo valor</h2>
+              <h2>{t("new-value")}</h2>
               <input type='text' placeholder={field} value={value} onChange={(e) => { setValue(e.target.value) }} />
-              <button onClick={handleClick} disabled={enabled}>Guardar</button>
+              <button onClick={handleClick} disabled={enabled}>{t("save")}</button>
             </>
         }
       </div>

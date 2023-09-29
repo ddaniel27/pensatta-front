@@ -1,0 +1,13 @@
+{
+  "info-text": "Llene los siguientes campos",
+  "save": "GUARDAR",
+  "success": "Se ha añadido correctamente",
+  "error": "No se ha podido añadir",
+  "name": "Nombre",
+  "email": "Correo",
+  "country": "Pais",
+  "province": "Provincia",
+  "city": "Ciudad",
+  "code": "Codigo",
+  "update-button": "ACTUALIZAR"
+}

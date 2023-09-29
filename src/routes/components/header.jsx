@@ -30,7 +30,6 @@ export default function Header({ headerText }){
             <div className="ham-div">
               <img src='./images/Atomo_Icono_MenúHamburguesa.svg' alt='Menú' onClick={toggleMenuHam}/>
               <select className="select-header-lang" name="type" onChange={handleChangeLanguage} >
-                <option value='' hidden disabled></option>
                 <option value="es">ES</option>
                 <option value="en">EN</option>
                 <option value="pt">PT</option>

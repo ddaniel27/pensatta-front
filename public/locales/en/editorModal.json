@@ -1,0 +1,8 @@
+{
+  "success": "Successfully updated",
+  "error": "Could not update",
+  "update-button": "UPDATE",
+  "new-value": "Enter the new value",
+  "save": "SAVE"
+}
+

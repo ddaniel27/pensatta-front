@@ -1,0 +1,12 @@
+{
+  "name": "Name: ",
+  "email": "Email: ",
+  "country": "Country: ",
+  "province": "Province: ",
+  "city": "City: ",
+  "students": "Students: ",
+  "score": "Score: ",
+  "new-institution": "New institution",
+  "new-user": "New user",
+  "download-report": "Download report"
+}
