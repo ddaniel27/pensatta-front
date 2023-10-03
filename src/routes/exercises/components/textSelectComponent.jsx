@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import Select from 'react-select'
 import styles from '../../../styles/textSelect.module.css'
 
@@ -6,6 +7,7 @@ const TextSelectComponent = ({ text, options, setPhase, setScore }) => {
   const [answers, setAnswers] = useState(options.map(option => ({ value: option.value, answer: null, isCorrect: false })))
   const [allAnswered, setAllAnswered] = useState(false)
   const [isFinish, setIsFinish] = useState(false)
+  const { t } = useTranslation("textSelectComponent")
 
   const handleChange = (event, index) => {
     const newAnswers = answers.map(
@@ -109,8 +111,8 @@ const TextSelectComponent = ({ text, options, setPhase, setScore }) => {
           </p>
         </div>
       </div>
-      {allAnswered && !isFinish && <button onClick={handleResponder}>RESPONDER</button>}
-      {isFinish && <button onClick={handleFinish}>SIGUIENTE</button>}
+      {allAnswered && !isFinish && <button onClick={handleResponder}>{t("answer-button")}</button>}
+      {isFinish && <button onClick={handleFinish}>{t("next-button")}</button>}
     </>
   )
 }

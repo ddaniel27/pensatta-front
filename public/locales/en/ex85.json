@@ -1,0 +1,155 @@
+{
+  "start-button": "START",
+  "options": [
+    [{
+      "question":"According to the diagram, if the selection is medium, what value does the variable C take?",
+      "answers":[
+        {
+          "text":"3",
+          "isCorrect":false
+        },
+        {
+          "text":"10",
+          "isCorrect":false
+        },
+        {
+          "text":"5",
+          "isCorrect":true
+        },
+        {
+          "text":"15",
+          "isCorrect":false
+        }
+      ],
+      "multiple":false,
+      "maxOptions":1
+    }],
+    [{
+      "question":"According to the diagram, if the selection is strong, what value does the variable C take?",
+      "answers":[
+        {
+          "text":"3",
+          "isCorrect":false
+        },
+        {
+          "text":"10",
+          "isCorrect":true
+        },
+        {
+          "text":"5",
+          "isCorrect":false
+        },
+        {
+          "text":"15",
+          "isCorrect":false
+        }
+      ],
+      "multiple":false,
+      "maxOptions":1
+    }],
+    [{
+      "question":"According to the diagram, if the selection is light, what value does the variable C take?",
+      "answers":[
+        {
+          "text":"3",
+          "isCorrect":true
+        },
+        {
+          "text":"10",
+          "isCorrect":false
+        },
+        {
+          "text":"5",
+          "isCorrect":false
+        },
+        {
+          "text":"15",
+          "isCorrect":false
+        }
+      ],
+      "multiple":false,
+      "maxOptions":1
+    }],
+    [{
+      "question":"What is the first thing the coffee maker checks?",
+      "answers":[
+        {
+          "text":"If it's turned on",
+          "isCorrect":false
+        },
+        {
+          "text":"If it has the ingredients",
+          "isCorrect":true
+        },
+        {
+          "text":"The desired coffee strength",
+          "isCorrect":false
+        },
+        {
+          "text":"The brewing time",
+          "isCorrect":false
+        }
+      ],
+      "multiple":false,
+      "maxOptions":1
+    }],
+    [{
+      "question":"How many ingredients does the coffee maker need to make coffee?",
+      "answers":[
+        {
+          "text":"2",
+          "isCorrect":true
+        },
+        {
+          "text":"1",
+          "isCorrect":false
+        },
+        {
+          "text":"3",
+          "isCorrect":false
+        },
+        {
+          "text":"4",
+          "isCorrect":false
+        }
+      ],
+      "multiple":false,
+      "maxOptions":1
+    }],
+    [{
+      "question":"While the coffee is brewing, the coffee maker's screen...",
+      "answers":[
+        {
+          "text":"Asks the user to add cream",
+          "isCorrect":false
+        },
+        {
+          "text":"Indicates to the user to wait a moment",
+          "isCorrect":true
+        },
+        {
+          "text":"Tells the user to remove the container",
+          "isCorrect":false
+        },
+        {
+          "text":"Asks the user to make another coffee",
+          "isCorrect":false
+        }
+      ],
+      "multiple":false,
+      "maxOptions":1
+    }]
+  ],
+  "initMessages":[
+    "Next, you will find a flowchart corresponding to the algorithm of a smart coffee maker.",
+    "Analyze it and answer the question you will find at the end of the exercise."
+  ],
+  "threshold": {
+    "max": 1,
+    "min": 0,
+    "perfect": 1
+  },
+  "color": "#9968A6",
+  "name": "Best Practices",
+  "id": 85
+}

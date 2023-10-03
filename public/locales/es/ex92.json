@@ -1,4 +1,14 @@
 {
+  "next-button": "SIGUIENTE",
+  "increase-temp": "Aumentar temperatura",
+  "decrease-temp": "Disminuir temperatura",
+  "increase-pressure": "Incrementar presión",
+  "decrease-pressure": "Disminuir presión",
+  "from-one-to-another": "Transferir líquido desde",
+  "instructions": "Instrucciones",
+  "tanks": "Tanques",
+  "tank-1": "Tanque 1",
+  "tank-2": "Tanque 2",
   "initMessages":["A continuación, encontrarás un simulador de tanques de agua controlados por un panel.",
     "En la primera parte, deberás construir el panel de control en el orden específicado. Lee las instrucciones y selecciona las opciones que necesites para ejecutarlas.",
     "En la segunda parte, se ejecutarán las instrucciones seleccionadas."

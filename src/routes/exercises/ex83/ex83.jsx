@@ -1,12 +1,20 @@
+import { useState, useEffect } from 'react'
 import ScoringComponent from '../components/scoringComponent'
 import DfdSelect from '../components/dfdSelect'
-import data from './data.json'
+import useData from "../../../hooks/useData"
 import '../../../styles/ex83.css'
 
 export default function ex83 () {
-  const variations = data.variations[0]
+  const { data } = useData("ex83")
+  const [myData, setMyData] = useState({ ...data })
+
+  useEffect(() => {
+    setMyData({ ...data })
+  }, [data])
+
+  const variations = myData.variations[0]
   return (
-    <ScoringComponent initMessages={data.initMessages} title={data.name} background={data.color} exerciseId={data.id} threshold={data.threshold}>
+    <ScoringComponent initMessages={myData.initMessages} title={myData.name} background={myData.color} exerciseId={myData.id} threshold={myData.threshold}>
       {
         (setScore, setPhase) => (
           <div className='ex83-container'>

@@ -1,11 +1,15 @@
-import React from 'react'
+import { useState, useEffect } from 'react'
 import ScoringComponent from '../components/scoringComponent'
-import data from './data.json'
+import useData from "../../../hooks/useData"
 import TextSelectComponent from '../components/textSelectComponent'
 
 export default function Ex81 () {
-  // eslint-disable-next-line no-unused-vars
-  const [myData, setMyData] = React.useState(data)
+  const { data } = useData("ex81")
+  const [myData, setMyData] = useState({ ...data })
+
+  useEffect(() => {
+    setMyData({ ...data })
+  }, [data])
 
   return (
     <ScoringComponent initMessages={myData.initMessages} background={myData.color} title={myData.name} threshold={myData.threshold} exerciseId={myData.id}>

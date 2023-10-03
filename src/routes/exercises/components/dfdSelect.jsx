@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from 'react'
+import { useTranslation } from 'react-i18next'
 import styles from '../../../styles/dfdSelect.module.css'
 
 function SelectDropdown ({ x = 0, y = 0, options = ['B / 2', '2*(X + B)', 'X - 1'], setAnswers, id }) {
@@ -24,6 +25,7 @@ export default function DfdSelect ({ purple = 'X=9 ; B=6;', blue = 'Fin del prog
   const [validations, setValidations] = useState({ 1: false, 2: false, 3: false })
   const optionsRef = useRef([gray2, gray3, gray4].sort(() => Math.random() - 0.5))
   const [answers, setAnswers] = useState({ 1: optionsRef.current[0], 2: optionsRef.current[1], 3: optionsRef.current[2] })
+  const { t } = useTranslation("dfdSelect")
 
   useEffect(() => {
     if (isFinish) {
@@ -63,8 +65,8 @@ export default function DfdSelect ({ purple = 'X=9 ; B=6;', blue = 'Fin del prog
           <text x="120" y="285" className={styles.text}>{answers['1']}</text>
           <text x="120" y="345" className={styles.text}>{answers['2']}</text>
           <text x="120" y="405" className={styles.text}>{answers['3']}</text>
-          <text x="330" y="110" className={styles.textyn}>NO</text>
-          <text x="150" y="195" className={styles.textyn}>SÍ</text>
+          <text x="330" y="110" className={styles.textyn}>{t("no")}</text>
+          <text x="150" y="195" className={styles.textyn}>{t("yest")}</text>
         </svg>
         {!isFinish && <>
           <SelectDropdown options = {optionsRef.current} x={52} y={62.5} id={1} setAnswers={setAnswers}/>
@@ -72,8 +74,8 @@ export default function DfdSelect ({ purple = 'X=9 ; B=6;', blue = 'Fin del prog
           <SelectDropdown options = {optionsRef.current} x={52} y={90.5} id={3} setAnswers={setAnswers}/>
         </>}
       </div>
-      {!isFinish && <button onClick={() => setIsFinish(true)}>RESPONDER</button>}
-      {isFinish && <button onClick={() => setPhase('end')}>FINALIZAR</button>}
+      {!isFinish && <button onClick={() => setIsFinish(true)}>{t("answer-button")}</button>}
+      {isFinish && <button onClick={() => setPhase('end')}>{t("finish-button")}</button>}
     </>
 
   )

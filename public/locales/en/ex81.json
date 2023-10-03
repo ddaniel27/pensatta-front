@@ -1,0 +1,33 @@
+{
+    "options": {"1":{
+        "texto":["Because IoT refers to the interconnection and interaction of objects on the same network, the applications are almost endless. For example, it allows having a refrigerator at home connected to the internet, generating alerts about the expiration of its content, inventory, or statistics of it. IoT allows access to the ",
+                 "%INSERTTEXT%",
+                 " of the object connected to the ",
+                 "%INSERTTEXT%" , 
+                 " , that's why its utility has a great impact on the digital behavior of our society, taking the applications of this great technology, from automation in constructions, to concepts like the",
+                  "%INSERTTEXT%",
+                  " and the ",
+                  "%INSERTTEXT%",
+                  " , where devices with this technology are used to improve traffic control, supplies of public and private services, public transportation, and supply sectors."],
+        "opciones":[
+            {"value":1,"label":"information"},
+            {"value":3,"label":"internet"},
+            {"value":5,"label":"smart cities"},
+            {"value":7,"label":"smart buildings"}
+        ]
+    }},
+    "initMessages":[
+        "IoT (Internet of Things) refers to the grouping and interconnection of devices or objects through a network, in which all of these are visible and interact.",
+        "Any device could be connected to the network, can you imagine it? It's 100% real and currently can lead to extensive applications mentioned in the following text.",
+        "Select the correct word to complete the paragraph in each space."
+    ],
+    "path": "81",
+    "color": "#1B6893",
+    "name": "IoT",
+    "id": 81,
+    "threshold": {
+        "max": 4,
+        "min": 0,
+        "perfect": 4
+    }
+}

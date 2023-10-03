@@ -1,0 +1,23 @@
+{
+  "variations":[
+    {
+      "purple": "X=9 ; B=6;", 
+      "yellow": "Is X > B?",  
+      "gray1": "X + B",
+      "gray2": "B / 2",
+      "gray3": "2*(X + B)", 
+      "gray4": "X - 1",
+      "corrects": { "1": "2*(X + B)", "2": "X - 1", "3": "B / 2" },
+      "image": "var1.svg"
+    }
+  ],
+  "threshold": {
+    "max":3,
+    "min":0,
+    "perfect":3
+  },
+  "name":"Flowchart",
+  "color": "#53745B",
+  "id": 83,
+  "initMessages":["Next, you will find an algorithm described as a series of steps and an equivalent flowchart.", "The diagram has a couple of mistakes. Select the correct instructions."]
+}

@@ -1,0 +1,81 @@
+{
+  "next-button": "NEXT",
+  "increase-temp": "Increase temperature",
+  "decrease-temp": "Decrease temperature",
+  "increase-pressure": "Increase pressure",
+  "decrease-pressure": "Decrease pressure",
+  "from-one-to-another": "Transfer liquid from",
+  "instructions": "Instructions",
+  "tanks": "Tanks",
+  "tank-1": "Tank 1",
+  "tank-2": "Tank 2",
+  "initMessages": [
+    "Next, you will find a simulator of water tanks controlled by a panel.",
+    "In the first part, you will need to build the control panel in the specified order. Read the instructions and select the options you need to execute them.",
+    "In the second part, the selected instructions will be executed."
+  ],
+  "variations": [
+    {
+      "sequence": [
+        { "function": "tempIncrease", "tank": 1 },
+        { "function": "decreasePressure", "tank": 1 },
+        { "function": "fromOneToAnother", "tank": 2 },
+        { "function": "tempDecrease", "tank": 2 }
+      ],
+      "text": "INSTRUCTIONS: <br/> <ol><li>Increase the temperature of tank 1</li> <li>Decrease the pressure of tank 1</li> <li>Transfer water from tank 2 to tank 1</li> <li>Decrease the temperature of tank 2</li></ol>"
+    },
+    {
+      "sequence": [
+        { "function": "tempDecrease", "tank": 1 },
+        { "function": "increasePressure", "tank": 1 },
+        { "function": "fromOneToAnother", "tank": 2 },
+        { "function": "tempDecrease", "tank": 2 }
+      ],
+      "text": "INSTRUCTIONS: <br/> <ol><li>Decrease the temperature of tank 1</li> <li>Increase the pressure of tank 1</li> <li>Transfer water from tank 2 to tank 1</li> <li>Decrease the temperature of tank 2</li></ol>"
+    },
+    {
+      "sequence": [
+        { "function": "tempIncrease", "tank": 2 },
+        { "function": "increasePressure", "tank": 2 },
+        { "function": "fromOneToAnother", "tank": 1 },
+        { "function": "tempDecrease", "tank": 1 }
+      ],
+      "text": "INSTRUCTIONS: <br/> <ol><li>Increase the temperature of tank 2</li> <li>Increase the pressure of tank 2</li> <li>Transfer water from tank 1 to tank 2</li> <li>Decrease the temperature of tank 1</li></ol>"
+    },
+    {
+      "sequence": [
+        { "function": "decreasePressure", "tank": 1 },
+        { "function": "increasePressure", "tank": 2 },
+        { "function": "fromOneToAnother", "tank": 1 },
+        { "function": "tempDecrease", "tank": 1 }
+      ],
+      "text": "INSTRUCTIONS: <br/> <ol><li>Decrease the pressure of tank 1</li> <li>Increase the pressure of tank 2</li> <li>Transfer water from tank 1 to tank 2</li> <li>Decrease the temperature of tank 1</li></ol>"
+    },
+    {
+      "sequence": [
+        { "function": "tempIncrease", "tank": 1 },
+        { "function": "tempDecrease", "tank": 1 },
+        { "function": "increasePressure", "tank": 2 },
+        { "function": "fromOneToAnother", "tank": 2 }
+      ],
+      "text": "INSTRUCTIONS: <br/> <ol><li>Increase the temperature of tank 1</li> <li>Decrease the temperature of tank 1</li> <li>Increase the pressure of tank 2</li> <li>Transfer liquid from tank 2 to tank 1</li></ol>"
+    },
+    {
+      "sequence": [
+        { "function": "tempIncrease", "tank": 2 },
+        { "function": "tempDecrease", "tank": 1 },
+        { "function": "increasePressure", "tank": 2 },
+        { "function": "fromOneToAnother", "tank": 2 }
+      ],
+      "text": "INSTRUCTIONS: <br/> <ol><li>Increase the temperature of tank 2</li> <li>Decrease the temperature of tank 1</li> <li>Increase the pressure of tank 2</li> <li>Transfer liquid from tank 2 to tank 1</li></ol>"
+    }
+  ],
+  "color": "#1B6893",
+  "name": "Water tank control",
+  "threshold": {
+    "max": 4,
+    "min": 0,
+    "perfect": 4
+  },
+  "id": 92
+}

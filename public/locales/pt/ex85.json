@@ -1,0 +1,155 @@
+{
+  "start-button": "INICIAR",
+  "options": [
+    [{
+      "question":"De acordo com o diagrama, se a seleção for médio, qual é o valor que a variável C assume?",
+      "answers":[
+        {
+          "text":"3",
+          "isCorrect":false
+        },
+        {
+          "text":"10",
+          "isCorrect":false
+        },
+        {
+          "text":"5",
+          "isCorrect":true
+        },
+        {
+          "text":"15",
+          "isCorrect":false
+        }
+      ],
+      "multiple":false,
+      "maxOptions":1
+    }],
+    [{
+      "question":"De acordo com o diagrama, se a seleção for forte, qual é o valor que a variável C assume?",
+      "answers":[
+        {
+          "text":"3",
+          "isCorrect":false
+        },
+        {
+          "text":"10",
+          "isCorrect":true
+        },
+        {
+          "text":"5",
+          "isCorrect":false
+        },
+        {
+          "text":"15",
+          "isCorrect":false
+        }
+      ],
+      "multiple":false,
+      "maxOptions":1
+    }],
+    [{
+      "question":"De acordo com o diagrama, se a seleção for suave, qual é o valor que a variável C assume?",
+      "answers":[
+        {
+          "text":"3",
+          "isCorrect":true
+        },
+        {
+          "text":"10",
+          "isCorrect":false
+        },
+        {
+          "text":"5",
+          "isCorrect":false
+        },
+        {
+          "text":"15",
+          "isCorrect":false
+        }
+      ],
+      "multiple":false,
+      "maxOptions":1
+    }],
+    [{
+      "question":"O que a cafeteira verifica primeiro?",
+      "answers":[
+        {
+          "text":"Se está ligada",
+          "isCorrect":false
+        },
+        {
+          "text":"Se tem os ingredientes",
+          "isCorrect":true
+        },
+        {
+          "text":"A intensidade do café desejado",
+          "isCorrect":false
+        },
+        {
+          "text":"O tempo de preparo",
+          "isCorrect":false
+        }
+      ],
+      "multiple":false,
+      "maxOptions":1
+    }],
+    [{
+      "question":"Quantos ingredientes a cafeteira precisa para preparar o café?",
+      "answers":[
+        {
+          "text":"2",
+          "isCorrect":true
+        },
+        {
+          "text":"1",
+          "isCorrect":false
+        },
+        {
+          "text":"3",
+          "isCorrect":false
+        },
+        {
+          "text":"4",
+          "isCorrect":false
+        }
+      ],
+      "multiple":false,
+      "maxOptions":1
+    }],
+    [{
+      "question":"Enquanto o café é preparado, a tela da cafeteira...",
+      "answers":[
+        {
+          "text":"Pede ao usuário para adicionar creme",
+          "isCorrect":false
+        },
+        {
+          "text":"Indica ao usuário que espere um momento",
+          "isCorrect":true
+        },
+        {
+          "text":"Indica ao usuário para retirar o recipiente",
+          "isCorrect":false
+        },
+        {
+          "text":"Pede ao usuário para preparar outro café",
+          "isCorrect":false
+        }
+      ],
+      "multiple":false,
+      "maxOptions":1
+    }]
+  ],
+  "initMessages":[
+    "A seguir, você encontrará um diagrama de fluxo correspondente ao algoritmo de uma cafeteira inteligente.",
+    "Analise-o e responda à pergunta que encontrará ao final do exercício."
+  ],
+  "threshold": {
+    "max": 1,
+    "min": 0,
+    "perfect": 1
+  },
+  "color": "#9968A6",
+  "name": "Boas práticas",
+  "id": 85
+}
