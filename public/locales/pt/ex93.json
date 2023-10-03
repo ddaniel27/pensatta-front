@@ -1,0 +1,1353 @@
+{
+  "initMessages":[
+    "A continuación, encontrarás un explorador de mapas.",
+    "Configúralo seleccionando de la lista los datos que quieras visualizar sobre cada país.",
+    "Al tocar un país, el software te dará la información que pediste.",
+    "Puedes apoyarte en el mapa de la derecha para ubicar la región que prefieras."
+  ],
+  "name":"Mapa del Mundo",
+  "color":"#53745B",
+  "countries":{
+    "north-america":{
+      "usa":{
+        "name":"Estados Unidos",
+        "demonym":"estadounidense",
+        "capital":"Washington D. C.",
+        "money": "Dólar estadounidense",
+        "language":"Inglés",
+        "domain":".us"
+      },
+      "canada":{
+        "name":"Canadá",
+        "demonym":"canadiense",
+        "capital":"Ottawa",
+        "money": "Dólar canadiense",
+        "language":"Inglés, francés",
+        "domain":".ca"
+      },
+      "mexico":{
+        "name":"México",
+        "demonym":"mexicano",
+        "capital":"Ciudad de México",
+        "money": "Peso mexicano",
+        "language":"Español",
+        "domain":".mx"
+      },
+      "groenlandia":{
+        "name":"Groenlandia",
+        "demonym":"groenlandés",
+        "capital":"Nuuk",
+        "money": "Corona danesa",
+        "language":"Groenlandés",
+        "domain":".gl"
+      }
+    },
+    "central-america":{
+      "guatemala":{
+        "name":"Guatemala",
+        "demonym":"guatemalteco",
+        "capital":"Ciudad de Guatemala",
+        "money": "Quetzal",
+        "language":"Español",
+        "domain":".gt"
+      },
+      "belice":{
+        "name":"Belice",
+        "demonym":"beliceño",
+        "capital":"Belmopán",
+        "money": "Dólar beliceño",
+        "language":"Inglés",
+        "domain":".bz"
+      },
+      "honduras":{
+        "name":"Honduras",
+        "demonym":"hondureño",
+        "capital":"Tegucigalpa",
+        "money": "Lempira",
+        "language":"Español",
+        "domain":".hn"
+      },
+      "salvador":{
+        "name":"El Salvador",
+        "demonym":"salvadoreño",
+        "capital":"San Salvador",
+        "money": "Dólar estadounidense",
+        "language":"Español",
+        "domain":".sv"
+      },
+      "nicaragua":{
+        "name":"Nicaragua",
+        "demonym":"nicaragüense",
+        "capital":"Managua",
+        "money": "Córdoba",
+        "language":"Español",
+        "domain":".ni"
+      },
+      "costarica":{
+        "name":"Costa Rica",
+        "demonym":"costarricense",
+        "capital":"San José",
+        "money": "Colón",
+        "language":"Español",
+        "domain":".cr"
+      },
+      "panama":{
+        "name":"Panamá",
+        "demonym":"panameño",
+        "capital":"Panamá",
+        "money": "Balboa",
+        "language":"Español",
+        "domain":".pa"
+      },
+      "dominicana":{
+        "name":"República Dominicana",
+        "demonym":"dominicano",
+        "capital":"Santo Domingo",
+        "money": "Peso dominicano",
+        "language":"Español",
+        "domain":".do"
+      },
+      "haiti":{
+        "name":"Haití",
+        "demonym":"haitiano",
+        "capital":"Puerto Príncipe",
+        "money": "Gourde",
+        "language":"Francés",
+        "domain":".ht"
+      },
+      "jamaica":{
+        "name":"Jamaica",
+        "demonym":"jamaiquino",
+        "capital":"Kingston",
+        "money": "Dólar jamaiquino",
+        "language":"Inglés",
+        "domain":".jm"
+      },
+      "cuba":{
+        "name":"Cuba",
+        "demonym":"cubano",
+        "capital":"La Habana",
+        "money": "Peso cubano",
+        "language":"Español",
+        "domain":".cu"
+      }
+
+      },
+      "south-america":{
+        "colombia":{
+          "name":"Colombia",
+          "demonym":"colombiano",
+          "capital":"Bogotá",
+          "money": "Peso colombiano",
+          "language":"Español",
+          "domain":".co"
+        },
+        "venezuela":{
+          "name":"Venezuela",
+          "demonym":"venezolano",
+          "capital":"Caracas",
+          "money": "Bolívar",
+          "language":"Español",
+          "domain":".ve"
+        },
+        "ecuador":{
+          "name":"Ecuador",
+          "demonym":"ecuatoriano",
+          "capital":"Quito",
+          "money": "Dólar estadounidense",
+          "language":"Español",
+          "domain":".ec"
+        },
+        "peru":{
+          "name":"Perú",
+          "demonym":"peruano",
+          "capital":"Lima",
+          "money": "Sol",
+          "language":"Español",
+          "domain":".pe"
+        },
+        "bolivia":{
+          "name":"Bolivia",
+          "demonym":"boliviano",
+          "capital":"Sucre",
+          "money": "Boliviano",
+          "language":"Español",
+          "domain":".bo"
+        },
+        "chile":{
+          "name":"Chile",
+          "demonym":"chileno",
+          "capital":"Santiago de Chile",
+          "money": "Peso chileno",
+          "language":"Español",
+          "domain":".cl"
+        },
+        "argentina":{
+          "name":"Argentina",
+          "demonym":"argentino",
+          "capital":"Buenos Aires",
+          "money": "Peso argentino",
+          "language":"Español",
+          "domain":".ar"
+        },
+        "uruguay":{
+          "name":"Uruguay",
+          "demonym":"uruguayo",
+          "capital":"Montevideo",
+          "money": "Peso uruguayo",
+          "language":"Español",
+          "domain":".uy"
+        },
+        "paraguay":{
+          "name":"Paraguay",
+          "demonym":"paraguayo",
+          "capital":"Asunción",
+          "money": "Guaraní",
+          "language":"Español",
+          "domain":".py"
+        },
+        "brasil":{
+          "name":"Brasil",
+          "demonym":"brasileño",
+          "capital":"Brasilia",
+          "money": "Real",
+          "language":"Portugués",
+          "domain":".br"
+        },
+        "guyfrancesa":{
+          "name":"Guayana Francesa",
+          "demonym":"guayanés",
+          "capital":"Cayena",
+          "money": "Euro",
+          "language":"Francés",
+          "domain":".gf"
+        },
+        "suriname":{
+          "name":"Surinam",
+          "demonym":"surinamés",
+          "capital":"Paramaribo",
+          "money": "Dólar surinamés",
+          "language":"Neerlandés",
+          "domain":".sr"
+        },
+        "guyana":{
+          "name":"Guayana Británica",
+          "demonym":"guayanés",
+          "capital":"Georgetown",
+          "money": "Dólar guyanés",
+          "language":"Inglés",
+          "domain":".gy"
+        }
+      },
+      "north-europe":{
+        "lituania":{
+          "name":"Lituania",
+          "demonym":"lituano",
+          "capital":"Vilna",
+          "money": "Euro",
+          "language":"Lituano",
+          "domain":".lt"
+        },
+        "letonia":{
+          "name":"Letonia",
+          "demonym":"letón",
+          "capital":"Riga",
+          "money": "Euro",
+          "language":"Letón",
+          "domain":".lv"
+        },
+        "estonia":{
+          "name":"Estonia",
+          "demonym":"estonio",
+          "capital":"Tallin",
+          "money": "Euro",
+          "language":"Estonio",
+          "domain":".ee"
+        },
+        "dinamarca":{
+          "name":"Dinamarca",
+          "demonym":"danés",
+          "capital":"Copenhague",
+          "money": "Corona danesa",
+          "language":"Danés",
+          "domain":".dk"
+        },
+        "finlandia":{
+          "name":"Finlandia",
+          "demonym":"finlandés",
+          "capital":"Helsinki",
+          "money": "Euro",
+          "language":"Finés",
+          "domain":".fi"
+        },
+        "suecia":{
+          "name":"Suecia",
+          "demonym":"sueco",
+          "capital":"Estocolmo",
+          "money": "Corona sueca",
+          "language":"Sueco",
+          "domain":".se"
+        },
+        "noruega":{
+          "name":"Noruega",
+          "demonym":"noruego",
+          "capital":"Oslo",
+          "money": "Corona noruega",
+          "language":"Noruego",
+          "domain":".no"
+        },
+        "islandia":{
+          "name":"Islandia",
+          "demonym":"islandés",
+          "capital":"Reikiavik",
+          "money": "Corona islandesa",
+          "language":"Islandés",
+          "domain":".is"
+        }
+        },
+        "central-europe":{
+          "ucrania":{
+            "name":"Ucrania",
+            "demonym":"ucraniano",
+            "capital":"Kiev",
+            "money": "Grivna",
+            "language":"Ucraniano",
+            "domain":".ua"
+          },
+          "bielorrusia":{
+            "name":"Bielorrusia",
+            "demonym":"bielorruso",
+            "capital":"Minsk",
+            "money": "Rublo bielorruso",
+            "language":"Bielorruso",
+            "domain":".by"
+          },
+          "polonia":{
+            "name":"Polonia",
+            "demonym":"polaco",
+            "capital":"Varsovia",
+            "money": "Zloty",
+            "language":"Polaco",
+            "domain":".pl"
+          },
+          "eslovaquia":{
+            "name":"Eslovaquia",
+            "demonym":"eslovaco",
+            "capital":"Bratislava",
+            "money": "Euro",
+            "language":"Eslovaco",
+            "domain":".sk"
+          },
+          "eslovenia":{
+            "name":"Eslovenia",
+            "demonym":"esloveno",
+            "capital":"Liubliana",
+            "money": "Euro",
+            "language":"Esloveno",
+            "domain":".si"
+          },
+          "hungria":{
+            "name":"Hungría",
+            "demonym":"húngaro",
+            "capital":"Budapest",
+            "money": "Forinto",
+            "language":"Húngaro",
+            "domain":".hu"
+          },
+          "austria":{
+            "name":"Austria",
+            "demonym":"austriaco",
+            "capital":"Viena",
+            "money": "Euro",
+            "language":"Alemán",
+            "domain":".at"
+          },
+          "republicacheca":{
+            "name":"República Checa",
+            "demonym":"checo",
+            "capital":"Praga",
+            "money": "Corona checa",
+            "language":"Checo",
+            "domain":".cz"
+          },
+          "suiza":{
+            "name":"Suiza",
+            "demonym":"suizo",
+            "capital":"Berna",
+            "money": "Franco suizo",
+            "language":"Alemán",
+            "domain":".ch"
+          },
+          "alemania":{
+            "name":"Alemania",
+            "demonym":"alemán",
+            "capital":"Berlín",
+            "money": "Euro",
+            "language":"Alemán",
+            "domain":".de"
+          },
+          "luxemburgo":{
+            "name":"Luxemburgo",
+            "demonym":"luxemburgués",
+            "capital":"Luxemburgo",
+            "money": "Euro",
+            "language":"Luxemburgués",
+            "domain":".lu"
+          },
+          "belgica":{
+            "name":"Bélgica",
+            "demonym":"belga",
+            "capital":"Bruselas",
+            "money": "Euro",
+            "language":"Francés",
+            "domain":".be"
+          },
+          "holanda":{
+            "name":"Países Bajos",
+            "demonym":"neerlandés",
+            "capital":"Ámsterdam",
+            "money": "Euro",
+            "language":"Neerlandés",
+            "domain":".nl"
+          },
+          "uk":{
+            "name":"Reino Unido",
+            "demonym":"británico",
+            "capital":"Londres",
+            "money": "Libra esterlina",
+            "language":"Inglés",
+            "domain":".uk"
+
+          },
+          "irlanda":{
+            "name":"Irlanda",
+            "demonym":"irlandés",
+            "capital":"Dublín",
+            "money": "Euro",
+            "language":"Irlandés",
+            "domain":".ie"
+          }
+      },
+      "south-europe":{
+        "bulgaria":{
+          "name":"Bulgaria",
+          "demonym":"búlgaro",
+          "capital":"Sofía",
+          "money": "Lev",
+          "language":"Búlgaro",
+          "domain":".bg"
+        },
+        "grecia":{
+          "name":"Grecia",
+          "demonym":"griego",
+          "capital":"Atenas",
+          "money": "Euro",
+          "language":"Griego",
+          "domain":".gr"
+        },
+        "albania":{
+          "name":"Albania",
+          "demonym":"albanés",
+          "capital":"Tirana",
+          "money": "Lek",
+          "language":"Albanés",
+          "domain":".al"
+        },
+        "macedonia":{
+          "name":"Macedonia",
+          "demonym":"macedonio",
+          "capital":"Skopie",
+          "money": "Dinar macedonio",
+          "language":"Macedonio",
+          "domain":".mk"
+        },
+        "montenegro":{
+          "name":"Montenegro",
+          "demonym":"montenegrino",
+          "capital":"Podgorica",
+          "money": "Euro",
+          "language":"Montenegrino",
+          "domain":".me"
+        },
+        "bosnia":{
+          "name":"Bosnia y Herzegovina",
+          "demonym":"bosnio",
+          "capital":"Sarajevo",
+          "money": "Marco convertible",
+          "language":"Bosnio",
+          "domain":".ba"
+        },
+        "croacia":{
+          "name":"Croacia",
+          "demonym":"croata",
+          "capital":"Zagreb",
+          "money": "Kuna",
+          "language":"Croata",
+          "domain":".hr"
+        },
+        "serbia":{
+          "name":"Serbia",
+          "demonym":"serbio",
+          "capital":"Belgrado",
+          "money": "Dinar serbio",
+          "language":"Serbio",
+          "domain":".rs"
+        },
+        "espana":{
+          "name":"España",
+          "demonym":"español",
+          "capital":"Madrid",
+          "money": "Euro",
+          "language":"Español",
+          "domain":".es"
+        },
+        "portugal":{
+          "name":"Portugal",
+          "demonym":"portugués",
+          "capital":"Lisboa",
+          "money": "Euro",
+          "language":"Portugués",
+          "domain":".pt"
+        },
+        "italia":{
+          "name":"Italia",
+          "demonym":"italiano",
+          "capital":"Roma",
+          "money": "Euro",
+          "language":"Italiano",
+          "domain":".it"
+        },
+        "francia":{
+          "name":"Francia",
+          "demonym":"francés",
+          "capital":"París",
+          "money": "Euro",
+          "language":"Francés",
+          "domain":".fr"
+        },
+        "moldavia":{
+          "name":"Moldavia",
+          "demonym":"moldavo",
+          "capital":"Chisináu",
+          "money": "Leu moldavo",
+          "language":"Moldavo",
+          "domain":".md"
+        },
+        "rumania":{
+          "name":"Rumania",
+          "demonym":"rumano",
+          "capital":"Bucarest",
+          "money": "Leu rumano",
+          "language":"Rumano",
+          "domain":".ro"
+        }
+        },
+        "north-africa":{
+          "sudan":{
+            "name":"Sudán",
+            "demonym":"sudanés",
+            "capital":"Jartum",
+            "money": "Libra sudanesa",
+            "language":"Árabe",
+            "domain":".sd"
+          },
+          "saharaocci":{
+            "name":"Sahara Occidental",
+            "demonym":"saharaui",
+            "capital":"El Aaiún",
+            "money": "Dirham marroquí",
+            "language":"Árabe",
+            "domain":".eh"
+          },
+          "marruecos":{
+            "name":"Marruecos",
+            "demonym":"marroquí",
+            "capital":"Rabat",
+            "money": "Dirham marroquí",
+            "language":"Árabe",
+            "domain":".ma"
+          },
+          "argelia":{
+            "name":"Argelia",
+            "demonym":"argelino",
+            "capital":"Argel",
+            "money": "Dinar argelino",
+            "language":"Árabe",
+            "domain":".dz"
+          },
+          "tunez":{
+            "name":"Túnez",
+            "demonym":"tunecino",
+            "capital":"Túnez",
+            "money": "Dinar tunecino",
+            "language":"Árabe",
+            "domain":".tn"
+          },
+          "libia":{
+            "name":"Libia",
+            "demonym":"libio",
+            "capital":"Trípoli",
+            "money": "Dinar libio",
+            "language":"Árabe",
+            "domain":".ly"
+          },
+          "egipto":{
+            "name":"Egipto",
+            "demonym":"egipcio",
+            "capital":"El Cairo",
+            "money": "Libra egipcia",
+            "language":"Árabe",
+            "domain":".eg"
+          }
+        },
+        "west-africa":{
+          "nigeria":{
+            "name":"Nigeria",
+            "demonym":"nigeriano",
+            "capital":"Abuya",
+            "money": "Naira",
+            "language":"Inglés",
+            "domain":".ng"
+          },
+          "mali":{
+            "name":"Mali",
+            "demonym":"maliense",
+            "capital":"Bamako",
+            "money": "Franco CFA",
+            "language":"Francés",
+            "domain":".ml"
+          },
+          "senegal":{
+            "name":"Senegal",
+            "demonym":"senegalés",
+            "capital":"Dakar",
+            "money": "Franco CFA",
+            "language":"Francés",
+            "domain":".sn"
+          },
+          "gambia":{
+            "name":"Gambia",
+            "demonym":"gambiano",
+            "capital":"Banjul",
+            "money": "Dalasi",
+            "language":"Inglés",
+            "domain":".gm"
+          },
+          "guinea":{
+            "name":"Guinea",
+            "demonym":"guineano",
+            "capital":"Conakri",
+            "money": "Franco guineano",
+            "language":"Francés",
+            "domain":".gn"
+          },
+          "sierraleona":{
+            "name":"Sierra Leona",
+            "demonym":"sierraleonés",
+            "capital":"Freetown",
+            "money": "Leone",
+            "language":"Inglés",
+            "domain":".sl"
+          },
+          "liberia":{
+            "name":"Liberia",
+            "demonym":"liberiano",
+            "capital":"Monrovia",
+            "money": "Dólar liberiano",
+            "language":"Inglés",
+            "domain":".lr"
+          },
+          "costademarfil":{
+            "name":"Costa de Marfil",
+            "demonym":"marfileño",
+            "capital":"Yamusukro",
+            "money": "Franco CFA",
+            "language":"Francés",
+            "domain":".ci"
+          },
+          "burkinafaso":{
+            "name":"Burkina Faso",
+            "demonym":"burkinés",
+            "capital":"Uagadugú",
+            "money": "Franco CFA",
+            "language":"Francés",
+            "domain":".bf"
+          },
+          "ghana":{
+            "name":"Ghana",
+            "demonym":"ghanés",
+            "capital":"Acra",
+            "money": "Cedi",
+            "language":"Inglés",
+            "domain":".gh"
+          },
+          "togo":{
+            "name":"Togo",
+            "demonym":"togolés",
+            "capital":"Lomé",
+            "money": "Franco CFA",
+            "language":"Francés",
+            "domain":".tg"
+          },
+          "benin":{
+            "name":"Benín",
+            "demonym":"beninés",
+            "capital":"Porto Novo",
+            "money": "Franco CFA",
+            "language":"Francés",
+            "domain":".bj"
+          },
+          "niger":{
+            "name":"Níger",
+            "demonym":"nigerino",
+            "capital":"Niamey",
+            "money": "Franco CFA",
+            "language":"Francés",
+            "domain":".ne"
+          },
+          "guineabissau":{
+            "name":"Guinea-Bissau",
+            "demonym":"guineano",
+            "capital":"Bissau",
+            "money": "Franco CFA",
+            "language":"Portugués",
+            "domain":".gw"
+          },
+          "mauritania":{
+            "name":"Mauritania",
+            "demonym":"mauritano",
+            "capital":"Nuakchot",
+            "money": "Uguiya",
+            "language":"Árabe",
+            "domain":".mr"
+          }
+          },
+          "east-africa":{
+            "madagascar":{
+              "name":"Madagascar",
+              "demonym":"malgache",
+              "capital":"Antananarivo",
+              "money": "Ariary",
+              "language":"Francés",
+              "domain":".mg"
+            },
+            "mozambique":{
+              "name":"Mozambique",
+              "demonym":"mozambiqueño",
+              "capital":"Maputo",
+              "money": "Metical",
+              "language":"Portugués",
+              "domain":".mz"
+            },
+            "tanzania":{
+              "name":"Tanzania",
+              "demonym":"tanzano",
+              "capital":"Dodoma",
+              "money": "Chelín tanzano",
+              "language":"Suajili",
+              "domain":".tz"
+            },
+            "kenia":{
+              "name":"Kenia",
+              "demonym":"keniata",
+              "capital":"Nairobi",
+              "money": "Chelín keniano",
+              "language":"Suajili",
+              "domain":".ke"
+            },
+            "uganda":{
+              "name":"Uganda",
+              "demonym":"ugandés",
+              "capital":"Kampala",
+              "money": "Chelín ugandés",
+              "language":"Inglés",
+              "domain":".ug"
+            },
+            "ruanda":{
+              "name":"Ruanda",
+              "demonym":"ruandés",
+              "capital":"Kigali",
+              "money": "Franco ruandés",
+              "language":"Francés",
+              "domain":".rw"
+            },
+            "burundi":{
+              "name":"Burundi",
+              "demonym":"burundés",
+              "capital":"Buyumbura",
+              "money": "Franco burundés",
+              "language":"Francés",
+              "domain":".bi"
+            },
+            "etiopia":{
+              "name":"Etiopía",
+              "demonym":"etíope",
+              "capital":"Adís Abeba",
+              "money": "Birr etíope",
+              "language":"Amárico",
+              "domain":".et"
+            },
+            "eritrea":{
+              "name":"Eritrea",
+              "demonym":"eritreo",
+              "capital":"Asmara",
+              "money": "Nakfa",
+              "language":"Tigriña",
+              "domain":".er"
+            },
+            "somalia":{
+              "name":"Somalia",
+              "demonym":"somalí",
+              "capital":"Mogadiscio",
+              "money": "Chelín somalí",
+              "language":"Somalí",
+              "domain":".so"
+            },
+            "yibuti":{
+              "name":"Yibuti",
+              "demonym":"yibutiano",
+              "capital":"Yibuti",
+              "money": "Franco yibutiano",
+              "language":"Francés",
+              "domain":".dj"
+            },
+            "zambia":{
+              "name":"Zambia",
+              "demonym":"zambiano",
+              "capital":"Lusaka",
+              "money": "Kwacha zambiano",
+              "language":"Inglés",
+              "domain":".zm"
+            },
+            "zimbabue":{
+              "name":"Zimbabue",
+              "demonym":"zimbabuense",
+              "capital":"Harare",
+              "money": "Dólar zimbabuense",
+              "language":"Inglés",
+              "domain":".zw"
+            },
+            "malawi":{
+              "name":"Malawi",
+              "demonym":"malauí",
+              "capital":"Lilongüe",
+              "money": "Kwacha malauí",
+              "language":"Inglés",
+              "domain":".mw"
+            }
+            },
+            "south-africa":{
+              "lesoto":{
+                "name":"Lesoto",
+                "demonym":"lesotense",
+                "capital":"Maseru",
+                "money": "Loti",
+                "language":"Inglés",
+                "domain":".ls"
+              },
+              "esuatini":{
+                "name":"Esuatini",
+                "demonym":"esuatiniense",
+                "capital":"Mbabane",
+                "money": "Lilangeni",
+                "language":"Inglés",
+                "domain":".sz"
+              },
+              "sudafrica":{
+                "name":"Sudáfrica",
+                "demonym":"sudafricano",
+                "capital":"Pretoria",
+                "money": "Rand",
+                "language":"Inglés",
+                "domain":".za"
+              },
+              "namibia":{
+                "name":"Namibia",
+                "demonym":"namibio",
+                "capital":"Windhoek",
+                "money": "Dólar namibio",
+                "language":"Inglés",
+                "domain":".na"
+              },
+              "botsuana":{
+                "name":"Botsuana",
+                "demonym":"botsuano",
+                "capital":"Gaborone",
+                "money": "Pula",
+                "language":"Inglés",
+                "domain":".bw"
+              }
+              },
+              "central-africa":{
+                "angola":{
+                  "name":"Angola",
+                  "demonym":"angoleño",
+                  "capital":"Luanda",
+                  "money": "Kwanza",
+                  "language":"Portugués",
+                  "domain":".ao"
+                },
+                "republicadelcongo":{
+                  "name":"República del Congo",
+                  "demonym":"congoleño",
+                  "capital":"Brazzaville",
+                  "money": "Franco CFA",
+                  "language":"Francés",
+                  "domain":".cg"
+                },
+                "congo":{
+                  "name":"Congo",
+                  "demonym":"congoleño",
+                  "capital":"Kinshasa",
+                  "money": "Franco congoleño",
+                  "language":"Francés",
+                  "domain":".cd"
+                },
+                "gabon":{
+                  "name":"Gabón",
+                  "demonym":"gabonés",
+                  "capital":"Libreville",
+                  "money": "Franco CFA",
+                  "language":"Francés",
+                  "domain":".ga"
+                },
+                "guineaecuatorial":{
+                  "name":"Guinea Ecuatorial",
+                  "demonym":"ecuatoguineano",
+                  "capital":"Malabo",
+                  "money": "Franco CFA",
+                  "language":"Español",
+                  "domain":".gq"
+                },
+                "camerun":{
+                  "name":"Camerún",
+                  "demonym":"camerunés",
+                  "capital":"Yaundé",
+                  "money": "Franco CFA",
+                  "language":"Francés",
+                  "domain":".cm"
+                },
+                "chad":{
+                  "name":"Chad",
+                  "demonym":"chadiano",
+                  "capital":"Yamena",
+                  "money": "Franco CFA",
+                  "language":"Francés",
+                  "domain":".td"
+                },
+                "republicacentroafricana":{
+                  "name":"República Centroafricana",
+                  "demonym":"centroafricano",
+                  "capital":"Bangui",
+                  "money": "Franco CFA",
+                  "language":"Francés",
+                  "domain":".cf"
+                }
+                },
+                "west-asia":{
+                  "yemen":{
+                    "name":"Yemen",
+                    "demonym":"yemení",
+                    "capital":"Saná",
+                    "money": "Rial yemení",
+                    "language":"Árabe",
+                    "domain":".ye"
+                  },
+                  "oman":{
+                    "name":"Omán",
+                    "demonym":"omaní",
+                    "capital":"Mascate",
+                    "money": "Rial omaní",
+                    "language":"Árabe",
+                    "domain":".om"
+                  },
+                  "uae":{
+                    "name":"Emiratos Árabes Unidos",
+                    "demonym":"emiratí",
+                    "capital":"Abu Dabi",
+                    "money": "Dirham de los Emiratos Árabes Unidos",
+                    "language":"Árabe",
+                    "domain":".ae"
+                  },
+                  "qatar":{
+                    "name":"Qatar",
+                    "demonym":"catarí",
+                    "capital":"Doha",
+                    "money": "Rial catarí",
+                    "language":"Árabe",
+                    "domain":".qa"
+                  },
+                  "arabia":{
+                    "name":"Arabia Saudita",
+                    "demonym":"saudí",
+                    "capital":"Riad",
+                    "money": "Rial saudí",
+                    "language":"Árabe",
+                    "domain":".sa"
+                  },
+                  "kuwait":{
+                    "name":"Kuwait",
+                    "demonym":"kuwaití",
+                    "capital":"Kuwait",
+                    "money": "Dinar kuwaití",
+                    "language":"Árabe",
+                    "domain":".kw"
+                  },
+                  "pakistan":{
+                    "name":"Pakistán",
+                    "demonym":"paquistaní",
+                    "capital":"Islamabad",
+                    "money": "Rupia pakistaní",
+                    "language":"Inglés",
+                    "domain":".pk"
+                  },
+                  "afganistan":{
+                    "name":"Afganistán",
+                    "demonym":"afgano",
+                    "capital":"Kabul",
+                    "money": "Afgani",
+                    "language":"Dari",
+                    "domain":".af"
+                  },
+                  "iran":{
+                    "name":"Irán",
+                    "demonym":"iraní",
+                    "capital":"Teherán",
+                    "money": "Rial iraní",
+                    "language":"Persa",
+                    "domain":".ir"
+                  },
+                  "turquia":{
+                    "name":"Turquía",
+                    "demonym":"turco",
+                    "capital":"Ankara",
+                    "money": "Lira turca",
+                    "language":"Turco",
+                    "domain":".tr"
+                  },
+                  "siria":{
+                    "name":"Siria",
+                    "demonym":"sirio",
+                    "capital":"Damasco",
+                    "money": "Libra siria",
+                    "language":"Árabe",
+                    "domain":".sy"
+                  },
+                  "irak":{
+                    "name":"Irak",
+                    "demonym":"iraquí",
+                    "capital":"Bagdad",
+                    "money": "Dinar iraquí",
+                    "language":"Árabe",
+                    "domain":".iq"
+                  },
+                  "jordania":{
+                    "name":"Jordania",
+                    "demonym":"jordano",
+                    "capital":"Amán",
+                    "money": "Dinar jordano",
+                    "language":"Árabe",
+                    "domain":".jo"
+                  },
+                  "palestina":{
+                    "name":"Palestina",
+                    "demonym":"palestino",
+                    "capital":"Jerusalén",
+                    "money": "Shekel",
+                    "language":"Árabe",
+                    "domain":".ps"
+                  },
+                  "israel":{
+                    "name": "Israel",
+                    "demonym":"israelí",
+                    "capital":"Jerusalén",
+                    "money": "Nuevo shéquel israelí",
+                    "language":"Hebreo",
+                    "domain":".il"
+                  },
+                  "libano":{
+                    "name": "Libano",
+                    "demonym":"libanés",
+                    "capital":"Beirut",
+                    "money": "Libra libanesa",
+                    "language":"Árabe",
+                    "domain":".lb"
+                  },
+                  "chipre":{
+                    "name": "Chipre",
+                    "demonym":"chipriota",
+                    "capital":"Nicosia",
+                    "money": "Euro",
+                    "language":"Griego",
+                    "domain":".cy"
+                  },
+                  "azerbaiyan":{
+                    "name": "Azerbaiyán",
+                    "demonym":"azerbaiyano",
+                    "capital":"Bakú",
+                    "money": "Manat azerbaiyano",
+                    "language":"Azerbaiyano",
+                    "domain":".az"
+                  },
+                  "georgia":{
+                    "name": "Georgia",
+                    "demonym":"georgiano",
+                    "capital":"Tiflis",
+                    "money": "Lari",
+                    "language":"Georgiano",
+                    "domain":".ge"
+                  },
+                  "armenia":{
+                    "name": "Armenia",
+                    "demonym":"armenio",
+                    "capital":"Ereván",
+                    "money": "Dram armenio",
+                    "language":"Armenio",
+                    "domain":".am"
+                  }
+                  },
+                  "central-asia":{
+                    "kazajistan":{
+                      "name": "Kazajistán",
+                      "demonym":"kazajo",
+                      "capital":"Nursultán",
+                      "money": "Tenge",
+                      "language":"Kazajo",
+                      "domain":".kz"
+                    },
+                    "kirguistan":{
+                      "name": "Kirguistán",
+                      "demonym":"kirguís",
+                      "capital":"Biskek",
+                      "money": "Som",
+                      "language":"Kirguís",
+                      "domain":".kg"
+                    },
+                    "tayikistan":{
+                      "name": "Tayikistán",
+                      "demonym":"tayiko",
+                      "capital":"Dusambé",
+                      "money": "Somoni",
+                      "language":"Tayiko",
+                      "domain":".tj"
+                    },
+                    "turkmenistan":{
+                      "name": "Turkmenistán",
+                      "demonym":"turcomano",
+                      "capital":"Asjabad",
+                      "money": "Manat turcomano",
+                      "language":"Turcomano",
+                      "domain":".tm"
+                    },
+                    "uzbekistan":{
+                      "name": "Uzbekistán",
+                      "demonym":"uzbeko",
+                      "capital":"Taskent",
+                      "money": "Som uzbeko",
+                      "language":"Uzbeko",
+                      "domain":".uz"
+                    }
+                  },
+                  "east-asia":{
+                    "japon":{
+                      "name": "Japón",
+                      "demonym":"japonés",
+                      "capital":"Tokio",
+                      "money": "Yen",
+                      "language":"Japonés",
+                      "domain":".jp"
+                    },
+                    "coreasur":{
+                      "name": "Corea del Sur",
+                      "demonym":"surcoreano",
+                      "capital":"Seúl",
+                      "money": "Won",
+                      "language":"Coreano",
+                      "domain":".kr"
+                    },
+                    "coreanorte":{
+                      "name": "Corea del Norte",
+                      "demonym":"norcoreano",
+                      "capital":"Pionyang",
+                      "money": "Won",
+                      "language":"Coreano",
+                      "domain":".kp"
+                    },
+                    "mongolia":{
+                      "name": "Mongolia",
+                      "demonym":"mongol",
+                      "capital":"Ulán Bator",
+                      "money": "Tugrik",
+                      "language":"Mongol",
+                      "domain":".mn"
+                    },
+                    "china":{
+                      "name": "China",
+                      "demonym":"chino",
+                      "capital":"Pekín",
+                      "money": "Yuan",
+                      "language":"Chino",
+                      "domain":".cn"
+                    },
+                    "rusia":{
+                      "name": "Rusia",
+                      "demonym":"ruso",
+                      "capital":"Moscú",
+                      "money": "Rublo",
+                      "language":"Ruso",
+                      "domain":".ru"
+                    }
+                    },
+                  "south-asia":{
+                    "indonesia":{
+                      "name": "Indonesia",
+                      "demonym":"indonesio",
+                      "capital":"Yakarta",
+                      "money": "Rupia",
+                      "language":"Indonesio",
+                      "domain":".id"
+                    },
+                    "filipinas":{
+                      "name": "Filipinas",
+                      "demonym":"filipino",
+                      "capital":"Manila",
+                      "money": "Peso filipino",
+                      "language":"Filipino",
+                      "domain":".ph"
+                    },
+                    "malasia":{
+                      "name": "Malasia",
+                      "demonym":"malayo",
+                      "capital":"Kuala Lumpur",
+                      "money": "Ringgit",
+                      "language":"Malayo",
+                      "domain":".my"
+                    },
+                    "brunei":{
+                      "name": "Brunéi",
+                      "demonym":"bruneano",
+                      "capital":"Bandar Seri Begawan",
+                      "money": "Dólar de Brunéi",
+                      "language":"Malayo",
+                      "domain":".bn"
+                    },
+                    "camboya":{
+                      "name": "Camboya",
+                      "demonym":"camboyano",
+                      "capital":"Nom Pen",
+                      "money": "Riel",
+                      "language":"Camboyano",
+                      "domain":".kh"
+                    },
+                    "laos":{
+                      "name": "Laos",
+                      "demonym":"laosiano",
+                      "capital":"Vientián",
+                      "money": "Kip",
+                      "language":"Laosiano",
+                      "domain":".la"
+                    },
+                    "vietnam":{
+                      "name": "Vietnam",
+                      "demonym":"vietnamita",
+                      "capital": "Hanoi",
+                      "money": "Dong",
+                      "language": "Vietnamita",
+                      "domain": ".vn"
+                    },
+                    "tailandia":{
+                      "name": "Tailandia",
+                      "demonym": "tailandés",
+                      "capital": "Bangkok",
+                      "money": "Bath",
+                      "language":"tailandés",
+                      "domain": ".th"
+                    },
+                    "birmania":{
+                      "name": "Birmania",
+                      "demonym": "birmano",
+                      "capital": "Naypyidaw",
+                      "money": "Kyat",
+                      "language":"birmano",
+                      "domain": ".mm"
+                    },
+                    "sirilanka":{
+                      "name": "Sri Lanka",
+                      "demonym": "sirilankés",
+                      "capital": "Sri Jayawardenapura-Kotte",
+                      "money": "Rupia",
+                      "language":"cingalés",
+                      "domain": ".lk"
+                    },
+                    "nepal":{
+                      "name": "Nepal",
+                      "demonym": "nepalí",
+                      "capital": "Katmandú",
+                      "money": "Rupia",
+                      "language":"nepalí",
+                      "domain": ".np"
+                    },
+                    "butan":{
+                      "name": "Bután",
+                      "demonym": "butanés",
+                      "capital": "Timbu",
+                      "money": "Ngultrum",
+                      "language":"dzongkha",
+                      "domain": ".bt"
+                    },
+                    "india":{
+                      "name": "India",
+                      "demonym": "indio",
+                      "capital": "Nueva Delhi",
+                      "money": "Rupia",
+                      "language":"hindi",
+                      "domain": ".in"
+                    },
+                    "bangladesh":{
+                      "name": "Bangladesh",
+                      "demonym": "bangladesí",
+                      "capital": "Daca",
+                      "money": "Taka",
+                      "language":"bengalí",
+                      "domain": ".bd"
+                    }                  
+    },
+          "oceania":{
+            "nuevazelanda":{
+              "name": "Nueva Zelanda",
+              "demonym": "neozelandés",
+              "capital": "Wellington",
+              "money": "Dólar neozelandés",
+              "language":"inglés",
+              "domain": ".nz"
+            },
+            "australia":{
+              "name": "Australia",
+              "demonym": "australiano",
+              "capital": "Canberra",
+              "money": "Dólar australiano",
+              "language":"inglés",
+              "domain": ".au"
+            },
+            "papua":{
+              "name": "Papúa Nueva Guinea",
+              "demonym": "papuano",
+              "capital": "Puerto Moresby",
+              "money": "Kina",
+              "language":"inglés",
+              "domain": ".pg"
+            }
+          }
+  }
+}
+                  
+            
+
+
+    
+  
+
+
+  
+
+

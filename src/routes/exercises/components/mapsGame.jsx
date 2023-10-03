@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 import NorthAmerica from './continentNorthAmerica'
 import CentralAmerica from './continentCentralAmerica'
@@ -33,28 +34,30 @@ const ButtonOption = ({ option, setOptions, options }) => {
 }
 
 const FirstStage = ({ setOptions, options, setStage }) => {
+  const { t } = useTranslation("mapsGame")
   const preOptions = [['Gentilicio', 'demonym'], ['Moneda', 'money'], ['Dominio internet', 'domain'], ['Idioma', 'language'], ['Capital', 'capital']]
 
   return (
     <div className={styles['game-container']}>
       <div className={styles['options-buttons']}>
-        <span>Al tocar un país, mostrar</span>
+        <span>{t("touch-country")}</span>
         {
           preOptions.map((option, index) => (
             <ButtonOption key={index} option={option} setOptions={setOptions} options={options} />
           ))
         }
       </div>
-      <button className={styles['btn-start']} disabled={options.length == 0} onClick={() => setStage(2)}>SIGUIENTE</button>
+      <button className={styles['btn-start']} disabled={options.length == 0} onClick={() => setStage(2)}>{t("next-button")}</button>
     </div>
 
   )
 }
 
 const SecondStage = ({ options = [], countries = {}, setPhase, setStage }) => {
+  const { t } = useTranslation("mapsGame")
   const [country, setCountry] = useState('usa')
   const [continent, setContinent] = useState('north-america')
-  const preOptions = { demonym: 'Gentilicio', money: 'Moneda', domain: 'Dominio internet', language: 'Idioma', capital: 'Capital' }
+  const preOptions = { demonym: t("demonym"), money: t("money"), domain: t("domain"), language: t("language"), capital: t("capital") }
 
   return (
     <div className={styles['game-container']}>
@@ -115,7 +118,7 @@ const SecondStage = ({ options = [], countries = {}, setPhase, setStage }) => {
           </div>
           <div className={styles['info-country-card']}>
             <div className={styles['option-container']}>
-              <div className={`${styles['size-20px']} ${styles['color-dark-green']}`}>Nombre</div>
+              <div className={`${styles['size-20px']} ${styles['color-dark-green']}`}>{t("name")}</div>
               <div className={`${styles['size-20px']} ${styles['bolder-font']} ${styles['color-dark-green']}`}>{countries?.[continent]?.[country]?.name ?? '-'}</div>
             </div>
             {
@@ -129,8 +132,8 @@ const SecondStage = ({ options = [], countries = {}, setPhase, setStage }) => {
           </div>
         </div>
       </div>
-      <button id={styles['btn-finish']} onClick={() => { setPhase('end') }}>FINALIZAR</button>
-      <button id={styles['btn-back']} onClick={() => { setStage(1) }}>VOLVER</button>
+      <button id={styles['btn-finish']} onClick={() => { setPhase('end') }}>{t("finish-button")}</button>
+      <button id={styles['btn-back']} onClick={() => { setStage(1) }}>{t("prev-button")}</button>
     </div>
   )
 }

@@ -1,0 +1,26 @@
+{
+    
+    "initMessages":[
+        "The language of machines is based on the combination of ones and zeros, called assembly language instructions, which are later interpreted by a processor.",
+        "Next, you will find a color sequence request. Enter the corresponding instructions to achieve this sequence."
+    ],
+    "threshold": {
+        "max": 3,
+        "min": 0,
+        "perfect": 3
+    },
+    "path": "97",
+    "color": "#53745B",
+    "name": "Binary",
+    "id": 97,
+    "options": [
+        {"id":1, "colour":"black", "color":"Black" ,"code": "111111"},
+        {"id":2, "colour":"white", "color":"White" ,"code": "000000"},
+        {"id":3, "colour":"blue", "color":"Blue" ,"code": "101000"},
+        {"id":4, "colour":"yellow", "color":"Yellow" ,"code": "001010"},
+        {"id":5, "colour":"red", "color":"Red" ,"code": "100010"},
+        {"id":6, "colour":"green", "color":"Green" ,"code": "111000"},
+        {"id":7, "colour":"orange", "color":"Orange" ,"code": "001100"},
+        {"id":8, "colour":"purple", "color":"Purple" ,"code": "000111"}
+    ]
+}

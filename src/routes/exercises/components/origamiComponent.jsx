@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from 'react-i18next'
 import styles from "../../../styles/origami.module.css"
 import {
     GridContextProvider,
@@ -8,6 +9,7 @@ import {
 import { useEffect } from "react";
 
 const ImageUpload = ({setIsFinish}) => {
+  const { t } = useTranslation("origamiComponent")
     const [image, setImage] = useState(null);
     const [previewUrl, setPreviewUrl] = useState(null);
     
@@ -26,7 +28,7 @@ const ImageUpload = ({setIsFinish}) => {
     return (
       <form onSubmit={handleSubmit}>
         <input type="file" onChange={handleImageChange} name="file" id="file" className={styles.inputFile} />
-        <label htmlFor="file">ADJUNTAR</label>
+        <label htmlFor="file">{t("attatch")}</label>
       </form>
     );
   };
@@ -112,6 +114,7 @@ const JigsawOrigami = ({data,isFinish,setScore,dimensions})=>{
 
 const OrigamiComponent = ({data,setPhase,setScore})=>{
     const[isFinish,setIsFinish] = useState(false)
+  const { t } = useTranslation("origamiComponent")
 
     const handleResponder = ()=>{
         setIsFinish(true)
@@ -126,8 +129,8 @@ const OrigamiComponent = ({data,setPhase,setScore})=>{
                     <JigsawOrigami data={data.secondaries} isFinish={isFinish} setScore={setScore} dimensions={data.dimensions}/>
                 </div>
             </div>
-            {!isFinish&&<button onClick={handleResponder}>RESPONDER</button>}
-            {isFinish&&<button onClick={()=>setPhase("end")}>SIGUIENTE</button>}
+            {!isFinish&&<button onClick={handleResponder}>{t("answer-button")}</button>}
+            {isFinish&&<button onClick={()=>setPhase("end")}>{t("next-button")}</button>}
         </>
     )
 }

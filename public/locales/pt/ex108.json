@@ -1,0 +1,76 @@
+
+{
+  "answer-button": "RESPONDER",
+  "next-button": "CONTINUAR",
+  "variations": [
+    {
+      "columns": {
+        "column": {
+          "id": "column",
+          "title": "",
+          "optionsIds": [
+            "option-2",
+            "option-1",
+            "option-4",
+            "option-3"
+          ]
+        }
+      },
+      "options": {
+        "option-1": {
+          "id": "option-1",
+          "key": "acima",
+          "text": "SCOPUS"
+        },
+        "option-2": {
+          "id": "option-2",
+          "key": "abaixo",
+          "text": "arXiv.org"
+        },
+        "option-3": {
+          "id": "option-3",
+          "key": "direita",
+          "text": "EBSCOHost"
+        },
+        "option-4": {
+          "id": "option-4",
+          "key": "esquerda",
+          "text": "diccionarios.com"
+        }
+      },
+      "sequence": [
+        {
+          "id": "option-1",
+          "text": "É um dos maiores bancos de dados referenciais do mundo. Contém resumos e citações de literatura científica, revistas e links para fontes de qualidade comprovada."
+        },
+        {
+          "id": "option-2",
+          "text": "É um repositório temático de acesso aberto que contém pré-publicações de artigos de pesquisa nas áreas de matemática, física, ciência da computação, biologia quantitativa e estatística."
+        },
+        {
+          "id": "option-3",
+          "text": "Oferece uma ampla gama de conteúdo de texto completo e indexado que cobre todo o espectro das ciências aplicadas e disciplinas de informática, desde acústica até aeronáutica, redes neurais e engenharia nuclear."
+        },
+        {
+          "id": "option-4",
+          "text": "É um portal da Editora Larousse, que publica dicionários, enciclopédias e outras obras de referência sob as marcas Larousse e Vox."
+        }
+      ]
+    }
+  ],
+  "initMessages": [
+    "A internet é uma grande fonte de informação. Para encontrá-la, contamos com o motor de busca, uma ferramenta que nos permite filtrar informações de acordo com certos parâmetros.",
+    "Existe uma grande variedade de motores de busca, e conhecer as funções de cada um é muito produtivo.",
+    "A seguir, você encontrará uma lista de motores de busca. Arraste-os até a descrição correspondente. Você pode pesquisá-los na web para conhecê-los antes de responder ao exercício."
+  ],
+  "threshold": {
+    "max": 3,
+    "min": 1,
+    "perfect": 4
+  },
+  "path": "108",
+  "color": "#9968A6",
+  "name": "Motores de busca",
+  "id": 108
+}
+

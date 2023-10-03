@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 import styles from '../../../styles/monitor.module.css'
 
 const Monitor = ({ color, text, phase, error, secuence }) => {
@@ -100,6 +101,7 @@ const BoardInputs = ({ secuence, setAnswers, isFinish, corrects }) => {
 }
 
 const MonitorColorsComponent = ({ data, setPhase, setScore }) => {
+  const { t } = useTranslation("monitorColorsComponent")
   const shuffledData = data.slice().sort(() => Math.random() - 0.5).slice(0, 3)
   const [color, setColor] = useState('white')
   const [phase, setPhaseSec] = useState('init')
@@ -157,11 +159,11 @@ const MonitorColorsComponent = ({ data, setPhase, setScore }) => {
           <BoardInfo colors={data}/>
           <BoardInputs secuence={secuence} setAnswers={setAnswers} isFinish={isFinish} corrects={corrects}/>
         </div>
-        <div className={styles.infoText}>Utiliza el teclado para ingresar el código</div>
+        <div className={styles.infoText}>{t("keyboard")}</div>
       </div>
 
-      {isAllAnswered && !isFinish && <button onClick={handleResponder}>RESPONDER</button>}
-      {isFinish && <button onClick={() => setPhase('end')}>SIGUIENTE</button>}
+      {isAllAnswered && !isFinish && <button onClick={handleResponder}>{t("answer-button")}</button>}
+      {isFinish && <button onClick={() => setPhase('end')}>{t("next-button")}</button>}
     </>
   )
 }

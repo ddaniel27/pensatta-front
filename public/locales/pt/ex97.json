@@ -1,0 +1,25 @@
+{
+    "initMessages": [
+        "A linguagem das máquinas é baseada na combinação de uns e zeros, chamada de instruções em linguagem assembly, que posteriormente são interpretadas por um processador.",
+        "A seguir, você encontrará um pedido de sequência de cores. Insira as instruções correspondentes para alcançar essa sequência."
+    ],
+    "threshold": {
+        "max": 3,
+        "min": 0,
+        "perfect": 3
+    },
+    "path": "97",
+    "color": "#53745B",
+    "name": "Binário",
+    "id": 97,
+    "options": [
+        {"id": 1, "colour": "black", "color": "Preto", "code": "111111"},
+        {"id": 2, "colour": "white", "color": "Branco", "code": "000000"},
+        {"id": 3, "colour": "blue", "color": "Azul", "code": "101000"},
+        {"id": 4, "colour": "yellow", "color": "Amarelo", "code": "001010"},
+        {"id": 5, "colour": "red", "color": "Vermelho", "code": "100010"},
+        {"id": 6, "colour": "green", "color": "Verde", "code": "111000"},
+        {"id": 7, "colour": "orange", "color": "Laranja", "code": "001100"},
+        {"id": 8, "colour": "purple", "color": "Violeta", "code": "000111"}
+    ]
+}

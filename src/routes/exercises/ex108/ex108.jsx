@@ -1,14 +1,23 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import ScoringComponent from '../components/scoringComponent'
 import DndVonListComponent from '../components/dndFor108'
-import data from './data.json'
+import useData from "../../../hooks/useData"
 import '../../../styles/ex108.css'
 
 export default function Ex15 () {
-  const [myData] = useState({
+  const { data } = useData("ex108")
+  const [myData, setMyData] = useState({
     ...data,
     variations: data.variations.sort(() => 0.5 - Math.random()).slice(0, 1)[0]
   })
+
+  useEffect(() => {
+    setMyData({
+      ...data,
+      variations: data.variations.sort(() => 0.5 - Math.random()).slice(0, 1)[0]
+    })
+  }, [data])
+
 
   const [values, setValues] = useState([])
   const [isDone, setIsDone] = useState(false)
@@ -41,8 +50,8 @@ export default function Ex15 () {
         (setScore, setPhase) => (
           <div className='list-ex108'>
             <DndVonListComponent data={myData.variations} returnScore={setValues} />
-            {!isDone && <button className='btn btn-primary' onClick={() => handleClick(setScore)}>RESPONDER</button>}
-            {isDone && <button className='btn btn-primary' onClick={() => setPhase('end')}>CONTINUAR</button>}
+            {!isDone && <button className='btn btn-primary' onClick={() => handleClick(setScore)}>{myData["answer-button"]}</button>}
+            {isDone && <button className='btn btn-primary' onClick={() => setPhase('end')}>{myData["next-button"]}</button>}
           </div>
         )
       }

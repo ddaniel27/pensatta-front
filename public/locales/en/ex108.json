@@ -1,0 +1,76 @@
+
+{
+  "answer-button": "ANSWER",
+  "next-button": "CONTINUE",
+    "variations":[
+        {
+            "columns": {
+                "column": {
+                    "id": "column",
+                    "title": "",
+                    "optionsIds": [
+                        "option-2",
+                        "option-1",
+                        "option-4",
+                        "option-3"
+                    ]
+                }
+            },
+            "options": {
+                "option-1": {
+                    "id": "option-1",
+                    "key": "up",
+                    "text": "SCOPUS"
+                },
+                "option-2": {
+                    "id": "option-2",
+                    "key": "down",
+                    "text": "arXiv.org"
+                },
+                "option-3": {
+                    "id": "option-3",
+                    "key": "right",
+                    "text": "EBSCOHost"
+                },
+                "option-4": {
+                    "id": "option-4",
+                    "key": "left",
+                    "text": "diccionarios.com"
+                }
+            },
+            "sequence":[
+              {
+                "id": "option-1",
+                "text": "It is one of the world's largest referential databases. It contains abstracts and citations from scientific literature, journals, and links to proven quality sources."
+              },
+              {
+                "id": "option-2",
+                "text": "It is an open-access thematic repository that contains preprints of research articles in the field of mathematics, physics, computer science, quantitative biology, and statistics."
+              },
+              {
+                "id": "option-3",
+                "text": "It offers a wide range of full-text and indexed content that covers the entire spectrum of applied sciences and computer disciplines, from acoustics to aeronautics, neural networks, and nuclear engineering."
+              },
+              {
+                "id": "option-4",
+                "text": "It is a portal of Larousse Editorial, which publishes dictionaries, encyclopedias, and other reference works under the Larousse and Vox brands."
+              }
+            ]
+        }
+    ],
+    "initMessages":[
+        "The internet is a great source of information. To find it, we have the search engine, which is a tool that allows us to filter information under certain parameters.",
+        "There is a wide variety of search engines, and knowing the functions of each one is very productive.",
+        "Next, you will find a list of search engines. Drag them to their respective description. You can search for them on the web to get to know them before answering the exercise."
+    ],
+    "threshold": {
+        "max": 3,
+        "min": 1,
+        "perfect": 4
+    },
+    "path": "108",
+    "color": "#9968A6",
+    "name": "Search Engines",
+    "id": 108
+}
+

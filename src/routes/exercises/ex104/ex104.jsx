@@ -1,13 +1,17 @@
-import React, {useEffect,useState} from "react";
-import data from "./data.json"
-import NoScoringComponent from "../components/noScoringComponent";
+import { useEffect, useState } from "react";
+import useData from "../../../hooks/useData"
 import ScoringComponent from "../components/scoringComponent";
 import OrigamiComponent from "../components/origamiComponent";
 
 
 const Ex104 = ()=>{
-    const [myData, setmyData] = useState(data)
+  const { data } = useData("ex104")
+    const [myData, setMyData] = useState({ ...data })
     const [isLoaded, setIsLoaded] =useState(false)
+
+  useEffect(() => {
+    setMyData({ ...data })
+  }, [data])
    
     const handleFinish = (setPhase)=>{
         setPhase("end")
@@ -16,21 +20,20 @@ const Ex104 = ()=>{
     return(
        
        <ScoringComponent initMessages={myData.initMessages} background={myData.color} title={myData.name} threshold={myData.threshold} exerciseId={myData.id}>
-       {
-           (setScore, setPhase) => (
-            
-                    <>
-                        <OrigamiComponent data={myData.column[Math.floor(Math.random() * 7)]} setPhase={setPhase} setScore={setScore}/>
-       
-                       {
-                        isLoaded&& <div className="buttons-field">
-                                            <button onClick={()=>{handleFinish(setPhase)}}>SIGUIENTE</button>
-                                    </div>
-                                        }
-                    </>
-    
-           )
-       }
+      {
+        (setScore, setPhase) => (
+          <>
+          <OrigamiComponent data={myData.column[Math.floor(Math.random() * 7)]} setPhase={setPhase} setScore={setScore}/>
+
+          {
+            isLoaded&& <div className="buttons-field">
+            <button onClick={()=>{handleFinish(setPhase)}}>{myData["next-button"]}</button>
+            </div>
+          }
+          </>
+
+        )
+      }
    </ScoringComponent>
            
        
