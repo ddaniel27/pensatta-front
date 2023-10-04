@@ -1,5 +1,5 @@
 {
-  "retry-button": "REINICIAR",
+  "retry-button": "TENTAR NOVAMENTE",
   "finish-button": "FINALIZAR",
   "start-button": "INICIAR",
   "isSingle": "false",
@@ -36,13 +36,13 @@
     },
     "option-2": {
       "id": "option-2",
-      "key": "nao",
+      "key": "no",
       "text": "Dizer não",
       "value": 1
     },
     "option-3": {
       "id": "option-3",
-      "key": "sim",
+      "key": "si",
       "text": "Dizer sim",
       "value": 1
     },
@@ -54,25 +54,25 @@
     },
     "option-5": {
       "id": "option-5",
-      "key": "pular",
+      "key": "saltar",
       "text": "Pular",
       "value": 1
     },
     "option-6": {
       "id": "option-6",
-      "key": "rir",
+      "key": "reir",
       "text": "Rir",
       "value": 1
     },
     "option-7": {
       "id": "option-7",
-      "key": "surpresa",
+      "key": "sorpresa",
       "text": "Surpresa",
       "value": 1
     },
     "option-8": {
       "id": "option-8",
-      "key": "chorar",
+      "key": "llorar",
       "text": "Chorar",
       "value": 1
     },
@@ -84,7 +84,7 @@
     },
     "option-x": {
       "id": "option-x",
-      "key": "dancar",
+      "key": "bailar",
       "text": "Dançar",
       "value": 1
     }
