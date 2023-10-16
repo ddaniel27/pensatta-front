@@ -35,7 +35,8 @@ export default function ScoringComponent ({ initMessages = ['Inicia dando click 
         const data = {
           score: ((score / threshold.perfect) * 100).toFixed(2),
           time: new Date().getTime() - timeMeasure,
-          exercise: exerciseId
+          exercise: exerciseId,
+          id: localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')).id : 0
         }
         postExercise(data,
           function (response) {

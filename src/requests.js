@@ -2,7 +2,7 @@ import axios from 'axios'
 
 axios.defaults.withCredentials = true
 
-const URL = 'http://localhost:3300/api' // 'https://backend.pensatta.net/api' // 'http://localhost:3300/api' // "http://3.84.3.50:8000/api" //"http://localhost:3300/api"//'http://www.pensatta.net/pensatta-backend/api'//http://127.0.0.1:3001/api http://www.pensatta.net/pensatta-backend/api
+const URL = 'https://backend.pensatta.net/api' // 'http://localhost:3300/api' // "http://3.84.3.50:8000/api" //"http://localhost:3300/api"//'http://www.pensatta.net/pensatta-backend/api'//http://127.0.0.1:3001/api http://www.pensatta.net/pensatta-backend/api
 
 function postRegister (objParams, cb, cbError) {
   axios({
@@ -53,7 +53,7 @@ function postLogout (cb) {
 }
 
 function postExercise (objParams, cb, cbError) {
-  axios.post(`${URL}/exercise`, objParams)
+  axios.post(`${URL}/exercise`, objParams, { withCredentials: false })
     .then(function (response) {
       cb(response.data)
     })

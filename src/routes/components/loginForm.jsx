@@ -40,6 +40,7 @@ export default function LoginForm () {
         function (response) {
           if (response.logged) {
             setLoginUser(response.user)
+            localStorage.setItem('user', JSON.stringify(response.user))
           } else {
             setErrorMessage('Usuario o contraseña incorrectos')
             setSuccessMessage('')
