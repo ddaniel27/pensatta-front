@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ScoringComponent from '../components/scoringComponent'
 import DndComponent from '../components/dndComponent'
 import ImagenEditor from '../components/imagenEditor'
-import data from './data.json'
 import '../../../styles/ex10.css'
+import useData from '../../../hooks/useData'
 
 export default function Ex11 () {
+  const { data } = useData('ex11')
   // eslint-disable-next-line no-unused-vars
   const [myData, setMyData] = React.useState({
     ...data
@@ -15,6 +16,12 @@ export default function Ex11 () {
   const [finished, setFinished] = React.useState(false)
 
   const [optionsData, setOptionsData] = React.useState({})
+
+  useEffect(() => {
+    setMyData({
+      ...data
+    })
+  }, [data])
 
   React.useLayoutEffect(() => {
     if (reset) {

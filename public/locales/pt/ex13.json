@@ -1,0 +1,46 @@
+{
+  "isSingle": true,
+  "isLoop": true,
+  "columns": {
+      "column-1": {
+          "id": "column-1",
+          "title": "",
+          "optionsIds": [
+              "option-1",
+              "option-2"
+          ],
+          "isDropDisabled":true
+      },
+      "column-2": {
+          "id": "column-2",
+          "title": "Quando: pressione o botão Iniciar",
+          "optionsIds": []
+      }
+  },
+  "options": {
+      "option-1": {
+          "id": "option-1",
+          "key": "excavar",
+          "text": "Cavar",
+          "value": 1
+      },
+      "option-2": {
+          "id": "option-2",
+          "key": "avanzar",
+          "text": "Avançar",
+          "value": 1
+      }
+  },
+  "initMessages":[
+      "Programe a escavadeira para criar um túnel e passar pela montanha.",
+      "Use blocos de comando para conseguir isso. Você pode reiniciar o exercício para repeti-lo quantas vezes precisar."
+  ],
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 1
+  },
+  "path": "13",
+  "color": "#588F64",
+  "name": "Escavadora"
+}

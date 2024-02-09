@@ -202,13 +202,12 @@
               }
           ],
           "image":  "SP_1.svg"
-          
       },
       {
           "question":"",
           "answers":[
               {
-                  "text": "Explicit violence",	
+                  "text": "Explicit violence",
                   "isCorrect":true
               },
               {
@@ -225,11 +224,10 @@
               }
           ],
           "image":  "Pelea_1.svg"
-          
       }
   ],
   "initMessages":[
-      "Next, you will see social media posts with sensitive content.", 
+      "Next, you will see social media posts with sensitive content.",
       "Select the publication risk to which you consider it belongs."
   ],
   "threshold": {

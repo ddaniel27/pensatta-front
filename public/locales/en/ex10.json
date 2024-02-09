@@ -1,0 +1,152 @@
+{
+  "isSingle": "false",
+  "columns": {
+      "column-1": {
+          "id": "column-1",
+          "title": "Blocks you can use",
+          "optionsIds": [
+              "option-1",
+              "option-2",
+              "option-3",
+              "option-4"
+          ],
+          "isDropDisabled":true,
+          "info":"Enter the values to the blocks and drag them to build the algorithm."
+      },
+      "column-2": {
+          "id": "column-2",
+          "title": "When: press start button",
+          "optionsIds": []
+      }
+  },
+  "options": {
+      "option-1": {
+          "id": "option-1",
+          "key": "arriba",
+          "hasInput": true,
+          "type": "text",
+          "text": "Steps up"
+      },
+      "option-2": {
+          "id": "option-2",
+          "key": "abajo",
+          "hasInput": true,
+          "type": "text",
+          "text": "Steps down"
+      },
+      "option-3": {
+          "id": "option-3",
+          "key": "derecha",
+          "hasInput": true,
+          "type": "text",
+          "text": "Steps right"
+      },
+      "option-4": {
+          "id": "option-4",
+          "key": "izquierda",
+          "hasInput": true,
+          "type": "text",
+          "text": "Steps left"
+      }
+  },
+  "matrices":[
+      {
+          "matriz":[
+                      [2,2,2,2,2,2,2],
+                      [2,1,0,1,1,1,2],
+                      [2,1,0,1,0,1,2],
+                      [2,1,0,1,0,1,2],
+                      [2,1,0,1,0,1,2],
+                      [2,1,1,1,0,3,2],
+                      [2,2,2,2,2,2,2]
+                  ],
+          "initPos":[1,1]
+      },
+      {
+          "matriz": [
+                      [2,2,2,2,2,2,2],
+                      [2,3,0,1,1,1,2],
+                      [2,1,0,1,0,0,2],
+                      [2,1,0,1,1,1,2],
+                      [2,1,0,0,0,1,2],
+                      [2,1,1,1,1,1,2],
+                      [2,2,2,2,2,2,2]
+                  ],
+          "initPos":[1,5]
+      },
+      {
+          "matriz": [
+                      [2,2,2,2,2,2,2],
+                      [2,1,0,1,1,1,2],
+                      [2,1,0,1,0,1,2],
+                      [2,1,1,1,0,1,2],
+                      [2,0,0,0,0,1,2],
+                      [2,3,1,1,1,1,2],
+                      [2,2,2,2,2,2,2]
+                  ],
+          "initPos":[1,1]
+      },
+      {
+          "matriz": [
+                      [2,2,2,2,2,2,2],
+                      [2,1,1,1,0,1,2],
+                      [2,1,0,1,0,1,2],
+                      [2,1,0,1,0,1,2],
+                      [2,1,0,1,0,1,2],
+                      [2,3,0,1,1,1,2],
+                      [2,2,2,2,2,2,2]
+                  ],
+          "initPos":[1,5]
+      },
+      {
+          "matriz": [
+                      [2,2,2,2,2,2,2],
+                      [2,1,1,1,1,3,2],
+                      [2,1,0,0,0,0,2],
+                      [2,1,0,1,1,1,2],
+                      [2,1,0,0,0,1,2],
+                      [2,1,1,1,1,1,2],
+                      [2,2,2,2,2,2,2]
+                  ],
+          "initPos":[3,3]
+      },
+      {
+          "matriz": [
+                      [2,2,2,2,2,2,2],
+                      [2,0,0,1,1,1,2],
+                      [2,0,0,1,0,1,2],
+                      [2,1,1,1,0,1,2],
+                      [2,1,0,0,0,1,2],
+                      [2,1,1,1,3,0,2],
+                      [2,2,2,2,2,2,2]
+                  ],
+          "initPos":[4,5]
+      },
+      {
+          "matriz": [
+                      [2,2,2,2,2,2,2],
+                      [2,1,1,1,0,3,2],
+                      [2,1,0,1,0,1,2],
+                      [2,1,0,1,0,1,2],
+                      [2,1,0,1,0,1,2],
+                      [2,1,0,1,1,1,2],
+                      [2,2,2,2,2,2,2]
+                  ],
+          "initPos":[5,1]
+      }
+  ],
+  "imgPath": "images/exercises/10/Katty.svg",
+  "initMessages":[
+      "Guide me to find the exit. Tell me what actions I must take to get to the end.",
+      "Use the blocks to give me the instructions."
+  ],
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 1
+  },
+  "path": "10",
+  "color": "#9968A6",
+  "name": "Get out of the maze",
+  "id": "10"
+}

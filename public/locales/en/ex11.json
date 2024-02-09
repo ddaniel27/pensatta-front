@@ -1,0 +1,66 @@
+{
+  "isSingle": "false",
+  "columns": {
+      "column-1": {
+          "id": "column-1",
+          "title": "Blocks you can use",
+          "optionsIds": [
+              "option-1",
+              "option-2",
+              "option-3",
+              "option-4"
+          ],
+          "isDropDisabled":true,
+          "info":"Drag the blocks to build the algorithm."
+      },
+      "column-2": {
+          "id": "column-2",
+          "title": "When: press start button",
+          "optionsIds": []
+      }
+  },
+  "options": {
+      "option-1": {
+          "id": "option-1",
+          "key": "brillo",
+          "text": "Glitter filter",
+          "value": 1
+      },
+      "option-2": {
+          "id": "option-2",
+          "key": "color",
+          "text": "Color filter",
+          "value": 1
+      },
+      "option-3": {
+          "id": "option-3",
+          "key": "nuevo",
+          "text": "New background",
+          "value": 1
+      },
+      "option-4": {
+          "id": "option-4",
+          "key": "eliminar",
+          "text": "Remove background",
+          "value": 1
+      }
+  },
+  "correctSequence":[
+      "brillo",
+      "color",
+      "nuevo"
+  ],
+  "initMessages":[
+      "Help me edit the photo. I need it to look like the reference photograph.",
+      "Use the blocks to build an algorithm that edits the image by replicating the reference."
+  ],
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 1
+  },
+  "path": "11",
+  "color": "#9968A6",
+  "name": "Edit photo",
+  "id": "11"
+}

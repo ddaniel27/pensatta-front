@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import Maze2Component from '../components/maze2Component'
 import ScoringComponent from '../components/scoringComponent'
-import useData from "../../../hooks/useData"
+import useData from '../../../hooks/useData'
 
 const Ex09 = () => {
   const [lab, setLab] = useState(Math.floor(Math.random() * 10) + 1)
@@ -9,7 +9,7 @@ const Ex09 = () => {
     setLab(Math.floor(Math.random() * 10) + 1)
   }, [])
 
-  const { data } = useData("ex09")
+  const { data } = useData('ex09')
   const [myData, setMyData] = useState({
     ...data,
     options: data.options.sort(() => 0.5 - Math.random()).slice(0, data.threshold.perfect)

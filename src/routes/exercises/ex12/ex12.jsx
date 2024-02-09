@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import NoScoringComponent from '../components/noScoringComponent'
 import Animation from '../components/animation'
 import DndComponent from '../components/dndComponent'
-import data from './data.json'
 import '../../../styles/ex12.css'
+import useData from '../../../hooks/useData'
 
 export default function Ex12 () {
+  const { data } = useData('ex12')
   // eslint-disable-next-line no-unused-vars
   const [myData, setMyData] = React.useState({
     ...data
@@ -14,6 +15,12 @@ export default function Ex12 () {
   const [reset, setReset] = React.useState(false)
 
   const [optionsData, setOptionsData] = React.useState({})
+
+  useEffect(() => {
+    setMyData({
+      ...data
+    })
+  }, [data])
 
   React.useLayoutEffect(() => {
     if (reset) {
@@ -33,6 +40,7 @@ export default function Ex12 () {
   }
 
   const handleFinish = (cb) => {
+    // eslint-disable-next-line n/no-callback-literal
     cb('end')
   }
 

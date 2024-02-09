@@ -1,0 +1,152 @@
+{
+  "isSingle": "false",
+  "columns": {
+      "column-1": {
+          "id": "column-1",
+          "title": "Blocos que você pode usar",
+          "optionsIds": [
+              "option-1",
+              "option-2",
+              "option-3",
+              "option-4"
+          ],
+          "isDropDisabled":true,
+          "info":"Digite os valores para os blocos e arraste-os para construir o algoritmo."
+      },
+      "column-2": {
+          "id": "column-2",
+          "title": "Quando: pressione o botão iniciar",
+          "optionsIds": []
+      }
+  },
+  "options": {
+      "option-1": {
+          "id": "option-1",
+          "key": "arriba",
+          "hasInput": true,
+          "type": "text",
+          "text": "Intensifica"
+      },
+      "option-2": {
+          "id": "option-2",
+          "key": "abajo",
+          "hasInput": true,
+          "type": "text",
+          "text": "Desce"
+      },
+      "option-3": {
+          "id": "option-3",
+          "key": "derecha",
+          "hasInput": true,
+          "type": "text",
+          "text": "Passos para a direita"
+      },
+      "option-4": {
+          "id": "option-4",
+          "key": "izquierda",
+          "hasInput": true,
+          "type": "text",
+          "text": "Passos restantes"
+      }
+  },
+  "matrices":[
+      {
+          "matriz":[
+                      [2,2,2,2,2,2,2],
+                      [2,1,0,1,1,1,2],
+                      [2,1,0,1,0,1,2],
+                      [2,1,0,1,0,1,2],
+                      [2,1,0,1,0,1,2],
+                      [2,1,1,1,0,3,2],
+                      [2,2,2,2,2,2,2]
+                  ],
+          "initPos":[1,1]
+      },
+      {
+          "matriz": [
+                      [2,2,2,2,2,2,2],
+                      [2,3,0,1,1,1,2],
+                      [2,1,0,1,0,0,2],
+                      [2,1,0,1,1,1,2],
+                      [2,1,0,0,0,1,2],
+                      [2,1,1,1,1,1,2],
+                      [2,2,2,2,2,2,2]
+                  ],
+          "initPos":[1,5]
+      },
+      {
+          "matriz": [
+                      [2,2,2,2,2,2,2],
+                      [2,1,0,1,1,1,2],
+                      [2,1,0,1,0,1,2],
+                      [2,1,1,1,0,1,2],
+                      [2,0,0,0,0,1,2],
+                      [2,3,1,1,1,1,2],
+                      [2,2,2,2,2,2,2]
+                  ],
+          "initPos":[1,1]
+      },
+      {
+          "matriz": [
+                      [2,2,2,2,2,2,2],
+                      [2,1,1,1,0,1,2],
+                      [2,1,0,1,0,1,2],
+                      [2,1,0,1,0,1,2],
+                      [2,1,0,1,0,1,2],
+                      [2,3,0,1,1,1,2],
+                      [2,2,2,2,2,2,2]
+                  ],
+          "initPos":[1,5]
+      },
+      {
+          "matriz": [
+                      [2,2,2,2,2,2,2],
+                      [2,1,1,1,1,3,2],
+                      [2,1,0,0,0,0,2],
+                      [2,1,0,1,1,1,2],
+                      [2,1,0,0,0,1,2],
+                      [2,1,1,1,1,1,2],
+                      [2,2,2,2,2,2,2]
+                  ],
+          "initPos":[3,3]
+      },
+      {
+          "matriz": [
+                      [2,2,2,2,2,2,2],
+                      [2,0,0,1,1,1,2],
+                      [2,0,0,1,0,1,2],
+                      [2,1,1,1,0,1,2],
+                      [2,1,0,0,0,1,2],
+                      [2,1,1,1,3,0,2],
+                      [2,2,2,2,2,2,2]
+                  ],
+          "initPos":[4,5]
+      },
+      {
+          "matriz": [
+                      [2,2,2,2,2,2,2],
+                      [2,1,1,1,0,3,2],
+                      [2,1,0,1,0,1,2],
+                      [2,1,0,1,0,1,2],
+                      [2,1,0,1,0,1,2],
+                      [2,1,0,1,1,1,2],
+                      [2,2,2,2,2,2,2]
+                  ],
+          "initPos":[5,1]
+      }
+  ],
+  "imgPath": "images/exercises/10/Katty.svg",
+  "initMessages":[
+      "Guia-me para encontrar a saída. Diga-me que ações devo tomar para chegar ao fim.",
+      "Use os blocos para me dar as instruções."
+  ],
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 1
+  },
+  "path": "10",
+  "color": "#9968A6",
+  "name": "Saia do labirinto",
+  "id": "10"
+}

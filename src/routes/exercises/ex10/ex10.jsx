@@ -1,12 +1,14 @@
-import { useState, useLayoutEffect } from 'react'
+import { useState, useLayoutEffect, useEffect } from 'react'
 import ScoringComponent from '../components/scoringComponent'
 import DndComponent from '../components/dndComponent'
 import MazeComponent from '../components/mazeComponent'
-import data from './data.json'
 import '../../../styles/ex10.css'
+import useData from '../../../hooks/useData'
 
 export default function Ex10 () {
-  const [myData] = useState({
+  const { data } = useData('ex10')
+
+  const [myData, setMyData] = useState({
     ...data,
     matrices: data.matrices.sort(() => 0.5 - Math.random()).slice(0, data.threshold.perfect)
   })
@@ -14,6 +16,13 @@ export default function Ex10 () {
   const [reset, setReset] = useState(false)
 
   const [optionsData, setOptionsData] = useState({})
+
+  useEffect(() => {
+    setMyData({
+      ...data,
+      matrices: data.matrices.sort(() => 0.5 - Math.random()).slice(0, data.threshold.perfect)
+    })
+  }, [data])
 
   useLayoutEffect(() => {
     if (reset) {
@@ -35,27 +44,27 @@ export default function Ex10 () {
   return (
     <ScoringComponent initMessages={myData.initMessages} background={myData.color} title={myData.name} threshold={myData.threshold} exerciseId={myData.id}>
       {
-                (setScore, setPhase) => (
-                  <div className='maze-style'>
-                    <DndComponent data={myData} returnScore={setOptionsData} reset={reset} />
-                    <MazeComponent
-                      matrix={myData.matrices[0].matriz}
-                      recorridoMain={optionsData}
-                      imgPath={myData.imgPath}
-                      pos={myData.matrices[0].initPos}
-                      start={start}
-                      isFinished={setPhase}
-                      setScore={setScore}
-                    />
-                    <div className='buttons-field'>
-                      {optionsData.length && <button onClick={handleReset} className='restart'>REINTENTAR</button>}
-                      {!start
-                        ? <button onClick={handleClick} disabled={!optionsData.length}>INICIAR</button>
-                        : <button onClick={() => { setPhase('end') }}>FINALIZAR</button>}
-                    </div>
-                  </div>
-                )
-            }
+        (setScore, setPhase) => (
+          <div className='maze-style'>
+            <DndComponent data={myData} returnScore={setOptionsData} reset={reset} />
+            <MazeComponent
+              matrix={myData.matrices[0].matriz}
+              recorridoMain={optionsData}
+              imgPath={myData.imgPath}
+              pos={myData.matrices[0].initPos}
+              start={start}
+              isFinished={setPhase}
+              setScore={setScore}
+            />
+            <div className='buttons-field'>
+              {optionsData.length && <button onClick={handleReset} className='restart'>REINTENTAR</button>}
+              {!start
+                ? <button onClick={handleClick} disabled={!optionsData.length}>INICIAR</button>
+                : <button onClick={() => { setPhase('end') }}>FINALIZAR</button>}
+            </div>
+          </div>
+        )
+      }
     </ScoringComponent>
   )
 }

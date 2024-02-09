@@ -1,0 +1,76 @@
+{
+  "isSingle": "false",
+  "columns": {
+      "column-1": {
+          "id": "column-1",
+          "title": "",
+          "optionsIds": [
+              "option-1",
+              "option-3",
+              "option-4",
+              "option-5",
+              "option-6",
+              "option-9"
+          ],
+          "isDropDisabled":true
+      },
+      "column-2": {
+          "id": "column-2",
+          "title": "When: press start button",
+          "optionsIds": []
+      }
+  },
+  "options": {
+      "option-1": {
+          "id": "option-1",
+          "key": "saludar",
+          "text": "Greet",
+          "value": 1
+      },
+      "option-3": {
+          "id": "option-3",
+          "key": "si",
+          "text": "Say yes",
+          "value": 1
+      },
+      "option-4": {
+          "id": "option-4",
+          "key": "selfie",
+          "text": "Take selfie",
+          "value": 1
+      },
+      "option-5": {
+          "id": "option-5",
+          "key": "saltar",
+          "text": "Hop",
+          "value": 1
+      },
+      "option-6": {
+          "id": "option-6",
+          "key": "reir",
+          "text": "Laugh",
+          "value": 1
+      },
+      "option-9": {
+          "id": "option-9",
+          "key": "celular",
+          "text": "Check cell phone",
+          "value": 1
+      },
+      "option-10": {
+          "id": "option-10",
+          "key": "bailar",
+          "text": "Dance",
+          "value": 1
+      }
+  },
+  "initMessages":[
+      "Select the blocks and form a tower.",
+      "Pay attention to the order in which you arrange them, since this will be the order in which the character will execute the actions.",
+      "Select the blocks you want."
+  ],
+  "path": "12",
+  "color": "#9968A6",
+  "name": "Build animation",
+  "id": "12"
+}

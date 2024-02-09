@@ -1,0 +1,53 @@
+{
+  "isSingle": true,
+  "isLoop": true,
+  "columns": {
+      "column-1": {
+          "id": "column-1",
+          "title": "",
+          "optionsIds": [
+              "option-1",
+              "option-2"
+          ],
+          "isDropDisabled":true
+      },
+      "column-2": {
+          "id": "column-2",
+          "title": "When: press start button",
+          "optionsIds": []
+      }
+  },
+  "options": {
+      "option-1": {
+          "id": "option-1",
+          "key": "scan",
+          "text": "Scan",
+          "value": 1
+      },
+      "option-2": {
+          "id": "option-2",
+          "key": "move",
+          "text": "Move band",
+          "value": 1
+      }
+  },
+ "initMessages":[
+      "Program the machine to check the status of the candy.",
+      "You must get the band to scroll and the reader to review each piece of candy.",
+      "If the reader doesn't find a piece of candy as they walk past, they will tell you a mistake. Program the algorithm carefully."
+  ],
+  "threshold":{
+      "max" : 1,
+      "min" : 0,
+      "perfect": 1
+  },
+  "start": "START",
+  "reset": "RESET",
+  "end": "END",
+  "production": "Today's Production: ",
+  "sweet": "Sweets",
+  "path": "18",
+  "color": "#AE985E",
+  "name":"Scan the candys",
+  "id": 18
+}

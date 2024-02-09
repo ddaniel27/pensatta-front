@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import ScreenRenderUniqueOptionsEncapsulate from '../components/screenRenderUniqueOptionsEncapsulate'
 import ScoringComponent from '../components/scoringComponent'
-import data from './data.json'
 import useData from '../../../hooks/useData'
 
 export default function Ex07 () {

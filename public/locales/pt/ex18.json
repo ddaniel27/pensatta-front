@@ -1,0 +1,53 @@
+{
+  "isSingle": true,
+  "isLoop": true,
+  "columns": {
+      "column-1": {
+          "id": "column-1",
+          "title": "",
+          "optionsIds": [
+              "option-1",
+              "option-2"
+          ],
+          "isDropDisabled":true
+      },
+      "column-2": {
+          "id": "column-2",
+          "title": "Quando: pressione o botão Iniciar",
+          "optionsIds": []
+      }
+  },
+  "options": {
+      "option-1": {
+          "id": "option-1",
+          "key": "scan",
+          "text": "Varredura",
+          "value": 1
+      },
+      "option-2": {
+          "id": "option-2",
+          "key": "move",
+          "text": "Mover banda",
+          "value": 1
+      }
+  },
+ "initMessages":[
+      "Programe a máquina para verificar o estado do doce.",
+      "Você deve fazer com que a banda role e o leitor revise cada pedaço de doce.",
+      "Se o leitor não encontrar um pedaço de doce ao passar, ele lhe dirá um erro. Programe o algoritmo cuidadosamente."
+  ],
+  "threshold":{
+      "max" : 1,
+      "min" : 0,
+      "perfect": 1
+  },
+  "start": "INICIAR",
+  "reset": "REINICIALIZAR",
+  "end": "FIM",
+  "production": "Produção de hoje: ",
+  "sweet": "doces",
+  "path": "18",
+  "color": "#AE985E",
+  "name":"Escaneie o doce",
+  "id": 18
+}

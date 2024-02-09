@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react'
-import data from './data.json'
 import ScoringComponent from '../components/scoringComponent'
 import ConveyorScanner from '../components/conveyorScanner'
 import DndForComponent from '../components/dndForComponent'
 import styles from '../../../styles/ex18.module.css'
+import useData from '../../../hooks/useData'
 const Ex18 = () => {
-  const [myData] = useState({
+  const { data } = useData('ex18')
+  const [myData, setMyData] = useState({
     ...data
   })
   const [init, setInit] = useState(false)
@@ -14,6 +15,12 @@ const Ex18 = () => {
   const [reinit, setReinit] = useState(false)
   const [isFinish, setIsFinish] = useState(false)
   const [numberOfCandies, setNumberOfCandies] = useState(0)
+
+  useEffect(() => {
+    setMyData({
+      ...data
+    })
+  }, [data])
 
   useEffect(() => {
     let rep = Number(optionsData[optionsData.length - 1]?.[1])
@@ -40,7 +47,7 @@ const Ex18 = () => {
             <div className={styles['algorithm-animation-container']}>
               <div className={styles['production-draggables']}>
                 <div className={styles['production-info']}>
-                  {`Producción de hoy: ${numberOfCandies} dulces.`}
+                  {`${myData.production} ${numberOfCandies} ${myData.sweet}.`}
                 </div>
                 <DndForComponent data={myData} returnScore={setOptionsData} reset={reinit} />
               </div>
@@ -59,13 +66,13 @@ const Ex18 = () => {
               </div>
             </div>
             <div className={`${styles['btns-container']}`}>
-              <div className={`${styles['btn-game']} ${styles['btn-game-white']}`} onClick={() => { setReinit(true) }}>REINICIAR</div>
-              <div className={`${styles['btn-game']} ${styles['btn-game-purple']}`} onClick={() => { setInit(true) }}>INICIAR</div>
+              <div className={`${styles['btn-game']} ${styles['btn-game-white']}`} onClick={() => { setReinit(true) }}>{myData.reset}</div>
+              <div className={`${styles['btn-game']} ${styles['btn-game-purple']}`} onClick={() => { setInit(true) }}>{myData.start}</div>
               <div
                 className={`${styles['btn-game']} ${styles['btn-game-orange']}`} onClick={() => {
                   setIsFinish(true)
                 }}
-              >FINALIZAR
+              >{myData.end}
               </div>
             </div>
           </div>

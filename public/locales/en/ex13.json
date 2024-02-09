@@ -1,0 +1,46 @@
+{
+  "isSingle": true,
+  "isLoop": true,
+  "columns": {
+      "column-1": {
+          "id": "column-1",
+          "title": "",
+          "optionsIds": [
+              "option-1",
+              "option-2"
+          ],
+          "isDropDisabled":true
+      },
+      "column-2": {
+          "id": "column-2",
+          "title": "When: press start button",
+          "optionsIds": []
+      }
+  },
+  "options": {
+      "option-1": {
+          "id": "option-1",
+          "key": "excavar",
+          "text": "Dig",
+          "value": 1
+      },
+      "option-2": {
+          "id": "option-2",
+          "key": "avanzar",
+          "text": "Advance",
+          "value": 1
+      }
+  },
+  "initMessages":[
+      "Program the excavator to create a tunnel and go through the mountain.",
+      "Use command blocks to achieve this. You can restart the exercise to retry it as many times as you need."
+  ],
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 1
+  },
+  "path": "13",
+  "color": "#588F64",
+  "name": "Excavator"
+}

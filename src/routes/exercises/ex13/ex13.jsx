@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ScoringComponent from '../components/scoringComponent'
 import DndForComponent from '../components/dndForComponent'
 import Animation from '../components/animation'
-import data from './data.json'
 import '../../../styles/ex10.css'
+import useData from '../../../hooks/useData'
 
 export default function Ex13 () {
-  const [myData] = React.useState({
+  const { data } = useData('ex13')
+  const [myData, setMyData] = React.useState({
     ...data
   })
   const [start, setStart] = React.useState(false)
@@ -21,6 +22,12 @@ export default function Ex13 () {
       setReset(false)
     }
   }, [optionsData])
+
+  useEffect(() => {
+    setMyData({
+      ...data
+    })
+  }, [data])
 
   React.useEffect(() => {
     async function test () {
@@ -76,24 +83,24 @@ export default function Ex13 () {
   return (
     <ScoringComponent initMessages={myData.initMessages} background={myData.color} title={myData.name} threshold={myData.threshold} exerciseId={myData.id}>
       {
-                (setScore, setPhase) => (
-                  <div className='maze-style'>
-                    <DndForComponent data={myData} returnScore={setOptionsData} reset={reset} />
+        (setScore, setPhase) => (
+          <div className='maze-style'>
+            <DndForComponent data={myData} returnScore={setOptionsData} reset={reset} />
 
-                    <div className='info-box'>
-                      <Animation animationSequence={optionsData} path={myData.path} functionToAnimate={animate} start={start} />
-                      <div className='montana' />
-                    </div>
+            <div className='info-box'>
+              <Animation animationSequence={optionsData} path={myData.path} functionToAnimate={animate} start={start} />
+              <div className='montana' />
+            </div>
 
-                    <div className='buttons-field'>
-                      {start
-                        ? <button onClick={() => { handleFinish(setScore, setPhase) }} className='restart'>FINALIZAR</button>
-                        : <button onClick={handleClick} disabled={optionsData.length < 2}>INICIAR</button>}
-                      {optionsData.length > 1 && <button onClick={handleReset} className={`${!start && 'restart'}`}>REINTENTAR</button>}
-                    </div>
-                  </div>
-                )
-            }
+            <div className='buttons-field'>
+              {start
+                ? <button onClick={() => { handleFinish(setScore, setPhase) }} className='restart'>FINALIZAR</button>
+                : <button onClick={handleClick} disabled={optionsData.length < 2}>INICIAR</button>}
+              {optionsData.length > 1 && <button onClick={handleReset} className={`${!start && 'restart'}`}>REINTENTAR</button>}
+            </div>
+          </div>
+        )
+      }
     </ScoringComponent>
   )
 }
