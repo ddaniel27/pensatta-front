@@ -316,6 +316,10 @@
     "initMessages": [
         "Explore o interior do computador e na tela final indique algumas das partes que você aprendeu."
     ],
+    "components": {
+        "title": "Componentes internos",
+        "description": "Confira todos os componentes da lista abaixo!"
+      },
     "threshold": {
         "max": 1,
         "min": 1,

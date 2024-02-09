@@ -6,7 +6,7 @@ import { postExercise } from '../../../requests'
 import BackButtonInGame from './backButtonIngame'
 
 export default function ScoringComponent ({ initMessages = ['Inicia dando click al boton'], title = 'Actividad', children, background = '#E0E0E0', threshold = { perfect: 1, max: 1, min: 1 }, exerciseId = 0 }) {
-  const { t } = useTranslation("scoringComponent")
+  const { t } = useTranslation('scoringComponent')
   const { setActivity, setTitle, setBackground } = useContext(ActivityContext)
   const [score, setScore] = useState(0)
   const [phase, setPhase] = useState('init')
@@ -20,12 +20,16 @@ export default function ScoringComponent ({ initMessages = ['Inicia dando click 
   }, [setTitle, title, setBackground, background])
 
   useEffect(() => {
+    setPhase('init')
+  }, [initMessages])
+
+  useEffect(() => {
     if (score >= threshold.max) {
-      setResultMessage([t("result-excelent"), `${t("result-1")}${score}${t("result-2")}${threshold.perfect}${t("result-3")}`])
+      setResultMessage([t('result-excelent'), `${t('result-1')}${score}${t('result-2')}${threshold.perfect}${t('result-3')}`])
     } else if (score < threshold.max && score > threshold.min) {
-      setResultMessage([t("result-good"), `${t("result-1")}${score}${t("result-2")}${threshold.perfect}${t("result-3")}`])
+      setResultMessage([t('result-good'), `${t('result-1')}${score}${t('result-2')}${threshold.perfect}${t('result-3')}`])
     } else {
-      setResultMessage([t("result-bad"), `${t("result-1")}${score}${t("result-2")}${threshold.perfect}${t("result-3")}`])
+      setResultMessage([t('result-bad'), `${t('result-1')}${score}${t('result-2')}${threshold.perfect}${t('result-3')}`])
     }
   }, [score, threshold.max, threshold.min, threshold.perfect])
 
@@ -61,7 +65,7 @@ export default function ScoringComponent ({ initMessages = ['Inicia dando click 
     <>
 
       {
-        phase === 'init' && <><Information messages={initMessages} /> <button onClick={handleStart}>{t("button-init")}</button></>
+        phase === 'init' && <><Information messages={initMessages} /> <button onClick={handleStart}>{t('button-init')}</button></>
       }
 
       {
@@ -71,7 +75,7 @@ export default function ScoringComponent ({ initMessages = ['Inicia dando click 
         phase === 'activity' && <BackButtonInGame onClick={() => { setPhase('init') }} />
       }
       {
-        phase === 'end' && <><Information messages={resultMessage} /> <button onClick={() => { setActivity(true) }} disabled={disableButton}>{t("button-end")}</button></>
+        phase === 'end' && <><Information messages={resultMessage} /> <button onClick={() => { setActivity(true) }} disabled={disableButton}>{t('button-end')}</button></>
       }
     </>
   )

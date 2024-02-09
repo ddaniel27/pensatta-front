@@ -1,0 +1,128 @@
+{
+    "initMessages":[
+        "Next, you will see five screens with different tools.",
+        "Select from the list a task that can be performed with each of them."
+    ],
+    "name": "Application uses",
+    "options": [
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text":"Access website",
+                    "isCorrect":true
+                },
+                {
+                    "text": "Edit videos",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Review an encyclopedia",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Create presentations",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "Google.svg"
+        },
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text": "Create spreadsheets",
+                    "isCorrect":true
+                },
+                {
+                    "text": "Edit sound files",
+                    "isCorrect":false
+                },
+                {
+                    "text": "review an encyclopedia",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Play songs",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "Excel.svg"
+        },
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text": "Watch videos online",
+                    "isCorrect":true
+                },
+                {
+                    "text": "Edit videos",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Edit text documents",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Create presentations",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "Youtube.svg"
+        },
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text":"Edit text documents",
+                    "isCorrect":true
+                },
+                {
+                    "text": "Edit sound files",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Create spreadsheets",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Create presentations",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "Word.svg"
+        },
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text":"Edit images",
+                    "isCorrect":true
+                },
+                {
+                    "text": "Edit videos",
+                    "isCorrect":false
+                },
+                {
+                    "text": "play songs",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Create presentations",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "Photoshop.svg"
+        }
+    ],
+    "threshold": {
+        "max": 3,
+        "min": 1,
+        "perfect": 5
+    },
+    "path": "02",
+    "color": "#9968A6",
+
+    "id": 2
+}

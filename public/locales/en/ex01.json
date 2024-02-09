@@ -316,6 +316,10 @@
   "initMessages":[
     "Explore the internal parts of the computer and select the ones you identify in the list at the end."
   ],
+  "components": {
+    "title": "Internal Components",
+    "description": "Check out all the components in the list below!"
+  },
   "threshold": {
     "max": 1,
     "min": 1,

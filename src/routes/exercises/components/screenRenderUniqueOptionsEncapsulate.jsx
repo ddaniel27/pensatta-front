@@ -15,10 +15,11 @@ export default function ScreenRenderUniqueOptionsEncapsulate ({ data, hasImages 
   const [nextQuestion, setNextQuestion] = useState(false)
   const [loadedImg, setLoadedImg] = useState(false)
   const [prevPath, setPrevPath] = useState(false)
-  const { t } = useTranslation("screenRenderUniqueOptionsEncapsulate")
+  const { t } = useTranslation('screenRenderUniqueOptionsEncapsulate')
   const didMount = useRef(false)
 
   useEffect(() => {
+    if (data.length === 0) return
     setOptions(data.options)
     setCurrentOption(getRandomOption())
     return () => {
@@ -87,8 +88,8 @@ export default function ScreenRenderUniqueOptionsEncapsulate ({ data, hasImages 
       {currentOption.multiple
         ? <MultipleOption options={optionsSet} isCorrectOption={setScore} enableButton={setDisabled} showCorrect={nextQuestion} title={currentOption.question} maxOptions={currentOption.maxOptions} />
         : <UniqueOption options={optionsSet} isCorrectOption={setScore} enableButton={setDisabled} showCorrect={nextQuestion} title={currentOption.question} />}
-      {!nextQuestion && <button className='button-play' onClick={() => { setNextQuestion(true) }} disabled={disabled}>{t("answer-button")}</button>}
-      {nextQuestion && <button className='button-play' onClick={handleClick}>{t("next-button")}</button>}
+      {!nextQuestion && <button className='button-play' onClick={() => { setNextQuestion(true) }} disabled={disabled}>{t('answer-button')}</button>}
+      {nextQuestion && <button className='button-play' onClick={handleClick}>{t('next-button')}</button>}
     </div>
   )
 }

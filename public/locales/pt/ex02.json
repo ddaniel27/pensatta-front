@@ -1,0 +1,128 @@
+{
+    "initMessages":[
+        "A seguir, você verá cinco telas com diferentes ferramentas.",
+        "Selecione na lista uma tarefa que pode ser executada com cada um deles."
+    ],
+    "name": "Usos do aplicativo",
+    "options": [
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text":"Acessar site",
+                    "isCorrect":true
+                },
+                {
+                    "text": "Editar vídeos",
+                    "isCorrect":false
+                },
+                {
+                    "text": "rever uma enciclopédia",
+                    "isCorrect":false
+                },
+                {
+                    "text": "criar apresentações",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "Google.svg"
+        },
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text": "Criar planilhas",
+                    "isCorrect":true
+                },
+                {
+                    "text": "Editar arquivos de som",
+                    "isCorrect":false
+                },
+                {
+                    "text": "rever uma enciclopédia",
+                    "isCorrect":false
+                },
+                {
+                    "text": "tocar músicas",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "Excel.svg"
+        },
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text": "assista a vídeos on-line",
+                    "isCorrect":true
+                },
+                {
+                    "text": "Editar vídeos",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Editar documentos de texto",
+                    "isCorrect":false
+                },
+                {
+                    "text": "criar apresentações",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "Youtube.svg"
+        },
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text":"Editar documentos de texto",
+                    "isCorrect":true
+                },
+                {
+                    "text": "Editar arquivos de som",
+                    "isCorrect":false
+                },
+                {
+                    "text": "Criar planilhas",
+                    "isCorrect":false
+                },
+                {
+                    "text": "criar apresentações",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "Word.svg"
+        },
+        {
+            "question":"",
+            "answers":[
+                {
+                    "text":"Editar imagens",
+                    "isCorrect":true
+                },
+                {
+                    "text": "Editar vídeos",
+                    "isCorrect":false
+                },
+                {
+                    "text": "tocar músicas",
+                    "isCorrect":false
+                },
+                {
+                    "text": "criar apresentações",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "Photoshop.svg"
+        }
+    ],
+    "threshold": {
+        "max": 3,
+        "min": 1,
+        "perfect": 5
+    },
+    "path": "02",
+    "color": "#9968A6",
+
+    "id": 2
+}

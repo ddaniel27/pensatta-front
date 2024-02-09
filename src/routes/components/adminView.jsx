@@ -4,7 +4,6 @@ import ActivityContext from '../../context/ActivityContext'
 import RouterActivity from '../exercises/routerActivity'
 import InstitutionScreen from './institutionScreen'
 import NavMenu from './navMenu'
-import data from '../../exercisesList.json'
 import { getInstitutions } from '../../requests'
 import { useTranslation } from 'react-i18next'
 import '../../styles/adminView.css'
@@ -15,7 +14,7 @@ export default function AdminView () {
   const [disableButton, setDisableButton] = useState(true)
   const [screen, setScreen] = useState('exercise')
   const refContainer = useRef({})
-  const { t } = useTranslation("adminView")
+  const { t } = useTranslation('adminView')
 
   useEffect(() => {
     async function getInst () {
@@ -54,8 +53,8 @@ export default function AdminView () {
             {
               screen === 'exercise' &&
                 <>
-                  <GenericSelector setCurrentValue={setExerciseId} options={data.ex} defaultLabel={t("label")} />
-                  <button className='button-play' onClick={handleStart} disabled={disableButton}>{t("play")}</button>
+                  <GenericSelector setCurrentValue={setExerciseId} options={t('ex', { returnObjects: true })} defaultLabel={t('label')} />
+                  <button className='button-play' onClick={handleStart} disabled={disableButton}>{t('play')}</button>
                 </>
             }
             {

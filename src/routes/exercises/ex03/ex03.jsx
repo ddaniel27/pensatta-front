@@ -2,13 +2,13 @@ import { useState, useEffect } from 'react'
 import Roulette from '../components/roulette'
 import ScreenRenderUniqueOptionsEncapsulate from '../components/screenRenderUniqueOptionsEncapsulate'
 import ScoringComponent from '../components/scoringComponent'
-import useData from "../../../hooks/useData"
+import useData from '../../../hooks/useData'
 import '../../../styles/ex03.css'
 
 export default function Ex03 () {
   const [continueGame, setContinueGame] = useState(false)
 
-  const { data } = useData("ex03")
+  const { data } = useData('ex03')
   const [myData, setMyData] = useState({
     ...data,
     options: data.options.sort(() => 0.5 - Math.random()).slice(0, data.threshold.perfect)

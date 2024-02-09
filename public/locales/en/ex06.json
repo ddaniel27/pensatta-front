@@ -1,0 +1,182 @@
+{
+    "slides":[
+        {
+            "img": "Byte.svg",
+            "legend1": "Byte (B)",
+            "legend2": "8 Bits",
+            "color":"#E46767"
+        },
+        {
+            "img": "Kilobyte.svg",
+            "legend1": "Kilobyte (KB)",
+            "legend2": "1024 B",
+            "color":"#AB8218"
+        },
+        {
+            "img": "Megabyte.svg",
+            "legend1": "Megabyte (MB)",
+            "legend2": "1024 KB",
+            "color":"#72AB7E"
+        },
+        {
+            "img": "Gigabyte.svg",
+            "legend1": "Gigabyte (GB)",
+            "legend2": "1024 MB",
+            "color":"#18ADB7"
+        },
+        {
+            "img": "Terabyte.svg",
+            "legend1": "Terabyte (TB)",
+            "legend2": "1024 GB",
+            "color":"#C66CDC"
+        }
+    ],
+    "options": [
+        {
+            "question":"8 Bytes is greater than 8 Kilobytes",
+            "answers":[
+                {
+                    "text":"True",
+                    "isCorrect":false
+                },
+                {
+                    "text":"False",
+                    "isCorrect":true
+                }
+            ]
+        },
+        {
+            "question":"256 Megabytes is less than 1 Gigabyte",
+            "answers":[
+                {
+                    "text":"True",
+                    "isCorrect":true
+                },
+                {
+                    "text":"False",
+                    "isCorrect":false
+                }
+            ]
+        },
+        {
+            "question":"1 Terabyte is greater than 1 Gigabyte",
+            "answers":[
+                {
+                    "text":"True",
+                    "isCorrect":true
+                },
+                {
+                    "text":"False",
+                    "isCorrect":false
+                }
+            ]
+        },
+        {
+            "question":"1 Megabyte is equal to 1024 Kilobytes",
+            "answers":[
+                {
+                    "text":"True",
+                    "isCorrect":true
+                },
+                {
+                    "text":"False",
+                    "isCorrect":false
+                }
+            ]
+        },
+        {
+            "question":"1 Gigabyte is equal to 1024 Terabytes",
+            "answers":[
+                {
+                    "text":"True",
+                    "isCorrect":false
+                },
+                {
+                    "text":"False",
+                    "isCorrect":true
+                }
+            ]
+        },
+        {
+            "question":"4 Gigabytes is equal to 4048 Terabytes",
+            "answers":[
+                {
+                    "text":"True",
+                    "isCorrect":false
+                },
+                {
+                    "text":"False",
+                    "isCorrect":true
+                }
+            ]
+        },
+        {
+            "question":"1 Kilobyte is equal to 1024 Gigabytes",
+            "answers":[
+                {
+                    "text":"True",
+                    "isCorrect":false
+                },
+                {
+                    "text":"False",
+                    "isCorrect":true
+                }
+            ]
+        },
+        {
+            "question":"1024 Terabytes is greater than 1 Gigabyte",
+            "answers":[
+                {
+                    "text":"True",
+                    "isCorrect":true
+                },
+                {
+                    "text":"False",
+                    "isCorrect":false
+                }
+            ]
+        },
+        {
+            "question":"8 Bits is equal to Kilobyte",
+            "answers":[
+                {
+                    "text":"True",
+                    "isCorrect":false
+                },
+                {
+                    "text":"False",
+                    "isCorrect":true
+                }
+            ]
+        },
+        {
+            "question":"1024 Gigabytes is equal to 1 Terabyte",
+            "answers":[
+                {
+                    "text":"True",
+                    "isCorrect":true
+                },
+                {
+                    "text":"False",
+                    "isCorrect":false
+                }
+            ]
+        }
+    ],
+    "btnContinue":"Continue",
+    "initMessages":[
+        "Interact with the cubes that you will find below.",
+        "Each represents the values of the computer data measurement units (bytes).",
+        "You can scroll from right to left to review the different units of measurement as many times as you want."
+
+    ],
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 1
+    },
+    "name": "Computing units of measure",
+    "color": "#AE985E",
+    "path":"06",
+    "id": 6
+}
