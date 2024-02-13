@@ -1,0 +1,362 @@
+{
+  "isSingle": true,
+  "isLoop": true,
+  "variations":[
+      {
+          "columns": {
+              "column-1": {
+                  "id": "column-1",
+                  "title": "Alterar cor de fundo",
+                  "optionsIds": [
+                      "option-2"
+                  ]
+              },
+              "column-2": {
+                  "id": "column-2",
+                  "title": "Calcule o custo do imposto",
+                  "optionsIds": [
+                      "option-3"
+                  ]
+              },
+              "column-3": {
+                  "id": "column-3",
+                  "title": "Agendar movimento",
+                  "optionsIds": [
+                      "option-1"
+                  ]
+              }
+          },
+          "options": {
+              "option-1": {
+                  "id": "option-1",
+                  "key": "excavar",
+                  "text": "Escavação",
+                  "value": 1,
+                  "src":"51/Opcion1.svg"
+              },
+              "option-2": {
+                  "id": "option-2",
+                  "key": "avanzar",
+                  "text": "Avançar",
+                  "value": 2,
+                  "src":"51/Opcion2.svg"
+              },
+              "option-3": {
+                  "id": "option-3",
+                  "key": "cerrar",
+                  "text": "Fechar",
+                  "value": 3,
+                  "src":"51/Opcion3.svg"
+              }
+          }
+      },
+      {
+          "columns": {
+              "column-1": {
+                  "id": "column-1",
+                  "title": "Classificar elementos",
+                  "optionsIds": [
+                      "option-2"
+                  ]
+              },
+              "column-2": {
+                  "id": "column-2",
+                  "title": "Pesquise informações sobre um autor na internet",
+                  "optionsIds": [
+                      "option-3"
+                  ]
+              },
+              "column-3": {
+                  "id": "column-3",
+                  "title": "Definir a ordem de reprodução",
+                  "optionsIds": [
+                      "option-1"
+                  ]
+              }
+          },
+          "options": {
+              "option-1": {
+                  "id": "option-1",
+                  "key": "excavar",
+                  "text": "Escavação",
+                  "value": 1,
+                  "src":"51/Opcion4.svg"
+              },
+              "option-2": {
+                  "id": "option-2",
+                  "key": "avanzar",
+                  "text": "Avançar",
+                  "value": 2,
+                  "src":"51/Opcion5.svg"
+              },
+              "option-3": {
+                  "id": "option-3",
+                  "key": "cerrar",
+                  "text": "Fechar",
+                  "value": 3,
+                  "src":"51/Opcion6.svg"
+              }
+          }
+      },
+      {
+          "columns": {
+              "column-1": {
+                  "id": "column-1",
+                  "title": "Baixar arquivos recebidos por e-mail",
+                  "optionsIds": [
+                      "option-2"
+                  ]
+              },
+              "column-2": {
+                  "id": "column-2",
+                  "title": "Traduzir um texto",
+                  "optionsIds": [
+                      "option-3"
+                  ]
+              },
+              "column-3": {
+                  "id": "column-3",
+                  "title": "Escreva um documento de texto",
+                  "optionsIds": [
+                      "option-1"
+                  ]
+              }
+          },
+          "options": {
+              "option-1": {
+                  "id": "option-1",
+                  "key": "excavar",
+                  "text": "Escavação",
+                  "value": 1,
+                  "src":"51/Opcion7.svg"
+              },
+              "option-2": {
+                  "id": "option-2",
+                  "key": "avanzar",
+                  "text": "Avançar",
+                  "value": 2,
+                  "src":"51/Opcion8.svg"
+              },
+              "option-3": {
+                  "id": "option-3",
+                  "key": "cerrar",
+                  "text": "Fechar",
+                  "value": 3,
+                  "src":"51/Opcion9.svg"
+              }
+          }
+      },
+      {
+          "columns": {
+              "column-1": {
+                  "id": "column-1",
+                  "title": "Classificar elementos",
+                  "optionsIds": [
+                      "option-2"
+                  ]
+              },
+              "column-2": {
+                  "id": "column-2",
+                  "title": "Traduzir um texto",
+                  "optionsIds": [
+                      "option-3"
+                  ]
+              },
+              "column-3": {
+                  "id": "column-3",
+                  "title": "Definir a ordem de reprodução",
+                  "optionsIds": [
+                      "option-1"
+                  ]
+              }
+          },
+          "options": {
+              "option-1": {
+                  "id": "option-1",
+                  "key": "excavar",
+                  "text": "Escavação",
+                  "value": 1,
+                  "src":"51/Opcion4.svg"
+              },
+              
+              "option-2": {
+                  "id": "option-2",
+                  "key": "avanzar",
+                  "text": "Avançar",
+                  "value": 2,
+                  "src":"51/Opcion8.svg"
+              },
+              "option-3": {
+                  "id": "option-3",
+                  "key": "cerrar",
+                  "text": "Fechar",
+                  "value": 3,
+                  "src":"51/Opcion6.svg"
+              }
+          }
+      },
+      {
+          "columns": {
+              "column-1": {
+                  "id": "column-1",
+                  "title": "Baixar arquivos recebidos por e-mail",
+                  "optionsIds": [
+                      "option-2"
+                  ]
+              },
+              "column-2": {
+                  "id": "column-2",
+                  "title": "Pesquise informações sobre um autor na internet",
+                  "optionsIds": [
+                      "option-3"
+                  ]
+              },
+              "column-3": {
+                  "id": "column-3",
+                  "title": "Escreva um documento de texto",
+                  "optionsIds": [
+                      "option-1"
+                  ]
+              }
+          },
+          "options": {
+              "option-1": {
+                  "id": "option-1",
+                  "key": "excavar",
+                  "text": "Escavação",
+                  "value": 1,
+                  "src":"51/Opcion7.svg"
+              },
+              "option-2": {
+                  "id": "option-2",
+                  "key": "avanzar",
+                  "text": "Avançar",
+                  "value": 2,
+                  "src":"51/Opcion5.svg"
+              },
+              "option-3": {
+                  "id": "option-3",
+                  "key": "cerrar",
+                  "text": "Fechar",
+                  "value": 3,
+                  "src":"51/Opcion9.svg"
+              }
+          }
+      },
+      {
+          "columns": {
+              "column-1": {
+                  "id": "column-1",
+                  "title": "Alterar cor de fundo",
+                  "optionsIds": [
+                      "option-2"
+                  ]
+              },
+              "column-2": {
+                  "id": "column-2",
+                  "title": "Calcule o custo do imposto",
+                  "optionsIds": [
+                      "option-3"
+                  ]
+              },
+              "column-3": {
+                  "id": "column-3",
+                  "title": "Definir a ordem de reprodução",
+                  "optionsIds": [
+                      "option-1"
+                  ]
+              }
+          },
+          "options": {
+              "option-1": {
+                  "id": "option-1",
+                  "key": "excavar",
+                  "text": "Escavação",
+                  "value": 1,
+                  "src":"51/Opcion1.svg"
+              },
+              "option-2": {
+                  "id": "option-2",
+                  "key": "avanzar",
+                  "text": "Avançar",
+                  "value": 2,
+                  "src":"51/Opcion2.svg"
+              },
+              "option-3": {
+                  "id": "option-3",
+                  "key": "cerrar",
+                  "text": "Fechar",
+                  "value": 3,
+                  "src":"51/Opcion6.svg"
+              }
+          }
+      },
+      {
+          "columns": {
+              "column-1": {
+                  "id": "column-1",
+                  "title": "Classificar elementos",
+                  "optionsIds": [
+                      "option-2"
+                  ]
+              },
+              "column-2": {
+                  "id": "column-2",
+                  "title": "Pesquise informações sobre um autor na internet",
+                  "optionsIds": [
+                      "option-3"
+                  ]
+              },
+              "column-3": {
+                  "id": "column-3",
+                  "title": "Agendar movimento",
+                  "optionsIds": [
+                      "option-1"
+                  ]
+              }
+          },
+          "options": {
+              "option-1": {
+                  "id": "option-1",
+                  "key": "excavar",
+                  "text": "Escavação",
+                  "value": 1,
+                  "src":"51/Opcion4.svg"
+              },
+              "option-2": {
+                  "id": "option-2",
+                  "key": "avanzar",
+                  "text": "Avançar",
+                  "value": 2,
+                  "src":"51/Opcion5.svg"
+              },
+              "option-3": {
+                  "id": "option-3",
+                  "key": "cerrar",
+                  "text": "Fechar",
+                  "value": 3,
+                  "src":"51/Opcion3.svg"
+              }
+          }
+      }
+  ],
+  "sequence":[
+      "option-1",
+      "option-2",
+      "option-3"
+  ],
+  "initMessages":[
+      "Abaixo você encontrará três eventos diferentes",
+      "Abaixo destes, você encontrará três algoritmos de bloco que descrevem os eventos.",
+      "Arraste os algoritmos abaixo do evento ao qual eles correspondem."
+  ],
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 1
+  },
+  "path": "13",
+  "color": "#588F64",
+  "name": "Algoritmos de bloco",
+  "id": "51"
+}

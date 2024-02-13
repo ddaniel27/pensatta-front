@@ -1,0 +1,65 @@
+{
+  "options":[
+      {
+          "title": "Body",
+          "options":[
+          "Donkey",
+          "Pig",
+          "Rabbit",
+          "Cat",
+          "Bear",
+          "Dog",
+          "Cow",
+          "Fox"
+          ]
+      },
+      {
+          "title": "Eyes",
+          "options":[
+          "Eyes 1",
+          "Eyes 2",
+          "Eyes 3",
+          "Eyes 4",
+          "Eyes 5",
+          "Eyes 6"
+          ]
+      },
+      {
+          "title": "Glasses",
+          "options":[
+          "None" ,
+          "Glasses 1" ,
+          "Glasses 2" ,
+          "Glasses 3"
+          ]
+      },
+      {
+          "title": "Accessory 1",
+          "options":[
+          "None" ,
+          "Bun" ,
+          "Patch",
+          "Face mask",
+          "Flower"
+          ]
+      },
+      {
+          "title": "Accessory 2",
+          "options":[
+          "None" ,
+          "Tie",
+          "bowtie",
+          "Bag"
+          ]
+      }
+  ],
+  "initMessages":[
+      "Create your own avatar in this environment.",
+      "Explore the options to create the digital being that best represents you."
+  ],
+  "btnEnd":"END",
+  "path": "43",
+  "color": "#1B6893",
+  "name": "Create your avatar",
+  "id": 43
+}

@@ -1,0 +1,511 @@
+{
+  "variations":[
+      {
+          "columns": {
+              "column-1": {
+                  "id": "column-1",
+                  "title": "Blocks you can use",
+                  "optionsIds": [
+                      "option-4",
+                      "option-5",
+                      "option-6",
+                      "option-7"
+                  ],
+                  "isDropDisabled":true,
+                  "info":"Drag a block and complete the algorithm"
+              },
+              "column-2": {
+                  "id": "column-2",
+                  "title": "When: press start button - blocks you can use",
+                  "optionsIds": [
+                      "option-1",
+                      "option-2",
+                      "option-3"
+                  ]
+              }
+          },
+          "options": {
+              "option-1": {
+                  "id": "option-1",
+                  "key": "preload",
+                  "text": "Choose game",
+                  "value": 1
+              },
+              "option-2": {
+                  "id": "option-2",
+                  "key": "preload2",
+                  "text": "Put the pieces",
+                  "value": 2
+              },
+              "option-3": {
+                  "id": "option-3",
+                  "key": "preload3",
+                  "text": "Put the pieces together",
+                  "value": 3
+              },
+              "option-4": {
+                  "id": "option-4",
+                  "key": "quitar",
+                  "text": "Remove the lid",
+                  "value": 4
+              },
+              "option-5": {
+                  "id": "option-5",
+                  "key": "romper",
+                  "text": "Break the box",
+                  "value": 5
+              },
+              "option-6": {
+                  "id": "option-6",
+                  "key": "preparar",
+                  "text": "Prepare coffee",
+                  "value": 6
+              },
+              "option-7": {
+                  "id": "option-7",
+                  "key": "tutorial",
+                  "text": "See tutorial",
+                  "value": 7
+              }
+          },
+          "sequence": [1, 2, 4, 3]
+      },
+      {
+          "columns": {
+              "column-1": {
+                  "id": "column-1",
+                  "title": "Blocks you can use",
+                  "optionsIds": [
+                      "option-5",
+                      "option-4",
+                      "option-6",
+                      "option-7"
+                  ],
+                  "isDropDisabled":true,
+                  "info":"Drag a block and complete the algorithm"
+              },
+              "column-2": {
+                  "id": "column-2",
+                  "title": "When: press start button - blocks you can use",
+                  "optionsIds": [
+                      "option-1",
+                      "option-2",
+                      "option-3"
+                  ]
+              }
+          },
+          "options": {
+              "option-1": {
+                  "id": "option-1",
+                  "key": "preload",
+                  "text": "Go to the store",
+                  "value": 1
+              },
+              "option-2": {
+                  "id": "option-2",
+                  "key": "preload2",
+                  "text": "Select the fruits",
+                  "value": 2
+              },
+              "option-3": {
+                  "id": "option-3",
+                  "key": "preload3",
+                  "text": "Go to checkout",
+                  "value": 3
+              },
+              "option-4": {
+                  "id": "option-4",
+                  "key": "quitar",
+                  "text": "Pay",
+                  "value": 4
+              },
+              "option-5": {
+                  "id": "option-5",
+                  "key": "romper",
+                  "text": "Read a book",
+                  "value": 5
+              },
+              "option-6": {
+                  "id": "option-6",
+                  "key": "preparar",
+                  "text": "Prepare coffee",
+                  "value": 6
+              },
+              "option-7": {
+                  "id": "option-7",
+                  "key": "tutorial",
+                  "text": "Sleep",
+                  "value": 7
+              }
+          },
+          "sequence": [1, 2, 3, 4]
+      },
+      {
+          "columns": {
+              "column-1": {
+                  "id": "column-1",
+                  "title": "Blocks you can use",
+                  "optionsIds": [
+                      "option-5",
+                      "option-7",
+                      "option-4",
+                      "option-6"
+                  ],
+                  "isDropDisabled":true,
+                  "info":"Drag a block and complete the algorithm"
+              },
+              "column-2": {
+                  "id": "column-2",
+                  "title": "When: press start button - blocks you can use",
+                  "optionsIds": [
+                      "option-1",
+                      "option-2",
+                      "option-3"
+                  ]
+              }
+          },
+          "options": {
+              "option-1": {
+                  "id": "option-1",
+                  "key": "preload",
+                  "text": "Enter recipient",
+                  "value": 1
+              },
+              "option-2": {
+                  "id": "option-2",
+                  "key": "preload2",
+                  "text": "Enter subject",
+                  "value": 2
+              },
+              "option-3": {
+                  "id": "option-3",
+                  "key": "preload3",
+                  "text": "Send",
+                  "value": 3
+              },
+              "option-4": {
+                  "id": "option-4",
+                  "key": "quitar",
+                  "text": "Compose the text",
+                  "value": 4
+              },
+              "option-5": {
+                  "id": "option-5",
+                  "key": "romper",
+                  "text": "Create a meme",
+                  "value": 5
+              },
+              "option-6": {
+                  "id": "option-6",
+                  "key": "preparar",
+                  "text": "Watch a video",
+                  "value": 6
+              },
+              "option-7": {
+                  "id": "option-7",
+                  "key": "tutorial",
+                  "text": "Call a friend",
+                  "value": 7
+              }
+          },
+          "sequence": [1, 2, 4, 3]
+      },
+      {
+          "columns": {
+              "column-1": {
+                  "id": "column-1",
+                  "title": "Blocks you can use",
+                  "optionsIds": [
+                      "option-4",
+                      "option-5",
+                      "option-6",
+                      "option-7"
+                  ],
+                  "isDropDisabled":true,
+                  "info":"Drag a block and complete the algorithm"
+              },
+              "column-2": {
+                  "id": "column-2",
+                  "title": "When: press start button - blocks you can use",
+                  "optionsIds": [
+                      "option-1",
+                      "option-2",
+                      "option-3"
+                  ]
+              }
+          },
+          "options": {
+              "option-1": {
+                  "id": "option-1",
+                  "key": "preload",
+                  "text": "Choose game",
+                  "value": 1
+              },
+              "option-2": {
+                  "id": "option-2",
+                  "key": "preload2",
+                  "text": "Start a game",
+                  "value": 2
+              },
+              "option-3": {
+                  "id": "option-3",
+                  "key": "preload3",
+                  "text": "Play",
+                  "value": 3
+              },
+              "option-4": {
+                  "id": "option-4",
+                  "key": "quitar",
+                  "text": "Start the game",
+                  "value": 4
+              },
+              "option-5": {
+                  "id": "option-5",
+                  "key": "romper",
+                  "text": "Criticize the game",
+                  "value": 5
+              },
+              "option-6": {
+                  "id": "option-6",
+                  "key": "preparar",
+                  "text": "Screen off",
+                  "value": 6
+              },
+              "option-7": {
+                  "id": "option-7",
+                  "key": "tutorial",
+                  "text": "Watch a movie",
+                  "value": 7
+              }
+          },
+          "sequence": [1, 4, 2, 3]
+      },
+      {
+          "columns": {
+              "column-1": {
+                  "id": "column-1",
+                  "title": "Blocks you can use",
+                  "optionsIds": [
+                      "option-4",
+                      "option-5",
+                      "option-6",
+                      "option-7"
+                  ],
+                  "isDropDisabled":true,
+                  "info":"Drag a block and complete the algorithm"
+              },
+              "column-2": {
+                  "id": "column-2",
+                  "title": "When: press start button - blocks you can use",
+                  "optionsIds": [
+                      "option-1",
+                      "option-2",
+                      "option-3"
+                  ]
+              }
+          },
+          "options": {
+              "option-1": {
+                  "id": "option-1",
+                  "key": "preload",
+                  "text": "Put the first slice of bread",
+                  "value": 1
+              },
+              "option-2": {
+                  "id": "option-2",
+                  "key": "preload2",
+                  "text": "Put the ham",
+                  "value": 2
+              },
+              "option-3": {
+                  "id": "option-3",
+                  "key": "preload3",
+                  "text": "Put the cheese",
+                  "value": 3
+              },
+              "option-4": {
+                  "id": "option-4",
+                  "key": "quitar",
+                  "text": "Put second bread",
+                  "value": 4
+              },
+              "option-5": {
+                  "id": "option-5",
+                  "key": "romper",
+                  "text": "Dip in milk",
+                  "value": 5
+              },
+              "option-6": {
+                  "id": "option-6",
+                  "key": "preparar",
+                  "text": "Liquefy",
+                  "value": 6
+              },
+              "option-7": {
+                  "id": "option-7",
+                  "key": "tutorial",
+                  "text": "Put ice",
+                  "value": 7
+              }
+          },
+          "sequence": [1, 2, 3, 4]
+      },
+      {
+          "columns": {
+              "column-1": {
+                  "id": "column-1",
+                  "title": "Blocks you can use",
+                  "optionsIds": [
+                      "option-4",
+                      "option-5",
+                      "option-6",
+                      "option-7"
+                  ],
+                  "isDropDisabled":true,
+                  "info":"Drag a block and complete the algorithm"
+              },
+              "column-2": {
+                  "id": "column-2",
+                  "title": "When: press start button - blocks you can use",
+                  "optionsIds": [
+                      "option-1",
+                      "option-2",
+                      "option-3"
+                  ]
+              }
+          },
+          "options": {
+              "option-1": {
+                  "id": "option-1",
+                  "key": "preload",
+                  "text": "Identify the damaged bulb",
+                  "value": 1
+              },
+              "option-2": {
+                  "id": "option-2",
+                  "key": "preload2",
+                  "text": "Withdraw it",
+                  "value": 2
+              },
+              "option-3": {
+                  "id": "option-3",
+                  "key": "preload3",
+                  "text": "Turn on the light",
+                  "value": 3
+              },
+              "option-4": {
+                  "id": "option-4",
+                  "key": "quitar",
+                  "text": "Put new light bulb",
+                  "value": 4
+              },
+              "option-5": {
+                  "id": "option-5",
+                  "key": "romper",
+                  "text": "Break the box",
+                  "value": 5
+              },
+              "option-6": {
+                  "id": "option-6",
+                  "key": "preparar",
+                  "text": "Prepare coffee",
+                  "value": 6
+              },
+              "option-7": {
+                  "id": "option-7",
+                  "key": "tutorial",
+                  "text": "Sleep",
+                  "value": 7
+              }
+          },
+          "sequence": [1, 2, 4, 3]
+      },
+      {
+          "columns": {
+              "column-1": {
+                  "id": "column-1",
+                  "title": "Blocks you can use",
+                  "optionsIds": [
+                      "option-4",
+                      "option-5",
+                      "option-6",
+                      "option-7"
+                  ],
+                  "isDropDisabled":true,
+                  "info":"Drag a block and complete the algorithm"
+              },
+              "column-2": {
+                  "id": "column-2",
+                  "title": "When: press start button - blocks you can use",
+                  "optionsIds": [
+                      "option-1",
+                      "option-2",
+                      "option-3"
+                  ]
+              }
+          },
+          "options": {
+              "option-1": {
+                  "id": "option-1",
+                  "key": "preload",
+                  "text": "Prepare the pigments",
+                  "value": 1
+              },
+              "option-2": {
+                  "id": "option-2",
+                  "key": "preload2",
+                  "text": "Paint the canvas",
+                  "value": 2
+              },
+              "option-3": {
+                  "id": "option-3",
+                  "key": "preload3",
+                  "text": "Frame the picture",
+                  "value": 3
+              },
+              "option-4": {
+                  "id": "option-4",
+                  "key": "quitar",
+                  "text": "Prepare the canvas",
+                  "value": 4
+              },
+              "option-5": {
+                  "id": "option-5",
+                  "key": "romper",
+                  "text": "Break the brushes",
+                  "value": 5
+              },
+              "option-6": {
+                  "id": "option-6",
+                  "key": "preparar",
+                  "text": "Prepare coffee",
+                  "value": 6
+              },
+              "option-7": {
+                  "id": "option-7",
+                  "key": "tutorial",
+                  "text": "Play a game",
+                  "value": 7
+              }
+          },
+          "sequence": [4, 1, 2, 3]
+      }
+  ],
+  "imgPath": "images/exercises/24/Lights.svg",
+  "initMessages":[
+      "Look at the algorithm, a block is missing.",
+      "Analyze the goal of the algorithm and select the missing block from the list of options."
+  ],
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 1
+  },
+  "title":"Algorithm for assembling a puzzle",
+  "btnAgain": "TRY AGAIN",
+  "btnStart": "START",
+  "path": "02",
+  "color": "#9968A6",
+  "name": "Complete the algorithm",
+  "id": "46"
+}

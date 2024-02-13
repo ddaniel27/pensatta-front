@@ -1,0 +1,177 @@
+{
+  "options": [
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"Keep sensors active all the time to perceive the environment and manage traffic",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Perform trajectory calculation to shorten arrival times",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Display news and current affairs on the screen.",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Record pedestrians by means of a camera and display it on the screen",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      },
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"Display fuel levels and speed on screen.",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Show on-screen alerts for mechanical failures.",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Display news and current affairs on the screen.",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Show the interior of the vehicle through a camera system",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      },
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"Synchronization between sensors and braking response",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Perform trajectory calculation to shorten arrival times",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Record pedestrians by means of a camera and display it on the screen",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Play the music listened to",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      },
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"Perform a constant reading of the lighting system inputs.",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Synchronization between sensors (microphones) and ignition response.",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Record pedestrians by means of a camera and display it on the screen",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Play the music listened to",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      },
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"Display fuel levels and speed on screen.",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Show on-screen alerts for mechanical failures.",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Display news and current affairs on the screen.",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Show an intensity slider for lights.",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      },
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"Keep sensors active all the time to perceive the environment and manage traffic",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Perform trajectory calculation to shorten arrival times",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Display news and current affairs on the screen.",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Play the music listened to",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      },
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"Keep sensors active all the time to perceive the environment and manage traffic",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Perform trajectory calculation to shorten arrival times",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Display news and current affairs on the screen.",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Show a light on speed control.",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      }
+  ],
+  "initMessages":[
+      "We are building an algorithm for a car to drive itself autonomously.",
+      "Help us mark the options that you consider necessary to take into account in the design of the algorithm."
+  ],
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 1
+  },
+  "color": "#1B6893",
+  "name": "Automobile automation",
+  "id": 53
+}

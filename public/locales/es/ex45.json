@@ -1,0 +1,10 @@
+{
+  "initMessages":[
+      "Algo sucede en el micro-ambiente de Ruby. ",
+      "Ajusta cada uno de los parámetros para lograr las condiciones más óptimas."
+  ],
+  "path": "45",
+  "color": "#AE985E",
+  "name": "Ayuda a Ruby",
+  "id": 45
+}

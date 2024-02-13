@@ -1,10 +1,17 @@
 import ScoringComponent from '../components/scoringComponent.jsx'
-import data from './data.json'
 import BloodnameComponent from '../components/bloodnameComponent.jsx'
+import { useEffect, useState } from 'react'
+import useData from '../../../hooks/useData.jsx'
 
 const Ex52 = () => {
+  const { data } = useData('ex52')
+  const [myData, setMyData] = useState(data)
+
+  useEffect(() => {
+    setMyData(data)
+  }, [data])
   return (
-    <ScoringComponent initMessages={data.initMessages} title={data.name} background={data.color} threshold={data.threshold} exerciseId={data.id}>
+    <ScoringComponent initMessages={myData.initMessages} title={myData.name} background={myData.color} threshold={myData.threshold} exerciseId={myData.id}>
       {
         (setScore, setPhase) => (
           <BloodnameComponent setPhase={setPhase} setScore={setScore} />

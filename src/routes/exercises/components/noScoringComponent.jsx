@@ -7,13 +7,17 @@ import BackButtonInGame from './backButtonIngame'
 export default function NoScoringComponent ({ initMessages = ['Inicia dando click al boton'], title = 'Actividad', children, background = '#E0E0E0' }) {
   const { setActivity, setTitle, setBackground } = useContext(ActivityContext)
   const [phase, setPhase] = useState('init')
-  const { t } = useTranslation("noScoringComponent")
-  const [finalMessages] = useState([t("final-messages")])
+  const { t } = useTranslation('noScoringComponent')
+  const [finalMessages, setFinalMessages] = useState([t('final-messages')])
 
   useEffect(() => {
     setTitle(title)
     setBackground(background)
   }, [setTitle, title, setBackground, background])
+
+  useEffect(() => {
+    setFinalMessages([t('final-messages')])
+  }, [initMessages])
 
   const handleStart = () => {
     setPhase('activity')
@@ -23,7 +27,7 @@ export default function NoScoringComponent ({ initMessages = ['Inicia dando clic
     <>
 
       {
-        phase === 'init' && <><Information messages={initMessages} /> <button onClick={handleStart}>{t("start-button")}</button></>
+        phase === 'init' && <><Information messages={initMessages} /> <button onClick={handleStart}>{t('start-button')}</button></>
       }
 
       {
@@ -33,7 +37,7 @@ export default function NoScoringComponent ({ initMessages = ['Inicia dando clic
         phase === 'activity' && <BackButtonInGame onClick={() => { setPhase('init') }}/>
       }
       {
-        phase === 'end' && <><Information messages={finalMessages} />{t("finish-button")} <button onClick={() => { setActivity(true) }} >{t("finish-button")}</button></>
+        phase === 'end' && <><Information messages={finalMessages} />{t('finish-button')} <button onClick={() => { setActivity(true) }} >{t('finish-button')}</button></>
       }
     </>
   )

@@ -1,0 +1,177 @@
+{
+  "options": [
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"Mantenha os sensores ativos o tempo todo para perceber o ambiente e gerenciar o tráfego",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Realize cálculos de trajetória para encurtar os tempos de chegada",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Exibir notícias e assuntos atuais na tela",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Grave pedestres por meio de uma câmera e exiba na tela",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      },
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"Exibir níveis de combustível e velocidade na tela.",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Mostrar alertas na tela para falhas mecânicas.",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Exibir notícias e assuntos atuais na tela",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Mostre o interior do veículo através de um sistema de câmeras",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      },
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"Sincronização entre sensores e resposta de frenagem.",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Realize cálculos de trajetória para encurtar os tempos de chegada",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Grave pedestres por meio de uma câmera e exiba na tela",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Reproduzir a música ouvida",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      },
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"Realize uma leitura constante das entradas do sistema de iluminação.",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Sincronização entre sensores (microfones) e resposta de ignição.",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Grave pedestres por meio de uma câmera e exiba na tela",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Reproduzir a música ouvida",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      },
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"Exibir níveis de combustível e velocidade na tela.",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Mostrar alertas na tela para falhas mecânicas.",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Exibir notícias e assuntos atuais na tela",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Mostrar um controle deslizante de intensidade para luzes.",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      },
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"Mantenha os sensores ativos o tempo todo para perceber o ambiente e gerenciar o tráfego",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Realize cálculos de trajetória para encurtar os tempos de chegada",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Exibir notícias e assuntos atuais na tela",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Reproduzir a música ouvida",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      },
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"Mantenha os sensores ativos o tempo todo para perceber o ambiente e gerenciar o tráfego",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Realize cálculos de trajetória para encurtar os tempos de chegada",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Exibir notícias e assuntos atuais na tela",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Mostrar uma luz no controle de velocidade.",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      }
+  ],
+  "initMessages":[
+      "Estamos construindo um algoritmo para um carro dirigir sozinho.",
+      "Ajude-nos a assinalar as opções que considera necessárias a ter em conta no desenho do algoritmo."
+  ],
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 1
+  },
+  "color": "#1B6893",
+  "name": "Automação automotiva",
+  "id": 53
+}

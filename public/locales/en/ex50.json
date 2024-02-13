@@ -1,0 +1,168 @@
+{
+  "options": [
+      {
+          "question": "",
+          "answers":[
+              {
+                  "text": "Execute the following action if and only if J equals 3",
+                  "isCorrect": true
+              },
+              {
+                  "text": "Run the following action if and only if J is greater than 3",
+                  "isCorrect": false
+              },
+              {
+                  "text": "Run the following action if and only if J is greater than or equal to 3",
+                  "isCorrect": false
+              }
+          ],
+          "image":  "conditional_J_3.svg"
+      },
+      {
+          "question": "",
+          "answers":[
+              {
+                  "text": "Execute the following action if and only if F is less than or equal to 3",
+                  "isCorrect": true
+              },
+              {
+                  "text": "Execute the following action if and only if F is less than 3",
+                  "isCorrect": false
+              },
+              {
+                  "text": "Execute the following action if and only if F is equal to 3",
+                  "isCorrect": false
+              }
+          ],
+          
+          "image":  "conditionalF_3.svg"
+      },
+      {
+          "question": "",
+          "answers":[
+              {
+                  "text": "Execute the following action if and only if P is greater than S",
+                  "isCorrect": true
+              },
+              {
+                  "text": "Execute the following action if and only if P equals S",
+                  "isCorrect": false
+              },
+              {
+                  "text": "Execute the following action if and only if P is less than S",
+                  "isCorrect": false
+              }
+          ],
+          
+          "image":  "conditional_P_S.svg"
+      },
+      {
+          "question": "",
+          "answers":[
+              {
+                  "text": "Execute the following action if and only if W is greater than 5",
+                  "isCorrect": false
+              },
+              {
+                  "text": "Execute the following action if and only if W equals 5",
+                  "isCorrect": true
+              },
+              {
+                  "text": "Execute the following action if and only if W is less than 5",
+                  "isCorrect": false
+              }
+          ],
+          
+          "image":  "conditionalW_5.svg"
+      },
+      {
+          "question": "",
+          "answers":[
+              {
+                  "text": "Execute the following action if and only if M is greater than or equal to 8",
+                  "isCorrect": true
+              },
+              {
+                  "text": "Execute the following action if and only if M equals 8",
+                  "isCorrect": false
+              },
+              {
+                  "text": "Execute the following action if and only if M is less than 8",
+                  "isCorrect": false
+              }
+          ],
+          
+          "image":  "conditionalM_8.svg"
+      },
+      {
+          "question": "",
+          "answers":[
+              {
+                  "text": "Execute the following action if and only if P is greater than or equal to S",
+                  "isCorrect": true
+              },
+              {
+                  "text": "Execute the following action if and only if P equals S",
+                  "isCorrect": false
+              },
+              {
+                  "text": "Execute the following action if and only if P is less than or equal to S",
+                  "isCorrect": false
+              }
+          ],
+          
+          "image":  "conditionalP_S.svg"
+      },
+      {
+          "question": "",
+          "answers":[
+              {
+                  "text": "Execute the following action if and only if M is greater than 8",
+                  "isCorrect": false
+              },
+              {
+                  "text": "Execute the following action if and only if M equals 8",
+                  "isCorrect": false
+              },
+              {
+                  "text": "Execute the following action if and only if M is less than 8",
+                  "isCorrect": true
+              }
+          ],
+          
+          "image":  "conditional_M_8.svg"
+      },
+      {
+          "question": "",
+          "answers":[
+              {
+                  "text": "Execute the following action if and only if N is greater than 20",
+                  "isCorrect": false
+              },
+              {
+                  "text": "Execute the following action if and only if N equals 20",
+                  "isCorrect": false
+              },
+              {
+                  "text": "Execute the following action if and only if N is less than 20",
+                  "isCorrect": true
+              }
+          ],
+          
+          "image":  "conditionalN_20.svg"
+      }
+  ],
+  "initMessages":[
+      "Look at the instructions for conditionals that you will find below.",
+      "Select for each of them the option that corresponds to its function."
+  ],
+  "threshold": {
+      "max": 2,
+      "min": 1,
+      "perfect": 3
+  },
+  "path": "50",
+  "color": "#53745B",
+  "name": "Conditionals",
+  "id": 50
+}

@@ -1,0 +1,49 @@
+{
+  "options":[
+      {
+          "value": "and",
+          "image": "./images/exercises/41/And.svg"
+      },
+      {
+          "value": "nand",
+          "image": "../../../images/exercises/41/Nand.svg"
+      },
+      {
+          "value": "nor",
+          "image": "../../../images/exercises/41/Nor.svg"
+      },
+      {
+          "value": "or",
+          "image": "../../../images/exercises/41/Or.svg"
+      },
+      {
+          "value": "xnor",
+          "image": "../../../images/exercises/41/Xnor.svg"
+      },
+      {
+          "value": "xor",
+          "image": "../../../images/exercises/41/Xor.svg"
+      }
+  ],
+  "descriptions":{
+      "and": "AND retorna 1 se ambas as entradas forem 1 e 0 caso contrário.",
+      "nand": "NAND retorna 1 se ambas as entradas forem 0 e 0 caso contrário.",
+      "nor": "NOR retorna 1 se ambas as entradas forem 0 e 0 caso contrário.",
+      "or": "OR retorna 1 se qualquer entrada for 1 e 0 caso contrário.",
+      "xnor": "XNOR retorna 1 se ambas as entradas forem iguais e 0 caso contrário.",
+      "xor": "XOR retorna 1 se as entradas forem diferentes e 0 caso contrário."
+  },
+  "initMessages":[
+      "Números binários podem ser operados! Em seguida, você encontrará uma série de portas lógicas.",
+      "Veja o que acontece quando dois números binários são inseridos e você seleciona um portão."
+  ],
+  "description":{
+    "text1": "Descrição",
+    "text2": "Selecionar uma porta lógica"
+  },
+  "btnEnd":"FIM",
+  "path": "41",
+  "color": "#53745B",
+  "name": "Portas lógicas",
+  "id": 41
+}

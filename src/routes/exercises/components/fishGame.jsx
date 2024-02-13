@@ -5,6 +5,7 @@ import perfect from '/images/exercises/45/perfect.svg'
 import dark from '/images/exercises/45/dark.svg'
 import { useState, useEffect, useRef } from 'react'
 import styles from '../../../styles/fishGame.module.css'
+import { useTranslation } from 'react-i18next'
 
 const Timer = ({ finishFunction = () => {}, startTime = 180, stopTimer = false }) => {
   const [time, setTime] = useState(startTime)
@@ -82,6 +83,7 @@ const InputRange = ({ value = 0, setValue = () => {}, min = 0, max = 0, step = 0
 }
 
 const FishGame = ({ setPhase }) => {
+  const { t } = useTranslation('fishGame')
   const [temperature, setTemperature] = useState(Math.floor(Math.random() * 9))
   const [light, setLight] = useState(Math.floor(Math.random() * 9))
   const [clean, setClean] = useState(Math.floor(Math.random() * 9))
@@ -120,13 +122,13 @@ const FishGame = ({ setPhase }) => {
             </div>
           </div>
           <div className={styles['inputs-container']}>
-            <InputRange value={temperature} setValue={setTemperature} min={0} max={8} step={1} label="Temperatura" isFinish={isFinish}/>
-            <InputRange value={light} setValue={setLight} min={0} max={8} step={1} label="Iluminación" isFinish={isFinish} />
-            <InputRange value={clean} setValue={setClean} min={0} max={8} step={1} label="Limpieza" isFinish={isFinish}/>
+            <InputRange value={temperature} setValue={setTemperature} min={0} max={8} step={1} label={t('temperature')} isFinish={isFinish}/>
+            <InputRange value={light} setValue={setLight} min={0} max={8} step={1} label={t('light')} isFinish={isFinish} />
+            <InputRange value={clean} setValue={setClean} min={0} max={8} step={1} label={t('clean')} isFinish={isFinish}/>
           </div>
         </div>
       </div>
-      {isFinish && <button onClick={() => setPhase('end')}>SIGUIENTE</button>}
+      {isFinish && <button onClick={() => setPhase('end')}>{t('btnNext')}</button>}
     </>
   )
 }

@@ -1,0 +1,65 @@
+{
+  "options":[
+      {
+          "title": "Corpo",
+          "options":[
+          "Burro",
+          "Porco",
+          "Coelho",
+          "Gato",
+          "Urso",
+          "Cachorro",
+          "Vaca",
+          "Raposa"
+          ]
+      },
+      {
+          "title": "Olhos",
+          "options":[
+          "Olhos 1",
+          "Olhos 2",
+          "Olhos 3",
+          "Olhos 4",
+          "Olhos 5",
+          "Olhos 6"
+          ]
+      },
+      {
+          "title": "Copos",
+          "options":[
+          "Nenhum" ,
+          "Copos 1" ,
+          "Copos 2" ,
+          "Copos 3"
+          ]
+      },
+      {
+          "title": "Acessório 1",
+          "options":[
+          "Ninguno" ,
+          "pão" ,
+          "Correção",
+          "Máscara facial",
+          "Flor"
+          ]
+      },
+      {
+          "title": "Acessório 2",
+          "options":[
+          "Nenhum" ,
+          "Gravata",
+          "gravata borboleta",
+          "Bolsa"
+          ]
+      }
+  ],
+  "initMessages":[
+      "Crie seu próprio avatar neste ambiente.",
+      "Explore as opções para criar o ser digital que melhor o representa."
+  ],
+  "btnEnd":"FIM",
+  "path": "43",
+  "color": "#1B6893",
+  "name": "Crie seu avatar",
+  "id": 43
+}

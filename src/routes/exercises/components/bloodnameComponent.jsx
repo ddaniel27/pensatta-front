@@ -4,6 +4,7 @@ import red from '/images/exercises/52/red.svg'
 import white from '/images/exercises/52/white.svg'
 import anomalia from '/images/exercises/52/anomalia.svg'
 import Timer from './timer2.jsx'
+import { useTranslation } from 'react-i18next'
 
 const White = ({ id, setToDelete, appearsWhite, setWhitePositions }) => {
   const [position, setPosition] = useState({ top: Math.random() < 0.5 ? 0 : 50, left: -10 })
@@ -135,6 +136,7 @@ const Anomalia = ({ whitePositions, id, appearsAnomalia, setToDeleteAnomalia, se
 }
 
 const BloodnameComponent = ({ setPhase, setScore }) => {
+  const { t } = useTranslation('bloodNameComponent')
   const [appears, setAppears] = useState(Array(30).fill(false))
   const [appearsWhite, setAppearsWhite] = useState([])
   const [whitePositions, setWhitePositions] = useState([])
@@ -239,7 +241,7 @@ const BloodnameComponent = ({ setPhase, setScore }) => {
             }
           </div>
         </div>
-        <div className={styles['game-button']} onClick={handleClickAnomalia}>GLÓBULOS BLANCOS</div>
+        <div className={styles['game-button']} onClick={handleClickAnomalia}>{t('label')}</div>
       </div>
     </div>
   )

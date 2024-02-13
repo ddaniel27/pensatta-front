@@ -1,0 +1,49 @@
+{
+  "options":[
+      {
+          "value": "and",
+          "image": "./images/exercises/41/And.svg"
+      },
+      {
+          "value": "nand",
+          "image": "../../../images/exercises/41/Nand.svg"
+      },
+      {
+          "value": "nor",
+          "image": "../../../images/exercises/41/Nor.svg"
+      },
+      {
+          "value": "or",
+          "image": "../../../images/exercises/41/Or.svg"
+      },
+      {
+          "value": "xnor",
+          "image": "../../../images/exercises/41/Xnor.svg"
+      },
+      {
+          "value": "xor",
+          "image": "../../../images/exercises/41/Xor.svg"
+      }
+  ],
+  "descriptions":{
+      "and": "AND returns 1 if both inputs are 1, and 0 otherwise.",
+      "nand": "NAND returns 1 if both inputs are 0, and 0 otherwise.",
+      "nor": "NOR returns 1 if both inputs are 0, and 0 otherwise.",
+      "or": "OR returns 1 if any input is 1, and 0 otherwise.",
+      "xnor": "XNOR returns 1 if both inputs are equal, and 0 otherwise.",
+      "xor": "XOR returns 1 if the inputs are different, and 0 otherwise."
+  },
+  "initMessages":[
+      "Binary numbers can be operated on! Next, you will find a series of logic gates.",
+      "See what happens when two binary numbers are input and you select a gate."
+  ],
+  "description":{
+    "text1": "Description",
+    "text2": "Select a logic gate"
+  },
+  "btnEnd": "END",
+  "path": "41",
+  "color": "#53745B",
+  "name": "Logic gates",
+  "id": 41
+}

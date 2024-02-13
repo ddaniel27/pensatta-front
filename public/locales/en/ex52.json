@@ -1,0 +1,15 @@
+{
+  "initMessages":[
+    "Below, you will find a simulation of the human immune system.",
+    "You'll be able to see the red blood cells and the abnormalities that can occur in the bloodstream.",
+    "Your mission is to send white blood cells to protect the system. Press the button as many times as you need."
+  ],
+  "name": "Immune system",
+  "color": "#9968A6",
+  "threshold":{
+    "min":0,
+    "max":1,
+    "perfect":1
+  },
+  "id": 52
+}

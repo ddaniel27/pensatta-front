@@ -1,17 +1,25 @@
-import { useLayoutEffect, useState } from 'react'
+import { useEffect, useLayoutEffect, useState } from 'react'
 import ScoringComponent from '../components/scoringComponent'
 import DndListComponent from '../components/dndListComponent'
-import data from './data.json'
 import '../../../styles/ex17.css'
+import useData from '../../../hooks/useData'
 
 export default function Ex51 () {
-  const [myData] = useState({
+  const { data } = useData('ex51')
+  const [myData, setMyData] = useState({
     ...data,
     options: data.variations.sort(() => Math.random() - 0.5).slice(0, 1)[0]
   })
   const [reset, setReset] = useState(false)
 
   const [optionsData, setOptionsData] = useState({})
+
+  useEffect(() => {
+    setMyData({
+      ...data,
+      options: data.variations.sort(() => Math.random() - 0.5).slice(0, 1)[0]
+    })
+  }, [data])
 
   useLayoutEffect(() => {
     if (reset) {
@@ -43,17 +51,17 @@ export default function Ex51 () {
   return (
     <ScoringComponent initMessages={myData.initMessages} background={myData.color} title={myData.name} threshold={myData.threshold} exerciseId={myData.id}>
       {
-                (setScore, setPhase) => (
-                  <div className='maze-list-style'>
-                    <DndListComponent data={myData.options} returnScore={setOptionsData} reset={reset} />
+        (setScore, setPhase) => (
+          <div className='maze-list-style'>
+            <DndListComponent data={myData.options} returnScore={setOptionsData} reset={reset} />
 
-                    <div className='buttons-field'>
-                      {optionsData.length > 0 && <button onClick={handleReset} className='restart'>REINTENTAR</button>}
-                      <button onClick={() => { handleClick(setScore, setPhase) }}>RESPONDER</button>
-                    </div>
-                  </div>
-                )
-            }
+            <div className='buttons-field'>
+              {optionsData.length > 0 && <button onClick={handleReset} className='restart'>REINTENTAR</button>}
+              <button onClick={() => { handleClick(setScore, setPhase) }}>RESPONDER</button>
+            </div>
+          </div>
+        )
+      }
     </ScoringComponent>
   )
 }

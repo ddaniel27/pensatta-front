@@ -1,0 +1,15 @@
+{
+  "initMessages":[
+    "Abaixo, você encontrará uma simulação do sistema imunológico humano.",
+    "Você poderá ver os glóbulos vermelhos e as anormalidades que podem ocorrer na corrente sanguínea.",
+    "Sua missão é enviar glóbulos brancos para proteger o sistema. Pressione o botão quantas vezes forem necessárias."
+  ],
+  "name": "Sistema imunológico",
+  "color": "#9968A6",
+  "threshold":{
+    "min":0,
+    "max":1,
+    "perfect":1
+  },
+  "id": 52
+}
