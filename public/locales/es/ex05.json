@@ -52,6 +52,7 @@
         "min": 1,
         "perfect": 1
     },
+    "btnEnd":"FINALIZAR",
     "path": "05",
     "color": "#588F64",
     "name": "Descifrar mensaje",

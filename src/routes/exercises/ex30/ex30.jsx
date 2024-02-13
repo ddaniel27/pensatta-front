@@ -2,10 +2,11 @@ import { useState, useEffect } from 'react'
 import DndComponent from '../components/dndComponent'
 import ScoringComponent from '../components/scoringComponent'
 import RobotGame from '../components/robotGame'
-import data from './data.json'
 import styles from '../../../styles/ex30.module.css'
+import useData from '../../../hooks/useData'
 
 export default function Ex30 () {
+  const { data } = useData('ex30')
   const [numCubes] = useState(Math.floor(Math.random() * 5) + 2)
   const [sequence, setSequence] = useState([])
   const [start, setStart] = useState(false)
@@ -48,21 +49,21 @@ export default function Ex30 () {
                 className={`${styles['btn-game']} ${styles['btn-game-white']}`}
                 onClick={() => { setReset(true) }}
               >
-                REINICIAR
+                {myData.btnAgain}
               </div>}
             {start && !next &&
               <div
                 className={`${styles['btn-game']} ${styles['btn-game-orange']}`}
                 onClick={() => { setNext(true) }}
               >
-                INICIAR
+                {myData.btnStart}
               </div>}
             {next &&
               <div
                 className={`${styles['btn-game']} ${styles['btn-game-orange']}`}
                 onClick={() => { checkResult(robotData, setScore, setPhase) }}
               >
-                SIGUIENTE
+                {myData.btnNext}
               </div>}
           </div>
         </div>

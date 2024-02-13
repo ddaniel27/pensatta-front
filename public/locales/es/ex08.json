@@ -140,6 +140,8 @@
       "min": 1,
       "perfect": 4
   },
+  "btnAnswer": "RESPONDER",
+  "btnNext": "SIGUIENTE",
   "path": "08",
   "color": "#9968A6",
   "name": "Publicaciones",

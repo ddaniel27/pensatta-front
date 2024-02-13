@@ -268,6 +268,9 @@
       "min": 1,
       "perfect": 1
   },
+  "btnAgain": "REPETIR",
+  "btnStart": "INICIAR",
+  "btnEnd": "FINALIZAR",
   "path": "13",
   "color": "#588F64",
   "name": "Classificação da loja",

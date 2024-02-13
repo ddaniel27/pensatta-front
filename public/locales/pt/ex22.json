@@ -1,0 +1,106 @@
+{
+  "options": [
+      {
+          "question": "É necessário fazer um banco de dados ordenado em tabelas.",
+          "answers": [
+              {"text":"Excel", "isCorrect": true},
+              {"text":"Word", "isCorrect": false},
+              {"text":"PowerPoint", "isCorrect": false},
+              {"text":"One Note", "isCorrect": false}
+          ]
+      },
+      {
+          "question": "É necessário fazer um relatório, com imagens e gráficos.",
+          "answers": [
+              {"text":"Word", "isCorrect": true},
+              {"text":"PowerPoint", "isCorrect":false},
+              {"text":"Excel", "isCorrect":false},
+              {"text":"One Note", "isCorrect":false}
+          ]
+      },
+      {
+          "question": "É necessário fazer anotações via teclado ou caneta.",
+          "answers": [
+              {"text":"One Note", "isCorrect": true},
+              {"text":"Word", "isCorrect": false},
+              {"text":"Excel", "isCorrect": false},
+              {"text":"PowerPoint", "isCorrect": false}
+          ]
+      },
+      {
+          "question": "É necessária uma apresentação com animações, texto e gráficos.",
+          "answers": [
+              {"text":"Powerpoint", "isCorrect": true},
+              {"text":"Word", "isCorrect":false},
+              {"text":"Excel", "isCorrect":false},
+              {"text":"One Note", "isCorrect":false}
+          ]
+      },
+      {
+          "question": "A edição de fotos é necessária",
+          "answers": [
+              {"text":"Powerpoint", "isCorrect": false},
+              {"text":"Word", "isCorrect":false},
+              {"text":"Photoshop", "isCorrect":true},
+              {"text":"One Note", "isCorrect":false}
+          ]
+      },
+      {
+          "question": "Edição de áudio necessária",
+          "answers": [
+              {"text":"Audacity", "isCorrect": true},
+              {"text":"Word", "isCorrect":false},
+              {"text":"Excel", "isCorrect":false},
+              {"text":"Photoshop", "isCorrect":false}
+          ]
+      },
+      {
+          "question": "A edição de vídeo é necessária",
+          "answers": [
+              {"text":"Movie Maker", "isCorrect": true},
+              {"text":"Word", "isCorrect":false},
+              {"text":"Audacity", "isCorrect":false},
+              {"text":"One Note", "isCorrect":false}
+          ]
+      },
+      {
+          "question": "Navegação segura na Internet necessária",
+          "answers": [
+              {"text":"Google Chrome", "isCorrect": true},
+              {"text":"Word", "isCorrect":false},
+              {"text":"Excel", "isCorrect":false},
+              {"text":"One Note", "isCorrect":false}
+          ]
+      },
+      {
+          "question": "Reunião virtual necessária",
+          "answers": [
+              {"text":"Microsoft Teams", "isCorrect": true},
+              {"text":"Visual Studio", "isCorrect":false},
+              {"text":"Excel", "isCorrect":false},
+              {"text":"One Note", "isCorrect":false}
+          ]
+      },
+      {
+          "question": "É necessário armazenar dados na nuvem",
+          "answers": [
+              {"text":"One Drive", "isCorrect": true},
+              {"text":"Word", "isCorrect":false},
+              {"text":"Excel", "isCorrect":false},
+              {"text":"One Note", "isCorrect":false}
+          ]
+      }
+  ],
+  "initMessages":[
+      "Selecione o software de escritório que melhor se adapta à sua necessidade.", 
+      "Você tem 3 minutos depois de pressionar o botão Iniciar. Muita sorte!"
+  ],
+  "threshold": {
+      "max": 2,
+      "min": 1,
+      "perfect": 4
+  },
+  "color": "#1B6893",
+  "name":"Software adequado",
+  "id": 22
+}

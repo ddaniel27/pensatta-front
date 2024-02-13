@@ -1,0 +1,17 @@
+{
+  "initMessages":[
+      "Ayuda a la serpiente digital a consumir todos los datos.",
+      "Entre más datos consumas, más grande será la serpiente.",
+      "Usa las flechas de dirección para moverte."
+  ],
+  "text":{
+    "one":"Usa las flechas de dirección para moverte.",
+    "two":"¡Evita tocar las paredes!",
+    "three":"¡No te toques a ti mismo!",
+    "four":"Come todos los datos que puedas"
+  },
+  "path": "35",
+  "color": "#9968A6",
+  "name": "Serpiente",
+  "id": 35
+}

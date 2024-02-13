@@ -52,6 +52,7 @@
         "min": 1,
         "perfect": 1
     },
+    "btnEnd":"END",
     "path": "05",
     "color": "#588F64",
     "name": "Decrypt message",

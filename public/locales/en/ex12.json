@@ -69,6 +69,9 @@
       "Pay attention to the order in which you arrange them, since this will be the order in which the character will execute the actions.",
       "Select the blocks you want."
   ],
+  "btnAgain": "RETRY",
+  "btnStart": "START",
+  "btnEnd": "END",
   "path": "12",
   "color": "#9968A6",
   "name": "Build animation",

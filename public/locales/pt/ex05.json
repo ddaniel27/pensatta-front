@@ -52,6 +52,7 @@
         "min": 1,
         "perfect": 1
     },
+    "btnEnd":"FIM",
     "path": "05",
     "color": "#588F64",
     "name": "Descriptografar mensagem",

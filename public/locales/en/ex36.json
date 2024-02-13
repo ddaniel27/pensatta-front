@@ -1,0 +1,14 @@
+{
+  "initMessages":[
+      "Defeat computer viruses. Take the shields that the antivirus gives you to be able to attack them without danger. Do not approach without protection."
+  ],
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 1
+  },
+  "path": "36",
+  "color": "#53745B",
+  "name": "Anti virus",
+  "id": "36"
+  }

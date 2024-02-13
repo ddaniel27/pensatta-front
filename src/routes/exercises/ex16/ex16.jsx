@@ -46,8 +46,8 @@ export default function Ex16 () {
                 </div>
               ))
             }
-            {!nextQuestion && <button className='button-play' onClick={() => { setNextQuestion(true) }}>RESPONDER</button>}
-            {nextQuestion && <button className='button-play' onClick={() => { handleClick(setScore, setPhase) }}>SIGUIENTE</button>}
+            {!nextQuestion && <button className='button-play' onClick={() => { setNextQuestion(true) }}>{myData.btnAnswer}</button>}
+            {nextQuestion && <button className='button-play' onClick={() => { handleClick(setScore, setPhase) }}>{myData.btnNext}</button>}
           </div>
         )
       }

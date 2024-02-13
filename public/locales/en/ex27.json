@@ -1,0 +1,15 @@
+{"initMessages":[
+  "In this exercise you will find a creative environment to design visual content. You can create posters, invitations, covers, backgrounds, infographics, etc." ,
+  "Exploit your creativity and design the content of your preference, then you can download it, do not forget to register your answer."
+],
+"threshold":{
+  "max" : 1,
+  "min" : 0,
+  "perfect": 1
+},
+"path": "27",
+"color": "#AE985E",
+"name":"Draw",
+"id": 27
+
+}

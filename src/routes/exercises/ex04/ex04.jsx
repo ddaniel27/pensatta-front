@@ -99,8 +99,8 @@ export default function Ex04 () {
                 ))
               }
             </div>
-            {showButton && confirmationButton && <button onClick={handleClick}>RESPONDER</button>}
-            {finished && <button onClick={() => { handleFinish(setScore, setPhase) }}>VOLVER</button>}
+            {showButton && confirmationButton && <button onClick={handleClick}>{myData.btnAnswer}</button>}
+            {finished && <button onClick={() => { handleFinish(setScore, setPhase) }}>{myData.btnBack}</button>}
           </div>
         )}
     </ScoringComponent>

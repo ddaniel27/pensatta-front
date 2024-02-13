@@ -325,6 +325,7 @@
         "min": 1,
         "perfect": 2
     },
+    "btnContinue": "Continuar",
     "path": "01",
     "color": "#9968A6",
     "name": "Componentes internos",

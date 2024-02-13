@@ -57,10 +57,10 @@ export default function Ex10 () {
               setScore={setScore}
             />
             <div className='buttons-field'>
-              {optionsData.length && <button onClick={handleReset} className='restart'>REINTENTAR</button>}
+              {optionsData.length && <button onClick={handleReset} className='restart'>{myData.btnAgain}</button>}
               {!start
-                ? <button onClick={handleClick} disabled={!optionsData.length}>INICIAR</button>
-                : <button onClick={() => { setPhase('end') }}>FINALIZAR</button>}
+                ? <button onClick={handleClick} disabled={!optionsData.length}>{myData.btnStart}</button>
+                : <button onClick={() => { setPhase('end') }}>{myData.btnEnd}</button>}
             </div>
           </div>
         )

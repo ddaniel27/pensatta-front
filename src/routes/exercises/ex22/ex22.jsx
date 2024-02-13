@@ -1,16 +1,25 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ScreenRenderUniqueOptionsEncapsulate from '../components/screenRenderUniqueOptionsEncapsulate'
 import ScoringComponent from '../components/scoringComponent'
 import Timer from '../components/timer'
-import data from './data.json'
+import useData from '../../../hooks/useData'
 
 export default function Ex22 () {
-  const [myData] = React.useState({
+  const { data } = useData('ex22')
+  const [myData, setMyData] = React.useState({
     ...data,
     options: data.options.sort(() => 0.5 - Math.random()).slice(0, data.threshold.perfect)
   })
 
   const [time, setTime] = React.useState()
+
+  useEffect(() => {
+    setMyData({
+      ...data,
+      options: data.options.sort(() => 0.5 - Math.random()).slice(0, data.threshold.perfect)
+    })
+  }
+  , [data])
 
   return (
     <ScoringComponent initMessages={myData.initMessages} background={myData.color} title={myData.name} threshold={myData.threshold} exerciseId={myData.id}>

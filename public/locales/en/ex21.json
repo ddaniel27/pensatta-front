@@ -1,0 +1,93 @@
+{
+    "options": [
+        {
+            "question":"What apps in the picture are on the phone from day one?",
+            "answers":[
+                {
+                    "text":"Youtube",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Google Maps",
+                    "isCorrect":true
+                },
+                {
+                    "text":"Whatsapp",
+                    "isCorrect":false
+                },
+                {
+                    "text":"Instagram",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "Frame_1.svg",
+            "multiple":true,
+            "maxOptions":2
+        },
+        {
+            "question":"How do you install the ones that don't come on the phone?",
+            "answers":[
+                {
+                    "text":"There is an application store on the phone to do it",
+                    "isCorrect":true
+                },
+                {
+                    "text":"An APK type file can be transferred or downloaded to install an application on the phone.",
+                    "isCorrect":true
+                },
+                {
+                    "text":"All applications come installed on the phone.",
+                    "isCorrect":false
+                },
+                {
+                    "text":"They should only be installed using a laptop.",
+                    "isCorrect":false
+                }
+            ],
+            "image":  "Frame_1.svg",
+            "multiple":true,
+            "maxOptions":2
+        },
+        {
+            "question":"It is possible to uninstall the phone applications.",
+            "answers":[
+                {
+                    "text": "True",
+                    "isCorrect": true
+                },
+                {
+                    "text": "False",
+                    "isCorrect": false
+                }
+            ],
+            "image":  "Frame_1.svg"
+        },
+        {
+            "question": "These apps need to be installed for a phone to work.",
+            "answers":[
+                {
+                    "text": "True",
+                    "isCorrect": false
+                },
+                {
+                    "text": "False",
+                    "isCorrect": true
+                }
+            ],
+            "image":  "Frame_1.svg"
+        }
+    ],
+    "initMessages":[
+        "Take a look at the device below. Select the correct answer for the questions.",
+        "There may be one or more correct answers."
+    ],
+    "threshold": {
+        "max": 3,
+        "min": 1,
+        "perfect": 4
+    },
+    "path": "21",
+    "color": "#9968A6",
+    "name": "Smartphone basics",
+    "id": 21
+}

@@ -1,0 +1,58 @@
+{
+  "initMessages":[
+    "Realize a programação de blocos para a turma classificar os objetos que saem da máquina nas caixas exibidas na parte inferior da tela.",
+    "Você deve nomear os procedimentos da maneira mais apropriada."
+  ],
+  "title":"Classificação de objetos",
+  "threshold":{
+    "min":"0",
+    "max":"1",
+    "perfect":"1"
+  },
+  "btnAgain":"REPETIR",
+  "btnStart":"INICIAR",
+  "btnNext":"SEGUINTE",
+  "isSingle": "false",
+  "columns": {
+      "column-1": {
+          "id": "column-1",
+          "optionsIds": [
+              "option-1",
+              "option-2"
+          ],
+          "isDropDisabled":true,
+          "info":"Organize os blocos e selecione os valores corretos"
+      },
+      "column-2": {
+          "id": "column-2",
+          "title": "Quando: pressione o botão Iniciar",
+          "optionsIds": []
+      }
+  },
+  "options": {
+      "option-1": {
+          "id": "option-1",
+          "key": "color",
+          "text": "Se o objeto for ",
+          "hasInput": true,
+          "type": "select",
+          "options": [
+              "verde",
+              "rosa"
+          ]
+      },
+      "option-2": {
+          "id": "option-2",
+          "key": "direction",
+          "text": "jogar para o ",
+          "hasInput": true,
+          "type": "select",
+          "options": [
+              "certo",
+              "esquerda"
+          ]
+      }
+  },
+  "id":30,
+  "color":"#53745B"
+}

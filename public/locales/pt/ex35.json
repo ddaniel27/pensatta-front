@@ -1,0 +1,17 @@
+{
+  "initMessages":[
+      "Ajude a cobra digital a consumir todos os dados.",
+      "Quanto mais dados você consumir, maior será a cobra.",
+      "Use as setas para mover"
+  ],
+  "text":{
+    "one":"Utilize as teclas de seta para se deslocar.",
+    "two":"Evitar tocar nas paredes!",
+    "three":"Não te toques!",
+    "four":"Consumir o máximo de dados possível"
+  },
+  "path": "35",
+  "color": "#9968A6",
+  "name": "Cobra",
+  "id": 35
+}

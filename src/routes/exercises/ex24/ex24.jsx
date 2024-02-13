@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ScoringComponent from '../components/scoringComponent'
 import DndComponent from '../components/dndComponent'
-import data from './data.json'
 import '../../../styles/ex24.css'
+import useData from '../../../hooks/useData'
 
 export default function Ex24 () {
-  const [myData] = React.useState({
+  const { data } = useData('ex24')
+  const [myData, setMyData] = React.useState({
     ...data
   })
   const [start, setStart] = React.useState(false)
@@ -24,6 +25,12 @@ export default function Ex24 () {
       setTimeout(resolve, n)
     })
   }
+
+  useEffect(() => {
+    setMyData({
+      ...data
+    })
+  }, [data])
 
   React.useEffect(() => {
     async function test () {
@@ -66,27 +73,27 @@ export default function Ex24 () {
   return (
     <ScoringComponent initMessages={myData.initMessages} background={myData.color} title={myData.name} threshold={myData.threshold} exerciseId={myData.id}>
       {
-                (setScore, setPhase) => (
-                  <div className='maze-style-single'>
-                    <DndComponent data={myData} returnScore={setOptionsData} reset={reset} />
-                    <div className='info-box'>
-                      <svg width='180' height='80' viewBox='0 0 180 80' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                        <rect width='180' height='80' rx='20' fill='#F2F2F2' />
-                        <circle cx='40' cy='40' r='20' fill='#69E485' />
-                        <circle id='s1' cx='40' cy='40' r='20' fill='#4F4F4F' fillOpacity='0.65' ref={verdeRef} />
-                        <circle cx='140' cy='40' r='20' fill='#FF7171' />
-                        <circle id='s2' cx='140' cy='40' r='20' fill='#4F4F4F' fillOpacity='0.65' ref={rojoRef} />
-                      </svg>
-                      <span>Algoritmo para preparar un sánduche.</span>
-                    </div>
+        (setScore, setPhase) => (
+          <div className='maze-style-single'>
+            <DndComponent data={myData} returnScore={setOptionsData} reset={reset} />
+            <div className='info-box'>
+              <svg width='180' height='80' viewBox='0 0 180 80' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <rect width='180' height='80' rx='20' fill='#F2F2F2' />
+                <circle cx='40' cy='40' r='20' fill='#69E485' />
+                <circle id='s1' cx='40' cy='40' r='20' fill='#4F4F4F' fillOpacity='0.65' ref={verdeRef} />
+                <circle cx='140' cy='40' r='20' fill='#FF7171' />
+                <circle id='s2' cx='140' cy='40' r='20' fill='#4F4F4F' fillOpacity='0.65' ref={rojoRef} />
+              </svg>
+              <span>{myData.algorithm}</span>
+            </div>
 
-                    <div className='buttons-field'>
-                      {optionsData.length > 0 && <button onClick={handleReset} className='restart'>REINTENTAR</button>}
-                      <button onClick={() => { handleClick(setScore, setPhase) }} disabled={!optionsData.length}>INICIAR</button>
-                    </div>
-                  </div>
-                )
-            }
+            <div className='buttons-field'>
+              {optionsData.length > 0 && <button onClick={handleReset} className='restart'>{myData.btnAgain}</button>}
+              <button onClick={() => { handleClick(setScore, setPhase) }} disabled={!optionsData.length}>{myData.btnStart}</button>
+            </div>
+          </div>
+        )
+      }
     </ScoringComponent>
   )
 }

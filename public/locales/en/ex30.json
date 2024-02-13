@@ -1,0 +1,58 @@
+{
+  "initMessages":[
+    "Perform block programming for the gang to classify the objects that come out of the machine into the boxes displayed at the bottom of the screen.",
+    "You must name the procedures in the most appropriate way."
+  ],
+  "title":"Object classification",
+  "threshold":{
+    "min":"0",
+    "max":"1",
+    "perfect":"1"
+  },
+  "btnAgain":"RETRY",
+  "btnStart":"START",
+  "btnNext":"NEXT",
+  "isSingle": "false",
+  "columns": {
+      "column-1": {
+          "id": "column-1",
+          "optionsIds": [
+              "option-1",
+              "option-2"
+          ],
+          "isDropDisabled":true,
+          "info":"Arrange the blocks and select the correct values"
+      },
+      "column-2": {
+          "id": "column-2",
+          "title": "When: press start button",
+          "optionsIds": []
+      }
+  },
+  "options": {
+      "option-1": {
+          "id": "option-1",
+          "key": "color",
+          "text": "If the object is ",
+          "hasInput": true,
+          "type": "select",
+          "options": [
+              "green",
+              "pink"
+          ]
+      },
+      "option-2": {
+          "id": "option-2",
+          "key": "direction",
+          "text": "Throw to the ",
+          "hasInput": true,
+          "type": "select",
+          "options": [
+              "right",
+              "left"
+          ]
+      }
+  },
+  "id":30,
+  "color":"#53745B"
+}

@@ -1,0 +1,23 @@
+{
+    "informative_text":[
+        "Muévete oprimiendo estos botones o presionando las teclas de dirección de tu teclado."
+    ],
+    "options": [
+
+    ],
+    "initMessages":[
+        "Drive the car through the city until you reach the goal.",
+        "Move with the directional buttons and avoid obstacles."
+    ],
+    "threshold":{
+        "max" : 3,
+        "min" : 0,
+        "perfect": 3
+    },
+    "path": "32",
+    "color": "#AE985E",
+    "name":"Reach the goal",
+    "id": 32
+
+
+}

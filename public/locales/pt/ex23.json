@@ -1,0 +1,40 @@
+{
+  "options": [
+      {
+          "error": "Nosso dispositivo apresenta telas azuis e reinicia após abrir um certo número de aplicativos",
+          "fix": "RAM"
+      },
+      {
+          "error": "Nosso computador apresenta telas piscando, linhas vermelhas piscando, reinicializações inesperadas e padrões estranhos na tela.",
+          "fix": "GPU"
+      },
+      {
+          "error": "No nosso computador, os aplicativos congelam, parecem lentos quando usados e têm telas azuis",
+          "fix": "HDD"
+      },
+      {
+          "error": "Em nosso computador, os aplicativos congelam, não encontra hardware e apresenta telas azuis",
+          "fix": "Board"
+      },
+      {
+          "error": "Em nosso equipamento não liga ou dá a tela inicial mas soam as ventoinhas ou outros componentes",
+          "fix": "CPU"
+      }
+  ],
+  "initMessages":[
+    "Nosso computador central está falhando, sua tarefa é identificar a peça que está com defeito.",
+    "Analisar a situação para identificar a origem do problema."
+  ],
+  "threshold": {
+      "max": 2,
+      "min": 1,
+      "perfect": 3
+  },
+  "title": "Livro Branco",
+  "bntAnswer": "RESPONDER",
+  "bntNext": "SEGUINTE",
+  "path": "23",
+  "color": "#9968A6",
+  "name": "Consertar computador",
+  "id": 23
+}

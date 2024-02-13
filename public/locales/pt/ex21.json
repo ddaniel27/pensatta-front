@@ -1,0 +1,93 @@
+{
+  "options": [
+      {
+          "question":"Quais aplicativos na foto estão no telefone desde o primeiro dia?",
+          "answers":[
+              {
+                  "text":"Youtube",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Google Maps",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Whatsapp",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Instagram",
+                  "isCorrect":false
+              }
+          ],
+          "image":  "Frame_1.svg",
+          "multiple":true,
+          "maxOptions":2
+      },
+      {
+          "question":"Como você instala os que não vêm no telefone?",
+          "answers":[
+              {
+                  "text":"Existe uma loja de aplicativos no telefone para fazer isso",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Um arquivo do tipo APK pode ser transferido ou baixado para instalar um aplicativo no telefone.",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Todos os aplicativos vêm instalados no telefone.",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Eles só devem ser instalados usando um laptop.",
+                  "isCorrect":false
+              }
+          ],
+          "image":  "Frame_1.svg",
+          "multiple":true,
+          "maxOptions":2
+      },
+      {
+          "question":"É possível desinstalar os aplicativos do telefone.",
+          "answers":[
+              {
+                  "text": "Verdadeiro",
+                  "isCorrect": true
+              },
+              {
+                  "text": "Falso",
+                  "isCorrect": false
+              }
+          ],
+          "image":  "Frame_1.svg"
+      },
+      {
+          "question": "Esses aplicativos precisam ser instalados para que um telefone funcione.",
+          "answers":[
+              {
+                  "text": "Verdadeiro",
+                  "isCorrect": false
+              },
+              {
+                  "text": "Falso",
+                  "isCorrect": true
+              }
+          ],
+          "image":  "Frame_1.svg"
+      }
+  ],
+  "initMessages":[
+      "Dê uma olhada no dispositivo abaixo. Selecione a resposta correta para as perguntas.",
+      "Pode haver uma ou mais respostas corretas."
+  ],
+  "threshold": {
+      "max": 3,
+      "min": 1,
+      "perfect": 4
+  },
+  "path": "21",
+  "color": "#9968A6",
+  "name": "Fundamentos do smartphone",
+  "id": 21
+}

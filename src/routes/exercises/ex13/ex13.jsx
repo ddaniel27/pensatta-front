@@ -94,9 +94,9 @@ export default function Ex13 () {
 
             <div className='buttons-field'>
               {start
-                ? <button onClick={() => { handleFinish(setScore, setPhase) }} className='restart'>FINALIZAR</button>
-                : <button onClick={handleClick} disabled={optionsData.length < 2}>INICIAR</button>}
-              {optionsData.length > 1 && <button onClick={handleReset} className={`${!start && 'restart'}`}>REINTENTAR</button>}
+                ? <button onClick={() => { handleFinish(setScore, setPhase) }} className='restart'>{myData.btnEnd}</button>
+                : <button onClick={handleClick} disabled={optionsData.length < 2}>{myData.btnStart}</button>}
+              {optionsData.length > 1 && <button onClick={handleReset} className={`${!start && 'restart'}`}>{myData.btnAgain}</button>}
             </div>
           </div>
         )

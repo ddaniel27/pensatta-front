@@ -1,0 +1,78 @@
+{
+  "initMessages":[
+      "Drag only the balloons that correspond to the category indicated in the drawer to it."
+  ],
+  "threshold":{
+      "max" : 5,
+      "min" : 0,
+      "perfect": 5
+  },
+  "system":"Operating systems",
+  "btnEnd":"END",
+  "btnNext":"NEXT",
+  "path": "19",
+  "color": "#9968A6",
+  "name":"Drag the balloons",
+  "id": 19,
+  "balloons": [
+      {
+          "id":1,
+          "text":"iOS"
+      },
+      {
+          "id":2,
+          "text":"Android"
+      },
+      {
+          "id":3,
+          "text":"Windows"
+      },
+      {
+          "id":4,
+          "text":"LinkedIn"
+      },
+      {
+          "id":5,
+          "text":"WhatsApp"
+      },
+      {
+          "id":6,
+          "text":"Youtube"
+      },
+      {
+          "id":7,
+          "text":"Chrome"
+      },
+      {
+          "id":8,
+          "text":"Gmail"
+      },
+      {
+          "id":9,
+          "text":"Tik Tok"
+      },
+      {
+          "id":10,
+          "text":"Excel"
+      },
+      {
+          "id":11,
+          "text":"MacOS"
+      },
+      {
+          "id":12,
+          "text":"Facebook"
+      },
+      {
+          "id":13,
+          "text":"Linux"
+      },
+      {
+          "id":14,
+          "text":"Word"
+      }
+  ],
+  "positions":[ {"x": -83.5664,"y":77.8704},{"x": -20.5131 ,"y":28.916},{"x": 47.4022 ,"y":76.0231},{"x": 113.47 ,"y":23.5792},{"x":193.342,"y":60.3207},{"x": 266.555,"y":17.8319},{"x":348.711 ,"y":15.2662},
+                  {"x": -49.1469 ,"y":274.817},{"x": 9.53175  ,"y":217.55},{"x": 146.479  ,"y":208.313},{"x": 220.616 ,"y":236.511},{"x": 295.536 ,"y":216.421},{"x": 357.563 ,"y":267.915},{"x": 79.7306 ,"y":258.191}],
+  "isSo":[1,2,3,11,13]
+}

@@ -3,7 +3,7 @@ import ActivityContext from '../../../context/ActivityContext'
 import UniqueOption from '../components/uniqueOption'
 import NoScoringComponent from '../components/noScoringComponent'
 import blackboxSrc from '../../../../public/images/exercises/40/blackbox.svg'
-import useData from "../../../hooks/useData"
+import useData from '../../../hooks/useData'
 import '../../../styles/ex40.css'
 
 export default function Ex40 () {
@@ -11,7 +11,7 @@ export default function Ex40 () {
   const [inputSel, setInputSel] = useState([])
   const [operatorSel, setOperatorSel] = useState(null)
   const [result, setResult] = useState(null)
-  const { data } = useData("ex40")
+  const { data } = useData('ex40')
 
   const [myInputs, setMyInputs] = useState({
     options: data.inputs
@@ -27,6 +27,7 @@ export default function Ex40 () {
     setMyData({ ...data })
     setMyOperators({ options: data.operators })
     setMyInputs({ options: data.inputs })
+    setResult(data.infoResult)
   }, [data])
 
   useEffect(() => {
@@ -43,7 +44,7 @@ export default function Ex40 () {
 
   const handleOperation = (input, operator) => {
     if (!operator || !input.length) {
-      return 'Prueba seleccionando un operador y un valor'
+      return myData.infoResult
     }
     if (operator === 1) {
       return typeof input[0] === 'number' ? input[0] + input[1] : 'Error'
@@ -74,20 +75,20 @@ export default function Ex40 () {
   return (
     <NoScoringComponent initMessages={myData.initMessages} background={myData.color} title={myData.name}>
       {
-            (setPhase) => (
-              <>
-                <div className='blackbox'>
-                  <UniqueOption options={myInputs.options} uniqueName='entradas' isCorrectOption={setInputSel} />
-                  <UniqueOption options={myOperators.options} uniqueName='operador' isCorrectOption={setOperatorSel} />
-                  <div className='function'>
-                    <img src={blackboxSrc} alt='blackbox' />
-                    <div className='message'><p>{result}</p></div>
-                  </div>
-                </div>
-                <button onClick={() => setPhase('end')}>{data["next-button"]}</button>
-              </>
-            )
-        }
+        (setPhase) => (
+          <>
+            <div className='blackbox'>
+              <UniqueOption options={myInputs.options} uniqueName='entradas' isCorrectOption={setInputSel} />
+              <UniqueOption options={myOperators.options} uniqueName='operador' isCorrectOption={setOperatorSel} />
+              <div className='function'>
+                <img src={blackboxSrc} alt='blackbox' />
+                <div className='message'><p>{result}</p></div>
+              </div>
+            </div>
+            <button onClick={() => setPhase('end')}>{data['next-button']}</button>
+          </>
+        )
+      }
 
     </NoScoringComponent>
   )

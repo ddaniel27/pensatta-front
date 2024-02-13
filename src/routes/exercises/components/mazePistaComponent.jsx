@@ -6,6 +6,7 @@ import starts from '../ex32/starts.json'
 import MazeButton from './mazeButton'
 import corazon from '/images/exercises/09/corazon.svg'
 import positionEnemies from '../ex32/enemies.json'
+import { useTranslation } from 'react-i18next'
 
 const Carrito = ({ style }) => (<img src={carrito} alt="carrito" style={style}/>)
 const Maze = ({ pista, colorLine }) => {
@@ -41,6 +42,7 @@ const Hearts = ({ vidas, style }) => {
 }
 
 const MazePistaComponent = ({ lab, setPhase, setScore, colorLine, imagePath }) => {
+  const { t } = useTranslation('maze2Component')
   const carInitX = starts[`pista${lab}`].startPosition.x
   const carInitY = starts[`pista${lab}`].startPosition.y
   const maze2Styles = {
@@ -339,7 +341,7 @@ const MazePistaComponent = ({ lab, setPhase, setScore, colorLine, imagePath }) =
       </div>
       <div className={styles.infoContainer}>
         <div className={styles.intentosContainer}>
-                    Intentos:
+          {t('tries')}
           <div className={styles.corazones}>
             <Hearts vidas={vidas} style={maze2Styles.corazon}/>
           </div>
@@ -373,7 +375,7 @@ const MazePistaComponent = ({ lab, setPhase, setScore, colorLine, imagePath }) =
               </div>
             </div>
             <div className={styles.infoText}>
-                            Muévete oprimiendo estos botones o presionando las teclas de dirección de tu teclado.
+              {t('info-text')}
             </div>
 
           </div>
@@ -383,7 +385,7 @@ const MazePistaComponent = ({ lab, setPhase, setScore, colorLine, imagePath }) =
                 setPhase('end')
                 setScore(vidas)
               }}
-              className={styles.btnNext}>SIGUIENTE</button>
+              className={styles.btnNext}>{t('next-button')}</button>
             </div>
             : <></>}
         </div>

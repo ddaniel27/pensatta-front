@@ -1,0 +1,14 @@
+{
+  "initMessages":[
+      "Derrote os vírus de computador. Pegue os escudos que o antivírus oferece para poder atacá-los sem perigo. Não se aproxime sem proteção."
+  ],
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 1
+  },
+  "path": "36",
+  "color": "#53745B",
+  "name": "Anti vírus",
+  "id": "36"
+  }

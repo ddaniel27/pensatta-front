@@ -1,0 +1,40 @@
+{
+  "options": [
+      {
+          "error": "Our device experiences blue screens and reboots after opening a certain number of applications",
+          "fix": "RAM"
+      },
+      {
+          "error": "Our computer is experiencing flickering screens, flashing red lines, unexpected reboots, and strange patterns on the screen.",
+          "fix": "GPU"
+      },
+      {
+          "error": "On our computer applications freeze, feel slow when used, and have blue screens",
+          "fix": "HDD"
+      },
+      {
+          "error": "On our computer applications freeze, it does not find hardware, and it presents blue screens",
+          "fix": "Board"
+      },
+      {
+          "error": "In our equipment it does not start or give the start screen but the fans or other components sound",
+          "fix": "CPU"
+      }
+  ],
+  "initMessages":[
+    "Our central computer is failing, your task is to identify the part that is faulty.",
+    "Analyze the situation to identify the source of the problem."
+  ],
+  "threshold": {
+      "max": 2,
+      "min": 1,
+      "perfect": 3
+  },
+  "title": "Technical Report",
+  "btnAnswer": "ANSWER",
+  "btnNext": "NEXT",
+  "path": "23",
+  "color": "#9968A6",
+  "name": "Repair computer",
+  "id": 23
+}

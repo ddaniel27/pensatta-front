@@ -65,7 +65,7 @@ export default function Ex05 () {
               <p>{encryptedMessage}</p>
               <input type="text" placeholder={myData.placeholder} value={value} onChange={handleChange} />
             </div>
-            <button className="button-play" onClick={() => { handleClick(setScore, setPhase) }} disabled={!value.length}>FINALIZAR</button>
+            <button className="button-play" onClick={() => { handleClick(setScore, setPhase) }} disabled={!value.length}>{myData.btnEnd}</button>
           </div>
         )
       }

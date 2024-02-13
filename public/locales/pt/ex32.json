@@ -1,0 +1,23 @@
+{   
+    "informative_text":[
+        "Muévete oprimiendo estos botones o presionando las teclas de dirección de tu teclado."
+    ],
+    "options": [
+
+    ],
+    "initMessages":[
+        "Dirija o carro pela cidade até chegar ao objetivo.",
+        "Mova-se com os botões direcionais e evite os obstáculos."
+    ],
+    "threshold":{
+        "max" : 3,
+        "min" : 0,
+        "perfect": 3
+    },
+    "path": "32",
+    "color": "#AE985E",
+    "name":"Cumprir o objetivo",
+    "id": 32
+
+
+}

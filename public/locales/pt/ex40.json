@@ -22,6 +22,7 @@
         "Você pode escolher valores da lista de entradas e uma função a ser realizada na lista de funções.",
         "Pratique um pouco e observe a saída gerada pela caixa preta."
     ],
+    "infoResult": "Teste seleccionando um operador e um valor",
     "color":"#53745B",
     "name":"Funções",
     "id": "40"

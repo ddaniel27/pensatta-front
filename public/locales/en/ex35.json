@@ -1,0 +1,17 @@
+{
+  "initMessages":[
+      "Help the digital snake to consume all the data.",
+      "The more data you consume, the bigger the snake will be.",
+      "Use the arrow keys to move."
+  ],
+  "text":{
+    "one":"Use the arrow keys to move.",
+    "two":"Avoid touching the walls!",
+    "three":"Don't touch yourself!",
+    "four":"Eat as much data as you can"
+  },
+  "path": "35",
+  "color": "#9968A6",
+  "name": "Snake",
+  "id": 35
+}

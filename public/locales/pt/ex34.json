@@ -1,0 +1,59 @@
+{
+  "options": [
+      {
+          "subject": "Resultados parciais do exame",
+          "email": "docente_biologia@iedc.edu.co",
+          "isSafe":"safe"
+      },
+      {
+          "subject": "Documentos atividade semanal",
+          "email": "docente_espanol@iedc.edu.co",
+          "isSafe":"safe"
+      },
+      {
+          "subject": "Estamos investigando você",
+          "email": "policciacolombia@yahoo.es",
+          "isSafe":"unsafe"
+      },
+      {
+          "subject": "PARABÉNS!!!! VOCÊ GANHOU 10.000 USD",
+          "email": "loteriadecolommbia@gmail.com",
+          "isSafe":"unsafe"
+      },
+      {
+          "subject": "Você tem um novo seguidor",
+          "email": "no-reply@tiktok.com",
+          "isSafe":"safe"
+      },
+      {
+          "subject": "Confirmação da transação",
+          "email": "serviciopse@achcolombia.com.co",
+          "isSafe":"safe"
+      },
+      {
+          "subject": "Precisamos verificar seus dados",
+          "email": "no-reply-tiktok@gmail.com",
+          "isSafe":"unsafe"
+      },
+      {
+          "subject": "Temos suas fotos",
+          "email": "564dasd56f@yahoo.es",
+          "isSafe":"unsafe"
+      }
+  ],
+  "initMessages":[
+      "Revise cuidadosamente os e-mails recebidos nesta caixa de entrada.",
+      "Selecione os e-mails perigosos para seus dados e envie-os para a pasta SPAM."
+  ],
+  "threshold": {
+      "max": 3,
+      "min": 1,
+      "perfect": 4
+  },
+  "btnAnswer": "RESPONDER",
+  "btnNext": "SEGUINTE",
+  "path": "34",
+  "color": "#9968A6",
+  "name": "Limpiar SPAM",
+  "id": 34
+}

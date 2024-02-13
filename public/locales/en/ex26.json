@@ -1,0 +1,177 @@
+{
+  "options": [
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"10 tricks to develop the habit of reading",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Meditation techniques",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Cat videos",
+                  "isCorrect":false
+              },
+              {
+                  "text":"The 100 most dangerous animals in the world",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      },
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"Exercise at home",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Online singing course",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Series about a hospital",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Learn to fix a computer",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      },
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"Discover how to organize your thoughts",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Increase your self-esteem while practicing sports",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Product Commercial Videos",
+                  "isCorrect":false
+              },
+              {
+                  "text":"The 100 most dangerous animals in the world",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      },
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"Art and emotions course",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Take care of your health by following the following exercise and eating routine",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Gastronomy course",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Learn to fix a computer",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      },
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"Meditation techniques",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Discover the benefits of meditating 5 minutes every day",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Learn to program in Java",
+                  "isCorrect":false
+              },
+              {
+                  "text":"10 best goals in history",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      },
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"Personal growth course",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Online psychological listening line",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Gastronomy course",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Cat videos",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      },
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"Online coaching sessions",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Art and emotions course",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Home remedies",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Product Commercial Videos",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      }
+  ],
+  "initMessages":[
+      "Determine which of the following types of content are related to emotional intelligence.",
+      "Select the contents that positively contribute to the emotional sphere of a person."
+  ],
+  "threshold": {
+      "max": 2,
+      "min": 1,
+      "perfect": 2
+  },
+  "color": "#9968A6",
+  "name": "Emotional intelligence",
+  "id": 26
+}

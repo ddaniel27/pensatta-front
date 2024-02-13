@@ -1,0 +1,64 @@
+{
+  "columns": {
+      "column-2": {
+          "id": "column-2",
+          "title": "When: press start button",
+          "optionsIds": [
+              "option-4",
+              "option-2",
+              "option-5",
+              "option-3",
+              "option-1"
+          ]
+      }
+  },
+  "options": {
+      "option-1": {
+          "id": "option-1",
+          "key": "preload",
+          "text": "Put first bread",
+          "value": 1
+      },
+      "option-2": {
+          "id": "option-2",
+          "key": "preload2",
+          "text": "Put the cheese",
+          "value": 2
+      },
+      "option-3": {
+          "id": "option-3",
+          "key": "preload3",
+          "text": "Put the ham",
+          "value": 3
+      },
+      "option-4": {
+          "id": "option-4",
+          "key": "preload4",
+          "text": "Put the sauce",
+          "value": 4
+      },
+      "option-5": {
+          "id": "option-5",
+          "key": "preload5",
+          "text": "Put second bread",
+          "value": 5
+      }
+  },
+  "imgPath": "images/exercises/24/Lights.svg",
+  "initMessages":[
+      "Next, you will see an algorithm implemented in blocks, which has a couple of bugs.",
+      "Correct them for their correct execution and then press the debug button.",
+      "The green light on the left will turn on if the code is correct or red if it is incorrect."
+  ],
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 1
+  },
+  "algorithm": "Algorithm for preparing a sandwich",
+  "btnAgain": "RETRY",
+  "btnStart": "START",
+  "path": "02",
+  "color": "#9968A6",
+  "name": "Correct recipe"
+}

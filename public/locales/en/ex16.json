@@ -140,6 +140,8 @@
       "min": 2,
       "perfect": 6
   },
+  "btnAnswer": "ANSWER",
+  "btnNext": "NEXT",
   "path": "08",
   "color": "#9968A6",
   "name": "Secure passwords",

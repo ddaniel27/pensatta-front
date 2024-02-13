@@ -1,0 +1,57 @@
+{
+  "isSingle": "false",
+  "columns": {
+      "column-1": {
+          "id": "column-1",
+          "title": "Blocks you can use",
+          "optionsIds": [
+              "option-1",
+              "option-2"
+          ],
+          "isDropDisabled":true,
+          "info":"You can only use subtraction and multiplication"
+      },
+      "column-2": {
+          "id": "column-2",
+          "title": "When: press start button - blocks you can use",
+          "optionsIds": []
+      }
+  },
+  "options": {
+      "option-1": {
+          "id": "option-1",
+          "key": "userInput",
+          "hasInput": true,
+          "type": "text",
+          "text": "input value"
+      },
+      "option-2": {
+          "id": "option-2",
+          "key": "operation",
+          "hasInput": true,
+          "type": "select",
+          "text": "Operation",
+          "options": [
+              "subtract",
+              "multiply"
+          ]
+      }
+  },
+  "maxPieces":4,
+  "imgPath": "images/exercises/39/Calculadora.svg",
+  "initMessages":[
+      "Look at the figure displayed on the calculator screen.",
+      "Create an operation with the programming blocks that results in that number.",
+      "Keep in mind the exercise rule."
+  ],
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 1
+  },
+  "btnAgain": "TRY AGAIN",
+  "btnStart": "START",
+  "path": "02",
+  "color": "#9968A6",
+  "name": "Calculator"
+}

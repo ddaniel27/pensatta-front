@@ -57,9 +57,9 @@ export default function Ex11 () {
               isFinishedGlobal={setPhase}
             />
             <div className="buttons-field">
-              {optionsData.length > 0 && <button onClick={handleReset} className="restart">REINTENTAR</button>}
-              {!start && <button onClick={handleClick} disabled={!optionsData.length}>INICIAR</button>}
-              {finished && <button onClick={() => { setPhase('end') }} disabled={!optionsData.length}>FINALIZAR</button>}
+              {optionsData.length > 0 && <button onClick={handleReset} className="restart">{myData.btnAgain}</button>}
+              {!start && <button onClick={handleClick} disabled={!optionsData.length}>{myData.btnStart}</button>}
+              {finished && <button onClick={() => { setPhase('end') }} disabled={!optionsData.length}>{myData.btnEnd}</button>}
             </div>
           </div>
         )

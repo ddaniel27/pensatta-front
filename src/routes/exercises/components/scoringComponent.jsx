@@ -31,7 +31,7 @@ export default function ScoringComponent ({ initMessages = ['Inicia dando click 
     } else {
       setResultMessage([t('result-bad'), `${t('result-1')}${score}${t('result-2')}${threshold.perfect}${t('result-3')}`])
     }
-  }, [score, threshold.max, threshold.min, threshold.perfect])
+  }, [score, threshold.max, threshold.min, threshold.perfect, initMessages])
 
   useEffect(() => {
     function postScore () {

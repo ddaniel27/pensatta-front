@@ -61,8 +61,8 @@ export default function Ex17 () {
             <DndListComponent data={myData} returnScore={setOptionsData} reset={reset} showCorrect = {showCorrect} />
 
             <div className="buttons-field">
-              {optionsData.length > 0 && !showCorrect && <button onClick={handleReset} className="restart">REINTENTAR</button>}
-              {showCorrect ? <button onClick={() => { setPhase('end') }}>FINALIZAR</button> : <button onClick={() => { handleClick(setScore) }}>INICIAR</button>}
+              {optionsData.length > 0 && !showCorrect && <button onClick={handleReset} className="restart">{myData.btnAgain}</button>}
+              {showCorrect ? <button onClick={() => { setPhase('end') }}>{myData.btnEnd}</button> : <button onClick={() => { handleClick(setScore) }}>{myData.btnStart}</button>}
             </div>
           </div>
         )

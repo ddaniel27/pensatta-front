@@ -97,7 +97,7 @@ export default function Ex01 () {
                 <p className="img-container" />
               </label>
             </div>
-            {nextQuestion && <button className="continue-button" onClick={handleClick}>CONTINUAR</button>}
+            {nextQuestion && <button className="continue-button" onClick={handleClick}>{myData.btnContinue}</button>}
           </div>
           : <ScreenRenderUniqueOptionsEncapsulate data={myData} hasImages={false} returnScore={setScore} isFinished={setPhase} center={true} />
       )

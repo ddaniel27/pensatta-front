@@ -1,0 +1,57 @@
+{
+  "isSingle": "false",
+  "columns": {
+      "column-1": {
+          "id": "column-1",
+          "title": "Blocos que você pode usar",
+          "optionsIds": [
+              "option-1",
+              "option-2"
+          ],
+          "isDropDisabled":true,
+          "info":"Só pode utilizar a subtração e a multiplicação"
+      },
+      "column-2": {
+          "id": "column-2",
+          "title": "Quando: pressione o botão Iniciar - blocos que você pode usar",
+          "optionsIds": []
+      }
+  },
+  "options": {
+      "option-1": {
+          "id": "option-1",
+          "key": "userInput",
+          "hasInput": true,
+          "type": "text",
+          "text": "Valor de entrada"
+      },
+      "option-2": {
+          "id": "option-2",
+          "key": "operation",
+          "hasInput": true,
+          "type": "select",
+          "text": "Operação",
+          "options": [
+              "subtrair",
+              "multiplicar"
+          ]
+      }
+  },
+  "maxPieces":4,
+  "imgPath": "images/exercises/39/Calculadora.svg",
+  "initMessages":[
+      "Observe a figura exibida na tela da calculadora.",
+      "Crie uma operação com os blocos de programação que resulte nesse número.",
+      "Tenha em mente a regra do exercício."
+  ],
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 1
+  },
+  "btnAgain": "REPETIR",
+  "btnStart": "INICIAR",
+  "path": "02",
+  "color": "#9968A6",
+  "name": "Calculadora"
+}

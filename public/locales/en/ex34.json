@@ -1,0 +1,59 @@
+{
+  "options": [
+      {
+          "subject": "Partial exam results ",
+          "email": "docente_biologia@iedc.edu.co",
+          "isSafe":"safe"
+      },
+      {
+          "subject": "Documents weekly activity",
+          "email": "docente_espanol@iedc.edu.co",
+          "isSafe":"safe"
+      },
+      {
+          "subject": "We are investigating you",
+          "email": "policciacolombia@yahoo.es",
+          "isSafe":"unsafe"
+      },
+      {
+          "subject": "CONGRATULATIONS!!!! YOU WON 10,000 USD ",
+          "email": "loteriadecolommbia@gmail.com",
+          "isSafe":"unsafe"
+      },
+      {
+          "subject": "You have a new follower",
+          "email": "no-reply@tiktok.com",
+          "isSafe":"safe"
+      },
+      {
+          "subject": "Transaction confirmation",
+          "email": "serviciopse@achcolombia.com.co",
+          "isSafe":"safe"
+      },
+      {
+          "subject": "We need to verify your details",
+          "email": "no-reply-tiktok@gmail.com",
+          "isSafe":"unsafe"
+      },
+      {
+          "subject": "We have your photos",
+          "email": "564dasd56f@yahoo.es",
+          "isSafe":"unsafe"
+      }
+  ],
+  "initMessages":[
+      "Carefully review the emails received in this inbox.",
+      "Select the dangerous emails for your data and send them to the SPAM folder."
+  ],
+  "threshold": {
+      "max": 3,
+      "min": 1,
+      "perfect": 4
+  },
+  "btnAnswer": "ANSWER",
+  "btnNext": "NEXT",
+  "path": "34",
+  "color": "#9968A6",
+  "name": "Clean SPAM",
+  "id": 34
+}

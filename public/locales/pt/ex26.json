@@ -1,0 +1,177 @@
+{
+  "options": [
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"10 truques para desenvolver o hábito da leitura",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Técnicas de meditação",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Vídeos de gatos",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Os 100 animais mais perigosos do mundo",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      },
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"Exercício em casa",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Curso de canto online",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Série sobre um hospital",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Aprenda a consertar um computador",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      },
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"Descubra como organizar seus pensamentos",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Aumente sua autoestima praticando esportes",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Videos comerciales de productos",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Os 100 animais mais perigosos do mundo",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      },
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"Curso de arte e emoções",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Cuide da sua saúde seguindo a seguinte rotina de exercícios e alimentação",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Curso de gastronomia",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Aprenda a consertar um computador",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      },
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"Técnicas de meditação",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Descubra os benefícios de meditar 5 minutos todos os dias",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Aprenda a programar em Java",
+                  "isCorrect":false
+              },
+              {
+                  "text":"10 melhores gols da história",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      },
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"Curso de crescimento pessoal",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Linha de escuta psicológica online",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Curso de gastronomia",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Vídeos de gatos",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      },
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"Sessões de coaching online",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Curso de arte e emoções",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Remédios caseiros",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Vídeos Comerciais de Produtos",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      }
+  ],
+  "initMessages":[
+      "Determine quais dos seguintes tipos de conteúdo estão relacionados à inteligência emocional.",
+      "Selecione os conteúdos que contribuem positivamente para a esfera emocional de uma pessoa."
+  ],
+  "threshold": {
+      "max": 2,
+      "min": 1,
+      "perfect": 2
+  },
+  "color": "#9968A6",
+  "name": "Inteligência emocional",
+  "id": 26
+}

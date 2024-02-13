@@ -1,0 +1,64 @@
+{
+  "columns": {
+      "column-2": {
+          "id": "column-2",
+          "title": "Quando: pressione o botão Iniciar",
+          "optionsIds": [
+              "option-4",
+              "option-2",
+              "option-5",
+              "option-3",
+              "option-1"
+          ]
+      }
+  },
+  "options": {
+      "option-1": {
+          "id": "option-1",
+          "key": "preload",
+          "text": "Coloque o primeiro pão",
+          "value": 1
+      },
+      "option-2": {
+          "id": "option-2",
+          "key": "preload2",
+          "text": "Coloque o queijo",
+          "value": 2
+      },
+      "option-3": {
+          "id": "option-3",
+          "key": "preload3",
+          "text": "Coloque o presunto",
+          "value": 3
+      },
+      "option-4": {
+          "id": "option-4",
+          "key": "preload4",
+          "text": "Coloque o molho",
+          "value": 4
+      },
+      "option-5": {
+          "id": "option-5",
+          "key": "preload5",
+          "text": "Coloque o segundo pão",
+          "value": 5
+      }
+  },
+  "imgPath": "images/exercises/24/Lights.svg",
+  "initMessages":[
+      "A seguir, você verá um algoritmo implementado em blocos, que possui alguns bugs.",
+      "Corrija-os para sua execução correta e depois pressione o botão debug.",
+      "A luz verde à esquerda acenderá se o código estiver correto ou vermelha se estiver incorreto."
+  ],
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 1
+  },
+  "algorithm": "Algoritmo para preparar um sanduíche",
+  "btnAgain": "REPETIR",
+  "btnStart": "INICIAR",
+  "path": "02",
+  "color": "#9968A6",
+  "name": "Receita correta"
+}

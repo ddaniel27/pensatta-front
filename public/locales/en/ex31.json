@@ -1,0 +1,46 @@
+{
+  "isSingle": true,
+  "isLoop": true,
+  "columns": {
+      "column-1": {
+          "id": "column-1",
+          "title": "Bloques que puedes usar",
+          "optionsIds": [
+              "option-1"
+          ],
+          "isDropDisabled":true,
+          "info":""
+      },
+      "column-2": {
+          "id": "column-2",
+          "title": "When: press start button",
+          "optionsIds": []
+      }
+  },
+  "options": {
+      "option-1": {
+          "id": "option-1",
+          "key": "sound",
+          "text": "Choose a track",
+          "hasInput": true,
+          "type": "select",
+          "options": [
+              "joy1.mp3",
+              "joy2.mp3",
+              "joy3.mp3",
+              "joy4.mp3"
+          ]
+      }
+  },
+  "imgPath": "images/exercises/24/Lights.svg",
+  "initMessages":[
+      "Below you will find a block-implemented algorithm that plays different audio tracks.",
+      "Arrange the blocks to create a playback sequence."
+  ],
+  "playMusic": "PLAY MUSIC",
+  "btnAgain": "RETRY",
+  "btnEnd": "END",
+  "path": "02",
+  "color": "#9968A6",
+  "name": "Song"
+}

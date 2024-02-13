@@ -59,6 +59,9 @@
       "min": 1,
       "perfect": 1
   },
+  "btnAgain": "REPETIR",
+  "btnStart": "INICIAR",
+  "btnEnd": "FINALIZAR",
   "path": "11",
   "color": "#9968A6",
   "name": "Editar foto",

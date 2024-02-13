@@ -62,6 +62,8 @@
         "min": 3,
         "perfect": 6
     },
+    "btnBack": "RETORNAR",
+    "btnAnswer": "RESPONDER",
     "path": "04",
     "color": "#9968A6",
     "name": "Componentes internos",

@@ -1,0 +1,106 @@
+{
+  "options": [
+      {
+          "question": "It is required to make a database ordered in tables.",
+          "answers": [
+              {"text":"Excel", "isCorrect": true},
+              {"text":"Word", "isCorrect": false},
+              {"text":"PowerPoint", "isCorrect": false},
+              {"text":"One Note", "isCorrect": false}
+          ]
+      },
+      {
+          "question": "It is required to write a report, with images and graphs.",
+          "answers": [
+              {"text":"Word", "isCorrect": true},
+              {"text":"PowerPoint", "isCorrect":false},
+              {"text":"Excel", "isCorrect":false},
+              {"text":"One Note", "isCorrect":false}
+          ]
+      },
+      {
+          "question": "Note taking via keyboard or stylus is required.",
+          "answers": [
+              {"text":"One Note", "isCorrect": true},
+              {"text":"Word", "isCorrect": false},
+              {"text":"Excel", "isCorrect": false},
+              {"text":"PowerPoint", "isCorrect": false}
+          ]
+      },
+      {
+          "question": "A presentation with animations, text and graphics is required.",
+          "answers": [
+              {"text":"Powerpoint", "isCorrect": true},
+              {"text":"Word", "isCorrect":false},
+              {"text":"Excel", "isCorrect":false},
+              {"text":"One Note", "isCorrect":false}
+          ]
+      },
+      {
+          "question": "Photo editing is required",
+          "answers": [
+              {"text":"Powerpoint", "isCorrect": false},
+              {"text":"Word", "isCorrect":false},
+              {"text":"Photoshop", "isCorrect":true},
+              {"text":"One Note", "isCorrect":false}
+          ]
+      },
+      {
+          "question": "Audio editing required",
+          "answers": [
+              {"text":"Audacity", "isCorrect": true},
+              {"text":"Word", "isCorrect":false},
+              {"text":"Excel", "isCorrect":false},
+              {"text":"Photoshop", "isCorrect":false}
+          ]
+      },
+      {
+          "question": "Video editing is required",
+          "answers": [
+              {"text":"Movie Maker", "isCorrect": true},
+              {"text":"Word", "isCorrect":false},
+              {"text":"Audacity", "isCorrect":false},
+              {"text":"One Note", "isCorrect":false}
+          ]
+      },
+      {
+          "question": "Safe Internet browsing required",
+          "answers": [
+              {"text":"Google Chrome", "isCorrect": true},
+              {"text":"Word", "isCorrect":false},
+              {"text":"Excel", "isCorrect":false},
+              {"text":"One Note", "isCorrect":false}
+          ]
+      },
+      {
+          "question": "Virtual meeting required",
+          "answers": [
+              {"text":"Microsoft Teams", "isCorrect": true},
+              {"text":"Visual Studio", "isCorrect":false},
+              {"text":"Excel", "isCorrect":false},
+              {"text":"One Note", "isCorrect":false}
+          ]
+      },
+      {
+          "question": "It is required to store data in the cloud",
+          "answers": [
+              {"text":"One Drive", "isCorrect": true},
+              {"text":"Word", "isCorrect":false},
+              {"text":"Excel", "isCorrect":false},
+              {"text":"One Note", "isCorrect":false}
+          ]
+      }
+  ],
+  "initMessages":[
+      "Select the office software that best suits the need.",
+      "You have 3 minutes after pressing the start button. Good luck!"
+  ],
+  "threshold": {
+      "max": 2,
+      "min": 1,
+      "perfect": 4
+  },
+  "color": "#1B6893",
+  "name":"Suitable software",
+  "id": 22
+}

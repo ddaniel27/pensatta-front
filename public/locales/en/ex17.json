@@ -268,6 +268,9 @@
       "min": 1,
       "perfect": 1
   },
+  "btnAgain": "RETRY",
+  "btnStart": "START",
+  "btnEnd": "END",
   "path": "13",
   "color": "#588F64",
   "name": "Store Ranking",

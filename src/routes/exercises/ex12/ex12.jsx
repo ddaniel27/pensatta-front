@@ -109,10 +109,10 @@ export default function Ex12 () {
             <Animation animationSequence={optionsData} path={myData.path} functionToAnimate={animate} simple={true} start={start} />
 
             <div className="buttons-field">
-              {optionsData.length > 0 && <button onClick={handleReset} className="restart">REINTENTAR</button>}
+              {optionsData.length > 0 && <button onClick={handleReset} className="restart">{myData.btnAgain}</button>}
               {start
-                ? <button onClick={() => { handleFinish(setPhase) }}>FINALIZAR</button>
-                : <button onClick={handleClick} disabled={!optionsData.length}>INICIAR</button>
+                ? <button onClick={() => { handleFinish(setPhase) }}>{myData.btnStart}</button>
+                : <button onClick={handleClick} disabled={!optionsData.length}>{myData.btnEnd}</button>
               }
             </div>
           </div>

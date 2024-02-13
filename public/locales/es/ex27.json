@@ -1,0 +1,15 @@
+{"initMessages":[
+  "En este ejercicio encontrarás un ambiente creativo para diseñar contenido visual. Puedes crear posters, invitaciones, portadas, fondos, infografías, etc." ,
+  "Explota tu creatividad y diseña el contenido de tu preferencia, luego podrás descargarlo, no olvides registrar tu respuesta."
+],
+"threshold":{
+  "max" : 1,
+  "min" : 0,
+  "perfect": 1
+},
+"path": "27",
+"color": "#AE985E",
+"name":"Dibuja",
+"id": 27
+
+}

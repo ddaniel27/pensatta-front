@@ -1,0 +1,15 @@
+{"initMessages":[
+  "Neste exercício, você encontrará um ambiente criativo para criar conteúdo visual. Você pode criar cartazes, convites, capas, planos de fundo, infográficos, etc." ,
+  "Use sua criatividade e desenhe o conteúdo de sua preferência, depois faça o download, não esqueça de registrar sua resposta."
+],
+"threshold":{
+  "max" : 1,
+  "min" : 0,
+  "perfect": 1
+},
+"path": "27",
+"color": "#AE985E",
+"name":"Empate",
+"id": 27
+
+}

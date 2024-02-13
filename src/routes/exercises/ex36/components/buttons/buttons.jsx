@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from '../../../../../styles/mazeButton.module.css'
+import { useTranslation } from 'react-i18next'
 
 const MazeButton = ({ onClick, direction }) => {
   const icon = {
@@ -16,6 +17,7 @@ const MazeButton = ({ onClick, direction }) => {
   )
 }
 export default function CrossButtons ({ onClickUp, onClickLeft, onClickRight, onClickDown }) {
+  const { t } = useTranslation('maze2Component')
   return (
     <div className={styles.containerCross}>
       <div className={styles.containerBtnsText}>
@@ -34,7 +36,7 @@ export default function CrossButtons ({ onClickUp, onClickLeft, onClickRight, on
           </div>
         </div>
         <div className={styles.infoText}>
-                            Muévete oprimiendo estos botones o presionando las teclas de dirección de tu teclado.
+          {t('info-text')}
         </div>
 
       </div>

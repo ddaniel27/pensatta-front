@@ -22,6 +22,7 @@
         "Puedes escoger valores de la lista de entradas y una función a realizar en la lista de funciones.",
         "Practica un poco y observa la salida generada por la caja negra."
     ],
+    "infoResult": "Prueba seleccionando un operador y un valor",
     "color":"#53745B",
     "name":"Funciones",
     "id": "40"
