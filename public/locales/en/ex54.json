@@ -1,8 +1,7 @@
 {
   "initMessages":[
       "Next, you will find the simulation of a piano.",
-      "Its keys correspond to those of your keyboard or you can use the on-screen keyboard",
-      "Pay attention to the pattern that will light up on each piano key, then replicate it with your computer keyboard."
+      "Its keys correspond to those of your keyboard or you can use the on-screen keyboard"
   ],
   "btnEnd": "END",
   "path": "54",

@@ -1,0 +1,171 @@
+{
+  "options": [
+      {
+          "question":"Low battery",
+          "answers":[
+              {
+                  "text":"Turn off the equipment",
+                  "isCorrect":false
+              },
+              {
+                  "text": "Restart all apps",
+                  "isCorrect":false
+              },
+              {
+                  "text": "Connect the equipment to the electrical network",
+                  "isCorrect":true
+              },
+              {
+                  "text": "Disconnect peripherals",
+                  "isCorrect":false
+              }
+          ],
+          "image":  "LowBattery.svg"
+      },
+      {
+          "question":"Malware detected",
+          "answers":[
+              {
+                  "text": "Start a virus scan on the system",
+                  "isCorrect":true
+              },
+              {
+                  "text": "Reinstall the operating system",
+                  "isCorrect":false
+              },
+              {
+                  "text": "Reduce screen brightness",
+                  "isCorrect":false
+              },
+              {
+                  "text": "Install video editing software",
+                  "isCorrect":false
+              }
+          ],
+          "image":  "Malware.svg"
+      },
+      {
+          "question":"The program does not respond",
+          "answers":[
+              {
+                  "text": "Open task manager",
+                  "isCorrect":true
+              },
+              {
+                  "text": "Download the new version of the system and install",
+                  "isCorrect":false
+              },
+              {
+                  "text": "Start the web browser",
+                  "isCorrect":false
+              },
+              {
+                  "text": "Disconnect the equipment from the electrical network",
+                  "isCorrect":false
+              }
+          ],
+          "image":  "NotResponding.svg"
+      },
+      {
+          "question":"No Internet access",
+          "answers":[
+              {
+                  "text":"Restart WI-FI and search for a wireless network",
+                  "isCorrect":true
+              },
+              {
+                  "text": "Download an antivirus",
+                  "isCorrect":false
+              },
+              {
+                  "text": "Reduce screen brightness",
+                  "isCorrect":false
+              },
+              {
+                  "text": "Reinstall the operating system",
+                  "isCorrect":false
+              }
+          ],
+          "image":  "NoWifi.svg"
+      },
+      {
+          "question":"New system update",
+          "answers":[
+              {
+                  "text":"Download and install the new version of the system",
+                  "isCorrect":true
+              },
+              {
+                  "text": " Start a virus scan on the system",
+                  "isCorrect":false
+              },
+              {
+                  "text": "Start the web browser",
+                  "isCorrect":false
+              },
+              {
+                  "text": "Reboot the system",
+                  "isCorrect":false
+              }
+          ],
+          "image":  "SystemUpdate.svg"
+      },
+      {
+          "question":"Antivirus update required",
+          "answers":[
+              {
+                  "text":"Download and install updates",
+                  "isCorrect":true
+              },
+              {
+                  "text": "Uninstall the antivirus",
+                  "isCorrect":false
+              },
+              {
+                  "text": "Disconnect from the local network",
+                  "isCorrect":false
+              },
+              {
+                  "text": "Reinstall the operating system",
+                  "isCorrect":false
+              }
+          ],
+          "image":  "UpdateAntivirus.svg"
+      },
+      {
+          "question":"Attached storage device",
+          "answers":[
+              {
+                  "text":"Disconnect the equipment from the electrical network",
+                  "isCorrect":false
+              },
+              {
+                  "text": "Reinstall sound drivers",
+                  "isCorrect":false
+              },
+              {
+                  "text": "Scan for viruses before accessing ",
+                  "isCorrect":true
+              },
+              {
+                  "text": "Install word processing software",
+                  "isCorrect":false
+              }
+          ],
+          "image":  "USB.svg"
+      }
+  ],
+  "initMessages":[
+      "Manage system alerts in the most efficient way.",
+      "Select the correct option based on the symbol that lights up."
+  ],
+  "threshold": {
+      "max": 2,
+      "min": 1,
+      "perfect": 3
+  },
+  "path": "55",
+  "color": "#9968A6",
+  "name": "Common Icons",
+  "id": 55
+}

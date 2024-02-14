@@ -1,8 +1,7 @@
 {
   "initMessages":[
       "A continuación, encontrarás la simulación de un piano.",
-      "Sus teclas corresponden con las de tu teclado o puedes usar el teclado en pantalla",
-      "Presta atención al patrón que se iluminará en cada tecla del piano, luego replícalo con el teclado de tu computador."
+      "Sus teclas corresponden con las de tu teclado o puedes usar el teclado en pantalla"
   ],
   "btnEnd": "FINALIZAR",
   "path": "54",

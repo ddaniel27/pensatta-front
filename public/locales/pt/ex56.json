@@ -1,0 +1,34 @@
+{
+  "options": [
+      {
+        "src": "1.svg",
+        "code": "X=4 <br/> Y=5 <br/> Z=X+Y <br/> W=X*Y"
+      },
+      {
+        "src": "2.svg",
+        "code": "X=10 <br/> X=X+1 <br/> X=2*X <br/> Y=X"
+      },
+      {
+        "src": "3.svg",
+        "code": "X=100 <br/> X=X-1 <br/> X=3*X <br/> Y=X<90"
+      },
+      {
+        "src": "4.svg",
+        "code": "X=true <br/> Y=90 <br/> Y=Y+2 <br/> X=false"
+      }
+  ],
+  "initMessages":[
+      "A seguir, você encontrará uma série de blocos de programação. Você pode ver o código que corresponde a cada um pressionando-o.",
+      "Explore todos eles!"
+  ],
+  "threshold": {
+      "max": 2,
+      "min": 1,
+      "perfect": 3
+  },
+  "btnEnd": "FIM",
+  "path": "56",
+  "color": "#9968A6",
+  "name": "ícones comuns",
+  "id": 56
+}

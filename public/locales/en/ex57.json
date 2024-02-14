@@ -1,0 +1,79 @@
+{
+  "options":[
+      {
+          "question":"What kind of information does a digital system receive?",
+          "answers":[
+              {
+                  "text": "Discreet information",
+                  "isCorrect": true
+              },
+              {
+                  "text":"Continuous information",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Digital process",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Identifier",
+                  "isCorrect":false
+              }
+          ]
+      },
+      {
+          "question":"What numbering system do digital systems use?",
+          "answers":[
+              {
+                  "text": "Binary number system",
+                  "isCorrect": true
+              },
+              {
+                  "text":"Complex system",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Decimal number system",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Octal numbering system",
+                  "isCorrect":false
+              }
+          ]
+      },
+      {
+          "question":"What are some of the advantages of digital systems?",
+          "answers":[
+              {
+                  "text": "Ease of design, accuracy and precision.",
+                  "isCorrect": true
+              },
+              {
+                  "text":"Support at high temperatures and intermittence.",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Color and ergonomics.",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Low frequency, air circulation.",
+                  "isCorrect":false
+              }
+          ]
+      }
+  ],
+  "initMessages":[
+      "Spin the wheel to get a question.",
+      "Select one of the possible answers."
+  ],
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 1
+  },
+  "color": "#9968A6",
+  "name":"Information characteristics",
+  "id": 57
+}

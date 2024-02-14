@@ -1,0 +1,171 @@
+{
+  "options": [
+      {
+          "question":"Bateria Fraca",
+          "answers":[
+              {
+                  "text":"Desligue o equipamento",
+                  "isCorrect":false
+              },
+              {
+                  "text": "Reiniciar todos os aplicativosc",
+                  "isCorrect":false
+              },
+              {
+                  "text": "Conecte o equipamento à rede elétrica",
+                  "isCorrect":true
+              },
+              {
+                  "text": "Desconecte os periféricos",
+                  "isCorrect":false
+              }
+          ],
+          "image":  "LowBattery.svg"
+      },
+      {
+          "question":"Malware detectado",
+          "answers":[
+              {
+                  "text": "Iniciar uma verificação de vírus no sistema",
+                  "isCorrect":true
+              },
+              {
+                  "text": "Reinstale o sistema operacional",
+                  "isCorrect":false
+              },
+              {
+                  "text": "Reduza o brilho da tela",
+                  "isCorrect":false
+              },
+              {
+                  "text": "Instale um software de edição de vídeo",
+                  "isCorrect":false
+              }
+          ],
+          "image":  "Malware.svg"
+      },
+      {
+          "question":"O programa não responde",
+          "answers":[
+              {
+                  "text": "Abra o gerenciador de tarefas",
+                  "isCorrect":true
+              },
+              {
+                  "text": "Baixe a nova versão do sistema e instale",
+                  "isCorrect":false
+              },
+              {
+                  "text": "Inicie o navegador da web",
+                  "isCorrect":false
+              },
+              {
+                  "text": "Desconecte o equipamento da rede elétrica",
+                  "isCorrect":false
+              }
+          ],
+          "image":  "NotResponding.svg"
+      },
+      {
+          "question":"Sem acesso à Internet",
+          "answers":[
+              {
+                  "text":" Reinicie o WI-FI e procure uma rede sem fio",
+                  "isCorrect":true
+              },
+              {
+                  "text": "Baixe um antivírus",
+                  "isCorrect":false
+              },
+              {
+                  "text": "Reduza o brilho da tela",
+                  "isCorrect":false
+              },
+              {
+                  "text": "Reinstale o sistema operacional",
+                  "isCorrect":false
+              }
+          ],
+          "image":  "NoWifi.svg"
+      },
+      {
+          "question":"Nova atualização do sistema",
+          "answers":[
+              {
+                  "text":"Baixe e instale a nova versão do sistema",
+                  "isCorrect":true
+              },
+              {
+                  "text": "Iniciar uma verificação de vírus no sistema",
+                  "isCorrect":false
+              },
+              {
+                  "text": "Inicie o navegador da web",
+                  "isCorrect":false
+              },
+              {
+                  "text": "Reinicie o sistema",
+                  "isCorrect":false
+              }
+          ],
+          "image":  "SystemUpdate.svg"
+      },
+      {
+          "question":"Atualização do antivírus necessária",
+          "answers":[
+              {
+                  "text":"Baixar e instalar atualizações",
+                  "isCorrect":true
+              },
+              {
+                  "text": "Desinstale o antivírus",
+                  "isCorrect":false
+              },
+              {
+                  "text": "Desconecte-se da rede local",
+                  "isCorrect":false
+              },
+              {
+                  "text": "Reinstale o sistema operacional",
+                  "isCorrect":false
+              }
+          ],
+          "image":  "UpdateAntivirus.svg"
+      },
+      {
+          "question":"Dispositivo de almacenamiento",
+          "answers":[
+              {
+                  "text":"Desconectar el equipo de red eléctrica",
+                  "isCorrect":false
+              },
+              {
+                  "text": "Reinstalar controladores de vídeo",
+                  "isCorrect":false
+              },
+              {
+                  "text": "Analizar en búsqueda de virus",
+                  "isCorrect":true
+              },
+              {
+                  "text": "Instalar un software procesador de texto",
+                  "isCorrect":false
+              }
+          ],
+          "image":  "USB.svg"
+      }
+  ],
+  "initMessages":[
+      "Gerencie os alertas do sistema da maneira mais eficiente.",
+      "Selecione a opção correta com base no símbolo que acende."
+  ],
+  "threshold": {
+      "max": 2,
+      "min": 1,
+      "perfect": 3
+  },
+  "path": "55",
+  "color": "#9968A6",
+  "name": "Ícones Comuns",
+  "id": 55
+}

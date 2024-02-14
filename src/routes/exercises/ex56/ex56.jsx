@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import NoScoringComponent from '../components/noScoringComponent'
 import data from './data.json'
 import '../../../styles/ex56.css'
+import useData from '../../../hooks/useData'
 
 export default function Ex55 () {
-  const [myData] = React.useState({
+  const { data } = useData('ex56')
+  const [myData, setMyData] = React.useState({
     ...data,
     options: data.options.sort(() => 0.5 - Math.random()).slice(0, 4)
   })
@@ -12,6 +14,13 @@ export default function Ex55 () {
   const [idx, setIdx] = React.useState(-1)
   const [text, setText] = React.useState('')
   const pRef = React.useRef(null)
+
+  useEffect(() => {
+    setMyData({
+      ...data,
+      options: data.options.sort(() => 0.5 - Math.random()).slice(0, 4)
+    })
+  }, [data])
 
   React.useEffect(() => {
     setText(myData.options[idx]?.code || '')
@@ -36,7 +45,7 @@ export default function Ex55 () {
                 <VisualCodeButton key={index} data={option} id={index} changeIdx={setIdx} />
               ))}
             </div>
-            <button className='ex56-btn' onClick={() => setPhase('end')}>FINALIZAR</button>
+            <button className='ex56-btn' onClick={() => setPhase('end')}>{myData.btnEnd}</button>
           </div>
         )
       }

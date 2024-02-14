@@ -1,9 +1,7 @@
 {
   "initMessages":[
       "A seguir, você encontrará a simulação de um piano.",
-      "Suas teclas correspondem às do seu teclado ou você pode usar o teclado na tela",
-      "Preste atenção ao padrão que se acenderá em cada tecla do piano e, em seguida, replique-o com o teclado do computador."
-  ],
+      "Suas teclas correspondem às do seu teclado ou você pode usar o teclado na tela"  ],
   "btnEnd":"FIM",
   "path": "54",
   "color": "#53745B",
