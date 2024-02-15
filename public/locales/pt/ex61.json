@@ -1,0 +1,63 @@
+
+{
+  "options": [
+      {
+          "question":"Direitos (2-3 corretos por variação)",
+          "answers":[
+              {
+                  "text":"Direito à vida.",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Direito à livre expressão.",
+                  "isCorrect":true
+              },
+              {
+                  "text":" Direito ao livre desenvolvimento da personalidade.",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Direito de comunicar.",
+                  "isCorrect":true
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      },
+      {
+          "question":"Trabalho de casa (2-3 correto por variação)",
+          "answers":[
+              {
+                  "text":"Responder às mensagens recebidas nas redes sociais.",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Compartilhe o acesso à rede WI-FI doméstica.",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Defenda e promova privacidade, vigilância e criptografia.",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Busque e trabalhe para conseguir acesso à internet para todos.",
+                  "isCorrect":true
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      }
+  ],
+  "initMessages":[
+      "Em seguida, você verá uma lista de direitos e deveres.",
+      "Selecione aqueles que favorecem a segurança e o benefício do mundo virtual."
+  ],
+  "threshold": {
+      "max": 2,
+      "min": 1,
+      "perfect": 2
+  },
+  "color": "#9968A6",
+  "name": "Direitos e deveres",
+  "id": 61
+}

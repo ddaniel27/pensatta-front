@@ -1,0 +1,66 @@
+{
+  "variations":[
+      {
+          "columns": {
+              "column": {
+                  "id": "column",
+                  "title": "Estágios de Projeto de Algoritmo",
+                  "optionsIds": [
+                      "option-2",
+                      "option-1",
+                      "option-4",
+                      "option-3",
+                      "option-5"
+                  ]
+              }
+          },
+          "options": {
+              "option-1": {
+                  "id": "option-1",
+                  "key": "arriba",
+                  "text": "Definição do problema"
+              },
+              "option-2": {
+                  "id": "option-2",
+                  "key": "abajo",
+                  "text": "Analise de problemas"
+              },
+              "option-3": {
+                  "id": "option-3",
+                  "key": "derecha",
+                  "text": "Planejamento de soluções em etapas"
+              },
+              "option-4": {
+                  "id": "option-4",
+                  "key": "izquierda",
+                  "text": "Transformação do problema em um algoritmo"
+              },
+              "option-5": {
+                  "id": "option-5",
+                  "key": "izquierda",
+                  "text": "Execução do algoritmo"
+              }
+          },
+          "sequence":[
+              "option-1",
+              "option-2",
+              "option-3",
+              "option-4",
+              "option-5"
+          ]
+      }
+  ],
+  "initMessages":[
+      "Ordene os estágios de design do algoritmo que você verá abaixo.",
+      "Você tem 20 segundos depois de pressionar o botão Iniciar."
+  ],
+  "threshold": {
+      "max": 4,
+      "min": 2,
+      "perfect": 5
+  },
+  "path": "15",
+  "color": "#9968A6",
+  "name": "Arquiteturas",
+  "id": 15
+}

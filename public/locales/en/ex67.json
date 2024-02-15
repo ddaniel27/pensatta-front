@@ -1,0 +1,135 @@
+{
+  "columns": {
+      "column-2": {
+          "id": "column-2",
+          "title": "When: press start button - blocks you can use",
+          "optionsIds": [
+              "option-4",
+              "option-2",
+              "option-5",
+              "option-3",
+              "option-1"
+          ]
+      }
+  },
+  "options": {
+      "option-1": {
+          "id": "option-1",
+          "key": "rojo",
+          "text": "Red light",
+          "value": 1
+      },
+      "option-2": {
+          "id": "option-2",
+          "key": "rojo",
+          "text": "Red light",
+          "value": 1
+      },
+      "option-3": {
+          "id": "option-3",
+          "key": "amarillo",
+          "text": "Yellow light",
+          "value": 2
+      },
+      "option-4": {
+          "id": "option-4",
+          "key": "amarillo",
+          "text": "Yellow light",
+          "value": 2
+      },
+      "option-5": {
+          "id": "option-5",
+          "key": "verde",
+          "text": "Green light",
+          "value": 3
+      }
+  },
+  "patterns":[
+      [
+          ["rojo", 1],
+          ["rojo", 1],
+          ["amarillo", 2],
+          ["amarillo", 2],
+          ["verde", 3]
+      ],
+      [
+          ["rojo", 1],
+          ["amarillo", 2],
+          ["verde", 3],
+          ["amarillo", 2],
+          ["rojo", 1]
+      ],
+      [
+          ["verde", 3],
+          ["rojo", 1],
+          ["amarillo", 2],
+          ["rojo", 1],
+          ["amarillo", 2]
+      ],
+      [
+          ["verde", 3],
+          ["amarillo", 2],
+          ["amarillo", 2],
+          ["rojo", 1],
+          ["rojo", 1]
+      ],
+      [
+          ["verde", 3],
+          ["rojo", 1],
+          ["amarillo", 2],
+          ["rojo", 1],
+          ["amarillo", 2]
+      ],
+      [
+          ["amarillo", 2],
+          ["verde", 3],
+          ["rojo", 1],
+          ["rojo", 1],
+          ["amarillo", 2]
+      ],
+      [
+          ["amarillo", 2],
+          ["rojo", 1],
+          ["verde", 3],
+          ["rojo", 1],
+          ["amarillo", 2]
+      ],
+      [
+          ["rojo", 1],
+          ["amarillo", 2],
+          ["verde", 3],
+          ["rojo", 1],
+          ["amarillo", 2]
+      ],
+      [
+          ["amarillo", 2],
+          ["rojo", 1],
+          ["rojo", 1],
+          ["verde", 3],
+          ["amarillo", 2]
+      ],
+      [
+          ["rojo", 1],
+          ["amarillo", 2],
+          ["amarillo", 2],
+          ["verde", 3],
+          ["rojo", 1]
+      ]
+  ],
+  "initMessages":[
+      "Observe the first traffic light.",
+      "Recreate the pattern that the lights follow, programming the algorithm of the second traffic light."
+  ],
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 1
+  },
+  "btnAgain": "TRY AGAIN",
+  "btnStart": "START",
+  "btnEnd": "END",
+  "path": "02",
+  "color": "#9968A6",
+  "name": "Traffic light pattern",
+  "id": "37"
+}

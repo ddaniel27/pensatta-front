@@ -1,12 +1,13 @@
-import { useState, useLayoutEffect } from 'react'
+import { useState, useLayoutEffect, useEffect } from 'react'
 import NoScoringComponent from '../components/noScoringComponent'
 import DndComponent from '../components/dndComponent'
 import ImagenEditor from '../components/imageEditor65'
-import data from './data.json'
 import '../../../styles/ex10.css'
+import useData from '../../../hooks/useData'
 
 export default function Ex65 () {
-  const [myData] = useState({
+  const { data } = useData('ex65')
+  const [myData, setMyData] = useState({
     ...data,
     options: data.variations.sort(() => Math.random() - 0.5).slice(0, 1)[0]
   })
@@ -15,6 +16,13 @@ export default function Ex65 () {
   const [finished, setFinished] = useState(false)
 
   const [optionsData, setOptionsData] = useState({})
+
+  useEffect(() => {
+    setMyData({
+      ...data,
+      options: data.variations.sort(() => Math.random() - 0.5).slice(0, 1)[0]
+    })
+  }, [data])
 
   useLayoutEffect(() => {
     if (reset) {
@@ -48,9 +56,9 @@ export default function Ex65 () {
               num={myData.options.img}
             />
             <div className='buttons-field'>
-              {optionsData.length > 0 && <button onClick={handleReset} className='restart'>REINTENTAR</button>}
-              {!start && <button onClick={handleClick} disabled={!optionsData.length}>INICIAR</button>}
-              {finished && <button onClick={() => { setPhase('end') }} disabled={!optionsData.length}>FINALIZAR</button>}
+              {optionsData.length > 0 && <button onClick={handleReset} className='restart'>{myData.btnAgain}</button>}
+              {!start && <button onClick={handleClick} disabled={!optionsData.length}>{myData.btnStart}</button>}
+              {finished && <button onClick={() => { setPhase('end') }} disabled={!optionsData.length}>{myData.btnEnd}</button>}
             </div>
           </div>
         )

@@ -1,0 +1,135 @@
+{
+  "columns": {
+      "column-2": {
+          "id": "column-2",
+          "title": "Quando: pressione o botão Iniciar - blocos que você pode usar",
+          "optionsIds": [
+              "option-4",
+              "option-2",
+              "option-5",
+              "option-3",
+              "option-1"
+          ]
+      }
+  },
+  "options": {
+      "option-1": {
+          "id": "option-1",
+          "key": "rojo",
+          "text": "Luz vermelha",
+          "value": 1
+      },
+      "option-2": {
+          "id": "option-2",
+          "key": "rojo",
+          "text": "Luz vermelha",
+          "value": 1
+      },
+      "option-3": {
+          "id": "option-3",
+          "key": "amarillo",
+          "text": "Luz amarela",
+          "value": 2
+      },
+      "option-4": {
+          "id": "option-4",
+          "key": "amarillo",
+          "text": "Luz amarela",
+          "value": 2
+      },
+      "option-5": {
+          "id": "option-5",
+          "key": "verde",
+          "text": "Luz verde",
+          "value": 3
+      }
+  },
+  "patterns":[
+      [
+          ["rojo", 1],
+          ["rojo", 1],
+          ["amarillo", 2],
+          ["amarillo", 2],
+          ["verde", 3]
+      ],
+      [
+          ["rojo", 1],
+          ["amarillo", 2],
+          ["verde", 3],
+          ["amarillo", 2],
+          ["rojo", 1]
+      ],
+      [
+          ["verde", 3],
+          ["rojo", 1],
+          ["amarillo", 2],
+          ["rojo", 1],
+          ["amarillo", 2]
+      ],
+      [
+          ["verde", 3],
+          ["amarillo", 2],
+          ["amarillo", 2],
+          ["rojo", 1],
+          ["rojo", 1]
+      ],
+      [
+          ["verde", 3],
+          ["rojo", 1],
+          ["amarillo", 2],
+          ["rojo", 1],
+          ["amarillo", 2]
+      ],
+      [
+          ["amarillo", 2],
+          ["verde", 3],
+          ["rojo", 1],
+          ["rojo", 1],
+          ["amarillo", 2]
+      ],
+      [
+          ["amarillo", 2],
+          ["rojo", 1],
+          ["verde", 3],
+          ["rojo", 1],
+          ["amarillo", 2]
+      ],
+      [
+          ["rojo", 1],
+          ["amarillo", 2],
+          ["verde", 3],
+          ["rojo", 1],
+          ["amarillo", 2]
+      ],
+      [
+          ["amarillo", 2],
+          ["rojo", 1],
+          ["rojo", 1],
+          ["verde", 3],
+          ["amarillo", 2]
+      ],
+      [
+          ["rojo", 1],
+          ["amarillo", 2],
+          ["amarillo", 2],
+          ["verde", 3],
+          ["rojo", 1]
+      ]
+  ],
+  "initMessages":[
+      "Observe o primeiro semáforo.",
+      "Recrie o padrão que os semáforos seguem, programando o algoritmo do segundo semáforo."
+  ],
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 1
+  },
+  "btnAgain": "REINTENTAR",
+  "btnStart": "INICIAR",
+  "btnEnd": "FIM",
+  "path": "02",
+  "color": "#9968A6",
+  "name": "Padrão de semáforo",
+  "id": "37"
+}

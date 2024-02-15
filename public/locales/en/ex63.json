@@ -1,0 +1,43 @@
+{"initMessages":[
+  "Cybercriminals are on the lookout for any mistakes we make to gain access to our banking and personal information." ,
+  "Drag the relevant actions to protect your data from theft."
+],
+"threshold":{
+  "max" : 4,
+  "min" : 0,
+  "perfect": 4
+},
+"btnNext":"NEXT",
+"btnAnswer":"ANSWER",
+"path": "63",
+"color": "#9968A6",
+"name":"Cybersecurity",
+"id": 63,
+"options":{
+  "corrects":[
+      {"id":1, "text":"Create strong passwords", "value":true},
+      {"id":2, "text":"Update software and operating systems", "value":true},
+      {"id":3, "text":"Manage spam received by mail", "value":true},
+      {"id":4, "text":"Always browse from the search engine, not from suspicious links.", "value":true},
+      {"id":5, "text":"Verify that the site is secure (https)", "value":true},
+      {"id":6, "text":"Install an antivirus and keep updates up to date", "value":true},
+      {"id":7, "text":"Change passwords regularly", "value":true},
+      {"id":8, "text":"Install software from trusted developers", "value":true},
+      {"id":9, "text":"Do not download files from suspicious emails", "value":true},
+      {"id":10, "text":"Do not share passwords in chats and social networks", "value":true}
+     
+  ],
+  "falses":[
+      {"id":11, "text":"Use a single password for all accounts", "value":false},
+      {"id":12, "text":"Create easy-to-remember passwords", "value":false},
+      {"id":13, "text":"Enter links of any advertisement", "value":false},
+      {"id":14, "text":"Browse any website", "value":false},
+      {"id":15, "text":"Use old versions of software", "value":false},
+      {"id":16, "text":"Disable antivirus to optimize performance", "value":false},
+      {"id":17, "text":"Do not change passwords", "value":false},
+      {"id":18, "text":"Sharing passwords in chats and social networks", "value":false},
+      {"id":19, "text":"Access links in emails from unknown sender", "value":false},
+      {"id":20, "text":"Sharing credit card photos", "value":false}
+  ]
+}
+}

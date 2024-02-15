@@ -1,0 +1,40 @@
+{
+  "options": [
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"Search systems",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Home food preparation",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Food production in automated plant",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Creation of plastic arts",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      }
+  ],
+  "initMessages":[
+      "Machines can learn and understand things in a very similar way to ours, and thus perform complex tasks making our work easier.",
+      "That is one of the most accurate definitions for artificial intelligence.",
+      "Select the tasks that you consider can be optimized with the use of artificial intelligence."
+  ],
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 1
+  },
+  "color": "#9968A6",
+  "name": "Artificial intelligence",
+  "id": 69
+}

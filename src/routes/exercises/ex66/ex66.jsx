@@ -1,17 +1,26 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ScoringComponent from '../components/scoringComponent'
 import Timer from '../components/timer'
 import DndVonListComponent from '../components/dndVonListComponent'
 import data from './data.json'
+import useData from '../../../hooks/useData'
 
 export default function Ex15 () {
-  const [myData] = React.useState({
+  const { data } = useData('ex66')
+  const [myData, setMyData] = React.useState({
     ...data,
     variations: data.variations.sort(() => 0.5 - Math.random()).slice(0, 1)[0]
   })
 
   const [value, setValue] = React.useState(null)
   const [nextQuestion, setNextQuestion] = React.useState(false)
+
+  useEffect(() => {
+    setMyData({
+      ...data,
+      variations: data.variations.sort(() => 0.5 - Math.random()).slice(0, 1)[0]
+    })
+  }, [data])
 
   function delay (n) {
     return new Promise(function (resolve) {

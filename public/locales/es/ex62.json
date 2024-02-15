@@ -1,0 +1,378 @@
+{
+    
+  "initMessages":[
+      "En redes sociales, es importante progeter nuestra información personal.",
+      "Observa las siguientes publicaciones y selecciona el grupo de personas que deberían tener acceso a las mismas."
+  ],
+  "threshold": {
+      "max": 4,
+      "min": 0,
+      "perfect": 4
+  },
+  "path": "62",
+  "color": "#AE985E",
+  "name": "Información en redes",
+  "id": 62,
+  "options":{
+      "1": [
+          {
+              "question":"",
+              "answers":[
+                  {
+                      "text":"Solo mi familia",
+                      "isCorrect":true
+                  },
+                  {
+                      "text": "A todos mis contactos",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Solo amigos",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Solo para mí",
+                      "isCorrect":false
+                  }
+              ],
+              "image":  "fotoFamiliar1.svg"
+          },
+          {
+              "question":"",
+              "answers":[
+                  {
+                      "text":"Solo mi familia",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "A todos mis contactos",
+                      "isCorrect":true
+                  },
+                  {
+                      "text": "Solo amigos",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Solo para mí",
+                      "isCorrect":false
+                  }
+              ],
+              "image":  "fotoFrase1.svg"
+          },
+          {
+              "question":"",
+              "answers":[
+                  {
+                      "text":"Solo mi familia",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "A todos mis contactos",
+                      "isCorrect":true
+                  },
+                  {
+                      "text": "Solo amigos",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Solo para mí",
+                      "isCorrect":false
+                  }
+              ],
+              "image":  "fotoCancion1.svg"
+          },
+          {
+              "question":"",
+              "answers":[
+                  {
+                      "text":"Solo mi familia",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "A todos mis contactos",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Solo amigos",
+                      "isCorrect":true
+                  },
+                  {
+                      "text": "Solo para mí",
+                      "isCorrect":false
+                  }
+              ],
+              "image":  "fotoRomantica1.svg"
+          }
+      ],
+      "2": [
+          {
+              "question":"",
+              "answers":[
+                  {
+                      "text":"Solo mi familia",
+                      "isCorrect":true
+                  },
+                  {
+                      "text": "A todos mis contactos",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Solo amigos",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Solo para mí",
+                      "isCorrect":false
+                  }
+              ],
+              "image":  "fotoFamiliar2.svg"
+          },
+          {
+              "question":"",
+              "answers":[
+                  {
+                      "text":"Solo mi familia",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "A todos mis contactos",
+                      "isCorrect":true
+                  },
+                  {
+                      "text": "Solo amigos",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Solo para mí",
+                      "isCorrect":false
+                  }
+              ],
+              "image":  "fotoFrase2.svg"
+          },
+          {
+              "question":"",
+              "answers":[
+                  {
+                      "text":"Solo mi familia",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "A todos mis contactos",
+                      "isCorrect":true
+                  },
+                  {
+                      "text": "Solo amigos",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Solo para mí",
+                      "isCorrect":false
+                  }
+              ],
+              "image":  "fotoCancion2.svg"
+          },
+          {
+              "question":"",
+              "answers":[
+                  {
+                      "text":"Solo mi familia",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "A todos mis contactos",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Solo amigos",
+                      "isCorrect":true
+                  },
+                  {
+                      "text": "Solo para mí",
+                      "isCorrect":false
+                  }
+              ],
+              "image":  "fotoRomantica2.svg"
+          }
+      ],
+      "3": [
+          {
+              "question":"",
+              "answers":[
+                  {
+                      "text":"Solo mi familia",
+                      "isCorrect":true
+                  },
+                  {
+                      "text": "A todos mis contactos",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Solo amigos",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Solo para mí",
+                      "isCorrect":false
+                  }
+              ],
+              "image":  "fotoFamiliar3.svg"
+          },
+          {
+              "question":"",
+              "answers":[
+                  {
+                      "text":"Solo mi familia",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "A todos mis contactos",
+                      "isCorrect":true
+                  },
+                  {
+                      "text": "Solo amigos",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Solo para mí",
+                      "isCorrect":false
+                  }
+              ],
+              "image":  "fotoFrase3.svg"
+          },
+          {
+              "question":"",
+              "answers":[
+                  {
+                      "text":"Solo mi familia",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "A todos mis contactos",
+                      "isCorrect":true
+                  },
+                  {
+                      "text": "Solo amigos",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Solo para mí",
+                      "isCorrect":false
+                  }
+              ],
+              "image":  "fotoCancion3.svg"
+          },
+          {
+              "question":"",
+              "answers":[
+                  {
+                      "text":"Solo mi familia",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "A todos mis contactos",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Solo amigos",
+                      "isCorrect":true
+                  },
+                  {
+                      "text": "Solo para mí",
+                      "isCorrect":false
+                  }
+              ],
+              "image":  "fotoRomantica3.svg"
+          }
+      ],
+      "4": [
+          {
+              "question":"",
+              "answers":[
+                  {
+                      "text":"Solo mi familia",
+                      "isCorrect":true
+                  },
+                  {
+                      "text": "A todos mis contactos",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Solo amigos",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Solo para mí",
+                      "isCorrect":false
+                  }
+              ],
+              "image":  "fotoFamiliar4.svg"
+          },
+          {
+              "question":"",
+              "answers":[
+                  {
+                      "text":"Solo mi familia",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "A todos mis contactos",
+                      "isCorrect":true
+                  },
+                  {
+                      "text": "Solo amigos",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Solo para mí",
+                      "isCorrect":false
+                  }
+              ],
+              "image":  "fotoFrase4.svg"
+          },
+          {
+              "question":"",
+              "answers":[
+                  {
+                      "text":"Solo mi familia",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "A todos mis contactos",
+                      "isCorrect":true
+                  },
+                  {
+                      "text": "Solo amigos",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Solo para mí",
+                      "isCorrect":false
+                  }
+              ],
+              "image":  "fotoCancion4.svg"
+          },
+          {
+              "question":"",
+              "answers":[
+                  {
+                      "text":"Solo mi familia",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "A todos mis contactos",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Solo amigos",
+                      "isCorrect":true
+                  },
+                  {
+                      "text": "Solo para mí",
+                      "isCorrect":false
+                  }
+              ],
+              "image":  "fotoRomantica4.svg"
+          }
+      ]
+  }
+}

@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ScoringComponent from '../components/scoringComponent'
 import DndComponent from '../components/dndComponent'
-import data from './data.json'
 import '../../../styles/ex10.css'
+import useData from '../../../hooks/useData'
 
 export default function Ex37 () {
-  const [myData] = React.useState({
+  const { data } = useData('ex67')
+  const [myData, setMyData] = React.useState({
     ...data,
     patterns: data.patterns.sort(() => 0.5 - Math.random()).slice(0, 1)
   })
@@ -36,6 +37,13 @@ export default function Ex37 () {
       setTimeout(resolve, n)
     })
   }
+
+  useEffect(() => {
+    setMyData({
+      ...data,
+      patterns: data.patterns.sort(() => 0.5 - Math.random()).slice(0, 1)
+    })
+  }, [data])
 
   React.useEffect(() => {
     async function test () {
@@ -158,9 +166,9 @@ export default function Ex37 () {
             </div>
 
             <div className='buttons-field'>
-              {optionsData.length > 0 && <button onClick={handleReset} className='restart'>REINTENTAR</button>}
-              {!start && <button onClick={() => { handleClick(setScore) }} disabled={!optionsData.length}>INICIAR</button>}
-              {finished && <button onClick={() => { setPhase('end') }} disabled={!optionsData.length}>FINALIZAR</button>}
+              {optionsData.length > 0 && <button onClick={handleReset} className='restart'>{myData.btnAgain}</button>}
+              {!start && <button onClick={() => { handleClick(setScore) }} disabled={!optionsData.length}>{myData.btnStart}</button>}
+              {finished && <button onClick={() => { setPhase('end') }} disabled={!optionsData.length}>{myData.btnEnd}</button>}
             </div>
           </div>
         )

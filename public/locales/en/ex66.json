@@ -1,0 +1,66 @@
+{
+  "variations":[
+      {
+          "columns": {
+              "column": {
+                  "id": "column",
+                  "title": "Algorithm Design Stages",
+                  "optionsIds": [
+                      "option-2",
+                      "option-1",
+                      "option-4",
+                      "option-3",
+                      "option-5"
+                  ]
+              }
+          },
+          "options": {
+              "option-1": {
+                  "id": "option-1",
+                  "key": "arriba",
+                  "text": "Definition of the problem"
+              },
+              "option-2": {
+                  "id": "option-2",
+                  "key": "abajo",
+                  "text": "Problem analysis"
+              },
+              "option-3": {
+                  "id": "option-3",
+                  "key": "derecha",
+                  "text": "Planning solutions in stages"
+              },
+              "option-4": {
+                  "id": "option-4",
+                  "key": "izquierda",
+                  "text": "Transformation of the problem into an algorithm"
+              },
+              "option-5": {
+                  "id": "option-5",
+                  "key": "izquierda",
+                  "text": "Algorithm execution"
+              }
+          },
+          "sequence":[
+              "option-1",
+              "option-2",
+              "option-3",
+              "option-4",
+              "option-5"
+          ]
+      }
+  ],
+  "initMessages":[
+      "Order the algorithm design stages that you will see below.",
+      "You have 20 seconds after pressing the start button."
+  ],
+  "threshold": {
+      "max": 4,
+      "min": 2,
+      "perfect": 5
+  },
+  "path": "15",
+  "color": "#9968A6",
+  "name": "Architectures",
+  "id": 15
+}

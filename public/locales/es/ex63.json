@@ -1,0 +1,43 @@
+{"initMessages":[
+  "Los ciberdelincuentes están atentos a cualquier error que cometamos para tener acceso a nuestra información bancaria y personal." ,
+  "Arrastra las acciones pertinentes para proteger tus datos de hurto."
+],
+"threshold":{
+  "max" : 4,
+  "min" : 0,
+  "perfect": 4
+},
+"btnNext":"SIGUIENTE",
+"btnAnswer":"RESPONDER",
+"path": "63",
+"color": "#9968A6",
+"name":"Ciberseguridad",
+"id": 63,
+"options":{
+  "corrects":[
+      {"id":1, "text":"Crear contraseñas seguras", "value":true},
+      {"id":2, "text":"Actualizar software y sistemas operativos", "value":true},
+      {"id":3, "text":"Administrar el spam recibido por correo", "value":true},
+      {"id":4, "text":"Navegar siempre desde el buscador, no desde enlaces sospechosos.", "value":true},
+      {"id":5, "text":"Verificar que el sitio sea seguro (https)", "value":true},
+      {"id":6, "text":"Instalar un antivirus  y mantener las actualizaciones al día", "value":true},
+      {"id":7, "text":"Cambiar las contraseñas con regularidad", "value":true},
+      {"id":8, "text":"Instalar software  de desarrolladores confiables", "value":true},
+      {"id":9, "text":"No descargar archivos de correos sospechosos", "value":true},
+      {"id":10, "text":"No compartir contraseñas en chats y redes sociales", "value":true}
+     
+  ],
+  "falses":[
+      {"id":11, "text":"Usar una única contraseña para todas las cuentas", "value":false},
+      {"id":12, "text":"Crear contraseñas fáciles de recordar", "value":false},
+      {"id":13, "text":"Ingresar a enlaces de cualquier publicidad", "value":false},
+      {"id":14, "text":"Navegar por cualquier sitio web", "value":false},
+      {"id":15, "text":"Usar versiones antiguas de software", "value":false},
+      {"id":16, "text":"Desactivar antivirus para optimizar el rendimiento", "value":false},
+      {"id":17, "text":"No cambiar las contraseñas", "value":false},
+      {"id":18, "text":"Compartir contraseñas en chats y redes sociales", "value":false},
+      {"id":19, "text":"Ingresar a enlaces de correos de remitente desconocido", "value":false},
+      {"id":20, "text":"Compartir fotografías de tarjetas de crédito", "value":false}
+  ]
+}
+}

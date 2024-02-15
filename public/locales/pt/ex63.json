@@ -1,0 +1,43 @@
+{"initMessages":[
+  "Os cibercriminosos estão atentos a quaisquer erros que cometemos para obter acesso às nossas informações bancárias e pessoais." ,
+  "Arraste as ações relevantes para proteger seus dados contra roubo."
+],
+"threshold":{
+  "max" : 4,
+  "min" : 0,
+  "perfect": 4
+},
+"btnNext":"SEGUINTE",
+"btnAnswer":"RESPONDER",
+"path": "63",
+"color": "#9968A6",
+"name":"Cíber segurança",
+"id": 63,
+"options":{
+  "corrects":[
+      {"id":1, "text":"Crie senhas fortes", "value":true},
+      {"id":2, "text":"Atualizar software e sistemas operacionais", "value":true},
+      {"id":3, "text":"Gerenciar spam recebido por e-mail", "value":true},
+      {"id":4, "text":"Sempre navegue no mecanismo de pesquisa, não em links suspeitos.", "value":true},
+      {"id":5, "text":"Verifique se o site é seguro (https)", "value":true},
+      {"id":6, "text":"Instale um antivírus e mantenha as atualizações atualizadas", "value":true},
+      {"id":7, "text":"Altere as senhas regularmente", "value":true},
+      {"id":8, "text":"Instale software de desenvolvedores confiáveis", "value":true},
+      {"id":9, "text":"Não baixe arquivos de e-mails suspeitos", "value":true},
+      {"id":10, "text":"Não compartilhe senhas em chats e redes sociais", "value":true}
+     
+  ],
+  "falses":[
+      {"id":11, "text":"Use uma única senha para todas as contas", "value":false},
+      {"id":12, "text":"Crie senhas fáceis de lembrar", "value":false},
+      {"id":13, "text":"Insira links de qualquer anúncio", "value":false},
+      {"id":14, "text":"Navegue em qualquer site", "value":false},
+      {"id":15, "text":"Use versões antigas de software", "value":false},
+      {"id":16, "text":"Desative o antivírus para otimizar o desempenho", "value":false},
+      {"id":17, "text":"Não altere senhas", "value":false},
+      {"id":18, "text":"Compartilhamento de senhas em chats e redes sociais", "value":false},
+      {"id":19, "text":"Acesse links em e-mails de remetentes desconhecidos", "value":false},
+      {"id":20, "text":"Compartilhamento de fotos de cartão de crédito", "value":false}
+  ]
+}
+}

@@ -1,0 +1,66 @@
+{
+  "variations":[
+      {
+          "columns": {
+              "column": {
+                  "id": "column",
+                  "title": "Etapas de diseño de un algoritmo",
+                  "optionsIds": [
+                      "option-2",
+                      "option-1",
+                      "option-4",
+                      "option-3",
+                      "option-5"
+                  ]
+              }
+          },
+          "options": {
+              "option-1": {
+                  "id": "option-1",
+                  "key": "arriba",
+                  "text": "Definición del problema"
+              },
+              "option-2": {
+                  "id": "option-2",
+                  "key": "abajo",
+                  "text": "Análisis del problema"
+              },
+              "option-3": {
+                  "id": "option-3",
+                  "key": "derecha",
+                  "text": "Planteamiento de soluciones por etapas"
+              },
+              "option-4": {
+                  "id": "option-4",
+                  "key": "izquierda",
+                  "text": "Transformación del problema en un algoritmo"
+              },
+              "option-5": {
+                  "id": "option-5",
+                  "key": "izquierda",
+                  "text": "Ejecución del algoritmo"
+              }
+          },
+          "sequence":[
+              "option-1",
+              "option-2",
+              "option-3",
+              "option-4",
+              "option-5"
+          ]
+      }
+  ],
+  "initMessages":[
+      "Ordena los componentes de las arquitecturas de acuerdo a la prioridad.",
+      "Tienes 20 Segundos luego de presionar el botón de inicio."
+  ],
+  "threshold": {
+      "max": 4,
+      "min": 2,
+      "perfect": 5
+  },
+  "path": "15",
+  "color": "#9968A6",
+  "name": "Arquitecturas",
+  "id": 15
+}

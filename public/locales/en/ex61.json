@@ -1,0 +1,62 @@
+{
+  "options": [
+      {
+          "question":"Rights (2-3 correct per variation)",
+          "answers":[
+              {
+                  "text":"Right to life.",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Right to privacy online.",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Right to free development of personality.",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Right to communicate.",
+                  "isCorrect":true
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      },
+      {
+          "question":"Homework (2-3 correct per variation)",
+          "answers":[
+              {
+                  "text":"Respond to messages received on social networks.",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Share access to the home WI-FI network.",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Defend and promote privacy, surveillance and encryption.",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Seek and work to achieve internet access for everyone.",
+                  "isCorrect":true
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      }
+  ],
+  "initMessages":[
+      "Next, you will see a list of rights and duties.",
+      "Select those that favor the safety and benefit of the virtual world."
+  ],
+  "threshold": {
+      "max": 2,
+      "min": 1,
+      "perfect": 2
+  },
+  "color": "#9968A6",
+  "name": "Rights and duties",
+  "id": 61
+}

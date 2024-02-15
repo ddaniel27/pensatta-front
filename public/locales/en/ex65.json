@@ -1,0 +1,126 @@
+{
+  "isSingle": "false",
+  "columns": {
+      "column-1": {
+          "id": "column-1",
+          "title": "Blocks you can use",
+          "optionsIds": [
+              "option-1",
+              "option-2",
+              "option-3",
+              "option-4"
+          ],
+          "isDropDisabled":true,
+          "info":"Drag the blocks to build the algorithm."
+      },
+      "column-2": {
+          "id": "column-2",
+          "title": "When: press start button - blocks you can use",
+          "optionsIds": []
+      }
+  },
+  "variations": [
+    {
+      "img": 1,
+      "option-1": {
+          "id": "option-1",
+          "key": "Pinos",
+          "text": "Add pine trees",
+          "value": 1
+      },
+      "option-2": {
+          "id": "option-2",
+          "key": "Montanas",
+          "text": "Add mountain",
+          "value": 1
+      },
+      "option-3": {
+          "id": "option-3",
+          "key": "Cielo 1",
+          "text": "Sunset",
+          "value": 1
+      },
+      "option-4": {
+          "id": "option-4",
+          "key": "Cielo 2",
+          "text": "Evening",
+          "value": 1
+      }
+    },
+    {
+      "img": 2,
+      "option-1": {
+          "id": "option-1",
+          "key": "Pinos",
+          "text": "Add bat",
+          "value": 1
+      },
+      "option-2": {
+          "id": "option-2",
+          "key": "Montanas",
+          "text": "Add stars",
+          "value": 1
+      },
+      "option-3": {
+          "id": "option-3",
+          "key": "Cielo 1",
+          "text": "Sunny",
+          "value": 1
+      },
+      "option-4": {
+          "id": "option-4",
+          "key": "Cielo 2",
+          "text": "Clear night",
+          "value": 1
+      }
+    },
+    {
+      "img": 3,
+      "option-1": {
+          "id": "option-1",
+          "key": "Pinos",
+          "text": "Add birds",
+          "value": 1
+      },
+      "option-2": {
+          "id": "option-2",
+          "key": "Montanas",
+          "text": "Add flowers",
+          "value": 1
+      },
+      "option-3": {
+          "id": "option-3",
+          "key": "Cielo 1",
+          "text": "Sunny",
+          "value": 1
+      },
+      "option-4": {
+          "id": "option-4",
+          "key": "Cielo 2",
+          "text": "Evening",
+          "value": 1
+      }
+    }
+  ],
+  "correctSequence":[
+      "brillo",
+      "color",
+      "nuevo"
+  ],
+  "initMessages":[
+    "Help me edit the photo. I need it to look like the reference photo."	,
+    "Use the blocks to build an algorithm that edits the image by replicating the reference."	
+  ],
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 1
+  },
+  "btnAgain": "TRY AGAIN",
+  "btnStart": "START",
+  "btnEnd": "END",
+  "path": "65",
+  "color": "#9968A6",
+  "name": "Edit photo",
+  "id": "65"
+}

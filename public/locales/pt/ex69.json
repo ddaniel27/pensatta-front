@@ -1,0 +1,40 @@
+{
+  "options": [
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"Sistemas de busca",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Preparação de comida caseira",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Produção de alimentos em planta automatizada",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Criação de artes plásticas",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      }
+  ],
+  "initMessages":[
+      "As máquinas podem aprender e entender as coisas de uma forma muito semelhante à nossa, e assim realizar tarefas complexas facilitando nosso trabalho.",
+      "Essa é uma das definições mais precisas para inteligência artificial.",
+      "Selecione as tarefas que você considera que podem ser otimizadas com o uso de inteligência artificial."
+  ],
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 1
+  },
+  "color": "#9968A6",
+  "name": "Inteligência artificial",
+  "id": 69
+}

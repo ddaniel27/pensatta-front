@@ -1,0 +1,126 @@
+{
+  "isSingle": "false",
+  "columns": {
+      "column-1": {
+          "id": "column-1",
+          "title": "Blocos que você pode usar",
+          "optionsIds": [
+              "option-1",
+              "option-2",
+              "option-3",
+              "option-4"
+          ],
+          "isDropDisabled":true,
+          "info":"Arraste os blocos para construir o algoritmo."
+      },
+      "column-2": {
+          "id": "column-2",
+          "title": "Quando: pressione o botão Iniciar - blocos que você pode usar",
+          "optionsIds": []
+      }
+  },
+  "variations": [
+    {
+      "img": 1,
+      "option-1": {
+          "id": "option-1",
+          "key": "Pinos",
+          "text": "Adicionar pinheiros",
+          "value": 1
+      },
+      "option-2": {
+          "id": "option-2",
+          "key": "Montanas",
+          "text": "Adicionar montanha",
+          "value": 1
+      },
+      "option-3": {
+          "id": "option-3",
+          "key": "Cielo 1",
+          "text": "Pôr do sol",
+          "value": 1
+      },
+      "option-4": {
+          "id": "option-4",
+          "key": "Cielo 2",
+          "text": "Noite",
+          "value": 1
+      }
+    },
+    {
+      "img": 2,
+      "option-1": {
+          "id": "option-1",
+          "key": "Pinos",
+          "text": "Adicionar morcego",
+          "value": 1
+      },
+      "option-2": {
+          "id": "option-2",
+          "key": "Montanas",
+          "text": "Adicionar estrelas",
+          "value": 1
+      },
+      "option-3": {
+          "id": "option-3",
+          "key": "Cielo 1",
+          "text": "Ensolarado",
+          "value": 1
+      },
+      "option-4": {
+          "id": "option-4",
+          "key": "Cielo 2",
+          "text": "Noite clara",
+          "value": 1
+      }
+    },
+    {
+      "img": 3,
+      "option-1": {
+          "id": "option-1",
+          "key": "Pinos",
+          "text": "Adicionar pássaros",
+          "value": 1
+      },
+      "option-2": {
+          "id": "option-2",
+          "key": "Montanas",
+          "text": "Adicione flores",
+          "value": 1
+      },
+      "option-3": {
+          "id": "option-3",
+          "key": "Cielo 1",
+          "text": "Ensolarado",
+          "value": 1
+      },
+      "option-4": {
+          "id": "option-4",
+          "key": "Cielo 2",
+          "text": "Noite",
+          "value": 1
+      }
+    }
+  ],
+  "correctSequence":[
+      "brillo",
+      "color",
+      "nuevo"
+  ],
+  "initMessages":[
+      "Ajude-me a editar a foto. Preciso que ela se pareça com a foto de referência.",
+      "Use os blocos para construir um algoritmo que edita a imagem replicando a referência."
+  ],
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 1
+  },
+  "btnAgain": "REINTENTAR",
+  "btnStart": "INICIAR",
+  "btnEnd": "FIM",
+  "path": "65",
+  "color": "#9968A6",
+  "name": "Editar foto",
+  "id": "65"
+}

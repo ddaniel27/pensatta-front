@@ -1,0 +1,39 @@
+{
+  "options": [
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"Restriction of content by age on streaming platforms.",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Visual digital content creation.",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Privacy Restriction Regarding Personal Information.",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Control of sales of technological devices.",
+                  "isCorrect":true
+              }
+          ],
+          "multiple":true,
+          "maxOptions":3
+      }
+  ],
+  "initMessages":[
+      "Below you will see a list of regulations.",
+      "Select all the options that correspond to a technology regulation."
+  ],
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 1
+  },
+  "color": "#9968A6",
+  "name": "Technology regulations",
+  "id": 68
+}
