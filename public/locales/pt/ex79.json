@@ -1,0 +1,93 @@
+{
+    
+  "initMessages":[
+      "Hoje em dia, podemos usar nosso dispositivo móvel como uma ferramenta para multitarefa.",
+      "Embora a tecnologia facilite muitas tarefas para nós, é importante controlar seu uso.",
+      "Analise o gráfico do tempo de utilização de um dispositivo móvel numa semana e num dia e responda às questões que encontrará no final do exercício."
+  ],
+  "threshold": {
+      "max": 4,
+      "min": 0,
+      "perfect": 4
+  },
+  "path": "79",
+  "color": "#AE985E",
+  "name": "Leitura de gráficos",
+  "id": 79,
+  "options":{
+      "1": [
+          {
+              "question":"Qual das três categorias mostra as estatísticas de tempo de uso mais altas?",
+              "answers":[
+                  {
+                      "text":"Social",
+                      "isCorrect":true
+                  },
+                  {
+                      "text": "Entretenimento",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Serviços de utilidade pública",
+                      "isCorrect":false
+                  }
+              ],
+              "image":  "ex79.svg"
+          },
+          {
+              "question":"De acordo com o gráfico semanal, qual é o dia com maior tempo de uso?",
+              "answers":[
+                  {
+                      "text":"Segunda-feira",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Terça-feira",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Sábado",
+                      "isCorrect":true
+                  }
+              ],
+              "image":  "ex79.svg"
+          },
+          {
+              "question":"De acordo com o gráfico de tempo de uso, em um dia, qual o tempo máximo em que a tela foi observada?",
+              "answers":[
+                  {
+                      "text":"20",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "50",
+                      "isCorrect":true
+                  },
+                  {
+                      "text": "30",
+                      "isCorrect":false
+                  }
+              ],
+              "image":  "ex79.svg"
+          },
+          {
+              "question":"Qual foi o tempo médio de uso durante toda a semana?",
+              "answers":[
+                  {
+                      "text":"5 horas",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "3 horas e 44 minutos",
+                      "isCorrect":true
+                  },
+                  {
+                      "text": "8 horas e 16 minutos",
+                      "isCorrect":false
+                  }
+              ],
+              "image":  "ex79.svg"
+          }
+      ]
+  } 
+}

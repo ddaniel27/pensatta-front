@@ -1,0 +1,33 @@
+{
+  "variations": [
+    {
+      "input": {
+        "text":"8 y 9",
+        "isCorrect":[8, 9, 1],
+        "title": "Sumar los dos valores"
+      },
+      "operators":[
+        {"text":"Sumar", "isCorrect":1},
+        {"text":"Restar", "isCorrect":2},
+        {"text":"Multiplicar", "isCorrect":3},
+        {"text":"Dividir", "isCorrect":4}
+      ]
+    }
+  ],
+  "path":"71",
+  "initMessages":[
+      "Tendrás una caja negra con una entrada y una salida.",
+      "Puedes escoger valores de la lista de entradas y una función a realizar en la lista de funciones.",
+      "Practica un poco y observa la salida generada por la caja negra."
+  ],
+  "color":"#53745B",
+  "name":"Funciones",
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 1
+  },
+  "infoResult":"Prueba seleccionando un operador y un valor",
+  "btnNext": "SIGUIENTE",
+  "id": "71"
+}

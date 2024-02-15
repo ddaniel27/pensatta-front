@@ -1,0 +1,114 @@
+{
+  "options":[
+    {
+      "radio-1": [
+        {
+          "label": "Paneles solares",
+          "value": "1",
+          "groupValue": "radio-1"
+        },
+        {
+          "label": "Lámparas ahorradoras",
+          "value": "2",
+          "groupValue": "radio-1"
+        },
+        {
+          "label": "Calentador solar",
+          "value": "3",
+          "groupValue": "radio-1"
+        },
+        {
+          "label": "Recubrimientos reflectivos",
+          "value": "4",
+          "groupValue": "radio-1"
+        }
+      ],
+      "radio-2": [
+        {
+          "label": "Por medio de un sistema de recepción de aguas lluvias se puede aprovechar el agua al pasarla por un filtro para ser utilizada en el hogar.",
+          "value": "1",
+          "groupValue": "radio-2"
+        },
+        {
+          "label": "Transforman la energía del sol en electricidad.  Mediante un sistema de almacenamiento, pueden sustituir o servir de refuerzo a una conexión de energía eléctrica.",
+          "value": "2",
+          "groupValue": "radio-2"
+        },
+        {
+          "label": "Tecnología lumínica que reduce el consumo de energía eléctrica, puesto que es más eficiente que la tecnología lumínica incandescente.",
+          "value": "3",
+          "groupValue": "radio-2"
+        },
+        {
+          "label": "Se trata de un recipiente térmico que aprovecha la energía del sol para mantener su contenido caliente.",
+          "value": "4",
+          "groupValue": "radio-2"
+        }
+      ],
+      "correct": ["1", "2"],
+      "dnd": {
+        "columns": {
+          "column-2": {
+            "id": "column-2",
+            "title": "Cuando: presionar botón iniciar",
+            "optionsIds": [
+              "option-4",
+              "option-2",
+              "option-5",
+              "option-3",
+              "option-1"
+            ]
+          }
+        },
+        "options": {
+          "option-1": {
+            "id": "option-1",
+            "key": "preload",
+            "text": "Posicionar",
+            "value": 1
+          },
+          "option-2": {
+            "id": "option-2",
+            "key": "preload2",
+            "text": "Conexión",
+            "value": 2
+          },
+          "option-3": {
+            "id": "option-3",
+            "key": "preload3",
+            "text": "Activación",
+            "value": 3
+          },
+          "option-4": {
+            "id": "option-4",
+            "key": "preload4",
+            "text": "Almacenamiento",
+            "value": 4
+          },
+          "option-5": {
+            "id": "option-5",
+            "key": "preload5",
+            "text": "Uso de la energía",
+            "value": 5
+          }
+        }
+      }
+    }
+  ],
+  "initMessages":[
+    "Analiza el algoritmo. En él se ejecuta una tarea correspondiente a una ecotecnología." ,
+    "Tu misión es organizar los bloques del algoritmo y seleccionar las tarjetas del nombre de la ecotecnología y la descripción de la misma.",
+    "Recuerda que solo existe una pareja correcta y un orden correcto para los bloques asociado a ella"
+  ],
+  "threshold":{
+    "max" : 1,
+    "min" : 0,
+    "perfect": 1
+  },
+  "btnAnswer": "RESPONDER",
+  "btnNext": "SIGUIENTE",
+  "path": "70",
+  "color": "#53745B",
+  "name":"Ecotecnologías",
+  "id": 70
+}

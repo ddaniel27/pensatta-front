@@ -1,0 +1,29 @@
+{
+  "initMessages":[
+    "Abaixo você encontrará um algoritmo de movimento de personagem que possui alguns bugs.",
+    "Conserte o algoritmo e me guie para fora do labirinto."
+],
+"moves":{
+  "top": "Subir na vida",
+  "left": "Deslocação para a esquerda",
+  "right": "Mover para a direita",
+  "bottom": "Deslocação para baixo"
+},
+"options": [
+  { "value": "ArrowUp", "label": "Seta para cima" },
+  { "value": "ArrowDown", "label": "Seta para baixo" },
+  { "value": "ArrowLeft", "label": "Seta para a esquerda" },
+  { "value": "ArrowRight", "label": "Seta para a direita" }
+],
+"defaultLabel": "Atribuir uma seta",
+"threshold": {
+    "max": 4,
+    "min": 0,
+    "perfect": 4
+},
+"btnNext":"SEGUINTE",
+"path": "74",
+"color": "#53745B",
+"name": "Programar o labirinto",
+"id": 74
+}

@@ -4,6 +4,7 @@ import styles from '../../../styles/mazeProgComponent.module.css'
 import pistas from '../ex74/walls.json'
 import starts from '../ex74/starts.json'
 import MazeButton from './mazeButton'
+import { useTranslation } from 'react-i18next'
 
 const Carrito = ({ style }) => (<img src={carrito} alt='carrito' style={style} />)
 const Maze = ({ pista, colorLine }) => {
@@ -28,6 +29,7 @@ const Maze = ({ pista, colorLine }) => {
 }
 
 const MazeProgMoveComponent = ({ isFinish, setIsFinish, lab = 1, setPhase, setScore, score, colorLine, imagePath, algorithm = ['ArrowRight', 'ArrowLeft', 'ArrowDown', 'ArrowUp'] }) => {
+  const { t } = useTranslation('maze2Component')
   const carInitX = starts[`lab-${lab}`].startPosition.x
   const carInitY = starts[`lab-${lab}`].startPosition.y
   const maze2Styles = {
@@ -279,7 +281,7 @@ const MazeProgMoveComponent = ({ isFinish, setIsFinish, lab = 1, setPhase, setSc
               </div>
             </div>
             <div className={styles.infoText}>
-              Muévete oprimiendo estos botones o presionando las teclas de dirección de tu teclado.
+              {t('info-text')}
             </div>
 
           </div>

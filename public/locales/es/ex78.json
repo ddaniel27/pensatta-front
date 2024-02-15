@@ -1,0 +1,26 @@
+{
+  "options": {"1":{
+      "texto":["La seguridad en el teléfono móvil es vital para mantener la información personal a salvo, incluso los datos bancarios pueden ser robados al clonar el teléfono, es por ello que existen diferentes métodos para mantener el dispositivo a seguro: Uno de ellos consiste en establecer una ", "%INSERTTEXT%", " de bloqueo con diferentes caracteres y números que brinden protección contra accesos a la información no permitidos. Otra opción, gráfica y más fácil de recordar en comparación con el método anterior, es la de los ", "%INSERTTEXT%" , " la cual consiste en trazar una forma limitada en un espacio de 3 x 3 puntos. La evolución de la tecnología nos ha llevado a contar con métodos biométricos en la actualidad, como el ","%INSERTTEXT%", ", que al apoyar el o los dedos registrados desbloquea el equipo y mantiene a salvo la información contenida. El ",  "%INSERTTEXT%",", consiste en registrar una palabra o una frase que debe decirse ante el dispositivo para ser desbloqueado. Finalmente, el ", "%INSERTTEXT%", ", emplea la cámara del dispositivo y convierte al rostro del propietario en la llave para el desbloqueo."],
+      "opciones":[
+          {"value":1,"label":"contraseña"},
+          {"value":3,"label":"patrones de bloqueo"},
+          {"value":5,"label":"escáner de huella dactilar"},
+          {"value":7,"label":"reconocimiento de voz"},
+          {"value":9,"label":"reconocimiento facial"}
+      ]
+  }},
+  "initMessages":[
+      "La tecnología avanza a pasos gigantes. Los teléfonos móviles actuales cuentan con una amplia gama de aplicaciones y permiten un gran tráfico de información. ",
+      "Contar con tecnologías avanzadas para proteger los datos almacenados en estos dispositivos resulta indispensable en nuestros tiempos.",
+      "Selecciona la palabra correcta para completar el párrafo en cada espacio del texto que encontrarás a continuación."
+  ],
+  "path": "78",
+  "color": "#53745B",
+  "name": "Bloqueo Celulares",
+  "id": 78,
+  "threshold": {
+      "max": 5,
+      "min": 0,
+      "perfect": 5
+  }
+}

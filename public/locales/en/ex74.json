@@ -1,0 +1,29 @@
+{
+  "initMessages":[
+    "Below you will find a character movement algorithm that has certain bugs.",
+    "Fix the algorithm and guide me out of the maze."
+  ],
+"moves":{
+    "top": "Move up",
+    "left": "Move left",
+    "right": "Move right",
+    "bottom": "Move down"
+},
+"options": [
+  { "value": "ArrowUp", "label": "Up arrow" },
+  { "value": "ArrowDown", "label": "Down arrow" },
+  { "value": "ArrowLeft", "label": "Arrow to the left" },
+  { "value": "ArrowRight", "label": "Arrow to the right" }
+],
+"defaultLabel": "Assigns an arrow",
+"threshold": {
+    "max": 4,
+    "min": 0,
+    "perfect": 4
+},
+"btnNext":"NEXT",
+"path": "74",
+"color": "#53745B",
+"name": "Program the maze",
+"id": 74
+}

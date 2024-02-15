@@ -1,15 +1,23 @@
-import data from './data.json'
 import WindowsExplorer from '../components/windowsExplorer'
 import NoScoringComponent from '../components/noScoringComponent'
+import { useEffect, useState } from 'react'
+import useData from '../../../hooks/useData'
 
 export default function Ex76 () {
+  const { data } = useData('ex76')
+  const [myData, setMyData] = useState(data)
+
+  useEffect(() => {
+    setMyData(data)
+  }, [data])
+
   return (
-    <NoScoringComponent initMessages={data.initMessages} title={data.name} background={data.color}>
+    <NoScoringComponent initMessages={myData.initMessages} title={myData.name} background={myData.color}>
       {
         (setPhase) => (
           <>
-            <WindowsExplorer content={data.content}/>
-            <button onClick={() => setPhase('end')}>SIGUIENTE</button>
+            <WindowsExplorer content={myData.content}/>
+            <button onClick={() => setPhase('end')}>{myData.btnNext}</button>
           </>
         )
       }

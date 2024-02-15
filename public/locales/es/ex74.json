@@ -1,0 +1,29 @@
+{
+  "initMessages":[
+    "A continuación, encontrarás un algoritmo de movimiento de un personaje que tiene ciertos errores.",
+    "Arregla el algoritmo y guíame hasta salir del laberinto."
+],
+"moves":{
+  "top": "Moverse hacia arriba",
+  "left": "Moverse hacia la izquierda",
+  "right": "Moverse hacia la derecha",
+  "bottom": "Moverse hacia abajo"
+},
+"options": [
+  { "value": "ArrowUp", "label": "Flecha hacia arriba" },
+  { "value": "ArrowDown", "label": "Flecha hacia abajo" },
+  { "value": "ArrowLeft", "label": "Flecha hacia la izquierda" },
+  { "value": "ArrowRight", "label": "Flecha hacia la derecha" }
+],
+"defaultLabel": "Asigna una flecha",
+"threshold": {
+    "max": 4,
+    "min": 0,
+    "perfect": 4
+},
+"btnNext":"SIGUIENTE",
+"path": "74",
+"color": "#53745B",
+"name": "Programa el laberinto",
+"id": 74
+}

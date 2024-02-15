@@ -3,16 +3,22 @@ import MazeProgMoveComponent from '../components/zorritoMazeProgMove'
 import ScoringComponent from '../components/scoringComponent'
 import GenericSelector from '../../components/genericSelector'
 import styles from '../../../styles/ex74.module.css'
-import data from './data.json'
 import Timer from '../components/timer2'
+import useData from '../../../hooks/useData'
 
 export default function Ex74 () {
+  const { data } = useData('ex74')
   const [left, setLeft] = useState('')
   const [right, setRight] = useState('')
   const [up, setUp] = useState('')
   const [down, setDown] = useState('')
   const [scr, setScr] = useState(0)
   const [isFinish, setIsFinish] = useState(false)
+  const [myData, setMyData] = useState(data)
+
+  useEffect(() => {
+    setMyData(data)
+  }, [data])
 
   const onFinishTime = () => {
     setIsFinish(true)
@@ -27,40 +33,34 @@ export default function Ex74 () {
   }, [left, right, up, down])
 
   return (
-    <ScoringComponent initMessages={data.initMessages} title={data.name} background={data.color} exerciseId={data.id} threshold={data.threshold}>
+    <ScoringComponent initMessages={myData.initMessages} title={myData.name} background={myData.color} exerciseId={myData.id} threshold={myData.threshold}>
       {(setScore, setPhase) => (
         <div className={styles['all-game-container']}>
           <div className={styles['timer-container']}><Timer finishFunction={onFinishTime} startTime={30} stopTimer={isFinish}/></div>
           <div className={styles['whole-game']}>
             <div className={styles['dropdown-section']}>
-              <ChangeKey text='Moverse hacia arriba' setDirection={setUp} />
-              <ChangeKey text='Moverse hacia abajo' setDirection={setDown} />
-              <ChangeKey text='Moverse hacia la izquierda' setDirection={setLeft} />
-              <ChangeKey text='Moverse hacia la derecha' setDirection={setRight} />
+              <ChangeKey text={myData.moves.top} setDirection={setUp} data={myData} />
+              <ChangeKey text={myData.moves.bottom} setDirection={setDown} data={myData} />
+              <ChangeKey text={myData.moves.left} setDirection={setLeft} data={myData} />
+              <ChangeKey text={myData.moves.right} setDirection={setRight} data={myData} />
             </div>
             <MazeProgMoveComponent lab={10} algorithm={[right, left, down, up]} score={scr} setIsFinish={setIsFinish} isFinish={isFinish}/>
           </div>
           {isFinish && <button onClick={ () => {
             setScore(scr)
             setPhase('end')
-          }}>SIGUIENTE</button>}
+          }}>{myData.btnNext}</button>}
         </div>
       )}
     </ScoringComponent>
   )
 }
 
-function ChangeKey ({ text = 'Selecciona la tecla a cambiar', setDirection }) {
-  const options = [
-    { value: 'ArrowUp', label: 'Flecha hacia arriba' },
-    { value: 'ArrowDown', label: 'Flecha hacia abajo' },
-    { value: 'ArrowLeft', label: 'Flecha hacia la izquierda' },
-    { value: 'ArrowRight', label: 'Flecha hacia la derecha' }
-  ]
+function ChangeKey ({ text = 'Selecciona la tecla a cambiar', setDirection, data }) {
   return (
     <div className={styles['change-key']}>
       <span>{text}</span>
-      <GenericSelector defaultLabel='Asigna una flecha' options={options} setCurrentValue={setDirection} />
+      <GenericSelector defaultLabel={data.defaultLabel} options={data.options} setCurrentValue={setDirection} />
     </div>
   )
 }

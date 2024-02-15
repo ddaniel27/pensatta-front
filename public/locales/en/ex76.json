@@ -1,0 +1,123 @@
+{
+  "content": [{
+    "name": "Coexistence manual",
+    "type": "Archivo PDF",
+   "size": "14 KB",
+    "sizeNumber": 14000,
+    "date": "6-Oct-2022 12:00 p.m.",
+    "image": "pdf.svg"
+  },
+  {
+    "name": "Production costs",
+    "type": "Archivo Excel",
+   "size": "15 KB",
+    "sizeNumber": 15000,
+    "date": "12-Oct-2022 12:00 p.m.",
+    "image": "excel.svg"
+  },
+  {
+    "name": "Family photo",
+    "type": "Archivo JPG",
+   "size": "18 KB",
+    "sizeNumber": 18000,
+    "date": "15-Oct-2022 12:00 p.m.",
+    "image": "image.svg"
+  },
+  {
+    "name": "Video vacation",
+    "type": "Archivo MP4",
+   "size": "100 KB",
+    "sizeNumber": 100000,
+    "date": "31-Oct-2022 12:00 p.m.",
+    "image": "video.svg"
+  },
+  {
+    "name": "National anthem",
+    "type": "Archivo MP3",
+   "size": "150 KB",
+    "sizeNumber": 150000,
+    "date": "31-Oct-2022 12:00 p.m.",
+    "image": "mp3.svg"
+  },
+  {
+    "name": "Divine Comedy Essay",
+    "type": "Archivo Word",
+   "size": "100 KB",
+    "sizeNumber": 100000,
+    "date": "31-Oct-2022 12:00 p.m.",
+    "image": "word.svg"
+  },
+  {
+    "name": "Exhibition slides",
+    "type": "Archivo Power Point",
+   "size": "20 KB",
+    "sizeNumber": 20000,
+    "date": "30-Oct-2022 12:00 p.m.",
+    "image": "ppt.svg"
+  },
+  {
+    "name": "History book",
+    "type": "Archivo PDF",
+   "size": "15 KB",
+    "sizeNumber": 15000,
+    "date": "7-Oct-2022 12:00 p.m.",
+    "image": "pdf.svg"
+  },
+  {
+    "name": "Mate notes",
+    "type": "Archivo PDF",
+   "size": "19 KB",
+    "sizeNumber": 19000,
+    "date": "22-Oct-2022 12:00 p.m.",
+    "image": "pdf.svg"
+  },
+  {
+    "name": "Don Quixote essay",
+    "type": "Archivo PDF",
+   "size": "54 KB",
+    "sizeNumber": 54000,
+    "date": "9-Oct-2022 12:00 p.m.",
+    "image": "pdf.svg"
+  },
+  {
+    "name": "College Anthem",
+    "type": "Archivo MP3",
+   "size": "160 KB",
+    "sizeNumber": 160000,
+    "date": "24-Oct-2022 12:00 p.m.",
+    "image": "mp3.svg"
+  },
+  {
+    "name": "City Anthem",
+    "type": "Archivo MP3",
+   "size": "170 KB",
+    "sizeNumber": 170000,
+    "date": "30-Oct-2022 12:00 p.m.",
+    "image": "mp3.svg"
+  },
+  {
+    "name": "Department Anthem",
+    "type": "Archivo MP3",
+   "size": "150 KB",
+    "sizeNumber": 150000,
+    "date": "31-Oct-2022 12:00 p.m.",
+    "image": "mp3.svg"
+  },
+  {
+    "name": "Literature homework",
+    "type": "Archivo Word",
+   "size": "150 KB",
+    "sizeNumber": 150000,
+    "date": "31-Oct-2022 12:00 p.m.",
+    "image": "word.svg"
+  }],
+  "initMessages":[
+    "Next, you'll see a file browser simulation.",
+    "Interact with the buttons that you find enabled to explore the options that this tool offers you."
+
+  ],
+  "btnNext": "NEXT",
+  "name":"File Browser",
+  "id": 76,
+  "color":"#9968A6"
+}

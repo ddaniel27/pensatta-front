@@ -1,0 +1,114 @@
+{
+  "options":[
+    {
+      "radio-1": [
+        {
+          "label": "Painéis solares",
+          "value": "1",
+          "groupValue": "radio-1"
+        },
+        {
+          "label": "Lâmpadas economizadoras",
+          "value": "2",
+          "groupValue": "radio-1"
+        },
+        {
+          "label": "Aquecedor solar",
+          "value": "3",
+          "groupValue": "radio-1"
+        },
+        {
+          "label": "Revestimentos reflexivos",
+          "value": "4",
+          "groupValue": "radio-1"
+        }
+      ],
+      "radio-2": [
+        {
+          "label": "Através de um sistema de captação de água da chuva, a água pode ser aproveitada passando por um filtro para ser utilizada em casa.",
+          "value": "1",
+          "groupValue": "radio-2"
+        },
+        {
+          "label": "Eles transformam a energia do sol em eletricidade. Através de um sistema de armazenamento, eles podem substituir ou reforçar uma conexão de energia elétrica.",
+          "value": "2",
+          "groupValue": "radio-2"
+        },
+        {
+          "label": "Tecnologia de luz que reduz o consumo de energia elétrica, pois é mais eficiente que a tecnologia de luz incandescente.",
+          "value": "3",
+          "groupValue": "radio-2"
+        },
+        {
+          "label": "É um recipiente térmico que utiliza a energia do sol para manter seu conteúdo aquecido.",
+          "value": "4",
+          "groupValue": "radio-2"
+        }
+      ],
+      "correct": ["1", "2"],
+      "dnd": {
+        "columns": {
+          "column-2": {
+            "id": "column-2",
+            "title": "Quando: pressione o botão Iniciar - blocos que você pode usar",
+            "optionsIds": [
+              "option-4",
+              "option-2",
+              "option-5",
+              "option-3",
+              "option-1"
+            ]
+          }
+        },
+        "options": {
+          "option-1": {
+            "id": "option-1",
+            "key": "preload",
+            "text": "Posição",
+            "value": 1
+          },
+          "option-2": {
+            "id": "option-2",
+            "key": "preload2",
+            "text": "Conexão",
+            "value": 2
+          },
+          "option-3": {
+            "id": "option-3",
+            "key": "preload3",
+            "text": "Ativação",
+            "value": 3
+          },
+          "option-4": {
+            "id": "option-4",
+            "key": "preload4",
+            "text": "Armazenar",
+            "value": 4
+          },
+          "option-5": {
+            "id": "option-5",
+            "key": "preload5",
+            "text": "Uso de energia",
+            "value": 5
+          }
+        }
+      }
+    }
+  ],
+  "initMessages":[
+    "Analise o algoritmo. Nele, uma tarefa correspondente a uma ecotecnologia é executada.",
+    "Sua missão é organizar os blocos do algoritmo e selecionar as cartas com o nome da ecotecnologia e sua descrição.", 
+    "Lembre-se que existe apenas um par correto e uma ordem correta para os blocos a ela associados"
+  ],
+  "threshold":{
+    "max" : 1,
+    "min" : 0,
+    "perfect": 1
+  },
+  "btnAnswer": "RESPONDER",
+  "btnNext": "SEGUINTE",
+  "path": "70",
+  "color": "#53745B",
+  "name":"Ecotecnologia",
+  "id": 70
+}

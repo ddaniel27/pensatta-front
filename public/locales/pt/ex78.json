@@ -1,0 +1,32 @@
+{
+  "options": {"1":{
+      "texto":["segurança do celular é vital para manter as informações pessoais seguras, até dados bancários podem ser roubados ao clonar o telefone, por isso existem diferentes métodos para manter o dispositivo seguro: Um deles é estabelecer um bloqueio", 
+      "%INSERTTEXT%", 
+      " com diferentes caracteres e números que fornecem proteção contra acesso não autorizado às informações. Outra opção, gráfica e mais fácil de lembrar em relação ao método anterior, é o", 
+      "%INSERTTEXT%" , 
+      " que consiste em desenhar uma forma limitada em um espaço de 3 x 3 pontos. A evolução da tecnologia nos levou a ter hoje métodos biométricos, como o",
+      "%INSERTTEXT%", 
+      ",  que ao apoiar o dedo ou dedos cadastrados desbloqueia o equipamento e mantém as informações contidas seguras. O",  
+      "%INSERTTEXT%",", consiste em registrar uma palavra ou frase que deve ser dita antes do aparelho ser desbloqueado. Finalmente, ", 
+      "%INSERTTEXT%", ", usa a câmera do dispositivo e transforma o rosto do proprietário na chave de desbloqueio."],
+      "opciones":[
+          {"value":1,"label":"palavra-passe"},
+          {"value":3,"label":"padrões de bloqueio"},
+          {"value":5,"label":"leitor de impressões digitais"},
+          {"value":7,"label":"reconhecimento de voz"},
+          {"value":9,"label":"reconhecimento facial"}
+      ]
+  }},
+  "initMessages":[
+    "A tecnologia está avançando a passos largos. Os celulares de hoje possuem uma ampla gama de aplicações e permitem um grande tráfego de informações.", "Ter tecnologias avançadas para proteger os dados armazenados nesses dispositivos é essencial em nossos tempos.", "Selecione o correto palavra para completar o parágrafo em cada espaço do texto que você encontrará abaixo."
+  ],
+  "path": "78",
+  "color": "#53745B",
+  "name": "Bloqueio de celular",
+  "id": 78,
+  "threshold": {
+      "max": 5,
+      "min": 0,
+      "perfect": 5
+  }
+}

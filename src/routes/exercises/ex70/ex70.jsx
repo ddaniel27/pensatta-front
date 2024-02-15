@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react'
 import ScoringComponent from '../components/scoringComponent'
 import DndComponent from '../components/dndComponent'
-import data from './data.json'
 import '../../../styles/ex70.css'
+import useData from '../../../hooks/useData'
 
 const Ex70 = () => {
-  const [myData] = useState({
+  const { data } = useData('ex70')
+  const [myData, setMyData] = useState({
     ...data,
     options: data.options.sort(() => 0.5 - Math.random()).slice(0, data.threshold.perfect)[0]
   })
@@ -14,6 +15,13 @@ const Ex70 = () => {
   const [selectedSpan, setSelectedSpan] = useState([])
   const [response, setResponse] = useState(false)
   const [total, setTotal] = useState(true)
+
+  useEffect(() => {
+    setMyData({
+      ...data,
+      options: data.options.sort(() => 0.5 - Math.random()).slice(0, data.threshold.perfect)[0]
+    })
+  }, [data])
 
   useEffect(() => {
     const spanChecked = document.querySelectorAll('.ex70-radio input:checked + span')
@@ -67,8 +75,8 @@ const Ex70 = () => {
           <div className='ex70-dnd-container'>
             <DndComponent data={myData.options.dnd} block={response} />
           </div>
-          {!response && <button onClick={handleClick} disabled={selectedSpan.length < 2}>RESPONDER</button>}
-          {response && <button onClick={() => handleEnd(setScore, setPhase)}>SIGUIENTE</button>}
+          {!response && <button onClick={handleClick} disabled={selectedSpan.length < 2}>{myData.btnAnswer}</button>}
+          {response && <button onClick={() => handleEnd(setScore, setPhase)}>{myData.btnNext}</button>}
         </div>
       )}
     </ScoringComponent>

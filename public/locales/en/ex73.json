@@ -1,0 +1,185 @@
+{
+  "initMessages":[
+      "Next, you will see the interface of a software that you have probably used.",
+      "Selects the function that corresponds to the tools to be highlighted."
+  ],
+  "threshold": {
+      "max": 3,
+      "min": 0,
+      "perfect": 3
+  },
+  "path": "73",
+  "color": "#1B6893",
+  "name": "Office tools",
+  "id": 73,
+  "options":{
+      "1": [
+          {
+              "question":"Archive",
+              "answers":[
+                  {
+                      "text":"Allows the administration of the documents created",
+                      "isCorrect":true
+                  },
+                  {
+                      "text": "Allows you to choose the qualities of the selected text",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Allows you to draw on the document",
+                      "isCorrect":false
+                  }
+              ],
+              "image":  "wordArchivo.svg"
+          },
+          {
+              "question":"Start",
+              "answers":[
+                  {
+                      "text":"Allows the administration of documents created",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Allows you to choose the qualities of the selected text",
+                      "isCorrect":true
+                  },
+                  {
+                      "text": "Allows drawing on the document",
+                      "isCorrect":false
+                  }
+              ],
+              "image":  "wordInicio.svg"
+          },
+          {
+              "question":"Insert",
+              "answers":[
+                  {
+                      "text":"Allows the administration of documents created",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Allows you to choose the qualities of the selected text",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Allows drawing on the document",
+                      "isCorrect":true
+                  }
+              ],
+              "image":  "wordInsertar.svg"
+          }
+      ],
+      "2": [
+          {
+              "question":"Archive",
+              "answers":[
+                  {
+                      "text":"Allows the administration of documents created",
+                      "isCorrect":true
+                  },
+                  {
+                      "text": "Allows you to choose the qualities of the selected text",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Allows drawing on the document",
+                      "isCorrect":false
+                  }
+              ],
+              "image":  "excelArchivo.svg"
+          },
+          {
+              "question":"Start",
+              "answers":[
+                  {
+                      "text":"Allows the administration of documents created",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Allows you to choose the qualities of the selected text",
+                      "isCorrect":true
+                  },
+                  {
+                      "text": "Allows drawing on the document",
+                      "isCorrect":false
+                  }
+              ],
+              "image":  "excelInicio.svg"
+          },
+          {
+              "question":"Insert",
+              "answers":[
+                  {
+                      "text":"Allows the administration of documents created",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Allows you to choose the qualities of the selected text",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Allows drawing on the document",
+                      "isCorrect":true
+                  }
+              ],
+              "image":  "excelInsertar.svg"
+          }
+      ],
+      "3": [
+          {
+              "question":"Archive",
+              "answers":[
+                  {
+                      "text":"Allows the administration of documents created",
+                      "isCorrect":true
+                  },
+                  {
+                      "text": "Allows you to choose the qualities of the selected text",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Allows drawing on the document",
+                      "isCorrect":false
+                  }
+              ],
+              "image":  "pptArchivo.svg"
+          },
+          {
+              "question":"Start",
+              "answers":[
+                  {
+                      "text":"Allows the administration of documents created",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Allows you to choose the qualities of the selected text",
+                      "isCorrect":true
+                  },
+                  {
+                      "text": "Allows drawing on the document",
+                      "isCorrect":false
+                  }
+              ],
+              "image":  "pptInicio.svg"
+          },
+          {
+              "question":"Insert",
+              "answers":[
+                  {
+                      "text":"Allows the administration of documents created",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Allows you to choose the qualities of the selected text",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Allows drawing on the document",
+                      "isCorrect":true
+                  }
+              ],
+              "image":  "pptInsertar.svg"
+          }
+      ]
+  }
+}

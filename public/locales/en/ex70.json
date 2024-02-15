@@ -1,0 +1,112 @@
+{
+  "options":[
+    {
+      "radio-1": [
+        {
+          "label": "Solar panels",
+          "value": "1",
+          "groupValue": "radio-1"
+        },
+        {
+          "label": "Saving lamps",
+          "value": "2",
+          "groupValue": "radio-1"
+        },
+        {
+          "label": "Solar heater",
+          "value": "3",
+          "groupValue": "radio-1"
+        },
+        {
+          "label": "Reflective coatings",
+          "value": "4",
+          "groupValue": "radio-1"
+        }
+      ],
+      "radio-2": [
+        {
+          "label": "Through a rainwater reception system, the water can be used by passing it through a filter to be used at home.",
+          "value": "1",
+          "groupValue": "radio-2"
+        },
+        {
+          "label": "They transform the sun's energy into electricity. Through a storage system, they can replace or reinforce an electrical power connection.",
+          "value": "2",
+          "groupValue": "radio-2"
+        },
+        {
+          "label": "Light technology that reduces the consumption of electrical energy, since it is more efficient than incandescent light technology.",
+          "value": "3",
+          "groupValue": "radio-2"
+        },
+        {
+          "label": "It is a thermal container that uses the energy of the sun to keep its contents warm.",
+          "value": "4",
+          "groupValue": "radio-2"
+        }
+      ],
+      "correct": ["1", "2"],
+      "dnd": {
+        "columns": {
+          "column-2": {
+            "id": "column-2",
+            "title": "When: press start button - blocks you can use",
+            "optionsIds": [
+              "option-4",
+              "option-2",
+              "option-5",
+              "option-3",
+              "option-1"
+            ]
+          }
+        },
+        "options": {
+          "option-1": {
+            "id": "option-1",
+            "key": "preload",
+            "text": "Position",
+            "value": 1
+          },
+          "option-2": {
+            "id": "option-2",
+            "key": "preload2",
+            "text": "Connection",
+            "value": 2
+          },
+          "option-3": {
+            "id": "option-3",
+            "key": "preload3",
+            "text": "Activation",
+            "value": 3
+          },
+          "option-4": {
+            "id": "option-4",
+            "key": "preload4",
+            "text": "Storage",
+            "value": 4
+          },
+          "option-5": {
+            "id": "option-5",
+            "key": "preload5",
+            "text": "Energy use",
+            "value": 5
+          }
+        }
+      }
+    }
+  ],
+  "initMessages":[
+    "Analyze the algorithm. In it, a task corresponding to an eco-technology is executed.","Your mission is to organize the blocks of the algorithm and select the cards with the name of the eco-technology and its description.", "Remember that there is only one correct pair and one correct order for the blocks associated with it"
+  ],
+  "threshold":{
+    "max" : 1,
+    "min" : 0,
+    "perfect": 1
+  },
+  "btnAnswer": "ANSWER",
+  "btnNext": "NEXT",
+  "path": "70",
+  "color": "#53745B",
+  "name":"Ecotechnology",
+  "id": 70
+}

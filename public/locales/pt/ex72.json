@@ -1,0 +1,24 @@
+{
+  "options": {"1":{
+      "texto":["Existem vários programas que interagem com as entradas de informações. Por exemplo, as gravações de áudio sempre requerem um ambiente gráfico e visual com botões de início e pausa, mas muito mais importante, requerem entrada de áudio que será capturada por um ","%INSERTTEXT%", ". Existem também outras formas de inserir informações em um sistema de computador para serem processadas, o ", "%INSERTTEXT%", "permite-nos inserir informações em um processador de texto para fins de edição ou transcrição. Não podemos esquecer um dos periféricos mais importantes que nos permite interagir com o que vemos na tela, que é o ", "%INSERTTEXT%" , ". Existem outros periféricos adicionais que nos permitem interagir com um sistema de computador e realizar tarefas especiais, como digitalizar nossa imagem e enviá-la para se comunicar com outra pessoa, por exemplo, em um software de videochamada. Este componente periférico ao qual nos referimos é um ", "%INSERTTEXT%","."],
+      "opciones":[
+          {"value":1,"label":"Microfone"},
+          {"value":3,"label":"Teclado"},
+          {"value":5,"label":"Rato"},
+          {"value":7,"label":"Câmera"}
+      ]
+  }},
+  "initMessages":[
+      "Os periféricos são muito importantes para os sistemas de computador. Abaixo você encontrará um comunicado com informações mais detalhadas sobre os periféricos.",
+      "Selecione a palavra correta para completar o parágrafo em cada espaço."
+  ],
+  "path": "72",
+  "color": "#9968A6",
+  "name": "Periféricos",
+  "id": 72,
+  "threshold": {
+      "max": 4,
+      "min": 0,
+      "perfect": 4
+  }
+}

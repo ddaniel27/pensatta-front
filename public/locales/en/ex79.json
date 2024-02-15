@@ -1,0 +1,93 @@
+{
+    
+  "initMessages":[
+      "Nowadays, we can use our mobile device as a tool for multitasking.",
+      "Although technology makes many tasks easier for us, it is important to control its use.",
+      "Analyze the graph of the time of use of a mobile device in a week and in a day and answer the questions that you will find at the end of the exercise."
+  ],
+  "threshold": {
+      "max": 4,
+      "min": 0,
+      "perfect": 4
+  },
+  "path": "79",
+  "color": "#AE985E",
+  "name": "Chart Reading",
+  "id": 79,
+  "options":{
+      "1": [
+          {
+              "question":"Which of the three categories shows the highest usage time statistics?",
+              "answers":[
+                  {
+                      "text":"Social",
+                      "isCorrect":true
+                  },
+                  {
+                      "text": "Entertainment",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Utilities",
+                      "isCorrect":false
+                  }
+              ],
+              "image":  "ex79.svg"
+          },
+          {
+              "question":"According to the weekly graph, which is the day with the longest usage time?",
+              "answers":[
+                  {
+                      "text":"Monday",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Tuesday",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Saturday",
+                      "isCorrect":true
+                  }
+              ],
+              "image":  "ex79.svg"
+          },
+          {
+              "question":"According to the usage time graph, in one day, what is the maximum time in which the screen was observed?",
+              "answers":[
+                  {
+                      "text":"20",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "50",
+                      "isCorrect":true
+                  },
+                  {
+                      "text": "30",
+                      "isCorrect":false
+                  }
+              ],
+              "image":  "ex79.svg"
+          },
+          {
+              "question":"What was the average usage time for the entire week?",
+              "answers":[
+                  {
+                      "text":"5 hours",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "3 hours and 44 minutes",
+                      "isCorrect":true
+                  },
+                  {
+                      "text": "8 hours and 16 minutes",
+                      "isCorrect":false
+                  }
+              ],
+              "image":  "ex79.svg"
+          }
+      ]
+  } 
+}

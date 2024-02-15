@@ -1,9 +1,16 @@
 import ScoringComponent from '../components/scoringComponent'
-import data from './data.json'
 import TextSelectComponent from '../components/textSelectComponent'
+import { useEffect, useState } from 'react'
+import useData from '../../../hooks/useData'
 
 export default function Ex72 () {
-  const myData = data
+  const { data } = useData('ex72')
+  const [myData, setMyData] = useState(data)
+
+  useEffect(() => {
+    setMyData(data)
+  }
+  , [data])
 
   return (
     <ScoringComponent initMessages={myData.initMessages} background={myData.color} title={myData.name} threshold={myData.threshold} exerciseId={myData.id}>

@@ -1,0 +1,40 @@
+{
+  "options": [
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"News: The security of a bank was breached and 750 million dollars were stolen.",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Email: The school records system was temporarily disabled for maintenance",
+                  "isCorrect":false
+              },
+              {
+                  "text":"SMS: Congratulations, you have won a bonus of one million, enter your information in the following link",
+                  "isCorrect":true
+              },
+              {
+                  "text":"News: A failure in the servers caused the temporary downtime of Meta services for 4 hours worldwide.",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      }
+  ],
+  "initMessages":[
+      "In the digital world we can find many benefits in education, art, entertainment, etc.",
+      "But the risks online are increasing, hackers and malware make browsing a more responsible task.",
+      "Select risk cases online."
+  ],
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 1
+  },
+  "color": "#9968A6",
+  "name": "Technological risks",
+  "id": 77
+}

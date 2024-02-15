@@ -1,22 +1,35 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ActivityContext from '../../../context/ActivityContext'
 import UniqueOption from '../components/uniqueOption'
 import ScoringComponent from '../components/scoringComponent'
-import data from './data.json'
+import useData from '../../../hooks/useData'
 
 export default function Ex40 () {
+  const { data } = useData('ex71')
   const { setActivity, setTitle, setBackground } = React.useContext(ActivityContext)
   const [inputSel, setInputSel] = React.useState([])
   const [operatorSel, setOperatorSel] = React.useState(null)
   const [result, setResult] = React.useState(null)
-  const [myInputs] = React.useState(
+  const [myInputs, setMyInputs] = React.useState(
     data.variations
       .sort(() => 0.5 - Math.random())
       .slice(0, data.threshold.perfect)[0]
   )
-  const [myData] = React.useState({
+  const [myData, setMyData] = React.useState({
     ...data
   })
+
+  useEffect(() => {
+    setMyData({
+      ...data
+    })
+    setMyInputs(
+      data.variations
+        .sort(() => 0.5 - Math.random())
+        .slice(0, data.threshold.perfect)[0]
+    )
+    setResult(data.infoResult)
+  }, [data])
 
   React.useEffect(() => {
     setTitle(data.name)
@@ -32,7 +45,7 @@ export default function Ex40 () {
 
   const handleOperation = (input, operator) => {
     if (!operator || !input.length) {
-      return 'Prueba seleccionando un operador y un valor'
+      return myData.infoResult
     }
     if (operator === 1) {
       return typeof input[0] === 'number' ? input[0] + input[1] : 'Error'
@@ -70,7 +83,7 @@ export default function Ex40 () {
                 <div className='message'><p>{result}</p></div>
               </div>
             </div>
-            <button onClick={() => handleNext(setScore, setPhase)}>SIGUIENTE</button>
+            <button onClick={() => handleNext(setScore, setPhase)}>{myData.btnNext}</button>
           </>
         )
       }

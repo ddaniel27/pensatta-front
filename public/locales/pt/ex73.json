@@ -1,0 +1,186 @@
+{
+    
+  "initMessages":[
+      "Em seguida, você verá a interface de um software que você provavelmente já usou.",
+      "Seleciona a função que corresponde às ferramentas a serem destacadas."
+  ],
+  "threshold": {
+      "max": 3,
+      "min": 0,
+      "perfect": 3
+  },
+  "path": "73",
+  "color": "#1B6893",
+  "name": "Ferramentas de escritório",
+  "id": 73,
+  "options":{
+      "1": [
+          {
+              "question":"Arquivo",
+              "answers":[
+                  {
+                      "text":"Permite a administração dos documentos criados",
+                      "isCorrect":true
+                  },
+                  {
+                      "text": "Permite escolher as qualidades do texto selecionado",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Permite desenhar no documento",
+                      "isCorrect":false
+                  }
+              ],
+              "image":  "wordArchivo.svg"
+          },
+          {
+              "question":"Começar",
+              "answers":[
+                  {
+                      "text":"Permite a administração dos documentos criados",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Permite escolher as qualidades do texto selecionado",
+                      "isCorrect":true
+                  },
+                  {
+                      "text": "Permite desenhar no documento",
+                      "isCorrect":false
+                  }
+              ],
+              "image":  "wordInicio.svg"
+          },
+          {
+              "question":"Inserir",
+              "answers":[
+                  {
+                      "text":"Permite a administração dos documentos criados",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Permite escolher as qualidades do texto selecionado",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Permite desenhar no documento",
+                      "isCorrect":true
+                  }
+              ],
+              "image":  "wordInsertar.svg"
+          }
+      ],
+      "2": [
+          {
+              "question":"Arquivo",
+              "answers":[
+                  {
+                      "text":"Permite a administração dos documentos criados",
+                      "isCorrect":true
+                  },
+                  {
+                      "text": "Permite escolher as qualidades do texto selecionado",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Permite desenhar no documento",
+                      "isCorrect":false
+                  }
+              ],
+              "image":  "excelArchivo.svg"
+          },
+          {
+              "question":"Começar",
+              "answers":[
+                  {
+                      "text":"Permite a administração dos documentos criados",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Permite escolher as qualidades do texto selecionado",
+                      "isCorrect":true
+                  },
+                  {
+                      "text": "Permite desenhar no documento",
+                      "isCorrect":false
+                  }
+              ],
+              "image":  "excelInicio.svg"
+          },
+          {
+              "question":"Inserir",
+              "answers":[
+                  {
+                      "text":"Permite a administração dos documentos criados",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Permite escolher as qualidades do texto selecionado",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Permite desenhar no documento",
+                      "isCorrect":true
+                  }
+              ],
+              "image":  "excelInsertar.svg"
+          }
+      ],
+      "3": [
+          {
+              "question":"Arquivo",
+              "answers":[
+                  {
+                      "text":"Permite a administração dos documentos criados",
+                      "isCorrect":true
+                  },
+                  {
+                      "text": "Permite escolher as qualidades do texto selecionado",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Permite desenhar no documento",
+                      "isCorrect":false
+                  }
+              ],
+              "image":  "pptArchivo.svg"
+          },
+          {
+              "question":"Começar",
+              "answers":[
+                  {
+                      "text":"Permite a administração dos documentos criados",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Permite escolher as qualidades do texto selecionado",
+                      "isCorrect":true
+                  },
+                  {
+                      "text": "Permite desenhar no documento",
+                      "isCorrect":false
+                  }
+              ],
+              "image":  "pptInicio.svg"
+          },
+          {
+              "question":"Inserir",
+              "answers":[
+                  {
+                      "text":"Permite a administração dos documentos criados",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Permite escolher as qualidades do texto selecionado",
+                      "isCorrect":false
+                  },
+                  {
+                      "text": "Permite desenhar no documento",
+                      "isCorrect":true
+                  }
+              ],
+              "image":  "pptInsertar.svg"
+          }
+      ]
+  }
+}

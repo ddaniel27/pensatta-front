@@ -1,0 +1,24 @@
+{
+  "options": {"1":{
+      "texto":["There are various programs that interact with inputs. For example, audio recordings always require a graphical and visual environment with start and pause buttons, but much more importantly, they require audio input that will be captured by a ", "%INSERTTEXT%", ". There are also other ways to enter information into a computer system to be processed, the ", "%INSERTTEXT%", "allows us to enter information into a word processor for editing or transcription purposes. We cannot forget one of the most important peripherals which allows us to interact with what we see on the screen, that is the ", "%INSERTTEXT%" , ". There are other additional peripherals that allow us to interact with a computer system and perform special tasks such as digitizing our image and sending it to communicate with another person, for example, in video call software. This peripheral component we are referring to is a ", "%INSERTTEXT%","."],
+      "opciones":[
+          {"value":1,"label":"Microphone"},
+          {"value":3,"label":"Keyboard"},
+          {"value":5,"label":"Mouse"},
+          {"value":7,"label":"Camera"}
+      ]
+  }},
+  "initMessages":[
+      "Peripherals are very important to computer systems. Below you will find a statement with more detailed information about peripherals.",
+      "Select the correct word to complete the paragraph in each space."
+  ],
+  "path": "72",
+  "color": "#9968A6",
+  "name": "Peripherals",
+  "id": 72,
+  "threshold": {
+      "max": 4,
+      "min": 0,
+      "perfect": 4
+  }
+}

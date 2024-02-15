@@ -1,0 +1,61 @@
+{
+  "columns": {
+      "column": {
+          "id": "column",
+          "title": "Computer data capture",
+          "optionsIds": [
+              "option-2",
+              "option-1",
+              "option-5",
+              "option-4",
+              "option-3"
+          ]
+      }
+  },
+  "options": {
+      "option-1": {
+          "id": "option-1",
+          "key": "arriba",
+          "text": "User interaction with the computer"
+      },
+      "option-2": {
+          "id": "option-2",
+          "key": "abajo",
+          "text": "Peripheral input"
+      },
+      "option-3": {
+          "id": "option-3",
+          "key": "derecha",
+          "text": "Analog to digital conversion"
+      },
+      "option-4": {
+          "id": "option-4",
+          "key": "izquierda",
+          "text": "Information processing"
+      },
+      "option-5": {
+          "id": "option-5",
+          "key": "centro",
+          "text": "Return or feedback"
+      }
+  },
+  "sequence":[
+      "option-1",
+      "option-2",
+      "option-3",
+      "option-4",
+      "option-5"
+  ],
+  "initMessages":[
+    "Computers are very efficient machines, capable of processing large amounts of information.", "Order the steps of this process that you will see below.", "You have 30 seconds after pressing the start button."
+  ],
+  "threshold": {
+      "max": 3,
+      "min": 1,
+      "perfect": 5
+  },
+  "path": "75",
+  "color": "#9968A6",
+  "name": "Computational process",
+  "id": 75
+}

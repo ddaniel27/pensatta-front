@@ -1,0 +1,123 @@
+{
+  "content": [{
+    "name": "Manual de convivência",
+    "type": "Archivo PDF",
+   "size": "14 KB",
+    "sizeNumber": 14000,
+    "date": "6-Oct-2022 12:00 p.m.",
+    "image": "pdf.svg"
+  },
+  {
+    "name": "Custos de produção",
+    "type": "Archivo Excel",
+   "size": "15 KB",
+    "sizeNumber": 15000,
+    "date": "12-Oct-2022 12:00 p.m.",
+    "image": "excel.svg"
+  },
+  {
+    "name": "Foto de familia",
+    "type": "Archivo JPG",
+   "size": "18 KB",
+    "sizeNumber": 18000,
+    "date": "15-Oct-2022 12:00 p.m.",
+    "image": "image.svg"
+  },
+  {
+    "name": "Vídeo férias",
+    "type": "Archivo MP4",
+   "size": "100 KB",
+    "sizeNumber": 100000,
+    "date": "31-Oct-2022 12:00 p.m.",
+    "image": "video.svg"
+  },
+  {
+    "name": "Hino Nacional",
+    "type": "Archivo MP3",
+   "size": "150 KB",
+    "sizeNumber": 150000,
+    "date": "31-Oct-2022 12:00 p.m.",
+    "image": "mp3.svg"
+  },
+  {
+    "name": "Ensaio da Divina Comédia",
+    "type": "Archivo Word",
+   "size": "100 KB",
+    "sizeNumber": 100000,
+    "date": "31-Oct-2022 12:00 p.m.",
+    "image": "word.svg"
+  },
+  {
+    "name": "Slides de exposição",
+    "type": "Archivo Power Point",
+   "size": "20 KB",
+    "sizeNumber": 20000,
+    "date": "30-Oct-2022 12:00 p.m.",
+    "image": "ppt.svg"
+  },
+  {
+    "name": "Livro de história",
+    "type": "Archivo PDF",
+   "size": "15 KB",
+    "sizeNumber": 15000,
+    "date": "7-Oct-2022 12:00 p.m.",
+    "image": "pdf.svg"
+  },
+  {
+    "name": "notas de companheiro",
+    "type": "Archivo PDF",
+   "size": "19 KB",
+    "sizeNumber": 19000,
+    "date": "22-Oct-2022 12:00 p.m.",
+    "image": "pdf.svg"
+  },
+  {
+    "name": "Ensaio de dom quixote",
+    "type": "Archivo PDF",
+   "size": "54 KB",
+    "sizeNumber": 54000,
+    "date": "9-Oct-2022 12:00 p.m.",
+    "image": "pdf.svg"
+  },
+  {
+    "name": "Hino da faculdade",
+    "type": "Archivo MP3",
+   "size": "160 KB",
+    "sizeNumber": 160000,
+    "date": "24-Oct-2022 12:00 p.m.",
+    "image": "mp3.svg"
+  },
+  {
+    "name": "Hino da Cidade",
+    "type": "Archivo MP3",
+   "size": "170 KB",
+    "sizeNumber": 170000,
+    "date": "30-Oct-2022 12:00 p.m.",
+    "image": "mp3.svg"
+  },
+  {
+    "name": "Hino do Departamento",
+    "type": "Archivo MP3",
+   "size": "150 KB",
+    "sizeNumber": 150000,
+    "date": "31-Oct-2022 12:00 p.m.",
+    "image": "mp3.svg"
+  },
+  {
+    "name": "Lição de casa de literatura",
+    "type": "Archivo Word",
+   "size": "150 KB",
+    "sizeNumber": 150000,
+    "date": "31-Oct-2022 12:00 p.m.",
+    "image": "word.svg"
+  }],
+  "initMessages":[
+    "Em seguida, você verá uma simulação de navegador de arquivos.",
+    "Interaja com os botões que encontrar habilitados para explorar as opções que esta ferramenta oferece."
+
+  ],
+  "btnNext": "SEGUINTE",
+  "name":"Navegador de arquivos",
+  "id": 76,
+  "color":"#9968A6"
+}

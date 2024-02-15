@@ -1,0 +1,31 @@
+{
+  "variations": [
+    {
+      "input": {
+        "text":"8 y 9",
+        "isCorrect":[8, 9, 1],
+        "title": "Adicione os dois valores"
+      },
+      "operators":[
+        {"text":"Adicionar", "isCorrect":1},
+        {"text":"Subtrair", "isCorrect":2},
+        {"text":"Multiplicar", "isCorrect":3},
+        {"text":"Dividir", "isCorrect":4}
+      ]
+    }
+  ],
+  "path":"71",
+  "initMessages":[
+    "Você terá uma caixa preta com uma entrada e uma saída.", "Você pode escolher valores na lista de entradas e uma função para executar na lista de funções.", "Pratique um pouco e veja a saída gerada pelo caixa preta."
+  ],
+  "color":"#53745B",
+  "name":"Funções",
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 1
+  },
+  "infoResult": "Teste seleccionando um operador e um valor",
+  "btnNext": "SEGUINTE",
+  "id": "71"
+}

@@ -1,0 +1,24 @@
+{
+  "options": {"1":{
+      "texto":["Mobile phone security is vital to keep personal information safe, even bank details can be stolen when cloning the phone, which is why there are different methods to keep the device safe: One of them is to establish a ", "%INSERTTEXT%", " lock with different characters and numbers that provide protection against unauthorized access to information. Another option, graphic and easier to remember compared to the previous method, is the ", "%INSERTTEXT%" , "  which consists of drawing a limited shape in a space of 3 x 3 points. The evolution of technology has led us to have biometric methods today, such as the ","%INSERTTEXT%", ", which by supporting the registered finger or fingers unlocks the equipment and keeps the information contained safe. The ",  "%INSERTTEXT%",", consists of registering a word or a phrase that must be said before the device to be unlocked. Finally, ", "%INSERTTEXT%", ",  uses the device's camera and turns the owner's face into the unlocking key."],
+      "opciones":[
+          {"value":1,"label":"password"},
+          {"value":3,"label":"blocking patterns"},
+          {"value":5,"label":"fingerprint scanner"},
+          {"value":7,"label":"voice recognition"},
+          {"value":9,"label":"facial recognition"}
+      ]
+  }},
+  "initMessages":[
+    "Technology is advancing by leaps and bounds. Today's mobile phones have a wide range of applications and allow great information traffic. ", "Having advanced technologies to protect the data stored on these devices is essential in our times.", "Select the correct word to complete the paragraph in each space of the text that you will find below."
+  ],
+  "path": "78",
+  "color": "#53745B",
+  "name": "Cell blockings",
+  "id": 78,
+  "threshold": {
+      "max": 5,
+      "min": 0,
+      "perfect": 5
+  }
+}
