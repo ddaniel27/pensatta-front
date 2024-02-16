@@ -1,0 +1,31 @@
+{
+  "options": [
+      {
+          "question":"Whether a topic is a trend depends on its popularity",
+          "answers":[
+              {
+                  "text":"True",
+                  "isCorrect":true
+              },
+              {
+                  "text":"False",
+                  "isCorrect":false
+              }
+          ]
+      }
+  ],
+  "initMessages":[
+      "Social networks have generated new concepts such as “News” and “Trending”.",
+      "The first refers to the latest news, while the second refers to news or topics that have been trending recently.",
+      "Next, you will find content from the social network Twitter. Observe it and answer the question that you will find at the end of the exercise."
+  ],
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 1
+  },
+  "btnStart":"START",
+  "color": "#9968A6",
+  "name": "Social Media Ranking",
+  "id": 84
+}

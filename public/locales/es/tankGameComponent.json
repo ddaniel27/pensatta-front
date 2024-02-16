@@ -1,0 +1,18 @@
+{
+  "instructions1": {
+    "tempIncrease": "Aumentar la temperatura del tanque 1",
+    "tempDecrease": "Reducir la temperatura del tanque 1",
+    "increasePressure": "Aumentar la presión del tanque 1",
+    "decreasePressure": "Reducir la presión del tanque 1",
+    "fromOneToAnother": "Iniciar flujo de líquido (tanque 1 a 2)"
+  },
+  "instructions2": {
+    "tempIncrease": "Aumentar la temperatura del tanque 2",
+    "tempDecrease": "Reducir la temperatura del tanque 2",
+    "increasePressure": "Aumentar la presión del tanque 2",
+    "decreasePressure": "Reducir la presión del tanque 2",
+    "fromOneToAnother": "Iniciar flujo de líquido (tanque 2 a 1)"
+  },
+  "controlPanel": "Panel de control",
+  "btnNext": "SIGUIENTE"
+}

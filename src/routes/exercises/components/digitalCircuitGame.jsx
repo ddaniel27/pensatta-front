@@ -5,8 +5,10 @@ import nand from '/images/exercises/90/nand.svg'
 import nor from '/images/exercises/90/nor.svg'
 import { useState, useRef } from 'react'
 import styles from '../../../styles/digitalCircuit.module.css'
+import { useTranslation } from 'react-i18next'
 
 const DigitalCircuitGame = ({ setPhase, setScore, texts }) => {
+  const { t } = useTranslation('digitalCircuitGame')
   const randomChoice = (array, n) => {
     const randomIndexes = []
     while (randomIndexes.length < n) {
@@ -82,7 +84,7 @@ const DigitalCircuitGame = ({ setPhase, setScore, texts }) => {
             }
           </div>
           <div className={styles['output-container']}>
-            La salida es:
+            {t('output')}
             <div className={`${styles.output} ${answer && styles['output-selected']} ${answer && isFinish ? (response ? styles['output-correct'] : styles['output-wrong']) : ''}`} onClick={() => !isFinish && setAnswer(1)}>1</div>
             <div className={`${styles.output} ${answer === 0 && styles['output-selected']} ${answer === 0 && isFinish ? (response ? styles['output-correct'] : styles['output-wrong']) : ''}`} onClick={() => !isFinish && setAnswer(0)}>0</div>
           </div>
@@ -91,8 +93,8 @@ const DigitalCircuitGame = ({ setPhase, setScore, texts }) => {
           {texts[firstGates.current[1]]}
         </div>
       </div>
-      {!isFinish && response == null && <button onClick={handleResponse}>RESPONDER</button>}
-      {isFinish && <button onClick={handleFinish}>SIGUIENTE</button>}
+      {!isFinish && response == null && <button onClick={handleResponse}>{t('btnAnswer')}</button>}
+      {isFinish && <button onClick={handleFinish}>{t('btnNext')}</button>}
     </>
   )
 }

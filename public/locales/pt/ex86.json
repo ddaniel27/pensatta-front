@@ -1,0 +1,40 @@
+{
+  "options": [
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"É importante separar as seções no código para identificar facilmente as funções, condicionais ou declarações.",
+                  "isCorrect":true
+              },
+              {
+                  "text":"É útil se inspirar em um filme ou série enquanto escreve.",
+                  "isCorrect":false
+              },
+              {
+                  "text":"É melhor escrever códigos curtos e pontuais.",
+                  "isCorrect":true
+              },
+              {
+                  "text":"É bom usar nomes longos e compostos para variáveis.",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      }
+  ],
+  "initMessages":[
+      "Na programação de código, a maneira como escrevemos é muito importante.",
+      "Depende disso que a máquina possa entender e executar perfeitamente os pedidos.",
+      "Selecione boas práticas de programação na lista a seguir."
+  ],
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 1
+  },
+  "color": "#9968A6",
+  "name": "Boas práticas",
+  "id": 86
+}

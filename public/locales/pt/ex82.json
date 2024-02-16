@@ -1,0 +1,64 @@
+{
+  "text": "O termo nuvem virtual é utilizado para descrever uma rede mundial de servidores interligados, que funcionam como um ecossistema único que oferece a possibilidade de armazenar informações diretamente ou de realizar processos de armazenamento de dados de forma progressiva. A nuvem é um espaço virtual que proporciona portabilidade, pois o seu conteúdo pode ser acedido a partir de qualquer lugar e a qualquer momento. Existem várias aplicações que funcionam com esta tecnologia e prestam o seu serviço.",
+  "options": [
+      {
+          "question":"Selecione os aplicativos que funcionam ou fornecem o serviço de nuvem virtual",
+          "answers":[
+              {
+                  "text":"Icloud",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Instagram",
+                  "isCorrect":false
+              },
+              {
+                  "text":"One Drive",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Google Drive",
+                  "isCorrect":true
+              }
+          ],
+          "multiple":true,
+          "maxOptions":3
+      },
+      {
+          "question":"Selecione as características da nuvem virtual.",
+          "answers":[
+              {
+                  "text":"Permite armazenar informações online para acessá-las de qualquer dispositivo com conexão e permissões.",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Permite fazer e armazenar extensas gravações de áudio.",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Possui uma interface que mostra a previsão do tempo para diferentes cidades por 30 dias",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Dá lugar ao Cloud Computing, que consiste em rodar aplicações online sem utilizar o hardware do computador.",
+                  "isCorrect":true
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      }
+  ],
+  "initMessages":[
+      "Leia atentamente a declaração que você encontrará abaixo.",
+      "Em seguida, selecione a resposta correta para as perguntas." 
+  ],
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 2
+  },
+  "btnStart": "INICIAR",
+  "color": "#9968A6",
+  "name": "Nuvem virtual",
+  "id": 82
+}

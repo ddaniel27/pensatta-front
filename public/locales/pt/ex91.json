@@ -1,0 +1,7 @@
+{
+  "initMessages":["Abaixo, você encontrará oito computadores conectados a um servidor.",
+                  "Você deve atribuir um parceiro a cada computador para enviar um dos ícones que encontrará na parte inferior da tela.",
+                  "Arraste um desses ícones para o computador de sua escolha e ele o enviará através do servidor para seu par atribuído."],
+  "color":"#9968A6",
+  "name":"Redes de computadores"
+}

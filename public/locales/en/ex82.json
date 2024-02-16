@@ -1,0 +1,64 @@
+{
+  "text": "The term virtual cloud is used to describe a worldwide network of interconnected servers, which function as a single ecosystem that provides the possibility of storing information directly, or progressively perform data storage processes. The cloud is a virtual space that provides portability, since it is possible to access its content from anywhere and at any time. There are several applications that work with this technology and provide its service.",
+  "options": [
+      {
+          "question":"Select the applications that work or provide the virtual cloud service.",
+          "answers":[
+              {
+                  "text":"Icloud",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Instagram",
+                  "isCorrect":false
+              },
+              {
+                  "text":"One Drive",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Google Drive",
+                  "isCorrect":true
+              }
+          ],
+          "multiple":true,
+          "maxOptions":3
+      },
+      {
+          "question":"Select the characteristics of the virtual cloud",
+          "answers":[
+              {
+                  "text":"Allows you to store information online to access it from any device with connection and permissions",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Allows you to make and store extensive audio recordings",
+                  "isCorrect":false
+              },
+              {
+                  "text":"It has an interface that shows the weather forecast for different cities for 30 days",
+                  "isCorrect":false
+              },
+              {
+                  "text":"It gives way to Cloud Computing, which consists of running applications online without using the computer's hardware.",
+                  "isCorrect":true
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      }
+  ],
+  "initMessages":[
+      "Read carefully the statement that you will find below.",
+      "Then select the correct answer to the questions." 
+  ],
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 2
+  },
+  "btnStart": "START",
+  "color": "#9968A6",
+  "name": "Virtual cloud",
+  "id": 82
+}

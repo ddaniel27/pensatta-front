@@ -1,0 +1,7 @@
+{
+  "initMessages":["Below, you will find eight computers connected to a server.",
+                  "You must assign a partner to each computer to then send one of the icons that you will find at the bottom of your screen.",
+                  "Drag one of these icons to the computer of your choice and it will send it through the server to its assigned peer."],
+  "color":"#9968A6",
+  "name":"Computer networks."
+}

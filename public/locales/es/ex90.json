@@ -1,0 +1,21 @@
+{
+  "initMessages":[ " A continuación, encontrarás una combinación de compuertas.", "Selecciona la salida correcta."
+
+  ],
+  "name":"Circuito digital",
+  "id":90,
+  "color":  " #AE985E",
+  "threshold":  {
+    "max": 1,
+    "min": 0,
+    "perfect":1
+  },
+  "texts":{
+    "and": "AND: Esta compuerta resulta en 1 cuando sus dos entradas son 1.",
+    "or": "OR: Esta compuerta resulta en 1 cuando al menos una de sus entradas es 1.",
+    "xor": "XOR: Esta compuerta resulta en 1 cuando sus dos entradas son diferentes.",
+    "nand":"NAND: Esta compuerta resulta en 0 cuando sus dos entradas son 1.",
+    "nor":"NOR: Esta compuerta resulta en 0 cuando al menos una de sus entradas es 1."
+  }
+
+}

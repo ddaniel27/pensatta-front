@@ -1,0 +1,327 @@
+{"initMessages":[
+  "Abaixo, você encontrará um fluxograma correspondente a uma condicional." ,
+  "Clique em cada parte do diagrama, exceto nas ramificações, para ver seu código equivalente."
+],
+"threshold":{
+  "max" : 1,
+  "min" : 0,
+  "perfect": 1
+},
+"btnNext": "SEGUINTE",
+"path": "87",
+"color": "#1B6893",
+"name":"Olha o algoritmo",
+"id": 87,
+"options":{
+  "1":{
+      "column" : [
+          {"id": 1, "type":"begin", "text": "B = 4", "sentence":"assign"},
+          {"id": 2, "type":"empty", "text": "", "sentence":""},
+          {"id": 3, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 4, "type":"arrowDown", "text": ""},
+          {"id": 5, "type":"empty", "text": "", "sentence":""},
+          {"id": 6, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 7, "type":"condition", "text":"¿ B > 1 ?", "sentence":"if"},
+          {"id": 8, "type":"arrowLeftYes", "text": "", "sentence":""},
+          {"id": 9, "type":"instruction", "text":" B = B - 1 ", "sentence":"ifyes"},
+      
+          {"id": 10, "type":"arrowDownNo", "text": ""},
+          {"id": 11, "type":"empty", "text": "", "sentence":""},
+          {"id": 12, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 13, "type":"instruction", "text":" B = B + 1", "sentence":"ifelse"},
+          {"id": 14, "type":"empty", "text": "", "sentence":""},
+          {"id": 15, "type":"empty", "text":"", "sentence":""},
+      
+          {"id": 16, "type":"arrowDown", "text": "", "sentence":""},
+          {"id": 17, "type":"empty", "text": "", "sentence":""},
+          {"id": 18, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 19, "type":"end", "text": "FIN", "sentence":""},
+          {"id": 20, "type":"empty", "text": "", "sentence":""},
+          {"id": 21, "type":"empty", "text": "", "sentence":""}
+      ]
+  },
+  "2":{
+      "column" : [
+          {"id": 1, "type":"begin", "text": "B = 9", "sentence":"assign"},
+          {"id": 2, "type":"empty", "text": "", "sentence":""},
+          {"id": 3, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 4, "type":"arrowDown", "text": ""},
+          {"id": 5, "type":"empty", "text": "", "sentence":""},
+          {"id": 6, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 7, "type":"condition", "text":"¿ B < 10 ?", "sentence":"if"},
+          {"id": 8, "type":"arrowLeftYes", "text": "", "sentence":""},
+          {"id": 9, "type":"instruction", "text":" B = B - 11 ", "sentence":"ifyes"},
+      
+          {"id": 10, "type":"arrowDownNo", "text": ""},
+          {"id": 11, "type":"empty", "text": "", "sentence":""},
+          {"id": 12, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 13, "type":"instruction", "text":" B = B + 3", "sentence":"ifelse"},
+          {"id": 14, "type":"empty", "text": "", "sentence":""},
+          {"id": 15, "type":"empty", "text":"", "sentence":""},
+      
+          {"id": 16, "type":"arrowDown", "text": "", "sentence":""},
+          {"id": 17, "type":"empty", "text": "", "sentence":""},
+          {"id": 18, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 19, "type":"end", "text": "FIN", "sentence":""},
+          {"id": 20, "type":"empty", "text": "", "sentence":""},
+          {"id": 21, "type":"empty", "text": "", "sentence":""}
+      ]
+  },
+  "3":{
+      "column" : [
+          {"id": 1, "type":"begin", "text": "B = 22", "sentence":"assign"},
+          {"id": 2, "type":"empty", "text": "", "sentence":""},
+          {"id": 3, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 4, "type":"arrowDown", "text": ""},
+          {"id": 5, "type":"empty", "text": "", "sentence":""},
+          {"id": 6, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 7, "type":"condition", "text":"¿ B != 1 ?", "sentence":"if"},
+          {"id": 8, "type":"arrowLeftYes", "text": "", "sentence":""},
+          {"id": 9, "type":"instruction", "text":" B -= 1 ", "sentence":"ifyes"},
+      
+          {"id": 10, "type":"arrowDownNo", "text": ""},
+          {"id": 11, "type":"empty", "text": "", "sentence":""},
+          {"id": 12, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 13, "type":"instruction", "text":" B += 1", "sentence":"ifelse"},
+          {"id": 14, "type":"empty", "text": "", "sentence":""},
+          {"id": 15, "type":"empty", "text":"", "sentence":""},
+      
+          {"id": 16, "type":"arrowDown", "text": "", "sentence":""},
+          {"id": 17, "type":"empty", "text": "", "sentence":""},
+          {"id": 18, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 19, "type":"end", "text": "FIN", "sentence":""},
+          {"id": 20, "type":"empty", "text": "", "sentence":""},
+          {"id": 21, "type":"empty", "text": "", "sentence":""}
+      ]
+  },
+  "4":{
+      "column" : [
+          {"id": 1, "type":"begin", "text": "B = 10", "sentence":"assign"},
+          {"id": 2, "type":"empty", "text": "", "sentence":""},
+          {"id": 3, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 4, "type":"arrowDown", "text": ""},
+          {"id": 5, "type":"empty", "text": "", "sentence":""},
+          {"id": 6, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 7, "type":"condition", "text":"¿ B >= 22 ?", "sentence":"if"},
+          {"id": 8, "type":"arrowLeftYes", "text": "", "sentence":""},
+          {"id": 9, "type":"instruction", "text":" B ++ ", "sentence":"ifyes"},
+      
+          {"id": 10, "type":"arrowDownNo", "text": ""},
+          {"id": 11, "type":"empty", "text": "", "sentence":""},
+          {"id": 12, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 13, "type":"instruction", "text":" B --", "sentence":"ifelse"},
+          {"id": 14, "type":"empty", "text": "", "sentence":""},
+          {"id": 15, "type":"empty", "text":"", "sentence":""},
+      
+          {"id": 16, "type":"arrowDown", "text": "", "sentence":""},
+          {"id": 17, "type":"empty", "text": "", "sentence":""},
+          {"id": 18, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 19, "type":"end", "text": "FIN", "sentence":""},
+          {"id": 20, "type":"empty", "text": "", "sentence":""},
+          {"id": 21, "type":"empty", "text": "", "sentence":""}
+      ]
+  },
+  "5":{
+      "column" : [
+          {"id": 1, "type":"begin", "text": "B = 3", "sentence":"assign"},
+          {"id": 2, "type":"empty", "text": "", "sentence":""},
+          {"id": 3, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 4, "type":"arrowDown", "text": ""},
+          {"id": 5, "type":"empty", "text": "", "sentence":""},
+          {"id": 6, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 7, "type":"condition", "text":"¿ B == 1 ?", "sentence":"if"},
+          {"id": 8, "type":"arrowLeftYes", "text": "", "sentence":""},
+          {"id": 9, "type":"instruction", "text":" B = B - 0.1 ", "sentence":"ifyes"},
+      
+          {"id": 10, "type":"arrowDownNo", "text": ""},
+          {"id": 11, "type":"empty", "text": "", "sentence":""},
+          {"id": 12, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 13, "type":"instruction", "text":" B = B + 0.1", "sentence":"ifelse"},
+          {"id": 14, "type":"empty", "text": "", "sentence":""},
+          {"id": 15, "type":"empty", "text":"", "sentence":""},
+      
+          {"id": 16, "type":"arrowDown", "text": "", "sentence":""},
+          {"id": 17, "type":"empty", "text": "", "sentence":""},
+          {"id": 18, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 19, "type":"end", "text": "FIN", "sentence":""},
+          {"id": 20, "type":"empty", "text": "", "sentence":""},
+          {"id": 21, "type":"empty", "text": "", "sentence":""}
+      ]
+  },
+  "6":{
+      "column" : [
+          {"id": 1, "type":"begin", "text": "B = 4", "sentence":"assign"},
+          {"id": 2, "type":"empty", "text": "", "sentence":""},
+          {"id": 3, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 4, "type":"arrowDown", "text": ""},
+          {"id": 5, "type":"empty", "text": "", "sentence":""},
+          {"id": 6, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 7, "type":"condition", "text":"¿ B >= 1 ?", "sentence":"if"},
+          {"id": 8, "type":"arrowLeftYes", "text": "", "sentence":""},
+          {"id": 9, "type":"instruction", "text":" B = B +1 ", "sentence":"ifyes"},
+      
+          {"id": 10, "type":"arrowDownNo", "text": ""},
+          {"id": 11, "type":"empty", "text": "", "sentence":""},
+          {"id": 12, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 13, "type":"instruction", "text":" B = B - 1", "sentence":"ifelse"},
+          {"id": 14, "type":"empty", "text": "", "sentence":""},
+          {"id": 15, "type":"empty", "text":"", "sentence":""},
+      
+          {"id": 16, "type":"arrowDown", "text": "", "sentence":""},
+          {"id": 17, "type":"empty", "text": "", "sentence":""},
+          {"id": 18, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 19, "type":"end", "text": "FIN", "sentence":""},
+          {"id": 20, "type":"empty", "text": "", "sentence":""},
+          {"id": 21, "type":"empty", "text": "", "sentence":""}
+      ]
+  },
+  "7":{
+      "column" : [
+          {"id": 1, "type":"begin", "text": "B = false", "sentence":"assign"},
+          {"id": 2, "type":"empty", "text": "", "sentence":""},
+          {"id": 3, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 4, "type":"arrowDown", "text": ""},
+          {"id": 5, "type":"empty", "text": "", "sentence":""},
+          {"id": 6, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 7, "type":"condition", "text":"¿ B == false ?", "sentence":"if"},
+          {"id": 8, "type":"arrowLeftYes", "text": "", "sentence":""},
+          {"id": 9, "type":"instruction", "text":" B = true ", "sentence":"ifyes"},
+      
+          {"id": 10, "type":"arrowDownNo", "text": ""},
+          {"id": 11, "type":"empty", "text": "", "sentence":""},
+          {"id": 12, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 13, "type":"instruction", "text":" B = false", "sentence":"ifelse"},
+          {"id": 14, "type":"empty", "text": "", "sentence":""},
+          {"id": 15, "type":"empty", "text":"", "sentence":""},
+      
+          {"id": 16, "type":"arrowDown", "text": "", "sentence":""},
+          {"id": 17, "type":"empty", "text": "", "sentence":""},
+          {"id": 18, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 19, "type":"end", "text": "FIN", "sentence":""},
+          {"id": 20, "type":"empty", "text": "", "sentence":""},
+          {"id": 21, "type":"empty", "text": "", "sentence":""}
+      ]
+  },
+  "8":{
+      "column" : [
+          {"id": 1, "type":"begin", "text": "B = false", "sentence":"assign"},
+          {"id": 2, "type":"empty", "text": "", "sentence":""},
+          {"id": 3, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 4, "type":"arrowDown", "text": ""},
+          {"id": 5, "type":"empty", "text": "", "sentence":""},
+          {"id": 6, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 7, "type":"condition", "text":"¿ B > 0 ?", "sentence":"if"},
+          {"id": 8, "type":"arrowLeftYes", "text": "", "sentence":""},
+          {"id": 9, "type":"instruction", "text":" B = 0 ", "sentence":"ifyes"},
+      
+          {"id": 10, "type":"arrowDownNo", "text": ""},
+          {"id": 11, "type":"empty", "text": "", "sentence":""},
+          {"id": 12, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 13, "type":"instruction", "text":" B = 1", "sentence":"ifelse"},
+          {"id": 14, "type":"empty", "text": "", "sentence":""},
+          {"id": 15, "type":"empty", "text":"", "sentence":""},
+      
+          {"id": 16, "type":"arrowDown", "text": "", "sentence":""},
+          {"id": 17, "type":"empty", "text": "", "sentence":""},
+          {"id": 18, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 19, "type":"end", "text": "FIN", "sentence":""},
+          {"id": 20, "type":"empty", "text": "", "sentence":""},
+          {"id": 21, "type":"empty", "text": "", "sentence":""}
+      ]
+  },
+  "9":{
+      "column" : [
+          {"id": 1, "type":"begin", "text": "B = 12", "sentence":"assign"},
+          {"id": 2, "type":"empty", "text": "", "sentence":""},
+          {"id": 3, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 4, "type":"arrowDown", "text": ""},
+          {"id": 5, "type":"empty", "text": "", "sentence":""},
+          {"id": 6, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 7, "type":"condition", "text":"¿ B > 10 ?", "sentence":"if"},
+          {"id": 8, "type":"arrowLeftYes", "text": "", "sentence":""},
+          {"id": 9, "type":"instruction", "text":" B / 2 ", "sentence":"ifyes"},
+      
+          {"id": 10, "type":"arrowDownNo", "text": ""},
+          {"id": 11, "type":"empty", "text": "", "sentence":""},
+          {"id": 12, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 13, "type":"instruction", "text":" B * 2", "sentence":"ifelse"},
+          {"id": 14, "type":"empty", "text": "", "sentence":""},
+          {"id": 15, "type":"empty", "text":"", "sentence":""},
+      
+          {"id": 16, "type":"arrowDown", "text": "", "sentence":""},
+          {"id": 17, "type":"empty", "text": "", "sentence":""},
+          {"id": 18, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 19, "type":"end", "text": "FIN", "sentence":""},
+          {"id": 20, "type":"empty", "text": "", "sentence":""},
+          {"id": 21, "type":"empty", "text": "", "sentence":""}
+      ]
+  },
+  "10":{
+      "column" : [
+          {"id": 1, "type":"begin", "text": "B = 10", "sentence":"assign"},
+          {"id": 2, "type":"empty", "text": "", "sentence":""},
+          {"id": 3, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 4, "type":"arrowDown", "text": ""},
+          {"id": 5, "type":"empty", "text": "", "sentence":""},
+          {"id": 6, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 7, "type":"condition", "text":"¿ B > 11 ?", "sentence":"if"},
+          {"id": 8, "type":"arrowLeftYes", "text": "", "sentence":""},
+          {"id": 9, "type":"instruction", "text":" B = B == 11 ", "sentence":"ifyes"},
+      
+          {"id": 10, "type":"arrowDownNo", "text": ""},
+          {"id": 11, "type":"empty", "text": "", "sentence":""},
+          {"id": 12, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 13, "type":"instruction", "text":" B = B != 11", "sentence":"ifelse"},
+          {"id": 14, "type":"empty", "text": "", "sentence":""},
+          {"id": 15, "type":"empty", "text":"", "sentence":""},
+      
+          {"id": 16, "type":"arrowDown", "text": "", "sentence":""},
+          {"id": 17, "type":"empty", "text": "", "sentence":""},
+          {"id": 18, "type":"empty", "text": "", "sentence":""},
+      
+          {"id": 19, "type":"end", "text": "FIN", "sentence":""},
+          {"id": 20, "type":"empty", "text": "", "sentence":""},
+          {"id": 21, "type":"empty", "text": "", "sentence":""}
+      ]
+  }
+}
+}

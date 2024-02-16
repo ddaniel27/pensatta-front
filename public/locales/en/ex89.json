@@ -1,0 +1,149 @@
+{"initMessages":[
+  "Below you will find some code in which iterations are implemented." ,
+  "Pay attention to the description of the code, it will tell you what is expected of the code, and to the comments in the code.",
+  "Identifies syntax and design errors based on the description. Press the part of the code that you think has the error."
+],
+"threshold":{
+  "max" : 1,
+  "min" : 0,
+  "perfect": 1
+},
+"path": "89",
+"color": "#53745B",
+"name":"Find the bug",
+"id": 89,
+"codigos":{
+  "1":{
+      "problem":"The code should add 2 times the number 4 to variable A, and 4 times the number 3 to variable B",
+      "lines":
+          [
+              {"id":1, "type":"instruction", "text":"A = 6;", "comments":false, "error":false},
+              {"id":2, "type":"instruction", "text":"B = 9;", "comments":false, "error":false},
+              {"id":3, "type":"br"},
+              {"id":4, "type":"instruction", "text":"for(i=0,i<2,i++)", "comments":true, "comment":" // i increases by repeating the internal instruction.", "error":false},
+              {"id":5, "type": "inner", "text":[{"id":5.1,"type":"instruction","text":"A = A + 4;","comments":false, "error":false}]},
+              {"id":6, "type":"instruction", "text":"for(j=0,j<6,j++)", "comments":true, "comment":" // j increases by repeating the internal instruction.", "error":true},
+              {"id":7, "type": "inner", "text":[{"id":7.1, "type":"instruction","text":"B = B + 3;","comments":false, "error":false}]}
+          ]
+      },
+  "2":{
+      "problem":"The code should add 2 times the number 4 to variable A, and 4 times the number 3 to variable B",
+      "lines":
+          [
+              {"id":1, "type":"instruction", "text":"A = 6;", "comments":false, "error":false},
+              {"id":2, "type":"instruction", "text":"B = 9;", "comments":false, "error":false},
+              {"id":3, "type":"br"},
+              {"id":4, "type":"instruction", "text":"for(i=0, i<2, i++)", "comments":true, "comment":" // i increases by repeating the internal instruction.", "error":false},
+              {"id":5, "type": "inner", "text":[{"id":5.1,"type":"instruction","text":"A = A + 7;","comments":false, "error":true}] },
+              {"id":6, "type":"instruction", "text":"for(j=0, j<5, j++)", "comments":true, "comment":" // j increases by repeating the internal instruction.", "error":false},
+              {"id":7, "type": "inner", "text":[{"id":7.1, "type":"instruction","text":"B = B + 3;","comments":false, "error":false}]}
+          ]
+      },
+  "3":{
+      "problem":"The code should add 2 times the number 4 to variable A, and 4 times the number 3 to variable B",
+      "lines":
+          [
+              {"id":1, "type":"instruction", "text":"A = 6;", "comments":false, "error":false},
+              {"id":2, "type":"instruction", "text":"B = 9;", "comments":false, "error":false},
+              {"id":3, "type":"br"},
+              {"id":4, "type":"instruction", "text":"for(i=0, i<5, i++)", "comments":true, "comment":" // i increases by repeating the internal instruction.", "error":true},
+              {"id":5, "type": "inner", "text":[{"id":5.1,"type":"instruction","text":"A = A + 4;","comments":false, "error":false}] },
+              {"id":6, "type":"instruction", "text":"for(j=0, j<5, j++)", "comments":true, "comment":" // j increases by repeating the internal instruction.", "error":false},
+              {"id":7, "type": "inner", "text":[{"id":7.1, "type":"instruction","text":"B = B + 3;","comments":false, "error":false}]}
+          ]
+      },
+  "4":{
+      "problem":"The code should add the number 2 to the variable A if A is equal to 5; and 4 times the number 3 to the variable B",
+      "lines":
+          [
+              {"id":1, "type":"instruction", "text":"A = 6;", "comments":false, "error":false},
+              {"id":2, "type":"instruction", "text":"B = 9;", "comments":false, "error":false},
+              {"id":3, "type":"br"},
+              {"id":4, "type":"instruction", "text":"if(A == 2)", "comments":true, "comment":" // the code is executed if the statement is true.", "error":true},
+              {"id":5, "type": "inner", "text":[{"id":5.1,"type":"instruction","text":"A = A + 2;","comments":false, "error":false}] },
+              {"id":6, "type":"instruction", "text":"for(j=0, j<5, j++)", "comments":true, "comment":" // j increases by repeating the internal instruction.", "error":false},
+              {"id":7, "type": "inner", "text":[{"id":7.1, "type":"instruction","text":"B = B + 3;","comments":false, "error":false}]}
+          ]
+      },
+  "5":{
+      "problem":"The code should add the number 2 to the variable A if A is equal to 5; and 4 times the number 3 to the variable B",
+      "lines":
+          [
+              {"id":1, "type":"instruction", "text":"A = 6;", "comments":false, "error":false},
+              {"id":2, "type":"instruction", "text":"B = 9;", "comments":false, "error":false},
+              {"id":3, "type":"br"},
+              {"id":4, "type":"instruction", "text":"if(A == 5)", "comments":true, "comment":" // the code is executed if the statement is true.", "error":false},
+              {"id":5, "type": "inner", "text":[{"id":5.1,"type":"instruction","text":"A = A + 5;","comments":false, "error":true}] },
+              {"id":6, "type":"instruction", "text":"for(j=0, j<5, j++)", "comments":true, "comment":" // j increases by repeating the internal instruction.", "error":false},
+              {"id":7, "type": "inner", "text":[{"id":7.1, "type":"instruction","text":"B = B + 3;","comments":false, "error":false}]}
+          ]
+      },
+  "6":{
+      "problem":"The code should add 2 times the number 4 to the variable A; and add the number 7 to the variable B if B is equal to 7",
+      "lines":
+          [
+              {"id":1, "type":"instruction", "text":"A = 6;", "comments":false, "error":false},
+              {"id":2, "type":"instruction", "text":"B = 9;", "comments":false, "error":false},
+              {"id":3, "type":"br"},
+              {"id":4, "type":"instruction", "text":"for(i=0, i<2, i++)", "comments":true, "comment":" // i increases by repeating the internal instruction.", "error":false},
+              {"id":5, "type": "inner", "text":[{"id":5.1,"type":"instruction","text":"A = A + 4;","comments":false, "error":false}] },
+              {"id":6, "type":"instruction", "text":"if(B == 5)", "comments":true, "comment":" // the internal code is executed if the statement is true.", "error":true},
+              {"id":7, "type": "inner", "text":[{"id":7.1, "type":"instruction","text":"B = B + 7;","comments":false, "error":false}]}
+          ]
+      },
+  "7":{
+      "problem":"The code should add 2 times the number 4 to the variable A; and add the number 7 to the variable B if B is equal to 7",
+      "lines":
+          [
+              {"id":1, "type":"instruction", "text":"A = 6;", "comments":false, "error":false},
+              {"id":2, "type":"instruction", "text":"B = 9;", "comments":false, "error":false},
+              {"id":3, "type":"br"},
+              {"id":4, "type":"instruction", "text":"for(i=0, i<2, i++)", "comments":true, "comment":" // i increases by repeating the internal instruction.", "error":false},
+              {"id":5, "type": "inner", "text":[{"id":5.1,"type":"instruction","text":"A = A + 4;","comments":false, "error":false}] },
+              {"id":6, "type":"instruction", "text":"if(B == 7)", "comments":true, "comment":" // the internal code is executed if the statement is true.", "error":false},
+              {"id":7, "type": "inner", "text":[{"id":7.1, "type":"instruction","text":"B = B + 5;","comments":false, "error":true}]}
+          ]
+      },
+  "8":{
+      "problem":"The code should add 2 times the number 4 to the variable A; and add the number 9 to the variable B if B is different from 7",
+      "lines":
+          [
+              {"id":1, "type":"instruction", "text":"A = 6;", "comments":false, "error":false},
+              {"id":2, "type":"instruction", "text":"B = 9;", "comments":false, "error":false},
+              {"id":3, "type":"br"},
+              {"id":4, "type":"instruction", "text":"for(i=0, i<2, i++)", "comments":true, "comment":" // i increases by repeating the internal instruction.", "error":false},
+              {"id":5, "type": "inner", "text":[{"id":5.1,"type":"instruction","text":"A = A + 4;","comments":false, "error":false}] },
+              {"id":6, "type":"instruction", "text":"if(B != 8)", "comments":true, "comment":" // the internal code is executed if the statement is true.", "error":true},
+              {"id":7, "type": "inner", "text":[{"id":7.1, "type":"instruction","text":"B = B + 9;","comments":false, "error":false}]}
+          ]
+      },
+  "9":{
+      "problem":"The code should add 2 times the number 4 to the variable A; and add the number 9 to the variable B if B is different from 7",
+      "lines":
+          [
+              {"id":1, "type":"instruction", "text":"A = 6;", "comments":false, "error":false},
+              {"id":2, "type":"instruction", "text":"B = 9;", "comments":false, "error":false},
+              {"id":3, "type":"br"},
+              {"id":4, "type":"instruction", "text":"for(i=0, i<2, i++)", "comments":true, "comment":" // i increases by repeating the internal instruction.", "error":false},
+              {"id":5, "type": "inner", "text":[{"id":5.1,"type":"instruction","text":"A = A + 4;","comments":false, "error":false}] },
+              {"id":6, "type":"instruction", "text":"if(B != 7)", "comments":true, "comment":" // the internal code is executed if the statement is true.", "error":false},
+              {"id":7, "type": "inner", "text":[{"id":7.1, "type":"instruction","text":"B = B + 4;","comments":false, "error":true}] }
+          ]
+      },
+  "10":{
+      "problem":"The code should add 2 times the number 4 to the variable A; and add the number 9 to the variable B while B is less than 20",
+      "lines":
+          [
+              {"id":1, "type":"instruction", "text":"A = 6;", "comments":false, "error":false},
+              {"id":2, "type":"instruction", "text":"B = 9;", "comments":false, "error":false},
+              {"id":3, "type":"br"},
+              {"id":4, "type":"instruction", "text":"for(i=0, i<2, i++)", "comments":true, "comment":" // i increases by repeating the internal instruction.", "error":false},
+              {"id":5, "type": "inner", "text":[{"id":5.1,"type":"instruction","text":"A = A + 4;","comments":false, "error":false}] },
+              {"id":6, "type":"instruction", "text":"while(B < 20)", "comments":true, "comment":" // the internal code is executed as long as the statement is true.", "error":false},
+              {"id":7, "type": "inner", "text":[{"id":7.1, "type":"instruction","text":"B = B + 4;","comments":false, "error":true}]}
+          ]
+      }
+
+  
+}
+}

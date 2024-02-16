@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import styles from '../../../styles/tankGame.module.css'
+import { useTranslation } from 'react-i18next'
 
 const Tanks = () => {
   return (
@@ -64,6 +65,7 @@ const Fills = ({ oneSign = -1, twoSign = 1, triggerFill = false, oneColor = '#2F
 }
 
 const TankGameComponent = ({ setAct1, setAct2, setAct3, setAct4, setStage, setPhase, setScore, algorithm = [{ function: 'tempIncrease', tank: 1 }, { function: 'decreasePressure', tank: 1 }, { function: 'fromOneToAnother', tank: 1 }, { function: 'tempDecrease', tank: 2 }], corrects = [{ function: 'tempIncrease', tank: 1 }, { function: 'decreasePressure', tank: 1 }, { function: 'fromOneToAnother', tank: 2 }, { function: 'tempDecrease', tank: 2 }] }) => {
+  const { t } = useTranslation('tankGameComponent')
   const [oneSign, setOneSign] = useState(1)
   const [twoSign, setTwoSign] = useState(1)
   const [colorOne, setColorOne] = useState('#2F80ED')
@@ -74,18 +76,18 @@ const TankGameComponent = ({ setAct1, setAct2, setAct3, setAct4, setStage, setPh
 
   const texts = {
     1: {
-      tempIncrease: 'Aumentar la temperatura del tanque 1',
-      tempDecrease: 'Reducir la temperatura del tanque 1',
-      increasePressure: 'Aumentar la presión del tanque 1',
-      decreasePressure: 'Reducir la presión del tanque 1',
-      fromOneToAnother: 'Iniciar flujo del tanque 1 al tanque 2'
+      tempIncrease: t('instructions1.tempIncrease'),
+      tempDecrease: t('instructions1.tempDecrease'),
+      increasePressure: t('instructions1.increasePressure'),
+      decreasePressure: t('instructions1.decreasePressure'),
+      fromOneToAnother: t('instructions1.fromOneToAnother')
     },
     2: {
-      tempIncrease: 'Aumentar la temperatura del tanque 2',
-      tempDecrease: 'Reducir la temperatura del tanque 2',
-      increasePressure: 'Aumentar la presión del tanque 2',
-      decreasePressure: 'Reducir la presión del tanque 2',
-      fromOneToAnother: 'Iniciar flujo del tanque 2 al tanque 1'
+      tempIncrease: t('instructions2.tempIncrease'),
+      tempDecrease: t('instructions2.tempDecrease'),
+      increasePressure: t('instructions2.increasePressure'),
+      decreasePressure: t('instructions2.decreasePressure'),
+      fromOneToAnother: t('instructions2.fromOneToAnother')
     }
 
   }
@@ -204,7 +206,7 @@ const TankGameComponent = ({ setAct1, setAct2, setAct3, setAct4, setStage, setPh
           <Tanks />
         </div>
         <div className={styles['answers-container']}>
-        Panel de control
+          {t('controlPanel')}
           {
             algorithm.map((item, index) => {
               return (
@@ -218,7 +220,7 @@ const TankGameComponent = ({ setAct1, setAct2, setAct3, setAct4, setStage, setPh
           }
         </div>
       </div>
-      {isFinish && <button onClick={handleFinish}>SIGUIENTE</button>}
+      {isFinish && <button onClick={handleFinish}>{t('btnNext')}</button>}
     </>
 
   )

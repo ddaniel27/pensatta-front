@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import ScoringComponent from '../components/scoringComponent'
 import TankGameComponent from '../components/tankGameComponent'
 import GenericSelector from '../../components/genericSelector'
-import useData from "../../../hooks/useData"
+import useData from '../../../hooks/useData'
 import styles from '../../../styles/ex92.module.css'
 
 export default function Ex92 () {
@@ -14,7 +14,7 @@ export default function Ex92 () {
   const [act2, setAct2] = useState(null)
   const [act3, setAct3] = useState(null)
   const [act4, setAct4] = useState(null)
-  const { data } = useData("ex92")
+  const { data } = useData('ex92')
   const gameNum = useRef(Math.floor(Math.random() * 10))
 
   const [myData, setMyData] = useState({
@@ -72,7 +72,7 @@ export default function Ex92 () {
                   <div className={styles.texts}>
                     <p ref={pRef} />
                   </div>
-                  {conti && <button onClick={() => setStage(1)}>{t("next-button")}</button>}
+                  {conti && <button onClick={() => setStage(1)}>{myData['next-button']}</button>}
                 </div>
             }
             {stage === 1 &&
@@ -96,7 +96,7 @@ export default function Ex92 () {
 function ActionSelector ({ setAction }) {
   const [func, setFunc] = useState('')
   const [tank, setTank] = useState(0)
-  const { t } = useTranslation("ex92")
+  const { t } = useTranslation('ex92')
 
   useEffect(() => {
     if (func && tank && setAction) {
@@ -105,21 +105,21 @@ function ActionSelector ({ setAction }) {
   }, [func, tank])
 
   const functions = [
-    { value: 'tempIncrease', label: t("increase-temp") },
-    { value: 'tempDecrease', label: t("decrease-temp") },
-    { value: 'increasePressure', label: t("increase-pressure") },
-    { value: 'decreasePressure', label: t("decrease-pressure") },
-    { value: 'fromOneToAnother', label: t("from-one-to-another") }
+    { value: 'tempIncrease', label: t('increase-temp') },
+    { value: 'tempDecrease', label: t('decrease-temp') },
+    { value: 'increasePressure', label: t('increase-pressure') },
+    { value: 'decreasePressure', label: t('decrease-pressure') },
+    { value: 'fromOneToAnother', label: t('from-one-to-another') }
   ]
 
   const tanks = [
-    { value: 1, label: t("tank-1") },
-    { value: 2, label: t("tank-2") }
+    { value: 1, label: t('tank-1') },
+    { value: 2, label: t('tank-2') }
   ]
   return (
     <div className={styles['action-selector']}>
-      <GenericSelector setCurrentValue={setFunc} options={functions} defaultLabel={t("instructions")} />
-      <GenericSelector setCurrentValue={setTank} options={tanks} defaultLabel={t("tanks")} />
+      <GenericSelector setCurrentValue={setFunc} options={functions} defaultLabel={t('instructions')} />
+      <GenericSelector setCurrentValue={setTank} options={tanks} defaultLabel={t('tanks')} />
     </div>
   )
 }

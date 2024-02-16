@@ -1,0 +1,31 @@
+{
+  "options": [
+      {
+          "question":"Se um tópico é uma tendência depende de sua popularidade",
+          "answers":[
+              {
+                  "text":"Verdadeiro",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Falso",
+                  "isCorrect":false
+              }
+          ]
+      }
+  ],
+  "initMessages":[
+      "As redes sociais geraram novos conceitos como “News” e “Trending”.",
+      "O primeiro refere-se às últimas notícias, enquanto o segundo refere-se a notícias ou tópicos que estão em alta recentemente.",
+      "A seguir, você encontrará conteúdos da rede social Twitter. Observe-o e responda à pergunta que encontrará no final do exercício."
+  ],
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 1
+  },
+  "btnStart":"INICIAR",
+  "color": "#9968A6",
+  "name": "Classificação de mídia social",
+  "id": 84
+}

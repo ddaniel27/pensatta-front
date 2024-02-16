@@ -1,0 +1,21 @@
+{
+  "initMessages":[ " Em seguida, você encontrará uma combinação de portas.", "Selecione a saída correta."
+
+  ],
+  "name":"Circuito digital",
+  "id":90,
+  "color":  " #AE985E",
+  "threshold":  {
+    "max": 1,
+    "min": 0,
+    "perfect":1
+  },
+  "texts":{
+    "and": "AND: Esta porta resulta em 1 quando ambas as suas entradas são 1.",
+    "or": "OR: Esta porta resulta em 1 quando pelo menos uma de suas entradas é 1",
+    "xor": "XOR: Esta porta resulta em 1 quando suas duas entradas são diferentes.",
+    "nand":"NAND: Esta porta resulta em 0 quando suas duas entradas são 1.",
+    "nor":"NOR: Esta porta resulta em 0 quando pelo menos uma de suas entradas é 1"
+  }
+
+}

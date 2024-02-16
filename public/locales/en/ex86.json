@@ -1,0 +1,40 @@
+{
+  "options": [
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"It is important to separate the sections in the code to easily identify the functions, conditionals, or statements.",
+                  "isCorrect":true
+              },
+              {
+                  "text":"It is useful to be inspired by a movie or series while writing.",
+                  "isCorrect":false
+              },
+              {
+                  "text":"It is better to write short and punctual codes",
+                  "isCorrect":true
+              },
+              {
+                  "text":"It is good to use long and compound names for variables",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      }
+  ],
+  "initMessages":[
+      "In code programming, the way we write is very important.",
+      "It depends on this that the machine can perfectly understand and execute the orders.",
+      "Select good programming practices from the following list."
+  ],
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 1
+  },
+  "color": "#9968A6",
+  "name": "Good practices",
+  "id": 86
+}

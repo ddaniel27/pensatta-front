@@ -1,0 +1,21 @@
+{
+  "initMessages":[ " Next, you will find a combination of gates.", "Select the correct exit."
+
+  ],
+  "name":"Digital circuit",
+  "id":90,
+  "color":  " #AE985E",
+  "threshold":  {
+    "max": 1,
+    "min": 0,
+    "perfect":1
+  },
+  "texts":{
+    "and": "AND: This gate results in 1 when both its inputs are 1.",
+    "or": "OR: This gate results in 1 when at least one of its inputs is 1.",
+    "xor": "XOR: This gate results in 1 when its two inputs are different.",
+    "nand":"NAND: This gate results in 0 when its two inputs are 1.",
+    "nor":"NOR: This gate results in 0 when at least one of its inputs is 1."
+  }
+
+}

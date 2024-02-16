@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react'
 import ScoringComponent from '../components/scoringComponent'
-import useData from "../../../hooks/useData"
+import useData from '../../../hooks/useData'
 import TextSelectComponent from '../components/textSelectComponent'
 
 export default function Ex81 () {
-  const { data } = useData("ex81")
+  const { data } = useData('ex81')
   const [myData, setMyData] = useState({ ...data })
 
   useEffect(() => {

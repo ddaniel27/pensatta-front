@@ -1,0 +1,177 @@
+{"initMessages":[
+  "Below, you will find a flowchart corresponding to a conditional." ,
+  "Click each part of the diagram, except the branches, to see its code equivalent."
+],
+"threshold":{
+  "max" : 1,
+  "min" : 0,
+  "perfect": 1
+},
+"btnNext": "NEXT",
+"path": "87",
+"color": "#1B6893",
+"name":"Conditional Flowchart",
+"id": 87,
+"options":{
+  "1":{
+      "column" : [
+          {"id": 1, "type":"begin", "text": " P = 58 ", "sentence":"assign"},
+          {"id": 2, "type":"arrowDown", "text": ""},
+          {"id": 3, "type":"instruction", "text": " P = P + 2 ", "sentence":"assign"},
+          {"id": 4, "type":"arrowDown", "text": ""},
+          {"id": 5, "type":"instruction", "text": " P = P * 2 ", "sentence":"assign"},
+          {"id": 6, "type":"arrowDown", "text": ""},
+          {"id": 7, "type":"instruction", "text": " S = 4 ", "sentence":"assign"},
+          {"id": 8, "type":"arrowDown", "text": ""},
+          {"id": 9, "type":"instruction", "text": "P = S", "sentence":"assign"},
+          {"id": 10, "type":"arrowDown", "text": ""},
+          {"id": 11, "type":"end", "text": "FIN"}           
+          
+      ]
+  },
+  "2":{
+      "column" : [
+          {"id": 1, "type":"begin", "text": " P = true ", "sentence":"assign"},
+          {"id": 2, "type":"arrowDown", "text": ""},
+          {"id": 3, "type":"instruction", "text": " P = !P ", "sentence":"assign"},
+          {"id": 4, "type":"arrowDown", "text": ""},
+          {"id": 5, "type":"instruction", "text": " S = P ", "sentence":"assign"},
+          {"id": 6, "type":"arrowDown", "text": ""},
+          {"id": 7, "type":"instruction", "text": " S = false ", "sentence":"assign"},
+          {"id": 8, "type":"arrowDown", "text": ""},
+          {"id": 9, "type":"instruction", "text": "P = !S", "sentence":"assign"},
+          {"id": 10, "type":"arrowDown", "text": ""},
+          {"id": 11, "type":"end", "text": "FIN"}           
+          
+      ]
+  },
+  "3":{
+      "column" : [
+          {"id": 1, "type":"begin", "text": " P = 22 ", "sentence":"assign"},
+          {"id": 2, "type":"arrowDown", "text": ""},
+          {"id": 3, "type":"instruction", "text": " P ++ ", "sentence":"assign"},
+          {"id": 4, "type":"arrowDown", "text": ""},
+          {"id": 5, "type":"instruction", "text": " P = P * 2 ", "sentence":"assign"},
+          {"id": 6, "type":"arrowDown", "text": ""},
+          {"id": 7, "type":"instruction", "text": " S = 2 ", "sentence":"assign"},
+          {"id": 8, "type":"arrowDown", "text": ""},
+          {"id": 9, "type":"instruction", "text": "P = P + S", "sentence":"assign"},
+          {"id": 10, "type":"arrowDown", "text": ""},
+          {"id": 11, "type":"end", "text": "FIN"}           
+          
+      ]
+  },
+  "4":{
+      "column" : [
+          {"id": 1, "type":"begin", "text": " P = 38 ", "sentence":"assign"},
+          {"id": 2, "type":"arrowDown", "text": ""},
+          {"id": 3, "type":"instruction", "text": " P = P / 2 ", "sentence":"assign"},
+          {"id": 4, "type":"arrowDown", "text": ""},
+          {"id": 5, "type":"instruction", "text": " P = P * 5 ", "sentence":"assign"},
+          {"id": 6, "type":"arrowDown", "text": ""},
+          {"id": 7, "type":"instruction", "text": " S = 4 ", "sentence":"assign"},
+          {"id": 8, "type":"arrowDown", "text": ""},
+          {"id": 9, "type":"instruction", "text": "P = P - S", "sentence":"assign"},
+          {"id": 10, "type":"arrowDown", "text": ""},
+          {"id": 11, "type":"end", "text": "FIN"}           
+          
+      ]
+  },
+  "5":{
+      "column" : [
+          {"id": 1, "type":"begin", "text": " P = 10 ", "sentence":"assign"},
+          {"id": 2, "type":"arrowDown", "text": ""},
+          {"id": 3, "type":"instruction", "text": " P += 1 ", "sentence":"assign"},
+          {"id": 4, "type":"arrowDown", "text": ""},
+          {"id": 5, "type":"instruction", "text": " P = P * 2 ", "sentence":"assign"},
+          {"id": 6, "type":"arrowDown", "text": ""},
+          {"id": 7, "type":"instruction", "text": " S = 4 ", "sentence":"assign"},
+          {"id": 8, "type":"arrowDown", "text": ""},
+          {"id": 9, "type":"instruction", "text": "P = P / S", "sentence":"assign"},
+          {"id": 10, "type":"arrowDown", "text": ""},
+          {"id": 11, "type":"end", "text": "FIN"}           
+          
+      ]
+  },
+  "6":{
+      "column" : [
+          {"id": 1, "type":"begin", "text": " P = 2 ", "sentence":"assign"},
+          {"id": 2, "type":"arrowDown", "text": ""},
+          {"id": 3, "type":"instruction", "text": " P -= 2 ", "sentence":"assign"},
+          {"id": 4, "type":"arrowDown", "text": ""},
+          {"id": 5, "type":"instruction", "text": " P = P / 2 ", "sentence":"assign"},
+          {"id": 6, "type":"arrowDown", "text": ""},
+          {"id": 7, "type":"instruction", "text": " S = 10 ", "sentence":"assign"},
+          {"id": 8, "type":"arrowDown", "text": ""},
+          {"id": 9, "type":"instruction", "text": "P = S", "sentence":"assign"},
+          {"id": 10, "type":"arrowDown", "text": ""},
+          {"id": 11, "type":"end", "text": "FIN"}           
+          
+      ]
+  },
+  "7":{
+      "column" : [
+          {"id": 1, "type":"begin", "text": " P = 11 ", "sentence":"assign"},
+          {"id": 2, "type":"arrowDown", "text": ""},
+          {"id": 3, "type":"instruction", "text": " S = 11 ", "sentence":"assign"},
+          {"id": 4, "type":"arrowDown", "text": ""},
+          {"id": 5, "type":"instruction", "text": " R = P == S ", "sentence":"assign"},
+          {"id": 6, "type":"arrowDown", "text": ""},
+          {"id": 7, "type":"instruction", "text": " S = !R ", "sentence":"assign"},
+          {"id": 8, "type":"arrowDown", "text": ""},
+          {"id": 9, "type":"instruction", "text": "P = !S", "sentence":"assign"},
+          {"id": 10, "type":"arrowDown", "text": ""},
+          {"id": 11, "type":"end", "text": "FIN"}           
+          
+      ]
+  },
+  "8":{
+      "column" : [
+          {"id": 1, "type":"begin", "text": " P = 22 ", "sentence":"assign"},
+          {"id": 2, "type":"arrowDown", "text": ""},
+          {"id": 3, "type":"instruction", "text": " P = P + 22 ", "sentence":"assign"},
+          {"id": 4, "type":"arrowDown", "text": ""},
+          {"id": 5, "type":"instruction", "text": " R = P * 2 ", "sentence":"assign"},
+          {"id": 6, "type":"arrowDown", "text": ""},
+          {"id": 7, "type":"instruction", "text": " S = R + P ", "sentence":"assign"},
+          {"id": 8, "type":"arrowDown", "text": ""},
+          {"id": 9, "type":"instruction", "text": "P = R + S", "sentence":"assign"},
+          {"id": 10, "type":"arrowDown", "text": ""},
+          {"id": 11, "type":"end", "text": "FIN"}           
+          
+      ]
+  },
+  "9":{
+      "column" : [
+          {"id": 1, "type":"begin", "text": " P = 0 ", "sentence":"assign"},
+          {"id": 2, "type":"arrowDown", "text": ""},
+          {"id": 3, "type":"instruction", "text": " R = 1 ", "sentence":"assign"},
+          {"id": 4, "type":"arrowDown", "text": ""},
+          {"id": 5, "type":"instruction", "text": " S = P == R ", "sentence":"assign"},
+          {"id": 6, "type":"arrowDown", "text": ""},
+          {"id": 7, "type":"instruction", "text": " S = !S ", "sentence":"assign"},
+          {"id": 8, "type":"arrowDown", "text": ""},
+          {"id": 9, "type":"instruction", "text": "P = S", "sentence":"assign"},
+          {"id": 10, "type":"arrowDown", "text": ""},
+          {"id": 11, "type":"end", "text": "FIN"}           
+          
+      ]
+  },
+  "10":{
+      "column" : [
+          {"id": 1, "type":"begin", "text": " P = 0 ", "sentence":"assign"},
+          {"id": 2, "type":"arrowDown", "text": ""},
+          {"id": 3, "type":"instruction", "text": " P ++ ", "sentence":"assign"},
+          {"id": 4, "type":"arrowDown", "text": ""},
+          {"id": 5, "type":"instruction", "text": " R = P + 1 ", "sentence":"assign"},
+          {"id": 6, "type":"arrowDown", "text": ""},
+          {"id": 7, "type":"instruction", "text": " S = R + 1 ", "sentence":"assign"},
+          {"id": 8, "type":"arrowDown", "text": ""},
+          {"id": 9, "type":"instruction", "text": "P = S - R", "sentence":"assign"},
+          {"id": 10, "type":"arrowDown", "text": ""},
+          {"id": 11, "type":"end", "text": "FIN"}           
+          
+      ]
+  }
+}
+}

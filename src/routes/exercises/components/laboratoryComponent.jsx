@@ -44,7 +44,7 @@ const LaboratoryGame = ({ algorithm = ['green', 'blue', 'bowl', 'fire', 'mix'], 
   const [bowlFull, setBowlFull] = useState(false)
   const [answer, setAnswer] = useState([])
   const [isFinish, setIsFinish] = useState(false)
-  const { t } = useTranslation("laboratoryComponent")
+  const { t } = useTranslation('laboratoryComponent')
 
   const bottles = { yellow: '#EDCA71', blue: '#2F80ED', red: '#EB5757', green: '#27AE60', orange: '#F2994A', violet: '#B251E0' }
   const r = Math.round
@@ -172,9 +172,9 @@ const LaboratoryGame = ({ algorithm = ['green', 'blue', 'bowl', 'fire', 'mix'], 
             </div>
           </div>
           <div className={styles['game-buttons']}>
-            <div className={`${styles['game-button']} ${styles['game-button-bowl']}`} onClick={handleBowlClick}>{t("recipient")}</div>
-            <div className={`${styles['game-button']} ${styles['game-button-fire']}`} onClick={handleFireClick}>{t("turn-on")}</div>
-            <div className={`${styles['game-button']} ${styles['game-button-mix']}`} onClick={handleBowlFullClick}>{t("mix")}</div>
+            <div className={`${styles['game-button']} ${styles['game-button-bowl']}`} onClick={handleBowlClick}>{t('recipient')}</div>
+            <div className={`${styles['game-button']} ${styles['game-button-fire']}`} onClick={handleFireClick}>{t('turn-on')}</div>
+            <div className={`${styles['game-button']} ${styles['game-button-mix']}`} onClick={handleBowlFullClick}>{t('mix')}</div>
           </div>
 
         </div>

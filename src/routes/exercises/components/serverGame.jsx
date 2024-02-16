@@ -6,6 +6,7 @@ import Mouse from '/images/exercises/91/mouse.svg'
 import Car from '/images/exercises/91/car.svg'
 import Katty from '/images/exercises/91/katty.svg'
 import Roomba from '/images/exercises/91/roomba.svg'
+import { useTranslation } from 'react-i18next'
 
 const Selector = ({ options = [], handleChange = () => {}, defaultValue = { label: '-', value: 'empty' }, isFinish = false, idParent }) => {
   return (
@@ -78,6 +79,7 @@ const Computer = ({ color }) => {
 }
 
 export default function ServerGame ({ setPhase }) {
+  const { t } = useTranslation('serverGame')
   const [transmitters, setTransmitters] = useState({})
   const [receivers, setReceivers] = useState({})
   const [isFinish, setIsFinish] = useState(false)
@@ -136,7 +138,7 @@ export default function ServerGame ({ setPhase }) {
               }
             </div>
             <div className={styles['server-container']}>
-              <span>Servidor</span>
+              <span>{t('server')}</span>
             </div>
             <div className={styles['cables-container']}>
               {
@@ -201,8 +203,8 @@ export default function ServerGame ({ setPhase }) {
           </div>
         </DragDropContext>
       </div>
-      {!isFinish && <button onClick={() => setIsFinish(true)}>FINALIZAR</button>}
-      {isFinish && <button onClick={() => setPhase('end')}>SIGUIENTE</button>}
+      {!isFinish && <button onClick={() => setIsFinish(true)}>{t('btnEnd')}</button>}
+      {isFinish && <button onClick={() => setPhase('end')}>{t('btnNext')}</button>}
     </>
   )
 }
