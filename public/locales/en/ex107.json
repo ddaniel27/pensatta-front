@@ -1,0 +1,69 @@
+{
+  "options": [
+      {
+          "question":"512 MB is the sum of the memory requirements of all the applications you can keep running.",
+          "answers":[
+              {
+                  "text":"True",
+                  "isCorrect":true
+              },
+              {
+                  "text":"False",
+                  "isCorrect":false
+              }
+          ]
+      },
+      {
+          "question":"512 MB is enough if the applications in use require: 80MB, 110MB, 100MB, 10MB and 300MB respectively.",
+          "answers":[
+              {
+                  "text":"True",
+                  "isCorrect":true
+              },
+              {
+                  "text":"False",
+                  "isCorrect":false
+              }
+          ]
+      },
+      {
+          "question":"512 MB is a sufficient amount of memory if we want to keep running 10 applications that consume 51.2 MB each.",
+          "answers":[
+              {
+                  "text":"True",
+                  "isCorrect":false
+              },
+              {
+                  "text":"False",
+                  "isCorrect":true
+              }
+          ]
+      },
+      {
+          "question":"If we start a 100MB application, the memory can keep it open and have 415MB of free space.",
+          "answers":[
+              {
+                  "text":"True",
+                  "isCorrect":true
+              },
+              {
+                  "text":"False",
+                  "isCorrect":false
+              }
+          ]
+      }
+  ],
+  "initMessages":[
+      "Among the functions of RAM memory is being able to manage the opening and execution of applications in a fluid way.",
+      "RAM memory has a capacity in gigabytes that determines the number of applications it can keep running.",
+      "Determine if the statements below are true or false based on the capacity of your RAM memory."
+  ],
+  "threshold": {
+      "max": 2,
+      "min": 1,
+      "perfect": 3
+  },
+  "color": "#9968A6",
+  "name": "RAM",
+  "id": 107
+}

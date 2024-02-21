@@ -1,0 +1,80 @@
+{"initMessages":[
+  "In the digital world, records are important to acquire certain services, from an email to a social network or a learning platform." ,
+  "Being agile when making a registration is very useful in our day to day.",
+  "Respond to the form that you will find below. Remember that for security this data will not save this data."
+],
+"threshold":{
+  "max" : 1,
+  "min" : 0,
+  "perfect": 1
+},
+"btnEnd":"FINISH",
+"path": "105",
+"color": "#1B6893",
+"name":"Registration of forms",
+"id": 105,
+"inputs":[
+  [
+      {"id":1, "type":"text", "name":"nombre", "placeholder":"Name",  "tag":"input"},
+      {"id":2, "type":"date", "name":"birthday", "placeholder":"Birthdate", "tag":"input"},
+      {"id":3, "type":"email", "name":"email", "placeholder":"Email", "tag":"input"},
+      {"id":4, "type":"text", "name":"ciudad", "placeholder":"City of residence", "tag":"input"}
+  ],
+  [
+      {"id":1, "type":"text", "name":"nombre", "placeholder":"Name",  "tag":"input"},
+      {"id":2, "type":"number", "name":"edad", "placeholder":"Age", "tag":"input"},
+      {"id":3, "type":"text", "name":"ocupacion", "placeholder":"Occupation", "tag":"input"},
+      {"id":4, "type":"text", "name":"estCivil", "placeholder":"Civil status", "tag":"select","options":[{"value":1,"label":"Single"}, {"value":2, "label":"married"}, {"value":3,"label":"Free union"}]}
+  ]
+  ,
+  [
+      {"id":1, "type":"text", "name":"nombre", "placeholder":"Name",  "tag":"input"},
+      {"id":2, "type":"text", "name":"tipoId", "placeholder":"Type of document of identy", "tag":"select", "options":[{"value":1, "label":"Citizenship card"}, {"value":2, "label":"Identity card"}, {"value":3, "label":"Foreigner's certificate"}]},
+      {"id":3, "type":"number", "name":"identificacion", "placeholder":"ID number", "tag":"input"},
+      {"id":4, "type":"text", "name":"institucion", "placeholder":"Educational institution", "tag":"input"}
+  ],
+  [
+      {"id":1, "type":"text", "name":"nombre", "placeholder":"Name",  "tag":"input"},
+      {"id":2, "type":"email", "name":"email", "placeholder":"Email", "tag":"input"},
+      {"id":3, "type":"text", "name":"pais", "placeholder":"country of residence", "tag":"input"},
+      {"id":4, "type":"text", "name":"ciudad", "placeholder":"City of residence", "tag":"input"}
+  ],
+  [
+      {"id":1, "type":"email", "name":"email", "placeholder":"Email",  "tag":"input"},
+      {"id":2, "type":"text", "name":"institucion", "placeholder":"Educational institution", "tag":"input"},
+      {"id":3, "type":"number", "name":"grado", "placeholder":"Degree", "tag":"input"},
+      {"id":4, "type":"number", "name":"telefono", "placeholder":"Mobile phone number", "tag":"input"}
+  ],
+  [
+      {"id":1, "type":"email", "name":"email", "placeholder":"Email",  "tag":"input"},
+      {"id":2, "type":"text", "name":"institucion", "placeholder":"Educational institution", "tag":"input"},
+      {"id":3, "type":"text", "name":"carrera", "placeholder":"Career", "tag":"input"},
+      {"id":4, "type":"number", "name":"semestre", "placeholder":"Semester", "tag":"input"}
+  ],
+  [
+      {"id":1, "type":"email", "name":"email", "placeholder":"Email",  "tag":"input"},
+      {"id":2, "type":"text", "name":"ocupacion", "placeholder":"Occupation","tag":"input"},
+      {"id":3, "type":"text", "name":"pais", "placeholder":"country of residence", "tag":"input"},
+      {"id":4, "type":"text", "name":"ciudad", "placeholder":"City of residence", "tag":"input"}
+  ],
+  [
+      {"id":1, "type":"text", "name":"tipoId", "placeholder":"Type of document of identy",  "tag":"select", "options":[{"value":1, "label":"Citizenship card"}, {"value":2, "label":"Identity card"}, {"value":3, "label":"Foreigner's certificate"}]},
+      {"id":2, "type":"text", "name":"identificacion", "placeholder":"ID number","tag":"input"},
+      {"id":3, "type":"text", "name":"estCivil", "placeholder":"Civil status", "tag":"select","options":[{"value":1,"label":"Single"}, {"value":2, "label":"married"}, {"value":3,"label":"Free union"}]},
+      {"id":4, "type":"text", "name":"ocupacion", "placeholder":"Occupation", "tag":"input"}
+  ],
+  [
+      {"id":1, "type":"text", "name":"nombre", "placeholder":"Name",  "tag":"input"},
+      {"id":2, "type":"email", "name":"email", "placeholder":"Email","tag":"input"},
+      {"id":3, "type":"text", "name":"institucion", "placeholder":"Educational institution", "tag":"input"},
+      {"id":4, "type":"text", "name":"carrera", "placeholder":"Carrera", "tag":"input"}
+  ],
+  [
+      {"id":1, "type":"text", "name":"nombre", "placeholder":"Name",  "tag":"input"},
+      {"id":2, "type":"email", "name":"email", "placeholder":"Email","tag":"input"},
+      {"id":3, "type":"text", "name":"carrera", "placeholder":"Carrera", "tag":"input"},
+      {"id":4, "type":"number", "name":"semestre", "placeholder":"Semestre", "tag":"input"}
+  ]
+]
+
+}

@@ -1,0 +1,38 @@
+{
+  "options": {"1":{
+      "texto":["WiFi is one of the most widely used connectivity technologies today. Enabling this ",
+               "%INSERTTEXT%",
+               " option on our devices is a simple task, for which we must, first of all, verify that the equipment in question has a ",
+               "%INSERTTEXT%" , 
+               ", which is usually incorporated into computers, tablets, cell phones and even audio systems. Then, we must go to the ",
+                "%INSERTTEXT%",
+                " associated with the WiFi where we can manage the wireless ",
+                "%INSERTTEXT%",
+                ". Finally we must select the desired network, which will ask us to enter the required fields, such as ",
+                "%INSERTTEXT%",
+                " and to establish the connection to ",
+                "%INSERTTEXT%",
+              "."],
+      "opciones":[
+          {"value":1,"label":"connectivity"},
+          {"value":3,"label":"WiFi module"},
+          {"value":5,"label":"control panel"},
+          {"value":7,"label":"network connections"},
+          {"value":9,"label":"security key"},
+          {"value":11,"label":"internet"}
+      ]
+  }},
+  "initMessages":[
+      "Below, you will find a theoretical text on the use of WiFi connectivity.",
+      "Select the correct word to complete the paragraph in each space of the text."
+  ],
+  "path": "103",
+  "color": "#AE985E",
+  "name": "WiFi modules",
+  "id": 103,
+  "threshold": {
+      "max": 6,
+      "min": 0,
+      "perfect": 6
+  }
+}

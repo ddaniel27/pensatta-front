@@ -1,0 +1,40 @@
+{
+  "options": [
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"Há conteúdo violento, a violência pode se tornar um comportamento normalizado. O conteúdo com restrição de idade ajuda a mitigar a normalização.",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Todo o conteúdo deve ser restrito por idade.",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Há conteúdo que pode ir contra grupos populacionais. Restringir o conteúdo por idade ajuda a não perpetuar um ato imitativo de comportamento discriminatório.",
+                  "isCorrect":true
+              },
+              {
+                  "text":"O conteúdo deve ser supervisionado por adultos responsáveis.",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      }
+  ],
+  "initMessages":[
+      "Todos os dias consumimos conteúdos escritos ou multimédia, que muitas vezes podem conter cenas violentas ou impróprias para determinadas idades.",
+      "Existem conteúdos que podem ter um impacto negativo nas pessoas e no seu desenvolvimento, pelo que é importante regulamentar os conteúdos explícitos.",
+      "Abaixo, você encontrará uma lista de motivos para conceder restrições de conteúdo explícito. Selecione aqueles que você considera mais razoáveis e coerentes."
+  ],
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 1
+  },
+  "color": "#9968A6",
+  "name": "Restrição de conteúdo",
+  "id": 101
+}

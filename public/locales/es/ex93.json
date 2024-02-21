@@ -13,7 +13,7 @@
         "name":"Estados Unidos",
         "demonym":"estadounidense",
         "capital":"Washington D. C.",
-        "money": "Dólar estadounidense",
+        "money": "Dólar Estadounidense (USD)",
         "language":"Inglés",
         "domain":".us"
       },
@@ -21,7 +21,7 @@
         "name":"Canadá",
         "demonym":"canadiense",
         "capital":"Ottawa",
-        "money": "Dólar canadiense",
+        "money": "Dólar Canadiense (CAD)",
         "language":"Inglés, francés",
         "domain":".ca"
       },
@@ -29,7 +29,7 @@
         "name":"México",
         "demonym":"mexicano",
         "capital":"Ciudad de México",
-        "money": "Peso mexicano",
+        "money": "Peso mexicano (MXN)",
         "language":"Español",
         "domain":".mx"
       },
@@ -37,7 +37,7 @@
         "name":"Groenlandia",
         "demonym":"groenlandés",
         "capital":"Nuuk",
-        "money": "Corona danesa",
+        "money": "Corona Danesa (DDK)",
         "language":"Groenlandés",
         "domain":".gl"
       }
@@ -47,7 +47,7 @@
         "name":"Guatemala",
         "demonym":"guatemalteco",
         "capital":"Ciudad de Guatemala",
-        "money": "Quetzal",
+        "money": "Quetzal (GTQ)",
         "language":"Español",
         "domain":".gt"
       },
@@ -55,15 +55,15 @@
         "name":"Belice",
         "demonym":"beliceño",
         "capital":"Belmopán",
-        "money": "Dólar beliceño",
-        "language":"Inglés",
+        "money": "Dólar Beliceño (BZD)",
+        "language":"Inglés y español",
         "domain":".bz"
       },
       "honduras":{
         "name":"Honduras",
         "demonym":"hondureño",
-        "capital":"Tegucigalpa",
-        "money": "Lempira",
+        "capital":"Tegucigalpa y Comayagüela",
+        "money": "Lempira (HNL)",
         "language":"Español",
         "domain":".hn"
       },
@@ -71,7 +71,7 @@
         "name":"El Salvador",
         "demonym":"salvadoreño",
         "capital":"San Salvador",
-        "money": "Dólar estadounidense",
+        "money": "Dólar Estadounidense (USD)",
         "language":"Español",
         "domain":".sv"
       },
@@ -79,7 +79,7 @@
         "name":"Nicaragua",
         "demonym":"nicaragüense",
         "capital":"Managua",
-        "money": "Córdoba",
+        "money": "Córdoba (NIO)",
         "language":"Español",
         "domain":".ni"
       },
@@ -87,7 +87,7 @@
         "name":"Costa Rica",
         "demonym":"costarricense",
         "capital":"San José",
-        "money": "Colón",
+        "money": "Colón Costarricense (CRC)",
         "language":"Español",
         "domain":".cr"
       },
@@ -95,7 +95,7 @@
         "name":"Panamá",
         "demonym":"panameño",
         "capital":"Panamá",
-        "money": "Balboa",
+        "money": "Balboa (PAB) y Dólar Estadounidense (USD)",
         "language":"Español",
         "domain":".pa"
       },
@@ -154,7 +154,7 @@
           "name":"Ecuador",
           "demonym":"ecuatoriano",
           "capital":"Quito",
-          "money": "Dólar estadounidense",
+          "money": "Dólar Estadounidense (USD)",
           "language":"Español",
           "domain":".ec"
         },
@@ -268,7 +268,7 @@
           "name":"Dinamarca",
           "demonym":"danés",
           "capital":"Copenhague",
-          "money": "Corona danesa",
+          "money": "Corona Danesa (DDK)",
           "language":"Danés",
           "domain":".dk"
         },
@@ -890,7 +890,7 @@
                 "republicadelcongo":{
                   "name":"República del Congo",
                   "demonym":"congoleño",
-                  "capital":"Brazzaville",
+                  "capital":"Kinshasa",
                   "money": "Franco CFA",
                   "language":"Francés",
                   "domain":".cg"

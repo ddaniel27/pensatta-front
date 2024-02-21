@@ -1,0 +1,38 @@
+{
+    
+  "initMessages":[
+      "A seguir, você encontrará uma série de tecnologias.",
+      "Determine se são tecnologias antigas ou se são tecnologias atuais movendo a barra para a esquerda ou para a direita."
+  ],
+  "threshold": {
+      "max": 4,
+      "min": 0,
+      "perfect": 4
+  },
+  "path": "100",
+  "color": "#9968A6",
+  "name": "Tecnologias",
+  "id": 100,
+  "options":[
+      {"id":1,"text":"comprimidos" ,"value":"Atual"},
+      {"id":2,"text":"Telégrafo" ,"value":"Ancestral"},
+      {"id":3,"text":"Lápis optico" ,"value":"Atual"},
+      {"id":4,"text":"câmera com rolo" ,"value":"Ancestral"},
+      {"id":5,"text":"Smartphone" ,"value":"Atual"},
+      {"id":6,"text":"conectividade 3G" ,"value":"Ancestral"},
+      {"id":7,"text":"conectividade 5G" ,"value":"Atual"},
+      {"id":8,"text":"Disquete" ,"value":"Ancestral"},
+      {"id":9,"text":"Wi-fi" ,"value":"Atual"},
+      {"id":10,"text":"VHS" ,"value":"Ancestral"},
+      {"id":11,"text":"Inteligência artificial" ,"value":"Atual"},
+      {"id":12,"text":"Maquina de escrever" ,"value":"Ancestral"},
+      {"id":13,"text":"Drone" ,"value":"Atual"},
+      {"id":14,"text":"Cabine de telefone" ,"value":"Ancestral"},
+      {"id":15,"text":"nanotecnologia" ,"value":"Atual"},
+      {"id":16,"text":"Bipe" ,"value":"Ancestral"},
+      {"id":17,"text":"impressão 3D" ,"value":"Atual"},
+      {"id":18,"text":"Cassete" ,"value":"Ancestral"},
+      {"id":19,"text":"Câmera digital" ,"value":"Atual"},
+      {"id":20,"text":"rádio" ,"value":"Ancestral"}
+  ]
+}

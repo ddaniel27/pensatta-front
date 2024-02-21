@@ -1,0 +1,38 @@
+{
+  "options": {"1":{
+      "texto":["Bluetooth technology is a ",
+               "%INSERTTEXT%", 
+               "wireless technology that allows data to be exchanged between ",
+               "%INSERTTEXT%",
+               ", devices, such as an audio system and a telephone. It works in a range of approximately 10 meters. The usual thing is to establish a ",
+               "%INSERTTEXT%" , 
+               " between 2 devices. Enables voice and data transmission through a 2.4 GHz ",
+                "%INSERTTEXT%",
+                " link. Facilitates communication between mobile devices, allowing the elimination of ",
+                "%INSERTTEXT%",
+                "and connectors between them. It offers the functionality to create small ",
+                "%INSERTTEXT%",
+                " and facilitate data synchronization between computers."],
+      "opciones":[
+          {"value":1,"label":"short-range"},
+          {"value":3,"label":"digital"},
+          {"value":5,"label":"connection"},
+          {"value":7,"label":"radio frequency"},
+          {"value":9,"label":"cables"},
+          {"value":11,"label":"wireless networks"}
+      ]
+  }},
+  "initMessages":[
+      "Below, you will find a theoretical text on bluetooth connectivity.",
+      "Select the correct word to complete the paragraph in each space of the text."
+  ],
+  "path": "102",
+  "color": "#53745B",
+  "name": "Bluetooth technology",
+  "id": 102,
+  "threshold": {
+      "max": 6,
+      "min": 0,
+      "perfect": 6
+  }
+}

@@ -1,19 +1,28 @@
 import { useState, useEffect } from 'react'
 import blackboxSrc from '../../../../public/images/exercises/40/blackbox.svg'
-import data from './data.json'
+import useData from '../../../hooks/useData'
 import NoScoringComponent from '../components/noScoringComponent'
 import BlackboxWithDropdown from '../components/blackboxWithDropdown'
 import UniqueOption from '../components/uniqueOption'
 import '../../../styles/ex94.css'
 
 export default function Ex94 () {
-  const [myData] = useState({
+  const { data } = useData('ex94')
+  const [myData, setMyData] = useState({
     ...data,
     options: data.options.sort(() => 0.5 - Math.random()).slice(0, 3)
   })
 
   const [results, setResults] = useState({})
   const [nextScreen, setNextScreen] = useState(false)
+
+  useEffect(() => {
+    setMyData({
+      ...data,
+      options: data.options.sort(() => 0.5 - Math.random()).slice(0, 3)
+    })
+  }, [data]
+  )
 
   return (
     <NoScoringComponent initMessages={myData.initMessages} background={myData.color} title={myData.name}>
@@ -22,11 +31,11 @@ export default function Ex94 () {
           <>
             {!nextScreen && <>
               <FirstScreen data={myData} setResults={setResults} />
-              <button onClick={() => setNextScreen(true)} disabled={Object.keys(results).length < 3}>SIGUIENTE</button>
+              <button onClick={() => setNextScreen(true)} disabled={Object.keys(results).length < 3}>{myData.btnNext}</button>
             </>}
             {nextScreen && <>
               <SecondScreen data={myData} prevInputs={results} />
-              <button onClick={() => setPhase('end')}>FINALIZAR</button>
+              <button onClick={() => setPhase('end')}>{myData.btnEnd}</button>
             </>}
           </>
         )

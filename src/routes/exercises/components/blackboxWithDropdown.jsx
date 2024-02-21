@@ -2,15 +2,16 @@ import { useState, useEffect } from 'react'
 import GenericSelector from '../../components/genericSelector'
 import blackboxSrc from '../../../../public/images/exercises/40/blackbox.svg'
 import '../../../styles/blackboxWithDropdown.css'
+import { useTranslation } from 'react-i18next'
 
-const opts = [
-  { value: 0, label: 'Sumar' },
-  { value: 1, label: 'Restar' },
-  { value: 2, label: 'Multiplicar' },
-  { value: 3, label: 'Dividir' }
-]
-
-export default function BlackboxWithDropdown ({ inputs = [0, 0], idBox = 0, options = opts, setOperationResult }) {
+export default function BlackboxWithDropdown ({ inputs = [0, 0], idBox = 0, setOperationResult }) {
+  const { t } = useTranslation('blackboxWithDropdown')
+  const options = [
+    { value: 0, label: t('sum') },
+    { value: 1, label: t('res') },
+    { value: 2, label: t('mul') },
+    { value: 3, label: t('div') }
+  ]
   const [selectedOption, setSelectedOption] = useState(null)
 
   useEffect(() => {
@@ -24,8 +25,8 @@ export default function BlackboxWithDropdown ({ inputs = [0, 0], idBox = 0, opti
     <div className='blackbox-with-dropdown'>
       <img src={blackboxSrc} alt='blackbox' />
       <div className='blackbox-with-dropdown__selector-area'>
-        <h2>Caja {idBox}: {inputs[0]} y {inputs[1]}</h2>
-        <GenericSelector options={options} setCurrentValue={setSelectedOption} />
+        <h2>{t('box')} {idBox}: {inputs[0]} y {inputs[1]}</h2>
+        <GenericSelector options={options} setCurrentValue={setSelectedOption} defaultLabel={t('default')} />
       </div>
     </div>
   )

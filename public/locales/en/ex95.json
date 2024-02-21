@@ -1,0 +1,39 @@
+{
+  "options": [
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"They can be complex in interaction, but efficient to imitate natural behaviors.",
+                  "isCorrect":true
+              },
+              {
+                  "text":"They generate data on all the relevant aspects to be studied, even those that are not contemplated at the beginning of the process.",
+                  "isCorrect":false
+              },
+              {
+                  "text":"They allow to interpret phenomena from the observation and interaction",
+                  "isCorrect":true
+              },
+              {
+                  "text":"They allow to have real data of the total of a population",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      }
+  ],
+  "initMessages":[
+      "Simulations are a very versatile tool for understanding behaviors or systems.",
+      "They have various advantages. Select the ones that you consider in the list that you will find below."
+  ],
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 1
+  },
+  "color": "#9968A6",
+  "name": "Benefits of simulations",
+  "id": 95
+}

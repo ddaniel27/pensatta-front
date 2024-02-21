@@ -1,0 +1,40 @@
+{
+  "options": [
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"Make sure that the site where the purchase is made is trusted or verified.",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Make the transaction in the online store in which the product is cheaper.",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Confirm the identity of the seller.",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Send personal data and credit or debit cards to the seller to speed up the process.",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      }
+  ],
+  "initMessages":[
+      "Nowadays making purchases virtually is quite useful and common.",
+      "While the procedures may be simple, processes are required to secure our personal and banking information for every online purchase.",
+      "Next, you will find a series of steps. Select those that correspond to the formation of a safe model for carrying out this digital activity."
+  ],
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 1
+  },
+  "color": "#9968A6",
+  "name": "Risks in online purchases",
+  "id": 99
+}

@@ -1,0 +1,38 @@
+{
+    
+  "initMessages":[
+      "A continuación, encontrarás una serie de tecnologías.",
+      "Determina si son tecnologías antiguas o si son tecnologías actuales desplazando la barra hacia la izquierda o hacia la derecha."
+  ],
+  "threshold": {
+      "max": 4,
+      "min": 0,
+      "perfect": 4
+  },
+  "path": "100",
+  "color": "#9968A6",
+  "name": "Tecnologías",
+  "id": 100,
+  "options":[
+      {"id":1,"text":"Tablet" ,"value":"Actual"},
+      {"id":2,"text":"Telégrafo" ,"value":"Antigua"},
+      {"id":3,"text":"Lápiz óptico" ,"value":"Actual"},
+      {"id":4,"text":"Cámara con rollo" ,"value":"Antigua"},
+      {"id":5,"text":"Smartphone" ,"value":"Actual"},
+      {"id":6,"text":"Conectividad 3G" ,"value":"Antigua"},
+      {"id":7,"text":"Conectividad 5G" ,"value":"Actual"},
+      {"id":8,"text":"Disquete" ,"value":"Antigua"},
+      {"id":9,"text":"WiFi" ,"value":"Actual"},
+      {"id":10,"text":"VHS" ,"value":"Antigua"},
+      {"id":11,"text":"Inteligencia Artificial" ,"value":"Actual"},
+      {"id":12,"text":"Máquina de escribir" ,"value":"Antigua"},
+      {"id":13,"text":"Dron" ,"value":"Actual"},
+      {"id":14,"text":"Cabina de teléfono" ,"value":"Antigua"},
+      {"id":15,"text":"Nanotecnología" ,"value":"Actual"},
+      {"id":16,"text":"Beeper" ,"value":"Antigua"},
+      {"id":17,"text":"Impresión 3D" ,"value":"Actual"},
+      {"id":18,"text":"Casete" ,"value":"Antigua"},
+      {"id":19,"text":"Cámara digital" ,"value":"Actual"},
+      {"id":20,"text":"Walkman" ,"value":"Antigua"}
+  ]
+}

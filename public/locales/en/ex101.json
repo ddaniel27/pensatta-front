@@ -1,0 +1,40 @@
+{
+  "options": [
+      {
+          "question":"",
+          "answers":[
+              {
+                  "text":"There is violent content, violence can become normalized behavior. Age-restricting content helps mitigate normalization.",
+                  "isCorrect":true
+              },
+              {
+                  "text":"All content should be restricted by age",
+                  "isCorrect":false
+              },
+              {
+                  "text":"There is content that can go against population groups. Restricting the content by age helps not to perpetuate an imitative act of discriminatory behavior.",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Content should be supervised by responsible adults",
+                  "isCorrect":false
+              }
+          ],
+          "multiple":true,
+          "maxOptions":2
+      }
+  ],
+  "initMessages":[
+      "Every day we consume written or multimedia content, which on many occasions may contain violent or inappropriate scenes for certain ages.",
+      "There is content that can have a negative impact on people and their development, so it is important to regulate explicit content.",
+      "Below you will find a list of reasons to grant explicit content restrictions. Select the ones that you consider most reasonable and coherent."
+  ],
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 1
+  },
+  "color": "#9968A6",
+  "name": "Content restriction",
+  "id": 101
+}

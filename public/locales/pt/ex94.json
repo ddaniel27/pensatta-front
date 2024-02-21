@@ -1,0 +1,47 @@
+{
+  "options":[
+    { "inputs": [33, 3] },
+    { "inputs": [40, 4] },
+    { "inputs": [10, 5] }
+  ],
+  "options2":[
+    {
+      "text": "Adição e multiplicação por 2",
+      "isCorrect": {
+        "arguments": "a, b, c",
+        "body": "return (a + b + c) * 2;"
+      }
+    },
+    {
+      "text": "Subtrair e multiplicar por 3",
+      "isCorrect": {
+        "arguments": "a, b, c",
+        "body": "return (a - b - c) * 3;"
+      }
+    },
+    {
+      "text": "Adição e multiplicação por 4",
+      "isCorrect": {
+        "arguments": "a, b, c",
+        "body": "return (a + b + c) * 4;"
+      }
+    },
+    {
+      "text": "Subtrair e dividir por 3",
+      "isCorrect": {
+        "arguments": "a, b, c",
+        "body": "return parseFloat((a - b - c) / 3).toFixed(2);"
+      }
+    }
+  ],
+  "initMessages":[
+      "Abaixo você encontrará um exercício dividido em duas seções.",
+      "No primeiro, você encontrará três caixas pretas. Você deve atribuir uma função a cada um.",
+      "Na segunda, você encontrará uma caixa preta que contém as três anteriores. Atribua uma função a ele e observe o resultado."
+  ],
+  "btnNext": "SEGUINTE",
+  "btnEnd": "FIM",
+  "color":"#53745B",
+  "name":"Funções em cascata",
+  "id": 94
+}

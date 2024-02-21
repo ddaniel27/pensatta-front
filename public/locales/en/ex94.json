@@ -1,0 +1,47 @@
+{
+  "options":[
+    { "inputs": [33, 3] },
+    { "inputs": [40, 4] },
+    { "inputs": [10, 5] }
+  ],
+  "options2":[
+    {
+      "text": "Add and multiply by2",
+      "isCorrect": {
+        "arguments": "a, b, c",
+        "body": "return (a + b + c) * 2;"
+      }
+    },
+    {
+      "text": "Subtract and multiply by 3",
+      "isCorrect": {
+        "arguments": "a, b, c",
+        "body": "return (a - b - c) * 3;"
+      }
+    },
+    {
+      "text": "Add and multiply by4",
+      "isCorrect": {
+        "arguments": "a, b, c",
+        "body": "return (a + b + c) * 4;"
+      }
+    },
+    {
+      "text": "Subtract and divide into 3",
+      "isCorrect": {
+        "arguments": "a, b, c",
+        "body": "return parseFloat((a - b - c) / 3).toFixed(2);"
+      }
+    }
+  ],
+  "initMessages":[
+      "Below you will find an exercise divided into two sections.",
+      "In the first, you will find three black boxes. You must assign a function to each one.",
+      "In the second, you will find a black box that contains the previous three. Assign a function to it and observe the result."
+  ],
+  "btnNext": "NEXT",
+  "btnEnd": "END",
+  "color":"#53745B",
+  "name":"Cascading functions",
+  "id": 94
+}

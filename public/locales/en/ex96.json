@@ -1,0 +1,17 @@
+{
+    
+  "initMessages":[
+      "Below you will find a simulation of a RAM memory.",
+      "In it, you will test your ability to remember. Explore the information entry options it provides."
+  ],
+  "titleInput": "Enter Text",
+  "btnEntry": "ENTER",
+  "btnClose": "CLOSE",
+  "btnNew": "NEW DOCUMENT",
+  "btnEnd": "END",
+  "path": "96",
+  "color": "#53745B",
+  "name": "RAM",
+  "empty": "Empty",
+  "id": 96
+}

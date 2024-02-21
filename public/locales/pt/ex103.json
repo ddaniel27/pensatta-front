@@ -1,0 +1,38 @@
+{
+  "options": {"1":{
+      "texto":["WiFi é uma das tecnologias de conectividade mais utilizadas atualmente. Habilitar essa opção ",
+               "%INSERTTEXT%",
+               " em nossos dispositivos é uma tarefa simples, para a qual devemos, antes de tudo, verificar se o equipamento em questão possui um ",
+               "%INSERTTEXT%" , 
+               ", que geralmente é incorporado a computadores, tablets, celulares e até áudio sistemas. Em seguida, devemos ir ao ",
+                "%INSERTTEXT%",
+                " associado ao WiFi, onde podemos gerenciar o wireless ",
+                "%INSERTTEXT%",
+                " Finalmente, devemos selecionar a rede desejada, que nos pedirá para inserir os campos obrigatórios, como ",
+                "%INSERTTEXT%",
+                "  e estabelecer a conexão com ",
+                "%INSERTTEXT%",
+              "."],
+      "opciones":[
+          {"value":1,"label":"conectividade"},
+          {"value":3,"label":"módulo WiFi"},
+          {"value":5,"label":"painel de controle"},
+          {"value":7,"label":"conexões de rede"},
+          {"value":9,"label":"chave de segurança"},
+          {"value":11,"label":"internet"}
+      ]
+  }},
+  "initMessages":[
+      "Abaixo, você encontrará um texto teórico sobre o uso da conectividade WiFi.",
+      "Selecione a palavra correta para completar o parágrafo em cada espaço do texto."
+  ],
+  "path": "103",
+  "color": "#AE985E",
+  "name": "Módulos WiFi",
+  "id": 103,
+  "threshold": {
+      "max": 6,
+      "min": 0,
+      "perfect": 6
+  }
+}

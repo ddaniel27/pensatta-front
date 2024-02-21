@@ -1,0 +1,80 @@
+{"initMessages":[
+  "No mundo digital, os registos são importantes para adquirir determinados serviços, desde um e-mail a uma rede social ou uma plataforma de aprendizagem." ,
+  "Ser ágil na hora de fazer um cadastro é muito útil no nosso dia a dia.",
+  "Responda ao formulário que você encontrará abaixo. Lembre-se de que, por segurança, esses dados não serão salvos."
+],
+"threshold":{
+  "max" : 1,
+  "min" : 0,
+  "perfect": 1
+},
+"btnEnd":"FIM",
+"path": "105",
+"color": "#1B6893",
+"name":"Cadastro de formulários",
+"id": 105,
+"inputs":[
+  [
+      {"id":1, "type":"text", "name":"Nome", "placeholder":"Nome",  "tag":"input"},
+      {"id":2, "type":"date", "name":"Data de nascimento", "placeholder":"Data de nascimento", "tag":"input"},
+      {"id":3, "type":"email", "name":"Correio eletrônico", "placeholder":"Correio eletrônico", "tag":"input"},
+      {"id":4, "type":"text", "name":"ciudad", "placeholder":"Cidade de residência", "tag":"input"}
+  ],
+  [
+      {"id":1, "type":"text", "name":"Nome", "placeholder":"Nome",  "tag":"input"},
+      {"id":2, "type":"number", "name":"Idade", "placeholder":"Idade", "tag":"input"},
+      {"id":3, "type":"text", "name":"Ocupação", "placeholder":"Ocupação", "tag":"input"},
+      {"id":4, "type":"text", "name":"estCivil", "placeholder":"Estado civil", "tag":"select","options":[{"value":1,"label":"Individual"}, {"value":2, "label":"Casado"}, {"value":3,"label":"União livre"}]}
+  ]
+  ,
+  [
+      {"id":1, "type":"text", "name":"Nome", "placeholder":"Nome",  "tag":"input"},
+      {"id":2, "type":"text", "name":"tipoId", "placeholder":"Tipo de documento de identidade", "tag":"select", "options":[{"value":1, "label":"Cartão de cidadão"}, {"value":2, "label":"Bilhete de identidade"}, {"value":3, "label":"Cédula de extranjeria"}]},
+      {"id":3, "type":"number", "name":"identificacion", "placeholder":"número de identidade", "tag":"input"},
+      {"id":4, "type":"text", "name":"institucion", "placeholder":"Institución Educativa", "tag":"input"}
+  ],
+  [
+      {"id":1, "type":"text", "name":"Nome", "placeholder":"Nome",  "tag":"input"},
+      {"id":2, "type":"email", "name":"Correio eletrônico", "placeholder":"Correio eletrônico", "tag":"input"},
+      {"id":3, "type":"text", "name":"pais", "placeholder":"País de residência", "tag":"input"},
+      {"id":4, "type":"text", "name":"ciudad", "placeholder":"Cidade de residência", "tag":"input"}
+  ],
+  [
+      {"id":1, "type":"email", "name":"Correio eletrônico", "placeholder":"Correio eletrônico",  "tag":"input"},
+      {"id":2, "type":"text", "name":"institucion", "placeholder":"Instituição educacional", "tag":"input"},
+      {"id":3, "type":"number", "name":"grado", "placeholder":"Grau", "tag":"input"},
+      {"id":4, "type":"number", "name":"telefono", "placeholder":"número de celular", "tag":"input"}
+  ],
+  [
+      {"id":1, "type":"email", "name":"Correio eletrônico", "placeholder":"Correio eletrônico",  "tag":"input"},
+      {"id":2, "type":"text", "name":"institucion", "placeholder":"Instituição educacional", "tag":"input"},
+      {"id":3, "type":"text", "name":"carrera", "placeholder":"Carreira", "tag":"input"},
+      {"id":4, "type":"number", "name":"semestre", "placeholder":"Semestre", "tag":"input"}
+  ],
+  [
+      {"id":1, "type":"email", "name":"Correio eletrônico", "placeholder":"Correio eletrônico",  "tag":"input"},
+      {"id":2, "type":"text", "name":"Ocupação", "placeholder":"Ocupação","tag":"input"},
+      {"id":3, "type":"text", "name":"pais", "placeholder":"País de residência", "tag":"input"},
+      {"id":4, "type":"text", "name":"ciudad", "placeholder":"Cidade de residência", "tag":"input"}
+  ],
+  [
+      {"id":1, "type":"text", "name":"tipoId", "placeholder":"Tipo de documento de identidade",  "tag":"select", "options":[{"value":1, "label":"Cartão de cidadão"}, {"value":2, "label":"Bilhete de identidade"}, {"value":3, "label":"Cédula de extranjeria"}]},
+      {"id":2, "type":"text", "name":"identificacion", "placeholder":"número de identidade","tag":"input"},
+      {"id":3, "type":"text", "name":"estCivil", "placeholder":"Estado civil", "tag":"select","options":[{"value":1,"label":"Individual"}, {"value":2, "label":"Casado"}, {"value":3,"label":"União livre"}]},
+      {"id":4, "type":"text", "name":"Ocupação", "placeholder":"Ocupação", "tag":"input"}
+  ],
+  [
+      {"id":1, "type":"text", "name":"Nome", "placeholder":"Nome",  "tag":"input"},
+      {"id":2, "type":"email", "name":"Correio eletrônico", "placeholder":"Correio eletrônico","tag":"input"},
+      {"id":3, "type":"text", "name":"institucion", "placeholder":"Instituição educacional", "tag":"input"},
+      {"id":4, "type":"text", "name":"carrera", "placeholder":"Carreira", "tag":"input"}
+  ],
+  [
+      {"id":1, "type":"text", "name":"Nome", "placeholder":"Nome",  "tag":"input"},
+      {"id":2, "type":"email", "name":"Correio eletrônico", "placeholder":"Correio eletrônico","tag":"input"},
+      {"id":3, "type":"text", "name":"carrera", "placeholder":"Carreira", "tag":"input"},
+      {"id":4, "type":"number", "name":"semestre", "placeholder":"Semestre", "tag":"input"}
+  ]
+]
+
+}

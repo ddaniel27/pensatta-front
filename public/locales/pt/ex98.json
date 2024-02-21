@@ -1,0 +1,102 @@
+{
+  "options": [
+      {
+          "question":"O telefone esteve conectado à internet por 8 horas (Conectado = 0, Offline = 1)",
+          "answers":[
+              {
+                  "text":"Verdadeiro",
+                  "isCorrect":true
+              },
+              {
+                  "text": "Falso",
+                  "isCorrect":false
+              }
+          ],
+          "image":  "conec_inter.svg"
+      },
+      {
+          "question":"O correio foi inserido do dispositivo por 4 horas (Rendimento = 1, Offline = 0)",
+          "answers":[
+              {
+                  "text":"Verdadeiro",
+                  "isCorrect":true
+              },
+              {
+                  "text": "Falso",
+                  "isCorrect":false
+              }
+          ],
+          "image":  "email.svg"
+      },
+      {
+          "question":"O programa começou um total de 4 horas (Aberto = 0, Fechado = 1)",
+          "answers":[
+              {
+                  "text":"Verdadeiro",
+                  "isCorrect":true
+              },
+              {
+                  "text": "Falso",
+                  "isCorrect":false
+              }
+          ],
+          "image":  "powerpoint.svg"
+      },
+      {
+          "question":"O computador ficou conectado ao Facebook por 8 horas (Conectado = 1, Offline = 0)",
+          "answers":[
+              {
+                  "text":"Verdadeiro",
+                  "isCorrect":true
+              },
+              {
+                  "text": "Falso",
+                  "isCorrect":false
+              }
+          ],
+          "image":  "facebook.svg"
+      },
+      {
+          "question":"O YouTube foi acessado a partir do dispositivo por 4 horas (Conectado = 1, Offline = 0)",
+          "answers":[
+              {
+                  "text":"Verdadeiro",
+                  "isCorrect":false
+              },
+              {
+                  "text": "Falso",
+                  "isCorrect":true
+              }
+          ],
+          "image":  "youtube.svg"
+      },
+      {
+          "question":"Dispositivo conectado ao Instagram por um total de 8 horas (Conectado = 0, Offline = 1)",
+          "answers":[
+              {
+                  "text":"Verdadeiro",
+                  "isCorrect":false
+              },
+              {
+                  "text": "Falso",
+                  "isCorrect":true
+              }
+          ],
+          "image":  "instagram.svg"
+      }
+  ],
+  "initMessages":[
+      "Os dispositivos digitais que usamos todos os dias funcionam de forma binária. Seus comportamentos podem ser definidos como 1 ou 0.",
+      "Por exemplo, um telefone celular pode estar ligado (1) ou desligado (0).",
+      "Abaixo, você encontrará um gráfico que descreve com lógica binária a atividade de um telefone ao longo do tempo. Responda às perguntas sobre o gráfico."
+  ],
+  "threshold": {
+      "max": 1,
+      "min": 1,
+      "perfect": 2
+  },
+  "path": "98",
+  "color": "#9968A6",
+  "name": "Sinais digitais",
+  "id": 98
+}

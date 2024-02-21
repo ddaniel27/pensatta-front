@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import Select from 'react-select'
 import styles from '../../../styles/formExercise.module.css'
 
-const FormExercise = ({ inputs, setPhase }) => {
+const FormExercise = ({ inputs, setPhase, btn }) => {
   const [answers, setAnswers] = useState(inputs.map(i => ({ id: i.id, ans: '', isAnswer: false })))
   const [isAllAnswered, setAllAnswered] = useState(false)
   const customStyle = {
@@ -91,7 +91,7 @@ const FormExercise = ({ inputs, setPhase }) => {
           </form>
         </div>
         <div className={styles['buttons-login-exercise']}>
-          <button className={styles['solid-button-exercise']} disabled={!isAllAnswered} onClick={() => setPhase('end')}>FINALIZAR</button>
+          <button className={styles['solid-button-exercise']} disabled={!isAllAnswered} onClick={() => setPhase('end')}>{btn}</button>
         </div>
       </div>
     </div>

@@ -1,0 +1,62 @@
+{
+  "variations":[
+      {
+          "columns": {
+              "column": {
+                  "id": "column",
+                  "title": "Hardware options",
+                  "optionsIds": [
+                      "option-2",
+                      "option-1",
+                      "option-4",
+                      "option-3"
+                  ]
+              }
+          },
+          "options": {
+              "option-1": {
+                  "id": "option-1",
+                  "key": "arriba",
+                  "text": "1.8 GHz 6-core processor, 3GB RAM, 250GB hard drive."
+              },
+              "option-2": {
+                  "id": "option-2",
+                  "key": "abajo",
+                  "text": "8-core 2.0 GHz processor, 16GB RAM, 1TB hard drive."
+              },
+              "option-3": {
+                  "id": "option-3",
+                  "key": "derecha",
+                  "text": "8-core 2.8 GHz processor, 8GB RAM, 1TB hard drive."
+              },
+              "option-4": {
+                  "id": "option-4",
+                  "key": "izquierda",
+                  "text": "4-core 2.4 GHz processor, 6GB RAM, 500GB hard drive."
+              }
+          },
+          "sequence":[
+              "option-2",
+              "option-3",
+              "option-4",
+              "option-1"
+          ]
+      }
+  ],
+  "initMessages":[
+      "The performance of a computer is greatly influenced by its hardware and the combination of its features.",
+      "The operating frequency and number of cores of the processor, the capacity of RAM memory and hard disk storage, are decisive for this quality.",
+      "Analyze the hardware of the following computers and order them from highest to lowest performance."
+  ],
+  "threshold": {
+      "max": 3,
+      "min": 1,
+      "perfect": 4
+  },
+  "btnEnd": "FINISH",
+  "btnAnswer": "ANSWER",
+  "path": "106",
+  "color": "#9968A6",
+  "name": "Sort Hardware",
+  "id": 106
+}

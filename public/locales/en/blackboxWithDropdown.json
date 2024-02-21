@@ -1,0 +1,8 @@
+{
+  "sum": "Add",
+  "res": "Subtract",
+  "mul": "Multiply",
+  "div": "Divide",
+  "box": "Box",
+  "default": "Select an option"
+}

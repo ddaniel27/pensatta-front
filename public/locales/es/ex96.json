@@ -1,0 +1,17 @@
+{
+    
+  "initMessages":[
+      "A continuación, encontrarás una simulación de una memoria RAM.",
+      "En ella, pondrás a prueba su capacidad para recordar. Explora las opciones de ingreso de información que te brinda."
+  ],
+  "titleInput": "Ingresar Texto",
+  "btnEntry": "INGRESAR",
+  "btnClose": "CERRAR",
+  "btnNew": "NUEVO DOCUMENTO",
+  "btnEnd": "FINALIZAR",
+  "path": "96",
+  "color": "#53745B",
+  "name": "Memoria RAM",
+  "empty": "Vacío",
+  "id": 96
+}

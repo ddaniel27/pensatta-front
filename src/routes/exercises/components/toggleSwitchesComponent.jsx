@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import styles from '../../../styles/toggleSwitch.module.scss'
 import '../../../styles/toggleSwitch.css'
+import { useTranslation } from 'react-i18next'
 
 const Switch = ({ right, left, title, setAnswers, id, corrects, isFinish }) => {
   const [value, setValue] = useState(1)
@@ -48,6 +49,7 @@ const Switch = ({ right, left, title, setAnswers, id, corrects, isFinish }) => {
 }
 
 const ToggleSwitches = ({ setPhase, setScore, data }) => {
+  const { t } = useTranslation('toggleSwitches')
   const shuffledData = useRef(data.slice().sort(() => Math.random() - 0.5).slice(0, 4))
   const options = useRef(shuffledData.current)
   const [answers, setAnswers] = useState(shuffledData.current.map(obj => ({ id: obj.id, isAnswered: false, value: null })))
@@ -77,8 +79,8 @@ const ToggleSwitches = ({ setPhase, setScore, data }) => {
     <>
       <div className={styles.gameContainer}>
         {options.current.map(option => <Switch key={option.id}
-          left={'Antigua'}
-          right={'Actual'}
+          left={t('old')}
+          right={t('current')}
           title={option.text}
           setAnswers={setAnswers}
           id={option.id}
@@ -86,8 +88,8 @@ const ToggleSwitches = ({ setPhase, setScore, data }) => {
           isFinish={isFinish}
         />)}
       </div>
-      {isAllAnswered && !isFinish && <button onClick={() => setIsFinish(true)}>RESPONDER</button>}
-      {isFinish && <button onClick={() => setPhase('end')}>SIGUIENTE</button>}
+      {isAllAnswered && !isFinish && <button onClick={() => setIsFinish(true)}>{t('btnAnswer')}</button>}
+      {isFinish && <button onClick={() => setPhase('end')}>{t('btnNext')}</button>}
     </>
   )
 }

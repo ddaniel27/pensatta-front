@@ -1,0 +1,69 @@
+{
+  "options": [
+      {
+          "question":"512 MB é a soma dos requisitos de memória de todos os aplicativos que você pode manter em execução.",
+          "answers":[
+              {
+                  "text":"Verdadeiro",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Falso",
+                  "isCorrect":false
+              }
+          ]
+      },
+      {
+          "question":"512 MB é suficiente se os aplicativos em uso exigirem: 80 MB, 110 MB, 100 MB, 10 MB e 300 MB, respectivamente.",
+          "answers":[
+              {
+                  "text":"Verdadeiro",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Falso",
+                  "isCorrect":false
+              }
+          ]
+      },
+      {
+          "question":"512 MB é uma quantidade suficiente de memória se quisermos continuar executando 10 aplicativos que consomem 51,2 MB cada.",
+          "answers":[
+              {
+                  "text":"Verdadeiro",
+                  "isCorrect":false
+              },
+              {
+                  "text":"Falso",
+                  "isCorrect":true
+              }
+          ]
+      },
+      {
+          "question":"Se iniciarmos um aplicativo de 100 MB, a memória pode mantê-lo aberto e ter 415 MB de espaço livre.",
+          "answers":[
+              {
+                  "text":"Verdadeiro",
+                  "isCorrect":true
+              },
+              {
+                  "text":"Falso",
+                  "isCorrect":false
+              }
+          ]
+      }
+  ],
+  "initMessages":[
+      "Entre as funções da memória RAM está a capacidade de gerenciar a abertura e a execução de aplicativos de maneira fluida.",
+      "memória RAM tem uma capacidade em gigabytes que determina o número de aplicativos que ela pode manter em execução.",
+      "Determine se as afirmações abaixo são verdadeiras ou falsas com base na capacidade de sua memória RAM."
+  ],
+  "threshold": {
+      "max": 2,
+      "min": 1,
+      "perfect": 3
+  },
+  "color": "#9968A6",
+  "name": "Memória RAM",
+  "id": 107
+}

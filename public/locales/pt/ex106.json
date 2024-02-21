@@ -1,0 +1,62 @@
+{
+  "variations":[
+      {
+          "columns": {
+              "column": {
+                  "id": "column",
+                  "title": "Opções de hardware",
+                  "optionsIds": [
+                      "option-2",
+                      "option-1",
+                      "option-4",
+                      "option-3"
+                  ]
+              }
+          },
+          "options": {
+              "option-1": {
+                  "id": "option-1",
+                  "key": "arriba",
+                  "text": "Processador de 6 núcleos de 1,8 GHz, 3 GB de RAM, disco rígido de 250 GB."
+              },
+              "option-2": {
+                  "id": "option-2",
+                  "key": "abajo",
+                  "text": "Processador de 8 núcleos de 2,0 GHz, 16 GB de RAM, disco rígido de 1 TB."
+              },
+              "option-3": {
+                  "id": "option-3",
+                  "key": "derecha",
+                  "text": "Processador de 8 núcleos de 2,8 GHz, 8 GB de RAM, disco rígido de 1 TB."
+              },
+              "option-4": {
+                  "id": "option-4",
+                  "key": "izquierda",
+                  "text": "Processador de 4 núcleos de 2,4 GHz, 6 GB de RAM, disco rígido de 500 GB."
+              }
+          },
+          "sequence":[
+              "option-2",
+              "option-3",
+              "option-4",
+              "option-1"
+          ]
+      }
+  ],
+  "initMessages":[
+      "desempenho de um computador é muito influenciado por seu hardware e pela combinação de seus recursos.",
+      "A frequência de funcionamento e o número de núcleos do processador, a capacidade de memória RAM e de armazenamento no disco rígido são determinantes para esta qualidade.",
+      "Analise o hardware dos seguintes computadores e ordene-os do desempenho mais alto para o mais baixo."
+  ],
+  "threshold": {
+      "max": 3,
+      "min": 1,
+      "perfect": 4
+  },
+  "btnEnd": "FIM",
+  "btnAnswer": "RESPONDER",
+  "path": "106",
+  "color": "#9968A6",
+  "name": "Classificar hardware",
+  "id": 106
+}

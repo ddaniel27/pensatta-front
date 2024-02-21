@@ -1,0 +1,38 @@
+{
+  "options": {"1":{
+      "texto":["Tecnologia Bluetooth é uma tecnologia sem fio ",
+               "%INSERTTEXT%", 
+               "que permite a troca de dados entre dispositivos",
+               "%INSERTTEXT%",
+               ", como um sistema de áudio e um telefone. Funciona em um alcance de aproximadamente 10 metros. O normal é estabelecer uma ",
+               "%INSERTTEXT%" , 
+               " entre 2 dispositivos. Possibilita a transmissão de voz e dados através de um link ",
+                "%INSERTTEXT%",
+                " de 2,4 GHz. Facilita a comunicação entre dispositivos móveis, permitindo a eliminação de ",
+                "%INSERTTEXT%",
+                "e conectores entre eles. Oferece a funcionalidade de criar pequenas ",
+                "%INSERTTEXT%",
+                " e facilitar a sincronização de dados entre computadores."],
+      "opciones":[
+          {"value":1,"label":"de curto alcance"},
+          {"value":3,"label":"digitais"},
+          {"value":5,"label":"conexão"},
+          {"value":7,"label":"radiofrequência"},
+          {"value":9,"label":"cabos"},
+          {"value":11,"label":"redes sem fio"}
+      ]
+  }},
+  "initMessages":[
+      "Abaixo, você encontrará um texto teórico sobre conectividade bluetooth.",
+      "Selecione a palavra correta para completar o parágrafo em cada espaço do texto."
+  ],
+  "path": "102",
+  "color": "#53745B",
+  "name": "Tecnologia bluetooth",
+  "id": 102,
+  "threshold": {
+      "max": 6,
+      "min": 0,
+      "perfect": 6
+  }
+}

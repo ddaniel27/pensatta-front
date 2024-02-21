@@ -1,0 +1,38 @@
+{
+    
+  "initMessages":[
+      "Next, you will find a series of technologies.",
+      "Determine if they are old technologies or if they are current technologies by moving the bar to the left or to the right."
+  ],
+  "threshold": {
+      "max": 4,
+      "min": 0,
+      "perfect": 4
+  },
+  "path": "100",
+  "color": "#9968A6",
+  "name": "Tecnologías",
+  "id": 100,
+  "options":[
+      {"id":1,"text":"Tablets" ,"value":"Current"},
+      {"id":2,"text":"Telegraph" ,"value":"Ancient"},
+      {"id":3,"text":"Optical pencil" ,"value":"Current"},
+      {"id":4,"text":"Camera with roll" ,"value":"Ancient"},
+      {"id":5,"text":"Smartphone" ,"value":"Current"},
+      {"id":6,"text":"3G connectivity" ,"value":"Ancient"},
+      {"id":7,"text":"5G connectivity" ,"value":"Current"},
+      {"id":8,"text":"Floppy disk" ,"value":"Ancient"},
+      {"id":9,"text":"WiFi" ,"value":"Current"},
+      {"id":10,"text":"VHS" ,"value":"Ancient"},
+      {"id":11,"text":"Artificial intelligence" ,"value":"Current"},
+      {"id":12,"text":"Typewriter" ,"value":"Ancient"},
+      {"id":13,"text":"drone" ,"value":"Current"},
+      {"id":14,"text":"Telephone box" ,"value":"Ancient"},
+      {"id":15,"text":"nanotechnology" ,"value":"Current"},
+      {"id":16,"text":"Beeper" ,"value":"Ancient"},
+      {"id":17,"text":"3d print" ,"value":"Current"},
+      {"id":18,"text":"Cassette" ,"value":"Ancient"},
+      {"id":19,"text":"Digital camera" ,"value":"Current"},
+      {"id":20,"text":"Walkman" ,"value":"Ancient"}
+  ]
+}
