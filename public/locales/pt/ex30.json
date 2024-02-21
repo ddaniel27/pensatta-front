@@ -9,6 +9,7 @@
     "max":"1",
     "perfect":"1"
   },
+  "production": "Produção atual:",
   "btnAgain":"REPETIR",
   "btnStart":"INICIAR",
   "btnNext":"SEGUINTE",

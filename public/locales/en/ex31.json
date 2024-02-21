@@ -4,7 +4,7 @@
   "columns": {
       "column-1": {
           "id": "column-1",
-          "title": "Bloques que puedes usar",
+          "title": "Blocks you can use",
           "optionsIds": [
               "option-1"
           ],

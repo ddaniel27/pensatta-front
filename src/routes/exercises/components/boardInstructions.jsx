@@ -34,7 +34,7 @@ const Lines = ({ id, type, text, isComment, comment, idSelected, setIdSelected, 
   }
 }
 
-const Board = ({ data, setIsSelection, isFinish, setScore }) => {
+const Board = ({ endCode, data, setIsSelection, isFinish, setScore }) => {
   let found
   const findCorrect = (datalines) => {
     datalines.map(element => {
@@ -83,13 +83,13 @@ const Board = ({ data, setIsSelection, isFinish, setScore }) => {
           correct = {correct}
         />))}
         <br/>
-        <p> &nbsp; &nbsp;Fin del código</p>
+        <p> &nbsp; &nbsp;{endCode}</p>
       </div>
     </>
   )
 }
 
-const BoardInstruction = ({ setScore, setPhase, data }) => {
+const BoardInstruction = ({ endCode, setScore, setPhase, data }) => {
   const { t } = useTranslation('textSelectComponent')
   const [isFinish, setIsFinish] = useState(false)
   const [isSelection, setIsSelection] = useState(false)
@@ -104,7 +104,7 @@ const BoardInstruction = ({ setScore, setPhase, data }) => {
   return (
     <>
       <div className={styles['game-container']}>
-        <Board data={data} setIsSelection={setIsSelection} isFinish={isFinish} setScore={setScore}/>
+        <Board endCode={endCode} data={data} setIsSelection={setIsSelection} isFinish={isFinish} setScore={setScore}/>
       </div>
       {isSelection && !isFinish && <button onClick={handleClick}>{t('answer-button')}</button>}
       {isFinish && <button onClick={handleFinish}>{t('next-button')}</button>}

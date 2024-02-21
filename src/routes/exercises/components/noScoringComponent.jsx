@@ -19,6 +19,10 @@ export default function NoScoringComponent ({ initMessages = ['Inicia dando clic
     setFinalMessages([t('final-messages')])
   }, [initMessages])
 
+  useEffect(() => {
+    setPhase('init')
+  }, [initMessages])
+
   const handleStart = () => {
     setPhase('activity')
   }

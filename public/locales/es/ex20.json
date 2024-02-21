@@ -32,18 +32,18 @@
               {"id": 6, "type":"empty", "text": ""},
       
               {"id": 7, "type":"drag-conditionEspace", "text":""},
-              {"id": 8, "type":"arrowLeftNo", "text": ""},
+              {"id": 8, "type":"arrowLeftNo", "text": "No"},
               {"id": 9, "type":"drag-conditionEspace", "text":""},
       
-              {"id": 10, "type":"arrowDownYes", "text": ""},
+              {"id": 10, "type":"arrowDownYes", "text": "Si"},
               {"id": 11, "type":"empty", "text": ""},
               {"id": 12, "type":"empty", "text": ""},
       
               {"id": 13, "type":"drag-instructionEspace", "text":""},
-              {"id": 14, "type":"arrowLeftNo", "text": ""},
+              {"id": 14, "type":"arrowLeftNo", "text": "No"},
               {"id": 15, "type":"drag-instructionEspace", "text":""},
       
-              {"id": 16, "type":"arrowDownYes", "text": ""},
+              {"id": 16, "type":"arrowDownYes", "text": "Si"},
               {"id": 17, "type":"empty", "text": ""},
               {"id": 18, "type":"empty", "text": ""},
       
@@ -70,18 +70,18 @@
               {"id": 6, "type":"empty", "text": ""},
       
               {"id": 7, "type":"drag-conditionEspace", "text":""},
-              {"id": 8, "type":"arrowLeftNo", "text": ""},
+              {"id": 8, "type":"arrowLeftNo", "text": "No"},
               {"id": 9, "type":"drag-conditionEspace", "text":""},
       
-              {"id": 10, "type":"arrowDownYes", "text": ""},
+              {"id": 10, "type":"arrowDownYes", "text": "Si"},
               {"id": 11, "type":"empty", "text": ""},
               {"id": 12, "type":"empty", "text": ""},
       
               {"id": 13, "type":"drag-instructionEspace", "text":""},
-              {"id": 14, "type":"arrowLeftNo", "text": ""},
+              {"id": 14, "type":"arrowLeftNo", "text": "No"},
               {"id": 15, "type":"drag-instructionEspace", "text":""},
       
-              {"id": 16, "type":"arrowDownYes", "text": ""},
+              {"id": 16, "type":"arrowDownYes", "text": "Si"},
               {"id": 17, "type":"empty", "text": ""},
               {"id": 18, "type":"empty", "text": ""},
       
@@ -108,18 +108,18 @@
               {"id": 6, "type":"empty", "text": ""},
       
               {"id": 7, "type":"drag-conditionEspace", "text":""},
-              {"id": 8, "type":"arrowLeftNo", "text": ""},
+              {"id": 8, "type":"arrowLeftNo", "text": "No"},
               {"id": 9, "type":"drag-conditionEspace", "text":""},
       
-              {"id": 10, "type":"arrowDownYes", "text": ""},
+              {"id": 10, "type":"arrowDownYes", "text": "Si"},
               {"id": 11, "type":"empty", "text": ""},
               {"id": 12, "type":"empty", "text": ""},
       
               {"id": 13, "type":"drag-instructionEspace", "text":""},
-              {"id": 14, "type":"arrowLeftNo", "text": ""},
+              {"id": 14, "type":"arrowLeftNo", "text": "No"},
               {"id": 15, "type":"drag-instructionEspace", "text":""},
       
-              {"id": 16, "type":"arrowDownYes", "text": ""},
+              {"id": 16, "type":"arrowDownYes", "text": "Si"},
               {"id": 17, "type":"empty", "text": ""},
               {"id": 18, "type":"empty", "text": ""},
       
@@ -146,18 +146,18 @@
               {"id": 6, "type":"empty", "text": ""},
       
               {"id": 7, "type":"drag-conditionEspace", "text":""},
-              {"id": 8, "type":"arrowLeftNo", "text": ""},
+              {"id": 8, "type":"arrowLeftNo", "text": "No"},
               {"id": 9, "type":"drag-conditionEspace", "text":""},
       
-              {"id": 10, "type":"arrowDownYes", "text": ""},
+              {"id": 10, "type":"arrowDownYes", "text": "Si"},
               {"id": 11, "type":"empty", "text": ""},
               {"id": 12, "type":"empty", "text": ""},
       
               {"id": 13, "type":"drag-instructionEspace", "text":""},
-              {"id": 14, "type":"arrowLeftNo", "text": ""},
+              {"id": 14, "type":"arrowLeftNo", "text": "No"},
               {"id": 15, "type":"drag-instructionEspace", "text":""},
       
-              {"id": 16, "type":"arrowDownYes", "text": ""},
+              {"id": 16, "type":"arrowDownYes", "text": "Si"},
               {"id": 17, "type":"empty", "text": ""},
               {"id": 18, "type":"empty", "text": ""},
       

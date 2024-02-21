@@ -13,10 +13,17 @@ export default function Ex30 () {
   const [next, setNext] = useState(false)
   const [robotData, setRobotData] = useState({ color: [], direction: [] })
   const [reset, setReset] = useState(false)
-  const [myData] = useState({
+  const [myData, setMyData] = useState({
     ...data,
-    columns: { ...data.columns, 'column-1': { ...data.columns['column-1'], title: `Producción hoy: ${numCubes}` } }
+    columns: { ...data.columns, 'column-1': { ...data.columns['column-1'], title: `${data.production} ${numCubes}` } }
   })
+
+  useEffect(() => {
+    setMyData({
+      ...data,
+      columns: { ...data.columns, 'column-1': { ...data.columns['column-1'], title: `${data.production} ${numCubes}` } }
+    })
+  }, [data])
 
   useEffect(() => {
     setStart(checkArray(sequence))

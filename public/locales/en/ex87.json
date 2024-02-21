@@ -1,5 +1,5 @@
 {"initMessages":[
-  "Below, you will find a flowchart corresponding to a conditional." ,
+  "Below, you will ENDd a flowchart corresponding to a conditional." ,
   "Click each part of the diagram, except the branches, to see its code equivalent."
 ],
 "threshold":{
@@ -24,10 +24,10 @@
           {"id": 6, "type":"empty", "text": "", "sentence":""},
       
           {"id": 7, "type":"condition", "text":"¿ B > 1 ?", "sentence":"if"},
-          {"id": 8, "type":"arrowLeftYes", "text": "", "sentence":""},
+          {"id": 8, "type":"arrowLeftYes", "text": "Yes", "sentence":""},
           {"id": 9, "type":"instruction", "text":" B = B - 1 ", "sentence":"ifyes"},
       
-          {"id": 10, "type":"arrowDownNo", "text": ""},
+          {"id": 10, "type":"arrowDownNo", "text": "No"},
           {"id": 11, "type":"empty", "text": "", "sentence":""},
           {"id": 12, "type":"empty", "text": "", "sentence":""},
       
@@ -39,7 +39,7 @@
           {"id": 17, "type":"empty", "text": "", "sentence":""},
           {"id": 18, "type":"empty", "text": "", "sentence":""},
       
-          {"id": 19, "type":"end", "text": "FIN", "sentence":""},
+          {"id": 19, "type":"end", "text": "END", "sentence":""},
           {"id": 20, "type":"empty", "text": "", "sentence":""},
           {"id": 21, "type":"empty", "text": "", "sentence":""}
       ]
@@ -55,10 +55,10 @@
           {"id": 6, "type":"empty", "text": "", "sentence":""},
       
           {"id": 7, "type":"condition", "text":"¿ B < 10 ?", "sentence":"if"},
-          {"id": 8, "type":"arrowLeftYes", "text": "", "sentence":""},
+          {"id": 8, "type":"arrowLeftYes", "text": "Yes", "sentence":""},
           {"id": 9, "type":"instruction", "text":" B = B - 11 ", "sentence":"ifyes"},
       
-          {"id": 10, "type":"arrowDownNo", "text": ""},
+          {"id": 10, "type":"arrowDownNo", "text": "No"},
           {"id": 11, "type":"empty", "text": "", "sentence":""},
           {"id": 12, "type":"empty", "text": "", "sentence":""},
       
@@ -70,7 +70,7 @@
           {"id": 17, "type":"empty", "text": "", "sentence":""},
           {"id": 18, "type":"empty", "text": "", "sentence":""},
       
-          {"id": 19, "type":"end", "text": "FIN", "sentence":""},
+          {"id": 19, "type":"end", "text": "END", "sentence":""},
           {"id": 20, "type":"empty", "text": "", "sentence":""},
           {"id": 21, "type":"empty", "text": "", "sentence":""}
       ]
@@ -86,10 +86,10 @@
           {"id": 6, "type":"empty", "text": "", "sentence":""},
       
           {"id": 7, "type":"condition", "text":"¿ B != 1 ?", "sentence":"if"},
-          {"id": 8, "type":"arrowLeftYes", "text": "", "sentence":""},
+          {"id": 8, "type":"arrowLeftYes", "text": "Yes", "sentence":""},
           {"id": 9, "type":"instruction", "text":" B -= 1 ", "sentence":"ifyes"},
       
-          {"id": 10, "type":"arrowDownNo", "text": ""},
+          {"id": 10, "type":"arrowDownNo", "text": "No"},
           {"id": 11, "type":"empty", "text": "", "sentence":""},
           {"id": 12, "type":"empty", "text": "", "sentence":""},
       
@@ -101,7 +101,7 @@
           {"id": 17, "type":"empty", "text": "", "sentence":""},
           {"id": 18, "type":"empty", "text": "", "sentence":""},
       
-          {"id": 19, "type":"end", "text": "FIN", "sentence":""},
+          {"id": 19, "type":"end", "text": "END", "sentence":""},
           {"id": 20, "type":"empty", "text": "", "sentence":""},
           {"id": 21, "type":"empty", "text": "", "sentence":""}
       ]
@@ -117,10 +117,10 @@
           {"id": 6, "type":"empty", "text": "", "sentence":""},
       
           {"id": 7, "type":"condition", "text":"¿ B >= 22 ?", "sentence":"if"},
-          {"id": 8, "type":"arrowLeftYes", "text": "", "sentence":""},
+          {"id": 8, "type":"arrowLeftYes", "text": "Yes", "sentence":""},
           {"id": 9, "type":"instruction", "text":" B ++ ", "sentence":"ifyes"},
       
-          {"id": 10, "type":"arrowDownNo", "text": ""},
+          {"id": 10, "type":"arrowDownNo", "text": "No"},
           {"id": 11, "type":"empty", "text": "", "sentence":""},
           {"id": 12, "type":"empty", "text": "", "sentence":""},
       
@@ -132,7 +132,7 @@
           {"id": 17, "type":"empty", "text": "", "sentence":""},
           {"id": 18, "type":"empty", "text": "", "sentence":""},
       
-          {"id": 19, "type":"end", "text": "FIN", "sentence":""},
+          {"id": 19, "type":"end", "text": "END", "sentence":""},
           {"id": 20, "type":"empty", "text": "", "sentence":""},
           {"id": 21, "type":"empty", "text": "", "sentence":""}
       ]
@@ -148,10 +148,10 @@
           {"id": 6, "type":"empty", "text": "", "sentence":""},
       
           {"id": 7, "type":"condition", "text":"¿ B == 1 ?", "sentence":"if"},
-          {"id": 8, "type":"arrowLeftYes", "text": "", "sentence":""},
+          {"id": 8, "type":"arrowLeftYes", "text": "Yes", "sentence":""},
           {"id": 9, "type":"instruction", "text":" B = B - 0.1 ", "sentence":"ifyes"},
       
-          {"id": 10, "type":"arrowDownNo", "text": ""},
+          {"id": 10, "type":"arrowDownNo", "text": "No"},
           {"id": 11, "type":"empty", "text": "", "sentence":""},
           {"id": 12, "type":"empty", "text": "", "sentence":""},
       
@@ -163,7 +163,7 @@
           {"id": 17, "type":"empty", "text": "", "sentence":""},
           {"id": 18, "type":"empty", "text": "", "sentence":""},
       
-          {"id": 19, "type":"end", "text": "FIN", "sentence":""},
+          {"id": 19, "type":"end", "text": "END", "sentence":""},
           {"id": 20, "type":"empty", "text": "", "sentence":""},
           {"id": 21, "type":"empty", "text": "", "sentence":""}
       ]
@@ -179,10 +179,10 @@
           {"id": 6, "type":"empty", "text": "", "sentence":""},
       
           {"id": 7, "type":"condition", "text":"¿ B >= 1 ?", "sentence":"if"},
-          {"id": 8, "type":"arrowLeftYes", "text": "", "sentence":""},
+          {"id": 8, "type":"arrowLeftYes", "text": "Yes", "sentence":""},
           {"id": 9, "type":"instruction", "text":" B = B +1 ", "sentence":"ifyes"},
       
-          {"id": 10, "type":"arrowDownNo", "text": ""},
+          {"id": 10, "type":"arrowDownNo", "text": "No"},
           {"id": 11, "type":"empty", "text": "", "sentence":""},
           {"id": 12, "type":"empty", "text": "", "sentence":""},
       
@@ -194,7 +194,7 @@
           {"id": 17, "type":"empty", "text": "", "sentence":""},
           {"id": 18, "type":"empty", "text": "", "sentence":""},
       
-          {"id": 19, "type":"end", "text": "FIN", "sentence":""},
+          {"id": 19, "type":"end", "text": "END", "sentence":""},
           {"id": 20, "type":"empty", "text": "", "sentence":""},
           {"id": 21, "type":"empty", "text": "", "sentence":""}
       ]
@@ -210,10 +210,10 @@
           {"id": 6, "type":"empty", "text": "", "sentence":""},
       
           {"id": 7, "type":"condition", "text":"¿ B == false ?", "sentence":"if"},
-          {"id": 8, "type":"arrowLeftYes", "text": "", "sentence":""},
+          {"id": 8, "type":"arrowLeftYes", "text": "Yes", "sentence":""},
           {"id": 9, "type":"instruction", "text":" B = true ", "sentence":"ifyes"},
       
-          {"id": 10, "type":"arrowDownNo", "text": ""},
+          {"id": 10, "type":"arrowDownNo", "text": "No"},
           {"id": 11, "type":"empty", "text": "", "sentence":""},
           {"id": 12, "type":"empty", "text": "", "sentence":""},
       
@@ -225,7 +225,7 @@
           {"id": 17, "type":"empty", "text": "", "sentence":""},
           {"id": 18, "type":"empty", "text": "", "sentence":""},
       
-          {"id": 19, "type":"end", "text": "FIN", "sentence":""},
+          {"id": 19, "type":"end", "text": "END", "sentence":""},
           {"id": 20, "type":"empty", "text": "", "sentence":""},
           {"id": 21, "type":"empty", "text": "", "sentence":""}
       ]
@@ -241,10 +241,10 @@
           {"id": 6, "type":"empty", "text": "", "sentence":""},
       
           {"id": 7, "type":"condition", "text":"¿ B > 0 ?", "sentence":"if"},
-          {"id": 8, "type":"arrowLeftYes", "text": "", "sentence":""},
+          {"id": 8, "type":"arrowLeftYes", "text": "Yes", "sentence":""},
           {"id": 9, "type":"instruction", "text":" B = 0 ", "sentence":"ifyes"},
       
-          {"id": 10, "type":"arrowDownNo", "text": ""},
+          {"id": 10, "type":"arrowDownNo", "text": "No"},
           {"id": 11, "type":"empty", "text": "", "sentence":""},
           {"id": 12, "type":"empty", "text": "", "sentence":""},
       
@@ -256,7 +256,7 @@
           {"id": 17, "type":"empty", "text": "", "sentence":""},
           {"id": 18, "type":"empty", "text": "", "sentence":""},
       
-          {"id": 19, "type":"end", "text": "FIN", "sentence":""},
+          {"id": 19, "type":"end", "text": "END", "sentence":""},
           {"id": 20, "type":"empty", "text": "", "sentence":""},
           {"id": 21, "type":"empty", "text": "", "sentence":""}
       ]
@@ -272,10 +272,10 @@
           {"id": 6, "type":"empty", "text": "", "sentence":""},
       
           {"id": 7, "type":"condition", "text":"¿ B > 10 ?", "sentence":"if"},
-          {"id": 8, "type":"arrowLeftYes", "text": "", "sentence":""},
+          {"id": 8, "type":"arrowLeftYes", "text": "Yes", "sentence":""},
           {"id": 9, "type":"instruction", "text":" B / 2 ", "sentence":"ifyes"},
       
-          {"id": 10, "type":"arrowDownNo", "text": ""},
+          {"id": 10, "type":"arrowDownNo", "text": "No"},
           {"id": 11, "type":"empty", "text": "", "sentence":""},
           {"id": 12, "type":"empty", "text": "", "sentence":""},
       
@@ -287,7 +287,7 @@
           {"id": 17, "type":"empty", "text": "", "sentence":""},
           {"id": 18, "type":"empty", "text": "", "sentence":""},
       
-          {"id": 19, "type":"end", "text": "FIN", "sentence":""},
+          {"id": 19, "type":"end", "text": "END", "sentence":""},
           {"id": 20, "type":"empty", "text": "", "sentence":""},
           {"id": 21, "type":"empty", "text": "", "sentence":""}
       ]
@@ -303,10 +303,10 @@
           {"id": 6, "type":"empty", "text": "", "sentence":""},
       
           {"id": 7, "type":"condition", "text":"¿ B > 11 ?", "sentence":"if"},
-          {"id": 8, "type":"arrowLeftYes", "text": "", "sentence":""},
+          {"id": 8, "type":"arrowLeftYes", "text": "Yes", "sentence":""},
           {"id": 9, "type":"instruction", "text":" B = B == 11 ", "sentence":"ifyes"},
       
-          {"id": 10, "type":"arrowDownNo", "text": ""},
+          {"id": 10, "type":"arrowDownNo", "text": "No"},
           {"id": 11, "type":"empty", "text": "", "sentence":""},
           {"id": 12, "type":"empty", "text": "", "sentence":""},
       
@@ -318,7 +318,7 @@
           {"id": 17, "type":"empty", "text": "", "sentence":""},
           {"id": 18, "type":"empty", "text": "", "sentence":""},
       
-          {"id": 19, "type":"end", "text": "FIN", "sentence":""},
+          {"id": 19, "type":"end", "text": "END", "sentence":""},
           {"id": 20, "type":"empty", "text": "", "sentence":""},
           {"id": 21, "type":"empty", "text": "", "sentence":""}
       ]

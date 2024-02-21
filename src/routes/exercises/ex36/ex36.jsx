@@ -17,7 +17,7 @@ export default function Ex36 () {
     setMyData(data)
   }, [data])
   return (
-    <NoScoringComponent initMessages={myData.initMessages} background={myData.color} title={myData.title} >
+    <NoScoringComponent initMessages={myData.initMessages} background={myData.color} title={myData.name} >
       {
         (setPhase) => (
           <GameComponent {...props} setPhase={setPhase} setIsFinish={setIsFinish} isFinish={isFinish}/>

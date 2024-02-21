@@ -18,6 +18,7 @@ const Ex87 = () => {
 
   useEffect(() => {
     setmyData(data)
+    setColumn(data.options[Math.floor(Math.random() * 10) + 1].column)
   }, [data])
 
   return (

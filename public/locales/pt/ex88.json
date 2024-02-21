@@ -25,7 +25,7 @@
           {"id": 8, "type":"arrowDown", "text": ""},
           {"id": 9, "type":"instruction", "text": "P = S", "sentence":"assign"},
           {"id": 10, "type":"arrowDown", "text": ""},
-          {"id": 11, "type":"end", "text": "FIN"}           
+          {"id": 11, "type":"end", "text": "FIM"}           
           
       ]
   },
@@ -41,7 +41,7 @@
           {"id": 8, "type":"arrowDown", "text": ""},
           {"id": 9, "type":"instruction", "text": "P = !S", "sentence":"assign"},
           {"id": 10, "type":"arrowDown", "text": ""},
-          {"id": 11, "type":"end", "text": "FIN"}           
+          {"id": 11, "type":"end", "text": "FIM"}           
           
       ]
   },
@@ -57,7 +57,7 @@
           {"id": 8, "type":"arrowDown", "text": ""},
           {"id": 9, "type":"instruction", "text": "P = P + S", "sentence":"assign"},
           {"id": 10, "type":"arrowDown", "text": ""},
-          {"id": 11, "type":"end", "text": "FIN"}           
+          {"id": 11, "type":"end", "text": "FIM"}           
           
       ]
   },
@@ -73,7 +73,7 @@
           {"id": 8, "type":"arrowDown", "text": ""},
           {"id": 9, "type":"instruction", "text": "P = P - S", "sentence":"assign"},
           {"id": 10, "type":"arrowDown", "text": ""},
-          {"id": 11, "type":"end", "text": "FIN"}           
+          {"id": 11, "type":"end", "text": "FIM"}           
           
       ]
   },
@@ -89,7 +89,7 @@
           {"id": 8, "type":"arrowDown", "text": ""},
           {"id": 9, "type":"instruction", "text": "P = P / S", "sentence":"assign"},
           {"id": 10, "type":"arrowDown", "text": ""},
-          {"id": 11, "type":"end", "text": "FIN"}           
+          {"id": 11, "type":"end", "text": "FIM"}           
           
       ]
   },
@@ -105,7 +105,7 @@
           {"id": 8, "type":"arrowDown", "text": ""},
           {"id": 9, "type":"instruction", "text": "P = S", "sentence":"assign"},
           {"id": 10, "type":"arrowDown", "text": ""},
-          {"id": 11, "type":"end", "text": "FIN"}           
+          {"id": 11, "type":"end", "text": "FIM"}           
           
       ]
   },
@@ -121,7 +121,7 @@
           {"id": 8, "type":"arrowDown", "text": ""},
           {"id": 9, "type":"instruction", "text": "P = !S", "sentence":"assign"},
           {"id": 10, "type":"arrowDown", "text": ""},
-          {"id": 11, "type":"end", "text": "FIN"}           
+          {"id": 11, "type":"end", "text": "FIM"}           
           
       ]
   },
@@ -137,7 +137,7 @@
           {"id": 8, "type":"arrowDown", "text": ""},
           {"id": 9, "type":"instruction", "text": "P = R + S", "sentence":"assign"},
           {"id": 10, "type":"arrowDown", "text": ""},
-          {"id": 11, "type":"end", "text": "FIN"}           
+          {"id": 11, "type":"end", "text": "FIM"}           
           
       ]
   },
@@ -153,7 +153,7 @@
           {"id": 8, "type":"arrowDown", "text": ""},
           {"id": 9, "type":"instruction", "text": "P = S", "sentence":"assign"},
           {"id": 10, "type":"arrowDown", "text": ""},
-          {"id": 11, "type":"end", "text": "FIN"}           
+          {"id": 11, "type":"end", "text": "FIM"}           
           
       ]
   },
@@ -169,7 +169,7 @@
           {"id": 8, "type":"arrowDown", "text": ""},
           {"id": 9, "type":"instruction", "text": "P = S - R", "sentence":"assign"},
           {"id": 10, "type":"arrowDown", "text": ""},
-          {"id": 11, "type":"end", "text": "FIN"}           
+          {"id": 11, "type":"end", "text": "FIM"}           
           
       ]
   }

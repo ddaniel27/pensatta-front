@@ -13,7 +13,7 @@ const Ex89 = () => {
   return (
     <ScoringComponent initMessages={myData.initMessages} background={myData.color} title={myData.name} threshold={myData.threshold} exerciseId={myData.id}>
       {(setScore, setPhase) => (
-        <BoardInstruction setScore={setScore} setPhase={setPhase} data={myData.codigos[Math.floor(Math.random() * 10) + 1]}/>
+        <BoardInstruction endCode={myData.endCode} setScore={setScore} setPhase={setPhase} data={myData.codigos[Math.floor(Math.random() * 10) + 1]}/>
       )}
     </ScoringComponent>
   )

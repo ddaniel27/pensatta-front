@@ -23,16 +23,17 @@ const Ex63 = () => {
   const [isFinish, setIsFinish] = useState(false)
 
   useEffect(() => {
-    const selected = [...myData.options.corrects.sort(() => Math.random() - 0.5).slice(0, 4), ...myData.options.falses.sort(() => Math.random() - 0.5).slice(0, 4)].sort(() => Math.random() - 0.5)
-    setColumn1(selected.slice(0, 4))
-    setColumn2(selected.slice(4, 8))
-    setOptions(selected)
-  }, [])
-  useEffect(() => {
     setmyData({
       ...data
     })
   }, [data])
+
+  useEffect(() => {
+    const selected = [...myData.options.corrects.sort(() => Math.random() - 0.5).slice(0, 4), ...myData.options.falses.sort(() => Math.random() - 0.5).slice(0, 4)].sort(() => Math.random() - 0.5)
+    setColumn1(selected.slice(0, 4))
+    setColumn2(selected.slice(4, 8))
+    setOptions(selected)
+  }, [myData])
 
   const onDragEnd = (result) => {
     if (!result.destination) return

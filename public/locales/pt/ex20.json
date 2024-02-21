@@ -17,13 +17,13 @@
   {
       "1":{
           "column1" : [
-              { "id": 1, "type": "instruction" , "text": "Conectar a la toma" },
-              { "id": 2, "type": "instruction" , "text": "Lleva a reparación" },
-              { "id": 3, "type": "condition" , "text": "¿La lámpara funcionó?" },
-              { "id": 4, "type": "condition" , "text": "¿Está conectada?" }
+              { "id": 1, "type": "instruction" , "text": "Ligar à tomada" },
+              { "id": 2, "type": "instruction" , "text": "Leva à reparação" },
+              { "id": 3, "type": "condition" , "text": "A lâmpada funcionou?" },
+              { "id": 4, "type": "condition" , "text": "Está ligado?" }
           ],
           "column2" : [
-              {"id": 1, "type":"begin", "text": "La lámpara no funciona"},
+              {"id": 1, "type":"begin", "text": "A lâmpada não funciona"},
               {"id": 2, "type":"empty", "text": ""},
               {"id": 3, "type":"empty", "text": ""},
       
@@ -32,22 +32,22 @@
               {"id": 6, "type":"empty", "text": ""},
       
               {"id": 7, "type":"drag-conditionEspace", "text":""},
-              {"id": 8, "type":"arrowLeftNo", "text": ""},
+              {"id": 8, "type":"arrowLeftNo", "text": "Não"},
               {"id": 9, "type":"drag-conditionEspace", "text":""},
       
-              {"id": 10, "type":"arrowDownYes", "text": ""},
+              {"id": 10, "type":"arrowDownYes", "text": "Si"},
               {"id": 11, "type":"empty", "text": ""},
               {"id": 12, "type":"empty", "text": ""},
       
               {"id": 13, "type":"drag-instructionEspace", "text":""},
-              {"id": 14, "type":"arrowLeftNo", "text": ""},
+              {"id": 14, "type":"arrowLeftNo", "text": "Não"},
               {"id": 15, "type":"drag-instructionEspace", "text":""},
       
-              {"id": 16, "type":"arrowDownYes", "text": ""},
+              {"id": 16, "type":"arrowDownYes", "text": "Si"},
               {"id": 17, "type":"empty", "text": ""},
               {"id": 18, "type":"empty", "text": ""},
       
-              {"id": 19, "type":"end", "text": "FIN"},
+              {"id": 19, "type":"end", "text": "FIM"},
               {"id": 20, "type":"empty", "text": ""},
               {"id": 21, "type":"empty", "text": ""}
           ],
@@ -55,13 +55,13 @@
       },
       "2":{
           "column1" : [
-              { "id": 1, "type": "instruction" , "text": "Esperar a que se reestablezca el servicio" },
-              { "id": 2, "type": "instruction" , "text": "Recargar la línea" },
-              { "id": 3, "type": "condition" , "text": "¿El celular tiene señal?" },
-              { "id": 4, "type": "condition" , "text": "¿El número tiene saldo?" }
+              { "id": 1, "type": "instruction" , "text": "Aguardar o restabelecimento do serviço." },
+              { "id": 2, "type": "instruction" , "text": "Recarregar a linha" },
+              { "id": 3, "type": "condition" , "text": "O telemóvel tem sinal?" },
+              { "id": 4, "type": "condition" , "text": "O número tem um saldo?" }
           ],
           "column2" : [
-              {"id": 1, "type":"begin", "text": "Las llamadas no salen"},
+              {"id": 1, "type":"begin", "text": "As chamadas não são efectuadas"},
               {"id": 2, "type":"empty", "text": ""},
               {"id": 3, "type":"empty", "text": ""},
       
@@ -70,22 +70,22 @@
               {"id": 6, "type":"empty", "text": ""},
       
               {"id": 7, "type":"drag-conditionEspace", "text":""},
-              {"id": 8, "type":"arrowLeftNo", "text": ""},
+              {"id": 8, "type":"arrowLeftNo", "text": "Não"},
               {"id": 9, "type":"drag-conditionEspace", "text":""},
       
-              {"id": 10, "type":"arrowDownYes", "text": ""},
+              {"id": 10, "type":"arrowDownYes", "text": "Si"},
               {"id": 11, "type":"empty", "text": ""},
               {"id": 12, "type":"empty", "text": ""},
       
               {"id": 13, "type":"drag-instructionEspace", "text":""},
-              {"id": 14, "type":"arrowLeftNo", "text": ""},
+              {"id": 14, "type":"arrowLeftNo", "text": "Não"},
               {"id": 15, "type":"drag-instructionEspace", "text":""},
       
-              {"id": 16, "type":"arrowDownYes", "text": ""},
+              {"id": 16, "type":"arrowDownYes", "text": "Si"},
               {"id": 17, "type":"empty", "text": ""},
               {"id": 18, "type":"empty", "text": ""},
       
-              {"id": 19, "type":"end", "text": "FIN"},
+              {"id": 19, "type":"end", "text": "FIM"},
               {"id": 20, "type":"empty", "text": ""},
               {"id": 21, "type":"empty", "text": ""}
           ],
@@ -93,13 +93,13 @@
       },
       "3":{
           "column1" : [
-              { "id": 1, "type": "instruction" , "text": "Restablecer contraseña" },
-              { "id": 2, "type": "instruction" , "text": "Ingresar contraseña correcta" },
-              { "id": 3, "type": "condition" , "text": "¿La contraseña es correcta?" },
-              { "id": 4, "type": "condition" , "text": "¿Se ingresó correctamente?" }
+              { "id": 1, "type": "instruction" , "text": "Repor a palavra-passe" },
+              { "id": 2, "type": "instruction" , "text": "Introduzir a palavra-passe correcta" },
+              { "id": 3, "type": "condition" , "text": "A palavra-passe está correcta?" },
+              { "id": 4, "type": "condition" , "text": "Foi introduzido corretamente?" }
           ],
           "column2" : [
-              {"id": 1, "type":"begin", "text": "No se puede acceder al correo"},
+              {"id": 1, "type":"begin", "text": "Não é possível aceder ao correio"},
               {"id": 2, "type":"empty", "text": ""},
               {"id": 3, "type":"empty", "text": ""},
       
@@ -108,22 +108,22 @@
               {"id": 6, "type":"empty", "text": ""},
       
               {"id": 7, "type":"drag-conditionEspace", "text":""},
-              {"id": 8, "type":"arrowLeftNo", "text": ""},
+              {"id": 8, "type":"arrowLeftNo", "text": "Não"},
               {"id": 9, "type":"drag-conditionEspace", "text":""},
       
-              {"id": 10, "type":"arrowDownYes", "text": ""},
+              {"id": 10, "type":"arrowDownYes", "text": "Si"},
               {"id": 11, "type":"empty", "text": ""},
               {"id": 12, "type":"empty", "text": ""},
       
               {"id": 13, "type":"drag-instructionEspace", "text":""},
-              {"id": 14, "type":"arrowLeftNo", "text": ""},
+              {"id": 14, "type":"arrowLeftNo", "text": "Não"},
               {"id": 15, "type":"drag-instructionEspace", "text":""},
       
-              {"id": 16, "type":"arrowDownYes", "text": ""},
+              {"id": 16, "type":"arrowDownYes", "text": "Si"},
               {"id": 17, "type":"empty", "text": ""},
               {"id": 18, "type":"empty", "text": ""},
       
-              {"id": 19, "type":"end", "text": "FIN"},
+              {"id": 19, "type":"end", "text": "FIM"},
               {"id": 20, "type":"empty", "text": ""},
               {"id": 21, "type":"empty", "text": ""}
           ],
@@ -131,13 +131,13 @@
       },
       "4":{
           "column1" : [
-              { "id": 1, "type": "instruction" , "text": "Conectarlo" },
-              { "id": 2, "type": "instruction" , "text": "Conectarse a la red" },
-              { "id": 3, "type": "condition" , "text": "¿Hay conexión a internet?" },
-              { "id": 4, "type": "condition" , "text": "¿El módem está conectado?" }
+              { "id": 1, "type": "instruction" , "text": "Ligar" },
+              { "id": 2, "type": "instruction" , "text": "Ligação à rede" },
+              { "id": 3, "type": "condition" , "text": "Existe uma ligação à Internet?" },
+              { "id": 4, "type": "condition" , "text": "O modem está ligado?" }
           ],
           "column2" : [
-              {"id": 1, "type":"begin", "text": "No hay conexión a internet"},
+              {"id": 1, "type":"begin", "text": "Sem ligação à Internet"},
               {"id": 2, "type":"empty", "text": ""},
               {"id": 3, "type":"empty", "text": ""},
       
@@ -146,22 +146,22 @@
               {"id": 6, "type":"empty", "text": ""},
       
               {"id": 7, "type":"drag-conditionEspace", "text":""},
-              {"id": 8, "type":"arrowLeftNo", "text": ""},
+              {"id": 8, "type":"arrowLeftNo", "text": "Não"},
               {"id": 9, "type":"drag-conditionEspace", "text":""},
       
-              {"id": 10, "type":"arrowDownYes", "text": ""},
+              {"id": 10, "type":"arrowDownYes", "text": "Si"},
               {"id": 11, "type":"empty", "text": ""},
               {"id": 12, "type":"empty", "text": ""},
       
               {"id": 13, "type":"drag-instructionEspace", "text":""},
-              {"id": 14, "type":"arrowLeftNo", "text": ""},
+              {"id": 14, "type":"arrowLeftNo", "text": "Não"},
               {"id": 15, "type":"drag-instructionEspace", "text":""},
       
-              {"id": 16, "type":"arrowDownYes", "text": ""},
+              {"id": 16, "type":"arrowDownYes", "text": "Si"},
               {"id": 17, "type":"empty", "text": ""},
               {"id": 18, "type":"empty", "text": ""},
       
-              {"id": 19, "type":"end", "text": "FIN"},
+              {"id": 19, "type":"end", "text": "FIM"},
               {"id": 20, "type":"empty", "text": ""},
               {"id": 21, "type":"empty", "text": ""}
           ],

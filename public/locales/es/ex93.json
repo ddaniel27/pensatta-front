@@ -103,7 +103,7 @@
         "name":"República Dominicana",
         "demonym":"dominicano",
         "capital":"Santo Domingo",
-        "money": "Peso dominicano",
+        "money": "Peso Dominicano (DOP)",
         "language":"Español",
         "domain":".do"
       },
@@ -111,23 +111,23 @@
         "name":"Haití",
         "demonym":"haitiano",
         "capital":"Puerto Príncipe",
-        "money": "Gourde",
-        "language":"Francés",
+        "money": "Gourde Haitiano (HTG)",
+        "language":"Francés y criollo haitiano",
         "domain":".ht"
       },
       "jamaica":{
         "name":"Jamaica",
         "demonym":"jamaiquino",
         "capital":"Kingston",
-        "money": "Dólar jamaiquino",
-        "language":"Inglés",
+        "money": "Dólar Jamaicano (JMD)",
+        "language":"Inglés y patois",
         "domain":".jm"
       },
       "cuba":{
         "name":"Cuba",
         "demonym":"cubano",
         "capital":"La Habana",
-        "money": "Peso cubano",
+        "money": "Peso Cubano (CUP)",
         "language":"Español",
         "domain":".cu"
       }
@@ -138,7 +138,7 @@
           "name":"Colombia",
           "demonym":"colombiano",
           "capital":"Bogotá",
-          "money": "Peso colombiano",
+          "money": "Peso colombiano (COP)",
           "language":"Español",
           "domain":".co"
         },
@@ -146,7 +146,7 @@
           "name":"Venezuela",
           "demonym":"venezolano",
           "capital":"Caracas",
-          "money": "Bolívar",
+          "money": "Bolívar (BS)",
           "language":"Español",
           "domain":".ve"
         },
@@ -162,7 +162,7 @@
           "name":"Perú",
           "demonym":"peruano",
           "capital":"Lima",
-          "money": "Sol",
+          "money": "Sol (S/)",
           "language":"Español",
           "domain":".pe"
         },
@@ -170,7 +170,7 @@
           "name":"Bolivia",
           "demonym":"boliviano",
           "capital":"Sucre",
-          "money": "Boliviano",
+          "money": "Boliviano (BOB)",
           "language":"Español",
           "domain":".bo"
         },
@@ -178,7 +178,7 @@
           "name":"Chile",
           "demonym":"chileno",
           "capital":"Santiago de Chile",
-          "money": "Peso chileno",
+          "money": "Peso Chileno (CLP)",
           "language":"Español",
           "domain":".cl"
         },
@@ -186,7 +186,7 @@
           "name":"Argentina",
           "demonym":"argentino",
           "capital":"Buenos Aires",
-          "money": "Peso argentino",
+          "money": "Peso Argentino (ARS)",
           "language":"Español",
           "domain":".ar"
         },
@@ -194,7 +194,7 @@
           "name":"Uruguay",
           "demonym":"uruguayo",
           "capital":"Montevideo",
-          "money": "Peso uruguayo",
+          "money": "Peso Uruguayo (UYU)",
           "language":"Español",
           "domain":".uy"
         },
@@ -202,7 +202,7 @@
           "name":"Paraguay",
           "demonym":"paraguayo",
           "capital":"Asunción",
-          "money": "Guaraní",
+          "money": "Guaraní (PYG)",
           "language":"Español",
           "domain":".py"
         },
@@ -210,7 +210,7 @@
           "name":"Brasil",
           "demonym":"brasileño",
           "capital":"Brasilia",
-          "money": "Real",
+          "money": "Real Brasileño (BRL)",
           "language":"Portugués",
           "domain":".br"
         },
@@ -218,7 +218,7 @@
           "name":"Guayana Francesa",
           "demonym":"guayanés",
           "capital":"Cayena",
-          "money": "Euro",
+          "money": "Euro (EUR)",
           "language":"Francés",
           "domain":".gf"
         },
@@ -226,7 +226,7 @@
           "name":"Surinam",
           "demonym":"surinamés",
           "capital":"Paramaribo",
-          "money": "Dólar surinamés",
+          "money": "Dólar Surinamés (SRD)",
           "language":"Neerlandés",
           "domain":".sr"
         },
@@ -234,7 +234,7 @@
           "name":"Guayana Británica",
           "demonym":"guayanés",
           "capital":"Georgetown",
-          "money": "Dólar guyanés",
+          "money": "Dólar Guyanés (GYD)",
           "language":"Inglés",
           "domain":".gy"
         }
@@ -244,7 +244,7 @@
           "name":"Lituania",
           "demonym":"lituano",
           "capital":"Vilna",
-          "money": "Euro",
+          "money": "Euro (EUR)",
           "language":"Lituano",
           "domain":".lt"
         },
@@ -252,7 +252,7 @@
           "name":"Letonia",
           "demonym":"letón",
           "capital":"Riga",
-          "money": "Euro",
+          "money": "Euro (EUR)",
           "language":"Letón",
           "domain":".lv"
         },
@@ -260,7 +260,7 @@
           "name":"Estonia",
           "demonym":"estonio",
           "capital":"Tallin",
-          "money": "Euro",
+          "money": "Euro (EUR)",
           "language":"Estonio",
           "domain":".ee"
         },
@@ -276,15 +276,15 @@
           "name":"Finlandia",
           "demonym":"finlandés",
           "capital":"Helsinki",
-          "money": "Euro",
-          "language":"Finés",
+          "money": "Euro (EUR)",
+          "language":"Finlandés y sueco",
           "domain":".fi"
         },
         "suecia":{
           "name":"Suecia",
           "demonym":"sueco",
           "capital":"Estocolmo",
-          "money": "Corona sueca",
+          "money": "Corona Sueca (SEK)",
           "language":"Sueco",
           "domain":".se"
         },
@@ -292,7 +292,7 @@
           "name":"Noruega",
           "demonym":"noruego",
           "capital":"Oslo",
-          "money": "Corona noruega",
+          "money": "Corona Noruega (NOK)",
           "language":"Noruego",
           "domain":".no"
         },
@@ -300,7 +300,7 @@
           "name":"Islandia",
           "demonym":"islandés",
           "capital":"Reikiavik",
-          "money": "Corona islandesa",
+          "money": "Corona Islandesa (ISK)",
           "language":"Islandés",
           "domain":".is"
         }
@@ -310,7 +310,7 @@
             "name":"Ucrania",
             "demonym":"ucraniano",
             "capital":"Kiev",
-            "money": "Grivna",
+            "money": "Grivna (UAH)",
             "language":"Ucraniano",
             "domain":".ua"
           },
@@ -318,15 +318,15 @@
             "name":"Bielorrusia",
             "demonym":"bielorruso",
             "capital":"Minsk",
-            "money": "Rublo bielorruso",
-            "language":"Bielorruso",
+            "money": "Rublo Bielorruso (BYR)",
+            "language":"Bielorruso y ruso",
             "domain":".by"
           },
           "polonia":{
             "name":"Polonia",
             "demonym":"polaco",
             "capital":"Varsovia",
-            "money": "Zloty",
+            "money": "Esloti (PLN)",
             "language":"Polaco",
             "domain":".pl"
           },
@@ -334,7 +334,7 @@
             "name":"Eslovaquia",
             "demonym":"eslovaco",
             "capital":"Bratislava",
-            "money": "Euro",
+            "money": "Euro (EUR)",
             "language":"Eslovaco",
             "domain":".sk"
           },
@@ -342,7 +342,7 @@
             "name":"Eslovenia",
             "demonym":"esloveno",
             "capital":"Liubliana",
-            "money": "Euro",
+            "money": "Euro (EUR)",
             "language":"Esloveno",
             "domain":".si"
           },
@@ -350,7 +350,7 @@
             "name":"Hungría",
             "demonym":"húngaro",
             "capital":"Budapest",
-            "money": "Forinto",
+            "money": "Forínto Húngaro (HUF)",
             "language":"Húngaro",
             "domain":".hu"
           },
@@ -358,7 +358,7 @@
             "name":"Austria",
             "demonym":"austriaco",
             "capital":"Viena",
-            "money": "Euro",
+            "money": "Euro (EUR)",
             "language":"Alemán",
             "domain":".at"
           },
@@ -366,23 +366,23 @@
             "name":"República Checa",
             "demonym":"checo",
             "capital":"Praga",
-            "money": "Corona checa",
-            "language":"Checo",
+            "money": "Corona checoslovaca (KCS)",
+            "language":"Checo, eslovaco.",
             "domain":".cz"
           },
           "suiza":{
             "name":"Suiza",
             "demonym":"suizo",
             "capital":"Berna",
-            "money": "Franco suizo",
-            "language":"Alemán",
+            "money": "Franco Suizo (CHF)",
+            "language":"Alemán, francés, italiano y romanche.",
             "domain":".ch"
           },
           "alemania":{
             "name":"Alemania",
             "demonym":"alemán",
             "capital":"Berlín",
-            "money": "Euro",
+            "money": "Euro (EUR)",
             "language":"Alemán",
             "domain":".de"
           },
@@ -390,23 +390,23 @@
             "name":"Luxemburgo",
             "demonym":"luxemburgués",
             "capital":"Luxemburgo",
-            "money": "Euro",
-            "language":"Luxemburgués",
+            "money": "Euro (EUR)",
+            "language":"Luxemburgués, francés y alemán.",
             "domain":".lu"
           },
           "belgica":{
             "name":"Bélgica",
             "demonym":"belga",
             "capital":"Bruselas",
-            "money": "Euro",
-            "language":"Francés",
+            "money": "Euro (EUR)",
+            "language":"Neerlandés, francés y alemán.",
             "domain":".be"
           },
           "holanda":{
             "name":"Países Bajos",
             "demonym":"neerlandés",
             "capital":"Ámsterdam",
-            "money": "Euro",
+            "money": "Euro (EUR)",
             "language":"Neerlandés",
             "domain":".nl"
           },
@@ -414,7 +414,7 @@
             "name":"Reino Unido",
             "demonym":"británico",
             "capital":"Londres",
-            "money": "Libra esterlina",
+            "money": "Libra Esterlina (GBP)",
             "language":"Inglés",
             "domain":".uk"
 
@@ -423,8 +423,8 @@
             "name":"Irlanda",
             "demonym":"irlandés",
             "capital":"Dublín",
-            "money": "Euro",
-            "language":"Irlandés",
+            "money": "Euro (EUR)",
+            "language":"Irlandés e inglés",
             "domain":".ie"
           }
       },
@@ -433,15 +433,15 @@
           "name":"Bulgaria",
           "demonym":"búlgaro",
           "capital":"Sofía",
-          "money": "Lev",
+          "money": "Leva (BGN)",
           "language":"Búlgaro",
-          "domain":".bg"
+          "domain":".bg y .бг"
         },
         "grecia":{
           "name":"Grecia",
           "demonym":"griego",
           "capital":"Atenas",
-          "money": "Euro",
+          "money": "Euro (EUR)",
           "language":"Griego",
           "domain":".gr"
         },
@@ -449,7 +449,7 @@
           "name":"Albania",
           "demonym":"albanés",
           "capital":"Tirana",
-          "money": "Lek",
+          "money": "Lek Albanés (ALL)",
           "language":"Albanés",
           "domain":".al"
         },
@@ -457,15 +457,15 @@
           "name":"Macedonia",
           "demonym":"macedonio",
           "capital":"Skopie",
-          "money": "Dinar macedonio",
-          "language":"Macedonio",
+          "money": "Denar Macedonio (MKD)",
+          "language":"Macedonio y albanés",
           "domain":".mk"
         },
         "montenegro":{
           "name":"Montenegro",
           "demonym":"montenegrino",
           "capital":"Podgorica",
-          "money": "Euro",
+          "money": "Euro (EUR)",
           "language":"Montenegrino",
           "domain":".me"
         },
@@ -473,15 +473,15 @@
           "name":"Bosnia y Herzegovina",
           "demonym":"bosnio",
           "capital":"Sarajevo",
-          "money": "Marco convertible",
-          "language":"Bosnio",
+          "money": "Marco Bosnioherzegovino (BAM)",
+          "language":"Bosnio, croata y serbio.",
           "domain":".ba"
         },
         "croacia":{
           "name":"Croacia",
           "demonym":"croata",
           "capital":"Zagreb",
-          "money": "Kuna",
+          "money": "Kuna (HRK)",
           "language":"Croata",
           "domain":".hr"
         },
@@ -489,7 +489,7 @@
           "name":"Serbia",
           "demonym":"serbio",
           "capital":"Belgrado",
-          "money": "Dinar serbio",
+          "money": "Dinar (RSD)",
           "language":"Serbio",
           "domain":".rs"
         },
@@ -497,7 +497,7 @@
           "name":"España",
           "demonym":"español",
           "capital":"Madrid",
-          "money": "Euro",
+          "money": "Euro (EUR)",
           "language":"Español",
           "domain":".es"
         },
@@ -505,7 +505,7 @@
           "name":"Portugal",
           "demonym":"portugués",
           "capital":"Lisboa",
-          "money": "Euro",
+          "money": "Euro (EUR)",
           "language":"Portugués",
           "domain":".pt"
         },
@@ -513,7 +513,7 @@
           "name":"Italia",
           "demonym":"italiano",
           "capital":"Roma",
-          "money": "Euro",
+          "money": "Euro (EUR)",
           "language":"Italiano",
           "domain":".it"
         },
@@ -521,7 +521,7 @@
           "name":"Francia",
           "demonym":"francés",
           "capital":"París",
-          "money": "Euro",
+          "money": "Euro (EUR)",
           "language":"Francés",
           "domain":".fr"
         },
@@ -529,15 +529,15 @@
           "name":"Moldavia",
           "demonym":"moldavo",
           "capital":"Chisináu",
-          "money": "Leu moldavo",
-          "language":"Moldavo",
+          "money": "Leu Moldavo (MDL)",
+          "language":"Rumano",
           "domain":".md"
         },
         "rumania":{
           "name":"Rumania",
           "demonym":"rumano",
           "capital":"Bucarest",
-          "money": "Leu rumano",
+          "money": "Leu (RON)",
           "language":"Rumano",
           "domain":".ro"
         }
@@ -547,39 +547,39 @@
             "name":"Sudán",
             "demonym":"sudanés",
             "capital":"Jartum",
-            "money": "Libra sudanesa",
-            "language":"Árabe",
+            "money": "Libra Sudanesa (SDG)",
+            "language":"Árabe e inglés",
             "domain":".sd"
           },
           "saharaocci":{
             "name":"Sahara Occidental",
             "demonym":"saharaui",
             "capital":"El Aaiún",
-            "money": "Dirham marroquí",
-            "language":"Árabe",
+            "money": "Peseta saharaui (EHP) y Dírham marroquí (MAD)",
+            "language":"Árabe y español",
             "domain":".eh"
           },
           "marruecos":{
             "name":"Marruecos",
             "demonym":"marroquí",
             "capital":"Rabat",
-            "money": "Dirham marroquí",
-            "language":"Árabe",
+            "money": "Dírham marroquí (MAD)",
+            "language":"Árabe y bereber",
             "domain":".ma"
           },
           "argelia":{
             "name":"Argelia",
             "demonym":"argelino",
             "capital":"Argel",
-            "money": "Dinar argelino",
-            "language":"Árabe",
+            "money": "Dinar Argelino (DZD)",
+            "language":"Árabe y lenguas bereberes",
             "domain":".dz"
           },
           "tunez":{
             "name":"Túnez",
             "demonym":"tunecino",
             "capital":"Túnez",
-            "money": "Dinar tunecino",
+            "money": "Dinar Tunecino (TND)",
             "language":"Árabe",
             "domain":".tn"
           },
@@ -587,16 +587,16 @@
             "name":"Libia",
             "demonym":"libio",
             "capital":"Trípoli",
-            "money": "Dinar libio",
-            "language":"Árabe",
+            "money": "Dinar Libio (LYD)",
+            "language":"Árabe y bereber",
             "domain":".ly"
           },
           "egipto":{
             "name":"Egipto",
             "demonym":"egipcio",
             "capital":"El Cairo",
-            "money": "Libra egipcia",
-            "language":"Árabe",
+            "money": "Libra Egipcia (EGP)",
+            "language":"Árabe y árabe egipcio",
             "domain":".eg"
           }
         },
@@ -605,7 +605,7 @@
             "name":"Nigeria",
             "demonym":"nigeriano",
             "capital":"Abuya",
-            "money": "Naira",
+            "money": "Naira (N)",
             "language":"Inglés",
             "domain":".ng"
           },
@@ -621,7 +621,7 @@
             "name":"Senegal",
             "demonym":"senegalés",
             "capital":"Dakar",
-            "money": "Franco CFA",
+            "money": "Franco CFA de África Occidental (XOF)",
             "language":"Francés",
             "domain":".sn"
           },
@@ -629,7 +629,7 @@
             "name":"Gambia",
             "demonym":"gambiano",
             "capital":"Banjul",
-            "money": "Dalasi",
+            "money": "Dalasi (GMD)",
             "language":"Inglés",
             "domain":".gm"
           },
@@ -637,7 +637,7 @@
             "name":"Guinea",
             "demonym":"guineano",
             "capital":"Conakri",
-            "money": "Franco guineano",
+            "money": "Franco guineano (GNF)",
             "language":"Francés",
             "domain":".gn"
           },
@@ -645,7 +645,7 @@
             "name":"Sierra Leona",
             "demonym":"sierraleonés",
             "capital":"Freetown",
-            "money": "Leone",
+            "money": "Leone (SLL)",
             "language":"Inglés",
             "domain":".sl"
           },
@@ -653,7 +653,7 @@
             "name":"Liberia",
             "demonym":"liberiano",
             "capital":"Monrovia",
-            "money": "Dólar liberiano",
+            "money": "Dólar Liberiano (LRD)",
             "language":"Inglés",
             "domain":".lr"
           },
@@ -661,7 +661,7 @@
             "name":"Costa de Marfil",
             "demonym":"marfileño",
             "capital":"Yamusukro",
-            "money": "Franco CFA",
+            "money": "Franco CFA de África Occidental (XOF)",
             "language":"Francés",
             "domain":".ci"
           },
@@ -669,7 +669,7 @@
             "name":"Burkina Faso",
             "demonym":"burkinés",
             "capital":"Uagadugú",
-            "money": "Franco CFA",
+            "money": "Franco CFA de África Occidental (XOF)",
             "language":"Francés",
             "domain":".bf"
           },
@@ -677,7 +677,7 @@
             "name":"Ghana",
             "demonym":"ghanés",
             "capital":"Acra",
-            "money": "Cedi",
+            "money": "Cedi (GHC)",
             "language":"Inglés",
             "domain":".gh"
           },
@@ -685,7 +685,7 @@
             "name":"Togo",
             "demonym":"togolés",
             "capital":"Lomé",
-            "money": "Franco CFA",
+            "money": "Franco CFA de África Occidental (XOF)",
             "language":"Francés",
             "domain":".tg"
           },
@@ -693,7 +693,7 @@
             "name":"Benín",
             "demonym":"beninés",
             "capital":"Porto Novo",
-            "money": "Franco CFA",
+            "money": "Franco CFA de África Occidental (XOF)",
             "language":"Francés",
             "domain":".bj"
           },
@@ -701,7 +701,7 @@
             "name":"Níger",
             "demonym":"nigerino",
             "capital":"Niamey",
-            "money": "Franco CFA",
+            "money": "Franco CFA de África Occidental (XOF)",
             "language":"Francés",
             "domain":".ne"
           },
@@ -709,7 +709,7 @@
             "name":"Guinea-Bissau",
             "demonym":"guineano",
             "capital":"Bissau",
-            "money": "Franco CFA",
+            "money": "Franco CFA de África Occidental (XOF)",
             "language":"Portugués",
             "domain":".gw"
           },
@@ -717,7 +717,7 @@
             "name":"Mauritania",
             "demonym":"mauritano",
             "capital":"Nuakchot",
-            "money": "Uguiya",
+            "money": "Uguiya (MRU)",
             "language":"Árabe",
             "domain":".mr"
           }
@@ -727,15 +727,15 @@
               "name":"Madagascar",
               "demonym":"malgache",
               "capital":"Antananarivo",
-              "money": "Ariary",
-              "language":"Francés",
+              "money": "Ariary (MGA)",
+              "language":"Malgache y Francés",
               "domain":".mg"
             },
             "mozambique":{
               "name":"Mozambique",
               "demonym":"mozambiqueño",
               "capital":"Maputo",
-              "money": "Metical",
+              "money": "Metical (MZM)",
               "language":"Portugués",
               "domain":".mz"
             },
@@ -743,55 +743,55 @@
               "name":"Tanzania",
               "demonym":"tanzano",
               "capital":"Dodoma",
-              "money": "Chelín tanzano",
-              "language":"Suajili",
+              "money": "Chelín tanzano (TZS)",
+              "language":"Suajili e Inglés",
               "domain":".tz"
             },
             "kenia":{
               "name":"Kenia",
               "demonym":"keniata",
               "capital":"Nairobi",
-              "money": "Chelín keniano",
-              "language":"Suajili",
+              "money": "Chelín keniano (KES)",
+              "language":"Suajili e Inglés",
               "domain":".ke"
             },
             "uganda":{
               "name":"Uganda",
               "demonym":"ugandés",
               "capital":"Kampala",
-              "money": "Chelín ugandés",
-              "language":"Inglés",
+              "money": "Chelín ugandés (UGX)",
+              "language":"Suajili e Inglés",
               "domain":".ug"
             },
             "ruanda":{
               "name":"Ruanda",
               "demonym":"ruandés",
               "capital":"Kigali",
-              "money": "Franco ruandés",
-              "language":"Francés",
+              "money": "Franco Ruandés (RWF)",
+              "language":"Kiñaruanda",
               "domain":".rw"
             },
             "burundi":{
               "name":"Burundi",
               "demonym":"burundés",
               "capital":"Buyumbura",
-              "money": "Franco burundés",
-              "language":"Francés",
+              "money": "Franco Burundés (BIF)",
+              "language":"Kirundi y Francés",
               "domain":".bi"
             },
             "etiopia":{
               "name":"Etiopía",
               "demonym":"etíope",
               "capital":"Adís Abeba",
-              "money": "Birr etíope",
-              "language":"Amárico",
+              "money": "Birr etíope (ETB)",
+              "language":"Amhárico, Oromo, Somalí y Tigriña.",
               "domain":".et"
             },
             "eritrea":{
               "name":"Eritrea",
               "demonym":"eritreo",
               "capital":"Asmara",
-              "money": "Nakfa",
+              "money": "Nakfa (ERN)",
               "language":"Tigriña",
               "domain":".er"
             },
@@ -799,23 +799,23 @@
               "name":"Somalia",
               "demonym":"somalí",
               "capital":"Mogadiscio",
-              "money": "Chelín somalí",
-              "language":"Somalí",
+              "money": "Chelín somalí (SOS)",
+              "language":"Somalí y Árabe",
               "domain":".so"
             },
             "yibuti":{
               "name":"Yibuti",
               "demonym":"yibutiano",
               "capital":"Yibuti",
-              "money": "Franco yibutiano",
-              "language":"Francés",
+              "money": "Franco yibutiano (DJF)",
+              "language":"Francés, Árabe y Somalí.",
               "domain":".dj"
             },
             "zambia":{
               "name":"Zambia",
               "demonym":"zambiano",
               "capital":"Lusaka",
-              "money": "Kwacha zambiano",
+              "money": "Kwacha Zambiano (ZMK)",
               "language":"Inglés",
               "domain":".zm"
             },
@@ -823,7 +823,7 @@
               "name":"Zimbabue",
               "demonym":"zimbabuense",
               "capital":"Harare",
-              "money": "Dólar zimbabuense",
+              "money": "Dólar RTGS​ (ZWL)",
               "language":"Inglés",
               "domain":".zw"
             },
@@ -831,7 +831,7 @@
               "name":"Malawi",
               "demonym":"malauí",
               "capital":"Lilongüe",
-              "money": "Kwacha malauí",
+              "money": "Kwacha Malauí (MWK)",
               "language":"Inglés",
               "domain":".mw"
             }
@@ -841,23 +841,23 @@
                 "name":"Lesoto",
                 "demonym":"lesotense",
                 "capital":"Maseru",
-                "money": "Loti",
-                "language":"Inglés",
+                "money": "Loti (LSL)",
+                "language":"Sesoto e Inglés",
                 "domain":".ls"
               },
               "esuatini":{
                 "name":"Esuatini",
                 "demonym":"esuatiniense",
                 "capital":"Mbabane",
-                "money": "Lilangeni",
-                "language":"Inglés",
+                "money": "Lilangeni (SZL)",
+                "language":"Suazi e Inglés",
                 "domain":".sz"
               },
               "sudafrica":{
                 "name":"Sudáfrica",
                 "demonym":"sudafricano",
                 "capital":"Pretoria",
-                "money": "Rand",
+                "money": "Rand (ZAR)",
                 "language":"Inglés",
                 "domain":".za"
               },
@@ -865,7 +865,7 @@
                 "name":"Namibia",
                 "demonym":"namibio",
                 "capital":"Windhoek",
-                "money": "Dólar namibio",
+                "money": "Dólar namibio (NAD)",
                 "language":"Inglés",
                 "domain":".na"
               },
@@ -873,8 +873,8 @@
                 "name":"Botsuana",
                 "demonym":"botsuano",
                 "capital":"Gaborone",
-                "money": "Pula",
-                "language":"Inglés",
+                "money": "Pula (BWP)",
+                "language":"Inglés y Setsuana",
                 "domain":".bw"
               }
               },
@@ -883,7 +883,7 @@
                   "name":"Angola",
                   "demonym":"angoleño",
                   "capital":"Luanda",
-                  "money": "Kwanza",
+                  "money": "Kwanza (AOA)",
                   "language":"Portugués",
                   "domain":".ao"
                 },
@@ -891,7 +891,7 @@
                   "name":"República del Congo",
                   "demonym":"congoleño",
                   "capital":"Kinshasa",
-                  "money": "Franco CFA",
+                  "money": "Franco Congoleño (CDF)",
                   "language":"Francés",
                   "domain":".cg"
                 },
@@ -899,7 +899,7 @@
                   "name":"Congo",
                   "demonym":"congoleño",
                   "capital":"Kinshasa",
-                  "money": "Franco congoleño",
+                  "money": "Franco CFA de África Central (XAF)",
                   "language":"Francés",
                   "domain":".cd"
                 },
@@ -907,7 +907,7 @@
                   "name":"Gabón",
                   "demonym":"gabonés",
                   "capital":"Libreville",
-                  "money": "Franco CFA",
+                  "money": "Franco CFA de África Central (XAF)",
                   "language":"Francés",
                   "domain":".ga"
                 },
@@ -915,32 +915,32 @@
                   "name":"Guinea Ecuatorial",
                   "demonym":"ecuatoguineano",
                   "capital":"Malabo",
-                  "money": "Franco CFA",
-                  "language":"Español",
+                  "money": "Franco CFA de África Central (XAF)",
+                  "language":"Español, Francés y Portugués.",
                   "domain":".gq"
                 },
                 "camerun":{
                   "name":"Camerún",
                   "demonym":"camerunés",
                   "capital":"Yaundé",
-                  "money": "Franco CFA",
-                  "language":"Francés",
+                  "money": "Franco CFA de África Central (XAF)",
+                  "language":"Francés e Inglés",
                   "domain":".cm"
                 },
                 "chad":{
                   "name":"Chad",
                   "demonym":"chadiano",
                   "capital":"Yamena",
-                  "money": "Franco CFA",
-                  "language":"Francés",
+                  "money": "Franco CFA de África Central (XAF)",
+                  "language":"Francés y Árabe",
                   "domain":".td"
                 },
                 "republicacentroafricana":{
                   "name":"República Centroafricana",
                   "demonym":"centroafricano",
                   "capital":"Bangui",
-                  "money": "Franco CFA",
-                  "language":"Francés",
+                  "money": "Franco CFA de África Central (XAF)",
+                  "language":"Sango y Francés",
                   "domain":".cf"
                 }
                 },
@@ -949,7 +949,7 @@
                     "name":"Yemen",
                     "demonym":"yemení",
                     "capital":"Saná",
-                    "money": "Rial yemení",
+                    "money": "Rial Yemení (YER)",
                     "language":"Árabe",
                     "domain":".ye"
                   },
@@ -957,7 +957,7 @@
                     "name":"Omán",
                     "demonym":"omaní",
                     "capital":"Mascate",
-                    "money": "Rial omaní",
+                    "money": "Rial Omaní (OMR)",
                     "language":"Árabe",
                     "domain":".om"
                   },
@@ -965,7 +965,7 @@
                     "name":"Emiratos Árabes Unidos",
                     "demonym":"emiratí",
                     "capital":"Abu Dabi",
-                    "money": "Dirham de los Emiratos Árabes Unidos",
+                    "money": "Dírham (AED)",
                     "language":"Árabe",
                     "domain":".ae"
                   },
@@ -973,7 +973,7 @@
                     "name":"Qatar",
                     "demonym":"catarí",
                     "capital":"Doha",
-                    "money": "Rial catarí",
+                    "money": "Riyal Catarí (QAR)",
                     "language":"Árabe",
                     "domain":".qa"
                   },
@@ -981,7 +981,7 @@
                     "name":"Arabia Saudita",
                     "demonym":"saudí",
                     "capital":"Riad",
-                    "money": "Rial saudí",
+                    "money": "Riyal Saudí (SAR)",
                     "language":"Árabe",
                     "domain":".sa"
                   },
@@ -989,7 +989,7 @@
                     "name":"Kuwait",
                     "demonym":"kuwaití",
                     "capital":"Kuwait",
-                    "money": "Dinar kuwaití",
+                    "money": "Dinar Kuwaití (KWD)",
                     "language":"Árabe",
                     "domain":".kw"
                   },
@@ -997,23 +997,23 @@
                     "name":"Pakistán",
                     "demonym":"paquistaní",
                     "capital":"Islamabad",
-                    "money": "Rupia pakistaní",
-                    "language":"Inglés",
+                    "money": "Rupia Pakistaní (PKR)",
+                    "language":"Urdu e Inglés",
                     "domain":".pk"
                   },
                   "afganistan":{
                     "name":"Afganistán",
                     "demonym":"afgano",
                     "capital":"Kabul",
-                    "money": "Afgani",
-                    "language":"Dari",
+                    "money": "Afgani (AFN)",
+                    "language":"Pastún y Darí",
                     "domain":".af"
                   },
                   "iran":{
                     "name":"Irán",
                     "demonym":"iraní",
                     "capital":"Teherán",
-                    "money": "Rial iraní",
+                    "money": "Rial (IRR)",
                     "language":"Persa",
                     "domain":".ir"
                   },
@@ -1021,7 +1021,7 @@
                     "name":"Turquía",
                     "demonym":"turco",
                     "capital":"Ankara",
-                    "money": "Lira turca",
+                    "money": "Lira turca​ (TRY)",
                     "language":"Turco",
                     "domain":".tr"
                   },
@@ -1029,7 +1029,7 @@
                     "name":"Siria",
                     "demonym":"sirio",
                     "capital":"Damasco",
-                    "money": "Libra siria",
+                    "money": "Libra Siria (SYP)",
                     "language":"Árabe",
                     "domain":".sy"
                   },
@@ -1037,15 +1037,15 @@
                     "name":"Irak",
                     "demonym":"iraquí",
                     "capital":"Bagdad",
-                    "money": "Dinar iraquí",
-                    "language":"Árabe",
+                    "money": "Dinar Iraquí (IQD)",
+                    "language":"Árabe y Kurdo",
                     "domain":".iq"
                   },
                   "jordania":{
                     "name":"Jordania",
                     "demonym":"jordano",
                     "capital":"Amán",
-                    "money": "Dinar jordano",
+                    "money": "Dinar jordano (JOD)",
                     "language":"Árabe",
                     "domain":".jo"
                   },
@@ -1053,7 +1053,7 @@
                     "name":"Palestina",
                     "demonym":"palestino",
                     "capital":"Jerusalén",
-                    "money": "Shekel",
+                    "money": "Nuevo Séquel Israelí (ILS)",
                     "language":"Árabe",
                     "domain":".ps"
                   },
@@ -1061,7 +1061,7 @@
                     "name": "Israel",
                     "demonym":"israelí",
                     "capital":"Jerusalén",
-                    "money": "Nuevo shéquel israelí",
+                    "money": "Nuevo Séquel (ILS)",
                     "language":"Hebreo",
                     "domain":".il"
                   },
@@ -1069,7 +1069,7 @@
                     "name": "Libano",
                     "demonym":"libanés",
                     "capital":"Beirut",
-                    "money": "Libra libanesa",
+                    "money": "Libra libanesa (LBP)",
                     "language":"Árabe",
                     "domain":".lb"
                   },
@@ -1077,23 +1077,23 @@
                     "name": "Chipre",
                     "demonym":"chipriota",
                     "capital":"Nicosia",
-                    "money": "Euro",
-                    "language":"Griego",
+                    "money": "Euro (EUR)",
+                    "language":"Griego y Turco",
                     "domain":".cy"
                   },
                   "azerbaiyan":{
                     "name": "Azerbaiyán",
                     "demonym":"azerbaiyano",
                     "capital":"Bakú",
-                    "money": "Manat azerbaiyano",
-                    "language":"Azerbaiyano",
+                    "money": "Manat azerbaiyano (AZN)",
+                    "language":"Azerí",
                     "domain":".az"
                   },
                   "georgia":{
                     "name": "Georgia",
                     "demonym":"georgiano",
                     "capital":"Tiflis",
-                    "money": "Lari",
+                    "money": "Lari (GEL)",
                     "language":"Georgiano",
                     "domain":".ge"
                   },
@@ -1101,7 +1101,7 @@
                     "name": "Armenia",
                     "demonym":"armenio",
                     "capital":"Ereván",
-                    "money": "Dram armenio",
+                    "money": "Dram (AMD)",
                     "language":"Armenio",
                     "domain":".am"
                   }
@@ -1111,40 +1111,40 @@
                       "name": "Kazajistán",
                       "demonym":"kazajo",
                       "capital":"Nursultán",
-                      "money": "Tenge",
-                      "language":"Kazajo",
+                      "money": "Tenge (KZT)",
+                      "language":"Kazajo y Ruso",
                       "domain":".kz"
                     },
                     "kirguistan":{
                       "name": "Kirguistán",
                       "demonym":"kirguís",
                       "capital":"Biskek",
-                      "money": "Som",
-                      "language":"Kirguís",
+                      "money": "Som Kirguís (KGS)",
+                      "language":"Kirguís y Ruso",
                       "domain":".kg"
                     },
                     "tayikistan":{
                       "name": "Tayikistán",
                       "demonym":"tayiko",
                       "capital":"Dusambé",
-                      "money": "Somoni",
-                      "language":"Tayiko",
+                      "money": "Somoni (TSO)",
+                      "language":"Tayiko y Ruso",
                       "domain":".tj"
                     },
                     "turkmenistan":{
                       "name": "Turkmenistán",
                       "demonym":"turcomano",
                       "capital":"Asjabad",
-                      "money": "Manat turcomano",
-                      "language":"Turcomano",
+                      "money": "Manat Turcomano (TMM)",
+                      "language":"Turcomano y Ruso",
                       "domain":".tm"
                     },
                     "uzbekistan":{
                       "name": "Uzbekistán",
                       "demonym":"uzbeko",
                       "capital":"Taskent",
-                      "money": "Som uzbeko",
-                      "language":"Uzbeko",
+                      "money": "Som Uzbeko (UZS)",
+                      "language":"Uzbeko y Ruso",
                       "domain":".uz"
                     }
                   },
@@ -1153,7 +1153,7 @@
                       "name": "Japón",
                       "demonym":"japonés",
                       "capital":"Tokio",
-                      "money": "Yen",
+                      "money": "Yen (JPY)",
                       "language":"Japonés",
                       "domain":".jp"
                     },
@@ -1161,15 +1161,15 @@
                       "name": "Corea del Sur",
                       "demonym":"surcoreano",
                       "capital":"Seúl",
-                      "money": "Won",
+                      "money": "Won Surcoreano (KRW)",
                       "language":"Coreano",
-                      "domain":".kr"
+                      "domain":".kr y.한국"
                     },
                     "coreanorte":{
                       "name": "Corea del Norte",
                       "demonym":"norcoreano",
                       "capital":"Pionyang",
-                      "money": "Won",
+                      "money": "Won Norcoreano (KPW)",
                       "language":"Coreano",
                       "domain":".kp"
                     },
@@ -1177,7 +1177,7 @@
                       "name": "Mongolia",
                       "demonym":"mongol",
                       "capital":"Ulán Bator",
-                      "money": "Tugrik",
+                      "money": "Tugrik (MNT)",
                       "language":"Mongol",
                       "domain":".mn"
                     },
@@ -1185,17 +1185,17 @@
                       "name": "China",
                       "demonym":"chino",
                       "capital":"Pekín",
-                      "money": "Yuan",
+                      "money": "Renminbi (CNY)​",
                       "language":"Chino",
-                      "domain":".cn"
+                      "domain":".cn, .中国, .中國 y .公司."
                     },
                     "rusia":{
                       "name": "Rusia",
                       "demonym":"ruso",
                       "capital":"Moscú",
-                      "money": "Rublo",
+                      "money": "Tenge (KZT)",
                       "language":"Ruso",
-                      "domain":".ru"
+                      "domain":".kz, .рф, .рус y.su."
                     }
                     },
                   "south-asia":{
@@ -1203,7 +1203,7 @@
                       "name": "Indonesia",
                       "demonym":"indonesio",
                       "capital":"Yakarta",
-                      "money": "Rupia",
+                      "money": "Rupia Indonesia (IDR)",
                       "language":"Indonesio",
                       "domain":".id"
                     },
@@ -1211,15 +1211,15 @@
                       "name": "Filipinas",
                       "demonym":"filipino",
                       "capital":"Manila",
-                      "money": "Peso filipino",
-                      "language":"Filipino",
+                      "money": "Peso Filipino (PHP)",
+                      "language":"Filipino e Inglés",
                       "domain":".ph"
                     },
                     "malasia":{
                       "name": "Malasia",
                       "demonym":"malayo",
                       "capital":"Kuala Lumpur",
-                      "money": "Ringgit",
+                      "money": "Ringgit (MYR)",
                       "language":"Malayo",
                       "domain":".my"
                     },
@@ -1227,7 +1227,7 @@
                       "name": "Brunéi",
                       "demonym":"bruneano",
                       "capital":"Bandar Seri Begawan",
-                      "money": "Dólar de Brunéi",
+                      "money": "Dólar de Brunéi (BND)",
                       "language":"Malayo",
                       "domain":".bn"
                     },
@@ -1235,15 +1235,15 @@
                       "name": "Camboya",
                       "demonym":"camboyano",
                       "capital":"Nom Pen",
-                      "money": "Riel",
-                      "language":"Camboyano",
+                      "money": "Riel Camboyano (KHR)",
+                      "language":"Jemer",
                       "domain":".kh"
                     },
                     "laos":{
                       "name": "Laos",
                       "demonym":"laosiano",
                       "capital":"Vientián",
-                      "money": "Kip",
+                      "money": "Kip (LAK)",
                       "language":"Laosiano",
                       "domain":".la"
                     },
@@ -1251,7 +1251,7 @@
                       "name": "Vietnam",
                       "demonym":"vietnamita",
                       "capital": "Hanoi",
-                      "money": "Dong",
+                      "money": "Đồng Vietnamita (VND)",
                       "language": "Vietnamita",
                       "domain": ".vn"
                     },
@@ -1259,7 +1259,7 @@
                       "name": "Tailandia",
                       "demonym": "tailandés",
                       "capital": "Bangkok",
-                      "money": "Bath",
+                      "money": "Baht Tailandés (THB)",
                       "language":"tailandés",
                       "domain": ".th"
                     },
@@ -1267,7 +1267,7 @@
                       "name": "Birmania",
                       "demonym": "birmano",
                       "capital": "Naypyidaw",
-                      "money": "Kyat",
+                      "money": "kyat (MMK)",
                       "language":"birmano",
                       "domain": ".mm"
                     },
@@ -1275,15 +1275,15 @@
                       "name": "Sri Lanka",
                       "demonym": "sirilankés",
                       "capital": "Sri Jayawardenapura-Kotte",
-                      "money": "Rupia",
-                      "language":"cingalés",
+                      "money": "Rupia de Sri Lanka (LKR)",
+                      "language":"Cingalés y Tamil",
                       "domain": ".lk"
                     },
                     "nepal":{
                       "name": "Nepal",
                       "demonym": "nepalí",
                       "capital": "Katmandú",
-                      "money": "Rupia",
+                      "money": "Rupia Nepalí (NPR)",
                       "language":"nepalí",
                       "domain": ".np"
                     },
@@ -1291,7 +1291,7 @@
                       "name": "Bután",
                       "demonym": "butanés",
                       "capital": "Timbu",
-                      "money": "Ngultrum",
+                      "money": "Ngultrum Butanés (BTN)",
                       "language":"dzongkha",
                       "domain": ".bt"
                     },
@@ -1299,15 +1299,15 @@
                       "name": "India",
                       "demonym": "indio",
                       "capital": "Nueva Delhi",
-                      "money": "Rupia",
-                      "language":"hindi",
+                      "money": "Rupia India (INR)",
+                      "language":"Hindi e Inglés",
                       "domain": ".in"
                     },
                     "bangladesh":{
                       "name": "Bangladesh",
                       "demonym": "bangladesí",
                       "capital": "Daca",
-                      "money": "Taka",
+                      "money": "Taka (BDT)",
                       "language":"bengalí",
                       "domain": ".bd"
                     }                  
@@ -1317,7 +1317,7 @@
               "name": "Nueva Zelanda",
               "demonym": "neozelandés",
               "capital": "Wellington",
-              "money": "Dólar neozelandés",
+              "money": "Dólar Neozelandés (NZD)",
               "language":"inglés",
               "domain": ".nz"
             },
@@ -1325,7 +1325,7 @@
               "name": "Australia",
               "demonym": "australiano",
               "capital": "Canberra",
-              "money": "Dólar australiano",
+              "money": "Dólar Australiano (AUD)",
               "language":"inglés",
               "domain": ".au"
             },
@@ -1333,7 +1333,7 @@
               "name": "Papúa Nueva Guinea",
               "demonym": "papuano",
               "capital": "Puerto Moresby",
-              "money": "Kina",
+              "money": "Kina (PGK)",
               "language":"inglés",
               "domain": ".pg"
             }
