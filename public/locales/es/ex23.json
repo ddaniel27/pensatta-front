@@ -21,6 +21,11 @@
           "fix": "CPU"
       }
   ],
+  "imgRam":"../../images/exercises/23/RAM_1.svg",
+  "imgGpu":"../../images/exercises/23/GPU_1.svg",
+  "imgHdd":"../../images/exercises/23//Disco_duro.svg",
+  "imgBoard":"../../images/exercises/23//Board_1.svg",
+  "imgCpu":"../../images/exercises/23//Procesador.svg",
   "initMessages":[
       "Nuestra computadora central está fallando, tu tarea es identificar la pieza que está averiada.",
       "Analiza la situación para identificar el origen del problema."
@@ -30,6 +35,7 @@
       "min": 1,
       "perfect": 3
   },
+  
   "title": "Reporte Técnico",
   "btnAnswer": "RESPONDER",
   "btnNext": "SIGUIENTE",

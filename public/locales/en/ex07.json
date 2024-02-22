@@ -87,7 +87,7 @@
                   "isCorrect":false
               }
           ],
-          "image":  "Twitter_Violencia.png"
+          "image":  "Twitter_Violencia.svg"
       },
       {
           "question":"",
@@ -235,7 +235,7 @@
       "min": 1,
       "perfect":3
   },
-  "path": "07",
+  "path": "07/en",
   "color": "#AE985E",
   "name":"Sensitivity detection",
   "id": 7

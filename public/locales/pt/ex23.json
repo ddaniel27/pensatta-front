@@ -6,21 +6,30 @@
       },
       {
           "error": "Nosso computador apresenta telas piscando, linhas vermelhas piscando, reinicializações inesperadas e padrões estranhos na tela.",
-          "fix": "GPU"
+          "fix": "GPU",
+          "image":"../../images/exercises/23/GPU_1.svg"
       },
       {
           "error": "No nosso computador, os aplicativos congelam, parecem lentos quando usados e têm telas azuis",
-          "fix": "HDD"
+          "fix": "HDD",
+          "image":"../../images/exercises/23/pt/DiscoRigido.svg"
       },
       {
           "error": "Em nosso computador, os aplicativos congelam, não encontra hardware e apresenta telas azuis",
-          "fix": "Board"
+          "fix": "Board",
+          "image":"../../images/exercises/23/pt/Quadro.svg"
       },
       {
           "error": "Em nosso equipamento não liga ou dá a tela inicial mas soam as ventoinhas ou outros componentes",
-          "fix": "CPU"
+          "fix": "CPU",
+          "image":"../../images/exercises/23/pt/Procesador.svg"
       }
   ],
+  "imgRam":"../../images/exercises/23/pt/RAM.svg",
+  "imgGpu":"../../images/exercises/23/GPU_1.svg",
+  "imgHdd":"../../images/exercises/23/pt/DiscoRigido.svg",
+  "imgBoard":"../../images/exercises/23/pt/Quadro.svg",
+  "imgCpu":"../../images/exercises/23/pt/Procesador.svg",
   "initMessages":[
     "Nosso computador central está falhando, sua tarefa é identificar a peça que está com defeito.",
     "Analisar a situação para identificar a origem do problema."

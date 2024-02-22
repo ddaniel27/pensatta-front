@@ -87,7 +87,7 @@
                   "isCorrect":false
               }
           ],
-          "image":  "Twitter_Violencia.png"
+          "image":  "Twitter_Violencia.svg"
       },
       {
           "question":"",
@@ -237,7 +237,7 @@
       "min": 1,
       "perfect":3
   },
-  "path": "07",
+  "path": "07/pt",
   "color": "#AE985E",
   "name":"Detecção de sensibilidade",
   "id": 7

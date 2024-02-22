@@ -21,6 +21,11 @@
           "fix": "CPU"
       }
   ],
+  "imgRam":"../../images/exercises/23/en/RAM.svg",
+  "imgGpu":"../../images/exercises/23/GPU_1.svg",
+  "imgHdd":"../../images/exercises/23/en/DiscoDuro.svg",
+  "imgBoard":"../../images/exercises/23/Board_1.svg",
+  "imgCpu":"../../images/exercises/23/Procesador.svg",
   "initMessages":[
     "Our central computer is failing, your task is to identify the part that is faulty.",
     "Analyze the situation to identify the source of the problem."

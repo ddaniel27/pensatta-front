@@ -29,21 +29,21 @@
               "key": "excavar",
               "text": "Excavar",
               "value": 1,
-              "src":"17/tienda1.svg"
+              "src":"17/es/tienda1.svg"
           },
           "option-2": {
               "id": "option-2",
               "key": "avanzar",
               "text": "Avanzar",
               "value": 2,
-              "src":"17/tienda2.svg"
+              "src":"17/es/tienda2.svg"
           },
           "option-3": {
               "id": "option-3",
               "key": "cerrar",
               "text": "Cerrar",
               "value": 3,
-              "src":"17/tienda3.svg"
+              "src":"17/es/tienda3.svg"
           }
       },
       {
@@ -52,21 +52,21 @@
               "key": "excavar",
               "text": "Excavar",
               "value": 1,
-              "src":"17/tienda4.svg"
+              "src":"17/es/tienda4.svg"
           },
           "option-2": {
               "id": "option-2",
               "key": "avanzar",
               "text": "Avanzar",
               "value": 2,
-              "src":"17/tienda5.svg"
+              "src":"17/es/tienda5.svg"
           },
           "option-3": {
               "id": "option-3",
               "key": "cerrar",
               "text": "Cerrar",
               "value": 3,
-              "src":"17/tienda6.svg"
+              "src":"17/es/tienda6.svg"
           }
       },
       {
@@ -75,21 +75,21 @@
               "key": "excavar",
               "text": "Excavar",
               "value": 1,
-              "src":"17/tienda7.svg"
+              "src":"17/es/tienda7.svg"
           },
           "option-2": {
               "id": "option-2",
               "key": "avanzar",
               "text": "Avanzar",
               "value": 2,
-              "src":"17/tienda8.svg"
+              "src":"17/es/tienda8.svg"
           },
           "option-3": {
               "id": "option-3",
               "key": "cerrar",
               "text": "Cerrar",
               "value": 3,
-              "src":"17/tienda9.svg"
+              "src":"17/es/tienda9.svg"
           }
       },
       {
@@ -98,21 +98,21 @@
               "key": "excavar",
               "text": "Excavar",
               "value": 1,
-              "src":"17/tienda1.svg"
+              "src":"17/es/tienda1.svg"
           },
           "option-2": {
               "id": "option-2",
               "key": "avanzar",
               "text": "Avanzar",
               "value": 2,
-              "src":"17/tienda4.svg"
+              "src":"17/es/tienda4.svg"
           },
           "option-3": {
               "id": "option-3",
               "key": "cerrar",
               "text": "Cerrar",
               "value": 3,
-              "src":"17/tienda9.svg"
+              "src":"17/es/tienda9.svg"
           }
       },
       {
@@ -121,21 +121,21 @@
               "key": "excavar",
               "text": "Excavar",
               "value": 1,
-              "src":"17/tienda2.svg"
+              "src":"17/es/tienda2.svg"
           },
           "option-2": {
               "id": "option-2",
               "key": "avanzar",
               "text": "Avanzar",
               "value": 2,
-              "src":"17/tienda6.svg"
+              "src":"17/es/tienda6.svg"
           },
           "option-3": {
               "id": "option-3",
               "key": "cerrar",
               "text": "Cerrar",
               "value": 3,
-              "src":"17/tienda3.svg"
+              "src":"17/es/tienda3.svg"
           }
       },
       {
@@ -144,21 +144,21 @@
               "key": "excavar",
               "text": "Excavar",
               "value": 1,
-              "src":"17/tienda4.svg"
+              "src":"17/es/tienda4.svg"
           },
           "option-2": {
               "id": "option-2",
               "key": "avanzar",
               "text": "Avanzar",
               "value": 2,
-              "src":"17/tienda8.svg"
+              "src":"17/es/tienda8.svg"
           },
           "option-3": {
               "id": "option-3",
               "key": "cerrar",
               "text": "Cerrar",
               "value": 3,
-              "src":"17/tienda3.svg"
+              "src":"17/es/tienda3.svg"
           }
       },
       {
@@ -167,21 +167,21 @@
               "key": "excavar",
               "text": "Excavar",
               "value": 1,
-              "src":"17/tienda1.svg"
+              "src":"17/es/tienda1.svg"
           },
           "option-2": {
               "id": "option-2",
               "key": "avanzar",
               "text": "Avanzar",
               "value": 2,
-              "src":"17/tienda5.svg"
+              "src":"17/es/tienda5.svg"
           },
           "option-3": {
               "id": "option-3",
               "key": "cerrar",
               "text": "Cerrar",
               "value": 3,
-              "src":"17/tienda9.svg"
+              "src":"17/es/tienda9.svg"
           }
       },
       {
@@ -190,21 +190,21 @@
               "key": "excavar",
               "text": "Excavar",
               "value": 1,
-              "src":"17/tienda7.svg"
+              "src":"17/es/tienda7.svg"
           },
           "option-2": {
               "id": "option-2",
               "key": "avanzar",
               "text": "Avanzar",
               "value": 2,
-              "src":"17/tienda8.svg"
+              "src":"17/es/tienda8.svg"
           },
           "option-3": {
               "id": "option-3",
               "key": "cerrar",
               "text": "Cerrar",
               "value": 3,
-              "src":"17/tienda6.svg"
+              "src":"17/es/tienda6.svg"
           }
       },
       {
@@ -213,21 +213,21 @@
               "key": "excavar",
               "text": "Excavar",
               "value": 1,
-              "src":"17/tienda7.svg"
+              "src":"17/es/tienda7.svg"
           },
           "option-2": {
               "id": "option-2",
               "key": "avanzar",
               "text": "Avanzar",
               "value": 2,
-              "src":"17/tienda2.svg"
+              "src":"17/es/tienda2.svg"
           },
           "option-3": {
               "id": "option-3",
               "key": "cerrar",
               "text": "Cerrar",
               "value": 3,
-              "src":"17/tienda3.svg"
+              "src":"17/es/tienda3.svg"
           }
       },
       {
@@ -236,21 +236,21 @@
               "key": "excavar",
               "text": "Excavar",
               "value": 1,
-              "src":"17/tienda4.svg"
+              "src":"17/es/tienda4.svg"
           },
           "option-2": {
               "id": "option-2",
               "key": "avanzar",
               "text": "Avanzar",
               "value": 2,
-              "src":"17/tienda6.svg"
+              "src":"17/es/tienda6.svg"
           },
           "option-3": {
               "id": "option-3",
               "key": "cerrar",
               "text": "Cerrar",
               "value": 3,
-              "src":"17/tienda3.svg"
+              "src":"17/es/tienda3.svg"
           }
       }
   ],

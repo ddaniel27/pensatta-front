@@ -76,27 +76,27 @@ export default function Ex23 () {
               <label className="Board">
                 <input onChange={handleChange} type="radio" name="fix" value="Board" disabled={nextQuestion} />
                 <p className="color" />
-                <p className="img-container" />
+                <p className='img-container' style={{ backgroundImage: `url(${myData.imgBoard})` }} />
               </label>
               <label className="HDD">
                 <input onChange={handleChange} type="radio" name="fix" value="HDD" disabled={nextQuestion} />
                 <p className="color" />
-                <p className="img-container" />
+                <p className='img-container' style={{ backgroundImage: `url(${myData.imgHdd})` }} />
               </label>
               <label className="GPU">
                 <input onChange={handleChange} type="radio" name="fix" value="GPU" disabled={nextQuestion} />
                 <p className="color" />
-                <p className="img-container" />
+                <p className='img-container' style={{ backgroundImage: `url(${myData.imgGpu})` }} />
               </label>
               <label className="CPU">
                 <input onChange={handleChange} type="radio" name="fix" value="CPU" disabled={nextQuestion} />
                 <p className="color" />
-                <p className="img-container" />
+                <p className='img-container' style={{ backgroundImage: `url(${myData.imgCpu})` }} />
               </label>
               <label className="RAM">
                 <input onChange={handleChange} type="radio" name="fix" value="RAM" disabled={nextQuestion} />
                 <p className="color" />
-                <p className="img-container" />
+                <p className='img-container' style={{ backgroundImage: `url(${myData.imgRam})` }} />
               </label>
               {!nextQuestion && <button className="button-play" onClick={() => { setNextQuestion(true) }}>{myData.btnAnswer}</button>}
               {nextQuestion && <button className="button-play" onClick={() => { handleClick(setScore, setPhase) }}>{myData.btnNext}</button>}
