@@ -32,21 +32,21 @@
                   "key": "excavar",
                   "text": "Excavar",
                   "value": 1,
-                  "src":"51/Opcion1.svg"
+                  "src":"51/es/Opcion1.svg"
               },
               "option-2": {
                   "id": "option-2",
                   "key": "avanzar",
                   "text": "Avanzar",
                   "value": 2,
-                  "src":"51/Opcion2.svg"
+                  "src":"51/es/Opcion2.svg"
               },
               "option-3": {
                   "id": "option-3",
                   "key": "cerrar",
                   "text": "Cerrar",
                   "value": 3,
-                  "src":"51/Opcion3.svg"
+                  "src":"51/es/Opcion3.svg"
               }
           }
       },
@@ -80,21 +80,21 @@
                   "key": "excavar",
                   "text": "Excavar",
                   "value": 1,
-                  "src":"51/Opcion4.svg"
+                  "src":"51/es/Opcion4.svg"
               },
               "option-2": {
                   "id": "option-2",
                   "key": "avanzar",
                   "text": "Avanzar",
                   "value": 2,
-                  "src":"51/Opcion5.svg"
+                  "src":"51/es/Opcion5.svg"
               },
               "option-3": {
                   "id": "option-3",
                   "key": "cerrar",
                   "text": "Cerrar",
                   "value": 3,
-                  "src":"51/Opcion6.svg"
+                  "src":"51/es/Opcion6.svg"
               }
           }
       },
@@ -128,21 +128,21 @@
                   "key": "excavar",
                   "text": "Excavar",
                   "value": 1,
-                  "src":"51/Opcion7.svg"
+                  "src":"51/es/Opcion7.svg"
               },
               "option-2": {
                   "id": "option-2",
                   "key": "avanzar",
                   "text": "Avanzar",
                   "value": 2,
-                  "src":"51/Opcion8.svg"
+                  "src":"51/es/Opcion8.svg"
               },
               "option-3": {
                   "id": "option-3",
                   "key": "cerrar",
                   "text": "Cerrar",
                   "value": 3,
-                  "src":"51/Opcion9.svg"
+                  "src":"51/es/Opcion9.svg"
               }
           }
       },
@@ -176,7 +176,7 @@
                   "key": "excavar",
                   "text": "Excavar",
                   "value": 1,
-                  "src":"51/Opcion4.svg"
+                  "src":"51/es/Opcion4.svg"
               },
               
               "option-2": {
@@ -184,14 +184,14 @@
                   "key": "avanzar",
                   "text": "Avanzar",
                   "value": 2,
-                  "src":"51/Opcion8.svg"
+                  "src":"51/es/Opcion8.svg"
               },
               "option-3": {
                   "id": "option-3",
                   "key": "cerrar",
                   "text": "Cerrar",
                   "value": 3,
-                  "src":"51/Opcion6.svg"
+                  "src":"51/es/Opcion6.svg"
               }
           }
       },
@@ -225,21 +225,21 @@
                   "key": "excavar",
                   "text": "Excavar",
                   "value": 1,
-                  "src":"51/Opcion7.svg"
+                  "src":"51/es/Opcion7.svg"
               },
               "option-2": {
                   "id": "option-2",
                   "key": "avanzar",
                   "text": "Avanzar",
                   "value": 2,
-                  "src":"51/Opcion5.svg"
+                  "src":"51/es/Opcion5.svg"
               },
               "option-3": {
                   "id": "option-3",
                   "key": "cerrar",
                   "text": "Cerrar",
                   "value": 3,
-                  "src":"51/Opcion9.svg"
+                  "src":"51/es/Opcion9.svg"
               }
           }
       },
@@ -273,21 +273,21 @@
                   "key": "excavar",
                   "text": "Excavar",
                   "value": 1,
-                  "src":"51/Opcion1.svg"
+                  "src":"51/es/Opcion1.svg"
               },
               "option-2": {
                   "id": "option-2",
                   "key": "avanzar",
                   "text": "Avanzar",
                   "value": 2,
-                  "src":"51/Opcion2.svg"
+                  "src":"51/es/Opcion2.svg"
               },
               "option-3": {
                   "id": "option-3",
                   "key": "cerrar",
                   "text": "Cerrar",
                   "value": 3,
-                  "src":"51/Opcion6.svg"
+                  "src":"51/es/Opcion6.svg"
               }
           }
       },
@@ -321,21 +321,21 @@
                   "key": "excavar",
                   "text": "Excavar",
                   "value": 1,
-                  "src":"51/Opcion4.svg"
+                  "src":"51/es/Opcion4.svg"
               },
               "option-2": {
                   "id": "option-2",
                   "key": "avanzar",
                   "text": "Avanzar",
                   "value": 2,
-                  "src":"51/Opcion5.svg"
+                  "src":"51/es/Opcion5.svg"
               },
               "option-3": {
                   "id": "option-3",
                   "key": "cerrar",
                   "text": "Cerrar",
                   "value": 3,
-                  "src":"51/Opcion3.svg"
+                  "src":"51/es/Opcion3.svg"
               }
           }
       }
