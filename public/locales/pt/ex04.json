@@ -2,11 +2,11 @@
     "options":[
         {
             "value": 1,
-            "image": "./images/exercises/23/Board_1.svg"
+            "image": "./images/exercises/23/pt/Quadro.svg"
         },
         {
             "value": 2,
-            "image": "../../../images/exercises/23/Disco_duro.svg"
+            "image": "../../../images/exercises/23/pt/DiscoRigido.svg"
         },
         {
             "value": 3,
@@ -14,15 +14,15 @@
         },
         {
             "value": 4,
-            "image": "../../../images/exercises/23/Procesador.svg"
+            "image": "../../../images/exercises/23/pt/Procesador.svg"
         },
         {
             "value": 5,
-            "image": "../../../images/exercises/23/RAM_1.svg"
+            "image": "../../../images/exercises/23/pt/RAM.svg"
         },
         {
             "value": 6,
-            "image": "../../../images/exercises/23/UnidadLectora_1.svg"
+            "image": "../../../images/exercises/23/pt/UnidadDeLetuira.svg"
         }
     ],
     "questions":[

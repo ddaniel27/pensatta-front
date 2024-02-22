@@ -6,7 +6,7 @@
         },
         {
             "value": 2,
-            "image": "../../../images/exercises/23/Disco_duro.svg"
+            "image": "../../../images/exercises/23/en/DiscoDuro.svg"
         },
         {
             "value": 3,
@@ -18,11 +18,11 @@
         },
         {
             "value": 5,
-            "image": "../../../images/exercises/23/RAM_1.svg"
+            "image": "../../../images/exercises/23/en/RAM.svg"
         },
         {
             "value": 6,
-            "image": "../../../images/exercises/23/UnidadLectora_1.svg"
+            "image": "../../../images/exercises/23/en/UnidadLectora.svg"
         }
     ],
     "questions":[
