@@ -1,0 +1,93 @@
+{
+  "initMessages": [
+    "La carrera espacial ha tenido grandes mujeres astronautas. A continuación, encontrarás un enunciado con información más detallada sobre sus historias. Selecciona la palabra correcta para completar el texto en cada espacio, buena suerte!"	
+  ],
+  "name": "MUJERES ASTRONAUTAS",
+  "options":[
+    {
+      "text":"Ellen Ochoa nacida en 1958 en California y de abuelos mexicanos, es considerada como la primera mujer en junio de 1983. Desde ese momento, Ellen se dio cuenta que ella podría seguir el mismo camino que Sally y volar al espacio. Ellen Ochoa es conocida no solamente por ser la primera astronauta mujer de origen hispano en volar al espacio, si no también porque ha sido Dentro de sus inventos se encuentran sistemas de reconocimiento óptico, dispositivos para computadoras y sistemas de guía mecánicos. Todos sus inventos han apoyado la capacidad de la NASA para perfeccionar imágenes que se toman desde el espacio",
+      "options":[
+        {
+          "name":"hispana"
+        },
+        {
+          "name":"Discovery"
+        },
+        {
+          "name":"Sally Ride"
+        },
+        {
+          "name":"Inventora"
+        }
+      ]
+    },
+    {
+      "text":"Graduada en Física de la Universidad de Stanford,fue la primera mujer norteamericana en viajar al espacio. Lo hizo el 18 de junio de 1983, a la edad de 32 años, como integrante de la tripulación del transbordador espacial En este viaje, Sally permaneció más de 17 días alrededor de la Tierra, en donde realizó actividades de prueba de un brazo de recuperación de satélites que ella misma había diseñado.Sally a la edad de 26 años y con una historia académica brillante, leyó un aviso publicado por la En ese momento la agencia espacial americana buscaba aspirantes para su programa de astronautas. Ella se interesó y se inscribió aun pensando en que no tenía muchas posibilidades de quedar seleccionada, dado que Sally era una entre nueve mil candidatos. Pero gracias a sus trabajos científicos y a su excelente estado físico, logró que la eligieran.",
+      "options":[
+        {
+          "name":"Sally Ride"
+        },
+        {
+          "name":"Challenger"
+        },
+        {
+          "name":"Robótico"
+        },
+        {
+          "name":"NASA"
+        }
+      ]
+    },
+    {
+      "text":"Sara García es la primera astronauta española. Es Bióloga Molecular de 34 años y se encuentra en la reserva de la promoción de astronautas seleccionados por la Agencia Espacial Europea (ESA).  Sara también se dedica a encontrar la cura para el. En numerosas ha declarado que siempre le han atraído las profesiones STEM (las que pertenecen a los ámbitos de la ciencia, tecnología, ingeniería y matemáticas) porque ofrecen un sinnúmero de oportunidades y aplicaciones para mejorar el mundo que nos rodea. Sara empezó a interesarse por ser astronauta en el momento en que concluyó que realizar investigaciones en abre un mundo de oportunidades para generar nuevas aplicaciones que estando en la Tierra no se pueden reproducir. Cita por ejemplo algunas aplicaciones e investigaciones que se han llevado a cabo en la Estación Espacial Internacional (ISS) relacionados con investigación oncológica, como lo son la cristalización de, nuevas formulaciones de fármacos contra el cáncer y sistemas de monitorización de tumores.",
+      "options":[
+        {
+          "name":"cáncer"
+        },
+        {
+          "name":"entrevistas"
+        },
+        {
+          "name":"microgravedad"
+        },
+        {
+          "name":"proteínas"
+        }
+      ]
+    },
+    {
+      "text":"El 16 de junio de 1963, la astronauta rusa Valentina Tereshkova, a sus 26 años, se convirtió en la primera mujer en viajar al espacio exterior. Antes de ser reclutada como, Valentina trabajó como en una fábrica textil. Combinaba su trabajo con paracaidismo aficionado, lo que la llevó a ser considerada para el programa espacial. Como requisito previo para unirse al grupo de cosmonautas, Valentina fue incorporada de manera honoraria a la Fuerza Aérea Soviética, siendo de esta forma la primera en volar al espacio. El 16 de febrero de 1962, Valentina Tereschkova fue seleccionada para ser parte del grupo de mujeres cosmonautas entre 400 candidatas, de las cuales fueron seleccionadas solamente cinco. Entre los requerimientos, las cosmonautas seleccionadas debían ser menores de 30 años, con una estatura menor a 1,70 metros y un peso máximo de 70 kilogramos.",
+      "options":[
+        {
+          "name":"cosmonauta"
+        },
+        {
+          "name":"obrera"
+        },
+        {
+          "name":"civil"
+        },
+        {
+          "name":"paracaidistas"
+        }
+      ]
+    },
+    {
+      "text":"Mae Jemison es la primera mujer astronauta en viajar al espacio. Mae voló su única misión espacial entre el 12 y 20 de septiembre de 1992, en el transbordador espacial Endeavour. Comenzó su carrera profesional estudiando Ingeniería y Estudios Afroamericanos. Luego obtuvo el título de Médico en la Universidad de Cornell. Ejerció la medicina general para los cuerpos de paz en Liberia y Sierra Leona entre 1983 y 1985.  A su regreso a los Estados Unidos, decidió buscar una oportunidad para ser astronauta en la NASA. En 1987 la NASA la eligió entre 2,000 candidatos para ser una de las 15 personas en el primer grupo que se seleccionaba luego del trágico accidente del La misión de Mae fue de cooperación entre los Estados Unidos y Japón, así como la del aniversario #50 del espacial. Registró 190 horas, 30 minutos, 23 segundos en el espacio y orbitó la tierra 127 veces.",
+      "options":[
+        {
+          "name":"afroamericana"
+        },
+        {
+          "name":"Química"
+        },
+        {
+          "name":"Challenger"
+        },
+        {
+          "name":"transbordador"
+        }
+      ]
+    }
+  ]
+}

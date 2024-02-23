@@ -1,0 +1,140 @@
+{
+  "initMessages": [
+    "Drag only the balloons that correspond to the category indicated in the drawer to it."
+  ],
+  "name": "Drag the balloons",
+  "options":[
+    {
+      "title": "Great female caricaturists in Latin America",
+      "answers":[
+        {
+          "name":"Consuelo Lago (Colombia)"
+        },
+        {
+          "name":"Maitena (Argentina)"
+        },
+        {
+          "name":"Rose Araujo (Brazil)"
+        },
+        {
+          "name":"Liz França (Brazil)"
+        },
+        {
+          "name":"Cintia Bolio (Mexico)"
+        },
+        {
+          "name":"Anitta (Brazil)"
+        },
+        {
+          "name":"Becky G (Mexico)"
+        },
+        {
+          "name":"Natty Natasha (R. Dom)"
+        },
+        {
+          "name":"Paulina Rubio (Mexico)"
+        },
+        {
+          "name":"Karol G (Colombia)"
+        },
+        {
+          "name":"Camila Cabello (Cuba)"
+        },
+        {
+          "name":"Shakira (Colombia)"
+        },
+        {
+          "name":"Jennifer Lopez (Puerto Rico)"
+        }
+      ]
+    },
+    {
+      "title": "Great novels written by women",
+      "answers":[
+        {
+          "name":"Tenderness"
+        },
+        {
+          "name":"Like water for Chocolate"
+        },
+        {
+          "name":"Frankenstein"
+        },
+        {
+          "name":"Wuthering Heights"
+        },
+        {
+          "name":"The House of Spirits"
+        },
+        {
+          "name":"Metamorphosis"
+        },
+        {
+          "name":"Romeo and Juliet"
+        },
+        {
+          "name":"Madame Bovary"
+        },
+        {
+          "name":"Anna Karenina"
+        },
+        {
+          "name":"The Three Musketeers"
+        },
+        {
+          "name":"Moby Dick"
+        },
+        {
+          "name":"1984"
+        },
+        {
+          "name":"Crime and Punishment"
+        }
+      ]
+    },
+    {
+      "title": "Great inventions created by women",
+      "answers":[
+        {
+          "name":"Wiper washer"
+        },
+        {
+          "name":"Disposable diapers"
+        },
+        {
+          "name":"Graphic calculator"
+        },
+        {
+          "name":"Non-reflective glass"
+        },
+        {
+          "name":"Medication like leukemia"
+        },
+        {
+          "name":"The antibiotics"
+        },
+        {
+          "name":"The dynamite"
+        },
+        {
+          "name":"Print"
+        },
+        {
+          "name":"The car"
+        },
+        {
+          "name":"The notebook"
+        },
+        {
+          "name":"The photograph"
+        },
+        {
+          "name":"The television"
+        },
+        {
+          "name":"The microwave"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "initMessages": [
+    "Decifre a mensagem oculta. Identifique os caracteres correspondentes a cada símbolo para conseguir isso."
+  ],
+  "name": "Mensagens",
+  "options":[
+   {
+    "name": "Mulher Nobel de Física e Química"
+   },
+   {
+    "name": "Mulher Nobel de Medicina"
+   },
+   {
+    "name": "Mulher Nobel de Literatura"
+   },
+   {
+    "name": "Mulher Nobel de Literatura"
+   },
+   {
+    "name": "Mulher Nobel de Química"
+   },
+   {
+    "name": "Mulher Nobel de Medicina"
+   },
+   {
+    "name": "Mulher Nobel de Economia"
+   },
+   {
+    "name": "Mulher Nobel de Física"
+   },
+   {
+    "name": "Mulher Nobel de Medicina"
+   },
+   {
+    "name": "Mulher Nobel de Literatura"
+   }
+  ],
+  "women":[
+    {
+      "name": "MARIE CURIE"
+    },
+    {
+      "name": "LINDA BUCK"
+    },
+    {
+      "name": "NELLY SACHS"
+    },
+    {
+      "name": "DORIS LESSING"
+    },
+    {
+      "name": "ADA YONATH"
+    },
+    {
+      "name": "TU YOUYOU"
+    },
+    {
+      "name": "ESTHER DUFLO"
+    },
+    {
+      "name": "ANDREA GHEZ"
+    },
+    {
+      "name": "KATALIN KARIKÓ"
+    },
+    {
+      "name": "ALICE MUNRO"
+    }
+  ]
+}

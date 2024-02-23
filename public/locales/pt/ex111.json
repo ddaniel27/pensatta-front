@@ -1,0 +1,129 @@
+{
+  "initMessages": [
+    "A continuación, encontrarás la simulación de un circuito que podrás encender activando los elementos correctos.",
+    "Selecciona los cuadros indicados para formar una frase verdadera."
+  ],
+  "name": "Circuito literario - Grandes escritoras latinoamericanas",
+  "options":[
+    {
+      "name": "NOVELA ESCRITA",
+      "novel": "COMO AGUA PARA CHOCOLATE",
+      "options":[
+        {
+          "name":"Na Argentina"
+        },
+        {
+          "name":"No Mexico"
+        },
+        {
+          "name":"No Uruguai"
+        },
+        {
+          "name":"Por Isabel Allende"
+        },
+        {
+          "name":"Por Fernanda Melchor"
+        },
+        {
+          "name":"Por Laura Esquivel"
+        }
+      ]
+    },
+    {
+      "name": "NOVELA ESCRITA",
+      "novel": "LA CASA DE LOS ESPÍTIRTUS",
+      "options":[
+        {
+          "name":"No Peru"
+        },
+        {
+          "name":"No Brasil"
+        },
+        {
+          "name":"No Chile"
+        },
+        {
+          "name":"Por Gioconda Bell"
+        },
+        {
+          "name":"Por Isabel Allende"
+        },
+        {
+          "name":"Por Laura Esquivel"
+        }
+      ]
+    },
+    {
+      "name": "NOVELA ESCRITA",
+      "novel": "TERNURA",
+      "options":[
+        {
+          "name":"No Chile"
+        },
+        {
+          "name":"Na Colômbia"
+        },
+        {
+          "name":"Em Costa Rica"
+        },
+        {
+          "name":"Por Gabriela Mistral"
+        },
+        {
+          "name":"Por Isabel Allende"
+        },
+        {
+          "name":"Por Fernanda Melchor"
+        }
+      ]
+    },
+    {
+      "name": "NOVELA ESCRITA",
+      "novel": "TEMPORADA DE HURACANES",
+      "options":[
+        {
+          "name":"Na Argentina"
+        },
+        {
+          "name":"No México"
+        },
+        {
+          "name":"No Chile"
+        },
+        {
+          "name":"Por Valeria Luisielle"
+        },
+        {
+          "name":"Por Fernanda Melchor"
+        },
+        {
+          "name":"Por Gabriela Mistral"
+        }
+      ]
+    },
+    {
+      "name": "NOVELA ESCRITA",
+      "novel": "KENTUKIS",
+      "options":[
+        {
+          "name":"Na Argentina"
+        },
+        {
+          "name":"No México"
+        },
+        {
+          "name":"Na Colômbia"
+        },
+        {
+          "name":"Por Samantha Schweblin"
+        },
+        {
+          "name":"Por Isabel Allende"
+        },
+        {
+          "name":"Por Fernanda Trias"
+        }
+      ]
+    }
+  ]
+}

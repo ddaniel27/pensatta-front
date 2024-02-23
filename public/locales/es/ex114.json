@@ -1,0 +1,140 @@
+{
+  "initMessages": [
+    "Arrastra solo los globos que correspondan la categoría indicada en el cajón a este."
+  ],
+  "name": "Arrastra los globos",
+  "options":[
+    {
+      "title": "Grandes caricaturistas mujeres en América Latina",
+      "answers":[
+        {
+          "name":"Consuelo Lago (Colombia)"
+        },
+        {
+          "name":"Maitena (Argentina)"
+        },
+        {
+          "name":"Rose Araujo (Brasil)"
+        },
+        {
+          "name":"Liz França (Brasil)"
+        },
+        {
+          "name":"Cintia Bolio (Mexico)"
+        },
+        {
+          "name":"Anitta (Brasil)"
+        },
+        {
+          "name":"Becky G (Mexico)"
+        },
+        {
+          "name":"Natty Natasha (R. Dom)"
+        },
+        {
+          "name":"Paulina Rubio (Mexico)"
+        },
+        {
+          "name":"Karol G (Colombia)"
+        },
+        {
+          "name":"Camila Cabello (Cuba)"
+        },
+        {
+          "name":"Shakira (Colombia)"
+        },
+        {
+          "name":"Jennifer Lopez (Puerto Rico)"
+        }
+      ]
+    },
+    {
+      "title": "Grandes novelas escritas por mujeres",
+      "answers":[
+        {
+          "name":"Ternura"
+        },
+        {
+          "name":"Como agua para chocolate"
+        },
+        {
+          "name":"Frankestein"
+        },
+        {
+          "name":"Cumbres Borrascosas"
+        },
+        {
+          "name":"La casa de los espíritus"
+        },
+        {
+          "name":"La metamorfosis"
+        },
+        {
+          "name":"Romeo y Julieta"
+        },
+        {
+          "name":"Madame Bovary"
+        },
+        {
+          "name":"Anna Karenina"
+        },
+        {
+          "name":"Los tres mosqueteros"
+        },
+        {
+          "name":"Moby Dick"
+        },
+        {
+          "name":"1984"
+        },
+        {
+          "name":"Crimen y Castigo"
+        }
+      ]
+    },
+    {
+      "title": "Grandes inventos creados por mujeres",
+      "answers":[
+        {
+          "name":"Limpiaparabrisas"
+        },
+        {
+          "name":"Los pañales desechables"
+        },
+        {
+          "name":"Calculadora gráfica"
+        },
+        {
+          "name":"El vidrio no reflexivo"
+        },
+        {
+          "name":"Medicamento como la leucemia"
+        },
+        {
+          "name":"Los antibióticos"
+        },
+        {
+          "name":"La dinamita"
+        },
+        {
+          "name":"La imprenta"
+        },
+        {
+          "name":"El automóvil"
+        },
+        {
+          "name":"El cuaderno"
+        },
+        {
+          "name":"La fotografía"
+        },
+        {
+          "name":"El televisor"
+        },
+        {
+          "name":"El horno microondas"
+        }
+      ]
+    }
+  ]
+}

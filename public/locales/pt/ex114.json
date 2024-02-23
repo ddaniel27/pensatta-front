@@ -1,0 +1,140 @@
+{
+  "initMessages": [
+    "Arraste para ele apenas os balões que correspondem à categoria indicada na gaveta."
+  ],
+  "name": "Arraste os balões",
+  "options":[
+    {
+      "title": "Grandes caricaturistas femininas da América Latina",
+      "answers":[
+        {
+          "name":"Consuelo Lago (Colômbia)"
+        },
+        {
+          "name":"Maitena (Argentina)"
+        },
+        {
+          "name":"Rose Araujo (Brasil)"
+        },
+        {
+          "name":"Liz França (Brasil)"
+        },
+        {
+          "name":"Cintia Bolio (Mexico)"
+        },
+        {
+          "name":"Anitta (Brasil)"
+        },
+        {
+          "name":"Becky G (Mexico)"
+        },
+        {
+          "name":"Natty Natasha (R. Dom)"
+        },
+        {
+          "name":"Paulina Rubio (Mexico)"
+        },
+        {
+          "name":"Karol G (Colômbia)"
+        },
+        {
+          "name":"Camila Cabello (Cuba)"
+        },
+        {
+          "name":"Shakira (Colômbia)"
+        },
+        {
+          "name":"Jennifer Lopez (Porto Rico)"
+        }
+      ]
+    },
+    {
+      "title": "Grandes romances escritos por mulheres",
+      "answers":[
+        {
+          "name":"Ternura"
+        },
+        {
+          "name":"Como água para Chocolate"
+        },
+        {
+          "name":"Frankenstein"
+        },
+        {
+          "name":"Morro dos Ventos Uivantes"
+        },
+        {
+          "name":"A Casa dos Espíritos"
+        },
+        {
+          "name":"Metamorfose"
+        },
+        {
+          "name":"Romeo e Julieta"
+        },
+        {
+          "name":"Senhora Bovary"
+        },
+        {
+          "name":"Ana Karenina"
+        },
+        {
+          "name":"Os três Mosqueteiros"
+        },
+        {
+          "name":"Moby Dick"
+        },
+        {
+          "name":"1984"
+        },
+        {
+          "name":"Crime e Castigo"
+        }
+      ]
+    },
+    {
+      "title": "Grandes invenções criadas por mulheres",
+      "answers":[
+        {
+          "name":"Arruela do limpador"
+        },
+        {
+          "name":"Fraldas descartáveis"
+        },
+        {
+          "name":"Calculadora gráfica"
+        },
+        {
+          "name":"Vidro não reflexivo"
+        },
+        {
+          "name":"Medicamentos como leucemia"
+        },
+        {
+          "name":"Os antibióticos"
+        },
+        {
+          "name":"A dinamite"
+        },
+        {
+          "name":"A imprensa"
+        },
+        {
+          "name":"O automovel"
+        },
+        {
+          "name":"O caderno"
+        },
+        {
+          "name":"A fotografia"
+        },
+        {
+          "name":"A televisão"
+        },
+        {
+          "name":"O microondas"
+        }
+      ]
+    }
+  ]
+}
