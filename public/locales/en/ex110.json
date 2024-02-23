@@ -1,0 +1,148 @@
+{
+  "initMessages":[
+    "Below you will find eight cards. Four correspond to a data type and the remaining four to the names of those data types.",
+    "You have three minutes to match the data types with their respective names."
+  ],
+  "name":"Find the pairs",
+  "options":[
+    {
+      "title":"WOMEN ASTRONAUTS",
+      "cards":[
+        {
+          "text":"SALLY RIDE"
+        },
+        {
+          "text":"ELLEN OCHOA"
+        },
+        {
+          "text":"VALENTINA TERESHKOVA"
+        },
+        {
+          "text":"SARA GARCIA"
+        },
+        {
+          "text":"first American woman to fly into space (1983)"
+        },
+        {
+          "text":"first Hispanic woman to travel to space (1993)"
+        },
+        {
+          "text":"first woman to travel to space (1963)"
+        },
+        {
+          "text":"first Spanish woman astronaut. He hasn't flown into space yet."
+        }
+      ]
+    },
+    {
+      "title":"GREAT INVENTORS",
+      "cards":[
+        {
+          "text":"UNDERWATER TELESCOPE"
+        },
+        {
+          "text":"LIQUID PAPER"
+        },
+        {
+          "text":"DISPOSABLE DIAPER"
+        },
+        {
+          "text":"WIPER WASHER"
+        },
+        {
+          "text":"SARA MATHER in 1845"
+        },
+        {
+          "text":"BETTE NESMITH GRAHAM in 1956"
+        },
+        {
+          "text":"MARION DONOVAN in 1949"
+        },
+        {
+          "text":"MARY ANDERSON in 1903"
+        }
+      ]
+    },
+    {
+      "title":"WOMEN WINNER NOBEL ECONOMICS PRIZES",
+      "cards":[
+        {
+          "text":"Elinor Ostrom"
+        },
+        {
+          "text":"Esther Duflo"
+        },
+        {
+          "text":"Claudia Goldin"
+        },
+        {
+          "text":"NOBEL PRIZE IN ECONOMICS 2009"
+        },
+        {
+          "text":"NOBEL PRIZE IN ECONOMICS 2019"
+        },
+        {
+          "text":"NOBEL PRIZE IN ECONOMICS 2023"
+        }
+      ]
+    },
+    {
+      "title":"WOMEN WRITERS",
+      "cards":[
+        {
+          "text":"Amantine Dupin"
+        },
+        {
+          "text":"Mary Anne Evans"
+        },
+        {
+          "text":"Cecilia Böhl de Faber"
+        },
+        {
+          "text":"Emily Bronte"
+        },
+        {
+          "text":"George SanD"
+        },
+        {
+          "text":"George Elliott"
+        },
+        {
+          "text":"Fernan Caballero"
+        },
+        {
+          "text":"Ellis Bell"
+        }
+      ]
+    },
+    {
+      "title":"Women who have fought for gender equality",
+      "cards":[
+        {
+          "text":"Flora Tristan"
+        },
+        {
+          "text":"Virginia Woolf"
+        },
+        {
+          "text":"Coco Chanel"
+        },
+        {
+          "text":"Clara Campoamor"
+        },
+        {
+          "text":"Author of “The Emancipation of Women” (1845)"
+        },
+        {
+          "text":"Author of “A Room of One's Own” (1923)"
+        },
+        {
+          "text":"He liberated women through fashion. He created his own workshop (1910)"
+        },
+        {
+          "text":"Promoter of the vote for women in Spain (1933)"
+        }
+      ]
+    }
+  ]
+}

@@ -15,43 +15,43 @@
   "algorithms": {
     "1": {
       "algorithm": ["green", "blue", "bowl", "fire", "mix"],
-      "image": "var1"
+      "image": "en/var1"
     },
     "2": {
       "algorithm": ["yellow", "red", "bowl", "fire", "mix"],
-      "image": "var2"
+      "image": "en/var2"
     },
     "3": {
       "algorithm": ["red", "blue", "bowl", "fire", "mix"],
-      "image": "var3"
+      "image": "en/var3"
     },
     "4": {
       "algorithm": ["violet", "orange", "bowl", "fire", "mix"],
-      "image": "var4"
+      "image": "en/var4"
     },
     "5": {
       "algorithm": ["violet", "blue", "bowl", "fire", "mix"],
-      "image": "var5"
+      "image": "en/var5"
     },
     "6": {
       "algorithm": ["red", "blue", "bowl", "mix", "fire"],
-      "image": "var6"
+      "image": "en/var6"
     },
     "7": {
       "algorithm": ["green", "blue", "bowl", "mix", "fire"],
-      "image": "var7"
+      "image": "en/var7"
     },
     "8": {
       "algorithm": ["green", "orange", "bowl", "mix", "fire"],
-      "image": "var8"
+      "image": "en/var8"
     },
     "9": {
       "algorithm": ["red", "orange", "bowl", "mix", "fire"],
-      "image": "var9"
+      "image": "en/var9"
     },
     "10": {
       "algorithm": ["yellow", "orange", "bowl", "mix", "fire"],
-      "image": "var10"
+      "image": "en/var10"
     }
   }
 }

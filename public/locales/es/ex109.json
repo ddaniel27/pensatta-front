@@ -1,0 +1,131 @@
+{
+  "initMessages": ["Gira la ruleta para obtener una pregunta. Selecciona una de las posibles respuestas."],
+  "name": "PIONERAS STEAM",
+  "options":[
+    {
+      "question":"¿Quién fue la primera mujer que programó un video-juego?",
+      "answers":[
+        {
+          "text":"Carol Shaw (Polo y River Raid)",
+          "correct":false
+        },
+        {
+          "text":"Joyce Weisbecker (Snake Race y Jackpot)",
+          "correct":false
+        },
+        {
+          "text":"Carla Meninsky (Dodge´em y Warlords)",
+          "correct":true
+        },
+        {
+          "text":"Tomoko Hiroki (Dragon Ball FighterZ)",
+          "correct":false
+        },
+        {
+          "text":"Amy Hennig ( Trilogía Unchartered: el tesoro de Drake; El reino de los ladrones y La traición de Drake)",
+          "correct":false
+        }
+      ]
+    },
+    {
+      "question":"¿Quién fue la primera mujer en la historia que programó un computador ?",
+      "answers":[
+        {
+          "text":"Angelina Jolie",
+          "correct":false
+        },
+        {
+          "text":"Ariana Grande",
+          "correct":false
+        },
+        {
+          "text":"Ada Lovelace",
+          "correct":true
+        },
+        {
+          "text":"Selena Gómez",
+          "correct":false
+        },
+        {
+          "text":"Taylor Swift",
+          "correct":false
+        }
+      ]
+    },
+    {
+      "question":"¿Quién fue la mujer que escribió el código de programación del Apolo 11 para llegar a la luna ?",
+      "answers":[
+        {
+          "text":"Miley Cirrus",
+          "correct":false
+        },
+        {
+          "text":"Dua Lippa",
+          "correct":true
+        },
+        {
+          "text":"Lady Gaga",
+          "correct":false
+        },
+        {
+          "text":"Margaret Hamilton",
+          "correct":true
+        },
+        {
+          "text":"Britney Spears",
+          "correct":false
+        }
+      ]
+    },
+    {
+      "question":"¿Quiénes fueron las tres mujeres afroamericanas que durante los años 60s trabajaron en la NASA como “calculadoras humanas” para llegar a la luna?",
+      "answers":[
+        {
+          "text":"Dorothy Vaughan",
+          "correct":true
+        },
+        {
+          "text":"Janet Jackson",
+          "correct":false
+        },
+        {
+          "text":"Mary Jackson",
+          "correct":true
+        },
+        {
+          "text":"Beyoncé",
+          "correct":false
+        },
+        {
+          "text":"Katherine Johnson",
+          "correct":true
+        }
+      ]
+    },
+    {
+      "question":"¿Cuál es el nombre de la mujer científica informática estadounidense que formó parte del equipo que desarrolló FORTRAN en 1957, el primer lenguaje de programación de alto nivel?",
+      "answers":[
+        {
+          "text":"Jennifer Lopez",
+          "correct":false
+        },
+        {
+          "text":"Lois Haibt",
+          "correct":true
+        },
+        {
+          "text":"Christina Aguilera",
+          "correct":false
+        },
+        {
+          "text":"Céline Dion",
+          "correct":false
+        },
+        {
+          "text":"Adele",
+          "correct":false
+        }
+      ]
+    }
+  ]
+}

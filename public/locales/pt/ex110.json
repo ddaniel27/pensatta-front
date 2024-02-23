@@ -1,0 +1,148 @@
+{
+  "initMessages":[
+    "Abaixo você encontrará oito cartas. Quatro correspondem a um tipo de dados e os quatro restantes aos nomes desses tipos de dados.",
+    "Você tem três minutos para combinar os tipos de dados com seus respectivos nomes."
+  ],
+  "name":"Encontre os pares",
+  "options":[
+    {
+      "title":"MULHERES ASTRONAUTAS",
+      "cards":[
+        {
+          "text":"SALLY RIDE"
+        },
+        {
+          "text":"ELLEN OCHOA"
+        },
+        {
+          "text":"VALENTINA TERESHKOVA"
+        },
+        {
+          "text":"SARA GARCIA"
+        },
+        {
+          "text":"primeira mulher americana a voar para o espaço (1983)"
+        },
+        {
+          "text":"primeira mulher hispânica a viajar para o espaço (1993)"
+        },
+        {
+          "text":"primeira mulher a viajar para o espaço (1963)"
+        },
+        {
+          "text":"primeira astronauta espanhola. Ele ainda não voou para o espaço."
+        }
+      ]
+    },
+    {
+      "title":"GRANDES INVENTORES",
+      "cards":[
+        {
+          "text":"TELESCÓPIO SUBAQUÁTICO"
+        },
+        {
+          "text":"CORRETIVO"
+        },
+        {
+          "text":"FRALDA DESCARTÁVEL"
+        },
+        {
+          "text":"LAVADOR DE LIMPADOR"
+        },
+        {
+          "text":"SARA MATHER em 1845"
+        },
+        {
+          "text":"BETTE NESMITH GRAHAM em 1956"
+        },
+        {
+          "text":"MARION DONOVAN em 1949"
+        },
+        {
+          "text":"MARY ANDERSON em 1903"
+        }
+      ]
+    },
+    {
+      "title":"MULHERES GANHADORAS PRÊMIOS NOBEL DE ECONOMIA",
+      "cards":[
+        {
+          "text":"Elinor Ostrom"
+        },
+        {
+          "text":"Esther Duflo"
+        },
+        {
+          "text":"Claudia Goldin"
+        },
+        {
+          "text":"PRÊMIO NOBEL DE ECONOMIA 2009"
+        },
+        {
+          "text":"PRÊMIO NOBEL DE ECONOMIA 2019"
+        },
+        {
+          "text":"PRÊMIO NOBEL DE ECONOMIA 2023"
+        }
+      ]
+    },
+    {
+      "title":"MULHERES ESCRITAS",
+      "cards":[
+        {
+          "text":"Amantine Dupin"
+        },
+        {
+          "text":"Mary Anne Evans"
+        },
+        {
+          "text":"Cecilia Böhl de Faber"
+        },
+        {
+          "text":"Emily Bronte"
+        },
+        {
+          "text":"George SanD"
+        },
+        {
+          "text":"George Elliott"
+        },
+        {
+          "text":"Fernan Caballero"
+        },
+        {
+          "text":"Ellis Bell"
+        }
+      ]
+    },
+    {
+      "title":"Mulheres que lutaram pela igualdade de género",
+      "cards":[
+        {
+          "text":"Flora Tristan"
+        },
+        {
+          "text":"Virginia Woolf"
+        },
+        {
+          "text":"Coco Chanel"
+        },
+        {
+          "text":"Clara Campoamor"
+        },
+        {
+          "text":"Autor de “A Emancipação das Mulheres” (1845)"
+        },
+        {
+          "text":"Autor de “Um quarto só seu” (1923)"
+        },
+        {
+          "text":"Ele libertou as mulheres através da moda. Ele criou sua própria oficina (1910)"
+        },
+        {
+          "text":"Promotor do voto feminino na Espanha (1933)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,19 +1,19 @@
 {
   "options": [
       {
-        "src": "1.svg",
+        "src": "pt/1.svg",
         "code": "X=4 <br/> Y=5 <br/> Z=X+Y <br/> W=X*Y"
       },
       {
-        "src": "2.svg",
+        "src": "pt/2.svg",
         "code": "X=10 <br/> X=X+1 <br/> X=2*X <br/> Y=X"
       },
       {
-        "src": "3.svg",
+        "src": "pt/3.svg",
         "code": "X=100 <br/> X=X-1 <br/> X=3*X <br/> Y=X<90"
       },
       {
-        "src": "4.svg",
+        "src": "pt/4.svg",
         "code": "X=true <br/> Y=90 <br/> Y=Y+2 <br/> X=false"
       }
   ],

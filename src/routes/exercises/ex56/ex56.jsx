@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import NoScoringComponent from '../components/noScoringComponent'
-import data from './data.json'
 import '../../../styles/ex56.css'
 import useData from '../../../hooks/useData'
 

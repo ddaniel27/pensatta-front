@@ -28,8 +28,8 @@ export default function Ex69 () {
             {!nextQuestion
               ? <>
                 <div className="ex84-img-container">
-                  <img src="images/exercises/84/Tendencias_2.svg" alt="tendencias2" />
-                  <img src="images/exercises/84/Tendencias_1.svg" alt="tendencias1" />
+                  <img src={`images/exercises/84/${myData.lg}/Tendencias_2.svg`} alt="tendencias2" />
+                  <img src={`images/exercises/84/${myData.lg}/Tendencias_1.svg`} alt="tendencias1" />
                 </div>
                 <button className="button" onClick={() => setNextQuestion(true)}>{myData.btnStart}</button>
               </>
