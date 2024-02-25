@@ -1,0 +1,220 @@
+{
+  "initMessages": [
+    "Las mujeres a lo largo de la historia han tenido una influencia muy importante en todos los campos. A continuación, encontrarás algunas historias de grandes mujeres. Selecciona las dos historias que son verdaderas sobre las mujeres matemáticas"
+  ],
+  "name": "",
+  "true": "Correctas",
+  "false": "Incorrectas",
+  "options":[
+    {
+      "title": "Mujeres matemáticas",
+      "answers":[
+        {
+          "name":"La inglesa Grace Chisholm Young fue la primera coautoa junto a su esposo William Young, del primer libro de geometría de la historia publicado en Londres en 1905.",
+          "isCorrect": true
+        },
+        {
+          "name":"La inglesa Mary Cartwright desarrolló el teorema de Cartwright sobre máximos de funciones, que fue fundamental para el estudio de funciones relacionadas con fractales.",
+          "isCorrect": true
+        },
+        {
+          "name":"La americana Scarlett Johansson desarrolló el teorema de Johansson sobre ecuaciones cuadráticas.",
+          "isCorrect": false
+        },
+        {
+          "name":"La matemática alemana Emmy Noether que nació en 1882, demostró su teorema de Noether que fue fundamental en el desarrollo de la física abstracta.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "title": "Mujeres Surfistas",
+      "answers":[
+        {
+          "name":"La brasilera Maya Gabeira tiene el Record Guiness Mundial de Surf por haberse deslizado por la ola más grande jamás alcanzada por una mujer (22,4 metros de altura), en Nazaré - Portugal en Septiembre de 2020",
+          "isCorrect": true
+        },
+        {
+          "name":"La surfista peruana Sofía Mulánovich es la única latinoamericana que ha ganado 3 campeonatos mundiales de Surf. ",
+          "isCorrect": true
+        },
+        {
+          "name":"Estados Unidos es el país que más campeonas mundiales mujeres de surf ha tenido en toda la historia",
+          "isCorrect": false
+        },
+        {
+          "name":"Angelina Jolie es una gran surfeadora profesional porque ha hecho películas de historias de grandes mujeres en el deporte del Surf. ",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "title": "Mujeres en el voleibol",
+      "answers":[
+        {
+          "name":"Según la Federación Internacional de Voleibol (FIVB), la clasificación por equipos de mujeres en voleibol, Estados Unidos es el mejor equipo del mundo, seguido por Brasil. ",
+          "isCorrect": true
+        },
+        {
+          "name":"Según la Federación Internacional de Voleibol (FIVB), la exjugadora brasilera Fernanda Venturini fue elegida la mejor jugadora brasileña del siglo XX y dentro de la lista de las cuatro mejores jugadoras de voleibol de todos los tiempos.",
+          "isCorrect": true
+        },
+        {
+          "name":"Según la Federación Internacional de Voleibol (FIVB) Margot Robbie ha sido considerada la mejor jugadora de Voleibol de los Estados Unidos en los últimos diez años.",
+          "isCorrect": false
+        },
+        {
+          "name":"Según la Federación Internacional de Voleibol (FIVB) Julia Roberts ha sido considerada la mejor deportista del voleibol del mundo, rompiendo cinco récord mundiales en las olimpiadas de Río de Janeiro.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "title": "Mujeres en la natación",
+      "answers":[
+        {
+          "name":"La chilena Kristel Köbrich recibió el premio Best Swimming a la mejor nadadora de América Latina en 2022. Además, entró en el récord Guiness por lograr participar en 10 mundiales de natación seguidos. ",
+          "isCorrect": true
+        },
+        {
+          "name":"La nadadora holandesa Inge de Bruijin es considerada la mejor nadadora individual del mundo. Ha conseguido 8 medallas olímpicas, de las cuales 4 de oro, logrando 10 récord mundiales, de los cuales dos aún no han sido superados. ",
+          "isCorrect": true
+        },
+        {
+          "name":"Jennifer Lawrence ha sido considerada por la crítica internacional como una de las mujeres nadadoras más influyentes del mundo, gracias a su participación en los mundiales de natación de la última década.",
+          "isCorrect": false
+        },
+        {
+          "name":"Michelle Yeoh, la actriz protagonista de “Todo a la vez en todas partes” es una de las mejores nadadoras del mundo. Empezó su carrera deportista en Corea del Sur cuando tenía cinco años.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "title": "Mujeres Físicas",
+      "answers":[
+        {
+          "name":"La física americana Elda Emma Anderson logró preparar la primera muestra pura de uranio-235 en el laboratorio, un isótopo fisionable que es capaz de crear una reacción en cadena en 1945.",
+          "isCorrect": true
+        },
+        {
+          "name":"La física española Felisa Martín Bravo tuvo el honor de ser la primera mujer en obtener un título de Doctorado en Física en España en 1926. Fue la primera directora mujer de un Observatorio meteorológico en España.",
+          "isCorrect": true
+        },
+        {
+          "name":"La americana Naomi Watts es reconocida por la comunidad científica por sus trabajos en el campo de la física láser de alta intensidad, obteniendo el nobel de Física en 2018.",
+          "isCorrect": false
+        },
+        {
+          "name":"La inglesa Emma Watson además de ser protagonista de Harry Potter, ha sido una gran científica gracias a sus trabajos en Física Nuclear.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "title": "Mujeres Ciclistas",
+      "answers":[
+        {
+          "name":"La ciclista holandesa Annemiek Van Vleuten es considerada la mejor del mundo. Ha ganado cuatro Giros de Italia, un Tour de Francia y tres vueltas a España. Además ha ganado cuatro campeonatos mundiales de ciclismo y medalla de oro en los Juegos Olímpicos.",
+          "isCorrect": true
+        },
+        {
+          "name":"La ciclista italiana Alfonsina Strada fue la primera mujer en competir en el Giro de Italia en 1924. Para ser aceptada le quitó la última letra a su nombre e inscribirse como Alfonsin. De los 90 ciclistas que iniciaron la carrera solo 30 terminaron. Alfonsina una de ellas.",
+          "isCorrect": true
+        },
+        {
+          "name":"La actriz cubana Ana de Armas es considerada como una de las mejores ciclistas de América Latina. Ha ganado 2 Giros de Italia hasta la fecha y ha participado en dos Juegos Olímpicos ganando medalla de Oro y Plata. ",
+          "isCorrect": false
+        },
+        {
+          "name":"Natalie Portman ganadora del Óscar a mejor actriz en “El Cisne Negro” en 2010, es además considerada una de las mejores ciclistas del Tour de Francia. Su especialidad es la montaña y las etapas contra-reloj. Ha participado en tres ocasiones en los Juegos Olímpicos, ganando medalla de plata en dos ocasiones.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "title": "Mujeres Inventoras",
+      "answers":[
+        {
+          "name":"La alemana Melitta Bentz le molestaba que le quedaran sedimentos de café luego de tomárselo. Un día tomó el papel secante de uno de los cuadernos de sus hijos, le colocó una lata perforada y sirvió café. Así nació el primer filtro de café de la historia en 1908.",
+          "isCorrect": true
+        },
+        {
+          "name":"La actriz austriaca Hedy Lamarr fue la inventora del WiFI durante la Segunda Guerra Mundial. En 1942 presentó la solicitud de patente llamado “Sistema de comunicación secreta”, basado en las 88 teclas de un piano. Desde 2005, el día de su cumpleaños, 9 de noviembre, se celebra el día mundial del inventor. ",
+          "isCorrect": true
+        },
+        {
+          "name":"La física francesa Marie Curie fue la inventora del automóvil. Es por esta razón que la industria automovilística de ese país es tan importante. Ella fue uno de las primeras impulsoras de la eliminación de la batería para que los automóviles pudieran utilizar radio y escuchar música.",
+          "isCorrect": false
+        },
+        {
+          "name":"La actriz Paolla Oliveira nacida en 1982, es considerada la inventora del celular. Sus investigaciones permitieron que se diera el desarrollo de los primeros celulares en la década del 90.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "title": "Mujeres Pintoras",
+      "answers":[
+        {
+          "name":"La pintora mexicana Frida Kahlo fue invitada a realizar en 1939 una exposición en Francia. Una de sus obras, Autorretrato – El marco, en esta exposición, se convirtió en el primer cuadro de un artista mexicano adquirido por el Museo del Louvre.",
+          "isCorrect": true
+        },
+        {
+          "name":"La primera mujer artista reconocida en la historia del arte es la pintora italiana Sofonisba Anguissola en el siglo 16, quién fue contemporánea de Miguel Ángel. Se le atribuyen cerca de 50 obras de arte.",
+          "isCorrect": true
+        },
+        {
+          "name":"Nicki Minaj es una cante que es reconocida también por sus pinturassurrealistas. Ha realizado exposiciones en distintos museos del mundo, dentro de los cuales se destacan el Museo del Prado y el British Museum.",
+          "isCorrect": false
+        },
+        {
+          "name":"Gloria Estefan, cantante cubana se le reconoce también por su trabajo en ilustración de libros para niños. Ha desarrollado a lo largo de la última década varias colecciones en acuarela que han sido expuestas en museos alrededor del mundo.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "title": "Mujeres Pintoras",
+      "answers":[
+        {
+          "name":"La pintora americana Margaret Keane ha sido conocida por sus pinturas de retratos con enormes ojos. Su marido se quiso atribuir su obra pero ella logró recuperarla. La película “Ojos Grandes” cuenta esta historia.",
+          "isCorrect": true
+        },
+        {
+          "name":"La pintora japonesa Yayoi Kusama nacida en 1929, es reconocida a nivel mundial por su arte conceptual. Ha realizado grandes obras llamadas “arte performance” donde su temática está basada en colores llamativos que se repiten y tienen un patrón establecido.",
+          "isCorrect": true
+        },
+        {
+          "name":"Madonna ha sido reconocida por la crítica de arte mundial como una de las pintoras cubistas del siglo 20. Sus obras más conocidas son “El retrato en el lago” y “La mujer en el espejo”. ",
+          "isCorrect": false
+        },
+        {
+          "name":"Katy Perry es una pintora americana que ha sido reconocida por sus obras a gran escala en la ciudad del Los Ángeles. Sus obras utilizan materiales reciclados de los conciertos que realiza continuamente como cantante. Ha ganado varios premios internacionales por su labor artística.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "title": "Mujeres Escultoras ",
+      "answers":[
+        {
+          "name":"La escultora española Cristina Iglesias nacida en 1956 es reconocida por sus obras de gran formato donde combina materiales como hormigón, hierro, cristal, bambú y resina. Cristina tiene obras gigantescas de 22 toneladas, 6 metro de altura y 50 metros cuadrados.",
+          "isCorrect": true
+        },
+        {
+          "name":"La pintora japonesa Yayoi Kusama nacida en 1929, es reconocida a nivel mundial por su arte conceptual. Ha realizado grandes obras llamadas “arte performance” donde su temática está basada en colores llamativos que se repiten y tienen un patrón establecido.",
+          "isCorrect": true
+        },
+        {
+          "name":"Céline Dion ha desarrollado en su país natal Canadá grandes esculturas que representan su música. Su línea de trabajo han sido los trabajos en hierro forjado, usando además materiales como la plata y el oro. Su trabajo ha sido reconicod por la crítica mundial, en especial por su obra del MUSEO DEL CAIRO EN EGIPTO.",
+          "isCorrect": false
+        },
+        {
+          "name":"La inglesa Adele ha venido incursionando en los últimos diez años en las esculturas de gran tamaño, en especial para las puertas de entrada de los museos en ciudades como Londres, París y Hong Kong. ",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}

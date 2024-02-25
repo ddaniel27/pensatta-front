@@ -1,0 +1,95 @@
+{
+  "initMessages": [
+    "Determine se as seguintes afirmações são verdadeiras ou falsas. Este exercício é realizado com as costas da mão.Para cada rodada, são apresentadas 3 afirmações."
+  ],
+  "name": "Atletas da história",
+  "true": "Verdadeiro",
+  "false": "Falso",
+  "options":[
+    {
+      "title": "Bola de Ouro Feminina",
+      "answers":[
+        {
+          "name":"Alexia Putellas, do FC Barcelona, ganhou a Bola de Ouro em mais de uma ocasião",
+          "isCorrect": true
+        },
+        {
+          "name":"Olga Carmona é a primeira jogadora do Real Madrid indicada à Bola de Ouro",
+          "isCorrect": true
+        },
+        {
+          "name":"Ada Hegerberg, do Olympique Lyonnais, ganhou a Bola de Ouro em mais de uma ocasião",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "title": "Copa do Mundo Feminina da FIFA",
+      "answers":[
+        {
+          "name":"Alemanha é o país que mais ganhou Copas do Mundo Femininas da FIFA",
+          "isCorrect": false
+        },
+        {
+          "name":"Os Estados Unidos são o país que mais ganhou Copas do Mundo Femininas da FIFA",
+          "isCorrect": true
+        },
+        {
+          "name":"O Japão venceu a Copa do Mundo Feminina da FIFA em 2011",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "title": "Copa do Mundo Feminina da FIFA",
+      "answers":[
+        {
+          "name":"A jogadora brasileira Marta Vieira de Silva é a artilheira dos mundiais femininos da FIFA, com 17 gols",
+          "isCorrect": true
+        },
+        {
+          "name":"A primeira Copa do Mundo Feminina da FIFA em 1991 foi realizada na China",
+          "isCorrect": true
+        },
+        {
+          "name":"A Espanha venceu a Copa do Mundo Feminina da FIFA 2019, na França",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "title": "Copa do Mundo Feminina da FIFA",
+      "answers":[
+        {
+          "name":"Linda Caicedo, da seleção colombiana, ganhou o prêmio de melhor gol na Copa Feminina da FIFA Austrália e Nova Zelândia 2023, por seu gol contra a Alemanha",
+          "isCorrect": true
+        },
+        {
+          "name":"Mary Earps, da seleção inglesa, foi eleita a melhor goleira da Copa Feminina da FIFA Austrália e Nova Zelândia 2023",
+          "isCorrect": true
+        },
+        {
+          "name":"Michelle Akers e Alex Morgan, da seleção dos Estados Unidos, são as duas jogadoras que mais marcaram gols em um único jogo (5)",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "title": "Copa do Mundo Feminina da FIFA",
+      "answers":[
+        {
+          "name":"Linda Caicedo, da Colômbia, foi eleita a melhor jogadora da Copa do Mundo Feminina de 2023",
+          "isCorrect": false
+        },
+        {
+          "name":"Aitana Bonmati, da Espanha, foi eleita a melhor jogadora da Copa do Mundo Feminina de 2023",
+          "isCorrect": true
+        },
+        {
+          "name":"Exatamente 61 anos de diferença separam a primeira Copa do Mundo de futebol masculino e feminino. Em 1930 o masculino e em 1991 a feminina",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}
