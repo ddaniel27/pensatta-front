@@ -1,4 +1,14 @@
 {
+  "answer-button": "ANSWER",
+  "finish-button": "FINISH",
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 1
+    },
+    "path": "44",
+    "color": "#53745B",
+    "id": 111,
   "initMessages": [
     "Below you will find a simulation of a circuit that you can turn on by activating the correct elements.",
     "Select the indicated boxes to form a true sentence."
@@ -6,122 +16,137 @@
   "name": "Literary circuit - Great Latin American writers",
   "options":[
     {
-      "name": "WRITTEN NOVEL",
-      "novel": "LIKE WATER FOR CHOCOLATE",
-      "options":[
+      "book": "LIKE WATER FOR CHOCOLATE",
+      "left":[
         {
-          "name":"In Argentina"
+          "text":"In Argentina"
         },
         {
-          "name":"In Mexico"
+          "text":"In Mexico",
+          "correct": true
         },
         {
-          "name":"In uruguay"
+          "text":"In uruguay"
+        }
+      ],
+      "right":[
+        {
+          "text":"By Isabel Allende"
         },
         {
-          "name":"By Isabel Allende"
+          "text":"By Fernanda Melchor"
         },
         {
-          "name":"By Fernanda Melchor"
-        },
-        {
-          "name":"By Laura Esquivel"
+          "text":"By Laura Esquivel",
+          "correct": true
         }
       ]
     },
     {
-      "name": "WRITTEN NOVEL",
-      "novel": "THE HOUSE OF THE SPIRITS",
-      "options":[
+      "book": "THE HOUSE OF THE SPIRITS",
+      "left":[
         {
-          "name":"In Peru"
+          "text":"In Peru"
         },
         {
-          "name":"In Brazil"
+          "text":"In Brazil"
         },
         {
-          "name":"In Chile"
+          "text":"In Chile",
+          "correct": true
+        }
+      ],
+      "right":[
+        {
+          "text":"By Gioconda Bell"
         },
         {
-          "name":"By Gioconda Bell"
+          "text":"By Isabel Allende",
+          "correct": true
         },
         {
-          "name":"By Isabel Allende"
-        },
-        {
-          "name":"By Laura Esquivel"
+          "text":"By Laura Esquivel"
         }
       ]
     },
     {
-      "name": "WRITTEN NOVEL",
-      "novel": "TENDERNESS",
-      "options":[
+      "book": "TENDERNESS",
+      "left":[
         {
-          "name":"In Chile"
+          "text":"In Chile",
+          "correct": true
         },
         {
-          "name":"In colombia"
+          "text":"In colombia"
         },
         {
-          "name":"In Costa Rica"
+          "text":"In Costa Rica"
+        }
+      ],
+      "right":[
+        {
+          "text":"By Gabriela Mistral",
+          "correct": true
         },
         {
-          "name":"By Gabriela Mistral"
+          "text":"By Isabel Allende"
         },
         {
-          "name":"By Isabel Allende"
-        },
-        {
-          "name":"By Fernanda Melchor"
+          "text":"By Fernanda Melchor"
         }
       ]
     },
     {
-      "name": "WRITTEN NOVEL",
-      "novel": "HURRICANE SEASON",
-      "options":[
+      "book": "HURRICANE SEASON",
+      "left":[
         {
-          "name":"In Argentina"
+          "text":"In Argentina"
         },
         {
-          "name":"In Mexico"
+          "text":"In Mexico",
+          "correct": true
         },
         {
-          "name":"In Chile"
+          "text":"In Chile"
+        }
+      ],
+      "right":[
+        {
+          "text":"By Valeria Luisielle"
         },
         {
-          "name":"By Valeria Luisielle"
+          "text":"By Fernanda Melchor",
+          "correct": true
         },
         {
-          "name":"By Fernanda Melchor"
-        },
-        {
-          "name":"By Gabriela Mistral"
+          "text":"By Gabriela Mistral"
         }
       ]
     },
     {
-      "name": "WRITTEN NOVEL",
-      "novel": "KENTUKIS",
-      "options":[
+      "book": "KENTUKIS",
+      "left":[
         {
-          "name":"In Argentina"
+          "text":"In Argentina"
         },
         {
-          "name":"In Mexico"
+          "text":"In Mexico",
+          "correct": true
         },
         {
-          "name":"In colombia"
+          "text":"In colombia"
+        }
+      ],
+      "right":[
+        {
+          "text":"By Samantha Schweblin",
+          "correct": true
         },
         {
-          "name":"By Samantha Schweblin"
+          "text":"By Isabel Allende"
         },
         {
-          "name":"By Isabel Allende"
-        },
-        {
-          "name":"By Fernanda Trias"
+          "text":"By Fernanda Trias"
         }
       ]
     }

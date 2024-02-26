@@ -1,5 +1,14 @@
 {
-  "initMessages": ["Gira la ruleta para obtener una pregunta. Selecciona una de las posibles respuestas."],
+  "threshold": {
+    "max": 1,
+    "min": 1,
+    "perfect": 1
+  },
+  "id": 109,
+  "color": "#9968A6",
+  "initMessages": ["Gira la ruleta para obtener una pregunta.",
+    "Selecciona una de las posibles respuestas."
+  ],
   "name": "PIONERAS STEAM",
   "options":[
     {
@@ -7,23 +16,23 @@
       "answers":[
         {
           "text":"Carol Shaw (Polo y River Raid)",
-          "correct":false
+          "isCorrect":false
         },
         {
           "text":"Joyce Weisbecker (Snake Race y Jackpot)",
-          "correct":false
+          "isCorrect":false
         },
         {
           "text":"Carla Meninsky (Dodge´em y Warlords)",
-          "correct":true
+          "isCorrect":true
         },
         {
           "text":"Tomoko Hiroki (Dragon Ball FighterZ)",
-          "correct":false
+          "isCorrect":false
         },
         {
           "text":"Amy Hennig ( Trilogía Unchartered: el tesoro de Drake; El reino de los ladrones y La traición de Drake)",
-          "correct":false
+          "isCorrect":false
         }
       ]
     },
@@ -32,23 +41,23 @@
       "answers":[
         {
           "text":"Angelina Jolie",
-          "correct":false
+          "isCorrect":false
         },
         {
           "text":"Ariana Grande",
-          "correct":false
+          "isCorrect":false
         },
         {
           "text":"Ada Lovelace",
-          "correct":true
+          "isCorrect":true
         },
         {
           "text":"Selena Gómez",
-          "correct":false
+          "isCorrect":false
         },
         {
           "text":"Taylor Swift",
-          "correct":false
+          "isCorrect":false
         }
       ]
     },
@@ -57,23 +66,23 @@
       "answers":[
         {
           "text":"Miley Cirrus",
-          "correct":false
+          "isCorrect":false
         },
         {
           "text":"Dua Lippa",
-          "correct":true
+          "isCorrect":false
         },
         {
           "text":"Lady Gaga",
-          "correct":false
+          "isCorrect":false
         },
         {
           "text":"Margaret Hamilton",
-          "correct":true
+          "isCorrect":true
         },
         {
           "text":"Britney Spears",
-          "correct":false
+          "isCorrect":false
         }
       ]
     },
@@ -82,48 +91,50 @@
       "answers":[
         {
           "text":"Dorothy Vaughan",
-          "correct":true
+          "isCorrect":true
         },
         {
           "text":"Janet Jackson",
-          "correct":false
+          "isCorrect":false
         },
         {
           "text":"Mary Jackson",
-          "correct":true
+          "isCorrect":true
         },
         {
           "text":"Beyoncé",
-          "correct":false
+          "isCorrect":false
         },
         {
           "text":"Katherine Johnson",
-          "correct":true
+          "isCorrect":true
         }
-      ]
+      ],
+      "multiple":true,
+      "maxOptions":3
     },
     {
       "question":"¿Cuál es el nombre de la mujer científica informática estadounidense que formó parte del equipo que desarrolló FORTRAN en 1957, el primer lenguaje de programación de alto nivel?",
       "answers":[
         {
           "text":"Jennifer Lopez",
-          "correct":false
+          "isCorrect":false
         },
         {
           "text":"Lois Haibt",
-          "correct":true
+          "isCorrect":true
         },
         {
           "text":"Christina Aguilera",
-          "correct":false
+          "isCorrect":false
         },
         {
           "text":"Céline Dion",
-          "correct":false
+          "isCorrect":false
         },
         {
           "text":"Adele",
-          "correct":false
+          "isCorrect":false
         }
       ]
     }

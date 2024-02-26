@@ -107,6 +107,7 @@
        {"value": 106, "label": "Exercise 106"},
        {"value": 107, "label": "Exercise 107"},
        {"value": 108, "label": "Exercise 108"},
+       {"value": 109, "label": "Exercise 109"},
        {"value": "test", "label": "Exercise test" }
    ] 
 }

@@ -10,7 +10,7 @@
 .cardFlipped .frontCard{
     transform: rotateY(0deg);
     transition-delay: 0.2s;
-
+    text-align: justify;
 }
 
 .card .backCard{

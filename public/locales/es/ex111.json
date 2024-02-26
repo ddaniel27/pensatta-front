@@ -1,4 +1,14 @@
 {
+  "answer-button": "RESPONDER",
+  "finish-button": "FINALIZAR",
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 1
+    },
+    "path": "44",
+    "color": "#53745B",
+    "id": 111,
   "initMessages": [
     "A continuación, encontrarás la simulación de un circuito que podrás encender activando los elementos correctos.",
     "Selecciona los cuadros indicados para formar una frase verdadera."
@@ -6,122 +16,137 @@
   "name": "Circuito literario - Grandes escritoras latinoamericanas",
   "options":[
     {
-      "name": "NOVELA ESCRITA",
-      "novel": "COMO AGUA PARA CHOCOLATE",
-      "options":[
+      "book": "COMO AGUA PARA CHOCOLATE",
+      "left":[
         {
-          "name":"En Argentina"
+          "text":"En Argentina"
         },
         {
-          "name":"En Mexico"
+          "text":"En Mexico",
+          "correct": true
         },
         {
-          "name":"En uruguay"
+          "text":"En uruguay"
+        }
+      ],
+      "right":[
+        {
+          "text":"Por Isabel Allende"
         },
         {
-          "name":"Por Isabel Allende"
+          "text":"Por Fernanda Melchor"
         },
         {
-          "name":"Por Fernanda Melchor"
-        },
-        {
-          "name":"Por Laura Esquivel"
+          "text":"Por Laura Esquivel",
+          "correct": true
         }
       ]
     },
     {
-      "name": "NOVELA ESCRITA",
-      "novel": "LA CASA DE LOS ESPÍTIRTUS",
-      "options":[
+      "book": "LA CASA DE LOS ESPÍTIRTUS",
+      "left":[
         {
-          "name":"En Peru"
+          "text":"En Peru"
         },
         {
-          "name":"En Brasil"
+          "text":"En Brasil"
         },
         {
-          "name":"En Chile"
+          "text":"En Chile",
+          "correct": true
+        }
+      ],
+      "right":[
+        {
+          "text":"Por Gioconda Bell"
         },
         {
-          "name":"Por Gioconda Bell"
+          "text":"Por Isabel Allende",
+          "correct": true
         },
         {
-          "name":"Por Isabel Allende"
-        },
-        {
-          "name":"Por Laura Esquivel"
+          "text":"Por Laura Esquivel"
         }
       ]
     },
     {
-      "name": "NOVELA ESCRITA",
-      "novel": "TERNURA",
-      "options":[
+      "book": "TERNURA",
+      "left":[
         {
-          "name":"En Chile"
+          "text":"En Chile",
+          "correct": true
         },
         {
-          "name":"En colombia"
+          "text":"En colombia"
         },
         {
-          "name":"En Costa Rica"
+          "text":"En Costa Rica"
+        }
+      ],
+      "right":[
+        {
+          "text":"Por Gabriela Mistral",
+          "correct": true
         },
         {
-          "name":"Por Gabriela Mistral"
+          "text":"Por Isabel Allende"
         },
         {
-          "name":"Por Isabel Allende"
-        },
-        {
-          "name":"Por Fernanda Melchor"
+          "text":"Por Fernanda Melchor"
         }
       ]
     },
     {
-      "name": "NOVELA ESCRITA",
-      "novel": "TEMPORADA DE HURACANES",
-      "options":[
+      "book": "TEMPORADA DE HURACANES",
+      "left":[
         {
-          "name":"En Argentina"
+          "text":"En Argentina"
         },
         {
-          "name":"En Mexico"
+          "text":"En Mexico",
+          "correct": true
         },
         {
-          "name":"En Chile"
+          "text":"En Chile"
+        }
+      ],
+      "right":[
+        {
+          "text":"Por Valeria Luisielle"
         },
         {
-          "name":"Por Valeria Luisielle"
+          "text":"Por Fernanda Melchor",
+          "correct": true
         },
         {
-          "name":"Por Fernanda Melchor"
-        },
-        {
-          "name":"Por Gabriela Mistral"
+          "text":"Por Gabriela Mistral"
         }
       ]
     },
     {
-      "name": "NOVELA ESCRITA",
-      "novel": "KENTUKIS",
-      "options":[
+      "book": "KENTUKIS",
+      "left":[
         {
-          "name":"En Argentina"
+          "text":"En Argentina"
         },
         {
-          "name":"En Mexico"
+          "text":"En Mexico",
+          "correct": true
         },
         {
-          "name":"En colombia"
+          "text":"En colombia"
+        }
+      ],
+      "right":[
+        {
+          "text":"Por Samantha Schweblin",
+          "correct": true
         },
         {
-          "name":"Por Samantha Schweblin"
+          "text":"Por Isabel Allende"
         },
         {
-          "name":"Por Isabel Allende"
-        },
-        {
-          "name":"Por Fernanda Trias"
+          "text":"Por Fernanda Trias"
         }
       ]
     }
