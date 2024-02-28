@@ -2,91 +2,109 @@
   "initMessages": [
     "The space race has had great female astronauts. Below you will find a statement with more detailed information about their stories. Select the correct word to complete the text in each space, good luck!"
   ],
+  "path": "102",
+  "color": "#53745B",
+  "id": 112,
+  "threshold": {
+      "max": 4,
+      "min": 0,
+      "perfect": 4
+  },
   "name": "WOMEN ASTRONAUTS",
   "options":[
     {
-      "text":"Ellen Ochoa, born in 1958 in California to Mexican grandparents, is considered the first woman to fly into outer space. With a degree in Physics, she began her career as an astronaut in 1993 on the space shuttle, which lasted 9 days. She has traveled to space three more times and her last trip was in 2002, and she has accumulated more than 1,000 flight hours. Although Ellen Ochoa did not dream of being an astronaut in her childhood, she did receive great inspiration from witnessing the space trip of the American In June 1983. From that moment, Ellen realized that she could follow the same path as Sally and fly to space. Ellen Ochoa is known not only for being the first female astronaut of Hispanic origin to fly in space, if not also because it has been Among his inventions are optical recognition systems, computer devices and mechanical guidance systems. All of his inventions have supported NASA's ability to perfect images taken from space",
-      "options":[
-        {
-          "name":"Hispanic"
-        },
-        {
-          "name":"discovery"
-        },
-        {
-          "name":"Sally Ride"
-        },
-        {
-          "name":"Inventor"
-        }
+      "texto": [
+        "Ellen Ochoa, born in 1958 in California to Mexican grandparents, is considered the first woman ",
+        "%INSERTTEXT%",
+        "to fly into outer space. With a degree in Physics, she began her career as an astronaut in 1993 on the space shuttle ",
+        "%INSERTTEXT%",
+        ", which lasted 9 days. She has traveled to space three more times and her last trip was in 2002, and she has accumulated more than 1,000 flight hours. Although Ellen Ochoa did not dream of being an astronaut in her childhood, she did receive great inspiration from witnessing the space trip of the American",
+        "%INSERTTEXT%",
+        " in June 1983. From that moment, Ellen realized that she could follow the same path as Sally and fly to space. Ellen Ochoa is known not only for being the first female astronaut of Hispanic origin to fly in space, if not also because it has been ",
+        "%INSERTTEXT%",
+        ". Among his inventions are optical recognition systems, computer devices and mechanical guidance systems. All of his inventions have supported NASA's ability to perfect images taken from space"
+      ],
+      "opciones":[
+        { "value": 1, "label":"Hispanic" },
+        { "value": 3, "label":"discovery" },
+        { "value": 5, "label":"Sally Ride" },
+        { "value": 7, "label":"Inventor" }
       ]
     },
     {
-      "text":"Graduated in Physics from Stanford University, she was the first American woman to travel to space. She did so on June 18, 1983, at the age of 32, as a member of the space shuttle crew. This trip, Sally spent more than 17 days around the Earth, where she carried out testing activities for a satellite recovery arm that she had designed. Sally, at the age of 26 and with a brilliant academic history, She read an advertisement published by the. At that time the American space agency was looking for applicants for its astronaut program. She became interested and signed up even thinking that she did not have much chance of being selected, given that Sally was one in nine thousand. candidates. But thanks to her scientific work and her excellent physical condition, she managed to be chosen.",
-      "options":[
-        {
-          "name":"Sally Ride"
-        },
-        {
-          "name":"Challenger"
-        },
-        {
-          "name":"Robotic"
-        },
-        {
-          "name":"POT"
-        }
+      "texto": [
+        "Graduated in Physics from Stanford University, ",
+        "%INSERTTEXT%",
+        " she was the first American woman to travel to space. She did so on June 18, 1983, at the age of 32, as a member of the space shuttle crew ",
+        "%INSERTTEXT%",
+        "This trip, Sally spent more than 17 days around the Earth, where she carried out testing activities for a satellite recovery ",
+        "%INSERTTEXT%",
+        "arm that she had designed. Sally, at the age of 26 and with a brilliant academic history, She read an advertisement published by the ",
+        "%INSERTTEXT%",
+        ". At that time the American space agency was looking for applicants for its astronaut program. She became interested and signed up even thinking that she did not have much chance of being selected, given that Sally was one in nine thousand. candidates. But thanks to her scientific work and her excellent physical condition, she managed to be chosen"
+      ],
+      "opciones":[
+        { "value": 1, "label":"Sally Ride" },
+        { "value": 3, "label":"Challenger" },
+        { "value": 5, "label":"Robotic" },
+        { "value": 7, "label":"POT" }
       ]
     },
     {
-      "text":"Sara García is the first Spanish astronaut. She is a 34-year-old Molecular Biologist and is in the reserve of the promotion of astronauts selected by the European Space Agency (ESA). Sara is also dedicated to finding the cure for numerous has stated that she has always been attracted to STEM professions (those in the fields of science, technology, engineering and mathematics) because they offer countless opportunities and applications to improve the world around us. Sara became interested for being an astronaut at the time when he concluded that conducting research on opens a world of opportunities to generate new applications that cannot be reproduced on Earth. He cites, for example, some applications and research that have been carried out on the Station International Space Agency (ISS) related to oncological research, such as the crystallization of, new formulations of anticancer drugs and tumor monitoring systems.",
-      "options":[
-        {
-          "name":"cancer"
-        },
-        {
-          "name":"interviews"
-        },
-        {
-          "name":"microgravity"
-        },
-        {
-          "name":"proteins"
-        }
+      "texto": [
+        "Sara García is the first Spanish astronaut. She is a 34-year-old Molecular Biologist and is in the reserve of the promotion of astronauts selected by the European Space Agency (ESA). Sara is also dedicated to finding the cure for ",
+        "%INSERTTEXT%",
+        ". numerous ",
+        "%INSERTTEXT%",
+        "has stated that she has always been attracted to STEM professions (those in the fields of science, technology, engineering and mathematics) because they offer countless opportunities and applications to improve the world around us. Sara became interested for being an astronaut at the time when he concluded that conducting research on ",
+        "%INSERTTEXT%",
+        "opens a world of opportunities to generate new applications that cannot be reproduced on Earth. He cites, for example, some applications and research that have been carried out on the Station International Space Agency (ISS) related to oncological research, such as the crystallization of ",
+        "%INSERTTEXT%",
+        ", new formulations of anticancer drugs and tumor monitoring systems."
+      ],
+      "opciones":[
+        { "value": 1, "label":"cancer" },
+        { "value": 3, "label":"interviews" },
+        { "value": 5, "label":"microgravity" },
+        { "value": 7, "label":"proteins" }
       ]
     },
     {
-      "text":"On June 16, 1963, Russian astronaut Valentina Tereshkova, at age 26, became the first woman to travel to outer space. Before being recruited as a Valentina worked as a in a textile factory. She combined her work with amateur skydiving, which led her to be considered for the space program. As a prerequisite for joining the group of cosmonauts, Valentina was honorarily inducted into the Soviet Air Force, thus being the first to fly. to space. On February 16, 1962, Valentina Tereschkova was selected to be part of the group of women cosmonauts among 400 candidates, of which only five were selected. Among the requirements, the selected cosmonauts had to be under 30 years old, with a height of less than 1.70 meters and a maximum weight of 70 kilograms.",
-      "options":[
-        {
-          "name":"cosmonaut"
-        },
-        {
-          "name":"worker"
-        },
-        {
-          "name":"civil"
-        },
-        {
-          "name":"parachutists"
-        }
+      "texto": [
+        "On June 16, 1963, Russian astronaut Valentina Tereshkova, at age 26, became the first woman to travel to outer space. Before being recruited as a ",
+        "%INSERTTEXT%",
+        ", Valentina worked as a ",
+        "%INSERTTEXT%",
+        " in a textile factory. She combined her work with amateur skydiving, which led her to be considered for the space program. As a prerequisite for joining the group of cosmonauts, Valentina was honorarily inducted into the Soviet Air Force, thus being the first ",
+        "%INSERTTEXT%",
+        " to fly. to space. On February 16, 1962, Valentina Tereschkova was selected to be part of the group of women cosmonauts among 400 candidates, of which only five were selected. Among the requirements, the selected cosmonauts had to be ",
+        "%INSERTTEXT%",
+        "under 30 years old, with a height of less than 1.70 meters and a maximum weight of 70 kilograms."
+      ],
+      "opciones":[
+        { "value": 1, "label":"cosmonaut" },
+        { "value": 3, "label":"worker" },
+        { "value": 5, "label":"civil" },
+        { "value": 7, "label":"parachutists" }
       ]
     },
     {
-      "text":"Mae Jemison is the first female astronaut to travel in space. Mae flew her only space mission between September 12 and 20, 1992, on the space shuttle Endeavor. She began her professional career studying Engineering and African American Studies. Then He earned a medical degree from Cornell University and practiced general medicine for the peace corps in Liberia and Sierra Leone between 1983 and 1985. Upon his return to the United States, he decided to pursue an opportunity to be an astronaut with NASA. In 1987, NASA chose her from among 2,000 candidates to be one of the 15 people in the first group to be selected after the tragic accident of the Mae's mission was one of cooperation between the United States and Japan, as well as the anniversary # 50 of the space. He logged 190 hours, 30 minutes, 23 seconds in space and orbited the Earth 127 times.",
-      "options":[
-        {
-          "name":"African American"
-        },
-        {
-          "name":"Chemistry"
-        },
-        {
-          "name":"Challenger"
-        },
-        {
-          "name":"spacecraft"
-        }
+      "texto": [
+        "Mae Jemison is the first female astronaut",
+        "%INSERTTEXT%",
+        "to travel in space. Mae flew her only space mission between September 12 and 20, 1992, on the space shuttle Endeavor. She began her professional career studying Engineering ",
+        "%INSERTTEXT%",
+        "and African American Studies. Then He earned a medical degree from Cornell University and practiced general medicine for the peace corps in Liberia and Sierra Leone between 1983 and 1985. Upon his return to the United States, he decided to pursue an opportunity to be an astronaut with NASA. In 1987, NASA chose her from among 2,000 candidates to be one of the 15 people in the first group to be selected after the tragic accident of the ",
+        "%INSERTTEXT%",
+        ". Mae's mission was one of cooperation between the United States and Japan, as well as the anniversary # 50 of the space ",
+        "%INSERTTEXT%",
+        ". He logged 190 hours, 30 minutes, 23 seconds in space and orbited the Earth 127 times."
+      ],
+      "opciones":[
+        { "value": 1, "label":"African American" },
+        { "value": 3, "label":"Chemistry" },
+        { "value": 5, "label":"Challenger" },
+        { "value": 7, "label":"spacecraft" }
       ]
     }
   ]
