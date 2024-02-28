@@ -1,70 +1,101 @@
 {
-  "initMessages": [
-    "Decipher the hidden message. Identify the characters corresponding to each symbol to achieve this."
-  ],
-  "name": "Messages",
+    "initMessages":[
+        "Decipher the hidden message.",
+        "Identify the characters corresponding to each symbol to achieve this."
+    ],
+    "placeholder": "Write your message here",
+    "threshold": {
+        "max": 1,
+        "min": 1,
+        "perfect": 1
+    },
+    "btnEnd":"END",
+    "path": "05",
+    "color": "#588F64",
+    "name": "Decrypt message",
+    "id": "05",
   "options":[
    {
-    "name": "Nobel Woman in Physics and Chemistry"
+    "placeholder": "Nobel Woman in Physics and Chemistry",
+      "message": "MARIE CURIE"
    },
    {
-    "name": "Nobel Woman in Medicine"
+    "placeholder": "Nobel Woman in Medicine",
+      "message": "LINDA BUCK"
    },
    {
-    "name": "Nobel Woman in Literature"
+    "placeholder": "Nobel Woman in Literature",
+      "message": "NELLY SACHS"
    },
    {
-    "name": "Nobel Woman in Literature"
+    "placeholder": "Nobel Woman in Literature",
+      "message": "DORIS LESSING"
    },
    {
-    "name": "Nobel Woman in Chemistry"
+    "placeholder": "Nobel Woman in Chemistry",
+      "message": "ADA YONATH"
    },
    {
-    "name": "Nobel Woman in Medicine"
+    "placeholder": "Nobel Woman in Medicine",
+      "message": "TU YOUYOU"
    },
    {
-    "name": "Nobel Woman in Economics"
+    "placeholder": "Nobel Woman in Economics",
+      "message": "ESTHER DUFLO"
    },
    {
-    "name": "Nobel Woman in Physics"
+    "placeholder": "Nobel Woman in Physics",
+      "message": "ANDREA GHEZ"
    },
    {
-    "name": "Nobel Woman in Medicine"
+    "placeholder": "Nobel Woman in Medicine",
+      "message": "KATALIN KARIKÓ"
    },
    {
-    "name": "Nobel Woman in Literature"
+    "placeholder": "Nobel Woman in Literature",
+      "message": "ALICE MUNRO"
    }
   ],
-  "women":[
-    {
-      "name": "MARIE CURIE"
-    },
-    {
-      "name": "LINDA BUCK"
-    },
-    {
-      "name": "NELLY SACHS"
-    },
-    {
-      "name": "DORIS LESSING"
-    },
-    {
-      "name": "ADA YONATH"
-    },
-    {
-      "name": "TU YOUYOU"
-    },
-    {
-      "name": "ESTHER DUFLO"
-    },
-    {
-      "name": "ANDREA GHEZ"
-    },
-    {
-      "name": "KATALIN KARIKÓ"
-    },
-    {
-      "name": "ALICE MUNRO"
-    }
-  ]
+    "dictionary":[
+            [
+                ["A","!"],
+                ["B","#"],
+                ["C","*"],
+                ["D","$"],
+                ["E","-"],
+                ["F","?"],
+                ["G","{"],
+                ["H","+"],
+                ["I","@"],
+                ["J","\\"],
+                ["K","€"],
+                ["L","}"],
+                ["M","^"],
+                ["N","°"],
+                ["Ñ",":"],
+                ["O","¡"],
+                ["P","["],
+                ["Q","%"],
+                ["R","æ"],
+                ["S","."],
+                ["T","<"],
+                ["U","¥"],
+                ["V","&"],
+                ["W","↔"],
+                ["X","¿"],
+                ["Y","§"],
+                ["Z","↕"],
+                [" ", " "],
+                ["0","#E71D21"],
+                ["1","#FFD600"],
+                ["2","#1D86E7"],
+                ["3","#1DE76E"],
+                ["4","#761DE7"],
+                ["5","#FF88DE"],
+                ["6","#E77E1D"],
+                ["7","#BDBDBD"],
+                ["8","#828282"],
+                ["9","#333333"]
+            ]
+    ]
 }

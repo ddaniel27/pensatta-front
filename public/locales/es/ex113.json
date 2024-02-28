@@ -1,70 +1,101 @@
 {
-  "initMessages": [
-    "Descifra el mensaje oculto. Identifica los caracteres correspondientes a cada símbolo para lograrlo."
+  "initMessages":[
+    "Descifra el mensaje oculto.",
+    "Identifica los caracteres correspondientes a cada símbolo para lograrlo."
   ],
-  "name": "Mensajes",
+  "placeholder": "Escribe aquí tu mensaje",
+  "threshold": {
+    "max": 1,
+    "min": 1,
+    "perfect": 1
+  },
+  "btnEnd":"FINALIZAR",
+  "path": "05",
+  "color": "#588F64",
+  "name": "Descifrar mensaje",
+  "id": "05",
   "options":[
-   {
-    "name": "Mujer Nobel de Física y Química"
-   },
-   {
-    "name": "Mujer Nobel de Medicina"
-   },
-   {
-    "name": "Mujer Nobel de Literatura"
-   },
-   {
-    "name": "Mujer Nobel de Literatura"
-   },
-   {
-    "name": "Mujer Nobel de Química"
-   },
-   {
-    "name": "Mujer Nobel de Medicina"
-   },
-   {
-    "name": "Mujer Nobel de Economía"
-   },
-   {
-    "name": "Mujer Nobel de Física"
-   },
-   {
-    "name": "Mujer Nobel de Medicina"
-   },
-   {
-    "name": "Mujer Nobel de Literatura"
-   }
-  ],
-  "women":[
     {
-      "name": "MARIE CURIE"
+      "placeholder": "Mujer Nobel de Física y Química",
+      "message": "MARIE CURIE"
     },
     {
-      "name": "LINDA BUCK"
+      "placeholder": "Mujer Nobel de Medicina",
+      "message": "LINDA BUCK"
     },
     {
-      "name": "NELLY SACHS"
+      "placeholder": "Mujer Nobel de Literatura",
+      "message": "NELLY SACHS"
     },
     {
-      "name": "DORIS LESSING"
+      "placeholder": "Mujer Nobel de Literatura",
+      "message": "DORIS LESSING"
     },
     {
-      "name": "ADA YONATH"
+      "placeholder": "Mujer Nobel de Química",
+      "message": "ADA YONATH"
     },
     {
-      "name": "TU YOUYOU"
+      "placeholder": "Mujer Nobel de Medicina",
+      "message": "TU YOUYOU"
     },
     {
-      "name": "ESTHER DUFLO"
+      "placeholder": "Mujer Nobel de Economía",
+      "message": "ESTHER DUFLO"
     },
     {
-      "name": "ANDREA GHEZ"
+      "placeholder": "Mujer Nobel de Física",
+      "message": "ANDREA GHEZ"
     },
     {
-      "name": "KATALIN KARIKÓ"
+      "placeholder": "Mujer Nobel de Medicina",
+      "message": "KATALIN KARIKÓ"
     },
     {
-      "name": "ALICE MUNRO"
+      "placeholder": "Mujer Nobel de Literatura",
+      "message": "ALICE MUNRO"
     }
-  ]
+  ],
+  "dictionary":[
+    [
+      ["A","!"],
+      ["B","#"],
+      ["C","*"],
+      ["D","$"],
+      ["E","-"],
+      ["F","?"],
+      ["G","{"],
+        ["H","+"],
+        ["I","@"],
+        ["J","\\"],
+        ["K","€"],
+        ["L","}"],
+        ["M","^"],
+        ["N","°"],
+        ["Ñ",":"],
+        ["O","¡"],
+        ["P","["],
+          ["Q","%"],
+          ["R","æ"],
+          ["S","."],
+          ["T","<"],
+          ["U","¥"],
+          ["V","&"],
+          ["W","↔"],
+          ["X","¿"],
+          ["Y","§"],
+          ["Z","↕"],
+          [" ", " "],
+          ["0","#E71D21"],
+          ["1","#FFD600"],
+          ["2","#1D86E7"],
+          ["3","#1DE76E"],
+          ["4","#761DE7"],
+          ["5","#FF88DE"],
+          ["6","#E77E1D"],
+          ["7","#BDBDBD"],
+          ["8","#828282"],
+          ["9","#333333"]
+        ]
+    ]
 }

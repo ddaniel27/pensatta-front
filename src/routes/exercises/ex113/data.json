@@ -41,20 +41,18 @@
                 ["9","#333333"]
             ]
     ],
-    "message": ["KATTY HAS 5318 FRIENDS"],
+    "message": ["katty tiene 5318 amigos"],
     "initMessages":[
-        "Decipher the hidden message.",
-        "Identify the characters corresponding to each symbol to achieve this."
+        "Descifra el mensaje oculto.",
+        "Identifica los caracteres correspondientes a cada símbolo para lograrlo."
     ],
-    "placeholder": "Write your message here",
     "threshold": {
         "max": 1,
         "min": 1,
         "perfect": 1
     },
-    "btnEnd":"END",
     "path": "05",
     "color": "#588F64",
-    "name": "Decrypt message",
+    "name": "Descifrar mensaje",
     "id": "05"
 }
