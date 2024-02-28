@@ -1,218 +1,535 @@
 {
+  "threshold": {
+    "max": 4,
+    "min": 2,
+    "perfect": 5
+  },
+  "color": "#9968A6",
+  "id": 116,
   "initMessages": [
-    "Women throughout history have had a very important influence in all fields. Below you will find some stories of great women. Select the two stories that are true about women mathematicians."
+    "Women throughout history have had a very important influence in all fields.",
+    "Below you will find some stories of great women.",
+    "Select the stories that are true about women."
   ],
-  "name": "",
-  "true": "Correct",
-  "false": "Incorrect",
+  "name": "History women",
   "options":[
     {
-      "title": "Mathematical women",
+      "question":"The Englishwoman Grace Chisholm Young was the first co-author, with her husband William Young, of the first geometry book in history published in London in 1905.",
       "answers":[
         {
-          "name":"The Englishwoman Grace Chisholm Young was the first co-author, with her husband William Young, of the first geometry book in history published in London in 1905.",
-          "isCorrect": true
+          "text":"True",
+          "isCorrect":true
         },
         {
-          "name":"The Englishwoman Mary Cartwright developed Cartwright's theorem on maxima of functions, which was fundamental for the study of functions related to fractals.",
-          "isCorrect": true
-        },
-        {
-          "name":"The American Scarlett Johansson developed Johansson's theorem on quadratic equations.",
-          "isCorrect": false
-        },
-        {
-          "name":"The German mathematician Emmy Noether, who was born in 1882, proved her Noether theorem, which was fundamental in the development of abstract physics.",
-          "isCorrect": false
+          "text":"False",
+          "isCorrect":false
         }
       ]
     },
     {
-      "title": "Women Surfers",
+      "question":"The Englishwoman Mary Cartwright developed Cartwright's theorem on maxima of functions, which was fundamental for the study of functions related to fractals.",
       "answers":[
         {
-          "name":"Brazilian Maya Gabeira holds the Guinness World Surfing Record for having ridden the largest wave ever reached by a woman (22.4 meters high), in Nazaré - Portugal in September 2020",
-          "isCorrect": true
+          "text":"True",
+          "isCorrect":true
         },
         {
-          "name":"Peruvian surfer Sofía Mulánovich is the only Latin American who has won 3 world surfing championships.",
-          "isCorrect": true
-        },
-        {
-          "name":"The United States is the country that has had the most female world surfing champions in all of history.",
-          "isCorrect": false
-        },
-        {
-          "name":"Angelina Jolie is a great professional surfer because she has made films about stories of great women in the sport of Surfing.",
-          "isCorrect": false
+          "text":"False",
+          "isCorrect":false
         }
       ]
     },
     {
-      "title": "Women in volleyball",
+      "question":"The American Scarlett Johansson developed Johansson's theorem on quadratic equations.",
       "answers":[
         {
-          "name":"According to the International Volleyball Federation (FIVB), the women's team classification in volleyball, the United States is the best team in the world, followed by Brazil.",
-          "isCorrect": true
+          "text":"True",
+          "isCorrect":false
         },
         {
-          "name":"According to the International Volleyball Federation (FIVB), former Brazilian player Fernanda Venturini was chosen the best Brazilian player of the 20th century and among the list of the four best volleyball players of all time.",
-          "isCorrect": true
-        },
-        {
-          "name":"According to the International Volleyball Federation (FIVB) Margot Robbie has been considered the best Volleyball player in the United States in the last ten years.",
-          "isCorrect": false
-        },
-        {
-          "name":"According to the International Volleyball Federation (FIVB), Julia Roberts has been considered the best volleyball athlete in the world, breaking five world records at the Rio de Janeiro Olympics.",
-          "isCorrect": false
+          "text":"False",
+          "isCorrect":true
         }
       ]
     },
     {
-      "title": "Women in swimming",
+      "question":"The German mathematician Emmy Noether, who was born in 1882, proved her Noether theorem, which was fundamental in the development of abstract physics.",
       "answers":[
         {
-          "name":"The Chilean Kristel Köbrich received the Best Swimming award for the best swimmer in Latin America in 2022. In addition, she entered the Guiness record for managing to participate in 10 swimming world championships in a row.",
-          "isCorrect": true
+          "text":"True",
+          "isCorrect":false
         },
         {
-          "name":"Dutch swimmer Inge de Bruijin is considered the best individual swimmer in the world. He has won 8 Olympic medals, of which 4 gold, achieving 10 world records, of which two have not yet been surpassed.",
-          "isCorrect": true
-        },
-        {
-          "name":"Jennifer Lawrence has been considered by international critics as one of the most influential women swimmers in the world, thanks to her participation in the world swimming championships of the last decade.",
-          "isCorrect": false
-        },
-        {
-          "name":"Michelle Yeoh, the leading actress of “Everything at Once Everywhere” is one of the best swimmers in the world. He began his sporting career in South Korea when he was five years old.",
-          "isCorrect": false
+          "text":"False",
+          "isCorrect":true
         }
       ]
     },
     {
-      "title": "Physical Women",
+      "question":"Brazilian Maya Gabeira holds the Guinness World Surfing Record for having ridden the largest wave ever reached by a woman (22.4 meters high), in Nazaré - Portugal in September 2020",
       "answers":[
         {
-          "name":"The American physicist Elda Emma Anderson managed to prepare the first pure sample of uranium-235 in the laboratory, a fissile isotope that is capable of creating a chain reaction in 1945.",
-          "isCorrect": true
+          "text":"True",
+          "isCorrect":true
         },
         {
-          "name":"Spanish physicist Felisa Martín Bravo had the honor of being the first woman to obtain a Doctorate degree in Physics in Spain in 1926. She was the first female director of a meteorological Observatory in Spain.",
-          "isCorrect": true
-        },
-        {
-          "name":"The American Naomi Watts is recognized by the scientific community for her work in the field of high-intensity laser physics, winning the Nobel Prize in Physics in 2018.",
-          "isCorrect": false
-        },
-        {
-          "name":"The English Emma Watson, in addition to being the protagonist of Harry Potter, has been a great scientist thanks to her work in Nuclear Physics.",
-          "isCorrect": false
+          "text":"False",
+          "isCorrect":false
         }
       ]
     },
     {
-      "title": "Women Cyclists",
+      "question":"Peruvian surfer Sofía Mulánovich is the only Latin American who has won 3 world surfing championships.",
       "answers":[
         {
-          "name":"Dutch cyclist Annemiek Van Vleuten is considered the best in the world. He has won four Giros d'Italia, one Tour de France and three tours of Spain. He has also won four world cycling championships and a gold medal in the Olympic Games.",
-          "isCorrect": true
+          "text":"True",
+          "isCorrect":true
         },
         {
-          "name":"The Italian cyclist Alfonsina Strada was the first woman to compete in the Giro d'Italia in 1924. To be accepted, she removed the last letter from her name and registered as Alfonsin. Of the 90 cyclists who started the race, only 30 finished. Alfonsina one of them.",
-          "isCorrect": true
-        },
-        {
-          "name":"Cuban actress Ana de Armas is considered one of the best cyclists in Latin America. He has won 2 Giros d'Italia to date and has participated in two Olympic Games, winning a Gold and Silver medal.",
-          "isCorrect": false
-        },
-        {
-          "name":"Natalie Portman, winner of the Oscar for best actress in “The Black Swan” in 2010, is also considered one of the best cyclists in the Tour de France. His specialty is the mountains and time trial stages. He has participated in the Olympic Games three times, winning a silver medal twice.",
-          "isCorrect": false
+          "text":"False",
+          "isCorrect":false
         }
       ]
     },
     {
-      "title": "Women Inventors",
+      "question":"The United States is the country that has had the most female world surfing champions in all of history.",
       "answers":[
         {
-          "name":"The German Melitta Bentz was bothered by the fact that she had coffee residue after drinking it. One day he took the blotting paper from one of his children's notebooks, placed a perforated can in it, and poured coffee. This is how the first coffee filter in history was born in 1908.",
-          "isCorrect": true
+          "text":"True",
+          "isCorrect":false
         },
         {
-          "name":"Austrian actress Hedy Lamarr was the inventor of WiFI during World War II. In 1942 he filed a patent application called “Secret Communication System”, based on the 88 keys of a piano. Since 2005, World Inventor's Day has been celebrated on his birthday, November 9.",
-          "isCorrect": true
-        },
-        {
-          "name":"French physicist Marie Curie was the inventor of the automobile. It is for this reason that the automobile industry in that country is so important. She was one of the first promoters of eliminating the battery so that cars could use radios and listen to music.",
-          "isCorrect": false
-        },
-        {
-          "name":"The actress Paolla Oliveira, born in 1982, is considered the inventor of the cell phone. His research allowed the development of the first cell phones in the 90s.",
-          "isCorrect": false
+          "text":"False",
+          "isCorrect":true
         }
       ]
     },
     {
-      "title": "Women Painters",
+      "question":"Angelina Jolie is a great professional surfer because she has made films about stories of great women in the sport of Surfing.",
       "answers":[
         {
-          "name":"The Mexican painter Frida Kahlo was invited to hold an exhibition in France in 1939. One of his works, Self-Portrait – The Frame, in this exhibition, became the first painting by a Mexican artist acquired by the Louvre Museum.",
-          "isCorrect": true
+          "text":"True",
+          "isCorrect":false
         },
         {
-          "name":"The first recognized woman artist in the history of art is the Italian painter Sofonisba Anguissola in the 16th century, who was a contemporary of Michelangelo. Nearly 50 works of art are attributed to him.",
-          "isCorrect": true
-        },
-        {
-          "name":"Nicki Minaj is a singer who is also recognized for her surreal paintings. He has held exhibitions in different museums around the world, among which the Prado Museum and the British Museum stand out.",
-          "isCorrect": false
-        },
-        {
-          "name":"Gloria Estefan, Cuban singer, is also recognized for her work in children's book illustration. Over the last decade he has developed several watercolor collections that have been exhibited in museums around the world.",
-          "isCorrect": false
+          "text":"False",
+          "isCorrect":true
         }
       ]
     },
     {
-      "title": "Women Painters",
+      "question":"According to the International Volleyball Federation (FIVB), the women's team classification in volleyball, the United States is the best team in the world, followed by Brazil.",
       "answers":[
         {
-          "name":"American painter Margaret Keane has been known for her portrait paintings with enormous eyes. Her husband wanted to take credit for her work but she managed to get it back. The movie “Big Eyes” tells this story.",
-          "isCorrect": true
+          "text":"True",
+          "isCorrect":true
         },
         {
-          "name":"The Japanese painter Yayoi Kusama, born in 1929, is recognized worldwide for her conceptual art. He has made large works called “performance art” where his theme is based on striking colors that repeat and have an established pattern.",
-          "isCorrect": true
-        },
-        {
-          "name":"Madonna has been recognized by world art critics as one of the cubist painters of the 20th century. Her best-known works are “The Portrait at the Lake” and “The Woman in the Mirror.”",
-          "isCorrect": false
-        },
-        {
-          "name":"Katy Perry is an American painter who has been recognized for her large-scale works in the city of Los Angeles. His works use recycled materials from the concerts he continually performs as a singer. He has won several international awards for his artistic work.",
-          "isCorrect": false
+          "text":"False",
+          "isCorrect":false
         }
       ]
     },
     {
-      "title": "Women Sculptors",
+      "question":"According to the International Volleyball Federation (FIVB), former Brazilian player Fernanda Venturini was chosen the best Brazilian player of the 20th century and among the list of the four best volleyball players of all time.",
       "answers":[
         {
-          "name":"The Spanish sculptor Cristina Iglesias, born in 1956, is recognized for her large-format works where she combines materials such as concrete, iron, glass, bamboo and resin. Cristina has gigantic works of 22 tons, 6 meters high and 50 square meters.",
-          "isCorrect": true
+          "text":"True",
+          "isCorrect":true
         },
         {
-          "name":"The Japanese painter Yayoi Kusama, born in 1929, is recognized worldwide for her conceptual art. He has made large works called “performance art” where his theme is based on striking colors that repeat and have an established pattern.",
-          "isCorrect": true
+          "text":"False",
+          "isCorrect":false
+        }
+      ]
+    },
+    {
+      "question":"According to the International Volleyball Federation (FIVB) Margot Robbie has been considered the best Volleyball player in the United States in the last ten years.",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":false
         },
         {
-          "name":"Céline Dion has developed large sculptures in her native Canada that represent her music. His line of work has been wrought iron work, also using materials such as silver and gold. His work has been recognized by world critics, especially for his work at the CAIRO MUSEUM IN EGYPT.",
-          "isCorrect": false
+          "text":"False",
+          "isCorrect":true
+        }
+      ]
+    },
+    {
+      "question":"According to the International Volleyball Federation (FIVB), Julia Roberts has been considered the best volleyball athlete in the world, breaking five world records at the Rio de Janeiro Olympics.",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":false
         },
         {
-          "name":"The Englishwoman Adele has been dabbling in large-sized sculptures in the last ten years, especially for the entrance doors of museums in cities such as London, Paris and Hong Kong.",
-          "isCorrect": false
+          "text":"False",
+          "isCorrect":true
+        }
+      ]
+    },
+    {
+      "question":"The Chilean Kristel Köbrich received the Best Swimming award for the best swimmer in Latin America in 2022. In addition, she entered the Guiness record for managing to participate in 10 swimming world championships in a row.",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":true
+        },
+        {
+          "text":"False",
+          "isCorrect":false
+        }
+      ]
+    },
+    {
+      "question":"Dutch swimmer Inge de Bruijin is considered the best individual swimmer in the world. He has won 8 Olympic medals, of which 4 gold, achieving 10 world records, of which two have not yet been surpassed.",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":true
+        },
+        {
+          "text":"False",
+          "isCorrect":false
+        }
+      ]
+    },
+    {
+      "question":"Jennifer Lawrence has been considered by international critics as one of the most influential women swimmers in the world, thanks to her participation in the world swimming championships of the last decade.",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":false
+        },
+        {
+          "text":"False",
+          "isCorrect":true
+        }
+      ]
+    },
+    {
+      "question":"Michelle Yeoh, the leading actress of “Everything at Once Everywhere” is one of the best swimmers in the world. He began his sporting career in South Korea when he was five years old.",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":false
+        },
+        {
+          "text":"False",
+          "isCorrect":true
+        }
+      ]
+    },
+    {
+      "question":"The American physicist Elda Emma Anderson managed to prepare the first pure sample of uranium-235 in the laboratory, a fissile isotope that is capable of creating a chain reaction in 1945.",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":true
+        },
+        {
+          "text":"False",
+          "isCorrect":false
+        }
+      ]
+    },
+    {
+      "question":"Spanish physicist Felisa Martín Bravo had the honor of being the first woman to obtain a Doctorate degree in Physics in Spain in 1926. She was the first female director of a meteorological Observatory in Spain.",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":true
+        },
+        {
+          "text":"False",
+          "isCorrect":false
+        }
+      ]
+    },
+    {
+      "question":"The American Naomi Watts is recognized by the scientific community for her work in the field of high-intensity laser physics, winning the Nobel Prize in Physics in 2018.",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":false
+        },
+        {
+          "text":"False",
+          "isCorrect":true
+        }
+      ]
+    },
+    {
+      "question":"The English Emma Watson, in addition to being the protagonist of Harry Potter, has been a great scientist thanks to her work in Nuclear Physics.",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":false
+        },
+        {
+          "text":"False",
+          "isCorrect":true
+        }
+      ]
+    },
+    {
+      "question":"Dutch cyclist Annemiek Van Vleuten is considered the best in the world. He has won four Giros d'Italia, one Tour de France and three tours of Spain. He has also won four world cycling championships and a gold medal in the Olympic Games.",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":true
+        },
+        {
+          "text":"False",
+          "isCorrect":false
+        }
+      ]
+    },
+    {
+      "question":"The Italian cyclist Alfonsina Strada was the first woman to compete in the Giro d'Italia in 1924. To be accepted, she removed the last letter from her name and registered as Alfonsin. Of the 90 cyclists who started the race, only 30 finished. Alfonsina one of them.",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":true
+        },
+        {
+          "text":"False",
+          "isCorrect":false
+        }
+      ]
+    },
+    {
+      "question":"Cuban actress Ana de Armas is considered one of the best cyclists in Latin America. He has won 2 Giros d'Italia to date and has participated in two Olympic Games, winning a Gold and Silver medal.",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":false
+        },
+        {
+          "text":"False",
+          "isCorrect":true
+        }
+      ]
+    },
+    {
+      "question":"Natalie Portman, winner of the Oscar for best actress in “The Black Swan” in 2010, is also considered one of the best cyclists in the Tour de France. His specialty is the mountains and time trial stages. He has participated in the Olympic Games three times, winning a silver medal twice.",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":false
+        },
+        {
+          "text":"False",
+          "isCorrect":true
+        }
+      ]
+    },
+    {
+      "question":"The German Melitta Bentz was bothered by the fact that she had coffee residue after drinking it. One day he took the blotting paper from one of his children's notebooks, placed a perforated can in it, and poured coffee. This is how the first coffee filter in history was born in 1908.",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":true
+        },
+        {
+          "text":"False",
+          "isCorrect":false
+        }
+      ]
+    },
+    {
+      "question":"Austrian actress Hedy Lamarr was the inventor of WiFI during World War II. In 1942 he filed a patent application called “Secret Communication System”, based on the 88 keys of a piano. Since 2005, World Inventor's Day has been celebrated on his birthday, November 9.",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":true
+        },
+        {
+          "text":"False",
+          "isCorrect":false
+        }
+      ]
+    },
+    {
+      "question":"French physicist Marie Curie was the inventor of the automobile. It is for this reason that the automobile industry in that country is so important. She was one of the first promoters of eliminating the battery so that cars could use radios and listen to music.",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":false
+        },
+        {
+          "text":"False",
+          "isCorrect":true
+        }
+      ]
+    },
+    {
+      "question":"The actress Paolla Oliveira, born in 1982, is considered the inventor of the cell phone. His research allowed the development of the first cell phones in the 90s.",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":false
+        },
+        {
+          "text":"False",
+          "isCorrect":true
+        }
+      ]
+    },
+    {
+      "question":"The Mexican painter Frida Kahlo was invited to hold an exhibition in France in 1939. One of his works, Self-Portrait – The Frame, in this exhibition, became the first painting by a Mexican artist acquired by the Louvre Museum.",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":true
+        },
+        {
+          "text":"False",
+          "isCorrect":false
+        }
+      ]
+    },
+    {
+      "question":"The first recognized woman artist in the history of art is the Italian painter Sofonisba Anguissola in the 16th century, who was a contemporary of Michelangelo. Nearly 50 works of art are attributed to him.",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":true
+        },
+        {
+          "text":"False",
+          "isCorrect":false
+        }
+      ]
+    },
+    {
+      "question":"Nicki Minaj is a singer who is also recognized for her surreal paintings. He has held exhibitions in different museums around the world, among which the Prado Museum and the British Museum stand out.",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":false
+        },
+        {
+          "text":"False",
+          "isCorrect":true
+        }
+      ]
+    },
+    {
+      "question":"Gloria Estefan, Cuban singer, is also recognized for her work in children's book illustration. Over the last decade he has developed several watercolor collections that have been exhibited in museums around the world.",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":false
+        },
+        {
+          "text":"False",
+          "isCorrect":true
+        }
+      ]
+    },
+    {
+      "question":"American painter Margaret Keane has been known for her portrait paintings with enormous eyes. Her husband wanted to take credit for her work but she managed to get it back. The movie “Big Eyes” tells this story.",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":true
+        },
+        {
+          "text":"False",
+          "isCorrect":false
+        }
+      ]
+    },
+    {
+      "question":"The Japanese painter Yayoi Kusama, born in 1929, is recognized worldwide for her conceptual art. He has made large works called “performance art” where his theme is based on striking colors that repeat and have an established pattern.",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":true
+        },
+        {
+          "text":"False",
+          "isCorrect":false
+        }
+      ]
+    },
+    {
+      "question":"Madonna has been recognized by world art critics as one of the cubist painters of the 20th century. Her best-known works are “The Portrait at the Lake” and “The Woman in the Mirror.”",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":false
+        },
+        {
+          "text":"False",
+          "isCorrect":true
+        }
+      ]
+    },
+    {
+      "question":"Katy Perry is an American painter who has been recognized for her large-scale works in the city of Los Angeles. His works use recycled materials from the concerts he continually performs as a singer. He has won several international awards for his artistic work.",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":false
+        },
+        {
+          "text":"False",
+          "isCorrect":true
+        }
+      ]
+    },
+    {
+      "question":"The Spanish sculptor Cristina Iglesias, born in 1956, is recognized for her large-format works where she combines materials such as concrete, iron, glass, bamboo and resin. Cristina has gigantic works of 22 tons, 6 meters high and 50 square meters.",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":true
+        },
+        {
+          "text":"False",
+          "isCorrect":false
+        }
+      ]
+    },
+    {
+      "question":"The Japanese painter Yayoi Kusama, born in 1929, is recognized worldwide for her conceptual art. He has made large works called “performance art” where his theme is based on striking colors that repeat and have an established pattern.",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":true
+        },
+        {
+          "text":"False",
+          "isCorrect":false
+        }
+      ]
+    },
+    {
+      "question":"Céline Dion has developed large sculptures in her native Canada that represent her music. His line of work has been wrought iron work, also using materials such as silver and gold. His work has been recognized by world critics, especially for his work at the CAIRO MUSEUM IN EGYPT.",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":false
+        },
+        {
+          "text":"False",
+          "isCorrect":true
+        }
+      ]
+    },
+    {
+      "question":"The Englishwoman Adele has been dabbling in large-sized sculptures in the last ten years, especially for the entrance doors of museums in cities such as London, Paris and Hong Kong.",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":false
+        },
+        {
+          "text":"False",
+          "isCorrect":true
         }
       ]
     }
