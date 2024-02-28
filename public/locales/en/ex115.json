@@ -1,93 +1,209 @@
 {
+  "threshold": {
+    "max": 2,
+    "min": 1,
+    "perfect": 3
+  },
+  "color": "#9968A6",
+  "id": 115,
   "initMessages": [
-    "Determine whether the following statements are true or false. This exercise is performed backhanded.For each round, 3 statements are presented."
+    "Determine whether the following statements are true or false.",
+    "This exercise is performed backhanded.For each round, 3 statements are presented."
   ],
   "name": "Athletes in history",
-  "true": "True",
-  "false": "False",
   "options":[
     {
-      "title": "Women's Ballon d'Or",
+      "name":"Alexia Putellas of FC Barcelona has won the Ballon d'Or on more than one occasion",
       "answers":[
         {
-          "name":"Alexia Putellas of FC Barcelona has won the Ballon d'Or on more than one occasion",
-          "isCorrect": true
+          "text":"True",
+          "isCorrect":true
         },
         {
-          "name":"Olga Carmona is the first Real Madrid player to be nominated for the Ballon d'Or",
-          "isCorrect": true
-        },
-        {
-          "name":"Ada Hegerberg of Olympique Lyonnais has won the Ballon d'Or on more than one occasion",
-          "isCorrect": false
+          "text":"False",
+          "isCorrect":false
         }
       ]
     },
     {
-      "title": "FIFA Women's World Cup",
+      "name":"Olga Carmona is the first Real Madrid player to be nominated for the Ballon d'Or",
       "answers":[
         {
-          "name":"Germany is the country that has won the most FIFA Women's World Cups",
-          "isCorrect": false
+          "text":"True",
+          "isCorrect":true
         },
         {
-          "name":"The United States is the country that has won the most FIFA Women's World Cups",
-          "isCorrect": true
-        },
-        {
-          "name":"Japan won the FIFA Women's World Cup in 2011",
-          "isCorrect": true
+          "text":"False",
+          "isCorrect":false
         }
       ]
     },
     {
-      "title": "FIFA Women's World Cup",
+      "name":"Ada Hegerberg of Olympique Lyonnais has won the Ballon d'Or on more than one occasion",
       "answers":[
         {
-          "name":"Brazilian player Marta Vieira de Silva is the top scorer in FIFA women's world cups, with 17 goals",
-          "isCorrect": true
+          "text":"True",
+          "isCorrect":false
         },
         {
-          "name":"The first FIFA Women's World Cup in 1991 was held in China",
-          "isCorrect": true
-        },
-        {
-          "name":"Spain won the 2019 FIFA Women's World Cup in France",
-          "isCorrect": false
+          "text":"False",
+          "isCorrect":true
         }
       ]
     },
     {
-      "title": "FIFA Women's World Cup",
+      "name":"Germany is the country that has won the most FIFA Women's World Cups",
       "answers":[
         {
-          "name":"Team Colombia's Linda Caicedo won the award for best goal at the FIFA Women's Cup Australia and New Zealand 2023, for her goal against Germany",
-          "isCorrect": true
+          "text":"True",
+          "isCorrect":false
         },
         {
-          "name":"Mary Earps of the England team was awarded the best goalkeeper of the FIFA Women's Cup Australia and New Zealand 2023",
-          "isCorrect": true
-        },
-        {
-          "name":"Michelle Akers and Alex Morgan of the United States team are the two players who have scored the most goals in a single game (5)",
-          "isCorrect": true
+          "text":"False",
+          "isCorrect":true
         }
       ]
     },
     {
-      "title": "FIFA Women's World Cup",
+      "name":"The United States is the country that has won the most FIFA Women's World Cups",
       "answers":[
         {
-          "name":"Linda Caicedo of Colombia was chosen as the best player of the 2023 Women's World Cup",
-          "isCorrect": false
+          "text":"True",
+          "isCorrect":true
         },
         {
-          "name":"Aitana Bonmati of Spain was chosen as the best player of the 2023 Women's World Cup",
-          "isCorrect": true
+          "text":"False",
+          "isCorrect":false
+        }
+      ]
+    },
+    {
+      "name":"Japan won the FIFA Women's World Cup in 2011",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":true
         },
         {
-          "name":"Exactly 61 years of difference separate the first men's and women's soccer World Cup. In 1930 the male and in 1991 the female",
-          "isCorrect": true
+          "text":"False",
+          "isCorrect":false
+        }
+      ]
+    },
+    {
+      "name":"Brazilian player Marta Vieira de Silva is the top scorer in FIFA women's world cups, with 17 goals",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":true
+        },
+        {
+          "text":"False",
+          "isCorrect":false
+        }
+      ]
+    },
+    {
+      "name":"The first FIFA Women's World Cup in 1991 was held in China",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":true
+        },
+        {
+          "text":"False",
+          "isCorrect":false
+        }
+      ]
+    },
+    {
+      "name":"Spain won the 2019 FIFA Women's World Cup in France",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":false
+        },
+        {
+          "text":"False",
+          "isCorrect":true
+        }
+      ]
+    },
+    {
+      "name":"Team Colombia's Linda Caicedo won the award for best goal at the FIFA Women's Cup Australia and New Zealand 2023, for her goal against Germany",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":true
+        },
+        {
+          "text":"False",
+          "isCorrect":false
+        }
+      ]
+    },
+    {
+      "name":"Mary Earps of the England team was awarded the best goalkeeper of the FIFA Women's Cup Australia and New Zealand 2023",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":true
+        },
+        {
+          "text":"False",
+          "isCorrect":false
+        }
+      ]
+    },
+    {
+      "name":"Michelle Akers and Alex Morgan of the United States team are the two players who have scored the most goals in a single game (5)",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":true
+        },
+        {
+          "text":"False",
+          "isCorrect":false
+        }
+      ]
+    },
+    {
+      "name":"Linda Caicedo of Colombia was chosen as the best player of the 2023 Women's World Cup",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":false
+        },
+        {
+          "text":"False",
+          "isCorrect":true
+        }
+      ]
+    },
+    {
+      "name":"Aitana Bonmati of Spain was chosen as the best player of the 2023 Women's World Cup",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":true
+        },
+        {
+          "text":"False",
+          "isCorrect":false
+        }
+      ]
+    },
+    {
+      "name":"Exactly 61 years of difference separate the first men's and women's soccer World Cup. In 1930 the male and in 1991 the female",
+      "answers":[
+        {
+          "text":"True",
+          "isCorrect":true
+        },
+        {
+          "text":"False",
+          "isCorrect":false
         }
       ]
     }

@@ -1,93 +1,209 @@
 {
+  "threshold": {
+    "max": 2,
+    "min": 1,
+    "perfect": 3
+  },
+  "color": "#9968A6",
+  "id": 115,
   "initMessages": [
-    "Determina si las afirmaciones que encontrarás a continuación son falsas o verdaderas”. Este ejercicio se realiza contratiempo. Por cada ronda se presentan 3 afirmaciones."
+    "Determina si las afirmaciones que encontrarás a continuación son falsas o verdaderas.",
+    "Este ejercicio se realiza contratiempo. Por cada ronda se presentan 3 afirmaciones."
   ],
   "name": "Deportistas en la historia",
-  "true": "Verdadero",
-  "false": "Falso",
   "options":[
     {
-      "title": "Balón de Oro femenino",
+      "question":"Alexia Putellas del FC Barcelona ha ganado en más de una ocasión el balón de oro",
       "answers":[
         {
-          "name":"Alexia Putellas del FC Barcelona ha ganado en más de una ocasión el balón de oro",
-          "isCorrect": true
+          "text":"Verdadero",
+          "isCorrect":true
         },
         {
-          "name":"Olga Carmona es la primera jugadora del Real Madrid en ser nominada al balón de oro",
-          "isCorrect": true
-        },
-        {
-          "name":"Ada Hegerberg del Olympique de Lyon ha ganado en más de una ocasión el balón de oro",
-          "isCorrect": false
+          "text":"Falso",
+          "isCorrect":false
         }
       ]
     },
     {
-      "title": "Copa Mundial Femenina de la FIFA",
+      "question":"Olga Carmona es la primera jugadora del Real Madrid en ser nominada al balón de oro",
       "answers":[
         {
-          "name":"Alemania es el país que más copas mundiales femeninas de la FIFA ha ganado",
-          "isCorrect": false
+          "text":"Verdadero",
+          "isCorrect":true
         },
         {
-          "name":"Estados Unidos es el país que más copas mundiales femeninas de la FIFA ha ganado",
-          "isCorrect": true
-        },
-        {
-          "name":"Japón ganó la copa mundial femenina de la FIFA en 2011",
-          "isCorrect": true
+          "text":"Falso",
+          "isCorrect":false
         }
       ]
     },
     {
-      "title": "Copa Mundial Femenina de la FIFA",
+      "question":"Ada Hegerberg del Olympique de Lyon ha ganado en más de una ocasión el balón de oro",
       "answers":[
         {
-          "name":"La jugadora brasilera Marta Vieira de Silva es la máxima goleadora en copas mundiales femeninas de la FIFA, con 17 goles",
-          "isCorrect": true
+          "text":"Verdadero",
+          "isCorrect":false
         },
         {
-          "name":"La primera copa mundial femenina de la FIFA en 1991 se celebró en China",
-          "isCorrect": true
-        },
-        {
-          "name":"España ganó la copa mundial femenina de la FIFA en 2019 en Francia",
-          "isCorrect": false
+          "text":"Falso",
+          "isCorrect":true
         }
       ]
     },
     {
-      "title": "Copa Mundial Femenina de la FIFA",
+      "question":"Alemania es el país que más copas mundiales femeninas de la FIFA ha ganado",
       "answers":[
         {
-          "name":"Linda Caicedo del equipo de Colombia ganó el premio al mejor gol de la Copa Femenina de la FIFA Australia y Nueva Zelanda 2023, por su gol contra Alemania",
-          "isCorrect": true
+          "text":"Verdadero",
+          "isCorrect":false
         },
         {
-          "name":"Mary Earps del equipo de Inglaterra, fue galardonada como la mejor arquera de la Copa Femenina de la FIFA Australia y Nueva Zelanda 2023",
-          "isCorrect": true
-        },
-        {
-          "name":"Michelle Akers y Alex Morgan del equipo de los Estados Unidos son las dos jugadoras que más goles han marcado en un mismo partido (5)",
-          "isCorrect": true
+          "text":"Falso",
+          "isCorrect":true
         }
       ]
     },
     {
-      "title": "Copa Mundial Femenina de la FIFA",
+      "question":"Estados Unidos es el país que más copas mundiales femeninas de la FIFA ha ganado",
       "answers":[
         {
-          "name":"Linda Caicedo de Colombia fue elegida como la mejor jugadora de la Copa Mundial Femenina 2023",
-          "isCorrect": false
+          "text":"Verdadero",
+          "isCorrect":true
         },
         {
-          "name":"Aitana Bonmati de España fue elegida como la mejor jugadora de la Copa Mundial Femenina 2023",
-          "isCorrect": true
+          "text":"Falso",
+          "isCorrect":false
+        }
+      ]
+    },
+    {
+      "question":"Japón ganó la copa mundial femenina de la FIFA en 2011",
+      "answers":[
+        {
+          "text":"Verdadero",
+          "isCorrect":true
         },
         {
-          "name":"Exactamente 61 años de diferencia separan al primer mundial de fútbol masculino y femenino. En 1930 el masculino y en 1991 el femenino",
-          "isCorrect": true
+          "text":"Falso",
+          "isCorrect":false
+        }
+      ]
+    },
+    {
+      "question":"La jugadora brasilera Marta Vieira de Silva es la máxima goleadora en copas mundiales femeninas de la FIFA, con 17 goles",
+      "answers":[
+        {
+          "text":"Verdadero",
+          "isCorrect":true
+        },
+        {
+          "text":"Falso",
+          "isCorrect":false
+        }
+      ]
+    },
+    {
+      "question":"La primera copa mundial femenina de la FIFA en 1991 se celebró en China",
+      "answers":[
+        {
+          "text":"Verdadero",
+          "isCorrect":true
+        },
+        {
+          "text":"Falso",
+          "isCorrect":false
+        }
+      ]
+    },
+    {
+      "question":"España ganó la copa mundial femenina de la FIFA en 2019 en Francia",
+      "answers":[
+        {
+          "text":"Verdadero",
+          "isCorrect":false
+        },
+        {
+          "text":"Falso",
+          "isCorrect":true
+        }
+      ]
+    },
+    {
+      "question":"Linda Caicedo del equipo de Colombia ganó el premio al mejor gol de la Copa Femenina de la FIFA Australia y Nueva Zelanda 2023, por su gol contra Alemania",
+      "answers":[
+        {
+          "text":"Verdadero",
+          "isCorrect":true
+        },
+        {
+          "text":"Falso",
+          "isCorrect":false
+        }
+      ]
+    },
+    {
+      "question":"Mary Earps del equipo de Inglaterra, fue galardonada como la mejor arquera de la Copa Femenina de la FIFA Australia y Nueva Zelanda 2023",
+      "answers":[
+        {
+          "text":"Verdadero",
+          "isCorrect":true
+        },
+        {
+          "text":"Falso",
+          "isCorrect":false
+        }
+      ]
+    },
+    {
+      "question":"Michelle Akers y Alex Morgan del equipo de los Estados Unidos son las dos jugadoras que más goles han marcado en un mismo partido (5)",
+      "answers":[
+        {
+          "text":"Verdadero",
+          "isCorrect":true
+        },
+        {
+          "text":"Falso",
+          "isCorrect":false
+        }
+      ]
+    },
+    {
+      "question":"Linda Caicedo de Colombia fue elegida como la mejor jugadora de la Copa Mundial Femenina 2023",
+      "answers":[
+        {
+          "text":"Verdadero",
+          "isCorrect":false
+        },
+        {
+          "text":"Falso",
+          "isCorrect":true
+        }
+      ]
+    },
+    {
+      "question":"Aitana Bonmati de España fue elegida como la mejor jugadora de la Copa Mundial Femenina 2023",
+      "answers":[
+        {
+          "text":"Verdadero",
+          "isCorrect":true
+        },
+        {
+          "text":"Falso",
+          "isCorrect":false
+        }
+      ]
+    },
+    {
+      "question":"Exactamente 61 años de diferencia separan al primer mundial de fútbol masculino y femenino. En 1930 el masculino y en 1991 el femenino",
+      "answers":[
+        {
+          "text":"Verdadero",
+          "isCorrect":true
+        },
+        {
+          "text":"Falso",
+          "isCorrect":false
         }
       ]
     }
