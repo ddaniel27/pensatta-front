@@ -1,140 +1,237 @@
 {
-  "initMessages": [
-    "Arrastra solo los globos que correspondan la categoría indicada en el cajón a este."
+  "initMessages":[
+      "Arrastra solo los globos que correspondan la categoría indicada en el cajón a este."
   ],
-  "name": "Arrastra los globos",
+  "threshold":{
+      "max" : 5,
+      "min" : 0,
+      "perfect": 5
+  },
+  "btnEnd":"FINALIZAR",
+  "btnNext":"SIGUIENTE",
+  "path": "19",
+  "color": "#9968A6",
+  "name":"Arrastra los globos",
+  "id": 114,
   "options":[
     {
-      "title": "Grandes caricaturistas mujeres en América Latina",
-      "answers":[
+      "system": "Grandes caricaturistas mujeres en América Latina",
+      "balloons":[
         {
-          "name":"Consuelo Lago (Colombia)"
+          "id": 1,
+          "text":"Consuelo Lago (Colombia)"
         },
         {
-          "name":"Maitena (Argentina)"
+          "id": 2,
+          "text":"Maitena (Argentina)"
         },
         {
-          "name":"Rose Araujo (Brasil)"
+          "id": 3,
+          "text":"Rose Araujo (Brasil)"
         },
         {
-          "name":"Liz França (Brasil)"
+          "id": 4,
+          "text":"Liz França (Brasil)"
         },
         {
-          "name":"Cintia Bolio (Mexico)"
+          "id": 5,
+          "text":"Cintia Bolio (Mexico)"
         },
         {
-          "name":"Anitta (Brasil)"
+          "id": 6,
+          "text":"Anitta (Brasil)"
         },
         {
-          "name":"Becky G (Mexico)"
+          "id": 7,
+          "text":"Becky G (Mexico)"
         },
         {
-          "name":"Natty Natasha (R. Dom)"
+          "id": 8,
+          "text":"Natty Natasha (R. Dom)"
         },
         {
-          "name":"Paulina Rubio (Mexico)"
+          "id": 9,
+          "text":"Paulina Rubio (Mexico)"
         },
         {
-          "name":"Karol G (Colombia)"
+          "id": 10,
+          "text":"Karol G (Colombia)"
         },
         {
-          "name":"Camila Cabello (Cuba)"
+          "id": 11,
+          "text":"Camila Cabello (Cuba)"
         },
         {
-          "name":"Shakira (Colombia)"
+          "id": 12,
+          "text":"Shakira (Colombia)"
         },
         {
-          "name":"Jennifer Lopez (Puerto Rico)"
+          "id": 13,
+          "text":"Jennifer Lopez (Puerto Rico)"
         }
-      ]
+      ],
+      "positions":[
+        {"x": -83.5664,"y":77.8704},
+        {"x": -20.5131,"y":28.916},
+        {"x": 47.4022,"y":76.0231},
+        {"x": 113.47,"y":23.5792},
+        {"x":193.342,"y":60.3207},
+        {"x": 266.555,"y":17.8319},
+        {"x":348.711,"y":15.2662},
+        {"x": -49.1469,"y":274.817},
+        {"x": 9.53175,"y":217.55},
+        {"x": 146.479,"y":208.313},
+        {"x": 220.616,"y":236.511},
+        {"x": 295.536,"y":216.421},
+        {"x": 357.563 ,"y":267.915}
+      ],
+      "isSo":[1,2,3,4,5]
     },
     {
-      "title": "Grandes novelas escritas por mujeres",
-      "answers":[
+      "system": "Grandes novelas escritas por mujeres",
+      "balloons":[
         {
-          "name":"Ternura"
+          "id": 1,
+          "text":"Ternura"
         },
         {
-          "name":"Como agua para chocolate"
+          "id": 2,
+          "text":"Como agua para chocolate"
         },
         {
-          "name":"Frankestein"
+          "id": 3,
+          "text":"Frankestein"
         },
         {
-          "name":"Cumbres Borrascosas"
+          "id": 4,
+          "text":"Cumbres Borrascosas"
         },
         {
-          "name":"La casa de los espíritus"
+          "id": 5,
+          "text":"La casa de los espíritus"
         },
         {
-          "name":"La metamorfosis"
+          "id": 6,
+          "text":"La metamorfosis"
         },
         {
-          "name":"Romeo y Julieta"
+          "id": 7,
+          "text":"Romeo y Julieta"
         },
         {
-          "name":"Madame Bovary"
+          "id": 8,
+          "text":"Madame Bovary"
         },
         {
-          "name":"Anna Karenina"
+          "id": 9,
+          "text":"Anna Karenina"
         },
         {
-          "name":"Los tres mosqueteros"
+          "id": 10,
+          "text":"Los tres mosqueteros"
         },
         {
-          "name":"Moby Dick"
+          "id": 11,
+          "text":"Moby Dick"
         },
         {
-          "name":"1984"
+          "id": 12,
+          "text":"1984"
         },
         {
-          "name":"Crimen y Castigo"
+          "id": 13,
+          "text":"Crimen y Castigo"
         }
-      ]
+      ],
+      "positions":[
+        {"x": -83.5664,"y":77.8704},
+        {"x": -20.5131,"y":28.916},
+        {"x": 47.4022,"y":76.0231},
+        {"x": 113.47,"y":23.5792},
+        {"x":193.342,"y":60.3207},
+        {"x": 266.555,"y":17.8319},
+        {"x":348.711,"y":15.2662},
+        {"x": -49.1469,"y":274.817},
+        {"x": 9.53175,"y":217.55},
+        {"x": 146.479,"y":208.313},
+        {"x": 220.616,"y":236.511},
+        {"x": 295.536,"y":216.421},
+        {"x": 357.563 ,"y":267.915}
+      ],
+      "isSo":[1,2,3,4,5]
     },
     {
-      "title": "Grandes inventos creados por mujeres",
-      "answers":[
+      "system": "Grandes inventos creados por mujeres",
+      "balloons":[
         {
-          "name":"Limpiaparabrisas"
+          "id": 1,
+          "text":"Limpiaparabrisas"
         },
         {
-          "name":"Los pañales desechables"
+          "id": 2,
+          "text":"Los pañales desechables"
         },
         {
-          "name":"Calculadora gráfica"
+          "id": 3,
+          "text":"Calculadora gráfica"
         },
         {
-          "name":"El vidrio no reflexivo"
+          "id": 4,
+          "text":"El vidrio no reflexivo"
         },
         {
-          "name":"Medicamento como la leucemia"
+          "id": 5,
+          "text":"Medicamento como la leucemia"
         },
         {
-          "name":"Los antibióticos"
+          "id": 6,
+          "text":"Los antibióticos"
         },
         {
-          "name":"La dinamita"
+          "id": 7,
+          "text":"La dinamita"
         },
         {
-          "name":"La imprenta"
+          "id": 8,
+          "text":"La imprenta"
         },
         {
-          "name":"El automóvil"
+          "id": 9,
+          "text":"El automóvil"
         },
         {
-          "name":"El cuaderno"
+          "id": 10,
+          "text":"El cuaderno"
         },
         {
-          "name":"La fotografía"
+          "id": 11,
+          "text":"La fotografía"
         },
         {
-          "name":"El televisor"
+          "id": 12,
+          "text":"El televisor"
         },
         {
-          "name":"El horno microondas"
+          "id": 13,
+          "text":"El horno microondas"
         }
-      ]
+      ],
+      "positions":[
+        {"x": -83.5664,"y":77.8704},
+        {"x": -20.5131,"y":28.916},
+        {"x": 47.4022,"y":76.0231},
+        {"x": 113.47,"y":23.5792},
+        {"x":193.342,"y":60.3207},
+        {"x": 266.555,"y":17.8319},
+        {"x":348.711,"y":15.2662},
+        {"x": -49.1469,"y":274.817},
+        {"x": 9.53175,"y":217.55},
+        {"x": 146.479,"y":208.313},
+        {"x": 220.616,"y":236.511},
+        {"x": 295.536,"y":216.421},
+        {"x": 357.563 ,"y":267.915}
+      ],
+      "isSo":[1,2,3,4,5]
     }
   ]
 }

@@ -1,140 +1,237 @@
 {
-  "initMessages": [
-    "Arraste para ele apenas os balões que correspondem à categoria indicada na gaveta."
+  "initMessages":[
+      "Arraste até ele apenas os balões que correspondem à categoria indicada na gaveta."
   ],
-  "name": "Arraste os balões",
+  "threshold":{
+      "max" : 5,
+      "min" : 0,
+      "perfect": 5
+  },
+  "btnEnd":"FINALIZAR",
+  "btnNext":"SEGUINTE",
+  "path": "19",
+  "color": "#9968A6",
+  "name":"Arraste os balões",
+  "id": 114,
   "options":[
     {
-      "title": "Grandes caricaturistas femininas da América Latina",
-      "answers":[
+      "system": "Grandes caricaturistas femininas da América Latina",
+      "balloons":[
         {
-          "name":"Consuelo Lago (Colômbia)"
+          "id": 1,
+          "text":"Consuelo Lago (Colômbia)"
         },
         {
-          "name":"Maitena (Argentina)"
+          "id": 2,
+          "text":"Maitena (Argentina)"
         },
         {
-          "name":"Rose Araujo (Brasil)"
+          "id": 3,
+          "text":"Rose Araujo (Brasil)"
         },
         {
-          "name":"Liz França (Brasil)"
+          "id": 4,
+          "text":"Liz França (Brasil)"
         },
         {
-          "name":"Cintia Bolio (Mexico)"
+          "id": 5,
+          "text":"Cintia Bolio (Mexico)"
         },
         {
-          "name":"Anitta (Brasil)"
+          "id": 6,
+          "text":"Anitta (Brasil)"
         },
         {
-          "name":"Becky G (Mexico)"
+          "id": 7,
+          "text":"Becky G (Mexico)"
         },
         {
-          "name":"Natty Natasha (R. Dom)"
+          "id": 8,
+          "text":"Natty Natasha (R. Dom)"
         },
         {
-          "name":"Paulina Rubio (Mexico)"
+          "id": 9,
+          "text":"Paulina Rubio (Mexico)"
         },
         {
-          "name":"Karol G (Colômbia)"
+          "id": 10,
+          "text":"Karol G (Colômbia)"
         },
         {
-          "name":"Camila Cabello (Cuba)"
+          "id": 11,
+          "text":"Camila Cabello (Cuba)"
         },
         {
-          "name":"Shakira (Colômbia)"
+          "id": 12,
+          "text":"Shakira (Colômbia)"
         },
         {
-          "name":"Jennifer Lopez (Porto Rico)"
+          "id": 13,
+          "text":"Jennifer Lopez (Porto Rico)"
         }
-      ]
+      ],
+      "positions":[
+        {"x": -83.5664,"y":77.8704},
+        {"x": -20.5131,"y":28.916},
+        {"x": 47.4022,"y":76.0231},
+        {"x": 113.47,"y":23.5792},
+        {"x":193.342,"y":60.3207},
+        {"x": 266.555,"y":17.8319},
+        {"x":348.711,"y":15.2662},
+        {"x": -49.1469,"y":274.817},
+        {"x": 9.53175,"y":217.55},
+        {"x": 146.479,"y":208.313},
+        {"x": 220.616,"y":236.511},
+        {"x": 295.536,"y":216.421},
+        {"x": 357.563 ,"y":267.915}
+      ],
+      "isSo":[1,2,3,4,5]
     },
     {
-      "title": "Grandes romances escritos por mulheres",
-      "answers":[
+      "system": "Grandes romances escritos por mulheres",
+      "balloons":[
         {
-          "name":"Ternura"
+          "id": 1,
+          "text":"Ternura"
         },
         {
-          "name":"Como água para Chocolate"
+          "id": 2,
+          "text":"Como água para Chocolate"
         },
         {
-          "name":"Frankenstein"
+          "id": 3,
+          "text":"Frankenstein"
         },
         {
-          "name":"Morro dos Ventos Uivantes"
+          "id": 4,
+          "text":"Morro dos Ventos Uivantes"
         },
         {
-          "name":"A Casa dos Espíritos"
+          "id": 5,
+          "text":"A Casa dos Espíritos"
         },
         {
-          "name":"Metamorfose"
+          "id": 6,
+          "text":"Metamorfose"
         },
         {
-          "name":"Romeo e Julieta"
+          "id": 7,
+          "text":"Romeo e Julieta"
         },
         {
-          "name":"Senhora Bovary"
+          "id": 8,
+          "text":"Senhora Bovary"
         },
         {
-          "name":"Ana Karenina"
+          "id": 9,
+          "text":"Ana Karenina"
         },
         {
-          "name":"Os três Mosqueteiros"
+          "id": 10,
+          "text":"Os três Mosqueteiros"
         },
         {
-          "name":"Moby Dick"
+          "id": 11,
+          "text":"Moby Dick"
         },
         {
-          "name":"1984"
+          "id": 12,
+          "text":"1984"
         },
         {
-          "name":"Crime e Castigo"
+          "id": 13,
+          "text":"Crime e Castigo"
         }
-      ]
+      ],
+      "positions":[
+        {"x": -83.5664,"y":77.8704},
+        {"x": -20.5131,"y":28.916},
+        {"x": 47.4022,"y":76.0231},
+        {"x": 113.47,"y":23.5792},
+        {"x":193.342,"y":60.3207},
+        {"x": 266.555,"y":17.8319},
+        {"x":348.711,"y":15.2662},
+        {"x": -49.1469,"y":274.817},
+        {"x": 9.53175,"y":217.55},
+        {"x": 146.479,"y":208.313},
+        {"x": 220.616,"y":236.511},
+        {"x": 295.536,"y":216.421},
+        {"x": 357.563 ,"y":267.915}
+      ],
+      "isSo":[1,2,3,4,5]
     },
     {
-      "title": "Grandes invenções criadas por mulheres",
-      "answers":[
+      "system": "Grandes invenções criadas por mulheres",
+      "balloons":[
         {
-          "name":"Arruela do limpador"
+          "id": 1,
+          "text":"Arruela do limpador"
         },
         {
-          "name":"Fraldas descartáveis"
+          "id": 2,
+          "text":"Fraldas descartáveis"
         },
         {
-          "name":"Calculadora gráfica"
+          "id": 3,
+          "text":"Calculadora gráfica"
         },
         {
-          "name":"Vidro não reflexivo"
+          "id": 4,
+          "text":"Vidro não reflexivo"
         },
         {
-          "name":"Medicamentos como leucemia"
+          "id": 5,
+          "text":"Medicamentos como leucemia"
         },
         {
-          "name":"Os antibióticos"
+          "id": 6,
+          "text":"Os antibióticos"
         },
         {
-          "name":"A dinamite"
+          "id": 7,
+          "text":"A dinamite"
         },
         {
-          "name":"A imprensa"
+          "id": 8,
+          "text":"A imprensa"
         },
         {
-          "name":"O automovel"
+          "id": 9,
+          "text":"O automovel"
         },
         {
-          "name":"O caderno"
+          "id": 10,
+          "text":"O caderno"
         },
         {
-          "name":"A fotografia"
+          "id": 11,
+          "text":"A fotografia"
         },
         {
-          "name":"A televisão"
+          "id": 12,
+          "text":"A televisão"
         },
         {
-          "name":"O microondas"
+          "id": 13,
+          "text":"O microondas"
         }
-      ]
+      ],
+      "positions":[
+        {"x": -83.5664,"y":77.8704},
+        {"x": -20.5131,"y":28.916},
+        {"x": 47.4022,"y":76.0231},
+        {"x": 113.47,"y":23.5792},
+        {"x":193.342,"y":60.3207},
+        {"x": 266.555,"y":17.8319},
+        {"x":348.711,"y":15.2662},
+        {"x": -49.1469,"y":274.817},
+        {"x": 9.53175,"y":217.55},
+        {"x": 146.479,"y":208.313},
+        {"x": 220.616,"y":236.511},
+        {"x": 295.536,"y":216.421},
+        {"x": 357.563 ,"y":267.915}
+      ],
+      "isSo":[1,2,3,4,5]
     }
   ]
 }
