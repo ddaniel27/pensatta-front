@@ -10,6 +10,28 @@ const Card = ({ card, handleChoice, flipped, disabled }) => {
       handleChoice(card)
     }
   }
+  const [newText, setNewText] = useState([])
+
+  useEffect(() => {
+    let text = []
+    if (card.text.length > 10 && card.text.split(' ').length == 1) {
+      text.push(card.text.substring(0, 10) + '...')
+      text.push(card.text.substring(10, card.text.length))
+      return setNewText(text)
+    }
+    if (card.text.length > 10) {
+      text = card.text.split(' ').reduce((acc, word) => {
+        if (acc[acc.length - 1].length + word.length < 12) {
+          acc[acc.length - 1] += ` ${word}`
+        } else {
+          acc.push(word)
+        }
+        return acc
+      }, [''])
+      return setNewText(text)
+    }
+    return setNewText([card.text])
+  }, [])
 
   return (
     <div className="card" >
@@ -17,7 +39,11 @@ const Card = ({ card, handleChoice, flipped, disabled }) => {
         <svg className="frontCard" width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="180" height="180" rx="20" fill="#00635D"/>
           <rect x="21.5" y="21.5" width="137" height="137" rx="8.5" stroke="white" strokeWidth="3"/>
-          <text x="50%" y="50%" textAnchor="middle" fill="#FFFFFF" fontSize={card.type == 'name' ? '100%' : '180%'} fontFamily="Montserrat" dy=".3em" fontWeight="bold">{card.text}</text>
+          <text x="50%" y={newText.length > 5 ? '20%' : '30%'} textAnchor="middle" fill="#FFFFFF" fontSize={card.type == 'name' ? '100%' : '180%'} fontFamily="Montserrat" dy=".3em" fontWeight="bold">
+            {newText.map((line, index) => (
+              <tspan x="50%" dy={index == 0 ? 0 : '1.2em'} key={index}>{line}</tspan>
+            ))}
+          </text>
         </svg>
         <img className="backCard" src={cover} onClick={handleClick} />
       </div>
@@ -51,7 +77,7 @@ const MazeCardsComponent = ({ cardsArray, setPhase, setScore }) => {
   const [isFinish, setIsFinish] = useState(false)
   const [time, setTime] = useState(180)
   const interval = useRef(null)
-  const { t } = useTranslation("mazeCardsComponent")
+  const { t } = useTranslation('mazeCardsComponent')
 
   const shuffleCards = () => {
     const shuffledCards = cardsArray.sort(() => Math.random() - 0.5).map(card => ({ ...card, isMatched: false }))
@@ -117,7 +143,7 @@ const MazeCardsComponent = ({ cardsArray, setPhase, setScore }) => {
   const finished = () => {
     clearInterval(interval.current)
     return (
-      <button onClick={handleFinish}>{t("finish-button")}</button>
+      <button onClick={handleFinish}>{t('finish-button')}</button>
     )
   }
 
@@ -126,7 +152,7 @@ const MazeCardsComponent = ({ cardsArray, setPhase, setScore }) => {
       <div className={styles.gameContainer}>
         <div className={styles.mazeContainer}>
           <BoardMazeCard cards={cards} handleChoice={handleChoice} choiceOne={choiceOne} choiceTwo={choiceTwo} disabled={disabled}/>
-          <div className={styles.pairsText}>{t("pairs")}{numCorrects}/{cards.length / 2} </div>
+          <div className={styles.pairsText}>{t('pairs')}{numCorrects}/{cards.length / 2} </div>
         </div>
         <div className={styles.timer}>{`${padTo2Digits(Math.floor(time / 60))} : ${padTo2Digits(time % 60)}`}</div>
       </div>

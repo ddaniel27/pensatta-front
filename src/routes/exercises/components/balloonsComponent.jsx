@@ -3,11 +3,37 @@ import { Draggable, Droppable } from 'react-beautiful-dnd'
 import '../../../styles/balloon.css'
 
 const BalloonSVG = ({ color, text, id, position, nameClass }) => {
+  const [newText, setNewText] = useState([])
+  useEffect(() => {
+    let aux = []
+    if (text.length > 10 && text.split(' ').length == 1) {
+      aux.push(text.substring(0, 10) + '...')
+      aux.push(text.substring(10, text.length))
+      return setNewText(aux)
+    }
+    if (text.length > 10) {
+      aux = text.split(' ').reduce((acc, word) => {
+        if (acc[acc.length - 1].length + word.length < 12) {
+          acc[acc.length - 1] += ` ${word}`
+        } else {
+          acc.push(word)
+        }
+        return acc
+      }, [''])
+      return setNewText((aux))
+    }
+    return setNewText([text])
+  }, [])
+
   return (
 
     <g className={nameClass} transform={`translate(${position.x - 100},${position.y})`} id={`balloon-${id}`}>
       <circle cx="40" cy="40" r="40" fill={color}/>
-      <text x="9%" y="9%" textAnchor="middle" fill="#333333" fontSize="80%" fontFamily="Montserrat" dy=".3em" fontWeight="bold">{text}</text>
+      <text x="9%" y="9%" textAnchor="middle" fill="#333333" fontSize="70%" fontFamily="Montserrat" dy=".3em" fontWeight="bold">{
+        newText.map((line, index) => (
+          <tspan x="9%" dy={index == 0 ? 0 : '1.2em'} key={index}>{line}</tspan>
+        ))
+      }</text>
       <path d="M32.4853 83.7254L39.8462 70.1538L48.115 83.2462C49.3556 85.2104 47.9889 87.7786 45.6668 87.8469L35.2106 88.1544C32.8985 88.2224 31.3825 85.7587 32.4853 83.7254Z" fill={color}/>
       <path d="M39.9773 80C48.8474 99.3939 45.1915 108.284 35.0834 122.727C19.1783 145.455 45.7887 168.485 44.5652 180" stroke="#F2F2F2" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
       <path d="M40.2671 80.2406C33.4978 75.0098 22.1131 79.9329 24.2669 84.856C26.4208 89.7791 35.9593 87.3175 40.2671 80.2406Z" stroke="#F2F2F2" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
