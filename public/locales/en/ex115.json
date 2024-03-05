@@ -13,7 +13,7 @@
   "name": "Athletes in history",
   "options":[
     {
-      "name":"Alexia Putellas of FC Barcelona has won the Ballon d'Or on more than one occasion",
+      "question":"Alexia Putellas of FC Barcelona has won the Ballon d'Or on more than one occasion",
       "answers":[
         {
           "text":"True",
@@ -26,7 +26,7 @@
       ]
     },
     {
-      "name":"Olga Carmona is the first Real Madrid player to be nominated for the Ballon d'Or",
+      "question":"Olga Carmona is the first Real Madrid player to be nominated for the Ballon d'Or",
       "answers":[
         {
           "text":"True",
@@ -39,7 +39,7 @@
       ]
     },
     {
-      "name":"Ada Hegerberg of Olympique Lyonnais has won the Ballon d'Or on more than one occasion",
+      "question":"Ada Hegerberg of Olympique Lyonnais has won the Ballon d'Or on more than one occasion",
       "answers":[
         {
           "text":"True",
@@ -52,7 +52,7 @@
       ]
     },
     {
-      "name":"Germany is the country that has won the most FIFA Women's World Cups",
+      "question":"Germany is the country that has won the most FIFA Women's World Cups",
       "answers":[
         {
           "text":"True",
@@ -65,7 +65,7 @@
       ]
     },
     {
-      "name":"The United States is the country that has won the most FIFA Women's World Cups",
+      "question":"The United States is the country that has won the most FIFA Women's World Cups",
       "answers":[
         {
           "text":"True",
@@ -78,7 +78,7 @@
       ]
     },
     {
-      "name":"Japan won the FIFA Women's World Cup in 2011",
+      "question":"Japan won the FIFA Women's World Cup in 2011",
       "answers":[
         {
           "text":"True",
@@ -91,7 +91,7 @@
       ]
     },
     {
-      "name":"Brazilian player Marta Vieira de Silva is the top scorer in FIFA women's world cups, with 17 goals",
+      "question":"Brazilian player Marta Vieira de Silva is the top scorer in FIFA women's world cups, with 17 goals",
       "answers":[
         {
           "text":"True",
@@ -104,7 +104,7 @@
       ]
     },
     {
-      "name":"The first FIFA Women's World Cup in 1991 was held in China",
+      "question":"The first FIFA Women's World Cup in 1991 was held in China",
       "answers":[
         {
           "text":"True",
@@ -117,7 +117,7 @@
       ]
     },
     {
-      "name":"Spain won the 2019 FIFA Women's World Cup in France",
+      "question":"Spain won the 2019 FIFA Women's World Cup in France",
       "answers":[
         {
           "text":"True",
@@ -130,7 +130,7 @@
       ]
     },
     {
-      "name":"Team Colombia's Linda Caicedo won the award for best goal at the FIFA Women's Cup Australia and New Zealand 2023, for her goal against Germany",
+      "question":"Team Colombia's Linda Caicedo won the award for best goal at the FIFA Women's Cup Australia and New Zealand 2023, for her goal against Germany",
       "answers":[
         {
           "text":"True",
@@ -143,7 +143,7 @@
       ]
     },
     {
-      "name":"Mary Earps of the England team was awarded the best goalkeeper of the FIFA Women's Cup Australia and New Zealand 2023",
+      "question":"Mary Earps of the England team was awarded the best goalkeeper of the FIFA Women's Cup Australia and New Zealand 2023",
       "answers":[
         {
           "text":"True",
@@ -156,7 +156,7 @@
       ]
     },
     {
-      "name":"Michelle Akers and Alex Morgan of the United States team are the two players who have scored the most goals in a single game (5)",
+      "question":"Michelle Akers and Alex Morgan of the United States team are the two players who have scored the most goals in a single game (5)",
       "answers":[
         {
           "text":"True",
@@ -169,7 +169,7 @@
       ]
     },
     {
-      "name":"Linda Caicedo of Colombia was chosen as the best player of the 2023 Women's World Cup",
+      "question":"Linda Caicedo of Colombia was chosen as the best player of the 2023 Women's World Cup",
       "answers":[
         {
           "text":"True",
@@ -182,7 +182,7 @@
       ]
     },
     {
-      "name":"Aitana Bonmati of Spain was chosen as the best player of the 2023 Women's World Cup",
+      "question":"Aitana Bonmati of Spain was chosen as the best player of the 2023 Women's World Cup",
       "answers":[
         {
           "text":"True",
@@ -195,7 +195,7 @@
       ]
     },
     {
-      "name":"Exactly 61 years of difference separate the first men's and women's soccer World Cup. In 1930 the male and in 1991 the female",
+      "question":"Exactly 61 years of difference separate the first men's and women's soccer World Cup. In 1930 the male and in 1991 the female",
       "answers":[
         {
           "text":"True",

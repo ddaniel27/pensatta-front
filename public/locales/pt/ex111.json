@@ -10,13 +10,13 @@
     "color": "#53745B",
     "id": 111,
   "initMessages": [
-    "A continuación, encontrarás la simulación de un circuito que podrás encender activando los elementos correctos.",
-    "Selecciona los cuadros indicados para formar una frase verdadera."
+    "Abaixo você encontrará uma simulação de um circuito que você pode ligar ativando os elementos corretos.",
+    "Selecione as caixas indicadas para formar uma frase verdadeira."
   ],
   "name": "Circuito literario - Grandes escritoras latinoamericanas",
   "options":[
     {
-      "book": "COMO AGUA PARA CHOCOLATE",
+      "book": "COMO ÁGUA PARA CHOCOLATE",
       "left": [
         {
           "text":"Na Argentina"
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "book": "LA CASA DE LOS ESPÍTIRTUS",
+      "book": "A CASA DOS ESPÍRITOS",
       "left": [
         {
           "text":"No Peru"
@@ -97,7 +97,7 @@
       ]
     },
     {
-      "book": "TEMPORADA DE HURACANES",
+      "book": "TEMPORADA DE FURACÕES",
       "left": [
         {
           "text":"Na Argentina"
