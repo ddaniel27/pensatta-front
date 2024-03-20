@@ -1,15 +1,26 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Information from './information'
 import ActivityContext from '../../context/ActivityContext'
 import RouterActivity from '../exercises/routerActivity'
 import StudentProfileViewer from './studentProfileViewer'
 import '../../styles/mainArea.css'
+import useData from '../../hooks/useData'
 
 export default function StudentView () {
   const { activity, setTitle, setBackground, setActivity, profile } = React.useContext(ActivityContext)
+  const { data } = useData('studentView')
+  const [myData, setMyData] = React.useState({
+    ...data
+  })
 
-  const [randomId, setRandomId] = React.useState(0)
+  useEffect(() => {
+    setMyData({
+      ...data
+    })
+  }, [data])
 
+  const [randomId, setRandomId] = React.useState('')
+  const [excersices, setExcersices] = React.useState('')
   const handleMessages = () => {
     setActivity(false)
     setRandomId(
@@ -125,6 +136,20 @@ export default function StudentView () {
     )
   }
 
+  useEffect(() => {
+    if (activity) return
+    if (localStorage.getItem('activity').includes(randomId)) {
+      handleMessages()
+    } else {
+      let activity = localStorage.getItem('activity')
+      activity = activity ? JSON.parse(activity) : []
+      activity.push(randomId)
+      setExcersices(activity[0])
+      activity.shift()
+      localStorage.setItem('activity', JSON.stringify(activity))
+    }
+  }, [randomId])
+
   React.useEffect(() => {
     if (activity) {
       setTitle('HUB')
@@ -140,10 +165,10 @@ export default function StudentView () {
           : (
             activity
               ? <>
-                <Information messages={['¡Qué gusto tenerte por acá!']} />
-                <button className='button-play' onClick={handleMessages}>JUGAR</button>
+                <Information messages={[myData.message]} />
+                <button className='button-play' onClick={handleMessages}>{myData.btnPlay}</button>
               </>
-              : <RouterActivity idExercise={randomId} />
+              : <RouterActivity idExercise={excersices} />
           )
       }
     </div>

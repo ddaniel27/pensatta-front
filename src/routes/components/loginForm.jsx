@@ -4,6 +4,7 @@ import UserContext from '../../context/UserContext'
 import DemoContext from '../../context/DemoContext'
 import { postLogin } from '../../requests'
 import '../../styles/loginForm.css'
+import i18n from 'i18next'
 
 export default function LoginForm () {
   const [emailLogin, setEmailLogin] = React.useState('')
@@ -40,7 +41,16 @@ export default function LoginForm () {
         function (response) {
           if (response.logged) {
             setLoginUser(response.user)
+            console.log(response.user)
+            i18n.changeLanguage(response.user.language)
             localStorage.setItem('user', JSON.stringify(response.user))
+            const array = []
+            for (let i = 0; i < 20; i++) {
+              const randomInt = Math.floor(Math.random() * (108 - 1 + 1)) + 1
+              array.push(randomInt.toString())
+            }
+
+            localStorage.setItem('activity', JSON.stringify(array))
           } else {
             setErrorMessage('Usuario o contraseña incorrectos')
             setSuccessMessage('')

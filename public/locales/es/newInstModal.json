@@ -9,5 +9,9 @@
   "province": "Provincia",
   "city": "Ciudad",
   "code": "Codigo",
+  "spanish": "Español",
+  "english": "Ingles",
+  "portuguese": "Portugues",
+  "language": "Idioma",
   "update-button": "ACTUALIZAR"
 }
