@@ -15,53 +15,53 @@
     {
       "title":"MULHERES ASTRONAUTAS",
       "cards":[
-        { "text":"SALLY RIDE", "id": 1, "pair": 1, "type": "name" },
-        { "text":"ELLEN OCHOA", "id": 3, "pair": 2, "type": "name" },
-        { "text":"VALENTINA TERESHKOVA", "id": 4, "pair": 3, "type": "name"},
-        { "text":"SARA GARCIA", "id": 5, "pair": 4, "type": "name"},
-        { "text":"primeira mulher americana a voar para o espaço (1983)", "id": 2, "pair": 1, "type": "name"  },
-        { "text":"primeira mulher hispânica a viajar para o espaço (1993)", "id": 6, "pair": 2, "type": "name" },
-        { "text":"primeira mulher a viajar para o espaço (1963)", "id": 7, "pair": 3, "type": "name" },
-        { "text":"primeira astronauta espanhola. Ele ainda não voou para o espaço.", "id": 8, "pair": 4, "type": "name" }
+        { "text":"/images/exercises/110/general/Sally_Ride.png", "id": 1, "pair": 1, "type": "name", "isImage": true },
+        { "text":"/images/exercises/110/general/Ellen_Ochoa.png", "id": 3, "pair": 2, "type": "name", "isImage": true },
+        { "text":"/images/exercises/110/general/Valentina_Tereshkova.png", "id": 4, "pair": 3, "type": "name", "isImage": true},
+        { "text":"/images/exercises/110/general/Sara_Garcia_Alonso.png", "id": 5, "pair": 4, "type": "name", "isImage": true},
+        { "text":"/images/exercises/110/general/Sally_Ride.png", "id": 2, "pair": 1, "type": "name", "isImage": true },
+        { "text":"/images/exercises/110/general/Ellen_Ochoa.png", "id": 6, "pair": 2, "type": "name", "isImage": true},
+        { "text":"/images/exercises/110/general/Valentina_Tereshkova.png", "id": 7, "pair": 3, "type": "name", "isImage": true},
+        { "text":"/images/exercises/110/general/Sara_Garcia_Alonso.png", "id": 8, "pair": 4, "type": "name", "isImage": true}
       ]
     },
     {
       "title":"GRANDES INVENTORES",
       "cards":[
-        { "text":"TELESCÓPIO SUBAQUÁTICO", "id": 1, "pair": 1, "type": "name"  },
-        { "text":"CORRETIVO", "id": 2, "pair": 2, "type": "name"   },
-        { "text":"FRALDA DESCARTÁVEL", "id": 3, "pair": 3, "type": "name"   },
-        { "text":"LAVADOR DE LIMPADOR", "id": 4, "pair": 4, "type": "name"   },
-        { "text":"SARA MATHER em 1845", "id": 5, "pair": 1, "type": "name"   },
-        { "text":"BETTE NESMITH GRAHAM em 1956", "id": 6, "pair": 2, "type": "name"   },
-        { "text":"MARION DONOVAN em 1949", "id": 7, "pair": 3, "type": "name"   },
-        { "text":"MARY ANDERSON em 1903", "id": 8, "pair": 4, "type": "name"   }
+        { "text":"/images/exercises/110/pt/telescopio.png", "id": 1, "pair": 1, "type": "name", "isImage": true },
+        { "text":"/images/exercises/110/pt/corrector.png", "id": 2, "pair": 2, "type": "name", "isImage": true  },
+        { "text":"/images/exercises/110/pt/panal.png", "id": 3, "pair": 3, "type": "name", "isImage": true  },
+        { "text":"/images/exercises/110/pt/limpia.png", "id": 4, "pair": 4, "type": "name", "isImage": true  },
+        { "text":"/images/exercises/110/pt/telescopio.png", "id": 5, "pair": 1, "type": "name", "isImage": true  },
+        { "text":"/images/exercises/110/pt/corrector.png", "id": 6, "pair": 2, "type": "name", "isImage": true  },
+        { "text":"/images/exercises/110/pt/panal.png", "id": 7, "pair": 3, "type": "name", "isImage": true  },
+        { "text":"/images/exercises/110/pt/limpia.png", "id": 8, "pair": 4, "type": "name" , "isImage": true }
       ]
     },
     {
       "title":"MULHERES ESCRITAS",
       "cards":[
-        { "text":"Amantine Dupin", "id": 1, "pair": 1, "type": "name"  },
-        { "text":"Mary Anne Evans", "id": 2, "pair": 2, "type": "name"  },
-        { "text":"Cecilia Böhl de Faber", "id": 3, "pair": 3, "type": "name"  },
-        { "text":"Emily Bronte", "id": 4, "pair": 4, "type": "name"  },
-        { "text":"George SanD", "id": 5, "pair": 1, "type": "name"  },
-        { "text":"George Elliott", "id": 6, "pair": 2, "type": "name"  },
-        { "text":"Fernan Caballero", "id": 7, "pair": 3, "type": "name"  },
-        { "text":"Ellis Bell", "id": 8, "pair": 4, "type": "name"  }
+        { "text":"/images/exercises/110/general/Amantine_Dupin.png", "id": 1, "pair": 1, "type": "name", "isImage": true  },
+        { "text":"/images/exercises/110/general/Mary_Anne_Evans.png", "id": 2, "pair": 2, "type": "name", "isImage": true  },
+        { "text":"/images/exercises/110/general/Cecilia_Bohl_de_Faber.png", "id": 3, "pair": 3, "type": "name", "isImage": true  },
+        { "text":"/images/exercises/110/general/Emily_Bronte.png", "id": 4, "pair": 4, "type": "name", "isImage": true  },
+        { "text":"/images/exercises/110/general/Amantine_Dupin.png", "id": 5, "pair": 1, "type": "name", "isImage": true  },
+        { "text":"/images/exercises/110/general/Mary_Anne_Evans.png", "id": 6, "pair": 2, "type": "name" , "isImage": true },
+        { "text":"/images/exercises/110/general/Cecilia_Bohl_de_Faber.png", "id": 7, "pair": 3, "type": "name", "isImage": true  },
+        { "text":"images/exercises/110/general/Emily_Bronte.png", "id": 8, "pair": 4, "type": "name", "isImage": true  }
       ]
     },
     {
       "title":"Mulheres que lutaram pela igualdade de género",
       "cards":[
-        { "text":"Flora Tristan", "id": 1, "pair": 1, "type": "name" },
-        { "text":"Virginia Woolf", "id": 2, "pair": 2, "type": "name"  },
-        { "text":"Coco Chanel", "id": 3, "pair": 3, "type": "name"  },
-        { "text":"Clara Campoamor", "id": 4, "pair": 4, "type": "name"  },
-        { "text":"Autor de “A Emancipação das Mulheres” (1845)", "id": 5, "pair": 1, "type": "name"   },
-        { "text":"Autor de “Um quarto só seu” (1923)", "id": 6, "pair": 2, "type": "name"   },
-        { "text":"Ele libertou as mulheres através da moda. Ele criou sua própria oficina (1910)", "id": 7, "pair": 3, "type": "name"   },
-        { "text":"Promotor do voto feminino na Espanha (1933)", "id": 8, "pair": 4, "type": "name"   }
+        { "text":"/images/exercises/110/general/Flora_Tristan.png", "id": 1, "pair": 1, "type": "name", "isImage": true },
+        { "text":"/images/exercises/110/general/Virginia_Woolf.png", "id": 2, "pair": 2, "type": "name", "isImage": true  },
+        { "text":"/images/exercises/110/general/Coco_Chanel.png", "id": 3, "pair": 3, "type": "name", "isImage": true  },
+        { "text":"/images/exercises/110/general/Clara_Campoamor.png", "id": 4, "pair": 4, "type": "name", "isImage": true  },
+        { "text":"/images/exercises/110/general/Flora_Tristan.png", "id": 5, "pair": 1, "type": "name", "isImage": true  },
+        { "text":"/images/exercises/110/general/Virginia_Woolf.png", "id": 6, "pair": 2, "type": "name", "isImage": true  },
+        { "text":"/images/exercises/110/general/Coco_Chanel.png", "id": 7, "pair": 3, "type": "name", "isImage": true  },
+        { "text":"/images/exercises/110/general/Clara_Campoamor.png", "id": 8, "pair": 4, "type": "name", "isImage": true  }
       ]
     }
   ]

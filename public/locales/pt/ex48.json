@@ -1,13 +1,13 @@
 {   
     "cards" : [
-        {"id": 1, "pair": 1, "text": "Gigabyte", "type": "name"},
-        {"id": 2, "pair": 1, "text": "GB", "type": "acron"},
-        {"id": 3, "pair": 2, "text": "Megabyte", "type": "name"},
-        {"id": 4, "pair": 2, "text": "MB", "type": "acron"},
-        {"id": 5, "pair": 3, "text": "Terabyte", "type": "name"},
-        {"id": 6, "pair": 3, "text": "TB", "type": "acron"},
-        {"id": 7, "pair": 4, "text": "Kylobyte", "type": "name"},
-        {"id": 8, "pair": 4, "text": "KB", "type": "acron"}
+        {"id": 1, "pair": 1, "text": "Gigabyte", "type": "name", "isImage": false},
+        {"id": 2, "pair": 1, "text": "GB", "type": "acron", "isImage": false},
+        {"id": 3, "pair": 2, "text": "Megabyte", "type": "name", "isImage": false},
+        {"id": 4, "pair": 2, "text": "MB", "type": "acron", "isImage": false},
+        {"id": 5, "pair": 3, "text": "Terabyte", "type": "name", "isImage": false},
+        {"id": 6, "pair": 3, "text": "TB", "type": "acron", "isImage": false},
+        {"id": 7, "pair": 4, "text": "Kilobyte", "type": "name", "isImage": false},
+        {"id": 8, "pair": 4, "text": "KB", "type": "acron", "isImage": false}
     ],
     "options": [
 
