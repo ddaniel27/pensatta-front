@@ -20,10 +20,10 @@
         { "text":"/images/exercises/110/general/Ellen_Ochoa.png", "id": 3, "pair": 2, "type": "name", "isImage": true },
         { "text":"/images/exercises/110/general/Valentina_Tereshkova.png", "id": 4, "pair": 3, "type": "name", "isImage": true},
         { "text":"/images/exercises/110/general/Sara_Garcia_Alonso.png", "id": 5, "pair": 4, "type": "name", "isImage": true},
-        { "text":"/images/exercises/110/general/Sally_Ride.png", "id": 2, "pair": 1, "type": "name", "isImage": true },
-        { "text":"/images/exercises/110/general/Ellen_Ochoa.png", "id": 6, "pair": 2, "type": "name", "isImage": true},
-        { "text":"/images/exercises/110/general/Valentina_Tereshkova.png", "id": 7, "pair": 3, "type": "name", "isImage": true},
-        { "text":"/images/exercises/110/general/Sara_Garcia_Alonso.png", "id": 8, "pair": 4, "type": "name", "isImage": true}
+        { "text":"first American woman to fly into space (1983)", "id": 2, "pair": 1, "type": "name", "isImage": false },
+        { "text":"first Hispanic woman to travel to space (1993)", "id": 6, "pair": 2, "type": "name", "isImage": false},
+        { "text":"first woman to travel to space (1963)", "id": 7, "pair": 3, "type": "name", "isImage": false},
+        { "text":"first Spanish woman astronaut. He hasn't flown into space yet.", "id": 8, "pair": 4, "type": "name", "isImage": false}
       ]
     },
     {
@@ -33,10 +33,10 @@
         { "text":"/images/exercises/110/en/corrector.png", "id": 2, "pair": 2, "type": "name", "isImage": true  },
         { "text":"/images/exercises/110/en/panal.png", "id": 3, "pair": 3, "type": "name", "isImage": true  },
         { "text":"/images/exercises/110/en/limpia.png", "id": 4, "pair": 4, "type": "name", "isImage": true  },
-        { "text":"/images/exercises/110/en/telescopio.png", "id": 5, "pair": 1, "type": "name", "isImage": true  },
-        { "text":"/images/exercises/110/en/corrector.png", "id": 6, "pair": 2, "type": "name", "isImage": true  },
-        { "text":"/images/exercises/110/en/panal.png", "id": 7, "pair": 3, "type": "name", "isImage": true  },
-        { "text":"/images/exercises/110/en/limpia.png", "id": 8, "pair": 4, "type": "name" , "isImage": true }
+        { "text":"/images/exercises/110/general/Sara_Mather.png", "id": 5, "pair": 1, "type": "name", "isImage": true  },
+        { "text":"/images/exercises/110/general/Bette_Nesmith_Graham.png", "id": 6, "pair": 2, "type": "name", "isImage": true  },
+        { "text":"/images/exercises/110/general/Marion_Donovan.png", "id": 7, "pair": 3, "type": "name", "isImage": true  },
+        { "text":"/images/exercises/110/general/Mary_Anderson.png", "id": 8, "pair": 4, "type": "name" , "isImage": true }
       ]
     },
     {
@@ -46,10 +46,10 @@
         { "text":"/images/exercises/110/general/Mary_Anne_Evans.png", "id": 2, "pair": 2, "type": "name", "isImage": true  },
         { "text":"/images/exercises/110/general/Cecilia_Bohl_de_Faber.png", "id": 3, "pair": 3, "type": "name", "isImage": true  },
         { "text":"/images/exercises/110/general/Emily_Bronte.png", "id": 4, "pair": 4, "type": "name", "isImage": true  },
-        { "text":"/images/exercises/110/general/Amantine_Dupin.png", "id": 5, "pair": 1, "type": "name", "isImage": true  },
-        { "text":"/images/exercises/110/general/Mary_Anne_Evans.png", "id": 6, "pair": 2, "type": "name" , "isImage": true },
-        { "text":"/images/exercises/110/general/Cecilia_Bohl_de_Faber.png", "id": 7, "pair": 3, "type": "name", "isImage": true  },
-        { "text":"images/exercises/110/general/Emily_Bronte.png", "id": 8, "pair": 4, "type": "name", "isImage": true  }
+        { "text":"George SanD", "id": 5, "pair": 1, "type": "name", "isImage": false  },
+        { "text":"George Elliott", "id": 6, "pair": 2, "type": "name" , "isImage": false },
+        { "text":"Fernan Caballero", "id": 7, "pair": 3, "type": "name", "isImage": false  },
+        { "text":"Ellis Bell", "id": 8, "pair": 4, "type": "name", "isImage": false  }
       ]
     },
     {
@@ -59,10 +59,10 @@
         { "text":"/images/exercises/110/general/Virginia_Woolf.png", "id": 2, "pair": 2, "type": "name", "isImage": true  },
         { "text":"/images/exercises/110/general/Coco_Chanel.png", "id": 3, "pair": 3, "type": "name", "isImage": true  },
         { "text":"/images/exercises/110/general/Clara_Campoamor.png", "id": 4, "pair": 4, "type": "name", "isImage": true  },
-        { "text":"/images/exercises/110/general/Flora_Tristan.png", "id": 5, "pair": 1, "type": "name", "isImage": true  },
-        { "text":"/images/exercises/110/general/Virginia_Woolf.png", "id": 6, "pair": 2, "type": "name", "isImage": true  },
-        { "text":"/images/exercises/110/general/Coco_Chanel.png", "id": 7, "pair": 3, "type": "name", "isImage": true  },
-        { "text":"/images/exercises/110/general/Clara_Campoamor.png", "id": 8, "pair": 4, "type": "name", "isImage": true  }
+        { "text":"Author of “The Emancipation of Women” (1845)", "id": 5, "pair": 1, "type": "name", "isImage": false  },
+        { "text":"Author of “A Room of One's Own” (1923)", "id": 6, "pair": 2, "type": "name", "isImage": false  },
+        { "text":"He liberated women through fashion. He created his own workshop (1910)", "id": 7, "pair": 3, "type": "name", "isImage": false  },
+        { "text":"Promoter of the vote for women in Spain (1933)", "id": 8, "pair": 4, "type": "name", "isImage": false  }
       ]
     }
   ]

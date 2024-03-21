@@ -10,6 +10,28 @@ const Card = ({ card, handleChoice, flipped, disabled }) => {
       handleChoice(card)
     }
   }
+  const [newText, setNewText] = useState([])
+
+  useEffect(() => {
+    let text = []
+    if (card.text.length > 10 && card.text.split(' ').length == 1) {
+      text.push(card.text.substring(0, 10) + '...')
+      text.push(card.text.substring(10, card.text.length))
+      return setNewText(text)
+    }
+    if (card.text.length > 10) {
+      text = card.text.split(' ').reduce((acc, word) => {
+        if (acc[acc.length - 1].length + word.length < 12) {
+          acc[acc.length - 1] += ` ${word}`
+        } else {
+          acc.push(word)
+        }
+        return acc
+      }, [''])
+      return setNewText(text)
+    }
+    return setNewText([card.text])
+  }, [])
 
   return (
     <div className="card" >
@@ -18,8 +40,10 @@ const Card = ({ card, handleChoice, flipped, disabled }) => {
           ? (<svg className="frontCard" width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="180" height="180" rx="20" fill="#00635D"/>
             <rect x="21.5" y="21.5" width="137" height="137" rx="8.5" stroke="white" strokeWidth="3"/>
-            <text x="50%" y={'50%'} textAnchor="middle" fill="#FFFFFF" fontSize={card.type == 'name' ? '100%' : '180%'} fontFamily="Montserrat" dy=".3em" fontWeight="bold">
-              {card.text}
+            <text x="50%" y={newText.length > 5 ? '20%' : '30%'} textAnchor="middle" fill="#FFFFFF" fontSize={card.type == 'name' ? '100%' : '180%'} fontFamily="Montserrat" dy=".3em" fontWeight="bold">
+              {newText.map((line, index) => (
+                <tspan x="50%" dy={index == 0 ? 0 : '1.2em'} key={index}>{line}</tspan>
+              ))}
             </text>
           </svg>)
           : <div className="frontCard">
