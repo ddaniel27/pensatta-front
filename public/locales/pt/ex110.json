@@ -32,10 +32,10 @@
         { "text":"/images/exercises/110/pt/corrector.png", "id": 2, "pair": 2, "type": "name", "isImage": true  },
         { "text":"/images/exercises/110/pt/panal.png", "id": 3, "pair": 3, "type": "name", "isImage": true  },
         { "text":"/images/exercises/110/pt/limpia.png", "id": 4, "pair": 4, "type": "name", "isImage": true  },
-        { "text":"SARA MATHER em 1845", "id": 5, "pair": 1, "type": "name", "isImage": false   },
-        { "text":"BETTE NESMITH GRAHAM em 1956", "id": 6, "pair": 2, "type": "name", "isImage": false   },
-        { "text":"MARION DONOVAN em 1949", "id": 7, "pair": 3, "type": "name", "isImage": false   },
-        { "text":"MARY ANDERSON em 1903", "id": 8, "pair": 4, "type": "name", "isImage": false   }
+        { "text":"/images/exercises/110/general/Sara_Mather.png", "id": 5, "pair": 1, "type": "name", "isImage": true  },
+        { "text":"/images/exercises/110/general/Bette_Nesmith_Graham.png", "id": 6, "pair": 2, "type": "name", "isImage": true  },
+        { "text":"/images/exercises/110/general/Marion_Donovan.png", "id": 7, "pair": 3, "type": "name", "isImage": true  },
+        { "text":"/images/exercises/110/general/Mary_Anderson.png", "id": 8, "pair": 4, "type": "name" , "isImage": true }
       ]
     },
     {
