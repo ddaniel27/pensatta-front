@@ -41,7 +41,6 @@ export default function LoginForm () {
         function (response) {
           if (response.logged) {
             setLoginUser(response.user)
-            console.log(response.user)
             i18n.changeLanguage(response.user.language)
             localStorage.setItem('user', JSON.stringify(response.user))
             const array = []

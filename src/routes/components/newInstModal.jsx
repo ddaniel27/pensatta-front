@@ -18,12 +18,12 @@ export default function NewInstModal ({ close }) {
   const [textDone, setTextDone] = useState('')
 
   useEffect(() => {
-    if (code !== '' && name !== '' && email !== '' && country !== '' && province !== '' && city !== '') {
+    if (code !== '' && name !== '' && email !== '' && country !== '' && province !== '' && city !== '' && language !== '') {
       setEnabled(false)
     } else {
       setEnabled(true)
     }
-  }, [code, name, email, country, province, city])
+  }, [code, name, email, country, province, city, language])
   const handleClick = () => {
     addInstitution(
       { institution_code: code, name, email, country, province, city, language },

@@ -1,14 +1,14 @@
 {
   "info-text": "Fill out the following fields",
   "save": "SAVE",
-  "success": "Successfully added",
+  "success": "Username: {{username}}",
   "error": "Could not add",
   "first-name": "First Name",
   "last-name": "Last Name",
   "list-number": "List Number",
   "password": "Password",
   "code": "Institution Code",
-  "update-button": "UPDATE",
+  "update-button": "CLOSE",
   "student": "Student",
   "teacher": "Teacher",
   "principal": "Coordinator"

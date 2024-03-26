@@ -1,14 +1,14 @@
 {
   "info-text": "Llene los siguientes campos",
   "save": "GUARDAR",
-  "success": "Se ha añadido correctamente",
+  "success": "Nombre de usuario: {{username}}",
   "error": "No se ha podido añadir",
   "first-name": "Primer Nombre",
   "last-name": "Primer Apellido",
   "list-number": "Numero de lista",
   "password": "Contraseña",
   "code": "Codigo de la Institucion",
-  "update-button": "ACTUALIZAR",
+  "update-button": "CERRAR",
   "student": "Estudiante",
   "teacher": "Profesor",
   "principal": "Coordinador"
