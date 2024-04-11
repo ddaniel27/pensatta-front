@@ -16,7 +16,6 @@ const Ex110 = () => {
   })
 
   useEffect(() => {
-    console.log(data)
     setMyData({
       ...data,
       options: data.options.sort(() => 0.5 - Math.random()).slice(0, 1)[0]

@@ -21,13 +21,14 @@
     color: #00635D;
     gap: 20px;
     text-align: left;
+    font-size: 0.8rem;
     padding-top: 20px;
 }
 
 .fix-ex23 .ex01-explaination p{
     width: 90%;
     height: 100%;
-    font-size: clamp(.9rem, 2vw, 2rem);
+    font-size: clamp(.9rem, 2vw, 1rem);
 }
 
 .fix-ex23 .ex23-question{
@@ -49,8 +50,8 @@
     color: #00635D;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 30% 70%;
-    font-size: clamp(2vw, 1.5rem, 2vh);
+    grid-template-rows: 30% 30%;
+    font-size: clamp(1vw, 1.5rem, 2vh);
     justify-items: center;
     align-items: center;
     width: 100%;

@@ -14,6 +14,8 @@ export default function DashboardHorizontalBar ({ title = 'Grado', average = '5'
   const [conformedData, setConformedData] = useState(data)
   const [pieValues, setPieValues] = useState({ 0: 12, 1: 15, 2: 20 })
   const [spiderProps, setSpiderProps] = useState({})
+  const [spiderURL, setSpiderURL] = useState('')
+  const [pieURL, setPieURL] = useState('')
   const [isLoaded, setIsLoaded] = useState(false)
 
   const cb = (response) => {
@@ -38,7 +40,7 @@ export default function DashboardHorizontalBar ({ title = 'Grado', average = '5'
     })
 
     setSpiderProps({
-      spider: rows[0].spiderValues,
+      spider: rows[0].spiderValues
     })
     setIsLoaded(true)
   }
@@ -57,10 +59,10 @@ export default function DashboardHorizontalBar ({ title = 'Grado', average = '5'
         <HeaderTeacherCoordinator title='' grade={title} text={`Unidad promedio: ${average}`} />
         <HorizontalBarGrid data={conformedData} />
         <div className='DashboardRows__footer'>
-          <Spider {...spiderProps} />
-          <PieChart pieValues={pieValues} />
+          <Spider {...spiderProps} setImgURL={setSpiderURL} />
+          <PieChart pieValues={pieValues} setImgURL={setPieURL} />
         </div>
-        <FooterTeacherCoordinator coordinator={coordinator} />
+        <FooterTeacherCoordinator coordinator={coordinator} data={conformedData} spiderURL={spiderURL} pieURL={pieURL} userId={userId} />
       </div>
       : <Loading />
   )

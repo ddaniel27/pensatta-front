@@ -9,7 +9,7 @@ import { MeanBarChart } from './meanBarChart'
 import { coordinacionMetricsAll } from '../../../requests'
 import CoordinatorContext from '../../../context/CoordinatorContext'
 import Loading from '../loadingView'
-
+import { Link } from 'react-router-dom'
 export default function DashboardMain ({ data = defaultData, coordinator = true, userId }) {
   const { setCtx_main_hR } = useContext(CoordinatorContext)
   const [coordinatorName, setCoordinatorName] = useState('')
@@ -21,6 +21,8 @@ export default function DashboardMain ({ data = defaultData, coordinator = true,
   const [pieValues, setPieValues] = useState({ 0: 12, 1: 15, 2: 20 })
   const [meanBarProps, setMeanBarProps] = useState({})
   const [isLoaded, setIsLoaded] = useState(false)
+  const [meanBar, setMeanBar] = useState('')
+  const [pieURL, setPieURL] = useState('')
 
   useEffect(() => {
     coordinacionMetricsAll(userId, (response) => {
@@ -89,11 +91,27 @@ export default function DashboardMain ({ data = defaultData, coordinator = true,
           <CardHorizontalRow {...conformedData} />
           <div className='DashboardMain__content__group'>
             <div className='DashboardMain__content__group__graphs'>
-              <MeanBarChart {...meanBarProps}/>
-              <PieChart pieValues={pieValues} />
+              <MeanBarChart {...meanBarProps} setImgURL={setMeanBar}/>
+              <PieChart pieValues={pieValues} setImgURL={setPieURL}/>
             </div>
             <div className='DashboardMain__content__group__buttons'>
-              <div className='DashboardMain__content__group__buttons__pdf'>DESCARGAR INFORME EN PDF</div>
+              <Link
+                to={`/coordinator/${userId}`}
+                state={{
+                  loginUser: {
+                    id: userId,
+                    name: coordinatorName
+                  },
+                  pieImg: pieURL,
+                  spiderImg: meanBar,
+                  badges: 0,
+                  data: conformedData.rows,
+                  dummyHistory: [{}]
+                }}>
+                <div className='DashboardMain__content__group__buttons__pdf'>
+                  DESCARGAR INFORME EN PDF
+                </div>
+              </Link>
               <div className='DashboardMain__content__group__buttons__teachers'>
                 <span>Listado docentes</span>
                 <img src={pencil} alt='pencil' />

@@ -17,7 +17,6 @@ export default function Ex31 () {
   const [optionsData, setOptionsData] = React.useState({})
 
   React.useLayoutEffect(() => {
-    console.log(optionsData)
     if (reset) {
       setReset(false)
     }

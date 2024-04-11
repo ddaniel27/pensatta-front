@@ -69,6 +69,11 @@
   font-size: 1.1rem;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+}
+.DashboardMain__content__group__buttons a {
+  text-decoration: none;
+  color: #008E86;
 }
 
 .DashboardMain__content__group__buttons__teachers {

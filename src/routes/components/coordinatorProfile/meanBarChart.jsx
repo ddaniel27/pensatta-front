@@ -19,44 +19,6 @@ ChartJS.register(
   Legend
 )
 
-export const options = {
-  plugins: {
-    title: {
-      display: true,
-      text: 'Brechas frente a la media',
-      color: '#000',
-      font: {
-        size: 16,
-        weight: 'bold',
-        family: 'Montserrat'
-      }
-    },
-    legend: {
-      display: false
-    }
-  },
-  scales: {
-    x: {
-      stacked: true
-    },
-    y: {
-      stacked: true,
-      display: false
-    }
-  },
-  layout: {
-    padding: {
-      top: 0,
-      bottom: 0,
-      left: 20,
-      right: 20
-    }
-  },
-  responsive: true,
-  aspectRatio: 1,
-  maintainAspectRatio: false
-}
-
 const labels = [
   'abstraccion',
   'pensamiento algoritmico',
@@ -97,7 +59,51 @@ const data = (dataVal, labs) => ({
   ]
 })
 
-export function MeanBarChart ({ dataValues = dataSets, labs = labels }) {
+export function MeanBarChart ({ dataValues = dataSets, labs = labels, setImgURL }) {
+  const options = {
+    animation: {
+      onComplete: ({ chart }) => {
+        if (setImgURL) {
+          setImgURL(chart.toBase64Image())
+        }
+      }
+    },
+    plugins: {
+      title: {
+        display: true,
+        text: 'Brechas frente a la media',
+        color: '#000',
+        font: {
+          size: 16,
+          weight: 'bold',
+          family: 'Montserrat'
+        }
+      },
+      legend: {
+        display: false
+      }
+    },
+    scales: {
+      x: {
+        stacked: true
+      },
+      y: {
+        stacked: true,
+        display: false
+      }
+    },
+    layout: {
+      padding: {
+        top: 0,
+        bottom: 0,
+        left: 20,
+        right: 20
+      }
+    },
+    responsive: true,
+    aspectRatio: 1,
+    maintainAspectRatio: false
+  }
   return (
     <div className='chart-container bar-container'>
       <Bar options={options} data={data(dataValues, labs)} />

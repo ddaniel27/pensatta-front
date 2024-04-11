@@ -200,13 +200,70 @@ const style = StyleSheet.create({
   },
   badge: {
     objectFit: 'contain'
+  },
+  CardHorizontalRow__title: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    height: '100%',
+    width: '100%',
+    color: '#008E86',
+    paddingBottom: '10px'
+  },
+  HorizontalBarGrid: {
+    width: '100%',
+    height: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: '5px',
+    overflowY: 'auto',
+    overflowX: 'hidden'
+  },
+  HorizontalBar: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    width: '100%',
+    height: '100%',
+    padding: '10px 20px',
+    borderRadius: '20px'
+  },
+  HorizontalBar__bar: {
+    width: '100%',
+    height: '20px',
+    display: 'flex',
+    flexDirection: 'row',
+    borderRadius: '20px',
+    overflow: 'hidden'
+  },
+  HorizontalBar__label: {
+    color: '#008e86',
+    fontWeight: 'bold',
+    fontFamily: 'Montserrat'
+  },
+  HorizontalBar__chart: {
+    height: '90%',
+    objectFit: 'contain',
+    marginTop: '10px'
+  },
+  HorizontalBar__bar__green: {
+    backgroundColor: '#82C993'
+  },
+  HorizontalBar__bar__yellow: {
+    backgroundColor: '#EDCA71'
+  },
+  HorizontalBar__bar__red: {
+    backgroundColor: '#F87777'
   }
 
 })
 
 export default function Pdf () {
-  const { spiderImg, pieImg, loginUser, dummyHistory, badges } = useLocation().state
+  const { spiderImg, pieImg, barImg, loginUser, badges, data } = useLocation().state
 
+  const total = data.reduce((acc, current) => acc + current.valueGreen + current.valueYellow + current.valueRed, 0)
   const myDate = new Date().toLocaleString('en-GB', { timeZone: 'America/Bogota' })
 
   return (
@@ -227,14 +284,15 @@ export default function Pdf () {
             ? <>
               <Text style={style.textTitle}>Gráficos</Text>
               <View style={style.chartsRow}>
-                <View style={style.viewCharts}>
-                  <Text style={style.text}>Dimensiones</Text>
+                {spiderImg && <View style={style.viewCharts}>
                   <Image src={spiderImg} style={style.chart} />
-                </View>
-                <View style={style.viewCharts}>
-                  <Text style={style.text}>Apropiación</Text>
+                </View>}
+                {pieImg && <View style={style.viewCharts}>
                   <Image src={pieImg} style={style.chart} />
-                </View>
+                </View>}
+                {barImg && <View style={style.viewCharts}>
+                  <Image src={barImg} style={style.chart} />
+                </View>}
               </View>
             </>
             : <View style={style.badgeChartContainer}>
@@ -261,62 +319,20 @@ export default function Pdf () {
               </View>
             </View>
           }
-
-          <Text style={style.textTitle}>Historial</Text>
-          <View style={style.tableContainer}>
-            <View style={style.tableHeader}>
-              <Text style={style.tableHeaderText}>Ejercicio</Text>
-              <Text style={style.tableHeaderText}>Puntaje</Text>
-              <Text style={style.tableHeaderText}>Tiempo</Text>
-            </View>
-            {dummyHistory.slice(0, 8).map((item, index) => (
-              <View key={index} style={item.score >= 80 ? style.tableRowGood : item.score >= 60 ? style.tableRowRegular : style.tableRowBad}>
-                <Text style={style.tableText}>{item.exercise_id}</Text>
-                <Text style={style.tableText}>{item.score}</Text>
-                <Text style={style.tableText}>{item.time}</Text>
+          <Text style={style.textTitle}>Progreso</Text>
+          <View style={style.HorizontalBarGrid}>
+            {data.map((item, index) => (
+              <View key={index} style={style.HorizontalBar}>
+                <Text style={style.HorizontalBar__label}>{item.label}</Text>
+                <View style={style.HorizontalBar__bar}>
+                  <View style={[style.HorizontalBar__bar__red, { width: `${item.valueRed / (total !== 0 ? total : 1) * 100}%` }]} />
+                  <View style={[style.HorizontalBar__bar__yellow, { width: `${item.valueYellow / (total != 0 ? total : 1) * 100}%` }]} />
+                  <View style={[style.HorizontalBar__bar__green, { width: `${item.valueGreen / (total != 0 ? total : 1) * 100}%` }]} />
+                </View>
               </View>
             ))}
           </View>
         </Page>
-        {
-          dummyHistory.length > 8 &&
-                    dummyHistory.reduce((acc, current, idx) => {
-                      if (idx < 8) return acc
-                      if (acc[acc.length - 1]?.length < 16) {
-                        acc[acc.length - 1]?.push(current)
-                      } else {
-                        acc.push([current])
-                      }
-                      return acc
-                    }, [[]]).map((itemRow, idx) => (
-                      <Page key={idx} size="A4" style={style.page}>
-                        <View style={style.viewHeader}>
-                          <Image src='/images/pdf/logoEduSoul.png' style={style.imageHeader}/>
-                          <View style={style.viewProfile}>
-                            <Image src='/images/pdf/kattypdf.png' style={style.image}/>
-                            <View>
-                              <Text style={style.text}>{loginUser.name}</Text>
-                              <Text style={style.textSub}>{myDate}</Text>
-                            </View>
-                          </View>
-                        </View>
-                        <View style={style.tableContainerGeneric}>
-                          <View style={style.tableHeader}>
-                            <Text style={style.tableHeaderText}>Ejercicio</Text>
-                            <Text style={style.tableHeaderText}>Puntaje</Text>
-                            <Text style={style.tableHeaderText}>Tiempo</Text>
-                          </View>
-                          {itemRow.map((item, index) => (
-                            <View key={index} style={item.score >= 80 ? style.tableRowGood : item.score >= 60 ? style.tableRowRegular : style.tableRowBad}>
-                              <Text style={style.tableText}>{item.exercise_id}</Text>
-                              <Text style={style.tableText}>{item.score}</Text>
-                              <Text style={style.tableText}>{item.time}</Text>
-                            </View>
-                          ))}
-                        </View>
-                      </Page>
-                    ))
-        }
       </Document>
     </PDFViewer>
   )

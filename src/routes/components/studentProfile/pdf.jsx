@@ -218,7 +218,7 @@ export default function Pdf () {
             <View style={style.viewProfile}>
               <Image src='/images/pdf/kattypdf.png' style={style.image} />
               <View>
-                <Text style={style.text}>{userObject.name}</Text>
+                <Text style={style.text}>{userObject?.name}</Text>
                 <Text style={style.textSub}>{myDate}</Text>
               </View>
             </View>
@@ -268,7 +268,7 @@ export default function Pdf () {
               <Text style={style.tableHeaderText}>Puntaje</Text>
               <Text style={style.tableHeaderText}>Tiempo</Text>
             </View>
-            {dummyHistory.slice(0, 8).map((item, index) => (
+            {dummyHistory?.slice(0, 8).map((item, index) => (
               <View key={index} style={item.score >= 80 ? style.tableRowGood : item.score >= 60 ? style.tableRowRegular : style.tableRowBad}>
                 <Text style={style.tableText}>{item.exercise_id}</Text>
                 <Text style={style.tableText}>{item.score}</Text>
@@ -278,7 +278,7 @@ export default function Pdf () {
           </View>
         </Page>
         {
-          dummyHistory.length > 8 &&
+          dummyHistory?.length > 8 &&
                     dummyHistory.reduce((acc, current, idx) => {
                       if (idx < 8) return acc
                       if (acc[acc.length - 1]?.length < 16) {
@@ -294,7 +294,7 @@ export default function Pdf () {
                           <View style={style.viewProfile}>
                             <Image src='/images/pdf/kattypdf.png' style={style.image} />
                             <View>
-                              <Text style={style.text}>{userObject.name}</Text>
+                              <Text style={style.text}>{userObject?.name}</Text>
                               <Text style={style.textSub}>{myDate}</Text>
                             </View>
                           </View>

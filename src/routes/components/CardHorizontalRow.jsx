@@ -17,7 +17,7 @@ function HorizontalBarGrid ({ data }) {
   return (
     <div className='HorizontalBarGrid'>
       {data.map((item, index) => (
-        <HorizontalBar key={index} {...item}  />
+        <HorizontalBar key={index} {...item} />
       ))}
     </div>
   )

@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
 import Pdf from './routes/components/studentProfile/pdf'
+import PdfCoordinator from './routes/components/coordinatorProfile/pdf'
 import './lang-config'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
@@ -11,6 +12,7 @@ ReactDOM.render(
       <Routes>
         <Route path="/pensatta" element={<App />}/>
         <Route path='/resumen/:id' element={<Pdf />} />
+        <Route path='/coordinator/:id' element={<PdfCoordinator />} />
         <Route path="*" element={<div>Not found</div>} />
       </Routes>
     </BrowserRouter>
